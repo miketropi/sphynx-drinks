@@ -1,1 +1,77 @@
+:root {
+  --site-container-width: 1360px;
+}
 
+.site-header__container {
+  width: var(--site-container-width);
+  padding: 0;
+  margin: 0 auto;
+  max-width: calc(var(--site-container-width) - 30px);
+}
+
+.site-brand__url {
+  display: inline-block;
+}
+.site-brand__url img {
+  height: 64px;
+  width: auto;
+}
+
+.site-header__nth1 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  line-height: normal;
+  padding: 18px 0;
+}
+
+.site-header__nth2 {
+  background-color: #FFC85E;
+}
+
+.site-header__extra-tools {
+  margin-left: auto;
+}
+
+.site-header__brand {
+  margin-right: 2em;
+}
+
+.header-extra-tools__container {
+  display: flex;
+}
+.header-extra-tools__item:not(:last-child) {
+  margin-right: 1.3em;
+}
+
+.site-header__owner-menu a {
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+.site-header__owner-menu ul {
+  margin: 0;
+  padding: 0;
+}
+.site-header__owner-menu ul li {
+  list-style: none;
+}
+.site-header__owner-menu ul.dropdown-child {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 9;
+  background-color: white;
+}
+.site-header__owner-menu > .menu {
+  display: flex;
+  flex-wrap: wrap;
+}
+.site-header__owner-menu > .menu > li.menu-link {
+  margin-right: 1em;
+}
+.site-header__owner-menu > .menu > li.menu-link > a {
+  color: #FFC85E;
+}

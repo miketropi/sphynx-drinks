@@ -1,13 +1,21 @@
 {%- assign text_direction = 'localization.text_direction_trigger' | t | downcase -%}
 <!doctype html>
-<html class="no-js" lang="{{ request.locale.iso_code }}" {%- if text_direction == 'rtl' %} dir="rtl"{% endif -%}>
+<html
+  class="no-js"
+  lang="{{ request.locale.iso_code }}"
+  {%- if text_direction == 'rtl' %}
+  dir="rtl"
+  {% endif -%}>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="">
     <link rel="canonical" href="{{ canonical_url }}">
-    <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+    <link
+    rel="preconnect"
+      href="https://cdn.shopify.com"
+      crossorigin>
 
     <!-- Google Tag Manager -->
     <script>
@@ -31,11 +39,17 @@
 
 
     {%- if settings.favicon != blank -%}
-      <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
+      <link
+        rel="icon"
+        type="image/png"
+        href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
     {%- endif -%}
 
     {%- unless settings.type_header_font.system? and settings.type_body_font.system? -%}
-      <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
+      <link
+        rel="preconnect"
+        href="https://fonts.shopifycdn.com"
+        crossorigin>
     {%- endunless -%}
 
 
@@ -71,32 +85,86 @@
     -%}
 
     {%- unless settings.type_body_font.system? -%}
-      <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
+      <link
+        rel="preload"
+        as="font"
+        href="{{ settings.type_body_font | font_url }}"
+        type="font/woff2"
+        crossorigin>
     {%- endunless -%}
     {%- unless settings.type_header_font.system? -%}
-      <link rel="preload" as="font" href="{{ settings.type_header_font | font_url }}" type="font/woff2" crossorigin>
+      <link
+        rel="preload"
+        as="font"
+        href="{{ settings.type_header_font | font_url }}"
+        type="font/woff2"
+        crossorigin>
     {%- endunless -%}
 
     {%- if settings.predictive_search_enabled -%}
-      <link rel="stylesheet" href="{{ 'component-predictive-search.css' | asset_url }}" media="print" onload="this.media='all'">
+      <link
+        rel="stylesheet"
+        href="{{ 'component-predictive-search.css' | asset_url }}"
+        media="print"
+        onload="this.media='all'">
     {%- endif -%}
     {%- if settings.quick_view_enabled -%}
-      <link rel="stylesheet" href="{{ 'component-quick-view.css' | asset_url }}" media="print" onload="this.media='all'">
+      <link
+        rel="stylesheet"
+        href="{{ 'component-quick-view.css' | asset_url }}"
+        media="print"
+        onload="this.media='all'">
     {%- endif -%}
     {%- if linklists.gift-wrapping.links.size > 0 and linklists.gift-wrapping.links.first.type == 'product_link' -%}
-      <link rel="stylesheet" href="{{ 'component-gift-wrapping.css' | asset_url }}" media="print" onload="this.media='all'">
+      <link
+        rel="stylesheet"
+        href="{{ 'component-gift-wrapping.css' | asset_url }}"
+        media="print"
+        onload="this.media='all'">
       <noscript>{{ 'component-gift-wrapping.css' | asset_url | stylesheet_tag }}</noscript>
     {%- endif -%}
 
     <script>
       document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
     </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="{{ 'main.bundle.css' | asset_url }}"
+      media="print"
+      onload="this.media='all'">
   </head>
 
-  <body class="template-{{ request.page_type }}{% if request.design_mode %} shopify-design-mode{% endif %}" {%- if settings.image_zoom_effect_enabled %} data-animate-image{% endif -%} {%- if settings.image_loading_bar_enabled %} data-lazy-image{% endif -%} {%- if settings.heading_capitalize %} data-heading-capitalize{% endif -%} {%- if settings.heading_center %} data-heading-center{% endif -%} {%- if settings.button_corner_radius > 0 %} data-button-round{% endif -%}>
+  <body
+    class="template-{{ request.page_type }}{% if request.design_mode %} shopify-design-mode{% endif %}"
+    {%- if settings.image_zoom_effect_enabled %}
+    data-animate-image
+    {% endif -%}
+    {%- if settings.image_loading_bar_enabled %}
+    data-lazy-image
+    {% endif -%}
+    {%- if settings.heading_capitalize %}
+    data-heading-capitalize
+    {% endif -%}
+    {%- if settings.heading_center %}
+    data-heading-center
+    {% endif -%}
+    {%- if settings.button_corner_radius > 0 %}
+    data-button-round
+    {% endif -%}>
     <!-- Google Tag Manager (noscript) -->
     <noscript>
-      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N9799VQ" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-N9799VQ"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"></iframe>
     </noscript>
     <!-- End Google Tag Manager (noscript) -->
 
@@ -112,8 +180,14 @@
       {% section 'header' %}
 
       <div class="transition-content">
-        <main id="MainContent" class="content-for-layout focus-none shopify-section" role="main" tabindex="-1">
-          {% capture ICART_FULL_PAGE_LAYOUT %}{{ content_for_layout }}{% endcapture %}{% include 'icart-variables', ICART_FULL_PAGE_LAYOUT: ICART_FULL_PAGE_LAYOUT %}
+        <main
+          id="MainContent"
+          class="content-for-layout focus-none shopify-section"
+          role="main"
+          tabindex="-1">
+          {% capture ICART_FULL_PAGE_LAYOUT %}
+            {{ content_for_layout }}{% endcapture %}
+          {% include 'icart-variables', ICART_FULL_PAGE_LAYOUT: ICART_FULL_PAGE_LAYOUT %}
         </main>
 
         {% section 'footer' %}
@@ -206,6 +280,8 @@
           first_image.setAttribute('loading', 'auto');
         
 
+
+
       })();
     </script>
 
@@ -218,11 +294,11 @@
     {%- if linklists.gift-wrapping.links.size > 0 and linklists.gift-wrapping.links.first.type == 'product_link' -%}
       <script src="{{ 'gift-wrapping.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
-  
-<!-- Back in Stock helper snippet -->
-{% render 'back-in-stock-helper' %}
-<!-- End Back in Stock helper snippet -->
-</body>
+
+    <!-- Back in Stock helper snippet -->
+    {% render 'back-in-stock-helper' %}
+    <!-- End Back in Stock helper snippet -->
+  </body>
 </html>
 
 

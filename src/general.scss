@@ -1,0 +1,10 @@
+:root {
+  --site-container-width: 1360px;
+}
+
+.site-header__container {
+  width: var(--site-container-width);
+  padding: 0;
+  margin: 0 auto;
+  max-width: calc(var(--site-container-width) - 30px);
+}

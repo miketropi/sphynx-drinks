@@ -1,0 +1,42 @@
+$menu-lvl1-color: #FFC85E !default;
+
+.site-header__owner-menu {
+
+  a {
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      list-style: none;
+    }
+  }
+
+  ul.dropdown-child {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 9;
+    background-color: white;
+  }
+
+  > .menu {
+    display: flex;
+    flex-wrap: wrap;
+
+    > li.menu-link {
+      margin-right: 1em;
+
+      > a {
+        color: $menu-lvl1-color;
+      }
+    }
+  }
+}
