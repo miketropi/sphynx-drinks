@@ -1,0 +1,480 @@
+{
+  "general": {
+    "password_page": {
+      "login_form_heading": "Entre na loja usando a senha:",
+      "login_password_button": "Entre usando a senha",
+      "login_form_password_label": "Senha",
+      "login_form_password_placeholder": "Sua senha",
+      "login_form_error": "Senha incorreta!",
+      "login_form_submit": "Entre",
+      "modal": "Senha modal",
+      "admin_link_html": "Você é o dono da loja? <a href=\"\/admin\" class=\"link link--underline\">Faça login aqui<\/a>",
+      "powered_by_shopify_html": "Esta loja será alimentada por {{ shopify }}"
+    },
+    "social": {
+      "alt_text": {
+        "share_on_facebook": "Compartilhar",
+        "share_on_twitter": "Tweet",
+        "share_on_pinterest": "Fixá-lo",
+        "share_by_email": "E-mail"
+      },
+      "links": {
+        "twitter": "Twitter",
+        "facebook": "Facebook",
+        "pinterest": "Pinterest",
+        "instagram": "Instagram",
+        "tumblr": "Tumblr",
+        "linkedin": "LinkedIn",
+        "snapchat": "Snapchat",
+        "youtube": "Youtube",
+        "vimeo": "Vimeo",
+        "tiktok": "TikTok"
+      }
+    },
+    "continue_shopping": "Voltar à loja",
+    "pagination": {
+      "label": "Paginação",
+      "page": "Pagina {{ number }}",
+      "next": "Próximo >",
+      "previous": "‹ Anterior"
+    },
+    "search": {
+      "search": "Pesquise nosso site",
+      "placeholder": "Pesquise "
+    },
+    "cart": {
+      "view": "Ver carrinho",
+      "item_added": "Item adicionado ao seu carrinho",
+      "note": {
+        "title": "Nota",
+        "caption": "Encomende instruções especiais",
+        "button": "Aplicar"
+      },
+      "gift_note": {
+        "title": "Mensagem",
+        "caption": "Adicione uma mensagem personalizada ao seu pedido",
+        "button": "Aplicar"
+      },
+      "discount": {
+        "title": "Cupom",
+        "caption": "Adicione um código de desconto",
+        "tooltip": "O desconto será aplicado no confira",
+        "button": "Aplicar"
+      },
+      "shipping_calculator": {
+        "title": "Envio",
+        "caption": "Estimar as taxas de envio",
+        "tooltip": "Frete e impostos serão calculados no confira",
+        "button": "Calcular"
+      },
+      "free_shipping": {
+        "remaining_html": "Gaste mais {{ remaining_amount }} para alcançar <strong>Frete grátis!<\/strong>",
+        "congratulations_html": "<strong>Parabéns!<\/strong> Você está qualificado para frete grátis."
+      }
+    },
+    "share": {
+      "copy_to_clipboard": "Link de cópia",
+      "share": "Compartilhar",
+      "share_url": "Link",
+      "success_message": "Link copiado para a área de transferência!"
+    },
+    "slider": {
+      "of": "do",
+      "next_slide": "Deslize para a direita",
+      "previous_slide": "Deslize para a esquerda"
+    },
+    "date": {
+      "d": "D",
+      "day": "Dia",
+      "days": "Dias",
+      "hour": "Hora",
+      "hours": "Horas",
+      "minute": "Minuto",
+      "minutes": "Minutos",
+      "second": "Segundos",
+      "seconds": "Segundos"
+    },
+    "breadcrumbs": {
+      "home": "Casa",
+      "home_link_title": "Voltar para a primeira página"
+    }
+  },
+  "date_formats": {
+    "month_year": "%B %Y",
+    "month_day_year": "%B %d, %Y"
+  },
+  "newsletter": {
+    "label": "Insira o e-mail aqui",
+    "success": "Grato pela inscrever-se",
+    "button_label": "Inscrito\n"
+  },
+  "accessibility": {
+    "skip_to_text": "Ir para o conteúdo",
+    "skip_to_product_info": "Pular para informações do produto",
+    "close": "Perto",
+    "unit_price_separator": "por",
+    "vendor": "Fornecedor:",
+    "error": "Erro",
+    "refresh_page": "Escolher uma seleção resulta em uma atualização de página inteira.",
+    "link_messages": {
+      "new_window": "Abre em uma nova janela.",
+      "external": "Abre site externo."
+    },
+    "loading": "Carregando...",
+    "total_reviews": "Comentários totais",
+    "star_reviews_info": "{{ rating_value }} de {{ rating_max }} estrelas"
+  },
+  "blogs": {
+    "article": {
+      "blog": "Blogue",
+      "all_tags": "Tudo",
+      "read_more_title": "Leia mais: {{ title }}",
+      "read_more": "Leia mais",
+      "comments": {
+        "one": "{{ count }} comentário",
+        "other": "{{ count }} comentários"
+      },
+      "moderated": "Observe que os comentários precisam ser aprovados antes de serem publicados.",
+      "comment_form_title": "Deixe um comentário",
+      "name": "Nome",
+      "email": "E-mail",
+      "message": "Comentário\n",
+      "post": "Postar comentário",
+      "back_to_blog": "Voltar para {{ title }}",
+      "share": "Compartilhe este artigo",
+      "success": "Seu comentário foi postado com sucesso! Obrigada!",
+      "success_moderated": "Seu comentário foi postado com sucesso. Vamos publicá-lo daqui a pouco, pois nosso blog é moderado."
+    }
+  },
+  "onboarding": {
+    "product_title": "Exemplo de título do produto",
+    "collection_title": "O nome da sua coleção",
+    "no_content": "Esta seção atualmente não inclui nenhum conteúdo. Adicione conteúdo a esta seção usando a barra lateral."
+  },
+  "products": {
+    "product": {
+      "color_swatch_trigger": "Cor",
+      "size_chart_trigger": "Tamanho",
+      "size_chart": "Guia de tamanho",
+      "add_to_cart": "Adicionar ao carrinho",
+      "description": "Descrição",
+      "quick_view": "Olhada rápida",
+      "on_sale": "Venda",
+      "product_variants": "Variantes do produto",
+      "media": {
+        "gallery_viewer": "Visualizador da Galeria",
+        "load_image": "Carregar imagem {{ index }} na visualização da galeria",
+        "load_model": "Carregar modelo 3D {{ index }} na visualização da galeria",
+        "load_video": "Reproduzir vídeo {{ index }} na visualização da galeria",
+        "image_available": "A imagem {{ index }} agora está disponível na visualização da galeria",
+        "open_media": "Abra a mídia {{ index }} em modal",
+        "play_model": "Reproduzir visualizador 3D",
+        "play_video": "Reproduzir vídeo"
+      },
+      "quantity": {
+        "label": "Quantidade",
+        "input_label": "Quantidade para {{ product }}",
+        "increase": "Aumente a quantidade de {{ product }}",
+        "decrease": "Diminuir a quantidade para {{ product }}"
+      },
+      "pickup_availability": {
+        "view_store_info": "Ver informações da loja",
+        "check_other_stores": "Verifique a disponibilidade em outras lojas",
+        "pick_up_available": "Pegar disponível",
+        "pick_up_available_at_html": "Pegar disponível em <span class=\"color-foreground\">{{ location_name }}<\/span>",
+        "pick_up_unavailable_at_html": "Pegar atualmente indisponível em <span class=\"color-foreground\">{{ location_name }}<\/span>",
+        "unavailable": "Não foi possível carregar a disponibilidade de pegar ",
+        "refresh": "Refrescar"
+      },
+      "price": {
+        "from_price_html": "De {{ price }}",
+        "regular_price": "Preço regular",
+        "sale_price": "Preço de venda",
+        "unit_price": "Preço unitário"
+      },
+      "inventory": {
+        "in_stock_label": "Em estoque, pronto para enviar",
+        "stock_label_html": {
+          "one": "Corra, apenas <strong>{{ count }}<\/strong> item restante em estoque!",
+          "other": "Corra, apenas <strong>{{ count }}<\/strong> itens restantes em estoque!"
+        },
+        "will_not_ship_until": "Pronto para enviar {{ date }}",
+        "will_be_in_stock_after": "De volta ao estoque {{ date }}",
+        "waiting_for_stock": "Estoque a caminho"
+      },
+      "share": "Compartilhe este produto",
+      "view": "Ver produto",
+      "sold_out": "Vendido",
+      "unavailable": "Indisponível",
+      "pre_order": "Pedido antecipado",
+      "vendor": "Fornecedor",
+      "video_exit_message": "{{ title }} abre o vídeo em tela cheia na mesma janela.",
+      "view_full_details": "Ver detalhes completos",
+      "view_info": "Mais Informações",
+      "view_images": "Ver imagens",
+      "xr_button": "Veja no seu espaço",
+      "xr_button_label": "Visualize em seu espaço, carrega item na janela de realidade aumentada",
+      "include_taxes": "Taxas incluídas.",
+      "shipping_policy_html": "<a href=\"{{ link }}\">Frete<\/a> calculado na finalização da compra."
+    },
+    "modal": {
+      "label": "Galeria de mídia"
+    },
+    "facets": {
+      "apply": "Aplicar",
+      "clear": "Apagar",
+      "clear_all": "Apagar tudo",
+      "from": "A partir de",
+      "filter_and_sort": "Filtrar e classificar",
+      "filter_by_label": "Filtrar",
+      "filter_button": "Filtrar ",
+      "filters_selected": {
+        "one": "{{ count }} selecionado",
+        "other": "{{ count }} selecionado"
+      },
+      "max_price": "O preço mais alto é {{ price }}",
+      "price_html": "Preço: {{ price_min }} — {{ price_max }}",
+      "product_count": {
+        "one": "{{ product_count }} de {{ count }} produto",
+        "other": "{{ product_count }} de {{ count }} produtos"
+      },
+      "product_count_simple": {
+        "one": "{{ count }} produto",
+        "other": "{{ count }} produtos"
+      },
+      "reset": "Redefinir",
+      "sort_button": "Ordenar",
+      "sort_by_label": "Ordenar por",
+      "to": "Para",
+      "clear_filter": "Apagar filtro "
+    }
+  },
+  "templates": {
+    "search": {
+      "empty": "Nenhum resultado encontrado",
+      "use_fewer_filters_html": "Use menos filtros ou <a class=\"{{ class }}\" href=\"{{ link }}\">apagar tudo<\/a>",
+      "no_results": "Nenhum resultado encontrado para “{{ terms }}”",
+      "check_the_spelling": "Verifique a ortografia ou use uma palavra ou frase diferente",
+      "page": "Página",
+      "products": "Produtos",
+      "results_with_count": {
+        "one": "{{ count}} resultado encontrado para “{{ terms }}”",
+        "other": "{{ count }} resultados encontrados para “{{ terms }}”"
+      },
+      "title": "Procurar Resultados",
+      "search_for": "Pesquise por “{{ terms }}”"
+    },
+    "cart": {
+      "cart": "Carrinho"
+    },
+    "contact": {
+      "form": {
+        "name": "Nome",
+        "email": "E-mail",
+        "phone": "Número de telefone",
+        "comment": "Comente",
+        "send": "Enviar mensagem",
+        "post_success": "Obrigado por entrar em contato conosco. Retornaremos o mais breve possível."
+      }
+    },
+    "404": {
+      "title": "Página não encontrada",
+      "subtext": "404"
+    }
+  },
+  "sections": {
+    "header": {
+      "announcement": "Anúncio",
+      "menu": "Menu",
+      "cart_count": {
+        "one": "{{ count }} item",
+        "other": "{{ count }} itens"
+      }
+    },
+    "cart": {
+      "title": "Seu carrinho",
+      "caption": "Itens do carrinho",
+      "remove_title": "Remover {{ title }}",
+      "subtotal": "Subtotal",
+      "new_subtotal": "Novo subtotal",
+      "note": "Adicione uma nota ao seu pedido",
+      "note_placeholder": "Como podemos te ajudar?",
+      "checkout": "Verificação de saída",
+      "empty": "Seu carrinho está vazio no momento",
+      "cart_error": "Ocorreu um erro ao atualizar seu carrinho. Por favor, tente novamente.",
+      "cart_quantity_error_html": "Você só pode adicionar {{ quantity }} deste item ao seu carrinho.",
+      "taxes_and_shipping_policy_at_checkout_html": "Impostos e <a href=\"{{ link }}\">frete<\/a> calculados na finalização da compra",
+      "taxes_included_but_shipping_at_checkout": "Imposto incluído e frete calculado no checkout",
+      "taxes_included_and_shipping_policy_html": "Taxas incluídas. <a href=\"{{ link }}\">Frete<\/a> calculado na finalização da compra.",
+      "taxes_and_shipping_at_checkout": "Impostos e frete calculados no checkout",
+      "headings": {
+        "product": "Produto",
+        "price": "Preço",
+        "total": "Total",
+        "quantity": "Quantidade"
+      },
+      "update": "Atualizar",
+      "gift_wrapping_html": "Por {{ price }}, embrulhe os produtos neste pedido.",
+      "gift_note_placeholder": "Mensagem de presente (gratuita e opcional)"
+    },
+    "footer": {
+      "social_placeholder": "Siga-nos nas redes sociais!",
+      "payment": "Métodos de Pagamento"
+    },
+    "featured_blog": {
+      "view_all": "Ver tudo",
+      "onboarding_title": "Postagem do blog",
+      "onboarding_content": "Dê a seus clientes um resumo de sua postagem no blog"
+    },
+    "featured_collection": {
+      "view_all": "Ver tudo",
+      "view_all_label": "Veja todos os produtos da coleção {{ collection_name }}"
+    },
+    "collection_list": {
+      "view_all": "Ver tudo"
+    },
+    "collection_template": {
+      "title": "Coleção",
+      "no_products": "Desculpe, não há produtos nesta coleção",
+      "empty": "Nenhum produto encontrado",
+      "use_fewer_filters_html": "Use menos filtros ou <a class=\"{{ class }}\" href=\"{{ link }}\">limpar tudo<\/a>"
+    },
+    "video": {
+      "load_video": "Carregar vídeo: {{ description }}"
+    }
+  },
+  "localization": {
+    "country_label": "País\/região",
+    "update_country": "Atualizar país\/região",
+    "language_label": "Linguagem",
+    "update_language": "Atualizar idioma",
+    "text_direction_trigger": "LTR"
+  },
+  "customer": {
+    "account": {
+      "title": "Conta",
+      "details": "Detalhes da conta",
+      "view_addresses": "Ver endereços",
+      "return": "Voltar aos detalhes da conta"
+    },
+    "account_fallback": "Conta",
+    "activate_account": {
+      "title": "Ativar conta",
+      "subtext": "Crie sua senha para ativar sua conta.",
+      "password": "Senha",
+      "password_confirm": "Confirme a Senha",
+      "submit": "Ativar conta",
+      "cancel": "Recusar convite"
+    },
+    "addresses": {
+      "title": "Endereços",
+      "default": "Revelia",
+      "add_new": "Adicione um novo endereço",
+      "edit_address": "Editar Endereço",
+      "first_name": "Primeiro nome",
+      "last_name": "Sobrenome",
+      "company": "Companhia",
+      "address1": "Endereço 1",
+      "address2": "Endereço 2",
+      "city": "Cidade",
+      "country": "País\/região",
+      "province": "Província",
+      "zip": "Código postal",
+      "phone": "Telefone",
+      "set_default": "Definir como endereço padrão",
+      "add": "Adicionar endereço",
+      "update": "Atualizar endereço",
+      "cancel": "Cancelar",
+      "edit": "Editar",
+      "delete": "Excluir",
+      "delete_confirm": "Tem certeza de que deseja excluir este endereço?"
+    },
+    "log_in": "Conecte-se",
+    "log_out": "Sair",
+    "login_page": {
+      "cancel": "Cancelar",
+      "create_account": "Criar conta",
+      "email": "E-mail",
+      "forgot_password": "Esqueceu sua senha?",
+      "guest_continue": "Continuar",
+      "guest_title": "Continuar como convidado",
+      "password": "Senha",
+      "title": "Conecte-se",
+      "sign_in": "Entrar",
+      "submit": "Enviar",
+      "dont_have_account": "Não tem uma conta ainda?",
+      "return": "Retornar à loja"
+    },
+    "order": {
+      "title": "Encomenda {{ name }}",
+      "date_html": "Colocado em {{ date }}",
+      "cancelled_html": "Pedido cancelado em {{ date }}",
+      "cancelled_reason": "Motivo: {{ reason }}",
+      "billing_address": "Endereço de cobrança",
+      "payment_status": "Status do pagamento",
+      "shipping_address": "Endereço de entrega",
+      "fulfillment_status": "Status de preenchimento",
+      "discount": "Desconto",
+      "shipping": "Envio",
+      "tax": "Imposto",
+      "product": "produtos",
+      "sku": "SKU",
+      "price": "Preço",
+      "quantity": "Quantidade",
+      "total": "Total",
+      "fulfilled_at_html": "Cumprido {{ date }}",
+      "track_shipment": "Rastrear remessa",
+      "tracking_url": "Link de rastreamento",
+      "tracking_company": "Portador",
+      "tracking_number": "Número de rastreio",
+      "subtotal": "Subtotal",
+      "total_duties": "Obrigações"
+    },
+    "orders": {
+      "title": "Histórico de pedidos",
+      "order_number": "Ordem",
+      "order_number_link": "Número do pedido {{ number }}",
+      "date": "Encontro",
+      "payment_status": "Status do pagamento",
+      "fulfillment_status": "Status de preenchimento",
+      "total": "Total",
+      "none": "Você ainda não fez nenhum pedido."
+    },
+    "recover_password": {
+      "title": "Redefinir sua senha",
+      "subtext": "Enviaremos um e-mail para redefinir sua senha",
+      "success": "Enviamos um e-mail com um link para atualizar sua senha."
+    },
+    "register": {
+      "title": "Criar uma conta",
+      "first_name": "Primeiro nome",
+      "last_name": "Sobrenome",
+      "email": "E-mail",
+      "password": "Senha",
+      "submit": "Crio",
+      "return": "Retornar à loja"
+    },
+    "reset_password": {
+      "title": "Redefinir senha da conta",
+      "subtext": "Digite uma nova senha para {{ email }}",
+      "password": "Senha",
+      "password_confirm": "Confirme a Senha",
+      "submit": "Redefinir senha"
+    }
+  },
+  "gift_cards": {
+    "issued": {
+      "title": "Aqui está seu vale-presente {{ value }} para {{ shop }}!",
+      "subtext": "Seu cartão-presente",
+      "gift_card_code": "Código do cartão-presente",
+      "shop_link": "Voltar à loja",
+      "remaining_html": "Remanescente {{ balance }}",
+      "add_to_apple_wallet": "Adicionar à Apple Wallet",
+      "qr_image_alt": "Código QR — digitalize para resgatar o cartão-presente",
+      "copy_code": "Copiar código",
+      "expired": "Expirado",
+      "copy_code_success": "Código copiado com sucesso",
+      "print_gift_card": "Imprimir"
+    }
+  }
+}

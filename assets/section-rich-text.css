@@ -1,0 +1,59 @@
+.rich-text__blocks.right .rich-text__text {
+  margin-inline-start: auto;
+}
+
+.rich-text__blocks.center .rich-text__text {
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+}
+/*   CUSTOM CODE */
+.rich-text__blocks {
+/*   background-image: url(https://cdn.shopify.com/s/files/1/0651/2004/3236/files/sd-cat-white.png?v=1662724892);
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-position: top;
+    padding-top: 50px; */
+}
+/* END CUSTOM CODE */
+
+.rich-text__blocks * {
+  overflow-wrap: break-word;
+}
+
+.rich-text__blocks > * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.rich-text__blocks > * + * {
+  margin-top: 2rem;
+}
+
+.rich-text__blocks > * + a {
+  margin-top: 3rem;
+}
+
+.rich-text__text {
+  max-width: 72.6rem;
+}
+
+.rich-text__text--colored {
+  color: rgba(var(--color-foreground), 0.55);
+}
+
+.rich-text__text--colored.rte a {
+  color: rgb(var(--color-link));
+  background-image: linear-gradient(to top, rgb(var(--color-border)) 0px, rgb(var(--color-border)) 0px), linear-gradient(to top, transparent 0px, transparent 0px);
+}
+
+@media screen and (max-width: 749px) {
+  .rich-text__blocks.mobile-center .button {
+    min-width: 60%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .rich-text__blocks .button {
+    width: 100%;
+  }
+}

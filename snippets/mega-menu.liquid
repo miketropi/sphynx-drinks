@@ -1,0 +1,128 @@
+<menu-dropdown class="is-megamenu">
+  <a href="{{ link.url }}" class="header__menu-item{%- if link.current %} header__active-menu-item{% endif %} header__menu-item--top list-menu__item focus-inset"{% if link.current %} aria-current="page"{% endif %}>
+    <span class="label">{{ link.title | escape }}</span>
+  </a>
+  {%- if link.links != blank or block.settings.promo_image_1 != blank or block.settings.promo_image_2 != blank -%}
+    <div class="list-menu-dropdown hidden">
+      <div class="page-width{% if block.settings.narrow %} page-width--inner{% endif %}">
+        {%- if link.links != blank -%}
+          <div class="list-mega-menu">
+            {%- for childlink in link.links -%}
+              <div class="mega-menu__item">
+                <a href="{{ childlink.url }}" class="mega-menu__item-link list-menu__item focus-inset{% if childlink.current %} list-menu__item--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
+                  {%- if childlink.type == 'collection_link' and childlink.object.image and block.settings.show_menu_image -%}
+                    <lazy-image class="image-animate media media--wide">
+                      <img
+                        srcset="{%- if childlink.object.image.width >= 165 -%}{{ childlink.object.image | image_url: width: 165 }} 165w{%- endif -%}
+                          {%- if childlink.object.image.width >= 375 -%},{{ childlink.object.image | image_url: width: 375 }} 375w{%- endif -%}
+                          {%- if childlink.object.image.width >= 550 -%},{{ childlink.object.image | image_url: width: 550 }} 550w{%- endif -%}
+                          {%- if childlink.object.image.width >= 750 -%},{{ childlink.object.image | image_url: width: 750 }} 750w{%- endif -%}
+                          {%- if childlink.object.image.width >= 1100 -%},{{ childlink.object.image | image_url: width: 1100 }} 1100w{%- endif -%},
+                          {{ childlink.object.image | image_url }} {{ childlink.object.image.width }}w"
+                        src="{{ childlink.object.image | image_url: width: 550 }}"
+                        sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
+                        alt="{{ childlink.object.image.alt | escape }}"
+                        loading="lazy"
+                        class="motion-reduce"
+                        width="{{ childlink.object.image.width }}"
+                        height="{{ childlink.object.image.height }}"
+                      />
+                    </lazy-image>
+                  {%- endif -%}
+                  <div class="header__menu-item">
+                    <span class="label">{{ childlink.title | escape }}</span>
+                  </div>
+                </a>
+      
+                {%- if childlink.links != blank -%}
+                  <ul class="list-menu-child list-menu">
+                    {%- for grandchildlink in childlink.links -%}
+                      <li>
+                        <a href="{{ grandchildlink.url }}" class="header__menu-item list-menu__item focus-inset{% if grandchildlink.current %} list-menu__item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                          <span class="label">{{ grandchildlink.title | escape }}</span>
+                        </a>
+                      </li>
+                    {%- endfor -%}
+                  </ul>
+                {%- endif -%}
+              </div>
+            {%- endfor -%}
+            {%- if link.links.size < 4 -%}
+              <div class="mega-menu__item mega-menu__item--blank"></div>
+            {%- endif -%}
+          </div>
+        {%- endif -%}
+        {%- if block.settings.promo_image_1 != blank -%}
+          <div class="mega-menu__promo{% if block.settings.promo_overlay_content_1 %} mega-menu__promo--overlay{% endif %}">
+            <a class="mega-menu__promo-link"{% if block.settings.promo_link_1 != blank %} href="{{ block.settings.promo_link_1 }}"{% else %} role="link" aria-disabled="true"{% endif %}>
+              <lazy-image class="image-animate media media--{{ block.settings.promo_image_ratio_1 }}"
+                style="--image-position: {{ block.settings.promo_image_position_1 }};{% if block.settings.promo_image_ratio_1 == 'adapt' %}--image-ratio-percent: {{ 1 | divided_by: block.settings.promo_image_1.aspect_ratio | times: 100 }}%;{% endif %}"
+              >
+                <img
+                  srcset="{%- if block.settings.promo_image_1.width >= 165 -%}{{ block.settings.promo_image_1 | image_url: width: 165 }} 165w{%- endif -%}
+                    {%- if block.settings.promo_image_1.width >= 375 -%},{{ block.settings.promo_image_1 | image_url: width: 375 }} 375w{%- endif -%}
+                    {%- if block.settings.promo_image_1.width >= 550 -%},{{ block.settings.promo_image_1 | image_url: width: 550 }} 550w{%- endif -%}
+                    {%- if block.settings.promo_image_1.width >= 750 -%},{{ block.settings.promo_image_1 | image_url: width: 750 }} 750w{%- endif -%}
+                    {%- if block.settings.promo_image_1.width >= 1100 -%},{{ block.settings.promo_image_1 | image_url: width: 1100 }} 1100w{%- endif -%},
+                    {{ block.settings.promo_image_1 | image_url }} {{ block.settings.promo_image_1.width }}w"
+                  src="{{ block.settings.promo_image_1 | image_url: width: 550 }}"
+                  sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
+                  alt="{{ block.settings.promo_image_1.alt | escape }}"
+                  loading="lazy"
+                  class="motion-reduce"
+                  width="{{ block.settings.promo_image_1.width }}"
+                  height="{{ block.settings.promo_image_1.height }}"
+                />
+              </lazy-image>
+              {%- if block.settings.promo_heading_1 != blank or block.settings.promo_text_1 != blank -%}
+                <div class="mega-menu__promo-content">
+                  {%- if block.settings.promo_heading_1 != blank -%}
+                    <div class="mega-menu__promo-heading">
+                      <span class="label">{{ block.settings.promo_heading_1 | escape }}</span>
+                    </div>
+                  {%- endif -%}
+                  <div class="mega-menu__promo-subheading">{{ block.settings.promo_text_1 | escape }}</div>
+                </div>
+              {%- endif -%}
+            </a>
+          </div>
+        {%- endif -%}
+        {%- if block.settings.promo_image_2 != blank -%}
+          <div class="mega-menu__promo{% if block.settings.promo_overlay_content_2 %} mega-menu__promo--overlay{% endif %}">
+            <a class="mega-menu__promo-link"{% if block.settings.promo_link_2 != blank %} href="{{ block.settings.promo_link_2 }}"{% else %} role="link" aria-disabled="true"{% endif %}>
+              <lazy-image class="image-animate media media--{{ block.settings.promo_image_ratio_2 }}"
+                style="--image-position: {{ block.settings.promo_image_position_2 }};{% if block.settings.promo_image_ratio_2 == 'adapt' %}--image-ratio-percent: {{ 1 | divided_by: block.settings.promo_image_2.aspect_ratio | times: 100 }}%;{% endif %}"
+              >
+                <img
+                  srcset="{%- if block.settings.promo_image_2.width >= 165 -%}{{ block.settings.promo_image_2 | image_url: width: 165 }} 165w{%- endif -%}
+                    {%- if block.settings.promo_image_2.width >= 375 -%},{{ block.settings.promo_image_2 | image_url: width: 375 }} 375w{%- endif -%}
+                    {%- if block.settings.promo_image_2.width >= 550 -%},{{ block.settings.promo_image_2 | image_url: width: 550 }} 550w{%- endif -%}
+                    {%- if block.settings.promo_image_2.width >= 750 -%},{{ block.settings.promo_image_2 | image_url: width: 750 }} 750w{%- endif -%}
+                    {%- if block.settings.promo_image_2.width >= 1100 -%},{{ block.settings.promo_image_2 | image_url: width: 1100 }} 1100w{%- endif -%},
+                    {{ block.settings.promo_image_2 | image_url }} {{ block.settings.promo_image_2.width }}w"
+                  src="{{ block.settings.promo_image_2 | image_url: width: 550 }}"
+                  sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
+                  alt="{{ block.settings.promo_image_2.alt | escape }}"
+                  loading="lazy"
+                  class="motion-reduce"
+                  width="{{ block.settings.promo_image_2.width }}"
+                  height="{{ block.settings.promo_image_2.height }}"
+                />
+              </lazy-image>
+              {%- if block.settings.promo_heading_2 != blank or block.settings.promo_text_2 != blank -%}
+                <div class="mega-menu__promo-content">
+                  {%- if block.settings.promo_heading_2 != blank -%}
+                    <div class="mega-menu__promo-heading">
+                      <span class="label">{{ block.settings.promo_heading_2 | escape }}</span>
+                    </div>
+                  {%- endif -%}
+                  <div class="mega-menu__promo-subheading">{{ block.settings.promo_text_2 | escape }}</div>
+                </div>
+              {%- endif -%}
+            </a>
+          </div>
+        {%- endif -%}
+      </div>
+    </div>
+  {%- endif -%}
+</menu-dropdown>

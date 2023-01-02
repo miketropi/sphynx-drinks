@@ -1,0 +1,113 @@
+{% comment %}
+  Renders product media
+
+  Accepts:
+  - media: {Object} Product Media object
+  - loop: {Boolean} Enable video looping (optional)
+  - variant_image: {Boolean} The media associated with a variant
+  - gang_exist: {Boolean} The gang fearure exist or not
+  - gang_media_active: {Boolean} The media is associated with current variant
+  - gang_option_name: {String} Option name used for gang variant
+  - gang_connect: {String} The string that setup in ALT of the media
+
+  Usage:
+  {% render 'product-media',
+    media: media,
+    loop: section.settings.enable_video_looping,
+    variant_image: true
+  %}
+{% endcomment %}
+
+{%- if media.media_type == 'image' -%}
+  <img
+    srcset="{%- if media.preview_image.width >= 550 -%}{{ media.preview_image | image_url: width: 550 }} 550w{%- endif -%}
+      {%- if media.preview_image.width >= 750 -%},{{ media.preview_image | image_url: width: 750 }} 750w{%- endif -%}
+      {%- if media.preview_image.width >= 1100 -%},{{ media.preview_image | image_url: width: 1100 }} 1100w{%- endif -%}
+      {%- if media.preview_image.width >= 1500 -%},{{ media.preview_image | image_url: width: 1500 }} 1500w{%- endif -%}
+      {%- if media.preview_image.width >= 2200 -%},{{ media.preview_image | image_url: width: 2200 }} 2200w{%- endif -%}
+      {%- if media.preview_image.width >= 3000 -%},{{ media.preview_image | image_url: width: 3000 }} 3000w{%- endif -%},
+      {{ media.preview_image | image_url }} {{ media.preview_image.width }}w"
+    src="{{ media.preview_image | image_url: width: 750 }}"
+    sizes="(min-width: 750px) calc(100vw - 12rem), 100vw"
+    alt="{{ media.preview_image.alt | escape | split: '#' | first }}"
+    loading="lazy"
+    width="1100"
+    height="{{ 1100 | divided_by: media.preview_image.aspect_ratio | ceil }}"
+    data-media-id="{{ media.id }}"
+    class="{% if variant_image %}product__media-item--variant{% endif %}{% if gang_media_active == true %} gang__active{% endif %}"
+    {% if gang_exist == true %}data-gang-option="{{ gang_option_name }}" data-gang-connect="{{ gang_connect }}"{% endif %}
+  />
+{%- else -%}
+  {%- if media.media_type == 'model' -%}
+    <div class="product-media-modal__model{% if gang_media_active == true %} gang__active{% endif %}" data-media-id="{{ media.id }}"
+      {% if gang_exist == true %}data-gang-option="{{ gang_option_name }}" data-gang-connect="{{ gang_connect }}"{% endif %}
+    >
+      <product-model class="deferred-media media" style="padding-top: min(calc(100vh - 12rem), 100%)">
+  {%- else -%}
+    <deferred-media class="deferred-media media{% if gang_media_active == true %} gang__active{% endif %}" style="padding-top: min(calc(100vh - 12rem), {{ 1 | divided_by: media.aspect_ratio | times: 100 }}%)" data-media-id="{{ media.id }}"
+      {% if gang_exist == true %}data-gang-option="{{ gang_option_name }}" data-gang-connect="{{ gang_connect }}"{% endif %}
+    >
+  {%- endif -%}
+  <img
+    srcset="{%- if media.preview_image.width >= 550 -%}{{ media.preview_image | image_url: width: 550 }} 550w{%- endif -%}
+      {%- if media.preview_image.width >= 750 -%},{{ media.preview_image | image_url: width: 750 }} 750w{%- endif -%}
+      {%- if media.preview_image.width >= 1100 -%},{{ media.preview_image | image_url: width: 1100 }} 1100w{%- endif -%}
+      {%- if media.preview_image.width >= 1500 -%},{{ media.preview_image | image_url: width: 1500 }} 1500w{%- endif -%}
+      {%- if media.preview_image.width >= 2200 -%},{{ media.preview_image | image_url: width: 2200 }} 2200w{%- endif -%}
+      {%- if media.preview_image.width >= 3000 -%},{{ media.preview_image | image_url: width: 3000 }} 3000w{%- endif -%},
+      {{ media.preview_image | image_url }} {{ media.preview_image.width }}w"
+    src="{{ media | image_url: width: 750 }}"
+    sizes="(min-width: 750px) calc(100vw - 12rem), 100vw"
+    alt="{{ media.preview_image.alt | escape }}"
+    loading="lazy"
+    width="1100"
+    height="{{ 1100 | divided_by: media.preview_image.aspect_ratio }}"
+  />
+  <button id="Deferred-Poster-Modal-{{ media.id }}" class="deferred-media__poster" type="button">
+    <span class="deferred-media__poster-button motion-reduce">
+      {%- liquid
+        if media.media_type == 'model'
+          render 'icon', icon: '3d-model'
+        else
+          render 'icon', icon: 'play'
+        endif
+      -%}
+    </span>
+  </button>
+  <template>
+    {%- liquid
+      case media.media_type
+      when 'external_video'
+        assign video_class = 'js-' | append: media.host
+        if media.host == 'youtube'
+          echo media | external_video_url: autoplay: true, loop: section.settings.enable_video_looping, playlist: media.external_id | external_video_tag: class: video_class, loading: "lazy"
+        else
+          echo media | external_video_url: autoplay: true, loop: section.settings.enable_video_looping | external_video_tag: class: video_class, loading: "lazy"
+        endif
+      when 'video'
+        echo media | media_tag: image_size: "2200x", autoplay: true, loop: section.settings.enable_video_looping, controls: true, controlsList: "nodownload", preload: "none"
+      when 'model'
+        echo media | media_tag: image_size: "2200x", toggleable: true
+      endcase
+    -%}
+  </template>
+
+  {%- if media.media_type == 'model' -%}
+      </product-model>
+      <button
+        class="button button--full-width product__xr-button"
+        type="button"
+        aria-label="{{ 'products.product.xr_button_label' | t }}"
+        data-shopify-xr
+        data-shopify-model3d-id="{{ media.id }}"
+        data-shopify-title="title"
+        data-shopify-xr-hidden
+      >
+        {% render 'icon', icon: '3d-model' %}
+        {{ 'products.product.xr_button' | t }}
+      </button>
+    </div>
+  {%- else -%}
+    </deferred-media>
+  {%- endif -%}
+{%- endif -%}

@@ -1,0 +1,57 @@
+{%- if predictive_search.performed -%}
+  <div class="predictive-search-results">
+    {%- if predictive_search.resources.products.size > 0 -%} 
+      <h2 id="predictive-search-products" class="predictive-search__heading h4">
+        {{ 'templates.search.products' | t }}
+      </h2>
+    {%- endif -%}
+    <ul id="predictive-search-results-list" class="predictive-search__results-list list-unstyled" role="listbox" aria-labelledby="predictive-search-products">
+      {%- for product in predictive_search.resources.products -%}
+        <li id="predictive-search-option-{{ forloop.index }}" class="predictive-search__list-item" role="option" aria-selected="false">
+          <a href="{{ product.url }}" class="predictive-search__item predictive-search__item--link link link--text" tabindex="-1">
+            {%- if product.featured_media != blank -%}
+              <span class="predictive-search__image media-wrapper media-wrapper--small">
+                <lazy-image class="media media--adapt"
+                  style="--image-ratio-percent: {{ 1 | divided_by: product.featured_media.aspect_ratio | times: 100 }}%;"
+                >
+                  <img srcset="{{ product.featured_media | image_url: width: 70 }} 1x, {{ product.featured_media | image_url: width: 140 }} 2x"
+                    src="{{ product.featured_media | image_url: width: 70 }}"
+                    alt="{{ product.featured_media.alt }}"
+                    width="70"
+                    height="{{ 70 | divided_by: product.featured_media.preview_image.aspect_ratio }}"
+                    loading="lazy"
+                  />
+                </lazy-image>
+              </span>
+            {%- endif -%}
+            <div class="predictive-search__item-content">
+              {%- if settings.predictive_search_show_vendor -%} 
+                <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>
+                <div class="predictive-search__item-vendor caption-with-letter-spacing">{{ product.vendor }}</div>
+              {%- endif -%}
+              <span class="predictive-search__item-heading h4">{{ product.title }}</span>
+              {%- if settings.predictive_search_show_price -%}
+                {% render 'price', product: product %} 
+              {%- endif -%}
+            </div>
+          </a>
+        </li>
+      {%- endfor -%}
+      <li id="predictive-search-option-search-keywords" class="predictive-search__list-item" role="option">
+        <button type="submit" class="predictive-search__item--term button button--small button--full-width" tabindex="-1">
+          {{ 'templates.search.search_for' | t: terms: predictive_search.terms }}
+        </button>
+      </li> 
+    </ul>
+  </div>
+
+  <span class="hidden" data-predictive-search-live-region-count-value>
+    {%- liquid
+      if search.results_count == 0
+        echo 'templates.search.no_results' | t: terms: predictive_search.terms
+      else
+        echo 'templates.search.results_with_count' | t: terms: predictive_search.terms, count: predictive_search.resources.products.size
+      endif
+    -%}
+  </span>
+{%- endif -%}

@@ -1,0 +1,55 @@
+{% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
+<div class="slideshow__image-wrapper media-wrapper">
+  <div class="image-animate">
+    {%- if block.settings.image != blank -%}
+      <lazy-image class="slideshow__image media media--{{ section.settings.image_ratio }} media-mobile--{{ section.settings.mobile_image_ratio }}"
+        style="--image-position: {{ block.settings.image_position }}"
+      >
+        <img
+          srcset="{%- if block.settings.image.width >= 375 -%}{{ block.settings.image | image_url: width: 375 }} 375w{%- endif -%}
+            {%- if block.settings.image.width >= 550 -%},{{ block.settings.image | image_url: width: 550 }} 550w{%- endif -%}
+            {%- if block.settings.image.width >= 750 -%},{{ block.settings.image | image_url: width: 750 }} 750w{%- endif -%}
+            {%- if block.settings.image.width >= 1100 -%},{{ block.settings.image | image_url: width: 1100 }} 1100w{%- endif -%}
+            {%- if block.settings.image.width >= 1500 -%},{{ block.settings.image | image_url: width: 1500 }} 1500w{%- endif -%}
+            {%- if block.settings.image.width >= 2200 -%},{{ block.settings.image | image_url: width: 2200 }} 2200w{%- endif -%}
+            {%- if block.settings.image.width >= 3000 -%},{{ block.settings.image | image_url: width: 3000 }} 3000w{%- endif -%},
+            {{ block.settings.image | image_url }} {{ block.settings.image.width }}w"
+          src="{{ block.settings.image | image_url: width: 550 }}"
+          sizes="100vw"
+          alt="{{ block.settings.image.alt | escape }}"
+          width="{{ block.settings.image.width }}"
+          height="{{ block.settings.image.height }}"
+          loading="lazy"
+          {%- if block.settings.image_mobile != blank %} class="small-hide"{% endif -%}
+        />
+        {%- if block.settings.image_mobile != blank -%}
+          <img
+            srcset="{%- if block.settings.image_mobile.width >= 375 -%}{{ block.settings.image_mobile | image_url: width: 375 }} 375w{%- endif -%}
+              {%- if block.settings.image_mobile.width >= 550 -%},{{ block.settings.image_mobile | image_url: width: 550 }} 550w{%- endif -%}
+              {%- if block.settings.image_mobile.width >= 750 -%},{{ block.settings.image_mobile | image_url: width: 750 }} 750w{%- endif -%}
+              {%- if block.settings.image_mobile.width >= 1100 -%},{{ block.settings.image_mobile | image_url: width: 1100 }} 1100w{%- endif -%}
+              {%- if block.settings.image_mobile.width >= 1500 -%},{{ block.settings.image_mobile | image_url: width: 1500 }} 1500w{%- endif -%}
+              {%- if block.settings.image_mobile.width >= 2200 -%},{{ block.settings.image_mobile | image_url: width: 2200 }} 2200w{%- endif -%}
+              {%- if block.settings.image_mobile.width >= 3000 -%},{{ block.settings.image_mobile | image_url: width: 3000 }} 3000w{%- endif -%},
+              {{ block.settings.image_mobile | image_url }} {{ block.settings.image_mobile.width }}w"
+            src="{{ block.settings.image_mobile | image_url: width: 550 }}"
+            sizes="100vw"
+            alt="{{ block.settings.image_mobile.alt | escape }}"
+            width="{{ block.settings.image_mobile.width }}"
+            height="{{ block.settings.image_mobile.width | divided_by: block.settings.image_mobile.aspect_ratio }}"
+            loading="lazy"
+            class="medium-hide large-up-hide"
+          />
+        {%- endif -%}
+      </lazy-image>
+    {%- else -%}
+      <div class="slideshow__image slideshow__image--placeholder media media--{{ section.settings.image_ratio }} media-mobile--{{ section.settings.mobile_image_ratio }}">
+        {%- assign current = position | modulo: 2 | plus: 1 -%}
+        {{ 'lifestyle-' | append: current | placeholder_svg_tag: 'placeholder' }}
+      </div>
+    {%- endif -%}
+    {%- if block.settings.button_link != blank -%}
+      <a href="{{ block.settings.button_link }}" class="full-unstyled-link">&nbsp;</a>
+    {%- endif -%}
+  </div>
+</div>

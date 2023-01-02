@@ -1,0 +1,176 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: calc({{ section.settings.padding_top }}px * 0.75);
+    padding-bottom: calc({{ section.settings.padding_bottom }}px  * 0.75);
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+{{ 'section-faq.css' | asset_url | stylesheet_tag }}
+
+<div class="section-{{ section.id }}-padding{% if section.settings.show_divider %} section--divider{% endif %}">
+  {%- if section.settings.secondary_background -%}
+    <div class="faq--colored">
+  {%- endif -%}
+    <div class="faq page-width{% if section.settings.narrow %} page-width--inner{% endif %}">
+      <div class="title-wrapper{% if section.settings.heading == blank %} title-wrapper--no-heading{% endif %}">
+        <h2 class="title {{ section.settings.heading_size }}">{{ section.settings.heading | escape }}</h2>
+      </div>
+
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when 'rich-text' -%}
+            <h3 {{ block.shopify_attributes }}>{{ block.settings.title | escape }}</h3>
+            <div class="rte">{{ block.settings.text }}</div>
+          {%- when 'question' -%}
+            <details {{ block.shopify_attributes }}>
+              <summary>
+                <span>
+                  <span class="icon icon-plus-alt"></span>
+                  {{ block.settings.title | escape }}
+                </span>
+              </summary>
+              <div class="rte typeset">
+                {{ block.settings.text }}
+              </div>
+            </details>
+        {%- endcase -%}
+      {%- endfor -%}
+    </div>
+  {%- if section.settings.secondary_background -%}
+    </div>
+  {%- endif -%}
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.faq.name",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "FAQs",
+      "label": "t:sections.all.heading.label"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h2",
+          "label": "t:sections.all.heading_size.options__1.label"
+        },
+        {
+          "value": "h1",
+          "label": "t:sections.all.heading_size.options__2.label"
+        },
+        {
+          "value": "h0",
+          "label": "t:sections.all.heading_size.options__3.label"
+        }
+      ],
+      "default": "h2",
+      "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "narrow",
+      "default": true,
+      "label": "t:sections.all.narrow.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "secondary_background",
+      "default": false,
+      "label": "t:sections.faq.settings.secondary_background.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_divider",
+      "default": false,
+      "label": "t:sections.all.show_divider.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.header.content"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "t:sections.all.padding.padding_top.unit",
+      "label": "t:sections.all.padding.padding_top.label",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "t:sections.all.padding.padding_bottom.unit",
+      "label": "t:sections.all.padding.padding_bottom.label",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "rich-text",
+      "name": "t:sections.faq.blocks.rich-text.name",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "default": "Rich text",
+          "label": "t:sections.faq.blocks.rich-text.settings.title.label"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "default": "<p>Use this section for any descriptive text you need to fill out your pages or to add introductory headings between other blocks.</p>",
+          "label": "t:sections.faq.blocks.rich-text.settings.text.label"
+        }
+      ]
+    },
+    {
+      "type": "question",
+      "name": "t:sections.faq.blocks.question.name",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "default": "Frequently asked question",
+          "label": "t:sections.faq.blocks.question.settings.title.label"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "t:sections.faq.blocks.question.settings.text.label",
+          "default": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [{
+    "name": "t:sections.faq.presets.name",
+    "blocks": [
+      {
+        "type": "question"
+      },
+      {
+        "type": "question"
+      }
+    ]
+  }]
+}
+{% endschema %}

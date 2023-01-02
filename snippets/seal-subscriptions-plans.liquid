@@ -1,0 +1,5 @@
+{% if product.handle != product %}
+    <div data-product="{{ product | json | escape }}" data-handle="{{ product.handle }}" class="sealsubs-target-element"></div>
+{% else %}
+    <div data-handle="{{ product.handle }}" class="sealsubs-target-element"></div>
+{% endif %}

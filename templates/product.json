@@ -1,0 +1,733 @@
+{
+  "sections": {
+    "empty-space": {
+      "type": "empty-space",
+      "settings": {
+        "desktop_height": 36,
+        "mobile_height": 0
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "breadcrumb": {
+          "type": "breadcrumb",
+          "disabled": true,
+          "settings": {
+            "text_style": "uppercase",
+            "show_divider": true
+          }
+        },
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "icon": "none",
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "00e2c408-c78b-47ca-abdd-05f12b252e39": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "<img src=\"{{product.metafields.vendor.product_logo | img_url: '100x'}}\">"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "h1"
+          }
+        },
+        "e97dd1fa-caeb-4f6f-9703-a30491809756": {
+          "type": "shopify:\/\/apps\/product-reviews\/blocks\/star_rating\/bae150af-8da8-48b2-9867-398188115e5f",
+          "settings": {
+            "stars_fill_color": "#ffe036",
+            "star_size": 20,
+            "text_align": "flex-start",
+            "product": "{{product}}",
+            "stars_text_empty": "No reviews"
+          }
+        },
+        "a00e2667-dbbb-4a4a-a81e-e510539be670": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% if product.metafields.custom.standfirst %}\n\n<h4> {{product.metafields.custom.standfirst}}<\/h4>\n\n{% endif %}"
+          }
+        },
+        "rating": {
+          "type": "rating",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "countdown": {
+          "type": "countdown",
+          "settings": {
+            "heading": "Hurry up ! Sale end in:",
+            "number_size": "compact",
+            "colors_heading": "#da3f3f",
+            "colors_text": "#da3f3f",
+            "colors_background": "#ffeeee"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "show_variant_labels": true,
+            "picker_type": "button",
+            "enable_color_swatches": true,
+            "swatch_type": "round",
+            "size_chart": ""
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "21785ad9-5d4e-467e-9a36-1a67e51ef66b": {
+          "type": "text",
+          "settings": {
+            "icon": "bottle",
+            "text": "ABV: {{ product.metafields.product.abv.value }}",
+            "text_style": "body"
+          }
+        },
+        "3b1fc5ad-a436-4113-9d50-cdff982bce0e": {
+          "type": "text",
+          "settings": {
+            "icon": "serving_dish",
+            "text": "Calories: {{ product.metafields.product.calories.value }}",
+            "text_style": "body"
+          }
+        },
+        "65f28248-07c4-4c2e-a889-eee54a3bc4d8": {
+          "type": "text",
+          "settings": {
+            "icon": "plant",
+            "text": "Sugar: {{ product.metafields.product.sugar.value }}",
+            "text_style": "body"
+          }
+        },
+        "collapsible_tab-0": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "icon": "none",
+            "heading": "1. Collapsible tab",
+            "content": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_tab-1": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "icon": "none",
+            "heading": "2. Collapsible tab",
+            "content": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+            "page": ""
+          }
+        },
+        "27bfa052-ba43-4f78-a35d-1ebf7e5febb2": {
+          "type": "shopify:\/\/apps\/seal-subscriptions-loyalty\/blocks\/subscription-widget\/13b25004-a140-4ab7-b5fe-29918f759699",
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "show_dynamic_checkout": true
+          }
+        },
+        "inventory_status": {
+          "type": "inventory_status",
+          "settings": {
+            "inventory_threshold": 20,
+            "show_inventory_transfer": true,
+            "color_scheme": "accent-3"
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+          }
+        },
+        "related_buttons": {
+          "type": "related_buttons",
+          "disabled": true,
+          "settings": {
+            "show_icons": false
+          }
+        },
+        "sticky_cart": {
+          "type": "sticky_cart",
+          "disabled": true,
+          "settings": {
+            "show_quantity_selector": true
+          }
+        },
+        "787c2308-ff7f-454c-aa36-9a330887003a": {
+          "type": "shopify:\/\/apps\/back-in-stock-customer-alerts\/blocks\/app-block\/bfa6a8c4-24e2-411a-9396-e35031b33f34",
+          "settings": {
+            "caption": "Email when available",
+            "font_size": 16,
+            "color": "#ffffff",
+            "background_color": "#000000",
+            "margin_top": 10,
+            "margin_bottom": 10,
+            "classes": "button button--full-width",
+            "style": "text-decoration:none"
+          }
+        }
+      },
+      "block_order": [
+        "breadcrumb",
+        "vendor",
+        "00e2c408-c78b-47ca-abdd-05f12b252e39",
+        "title",
+        "e97dd1fa-caeb-4f6f-9703-a30491809756",
+        "a00e2667-dbbb-4a4a-a81e-e510539be670",
+        "rating",
+        "price",
+        "countdown",
+        "variant_picker",
+        "description",
+        "21785ad9-5d4e-467e-9a36-1a67e51ef66b",
+        "3b1fc5ad-a436-4113-9d50-cdff982bce0e",
+        "65f28248-07c4-4c2e-a889-eee54a3bc4d8",
+        "collapsible_tab-0",
+        "collapsible_tab-1",
+        "27bfa052-ba43-4f78-a35d-1ebf7e5febb2",
+        "buy_buttons",
+        "inventory_status",
+        "share",
+        "related_buttons",
+        "sticky_cart",
+        "787c2308-ff7f-454c-aa36-9a330887003a"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "media_size": "small",
+        "gallery_layout": "thumbnail_slider",
+        "image_ratio": "adapt",
+        "show_thumbnails": true,
+        "hide_variants": true,
+        "enable_image_zoom": false,
+        "enable_video_looping": false,
+        "mobile_image_ratio": "adapt_first",
+        "show_mobile_thumbnails": true,
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "guarantees": {
+      "type": "guarantees",
+      "disabled": true,
+      "blocks": {
+        "guarantee-0": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "truck",
+            "title": "FAST SHIPPING",
+            "title_size": "h3",
+            "text": "<p>Quick, reliable delivery, no matter where you are or how big your order is.<\/p>"
+          }
+        },
+        "guarantee-1": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "map_pin",
+            "title": "LOCAL BIZ",
+            "title_size": "h3",
+            "text": "<p>We're 100% Australian owned and operated, so you can be confident you're keeping it local with an independent retailer.<\/p>"
+          }
+        },
+        "guarantee-2": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "globe",
+            "title": "SHOP FOR GOOD",
+            "title_size": "h3",
+            "text": "<p> We donate a percentage of every sale to our valued non-profit partners, so your purchase is making a big difference.<\/p>"
+          }
+        },
+        "guarantee-3": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "question_mark",
+            "title": "HERE TO HELP",
+            "title_size": "h3",
+            "text": "<p>Any issues? Questions? Feedback? Our customer service team is waiting on ice (with an esky of non-alc beers).<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "guarantee-0",
+        "guarantee-1",
+        "guarantee-2",
+        "guarantee-3"
+      ],
+      "settings": {
+        "heading": "Guarantees",
+        "heading_size": "h1",
+        "layout": "sidebar",
+        "column_alignment": "center",
+        "secondary_background": false,
+        "full_width": true,
+        "show_divider": false,
+        "columns_mobile": "1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich-text": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "A MENU OF FLAVOURS & STYLES: THE BEST RANGE OF NON-ALC DRINKS IN AUSTRALIA",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p><em>– SUBHEADING<\/em><\/p>",
+            "text_size": "typeset",
+            "secondary_color": true
+          }
+        },
+        "342dca6a-5061-4618-866c-ed6bf6cd9cd9": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "342dca6a-5061-4618-866c-ed6bf6cd9cd9"
+      ],
+      "settings": {
+        "text_alignment": "center",
+        "narrow": false,
+        "show_divider": false,
+        "mobile_text_alignment": "center",
+        "padding_top": 48,
+        "padding_bottom": 60
+      }
+    },
+    "product-details": {
+      "type": "product-details",
+      "disabled": true,
+      "blocks": {
+        "product-details-0": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "heading": ""
+          }
+        },
+        "product-details-1": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "1. Shipping",
+            "content": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+            "page": ""
+          }
+        },
+        "product-details-2": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "2. Contact Us",
+            "content": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+            "page": ""
+          }
+        },
+        "product-details-3": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "3. Shop For Good",
+            "content": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "product-details-0",
+        "product-details-1",
+        "product-details-2",
+        "product-details-3"
+      ],
+      "settings": {
+        "heading": "Collapsible tabs",
+        "heading_size": "h1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image-comparison": {
+      "type": "image-comparison",
+      "disabled": true,
+      "blocks": {
+        "look-0": {
+          "type": "look",
+          "settings": {
+            "title": "Before",
+            "title_size": "small",
+            "title_position": "start"
+          }
+        },
+        "look-1": {
+          "type": "look",
+          "settings": {
+            "title": "After",
+            "title_size": "small",
+            "title_position": "start"
+          }
+        }
+      },
+      "block_order": [
+        "look-0",
+        "look-1"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "layout": "horizontal",
+        "full_width": false,
+        "show_divider": false,
+        "colors_line": "#ffffff",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "heading": "You May Also Like",
+        "heading_size": "h2",
+        "show_divider": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "image_ratio": "adapt",
+        "image_position": "center center",
+        "enable_image_fill": false,
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": true,
+        "show_quick_buy": true,
+        "enable_quick_view": true,
+        "enable_color_swatches": true,
+        "enable_countdown": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "165638266010f0404e": {
+      "type": "apps",
+      "blocks": {
+        "449dba7b-a55d-496e-9fda-ec0829382728": {
+          "type": "shopify:\/\/apps\/product-reviews\/blocks\/reviews\/bae150af-8da8-48b2-9867-398188115e5f",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "449dba7b-a55d-496e-9fda-ec0829382728"
+      ],
+      "settings": {
+        "include_margins": true,
+        "show_divider": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "recently-viewed-products": {
+      "type": "recently-viewed-products",
+      "disabled": true,
+      "settings": {
+        "heading": "Recently Viewed",
+        "heading_size": "h2",
+        "show_divider": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "image_ratio": "portrait",
+        "image_position": "center center",
+        "enable_image_fill": true,
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": true,
+        "show_quick_buy": true,
+        "enable_quick_view": true,
+        "enable_color_swatches": true,
+        "enable_countdown": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "video-hero": {
+      "type": "video-hero",
+      "disabled": true,
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Video hero",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post.<\/p>",
+            "text_size": "typeset2",
+            "secondary_color": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "video_url": "",
+        "text_box_position": "middle-center",
+        "text_alignment": "center",
+        "image_ratio": "650px",
+        "show_text_box": false,
+        "full_width": true,
+        "show_divider": false,
+        "mobile_text_alignment": "center",
+        "mobile_image_ratio": "auto",
+        "show_text_below": true,
+        "colors_text": "#ffffff",
+        "colors_overlay": "#000000",
+        "colors_overlay_opacity": 28,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "tab-collage": {
+      "type": "tab-collage",
+      "disabled": true,
+      "blocks": {
+        "tab-collage-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/brittani-burns-7FOVFdONpYQ-unsplash.jpg",
+            "heading": "1. Collection A",
+            "description": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        },
+        "tab-collage-1": {
+          "type": "image",
+          "settings": {
+            "heading": "2. Collection B",
+            "description": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        },
+        "tab-collage-2": {
+          "type": "image",
+          "settings": {
+            "heading": "3. Image heading",
+            "description": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        },
+        "tab-collage-3": {
+          "type": "image",
+          "settings": {
+            "heading": "4. Image heading",
+            "description": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "tab-collage-0",
+        "tab-collage-1",
+        "tab-collage-2",
+        "tab-collage-3"
+      ],
+      "settings": {
+        "heading": "COLLECTIONS Tab collage",
+        "heading_size": "h1",
+        "image_position": "center center",
+        "layout": "text_first",
+        "text_box_position": "top",
+        "text_alignment": "left",
+        "image_ratio": "550px",
+        "full_width": true,
+        "show_divider": false,
+        "mobile_layout": "text_first",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "auto",
+        "colors_text": "#ffffff",
+        "colors_background": "#00cfff",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "testimonials": {
+      "type": "testimonials",
+      "disabled": true,
+      "blocks": {
+        "testimonial-0": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5",
+            "text": "<p>Add customer reviews and testimonials to showcase your store's happy customers.<\/p>",
+            "author": "Author's name"
+          }
+        },
+        "testimonial-1": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5",
+            "text": "<p>Add customer reviews and testimonials to showcase your store's happy customers.<\/p>",
+            "author": "Author's name"
+          }
+        },
+        "testimonial-2": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5",
+            "text": "<p>Add customer reviews and testimonials to showcase your store's happy customers.<\/p>",
+            "author": "Author's name"
+          }
+        },
+        "testimonial-3": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5",
+            "text": "<p>Add customer reviews and testimonials to showcase your store's happy customers.<\/p>",
+            "author": "Author's name"
+          }
+        },
+        "testimonial-4": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5",
+            "text": "<p>Add customer reviews and testimonials to showcase your store's happy customers.<\/p>",
+            "author": "Author's name"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial-0",
+        "testimonial-1",
+        "testimonial-2",
+        "testimonial-3",
+        "testimonial-4"
+      ],
+      "settings": {
+        "heading": "Testimonials",
+        "heading_size": "h2",
+        "autorotate": true,
+        "autorotate_speed": 5,
+        "show_divider": false,
+        "padding_top": 36,
+        "padding_bottom": 72
+      }
+    },
+    "multicolumn": {
+      "type": "multicolumn",
+      "blocks": {
+        "column-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sd-main-banner-about.jpg",
+            "title": "ABOUT SPHYNX",
+            "title_size": "h3",
+            "text": "<p>Find out more about the cool cats at Sphynx Drinks and hear how it purred to life.<\/p>",
+            "button_label": "READ MORE",
+            "button_link": "shopify:\/\/pages\/our-story",
+            "button_style_secondary": false
+          }
+        },
+        "column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sd-main-banner-con.jpg",
+            "title": "CONTACT THE CAT",
+            "title_size": "h3",
+            "text": "<p>Reach out to us to get advice on our range, partner with us or chinwag about all things Sphynx.<\/p>",
+            "button_label": "CONTACT",
+            "button_link": "shopify:\/\/pages\/contact",
+            "button_style_secondary": false
+          }
+        },
+        "column-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sd-banner-faq.jpg",
+            "title": "PUB TRIVIA: FAQs",
+            "title_size": "h3",
+            "text": "<p>PUB TRIVIA: FAQs Want to dive into the fine print? Pull up a stool and browse our FAQs, from shipping timelines to returns policies.<\/p>",
+            "button_label": "FIND OUT MORE",
+            "button_link": "shopify:\/\/pages\/faq",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "column-0",
+        "column-1",
+        "column-2"
+      ],
+      "settings": {
+        "heading": "SPHYNX DRINKS",
+        "heading_size": "h1",
+        "image_ratio": "wide",
+        "image_position": "top center",
+        "text_alignment": "center",
+        "show_divider": false,
+        "mobile_text_alignment": "center",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 72
+      }
+    }
+  },
+  "order": [
+    "empty-space",
+    "main",
+    "guarantees",
+    "rich-text",
+    "product-details",
+    "image-comparison",
+    "product-recommendations",
+    "165638266010f0404e",
+    "recently-viewed-products",
+    "video-hero",
+    "tab-collage",
+    "testimonials",
+    "multicolumn"
+  ]
+}

@@ -1,0 +1,222 @@
+{
+  "sections": {
+    "image-banner": {
+      "type": "image-banner",
+      "disabled": true,
+      "blocks": {
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers.<\/p>",
+            "text_size": "typeset3",
+            "secondary_color": false
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "About Us",
+            "heading_size": "h0"
+          }
+        }
+      },
+      "block_order": [
+        "text",
+        "heading"
+      ],
+      "settings": {
+        "image_position": "center center",
+        "text_box_position": "center",
+        "text_alignment": "left",
+        "image_ratio": "100vh",
+        "show_text_box": false,
+        "full_width": true,
+        "show_divider": false,
+        "mobile_text_alignment": "center",
+        "mobile_image_ratio": "100vh",
+        "stack_images_on_mobile": false,
+        "show_text_below": false,
+        "colors_text": "#ffffff",
+        "colors_overlay": "#000000",
+        "colors_overlay_opacity": 20,
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "narrow": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich-text": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Join The Sphynx Drinks Party!",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We're launching with a big, booze-free bang! <br\/>Spend $40 and we'll send you a free mixed six of carefully-curated non-alc beer or a bottle of Classico non-alc sparkling wine from Lyre's.<br\/><\/p>",
+            "text_size": "typeset3",
+            "secondary_color": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "text_alignment": "center",
+        "narrow": true,
+        "show_divider": false,
+        "mobile_text_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "rich-text-2": {
+      "type": "rich-text",
+      "disabled": true,
+      "blocks": {
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+            "text_size": "typeset",
+            "secondary_color": false
+          }
+        }
+      },
+      "block_order": [
+        "text"
+      ],
+      "settings": {
+        "text_alignment": "center",
+        "narrow": true,
+        "show_divider": false,
+        "mobile_text_alignment": "left",
+        "padding_top": 16,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn": {
+      "type": "multicolumn",
+      "blocks": {
+        "4724a584-51c9-4289-97d8-44229d0570e1": {
+          "type": "column",
+          "settings": {
+            "title": "Cool Cats Only: Pick Your Freebie",
+            "title_size": "h2",
+            "text": "<p><br\/>Add more than $40 from our massive range to your cart and then choose either a free mixed six pack of non-alc beer OR a bottle of Lyre's Classico non-alc sparkling wine to the right. <br\/><br\/>*Discount will be automatically applied upon the the conditions.<br\/>* Add the correct product to cart to get the discount.<br\/><\/p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        },
+        "multicolumn-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Artboard_2_01.jpg",
+            "title": "Mixed Six Pack Of Non-Alc Beer",
+            "title_size": "h2",
+            "text": "<p>Spend $40 on any <a href=\"\/collections\" title=\"All collections\">collection<\/a> and get a free 6 pack <\/p>",
+            "button_label": "Choose this freebie",
+            "button_link": "shopify:\/\/products\/sphynx-drinks-launch-free-beer-6-pack",
+            "button_style_secondary": false
+          }
+        },
+        "multicolumn-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Lyres_Classico_Grande__16937__30242.1664915867.jpg",
+            "title": "Lyre's Classico 750ml bottle",
+            "title_size": "h2",
+            "text": "<p>Spend $40 on any <a href=\"\/collections\" title=\"All collections\">collection <\/a>and get a Lyre's Classico 750ml bottle<\/p>",
+            "button_label": "Choose this freebie",
+            "button_link": "shopify:\/\/products\/lyres-classico-750ml-bottle",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "4724a584-51c9-4289-97d8-44229d0570e1",
+        "multicolumn-0",
+        "multicolumn-1"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "image_position": "center center",
+        "text_alignment": "center",
+        "show_divider": false,
+        "mobile_text_alignment": "center",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "4e6ff2ec-6f04-463d-a722-52c6323a0e53": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16639546949860__4e6ff2ec-6f04-463d-a722-52c6323a0e53-16702832487bc097be-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "template--16639546949860__4e6ff2ec-6f04-463d-a722-52c6323a0e53-16702832487bc097be-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Add your selected gift to your cart then purchase $40 or more to receive it FREE!<\/p>",
+            "text_size": "typeset",
+            "secondary_color": false
+          }
+        },
+        "template--16639546949860__4e6ff2ec-6f04-463d-a722-52c6323a0e53-16702832487bc097be-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16639546949860__4e6ff2ec-6f04-463d-a722-52c6323a0e53-16702832487bc097be-0",
+        "template--16639546949860__4e6ff2ec-6f04-463d-a722-52c6323a0e53-16702832487bc097be-1",
+        "template--16639546949860__4e6ff2ec-6f04-463d-a722-52c6323a0e53-16702832487bc097be-2"
+      ],
+      "settings": {
+        "text_alignment": "center",
+        "narrow": true,
+        "show_divider": false,
+        "mobile_text_alignment": "center",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "image-banner",
+    "main",
+    "rich-text",
+    "rich-text-2",
+    "multicolumn",
+    "4e6ff2ec-6f04-463d-a722-52c6323a0e53"
+  ]
+}

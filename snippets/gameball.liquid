@@ -1,0 +1,64 @@
+
+        <input type="hidden" name="" id="gameball-customerFirstName" value="{{ customer.first_name }}" />
+        <input type="hidden" name="" id="gameball-customerLastName" value="{{ customer.last_name }}" />
+        <input type="hidden" name="" id="gameball-customerID" value="{{ customer.id }}" />
+        <input type="hidden" name="" id="gameball-totalSpent" value="{{customer.total_spent}}" />
+        <input type="hidden" name="" id="gameball-ordersCount" value="{{customer.orders_count}}" />
+        <input type="hidden" name="" id="gameball-customerEmail" value="{{customer.email}}" />
+        <input type="hidden" name="" id="gameball-shopName" value="{{shop.domain}}" />
+        <input type="hidden" name="" id="gameball-APIKey" value="a49bd7a3be6541dbb3de35c63a2df50b" /> 
+        <input type="hidden" name="" id="gameball-TK" value="1" />
+        <input type="hidden" name="" id="gameball-shopLocale" value="{{ request.locale.iso_code }}" />
+        <script>
+            // if (window.location.pathname.includes('cart')) {
+            //     var checkoutButton = document.getElementsByName("checkout");
+            //     // 
+            //     var gbButton = document.createElement('a')
+            //     gbButton.classList.add("btn", "btn--small-wide", "cart__submit", "cart__submit-control")
+            //     gbButton.id = "gameballModalOpener"
+            //     gbButton.innerHTML = "Use gameball points"
+            //     checkoutButton[0].parentElement.insertBefore(gbButton, checkoutButton[0])
+            // }
+            			
+			let searchParams = new URLSearchParams(window.location.search);
+			
+          
+			var refCodeItem='';
+			
+            var gb_r_name = 'gb-refcode' + "=";
+            var ca = document.cookie.split(';');
+          	
+            for(var i = 0; i < ca.length; i++) {
+              var c = ca[i];
+              while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+              }
+              if (c.indexOf('gb-refcode') == 0) {
+                refCodeItem= c.substring(gb_r_name.length, c.length);
+              }
+            }
+	 	
+	
+            if (searchParams.has('ReferralCode')||refCodeItem) {
+                let param = searchParams.has('ReferralCode')?searchParams.get('ReferralCode'):refCodeItem;
+                var registrationFirstNameElement = document.getElementsByName("customer[first_name]");
+                if(registrationFirstNameElement[0]){
+                    var gbReferralCodeInput = document.createElement('input')
+                    gbReferralCodeInput.type = "hidden"
+                    gbReferralCodeInput.name = "customer[note][gameballReferralCode]"
+                    gbReferralCodeInput.id = "gameballReferralCode"
+                    gbReferralCodeInput.value = param;
+                    registrationFirstNameElement[0].parentElement.insertBefore(gbReferralCodeInput, registrationFirstNameElement[0])
+                }
+                if(registrationFirstNameElement[1]){
+                    //fix for 2nd form on same pge
+                    var gbReferralCodeInput = document.createElement('input')
+                    gbReferralCodeInput.type = "hidden"
+                    gbReferralCodeInput.name = "customer[note][gameballReferralCode]"
+                    gbReferralCodeInput.id = "gameballReferralCode"
+                    gbReferralCodeInput.value = param;
+                    registrationFirstNameElement[1].parentElement.insertBefore(gbReferralCodeInput, registrationFirstNameElement[1])
+                }
+            }
+
+        </script>

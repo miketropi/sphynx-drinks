@@ -1,0 +1,192 @@
+{%- liquid
+  assign show_announcement_bar = true
+
+  if section.blocks.size == 0
+    assign show_announcement_bar = false
+  endif
+
+  if section.settings.only_homepage and request.page_type != 'index'
+    assign show_announcement_bar = false
+  endif
+-%}
+
+{%- if show_announcement_bar -%}
+  {%- style -%}
+    :root {
+      --announcement-bar-height: 40px;
+    }
+    
+    #shopify-section-{{ section.id }} {
+      --color-background: {{ section.settings.colors_background.red }}, {{ section.settings.colors_background.green }}, {{ section.settings.colors_background.blue }};
+      --color-foreground: {{ section.settings.colors_text.red }}, {{ section.settings.colors_text.green }}, {{ section.settings.colors_text.blue }};
+    }
+
+    .announcement-bar {
+      font-size: 1.3rem;
+      font-weight: 700;
+      line-height: calc(1 + 0.2 / var(--font-body-scale));
+      letter-spacing: 0.1em;
+      position: relative;
+      z-index: 101;
+    }
+
+    announcement-bar {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr auto;
+    }
+
+    .announcement-slider {
+      height: var(--announcement-bar-height);
+    }
+
+    .announcement-slider__slide {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  {%- endstyle -%}
+  {{ 'section-announcement-bar.css' | asset_url | stylesheet_tag: preload: true }}
+
+  <div class="announcement-bar">
+    <div class="page-width">
+      <announcement-bar id="AnnouncementSlider-{{ section.id }}" data-compact="{{ section.settings.enable_compact }}" data-autorotate="{{ section.settings.autorotate }}" data-autorotate-speed="{{ section.settings.autorotate_speed }}" data-block-count="{{ section.blocks.size }}">
+        <div class="announcement-slider">
+          {%- for block in section.blocks -%}
+            <div id="AnnouncementSlide-{{ block.id }}" class="announcement-slider__slide" data-index="{{ forloop.index0 }}" {{ block.shopify_attributes }}>
+              {%- if block.settings.link != blank -%}
+                <a class="announcement-link" href="{{ block.settings.link }}">
+              {%- endif -%}
+                <span class="announcement-text">{{ block.settings.text | escape }}</span>
+              {%- if block.settings.link != blank -%}
+                </a>
+              {%- endif -%}
+            </div>
+          {%- endfor -%}
+        </div>
+        {%- if section.settings.show_navigation and section.blocks.size > 1 -%}
+          <div class="announcement__buttons">
+            <button class="announcement__button announcement__button--prev" name="previous" aria-label="{{ 'general.slider.previous_slide' | t }}">
+              {% render 'icon', icon: 'chevron-alt' %}
+            </button>
+            <button class="announcement__button announcement__button--play" name="play">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="icon icon-play-animate">
+                <path class="stroke-solid" fill="none" stroke="currentColor" d="M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7C97.3,23.7,75.7,2.3,49.9,2.5"/>
+                <path class="stroke-dotted" fill="none" stroke="currentColor" d="M49.9,2.5C23.6,2.8,2.1,24.4,2.5,50.4C2.9,76.5,24.7,98,50.3,97.5c26.4-0.6,47.4-21.8,47.2-47.7C97.3,23.7,75.7,2.3,49.9,2.5"/>
+                <path class="fill-triangle" fill="currentColor" d="M38,69c-1,0.5-1.8,0-1.8-1.1V32.1c0-1.1,0.8-1.6,1.8-1.1l34,18c1,0.5,1,1.4,0,1.9L38,69z"/>
+                <rect class="fill-square" fill="currentColor" x="33" y="33" width="33" height="33"/>
+              </svg>
+            </button>
+            <button class="announcement__button announcement__button--next" name="next" aria-label="{{ 'general.slider.next_slide' | t }}">
+              {% render 'icon', icon: 'chevron-alt' %}
+            </button>
+          </div>
+        {%- endif -%}
+      </announcement-bar>
+    </div>
+  </div>
+  
+  {%- unless request.design_mode -%}
+    <script src="{{ 'announcement-bar.js' | asset_url }}" defer="defer"></script>
+  {%- endunless -%}
+{%- endif -%}
+
+{%- if request.design_mode -%}
+  <script src="{{ 'announcement-bar.js' | asset_url }}" defer="defer"></script>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "t:sections.announcement-bar.name",
+  "max_blocks": 3,
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "only_homepage",
+      "label": "t:sections.announcement-bar.settings.only_homepage.label",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_compact",
+      "default": false,
+      "label": "t:sections.announcement-bar.settings.enable_compact.label",
+      "info": "t:sections.announcement-bar.settings.enable_compact.info"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.announcement-bar.settings.header.content"
+    },
+    {
+      "type": "paragraph",
+      "content": "t:sections.announcement-bar.settings.paragraph.content"
+    },
+    {
+      "type": "checkbox",
+      "id": "autorotate",
+      "default": false,
+      "label": "t:sections.announcement-bar.settings.autorotate.label"
+    },
+    {
+      "type": "range",
+      "id": "autorotate_speed",
+      "label": "t:sections.announcement-bar.settings.autorotate_speed.label",
+      "max": 9,
+      "min": 3,
+      "step": 2,
+      "unit": "t:sections.announcement-bar.settings.autorotate_speed.unit",
+      "default": 5
+    },
+    {
+      "type": "checkbox",
+      "id": "show_navigation",
+      "default": false,
+      "label": "t:sections.announcement-bar.settings.show_navigation.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.colors.header.content"
+    },
+    {
+      "type": "color",
+      "id": "colors_text",
+      "label": "t:sections.all.colors.colors_text.label",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "colors_background",
+      "label": "t:sections.all.colors.colors_background.label",
+      "default": "#1a1b18"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "announcement",
+      "name": "t:sections.announcement-bar.blocks.announcement.name",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "default": "Welcome to our store",
+          "label": "t:sections.announcement-bar.blocks.announcement.settings.text.label"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "t:sections.announcement-bar.blocks.announcement.settings.link.label"
+        }
+      ]
+    }
+  ],
+  "default": {
+    "blocks": [
+      {
+        "type": "announcement"
+      }
+    ]
+  }
+}
+{% endschema %}

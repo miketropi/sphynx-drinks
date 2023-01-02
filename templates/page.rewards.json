@@ -1,0 +1,283 @@
+{
+  "sections": {
+    "image-banner": {
+      "type": "image-banner",
+      "blocks": {
+        "text": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers.<\/p>",
+            "text_size": "typeset3",
+            "secondary_color": false
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Rewards",
+            "heading_size": "h0"
+          }
+        }
+      },
+      "block_order": [
+        "text",
+        "heading"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/fabio-alves-IQCwKOpIQro-unsplash.jpg",
+        "image_position": "center center",
+        "text_box_position": "center",
+        "text_alignment": "left",
+        "image_ratio": "550px",
+        "show_text_box": false,
+        "full_width": true,
+        "show_divider": false,
+        "mobile_text_alignment": "center",
+        "mobile_image_ratio": "100vh",
+        "stack_images_on_mobile": false,
+        "show_text_below": false,
+        "colors_text": "#ffffff",
+        "colors_overlay": "#000000",
+        "colors_overlay_opacity": 20,
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "narrow": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich-text": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Become a member and earnpoints & exclusive rewardsevery time you shop.",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+            "text_size": "typeset3",
+            "secondary_color": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "text_alignment": "left",
+        "narrow": true,
+        "show_divider": false,
+        "mobile_text_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "multicolumn": {
+      "type": "multicolumn",
+      "blocks": {
+        "multicolumn-0": {
+          "type": "column",
+          "settings": {
+            "title": "Sign Up",
+            "title_size": "h3",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        },
+        "multicolumn-1": {
+          "type": "column",
+          "settings": {
+            "title": "Earn Points",
+            "title_size": "h3",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        },
+        "a81f5ac7-0dd1-4457-97cf-449253bc0b6d": {
+          "type": "column",
+          "settings": {
+            "title": "Redeem Points",
+            "title_size": "h3",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "multicolumn-0",
+        "multicolumn-1",
+        "a81f5ac7-0dd1-4457-97cf-449253bc0b6d"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_size": "h2",
+        "image_ratio": "square",
+        "image_position": "center center",
+        "text_alignment": "center",
+        "show_divider": false,
+        "mobile_text_alignment": "left",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image-with-text-overlay-0": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "image-with-text-overlay-0-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "REFER A FRIEND",
+            "heading_size": "h1"
+          }
+        },
+        "image-with-text-overlay-0-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><\/p><p>Give $15, Get $15<\/p><p>Give your friends $15 off on their first order of $100+ and get $15 (in points) for each successful referral.<\/p>",
+            "text_size": "typeset",
+            "secondary_color": true
+          }
+        }
+      },
+      "block_order": [
+        "image-with-text-overlay-0-0",
+        "image-with-text-overlay-0-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/eric-ward-i5_bB201TDQ-unsplash.jpg",
+        "image_position": "center center",
+        "text_box_position": "flex-start",
+        "text_alignment": "left",
+        "image_ratio": "450px",
+        "full_width": true,
+        "show_divider": false,
+        "mobile_text_box_position": "image_first",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "250px",
+        "colors_text": "#ffffff",
+        "colors_overlay": "#00cfff",
+        "colors_overlay_opacity": 68,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "16630403219f1591d2": {
+      "type": "faq",
+      "blocks": {
+        "16630403213e29c924-0": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "16630403213e29c924-1": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16630403213e29c924-0",
+        "16630403213e29c924-1"
+      ],
+      "settings": {
+        "heading": "Rewaeds FAQs",
+        "heading_size": "h2",
+        "narrow": true,
+        "secondary_background": false,
+        "show_divider": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "16630402371e10fec2": {
+      "type": "multicolumn",
+      "blocks": {
+        "16630402379b538938-0": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "title_size": "h3",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        },
+        "16630402379b538938-1": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "title_size": "h3",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        },
+        "16630402379b538938-2": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "title_size": "h3",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "16630402379b538938-0",
+        "16630402379b538938-1",
+        "16630402379b538938-2"
+      ],
+      "settings": {
+        "heading": "Sphynx Drinks",
+        "heading_size": "h1",
+        "image_ratio": "landscape",
+        "image_position": "center center",
+        "text_alignment": "left",
+        "show_divider": false,
+        "mobile_text_alignment": "left",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "image-banner",
+    "main",
+    "rich-text",
+    "multicolumn",
+    "image-with-text-overlay-0",
+    "16630403219f1591d2",
+    "16630402371e10fec2"
+  ]
+}

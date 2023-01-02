@@ -1,0 +1,85 @@
+{
+  "sections": {
+    "cart-items": {
+      "type": "main-cart-items",
+      "settings": {
+        "show_vendor": true,
+        "padding_top": 60,
+        "padding_bottom": 36
+      }
+    },
+    "cart-footer": {
+      "type": "main-cart-footer",
+      "blocks": {
+        "subtotal": {
+          "type": "subtotal",
+          "settings": {
+          }
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {
+          }
+        },
+        "675940a6-3fce-404d-aaa1-dc642743f720": {
+          "type": "free_shipping",
+          "disabled": true,
+          "settings": {
+            "minimum_amount": "100"
+          }
+        }
+      },
+      "block_order": [
+        "subtotal",
+        "buttons",
+        "675940a6-3fce-404d-aaa1-dc642743f720"
+      ],
+      "settings": {
+        "show_cart_note": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "shipping-calculator": {
+      "type": "shipping-calculator",
+      "disabled": true,
+      "settings": {
+        "heading": "Estimate Shipping",
+        "heading_size": "h3",
+        "default_country": "Australia",
+        "secondary_background": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "cart-recommendations": {
+      "type": "cart-recommendations",
+      "disabled": true,
+      "settings": {
+        "heading": "You May Also Like",
+        "heading_size": "h2",
+        "show_divider": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "image_ratio": "portrait",
+        "image_position": "center center",
+        "enable_image_fill": true,
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": true,
+        "show_quick_buy": true,
+        "enable_quick_view": true,
+        "enable_color_swatches": true,
+        "enable_countdown": true,
+        "padding_top": 36,
+        "padding_bottom": 72
+      }
+    }
+  },
+  "order": [
+    "cart-items",
+    "cart-footer",
+    "shipping-calculator",
+    "cart-recommendations"
+  ]
+}
