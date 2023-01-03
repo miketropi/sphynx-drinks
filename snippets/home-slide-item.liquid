@@ -1,0 +1,59 @@
+<div
+  class="section-home-slider-inner--item"
+  style="background-color: {{block.settings.background_item}}">
+  <div
+    class="page-width section-home-slider-inner--item-wrapper">
+    <div
+      class="slide-col slide-content">
+      {%- if block.settings.heading_slide != blank -%}
+        <h2
+          class="heading-slide">{{ block.settings.heading_slide }}</h2>
+      {%- endif -%}
+
+      {%- if block.settings.description_slide != blank -%}
+        <p
+          class="desc-slide">{{ block.settings.description_slide }}</p>
+      {%- endif -%}
+
+      {%- if block.settings.button_slide != blank -%}
+        <a
+          class="btn-slide"
+          href="{{ block.settings.button_link }}">{{ block.settings.button_slide }}</a>
+      {%- endif -%}
+    </div>
+    {%- if block.settings.image_dk != blank -%}
+      <div
+        class="slide-col slide-media">
+        {%- if block.settings.image_animation != blank -%}
+          <div
+            class="slide-media__image-animation">
+            <img
+              src="{{ block.settings.image_animation | image_url }}"
+              loading="lazy">
+          </div>
+        {%- endif -%}
+        <lazy-image
+          class="slide-media__image style="--image-position:
+          {{ block.settings.image_position }}
+          ">
+          <img
+            srcset="{%- if block.settings.image_dk.width >= 375 -%}
+            {{ block.settings.image_dk | image_url: width: 375 }} 375w{%- endif -%}
+          {%- if block.settings.image_dk.width >= 550 -%},{{ block.settings.image_dk | image_url: width: 550 }} 550w{%- endif -%}
+          {%- if block.settings.image_dk.width >= 750 -%},{{ block.settings.image_dk | image_url: width: 750 }} 750w{%- endif -%}
+          {%- if block.settings.image_dk.width >= 1100 -%},{{ block.settings.image_dk | image_url: width: 1100 }} 1100w{%- endif -%}
+          {%- if block.settings.image_dk.width >= 1500 -%},{{ block.settings.image_dk | image_url: width: 1500 }} 1500w{%- endif -%}
+          {%- if block.settings.image_dk.width >= 2200 -%},{{ block.settings.image_dk | image_url: width: 2200 }} 2200w{%- endif -%}
+          {%- if block.settings.image_dk.width >= 3000 -%},{{ block.settings.image_dk | image_url: width: 3000 }} 3000w{%- endif -%},
+          {{ block.settings.image_dk | image_url }} {{ block.settings.image_dk.width }}w"
+          src="{{ block.settings.image_dk | image_url: width: 550 }}"
+          sizes="100vw"
+          alt="{{ block.settings.image_dk.alt | escape }}"
+          width="{{ block.settings.image_dk.width }}"
+          height="{{ block.settings.image_dk.height }}"
+          loading="lazy">
+        </lazy-image>
+      </div>
+    {%- endif -%}
+  </div>
+</div>

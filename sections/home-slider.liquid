@@ -1,0 +1,155 @@
+{%- style -%}
+  #shopify-section-{{ section.id }}{
+    --shadow-opacity: 0.3;
+  }
+{%- endstyle -%}
+
+{{ 'section-home-slider.css' | asset_url | stylesheet_tag }}
+
+<div
+  class="section-{{ section.id }} section-home-slider"
+  data-autoplay='{{section.settings.slider_autoplay}}'
+  data-speed='{{section.settings.slider_speed}}'
+  data-infinite='{{section.settings.slider_infinite}}'
+  data-arrows='{{section.settings.slider_arrows}}'>
+  <div
+    class="section-home-slider-inner">
+    {%- for block in section.blocks -%}
+      {% render 'home-slide-item', block: block, position: forloop.index %}
+    {%- endfor -%}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Home Slider",
+    "tag": "section",
+    "class": "homepage-slider",
+    "max_blocks": 6,
+    "settings": [
+      {
+        "type": "select",
+        "id": "slider_height",
+        "options": [
+          {
+            "label": "550px",
+            "value": "550px"
+          }, {
+            "label": "650px",
+            "value": "650px"
+          }, {
+            "label": "750px",
+            "value": "750px"
+          }, {
+            "label": "100vh",
+            "value": "100vh"
+          }
+        ],
+        "default": "650px",
+        "label": "Slider Height"
+      },
+      {
+        "type": "range",
+        "id": "slider_speed",
+        "label": "Speed",
+        "max": 5000,
+        "min": 100,
+        "step": 50,
+        "unit": "ms",
+        "default": 3000
+      },
+      {
+        "type": "checkbox",
+        "id": "slider_autoplay",
+        "label": "Autoplay",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "slider_infinite",
+        "label": "Infinite",
+        "default": true
+      }, {
+        "type": "checkbox",
+        "id": "slider_arrows",
+        "label": "Arrows",
+        "default": true
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Slide",
+        "type": "slide",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image_dk",
+            "label": "Image Desktop"
+          },
+          {
+            "type": "image_picker",
+            "id": "image_animation",
+            "label": "Image Animation"
+          },
+          {
+            "type": "select",
+            "id": "image_position",
+            "options": [
+              {
+                "value": "top center",
+                "label": "Top Center"
+              }, {
+                "value": "center center",
+                "label": "Center Center"
+              }, {
+                "value": "bottom center",
+                "label": "Bottom Center"
+              }
+            ],
+            "default": "center center",
+            "label": "Focal Point Picker"
+          },
+          {
+            "type": "text",
+            "id": "heading_slide",
+            "default": "Nisl vulputate porttitor dapibus.",
+            "label": "Heading"
+          }, {
+            "type": "textarea",
+            "id": "description_slide",
+            "default": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+            "label": "Description"
+          }, {
+            "type": "text",
+            "id": "button_slide",
+            "default": "Shop Now",
+            "label": "Button Label",
+            "info": "Leave the label blank to hide the button."
+          }, {
+            "type": "url",
+            "id": "button_link",
+            "label": "Button Link"
+          }, {
+            "type": "header",
+            "content": "Background Slide"
+          }, {
+            "type": "color",
+            "id": "background_item",
+            "label": "Background",
+            "default": "#F05123"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Homepage Slider",
+        "blocks": [
+          {
+            "type": "slide"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

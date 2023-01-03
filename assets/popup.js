@@ -1,7 +1,7 @@
 class PromoPopup extends HTMLElement {
   constructor() {
     super();
-
+    return;
     // Prevent popup on Shopify robot challenge page
     if (window.location.pathname === '/challenge') {
       return;
