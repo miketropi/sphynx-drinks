@@ -12,8 +12,7 @@
   data-speed='{{section.settings.slider_speed}}'
   data-infinite='{{section.settings.slider_infinite}}'
   data-arrows='{{section.settings.slider_arrows}}'>
-  <div
-    class="section-home-slider-inner">
+  <div class="section-home-slider-inner">
     {%- for block in section.blocks -%}
       {% render 'home-slide-item', block: block, position: forloop.index %}
     {%- endfor -%}
@@ -143,7 +142,7 @@
     ],
     "presets": [
       {
-        "name": "Homepage Slider",
+        "name": "Home Slider",
         "blocks": [
           {
             "type": "slide"

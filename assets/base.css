@@ -3274,3 +3274,22 @@ use-animate {
 .flickity-page-dot.is-selected::after {
   transform: scale(1.5);
 }
+
+@media (min-width: 992px) {
+  .page-width {
+    max-width: 960px;
+  }
+  
+}
+
+@media (min-width: 1200px) {
+  .page-width {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .page-width {
+    max-width: 1400px;
+  }
+}

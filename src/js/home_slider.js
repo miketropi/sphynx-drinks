@@ -45,6 +45,19 @@ class HomeSlider {
 
             }]
         });
+
+        let scrollAmount = 0;
+
+        document.addEventListener('wheel', (event) => {
+            const DIVIDE_AMOUNT = 40;
+            if(scrollAmount < 5){
+
+            }
+            scrollAmount += event.deltaY / DIVIDE_AMOUNT;
+            console.log(scrollAmount)
+        });
+
+        
     }
 
 }
