@@ -248,6 +248,9 @@ ul.menu-style-inline li.menu-link:hover > ul {
 .site-footer__inner .footer-col.__type_membership-form {
   width: 40%;
 }
+.site-footer__inner .footer-col.__type_footer-brand-image {
+  width: 20%;
+}
 
 .single-post__container {
   width: var(--site-container-width);

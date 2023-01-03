@@ -1,3 +1,11 @@
 <div class="footer-brand-image">
-  {{ settings | json }}
+  <a href="{{ routes.root_url }}">
+    <img
+      class="footer-brand-image-tag"
+      src="{{ settings.image | image_url }}"
+      loading="lazy"
+      width=""
+      height=""
+      alt="{{ logo.alt | default: shop.name | escape }}" />
+  </a>
 </div>
