@@ -1,0 +1,43 @@
+.site-brand__url {
+  display: inline-block;
+
+  img {
+    height: 64px;
+    width: auto;
+  }
+}
+
+.site-header__nth1 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  line-height: normal;
+  padding: 18px 0;
+}
+
+.site-header__nth2 {
+  background-color: #FFC85E;
+}
+
+.site-header__extra-tools {
+  margin-left: auto;
+}
+
+.site-header__brand {
+  margin-right: 2em;
+}
+
+.header-extra-tools {
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+
+    &:not(:last-child) {
+      margin-right: 1.3em;
+    }
+  }
+}

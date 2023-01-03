@@ -1,0 +1,71 @@
+<div class="header-extra-tools header-extra-tools__container">
+  <div class="header-extra-tools__item __search-form">
+    <form action="{{ routes.search_url }}">
+      <input
+        type="text"
+        placeholder="Search products, brands or recipes"
+        name="q"
+        value="{{ search.terms | escape }}">
+      <input type="submit" value="Search">
+      <span class="__search-icon">
+        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 17.6953C13.866 17.6953 17 14.5613 17 10.6953C17 6.82932 13.866 3.69531 10 3.69531C6.13401 3.69531 3 6.82932 3 10.6953C3 14.5613 6.13401 17.6953 10 17.6953Z" stroke="#F05123" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M15 15.6953L21 21.6953" stroke="#F05123" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+    </form>
+  </div>
+
+  <div class="header-extra-tools__item __mini-cart">
+    <a href="/cart">
+      <div class="__mini-cart-icon cart-icon-bubble">
+        <svg
+          width="25"
+          height="25"
+          viewBox="0 0 25 25"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M19.0352 8.69531H6.72941C6.24058 8.69531 5.82339 9.04872 5.74302 9.53091L4.07635 19.5309C3.97476 20.1404 4.44481 20.6953 5.06275 20.6953H20.7018C21.3198 20.6953 21.7898 20.1404 21.6882 19.5309L20.0216 9.53091C19.9412 9.04873 19.524 8.69531 19.0352 8.69531Z"
+            stroke="white"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path
+            d="M8.88232 8.69531C8.88232 6.48617 10.6732 4.69531 12.8823 4.69531C15.0915 4.69531 16.8823 6.48617 16.8823 8.69531"
+            stroke="white"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+        <span class="cart-link__bubble{% if cart.item_count > -1 %} cart-link__bubble--visible{% endif %}">{{ cart.item_count }}</span>
+      </div>
+    </a>
+  </div>
+
+  <div class="header-extra-tools__item __user-login">
+    <a href="/account/login">
+      <span class="__user-login-icon">
+        <svg
+          width="25"
+          height="25"
+          viewBox="0 0 25 25"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M20.8823 21.4082V19.4082C20.8823 18.3473 20.4609 17.3299 19.7108 16.5798C18.9606 15.8296 17.9432 15.4082 16.8823 15.4082H8.88232C7.82146 15.4082 6.80404 15.8296 6.0539 16.5798C5.30375 17.3299 4.88232 18.3473 4.88232 19.4082V21.4082"
+            stroke="white"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path
+            d="M12.8823 11.4082C15.0915 11.4082 16.8823 9.61734 16.8823 7.4082C16.8823 5.19906 15.0915 3.4082 12.8823 3.4082C10.6732 3.4082 8.88232 5.19906 8.88232 7.4082C8.88232 9.61734 10.6732 11.4082 12.8823 11.4082Z"
+            stroke="white"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </span>
+    </a>
+  </div>
+</div>

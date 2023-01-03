@@ -1,0 +1,1 @@
+import './js/home_page'

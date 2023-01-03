@@ -1,0 +1,63 @@
+:root {
+  --site-container-width: 1360px;
+}
+
+.site-container {
+  width: var(--site-container-width);
+  padding: 0;
+  margin: 0 auto;
+  max-width: calc(100% - 30px);
+}
+
+.header-extra-tools__item.__search-form {
+  width: 340px;
+  max-width: 100%;
+
+  form {
+    width: 100%;
+    position: relative;
+
+    input[name=q] {
+      width: 100%;
+      border-radius: 8px;
+      border: none;
+      background: white;  
+      padding: 1em;
+    }
+
+    input[type=submit] {
+      display: none;
+    }
+
+    .__search-icon {
+      position: absolute;
+      right: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      pointer-events: none;
+    }
+  }
+}
+
+.__mini-cart-icon {
+  position: relative;
+
+  .cart-link__bubble {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    border-radius: 10px;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-color: #FFC85E;
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8px;
+  }
+}
