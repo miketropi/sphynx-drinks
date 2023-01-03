@@ -129,47 +129,7 @@
       },
       "footer": {
         "type": "footer",
-        "blocks": {
-          "172508f3-97b0-4141-a62d-90b89cce5494": {
-            "type": "image",
-            "disabled": true,
-            "settings": {
-              "image": "shopify:\/\/shop_images\/Asset_4_4x_06e14a8e-cb32-40d4-b3bb-fe194c0b58c5.png",
-              "image_width": 100,
-              "alignment": "left",
-              "link": "",
-              "text": ""
-            }
-          },
-          "footer-0": {
-            "type": "link_list",
-            "settings": {
-              "heading": "Shop",
-              "menu": "main-menu"
-            }
-          },
-          "footer-1": {
-            "type": "link_list",
-            "disabled": true,
-            "settings": {
-              "heading": "Explore",
-              "menu": "footer"
-            }
-          },
-          "footer-2": {
-            "type": "link_list",
-            "settings": {
-              "heading": "More",
-              "menu": "policies"
-            }
-          }
-        },
-        "block_order": [
-          "172508f3-97b0-4141-a62d-90b89cce5494",
-          "footer-0",
-          "footer-1",
-          "footer-2"
-        ],
+        
         "settings": {
           "newsletter_enable": true,
           "newsletter_heading": "Exclusive benefits",
