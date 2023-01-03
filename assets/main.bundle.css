@@ -180,3 +180,23 @@ ul.menu-style-inline li.menu-link:hover > ul {
   color: white !important;
   padding: 22px 4px !important;
 }
+
+.single-post__container {
+  width: var(--site-container-width);
+  padding: 0;
+  margin: 0 auto;
+  max-width: calc(100% - 30px);
+}
+
+.single-post__wrap {
+  display: flex;
+}
+
+.single-post__content {
+  width: 65.5%;
+}
+
+.single-post__sidebar {
+  width: 34.5%;
+  padding-left: 85px;
+}
