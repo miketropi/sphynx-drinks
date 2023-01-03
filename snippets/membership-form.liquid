@@ -1,0 +1,67 @@
+<div class="membership-register-form">
+  {% comment %} {{ settings | json }} {% endcomment %}
+  <div class="footer-heading-text">
+    <h4>{{ settings.heading }}</h4>
+    <p>{{ settings.description }}</p>
+  </div>
+  <div class="__form-container">
+    {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form' -%}
+      <input
+        type="hidden"
+        name="contact[tags]"
+        value="newsletter" />
+
+      <div class="__field">
+        <input
+          id="ContactFooter-email"
+          type="email"
+          name="contact[email]"
+          class="__field__input required{% if form.errors %} invalid{% endif %}"
+          value="{{ form.email }}"
+          aria-required="true"
+          autocorrect="off"
+          autocapitalize="off"
+          autocomplete="email"
+          {% if form.errors %}
+          autofocus
+          aria-invalid="true"
+          aria-describedby="ContactFooter-error"
+          {% elsif form.posted_successfully? %}
+          aria-describedby="ContactFooter-success"
+          {% endif %}
+          placeholder="{{ 'newsletter.label' | t }}"
+          required />
+        <label class="visually-hidden" for="ContactFooter-email">{{ 'newsletter.label' | t }}</label>
+        <button
+          type="submit"
+          class="button"
+          name="commit"
+          aria-label="{{ 'newsletter.button_label' | t }}">
+          Sign Up {% render 'icon', icon: 'arrow' %}
+        </button>
+      </div>
+      {%- if form.errors -%}
+        <small class="form__message errors" id="ContactFooter-error">
+          {% render 'icon', icon: 'error' %}
+          {{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}
+        </small>
+      {%- endif -%}
+
+      <div class="typeset rte">
+        {{ section.settings.newsletter_text }}
+      </div>
+
+      {%- if form.posted_successfully? -%}
+        <h3
+          class="form__message"
+          id="ContactFooter-success"
+          tabindex="-1"
+          autofocus>
+          {% render 'icon', icon: 'success' %}
+          {{ 'newsletter.success' | t }}
+        </h3>
+      {%- endif -%}
+
+    {%- endform -%}
+  </div>
+</div>
