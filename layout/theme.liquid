@@ -3,17 +3,14 @@
 <html
   class="no-js"
   lang="{{ request.locale.iso_code }}"
-  {%- if text_direction == 'rtl' %}
-  dir="rtl"
-  {% endif -%}>
+  {%- if text_direction == 'rtl' %}dir="rtl"{% endif -%}>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="">
     <link rel="canonical" href="{{ canonical_url }}">
-    <link
-    rel="preconnect"
+    <link rel="preconnect"
       href="https://cdn.shopify.com"
       crossorigin>
 
@@ -141,23 +138,7 @@
       onload="this.media='all'">
   </head>
 
-  <body
-    class="template-{{ request.page_type }}{% if request.design_mode %} shopify-design-mode{% endif %}"
-    {%- if settings.image_zoom_effect_enabled %}
-    data-animate-image
-    {% endif -%}
-    {%- if settings.image_loading_bar_enabled %}
-    data-lazy-image
-    {% endif -%}
-    {%- if settings.heading_capitalize %}
-    data-heading-capitalize
-    {% endif -%}
-    {%- if settings.heading_center %}
-    data-heading-center
-    {% endif -%}
-    {%- if settings.button_corner_radius > 0 %}
-    data-button-round
-    {% endif -%}>
+  <body class="template-{{ request.page_type }}{% if request.design_mode %} shopify-design-mode{% endif %}" {%- if settings.image_zoom_effect_enabled %}data-animate-image{% endif -%}{%- if settings.image_loading_bar_enabled %}data-lazy-image{% endif -%}{%- if settings.heading_capitalize %}data-heading-capitalize{% endif -%}{%- if settings.heading_center %}data-heading-center{% endif -%}{%- if settings.button_corner_radius > 0 %}data-button-round{% endif -%}>
     <!-- Google Tag Manager (noscript) -->
     <noscript>
       <iframe
@@ -194,7 +175,7 @@
       </div>
     </div>
 
-    <!-- {% section 'popup' %} -->
+    {% comment %} {% section 'popup' %} {% endcomment %}
     {% section 'cookie-banner' %}
 
     <ul hidden>
@@ -276,9 +257,9 @@
 
 // Fixed: Largest Contentful Paint image was lazily loaded
         const first_image = document.querySelector('#MainContent .shopify-section .media img');
-        if (first_image)
+        if (first_image) 
           first_image.setAttribute('loading', 'auto');
-
+        
 
 
 
