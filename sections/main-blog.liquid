@@ -55,12 +55,12 @@
                 {%- liquid
                   if tag contains "_"
                     assign tag_starts_with = tag | slice: 0
-  
+
                     if tag_starts_with == "_"
                       if tag_count
                         assign tag_count = tag_count | minus: 1 | at_least: 0
                       endif
-  
+
                       continue
                     endif
                   endif
