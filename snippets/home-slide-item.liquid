@@ -18,7 +18,28 @@
       {%- if block.settings.button_slide != blank -%}
         <a
           class="btn-slide"
-          href="{{ block.settings.button_link }}">{{ block.settings.button_slide }}</a>
+          href="{{ block.settings.button_link }}">
+          <span>{{ block.settings.button_slide }}</span>
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M5 12H19"
+              stroke="white"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path
+              d="M12 5L19 12L12 19"
+              stroke="white"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </a>
       {%- endif -%}
     </div>
     {%- if block.settings.image_dk != blank -%}

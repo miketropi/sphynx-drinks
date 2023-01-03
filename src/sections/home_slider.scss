@@ -12,22 +12,24 @@
                 display: flex;
                 -ms-flex-wrap: wrap;
                 flex-wrap: wrap;
-
+                align-items: center;
                 @media (max-width: 767px) {
                     flex-direction: column-reverse;
                 }
 
                 &.page-width {
-                    @media (min-width: 992px){
+                    @media (min-width: 992px) {
                         max-width: 960px;
                     }
-                    @media (min-width: 1200px){
+
+                    @media (min-width: 1200px) {
                         max-width: 1140px;
                     }
-                    @media (min-width: 1300px){
+
+                    @media (min-width: 1600px) {
                         max-width: 1400px;
                     }
-                    
+
                 }
 
                 .slide-col {
@@ -56,7 +58,10 @@
                             line-height: 95%;
                             color: #FFFFFF;
                             margin-bottom: 10px;
-
+            
+                            @media (max-width: 1280px) {
+                                font-size: 48px;
+                            }
                             @media (max-width: 767px) {
                                 font-size: 36px;
                             }
@@ -85,13 +90,21 @@
                             font-size: 22px;
                             line-height: 95%;
                             color: #FFFFFF;
-                            padding: 25px 30px;
+                            padding: 21px 30px 25px;
                             background: #FFC85E;
                             border-radius: 8px;
-
+                            @media (max-width: 1280px) {
+                                font-size: 20px;
+                                padding: 11px 25px 19px;
+                            }
                             @media (max-width: 767px) {
                                 font-size: 18px;
-                                padding: 18px 15px;
+                                padding: 11px 25px 19px;
+                            }
+
+                            svg {
+                                position: relative;
+                                top: 5px;
                             }
                         }
                     }
@@ -109,10 +122,11 @@
                             display: flex;
                             align-items: center;
                             justify-content: center;
+                            height: 100%;
 
                             img {
                                 max-width: 100%;
-
+                                height: auto;
 
                                 @media (max-width: 767px) {
                                     max-width: 80%;
