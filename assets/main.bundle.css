@@ -15,16 +15,46 @@
 }
 .header-extra-tools__item.__search-form form {
   width: 100%;
+  position: relative;
 }
 .header-extra-tools__item.__search-form form input[name=q] {
   width: 100%;
-  border-radius: 4px;
+  border-radius: 8px;
   border: none;
   background: white;
   padding: 1em;
 }
 .header-extra-tools__item.__search-form form input[type=submit] {
   display: none;
+}
+.header-extra-tools__item.__search-form form .__search-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.__mini-cart-icon {
+  position: relative;
+}
+.__mini-cart-icon .cart-link__bubble {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  border-radius: 10px;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background-color: #FFC85E;
+  color: white;
+  font-family: "Montserrat";
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 8px;
 }
 
 .site-brand__url {
