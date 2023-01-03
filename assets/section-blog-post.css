@@ -1,3 +1,25 @@
+.single-post__container {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.single-post__wrap {
+  display: flex;
+}
+.single-post__content {
+  width: 65.5%;
+}
+.single-post__sidebar {
+  width: 34.5%;
+  padding-left: 85px;
+}
+
+
+
+
+
 .article-template > *:first-child:not(.article-template__hero-container) {
   margin-top: 5rem;
 }
@@ -146,7 +168,7 @@
   .article-template__navigation .navigation__previous {
     text-align: start;
   }
-  
+
   .article-template__navigation .navigation__next {
     text-align: end;
   }

@@ -78,7 +78,7 @@
     {%- liquid
       render 'css-variables'
       echo 'base.css' | asset_url | stylesheet_tag: preload: true
-      
+
       if text_direction == 'rtl'
         echo 'rtl.css' | asset_url | stylesheet_tag
       endif
@@ -194,7 +194,7 @@
       </div>
     </div>
 
-    {% section 'popup' %}
+    <!-- {% section 'popup' %} -->
     {% section 'cookie-banner' %}
 
     <ul hidden>
@@ -276,9 +276,9 @@
 
 // Fixed: Largest Contentful Paint image was lazily loaded
         const first_image = document.querySelector('#MainContent .shopify-section .media img');
-        if (first_image) 
+        if (first_image)
           first_image.setAttribute('loading', 'auto');
-        
+
 
 
 
