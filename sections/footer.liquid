@@ -3,7 +3,7 @@
     <div class="site-footer__inner">
       {%- if section.blocks.size > 0 -%}
         {%- for block in section.blocks -%}
-          <div class="footer-col">
+          <div class="footer-col __type_{{ block.type }}">
             {% case block.type %}
               {% when "membership-form" %}
               {%- render "membership-form", settings: block.settings -%}
