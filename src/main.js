@@ -1,1 +1,3 @@
-import './js/home_page'
+import { initHomeSlider } from "./js/home_slider";
+
+initHomeSlider();
