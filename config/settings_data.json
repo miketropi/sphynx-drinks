@@ -110,6 +110,7 @@
           "mobile_logo_height": 60,
           "logo_position": "middle-left",
           "menu": "main-menu",
+          "second_main_menu": "second-main-menu", 
           "enable_dropdown_menu": true,
           "show_line_separator": false,
           "enable_sticky_header": false,

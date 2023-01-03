@@ -2,9 +2,30 @@
   --site-container-width: 1360px;
 }
 
-.site-header__container {
+.site-container {
   width: var(--site-container-width);
   padding: 0;
   margin: 0 auto;
-  max-width: calc(var(--site-container-width) - 30px);
+  max-width: calc(100% - 30px);
+}
+
+.header-extra-tools__item.__search-form {
+  width: 340px;
+  max-width: 100%;
+
+  form {
+    width: 100%;
+
+    input[name=q] {
+      width: 100%;
+      border-radius: 4px;
+      border: none;
+      background: white;  
+      padding: 1em;
+    }
+
+    input[type=submit] {
+      display: none;
+    }
+  }
 }
