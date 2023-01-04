@@ -964,12 +964,12 @@
     "60ddbcd1-f01b-4f31-9ab0-01b1ecc4a42d": {
       "type": "collection-gallery",
       "blocks": {
-        "d1bf0e65-5fd4-409e-b7c2-a79e3cedb9fd": {
+        "af03a39d-1d6e-4625-964d-5a181a93b673": {
           "type": "collection_gallery_item",
           "settings": {
-            "collection": "absolute-zero",
-            "image": "shopify:\/\/shop_images\/collection-3.png",
-            "name": "TONIC AND SODA",
+            "collection": "amplify",
+            "image": "shopify:\/\/shop_images\/collection-6.png",
+            "name": "MIXERS",
             "redirect_url": "",
             "box_size": "size_1"
           }
@@ -980,6 +980,16 @@
             "collection": "4-pines",
             "image": "shopify:\/\/shop_images\/collection-2.png",
             "name": "NON-ALCOHOLIC CIDER",
+            "redirect_url": "",
+            "box_size": "size_1"
+          }
+        },
+        "d1bf0e65-5fd4-409e-b7c2-a79e3cedb9fd": {
+          "type": "collection_gallery_item",
+          "settings": {
+            "collection": "absolute-zero",
+            "image": "shopify:\/\/shop_images\/collection-3.png",
+            "name": "TONIC AND SODA",
             "redirect_url": "",
             "box_size": "size_1"
           }
@@ -1023,26 +1033,16 @@
             "redirect_url": "",
             "box_size": "size_1"
           }
-        },
-        "af03a39d-1d6e-4625-964d-5a181a93b673": {
-          "type": "collection_gallery_item",
-          "settings": {
-            "collection": "amplify",
-            "image": "shopify:\/\/shop_images\/collection-6.png",
-            "name": "MIXERS",
-            "redirect_url": "",
-            "box_size": "size_1"
-          }
         }
       },
       "block_order": [
-        "d1bf0e65-5fd4-409e-b7c2-a79e3cedb9fd",
+        "af03a39d-1d6e-4625-964d-5a181a93b673",
         "86a0e8ce-c05e-4063-8313-a2c87fb5c979",
+        "d1bf0e65-5fd4-409e-b7c2-a79e3cedb9fd",
         "c3e6b2f5-8be3-4ca0-a321-4e1ee779d131",
         "51422e25-33be-4467-8987-4d28759a8f00",
         "85745617-3560-4c2c-8a7d-4db438cb2c85",
-        "2d844ba7-5f95-4dee-b02f-e3ec17897fa2",
-        "af03a39d-1d6e-4625-964d-5a181a93b673"
+        "2d844ba7-5f95-4dee-b02f-e3ec17897fa2"
       ],
       "settings": {
         "heading": "SHOP BY COLLECTION",
