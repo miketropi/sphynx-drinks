@@ -1,24 +1,19 @@
 <div
   class="section-home-slider-inner--item"
-  style="background-color: {{block.settings.background_item}}">
-  <div
-    class="page-width section-home-slider-inner--item-wrapper">
-    <div
-      class="slide-col slide-content">
+  style="background-color: {{block.settings.background_item}}"
+  {{ block.shopify_attributes }}>
+  <div class="page-width section-home-slider-inner--item-wrapper">
+    <div class="slide-col slide-content">
       {%- if block.settings.heading_slide != blank -%}
-        <h2
-          class="heading-slide">{{ block.settings.heading_slide }}</h2>
+        <h2 class="heading-slide">{{ block.settings.heading_slide }}</h2>
       {%- endif -%}
 
       {%- if block.settings.description_slide != blank -%}
-        <p
-          class="desc-slide">{{ block.settings.description_slide }}</p>
+        <p class="desc-slide">{{ block.settings.description_slide }}</p>
       {%- endif -%}
 
       {%- if block.settings.button_slide != blank -%}
-        <a
-          class="btn-slide"
-          href="{{ block.settings.button_link }}">
+        <a class="btn-slide" href="{{ block.settings.button_link }}">
           <span>{{ block.settings.button_slide }}</span>
           <svg
             width="24"
@@ -43,14 +38,10 @@
       {%- endif -%}
     </div>
     {%- if block.settings.image_dk != blank -%}
-      <div
-        class="slide-col slide-media">
+      <div class="slide-col slide-media">
         {%- if block.settings.image_animation != blank -%}
-          <div
-            class="slide-media__image-animation">
-            <img
-              src="{{ block.settings.image_animation | image_url }}"
-              loading="lazy">
+          <div class="slide-media__image-animation">
+            <img src="{{ block.settings.image_animation | image_url }}" loading="lazy">
           </div>
         {%- endif -%}
         <lazy-image

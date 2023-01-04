@@ -1,4 +1,6 @@
-.section-card-w-icon {
+.section-card-w-icon .card-with-icon-wrapper {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: white;
 }
 .section-card-w-icon .card-with-icon-wrapper .card-with-icon--heading {
@@ -6,10 +8,17 @@
   font-weight: 900;
   font-size: 36px;
   line-height: 95%;
+  font-family: "Montserrat";
   color: #000000;
   text-align: center;
   margin-top: 0;
   margin-bottom: 15px;
+}
+@media (max-width: 767px) {
+  .section-card-w-icon .card-with-icon-wrapper .card-with-icon--heading {
+    font-size: 32px;
+    line-height: 110%;
+  }
 }
 .section-card-w-icon .card-with-icon-wrapper .card-with-icon--subheading {
   font-style: normal;
@@ -18,4 +27,67 @@
   line-height: 95%;
   text-align: center;
   color: #F05123;
+}
+@media (max-width: 767px) {
+  .section-card-w-icon .card-with-icon-wrapper .card-with-icon--subheading {
+    font-size: 20px;
+  }
+}
+.section-card-w-icon .card-with-icon-wrapper .card-with-icon-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 50px;
+  margin-top: 50px;
+}
+@media (max-width: 767px) {
+  .section-card-w-icon .card-with-icon-wrapper .card-with-icon-grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 0;
+    grid-row-gap: 40px;
+  }
+}
+.section-card-w-icon .card-with-icon-wrapper .card-with-icon-grid .card-with-icon__item {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 1200px) {
+  .section-card-w-icon .card-with-icon-wrapper .card-with-icon-grid .card-with-icon__item {
+    flex-direction: column;
+  }
+}
+.section-card-w-icon .card-with-icon-wrapper .card-with-icon-grid .card-with-icon__item-icon {
+  width: 100%;
+  max-width: 86px;
+}
+.section-card-w-icon .card-with-icon-wrapper .card-with-icon-grid .card-with-icon__item-icon img {
+  max-width: 86px;
+}
+.section-card-w-icon .card-with-icon-wrapper .card-with-icon-grid .card-with-icon__item-content {
+  width: 100%;
+  max-width: calc(100% - 86px);
+  padding-left: 35px;
+  margin-top: 25px;
+}
+@media (max-width: 1200px) {
+  .section-card-w-icon .card-with-icon-wrapper .card-with-icon-grid .card-with-icon__item-content {
+    padding-left: 0;
+    max-width: 100%;
+  }
+}
+.section-card-w-icon .card-with-icon-wrapper .card-with-icon-grid .card-with-icon__item-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 95%;
+  font-family: "Montserrat";
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.section-card-w-icon .card-with-icon-wrapper .card-with-icon-grid .card-with-icon__item-desc {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 146%;
+  color: #8B8B8B;
 }
