@@ -425,6 +425,7 @@ ul.menu-style-inline li.menu-link:hover > ul {
   margin-bottom: 30px;
   line-height: 0;
   overflow: hidden;
+  border-radius: 12px;
 }
 .collection-gallery__box-grid .box-item.__box-size_1 {
   height: 260px;
