@@ -3,6 +3,16 @@ $footer-background-color: black !default;
 .site-footer {
   background-color: $footer-background-color;
   padding-top: 103px;
+  position: relative;
+
+  .footer-decor-top {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    line-height: 0;
+    transform: translateY(-98%);
+    -webkit-transform: translateY(-98%);
+  }
 
   &__container {
 
@@ -21,7 +31,51 @@ $footer-background-color: black !default;
 
       &.__type_footer-brand-image {
         width: 20%;
+        text-align: center;
       }
+
+      &.__type_vertical-menu,
+      &.__type_footer-socials {
+        width: calc(40% / 3);
+
+        h4 {
+          color: #F05123;
+          font-size: 1.5em;
+          margin: 0 0 1.4em;
+          font-weight: bold;
+          font-family: 'Montserrat';
+
+          &.__heading-empty {
+            height: 32px;
+            display: block;
+          }
+        }
+      } 
+    }
+  }
+
+  &__copyright {
+    padding: 50px 0 60px;
+  }
+}
+
+.copyright-text__container {
+  width: 334px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.__type_footer-brand-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .footer-brand-image {
+    max-width: 100%;
+
+    img {
+      max-width: 100%;
     }
   }
 }

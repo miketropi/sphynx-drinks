@@ -1,4 +1,16 @@
 <footer class="site-footer site-footer__container">
+  <div class="footer-decor-top">
+    <svg
+      viewBox="0 0 1920 70"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M0 7.2248L40 14.141C80 21.0572 160 34.8896 240 38.3478C320 41.8059 400 34.8896 480 29.7025C560 24.5153 640 21.0572 720 21.0572C800 21.0572 880 24.5153 960 19.3282C1040 14.141 1120 0.308594 1200 0.308594C1280 0.308594 1360 14.141 1440 26.2444C1520 38.3478 1600 48.7221 1680 52.1802C1760 55.6383 1840 52.1802 1880 50.4511L1920 48.7221V69.4707H1880C1840 69.4707 1760 69.4707 1680 69.4707C1600 69.4707 1520 69.4707 1440 69.4707C1360 69.4707 1280 69.4707 1200 69.4707C1120 69.4707 1040 69.4707 960 69.4707C880 69.4707 800 69.4707 720 69.4707C640 69.4707 560 69.4707 480 69.4707C400 69.4707 320 69.4707 240 69.4707C160 69.4707 80 69.4707 40 69.4707H0V7.2248Z"
+        fill="black" />
+    </svg>
+  </div>
   <div class="site-container">
     <div class="site-footer__inner">
       {%- if section.blocks.size > 0 -%}
@@ -23,7 +35,11 @@
     </div>
   </div>
   <div class="site-footer__copyright">
-    {{ section.settings.copyright_text }}
+    <div class="site-container">
+      <div class="copyright-text__container">
+        {{ section.settings.copyright_text }}
+      </div>
+    </div>
   </div>
 </footer>
 <!-- .site-footer -->

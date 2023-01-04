@@ -24,7 +24,7 @@
     "type_navigation_size": 16,
     "type_button_font": "body",
     "type_button_size": 14,
-    "page_width": 1400, 
+    "page_width": 1400,
     "spacing_sections": 0,
     "page_transition_enabled": true,
     "image_zoom_effect_enabled": true,
@@ -100,51 +100,61 @@
       },
       "header": {
         "type": "header",
-        "block_order": [
-          "3e045f91-7335-4db4-a2b4-9e4f155eadee"
-        ],
         "settings": {
           "logo": "shopify:\/\/shop_images\/Asset_1_4x_6e2e6a3a-4349-4f93-a737-600c979d0aaa.png",
           "mobile_logo": "shopify:\/\/shop_images\/sphynx-test-logo.png",
-          "logo_height": 100,
-          "mobile_logo_height": 60,
-          "logo_position": "middle-left",
           "menu": "main-menu",
-          "second_main_menu": "second-main-menu", 
-          "enable_dropdown_menu": true,
-          "show_line_separator": false,
-          "enable_sticky_header": false,
-          "icon_weight": "1.5",
-          "transparent_logo": "shopify:\/\/shop_images\/Asset_1_4x_6e2e6a3a-4349-4f93-a737-600c979d0aaa.png",
-          "mobile_transparent_logo": "shopify:\/\/shop_images\/Asset_1_4x_6e2e6a3a-4349-4f93-a737-600c979d0aaa.png",
-          "enable_transparent_header": true,
-          "enable_transparent_header_collection": true,
-          "enable_transparent_header_custom": "main-menu",
-          "show_transparent_header_border": false,
-          "transparent_text_color": "#ffffff",
-          "colors_text": "#282828",
-          "colors_border": "#a61aff",
-          "colors_background": "#ffffff"
+          "second_main_menu": "second-main-menu"
         }
       },
       "footer": {
         "type": "footer",
-        
+        "blocks": {
+          "e5ce58ea-d43c-42eb-ae8d-f362f06ba071": {
+            "type": "membership-form",
+            "settings": {
+              "heading": "FIND YOUR FLAVOUR",
+              "description": "Apply for our free membership to receive exclusive deals, news, and events."
+            }
+          },
+          "0130e6e7-d300-4ed4-b84f-2b8d18054be6": {
+            "type": "footer-brand-image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Icon-Sphynx.png"
+            }
+          },
+          "16453796-efe6-46c8-8bf8-80b6800f35ca": {
+            "type": "vertical-menu",
+            "settings": {
+              "heading": "Shoping",
+              "menu": "footer-menu-shop"
+            }
+          },
+          "7742944a-8aec-4d3f-95d5-6ade2030f98d": {
+            "type": "vertical-menu",
+            "settings": {
+              "heading": "About",
+              "menu": "footer-about-menu"
+            }
+          },
+          "8bb8af0b-a560-434f-a65e-a21fbde8f8a1": {
+            "type": "footer-socials",
+            "settings": {
+              "heading": "",
+              "instagram_url": "#",
+              "facebook_url": "#"
+            }
+          }
+        },
+        "block_order": [
+          "e5ce58ea-d43c-42eb-ae8d-f362f06ba071",
+          "0130e6e7-d300-4ed4-b84f-2b8d18054be6",
+          "16453796-efe6-46c8-8bf8-80b6800f35ca",
+          "7742944a-8aec-4d3f-95d5-6ade2030f98d",
+          "8bb8af0b-a560-434f-a65e-a21fbde8f8a1"
+        ],
         "settings": {
-          "newsletter_enable": true,
-          "newsletter_heading": "Exclusive benefits",
-          "newsletter_text": "<p>Apply for our free membership to receive exclusive deals, news, and events.<\/p>",
-          "show_social": true,
-          "social_heading": "Follow us",
-          "enable_country_selector": true,
-          "enable_language_selector": true,
-          "payment_enable": false,
-          "copyright_text": "All rights reserved.",
-          "colors_text": "#ffffff",
-          "colors_heading": "#ffffff",
-          "colors_link": "#ffffff",
-          "colors_border": "#ffe8ae",
-          "colors_background": "#a61aff"
+          "copyright_text": "<p>All rights reserved.<\/p>"
         }
       },
       "popup": {
@@ -365,38 +375,12 @@
         "header": {
           "type": "header",
           "settings": {
-            "logo_height": 50,
-            "logo_position": "top-center",
-            "enable_dropdown_menu": true,
-            "show_line_separator": true,
-            "enable_sticky_header": true,
-            "enable_transparent_header": true,
-            "enable_transparent_header_collection": true,
-            "show_transparent_header_border": false,
-            "transparent_text_color": "#ffffff",
-            "colors_text": "#282828",
-            "colors_border": "#d2d5d9",
-            "colors_background": "#ffffff"
           }
         },
         "footer": {
           "type": "footer",
-          
           "settings": {
-            "newsletter_enable": true,
-            "newsletter_heading": "Exclusive benefits",
-            "newsletter_text": "<p>Apply for our free membership to receive exclusive deals, news, and events.<\/p>",
-            "show_social": true,
-            "social_heading": "",
-            "enable_country_selector": true,
-            "enable_language_selector": true,
-            "payment_enable": true,
-            "copyright_text": "All rights reserved.",
-            "colors_text": "#42474c",
-            "colors_heading": "#6b7177",
-            "colors_link": "#212326",
-            "colors_border": "#d2d5d9", 
-            "colors_background": "#ffffff"
+            "copyright_text": "<p>All rights reserved.<\/p>"
           }
         },
         "popup": {
@@ -573,38 +557,12 @@
         "header": {
           "type": "header",
           "settings": {
-            "logo_height": 50,
-            "logo_position": "middle-left",
-            "enable_dropdown_menu": false,
-            "show_line_separator": true,
-            "enable_sticky_header": true,
-            "enable_transparent_header": true,
-            "enable_transparent_header_collection": true,
-            "show_transparent_header_border": false,
-            "transparent_text_color": "#ffffff",
-            "colors_text": "#282828",
-            "colors_border": "#d2d5d9",
-            "colors_background": "#ffffff"
           }
         },
         "footer": {
           "type": "footer",
-          
           "settings": {
-            "newsletter_enable": true,
-            "newsletter_heading": "Exclusive benefits",
-            "newsletter_text": "<p>Apply for our free membership to receive exclusive deals, news, and events.<\/p>",
-            "show_social": true,
-            "social_heading": "",
-            "enable_country_selector": true,
-            "enable_language_selector": true,
-            "payment_enable": true,
-            "copyright_text": "All rights reserved.",
-            "colors_text": "#42474c",
-            "colors_heading": "#6b7177",
-            "colors_link": "#212326",
-            "colors_border": "#d2d5d9",
-            "colors_background": "#ffffff"
+            "copyright_text": "<p>All rights reserved.<\/p>"
           }
         },
         "popup": {
@@ -765,38 +723,12 @@
         "header": {
           "type": "header",
           "settings": {
-            "logo_height": 50,
-            "logo_position": "middle-left",
-            "enable_dropdown_menu": true,
-            "show_line_separator": true,
-            "enable_sticky_header": true,
-            "enable_transparent_header": false,
-            "enable_transparent_header_collection": false,
-            "show_transparent_header_border": false,
-            "transparent_text_color": "#ffffff",
-            "colors_text": "#282828",
-            "colors_border": "#d2d5d9",
-            "colors_background": "#ffffff"
           }
         },
         "footer": {
           "type": "footer",
-          
           "settings": {
-            "newsletter_enable": true,
-            "newsletter_heading": "Exclusive benefits",
-            "newsletter_text": "<p>Apply for our free membership to receive exclusive deals, news, and events.<\/p>",
-            "show_social": true,
-            "social_heading": "",
-            "enable_country_selector": true,
-            "enable_language_selector": true,
-            "payment_enable": true,
-            "copyright_text": "All rights reserved.",
-            "colors_text": "#969696",
-            "colors_heading": "#ffffff",
-            "colors_link": "#969696",
-            "colors_border": "#3b3b3b",
-            "colors_background": "#1c1d1d"
+            "copyright_text": "<p>All rights reserved.<\/p>"
           }
         },
         "popup": {
@@ -945,38 +877,12 @@
         "header": {
           "type": "header",
           "settings": {
-            "logo_height": 50,
-            "logo_position": "off-canvas",
-            "enable_dropdown_menu": false,
-            "show_line_separator": true,
-            "enable_sticky_header": true,
-            "enable_transparent_header": false,
-            "enable_transparent_header_collection": true,
-            "show_transparent_header_border": false,
-            "transparent_text_color": "#ffffff",
-            "colors_text": "#ffffff",
-            "colors_border": "#272c32",
-            "colors_background": "#18181a"
           }
         },
         "footer": {
           "type": "footer",
-          
           "settings": {
-            "newsletter_enable": false,
-            "newsletter_heading": "Exclusive benefits",
-            "newsletter_text": "<p>Apply for our free membership to receive exclusive deals, news, and events.<\/p>",
-            "show_social": true,
-            "social_heading": "Follow Us",
-            "enable_country_selector": true,
-            "enable_language_selector": true,
-            "payment_enable": true,
-            "copyright_text": "All rights reserved.",
-            "colors_text": "#9c9c9c",
-            "colors_heading": "#9c9c9c",
-            "colors_link": "#ffffff",
-            "colors_border": "#272c32",
-            "colors_background": "#18181a"
+            "copyright_text": "<p>All rights reserved.<\/p>"
           }
         },
         "popup": {
