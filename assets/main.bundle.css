@@ -57,6 +57,59 @@
   font-size: 8px;
 }
 
+.membership-register-form .footer-heading-text h4 {
+  font-family: "Flavory Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  color: #F05123;
+  margin: 0;
+}
+.membership-register-form .footer-heading-text p {
+  margin-top: 0;
+}
+.membership-register-form .__form-container {
+  margin-top: 29px;
+}
+.membership-register-form .__form-container .__field__input {
+  border: none;
+  border-radius: 8px;
+  background-color: white;
+  width: 340px;
+  padding: 1.5em;
+}
+.membership-register-form .__form-container .button {
+  background-color: #F05123;
+  color: white;
+  font-size: 1.1em;
+  font-weight: 800;
+  padding: 15px 20px;
+  border: none;
+  white-space: nowrap;
+  letter-spacing: 0;
+  display: inherit;
+  margin-top: 15px;
+  border-radius: 8px;
+  width: auto;
+  min-width: auto;
+  text-transform: initial;
+  display: flex;
+}
+.membership-register-form .__form-container .button svg {
+  width: 24px;
+  margin-left: 10px;
+}
+.membership-register-form .__form-container .button svg path {
+  transition: 0.4s ease;
+  -webkit-transition: 0.4s ease;
+}
+.membership-register-form .__form-container .button:hover {
+  color: black;
+}
+.membership-register-form .__form-container .button:hover svg path {
+  stroke: black;
+}
+
 .site-brand__url {
   display: inline-block;
 }
@@ -179,6 +232,24 @@ ul.menu-style-inline li.menu-link:hover > ul {
 .site-header__nth2 .menu-style-inline > li.menu-link > a {
   color: white !important;
   padding: 22px 4px !important;
+}
+
+.site-footer {
+  background-color: black;
+  padding-top: 103px;
+}
+.site-footer__inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+.site-footer__inner .footer-col {
+  margin-bottom: 1.5em;
+}
+.site-footer__inner .footer-col.__type_membership-form {
+  width: 40%;
+}
+.site-footer__inner .footer-col.__type_footer-brand-image {
+  width: 20%;
 }
 
 .single-post__container {

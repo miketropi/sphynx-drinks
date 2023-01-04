@@ -1,3 +1,51 @@
-<div class="verical-menu">
-  {{ settings | json }}
+{%- assign menu = settings.menu -%}
+  <div class="verical-menu">
+  {% comment %} {{ settings | json }} {% endcomment %}
+  <h4 class="menu-heading">{{ settings.heading }}</h4>
+  <ul class="menu menu-style-vertical">
+    {% for link in menu.links %}
+      <li class="menu-link">
+        <a href="{{ link.url }}">
+          {{ link.title }}
+          {% if link.links.size > 0 %}
+            <span class="menu-icon-arrow">
+              <svg
+                width="10"
+                height="8"
+                viewBox="0 0 10 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M1.5 2.19141L5 5.69141L8.5 2.19141"
+                  stroke="white"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </span>
+          {% endif %}
+        </a>
+
+        {% if link.links.size > 0 %}
+          <ul class="menu dropdown-child">
+            {% for child_link in link.links %}
+              <li class="menu-link">
+                <a href="{{ child_link.url }}">{{ child_link.title }}</a>
+
+                {% if child_link.links.size > 0 %}
+                  <ul class="menu dropdown-grandchild">
+                    {% for grandchild_link in child_link.links %}
+                      <li class="menu-link">
+                        <a href="{{ grandchild_link.url }}">{{ grandchild_link.title }}</a>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                {% endif %}
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
 </div>

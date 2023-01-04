@@ -61,3 +61,77 @@
     font-size: 8px;
   }
 }
+
+.membership-register-form {
+
+  .footer-heading-text {
+
+    h4 {
+      font-family: "Flavory Display";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 64px;
+      color: #F05123;
+      margin: 0
+    }
+
+    p {
+      margin-top: 0;
+    }
+  }
+
+  .__form-container {
+    margin-top: 29px;
+
+    .__field {
+
+    }
+
+    .__field__input {
+      border: none;
+      border-radius: 8px;
+      background-color: white;
+      width: 340px;
+      padding: 1.5em;
+    }
+
+    .button {
+      background-color: #F05123;
+      color: white;
+      font-size: 1.1em;
+      font-weight: 800;
+      padding: 15px 20px;
+      border: none;
+      white-space: nowrap;
+      letter-spacing: 0;
+      display: inherit;
+      margin-top: 15px;
+      border-radius: 8px;
+      width: auto;
+      min-width: auto;
+      text-transform: initial;
+      display: flex;
+
+      svg {
+        width: 24px;
+        margin-left: 10px;
+
+        path {
+          transition: .4s ease;
+          -webkit-transition: .4s ease;
+        }
+      }
+
+      &:hover {
+        color: black;
+
+        svg {
+
+          path {
+            stroke: black;
+          }
+        }
+      }
+    }
+  }
+}

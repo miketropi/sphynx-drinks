@@ -1,0 +1,27 @@
+$footer-background-color: black !default;
+
+.site-footer {
+  background-color: $footer-background-color;
+  padding-top: 103px;
+
+  &__container {
+
+  }
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+
+    .footer-col {
+      margin-bottom: 1.5em;
+
+      &.__type_membership-form {
+        width: 40%;
+      }
+
+      &.__type_footer-brand-image {
+        width: 20%;
+      }
+    }
+  }
+}

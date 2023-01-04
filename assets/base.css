@@ -84,7 +84,7 @@ html {
 .page-width {
   max-width: var(--page-width);
   margin: 0 auto;
-  padding: 0 5%;
+  padding: 0 1.5rem;
 }
 
 .page-width-desktop {
@@ -94,7 +94,7 @@ html {
 
 @media screen and (min-width: 750px) {
   .page-width {
-    padding: 0 5rem;
+    padding: 0 1.5rem;
   }
 
   .page-width--narrow {
@@ -3273,4 +3273,23 @@ use-animate {
 
 .flickity-page-dot.is-selected::after {
   transform: scale(1.5);
+}
+
+@media (min-width: 992px) {
+  .page-width {
+    max-width: 960px;
+  }
+  
+}
+
+@media (min-width: 1200px) {
+  .page-width {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .page-width {
+    max-width: 1400px;
+  }
 }

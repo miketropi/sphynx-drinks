@@ -24,7 +24,7 @@
     "type_navigation_size": 16,
     "type_button_font": "body",
     "type_button_size": 14,
-    "page_width": 1600,
+    "page_width": 1400, 
     "spacing_sections": 0,
     "page_transition_enabled": true,
     "image_zoom_effect_enabled": true,
@@ -313,7 +313,7 @@
       "type_navigation_size": 12,
       "type_button_font": "body",
       "type_button_size": 14,
-      "page_width": 1600,
+      "page_width": 1400,
       "spacing_sections": 0,
       "show_cart_note": true,
       "show_shipping_calculator": true,
@@ -381,34 +381,7 @@
         },
         "footer": {
           "type": "footer",
-          "blocks": {
-            "footer-0": {
-              "type": "link_list",
-              "settings": {
-                "heading": "Shop",
-                "menu": "footer"
-              }
-            },
-            "footer-1": {
-              "type": "link_list",
-              "settings": {
-                "heading": "Explore",
-                "menu": "footer"
-              }
-            },
-            "footer-2": {
-              "type": "link_list",
-              "settings": {
-                "heading": "More",
-                "menu": "footer"
-              }
-            }
-          },
-          "block_order": [
-            "footer-0",
-            "footer-1",
-            "footer-2"
-          ],
+          
           "settings": {
             "newsletter_enable": true,
             "newsletter_heading": "Exclusive benefits",
@@ -422,7 +395,7 @@
             "colors_text": "#42474c",
             "colors_heading": "#6b7177",
             "colors_link": "#212326",
-            "colors_border": "#d2d5d9",
+            "colors_border": "#d2d5d9", 
             "colors_background": "#ffffff"
           }
         },
@@ -532,7 +505,7 @@
       "type_navigation_size": 13,
       "type_button_font": "heading",
       "type_button_size": 13,
-      "page_width": 1600,
+      "page_width": 1400,
       "spacing_sections": 0,
       "show_cart_note": true,
       "show_shipping_calculator": true,
@@ -616,34 +589,7 @@
         },
         "footer": {
           "type": "footer",
-          "blocks": {
-            "footer-0": {
-              "type": "link_list",
-              "settings": {
-                "heading": "Shop",
-                "menu": "footer"
-              }
-            },
-            "footer-1": {
-              "type": "link_list",
-              "settings": {
-                "heading": "Explore",
-                "menu": "footer"
-              }
-            },
-            "footer-2": {
-              "type": "link_list",
-              "settings": {
-                "heading": "More",
-                "menu": "footer"
-              }
-            }
-          },
-          "block_order": [
-            "footer-0",
-            "footer-1",
-            "footer-2"
-          ],
+          
           "settings": {
             "newsletter_enable": true,
             "newsletter_heading": "Exclusive benefits",
@@ -767,7 +713,7 @@
       "type_navigation_size": 14,
       "type_button_font": "body",
       "type_button_size": 13,
-      "page_width": 1600,
+      "page_width": 1400,
       "spacing_sections": 0,
       "show_cart_note": true,
       "show_shipping_calculator": true,
@@ -835,34 +781,7 @@
         },
         "footer": {
           "type": "footer",
-          "blocks": {
-            "footer-0": {
-              "type": "text",
-              "settings": {
-                "heading": "About your brand",
-                "subtext": "<p>Share information about your brand with your customers.<\/p>"
-              }
-            },
-            "footer-1": {
-              "type": "link_list",
-              "settings": {
-                "heading": "Our company",
-                "menu": "footer"
-              }
-            },
-            "footer-2": {
-              "type": "link_list",
-              "settings": {
-                "heading": "Our policies",
-                "menu": "footer"
-              }
-            }
-          },
-          "block_order": [
-            "footer-0",
-            "footer-1",
-            "footer-2"
-          ],
+          
           "settings": {
             "newsletter_enable": true,
             "newsletter_heading": "Exclusive benefits",
@@ -986,7 +905,7 @@
       "type_navigation_size": 13,
       "type_button_font": "heading",
       "type_button_size": 13,
-      "page_width": 1600,
+      "page_width": 1400,
       "spacing_sections": 0,
       "show_cart_note": true,
       "show_shipping_calculator": true,
@@ -1042,36 +961,7 @@
         },
         "footer": {
           "type": "footer",
-          "blocks": {
-            "footer-0": {
-              "type": "image",
-              "settings": {
-                "image_width": 50,
-                "alignment": "left",
-                "link": "",
-                "text": ""
-              }
-            },
-            "footer-1": {
-              "type": "link_list",
-              "settings": {
-                "heading": "Our Company",
-                "menu": "footer"
-              }
-            },
-            "footer-2": {
-              "type": "link_list",
-              "settings": {
-                "heading": "Our Policies",
-                "menu": "footer"
-              }
-            }
-          },
-          "block_order": [
-            "footer-0",
-            "footer-1",
-            "footer-2"
-          ],
+          
           "settings": {
             "newsletter_enable": false,
             "newsletter_heading": "Exclusive benefits",
