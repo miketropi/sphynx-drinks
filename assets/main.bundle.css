@@ -321,12 +321,11 @@ ul.menu-style-inline li.menu-link:hover > ul {
 }
 
 .copyright-text__container {
-  width: 334px;
+  width: 365px;
   max-width: 100%;
   margin: 0 auto;
   text-align: center;
 }
-
 .__type_footer-brand-image {
   display: flex;
   justify-content: center;
