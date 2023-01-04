@@ -981,7 +981,7 @@
             "image": "shopify:\/\/shop_images\/collection-2.png",
             "name": "NON-ALCOHOLIC CIDER",
             "redirect_url": "",
-            "box_size": "size_1"
+            "box_size": "size_2"
           }
         },
         "d1bf0e65-5fd4-409e-b7c2-a79e3cedb9fd": {
@@ -1001,7 +1001,7 @@
             "image": "shopify:\/\/shop_images\/collection-4.png",
             "name": "NON-ALCOHOLIC WINE",
             "redirect_url": "",
-            "box_size": "size_1"
+            "box_size": "size_2"
           }
         },
         "c3e6b2f5-8be3-4ca0-a321-4e1ee779d131": {
