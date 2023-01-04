@@ -126,14 +126,14 @@
           "16453796-efe6-46c8-8bf8-80b6800f35ca": {
             "type": "vertical-menu",
             "settings": {
-              "heading": "Menu",
+              "heading": "Shoping",
               "menu": "footer-menu-shop"
             }
           },
           "7742944a-8aec-4d3f-95d5-6ade2030f98d": {
             "type": "vertical-menu",
             "settings": {
-              "heading": "Menu",
+              "heading": "About",
               "menu": "footer-about-menu"
             }
           },
@@ -141,8 +141,8 @@
             "type": "footer-socials",
             "settings": {
               "heading": "",
-              "instagram_url": "",
-              "facebook_url": ""
+              "instagram_url": "#",
+              "facebook_url": "#"
             }
           }
         },
