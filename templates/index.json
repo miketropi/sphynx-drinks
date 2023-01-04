@@ -1004,6 +1004,16 @@
             "box_size": "size_1"
           }
         },
+        "85745617-3560-4c2c-8a7d-4db438cb2c85": {
+          "type": "collection_gallery_item",
+          "settings": {
+            "collection": "altina",
+            "image": "shopify:\/\/shop_images\/collection-5.png",
+            "name": "NON-ALCOHOLIC SPIRITS",
+            "redirect_url": "",
+            "box_size": "size_1"
+          }
+        },
         "51422e25-33be-4467-8987-4d28759a8f00": {
           "type": "collection_gallery_item",
           "settings": {
@@ -1023,16 +1033,6 @@
             "redirect_url": "",
             "box_size": "size_1"
           }
-        },
-        "85745617-3560-4c2c-8a7d-4db438cb2c85": {
-          "type": "collection_gallery_item",
-          "settings": {
-            "collection": "altina",
-            "image": "shopify:\/\/shop_images\/collection-5.png",
-            "name": "NON-ALCOHOLIC SPIRITS",
-            "redirect_url": "",
-            "box_size": "size_1"
-          }
         }
       },
       "block_order": [
@@ -1040,9 +1040,9 @@
         "86a0e8ce-c05e-4063-8313-a2c87fb5c979",
         "d1bf0e65-5fd4-409e-b7c2-a79e3cedb9fd",
         "c3e6b2f5-8be3-4ca0-a321-4e1ee779d131",
+        "85745617-3560-4c2c-8a7d-4db438cb2c85",
         "51422e25-33be-4467-8987-4d28759a8f00",
-        "2d844ba7-5f95-4dee-b02f-e3ec17897fa2",
-        "85745617-3560-4c2c-8a7d-4db438cb2c85"
+        "2d844ba7-5f95-4dee-b02f-e3ec17897fa2"
       ],
       "settings": {
         "heading": "SHOP BY COLLECTION",
