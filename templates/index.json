@@ -971,7 +971,8 @@
             "image": "shopify:\/\/shop_images\/collection-6.png",
             "name": "MIXERS",
             "redirect_url": "",
-            "box_size": "size_1"
+            "box_size": "size_1",
+            "custom_class": ""
           }
         },
         "86a0e8ce-c05e-4063-8313-a2c87fb5c979": {
@@ -981,7 +982,8 @@
             "image": "shopify:\/\/shop_images\/collection-2.png",
             "name": "NON-ALCOHOLIC CIDER",
             "redirect_url": "",
-            "box_size": "size_2"
+            "box_size": "size_2",
+            "custom_class": ""
           }
         },
         "d1bf0e65-5fd4-409e-b7c2-a79e3cedb9fd": {
@@ -991,7 +993,8 @@
             "image": "shopify:\/\/shop_images\/collection-3.png",
             "name": "TONIC AND SODA",
             "redirect_url": "",
-            "box_size": "size_1"
+            "box_size": "size_1",
+            "custom_class": ""
           }
         },
         "51422e25-33be-4467-8987-4d28759a8f00": {
@@ -1001,7 +1004,8 @@
             "image": "shopify:\/\/shop_images\/collection-4.png",
             "name": "NON-ALCOHOLIC WINE",
             "redirect_url": "",
-            "box_size": "size_2"
+            "box_size": "size_2",
+            "custom_class": ""
           }
         },
         "c3e6b2f5-8be3-4ca0-a321-4e1ee779d131": {
@@ -1011,7 +1015,8 @@
             "image": "shopify:\/\/shop_images\/collection-1.png",
             "name": "NON-ALCOHOLIC BEER",
             "redirect_url": "",
-            "box_size": "size_1"
+            "box_size": "size_1",
+            "custom_class": ""
           }
         },
         "85745617-3560-4c2c-8a7d-4db438cb2c85": {
@@ -1021,7 +1026,8 @@
             "image": "shopify:\/\/shop_images\/collection-5.png",
             "name": "NON-ALCOHOLIC SPIRITS",
             "redirect_url": "",
-            "box_size": "size_1"
+            "box_size": "size_1",
+            "custom_class": ""
           }
         },
         "2d844ba7-5f95-4dee-b02f-e3ec17897fa2": {
@@ -1031,7 +1037,8 @@
             "image": "shopify:\/\/shop_images\/collection-7.png",
             "name": "PREMIXED",
             "redirect_url": "",
-            "box_size": "size_1"
+            "box_size": "size_1",
+            "custom_class": "__fix-design"
           }
         }
       },
