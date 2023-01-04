@@ -252,7 +252,8 @@ ul.menu-style-inline li.menu-link:hover > ul {
   width: 20%;
 }
 
-.single-post__container {
+.single-post__container,
+.related-acticles__container {
   width: var(--site-container-width);
   padding: 0;
   margin: 0 auto;
@@ -270,4 +271,32 @@ ul.menu-style-inline li.menu-link:hover > ul {
 .single-post__sidebar {
   width: 34.5%;
   padding-left: 85px;
+}
+
+.related-acticles__title {
+  text-align: center;
+}
+
+.related-acticles__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.related-acticles__list .post-item-wrap {
+  width: 33.33%;
+  padding: 0 15px;
+}
+.related-acticles__list .post-item__thumb {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 66%;
+}
+.related-acticles__list .post-item__thumb img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }

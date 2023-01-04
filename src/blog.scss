@@ -1,4 +1,5 @@
-.single-post__container {
+.single-post__container,
+.related-acticles__container {
     width: var(--site-container-width);
     padding: 0;
     margin: 0 auto;
@@ -13,4 +14,32 @@
 .single-post__sidebar {
     width: 34.5%;
     padding-left: 85px;
+}
+
+.related-acticles__title {
+    text-align: center;
+}
+.related-acticles__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+    .post-item-wrap {
+        width: 33.33%;
+        padding: 0 15px;
+    }
+    .post-item {
+        &__thumb {
+            position: relative;
+            overflow: hidden;
+            padding-bottom: 66%;
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
 }
