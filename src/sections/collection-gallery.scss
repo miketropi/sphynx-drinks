@@ -48,13 +48,31 @@
   &__box-grid {
     margin-top: 40px;
     
-    .grid-sizer {
-      width: calc(100% / 3);
+    .grid-sizer,
+    .grid-item {
+      width: calc(31%);
     }
 
     .box-item {
       margin-bottom: 30px;
       line-height: 0;
+      overflow: hidden;
+
+      &.__box-size_1 {
+        height: 260px;
+
+        &.__fix-design {
+          height: calc(260px - 30px);
+        }
+      }
+
+      &.__box-size_2 {
+        height: calc(260px * 2);
+
+        &.__fix-design {
+          height: calc(260px * 2 - 30px);
+        }
+      }
     }
 
     .box-item__inner {

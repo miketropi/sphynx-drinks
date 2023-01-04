@@ -23,15 +23,13 @@
         {%- if section.blocks.size > 0 -%}
           {%- for block in section.blocks -%}
 
-            <div class="box-item grid-item">
-              <div class="box-item__inner" style="color: black;">
-                {% comment %} {{ block.settings | json }} {% endcomment %}
-                <img
-                  src="{{ block.settings.image | image_url }}"
-                  width=""
-                  height=""
-                  loading="lazy"
-                  alt="" />
+            <div class="box-item grid-item __box-{{ block.settings.box_size }} {{ block.settings.custom_class }}" style="background: url({{ block.settings.image | image_url }}) no-repeat center center / cover; background-size: 110%;">
+              <div class="box-item__inner" style="color: black;">{% comment %} <img
+                src="{{ block.settings.image | image_url }}"
+                width=""
+                height=""
+                loading="lazy"
+                alt="" /> {% endcomment %}
               </div>
             </div>
           {%- endfor -%}
@@ -85,6 +83,10 @@
               }
             ],
             "default": "size_1"
+          }, {
+            "type": "text",
+            "id": "custom_class",
+            "label": "Custom Class"
           }
         ]
       }
