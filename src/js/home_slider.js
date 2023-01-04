@@ -37,27 +37,39 @@ class HomeSlider {
             arrows: this.slideArrows,
             slidesToShow: 1,
             slidesToScroll: 1,
-            responsive: [{
-                breakpoint: 1024,
-                settings: {
-                    arrows: false
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        arrows: false
+                    }
+                },
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        arrows: false
+                    }
                 }
-
-            }]
+            ]
         });
 
-        let scrollAmount = 0;
+        $(document).on("scroll", function () {
+            if ($(window).width() < 767) return;
+            let pixels = $(document).scrollTop();
+            let pageHeight = $(document).height() - $(window).height();
+            let progress = (100 * pixels / pageHeight) * 10 + 50;
+            const imgAnimation = $(".slide-media__image-animation img");
+            const imgSlide = $(".slide-media__image img");
 
-        document.addEventListener('wheel', (event) => {
-            const DIVIDE_AMOUNT = 40;
-            if(scrollAmount < 5){
-
+            if (progress >= 100 || progress <= 50) return;
+            if (imgAnimation.length) {
+                imgAnimation.css("max-width", progress + "%");
             }
-            scrollAmount += event.deltaY / DIVIDE_AMOUNT;
-            console.log(scrollAmount)
-        });
+            if (imgSlide.length) {
+                imgSlide.css("max-width", progress + "%");
+            }
+        })
 
-        
     }
 
 }
