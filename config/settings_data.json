@@ -120,7 +120,7 @@
           "0130e6e7-d300-4ed4-b84f-2b8d18054be6": {
             "type": "footer-brand-image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Icon-Sphynx.png"
+              "image": "shopify:\/\/shop_images\/Logo-Icon.png"
             }
           },
           "16453796-efe6-46c8-8bf8-80b6800f35ca": {
@@ -154,7 +154,7 @@
           "8bb8af0b-a560-434f-a65e-a21fbde8f8a1"
         ],
         "settings": {
-          "copyright_text": "<p>All rights reserved.<\/p>"
+          "copyright_text": "<p>© 2022, Sphynx Drinks. All rights reserved. <br\/>Privacy Policy  |  Terms and Conditions<\/p>"
         }
       },
       "popup": {
