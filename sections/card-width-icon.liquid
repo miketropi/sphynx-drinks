@@ -1,23 +1,41 @@
 {{ 'section-card-w-icon.css' | asset_url | stylesheet_tag }}
 
-<div class="card-with-icon-wrapper">
+{%- style -%}
+  .section-card-w-icon .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+    background-color: {{ section.settings.bg_color }}
+  }
+  .section-card-w-icon .card-with-icon-wrapper.section-{{ section.id }}-padding .card-with-icon--heading {
+    color: {{ section.settings.heading_color }};
+  }
+  .section-card-w-icon .card-with-icon-wrapper.section-{{ section.id }}-padding .card-with-icon--subheading {
+    color: {{ section.settings.subheading_color }};
+  }
+{%- endstyle -%}
+
+<div class="card-with-icon-wrapper section-{{ section.id }}-padding">
   <div class="page-width">
     {%- if section.settings.heading_card != blank -%}
-      <h2 class="card-with-icon--heading">{{ section.settings.heading_card | escape }}</h2>
+      <h2 class="card-with-icon--heading">{{ section.settings.heading_card }}</h2>
     {%- endif -%}
 
     {%- if section.settings.subheading_card != blank -%}
-      <p class="card-with-icon--subheading">{{ section.settings.subheading_card | escape }}</p>
+      <p class="card-with-icon--subheading">{{ section.settings.subheading_card }}</p>
     {%- endif -%}
 
     <div class="card-with-icon-grid">
       {%- for block in section.blocks -%}
-        <div class="card-with-icon__item">
+        <div class="card-with-icon__item" {{ block.shopify_attributes }}>
           <div class="card-with-icon__item-icon">
-            <img src="{{ block.settings.icon | image_url }}" alt="icon" />
+            {%- if block.settings.icon != blank -%}
+              <img src="{{ block.settings.icon | image_url }}" alt="icon">
+            {%- endif -%}
           </div>
-          <h4 class="">{{ block.settings.title | escape }}</h4>
-          <div class="rte typeset">{{ block.settings.text }}</div>
+          <div class="card-with-icon__item-content">
+            <h4 class="card-with-icon__item-title" style="color: {{block.settings.title_color}}">{{ block.settings.title }}</h4>
+            <div class="card-with-icon__item-desc" style="color: {{block.settings.desc_color}}">{{ block.settings.text }}</div>
+          </div>
         </div>
       {%- endfor -%}
     </div>
@@ -57,7 +75,7 @@
         "step": 4,
         "unit": "t:sections.all.padding.padding_top.unit",
         "label": "t:sections.all.padding.padding_top.label",
-        "default": 36
+        "default": 60
       }, {
         "type": "range",
         "id": "padding_bottom",
@@ -66,7 +84,25 @@
         "step": 4,
         "unit": "t:sections.all.padding.padding_bottom.unit",
         "label": "t:sections.all.padding.padding_bottom.label",
-        "default": 36
+        "default": 60
+      }, {
+        "type": "header",
+        "content": "Background Color"
+      }, {
+        "type": "color",
+        "id": "heading_color",
+        "default": "#000",
+        "label": "Heading"
+      }, {
+        "type": "color",
+        "id": "subheading_color",
+        "default": "#F05123",
+        "label": "SubHeading"
+      }, {
+        "type": "color",
+        "id": "bg_color",
+        "default": "#FFFFFF",
+        "label": "Section background"
       }
     ],
     "blocks": [
@@ -78,16 +114,32 @@
             "type": "image_picker",
             "id": "icon",
             "label": "Icon"
-          }, {
+          },
+          {
             "type": "text",
             "id": "title",
             "default": "Card item heading",
             "label": "Heading"
-          }, {
+          },
+          {
             "type": "richtext",
             "id": "text",
             "label": "Content",
-            "default": "<p>Welcome to our store.</p>"
+            "default": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>"
+          },
+          {
+            "type": "header",
+            "content": "Color settings"
+          }, {
+            "type": "color",
+            "id": "title_color",
+            "default": "#000",
+            "label": "Heading"
+          }, {
+            "type": "color",
+            "id": "desc_color",
+            "default": "#F05123",
+            "label": "SubHeading"
           }
         ]
       }

@@ -1,0 +1,132 @@
+<div class="collection-gallery" style="background-color: {{ section.settings.background_color }}">
+  <div class="collection-gallery__decor-top">
+    <svg
+      viewBox="0 0 1920 48"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M0 22.7973L35.2 24.187C70.4 25.5766 142.4 28.3559 212.8 25.5766C284.8 22.7973 355.2 14.4595 427.2 8.90101C497.6 3.34248 569.6 0.563216 640 1.95285C710.4 3.34248 782.4 8.90101 852.8 7.51138C924.8 6.12174 995.2 -2.21605 1067.2 0.563216C1137.6 3.34248 1209.6 17.2388 1280 24.187C1350.4 31.1351 1422.4 31.1351 1492.8 25.5766C1564.8 20.0181 1635.2 8.90101 1707.2 6.12174C1777.6 3.34248 1849.6 8.90101 1884.8 11.6803L1920 14.4595V47.8107H1884.8C1849.6 47.8107 1777.6 47.8107 1707.2 47.8107C1635.2 47.8107 1564.8 47.8107 1492.8 47.8107C1422.4 47.8107 1350.4 47.8107 1280 47.8107C1209.6 47.8107 1137.6 47.8107 1067.2 47.8107C995.2 47.8107 924.8 47.8107 852.8 47.8107C782.4 47.8107 710.4 47.8107 640 47.8107C569.6 47.8107 497.6 47.8107 427.2 47.8107C355.2 47.8107 284.8 47.8107 212.8 47.8107C142.4 47.8107 70.4 47.8107 35.2 47.8107H0V22.7973Z"
+        fill="{{ section.settings.background_color }}" />
+    </svg>
+  </div>
+  <div class="site-container">
+    <div class="collection-gallery__inner">
+      {% comment %} {{ section.settings | json }} {% endcomment %}
+      <div class="collection-gallery__heading">
+        <h4 style="color: {{ section.settings.heading_color }};">{{ section.settings.heading }}</h4>
+        <div class="collection-gallery__desc" style="color: {{ section.settings.description_color }};">{{ section.settings.description }}</div>
+      </div>
+      <div class="collection-gallery__box-grid">
+        <div class="grid-sizer"></div>
+        {%- if section.blocks.size > 0 -%}
+          {%- for block in section.blocks -%}
+
+            <div class="box-item grid-item __box-{{ block.settings.box_size }} {{ block.settings.custom_class }}" style="background: url({{ block.settings.image | image_url }}) no-repeat center center / cover; background-size: 110%;">
+              <div class="box-item__inner" style="color: black;">{% comment %} <img
+                src="{{ block.settings.image | image_url }}"
+                width=""
+                height=""
+                loading="lazy"
+                alt="" /> {% endcomment %}
+              </div>
+            </div>
+          {%- endfor -%}
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</div>
+<!-- .collection-gallery -->
+
+{% schema %}
+  {
+    "name": "Collection Gallery",
+    "tag": "section",
+    "class": "section",
+    "blocks": [
+      {
+        "type": "collection_gallery_item",
+        "name": "Gallery Item",
+        "settings": [
+          {
+            "type": "collection",
+            "id": "collection",
+            "label": "Select Collection"
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Collection Image"
+          },
+          {
+            "type": "text",
+            "id": "name",
+            "label": "Name"
+          },
+          {
+            "type": "text",
+            "id": "redirect_url",
+            "label": "Redirect Url"
+          }, {
+            "type": "select",
+            "id": "box_size",
+            "label": "Box Size",
+            "options": [
+              {
+                "value": "size_1",
+                "label": "Size 1"
+              }, {
+                "value": "size_2",
+                "label": "Size 2"
+              }
+            ],
+            "default": "size_1"
+          }, {
+            "type": "text",
+            "id": "custom_class",
+            "label": "Custom Class"
+          }
+        ]
+      }
+    ],
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Header",
+        "info": "Heading text of collection gallery",
+        "default": "SHOP BY COLLECTION"
+      },
+      {
+        "type": "richtext",
+        "id": "description",
+        "label": "Description",
+        "default": "<p>Sphynx has made it simple to find your favourite alcohol-free drinks. Australia is leading the charge regarding delicious alcohol-free alternatives, and you’ll have no worries picking up the perfect tipple with our online collection. Whether you’re shopping for beers and cider, wines or spirits, you can order non-alcoholic drinks online at Sphynx by simply navigating the categories on our website. We also have tonics, sodas, and mixers among our selection of alcohol-free beverages and some excellent pre-mixed, no-alcohol drink options.</p>"
+      },
+      {
+        "type": "color",
+        "id": "heading_color",
+        "label": "Heading Color",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "description_color",
+        "label": "Description Color",
+        "default": "#8B8B8B"
+      }, {
+        "type": "color",
+        "id": "background_color",
+        "label": "Background Color",
+        "default": "#FFFFFF"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Collection Gallery"
+      }
+    ]
+  }
+{% endschema %}

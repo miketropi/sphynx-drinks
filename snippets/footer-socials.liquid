@@ -1,3 +1,18 @@
 <div class="footer-socials">
-  {{ settings | json }}
+  {% comment %} {{ settings | json }} {% endcomment %}
+  <h4 class="menu-heading {% if settings.heading == '' %} __heading-empty{% endif %}">{{ settings.heading }}</h4>
+  <ul class="social-list">
+    <li>
+      <a
+        href="{{ settings.instagram_url }}"
+        target="_blank"
+        title="Instagram">{% render 'icon', icon: 'instagram_line' %}</a>
+    </li>
+    <li>
+      <a
+        href="{{ settings.facebook_url }}"
+        target="_blank"
+        title="Facebook">{% render 'icon', icon: 'facebook_line' %}</a>
+    </li>
+  </ul>
 </div>

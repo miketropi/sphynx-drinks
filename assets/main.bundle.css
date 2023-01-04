@@ -110,6 +110,47 @@
   stroke: black;
 }
 
+.footer-socials .social-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.footer-socials .social-list li {
+  list-style: none;
+  margin-right: 1.5em;
+}
+.footer-socials .social-list li svg {
+  height: 22px;
+}
+.footer-socials .social-list li a svg path {
+  transition: 0.4s ease;
+  -webkit-transition: 0.4s ease;
+}
+.footer-socials .social-list li a:hover svg path {
+  stroke: #F05123;
+}
+
+.menu-style-vertical {
+  margin: 0;
+  padding: 0;
+}
+.menu-style-vertical li {
+  list-style: none;
+  margin-bottom: 4px;
+}
+.menu-style-vertical li a {
+  color: white;
+  font-size: 1em;
+  text-decoration: none;
+  border-bottom: solid 1px transparent;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+}
+.menu-style-vertical li a:hover {
+  border-bottom-color: #F05123;
+  color: #F05123;
+}
+
 .site-brand__url {
   display: inline-block;
 }
@@ -237,6 +278,15 @@ ul.menu-style-inline li.menu-link:hover > ul {
 .site-footer {
   background-color: black;
   padding-top: 103px;
+  position: relative;
+}
+.site-footer .footer-decor-top {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  line-height: 0;
+  transform: translateY(-98%);
+  -webkit-transform: translateY(-98%);
 }
 .site-footer__inner {
   display: flex;
@@ -250,6 +300,42 @@ ul.menu-style-inline li.menu-link:hover > ul {
 }
 .site-footer__inner .footer-col.__type_footer-brand-image {
   width: 20%;
+  text-align: center;
+}
+.site-footer__inner .footer-col.__type_vertical-menu, .site-footer__inner .footer-col.__type_footer-socials {
+  width: 13.3333333333%;
+}
+.site-footer__inner .footer-col.__type_vertical-menu h4, .site-footer__inner .footer-col.__type_footer-socials h4 {
+  color: #F05123;
+  font-size: 1.5em;
+  margin: 0 0 1.4em;
+  font-weight: bold;
+  font-family: "Montserrat";
+}
+.site-footer__inner .footer-col.__type_vertical-menu h4.__heading-empty, .site-footer__inner .footer-col.__type_footer-socials h4.__heading-empty {
+  height: 32px;
+  display: block;
+}
+.site-footer__copyright {
+  padding: 50px 0 60px;
+}
+
+.copyright-text__container {
+  width: 365px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.__type_footer-brand-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.__type_footer-brand-image .footer-brand-image {
+  max-width: 100%;
+}
+.__type_footer-brand-image .footer-brand-image img {
+  max-width: 100%;
 }
 
 .single-post__container,
@@ -299,4 +385,60 @@ ul.menu-style-inline li.menu-link:hover > ul {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.collection-gallery {
+  padding: 2em 0;
+  position: relative;
+}
+.collection-gallery__decor-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-98%);
+  -webkit-transform: translateY(-98%);
+  width: 100%;
+  line-height: 0;
+}
+.collection-gallery__heading {
+  text-align: center;
+}
+.collection-gallery__heading h4 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  margin: 0;
+}
+.collection-gallery__desc {
+  max-width: 90%;
+  margin: 0 auto;
+  line-height: 1.5em;
+}
+.collection-gallery__box-grid {
+  margin-top: 40px;
+}
+.collection-gallery__box-grid .grid-sizer,
+.collection-gallery__box-grid .grid-item {
+  width: 31%;
+}
+.collection-gallery__box-grid .box-item {
+  margin-bottom: 30px;
+  line-height: 0;
+  overflow: hidden;
+}
+.collection-gallery__box-grid .box-item.__box-size_1 {
+  height: 260px;
+}
+.collection-gallery__box-grid .box-item.__box-size_1.__fix-design {
+  height: 230px;
+}
+.collection-gallery__box-grid .box-item.__box-size_2 {
+  height: 520px;
+}
+.collection-gallery__box-grid .box-item.__box-size_2.__fix-design {
+  height: 490px;
+}
+.collection-gallery__box-grid .box-item__inner img {
+  width: 100%;
+  height: auto;
 }

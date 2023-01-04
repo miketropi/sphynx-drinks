@@ -1,0 +1,209 @@
+{%- style -%}
+  .section-promo .section-promo-wrapper {
+    padding-top: 150px;
+    padding-bottom: 135px;
+    position: relative;
+  }
+  @media(max-width: 767px) {
+    .section-promo .section-promo-wrapper {
+      padding-top: 80px;
+      padding-bottom: 45px;
+    }
+  }
+  .section-promo .section-promo-wrapper .section-promo-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .section-promo .section-promo-wrapper .section-promo-bg img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+  }
+  .section-promo .section-promo-wrapper .section-promo-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  .section-promo .section-promo-wrapper .section-promo-row .section-promo-column {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  @media(min-width: 768px) {
+    .section-promo .section-promo-wrapper .section-promo-row .section-promo-column {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+  .section-promo .section-promo-wrapper .section-promo-row .section-promo-column .section-promo-heading {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFC85E;
+    font-family: "Montserrat";
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  @media(max-width: 1024px) {
+    .section-promo .section-promo-wrapper .section-promo-row .section-promo-column .section-promo-heading {
+      font-size: 30px;
+    }
+  }
+  @media(max-width: 767px) {
+    .section-promo .section-promo-wrapper .section-promo-row .section-promo-column .section-promo-heading {
+      font-size: 24px;
+    }
+  }
+  .section-promo .section-promo-wrapper .section-promo-row .section-promo-column p {
+    margin: 0;
+  }
+  .section-promo .section-promo-wrapper .section-promo-row .section-promo-column .section-promo-description {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 146%;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .section-promo .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+{%- endstyle -%}
+<div class="section-promo-wrapper section-{{ section.id }}-padding">
+  <div class="section-promo-bg">
+    {%- if section.settings.background != blank -%}
+      <img src="{{ section.settings.background | image_url }}" alt="bg">
+    {%- endif -%}
+  </div>
+  <div class="page-width">
+    <div class="section-promo-row">
+      <div class="section-promo-column">
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+            {%- when 'heading' -%}
+            {%- if block.settings.heading != blank -%}
+              <h2 class="section-promo-heading" style="color: {{block.settings.heading_color}}" {{ block.shopify_attributes }}>
+                {{ block.settings.heading }}
+              </h2>
+            {%- endif -%}
+          {%- endcase -%}
+        {%- endfor -%}
+      </div>
+      <div class="section-promo-column">
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+            {%- when 'content' -%}
+            {%- if block.settings.description != blank -%}
+              <div class="section-promo-description" style="color: {{block.settings.desc_color}}" {{ block.shopify_attributes }}>
+                {{ block.settings.description }}
+              </div>
+            {%- endif -%}
+          {%- endcase -%}
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Section Promo",
+    "tag": "section",
+    "class": "section-promo",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Background"
+      },
+      {
+        "type": "image_picker",
+        "id": "background",
+        "label": "Background Image"
+      },
+      {
+        "type": "header",
+        "content": "t:sections.all.padding.header.content"
+      },
+      {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 200,
+        "step": 1,
+        "unit": "t:sections.all.padding.padding_top.unit",
+        "label": "t:sections.all.padding.padding_top.label",
+        "default": 150
+      }, {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 200,
+        "step": 1,
+        "unit": "t:sections.all.padding.padding_bottom.unit",
+        "label": "t:sections.all.padding.padding_bottom.label",
+        "default": 135
+      }
+    ],
+    "blocks": [
+      {
+        "type": "heading",
+        "name": "Heading",
+        "limit": 2,
+        "settings": [
+          {
+            "type": "text",
+            "id": "heading",
+            "default": "Charity Donation With Every Alcohol-Free Drink Purchased",
+            "label": "Heading"
+          },
+          {
+            "type": "color",
+            "id": "heading_color",
+            "default": "#FFC85E",
+            "label": "Heading"
+          }
+        ]
+      }, {
+        "type": "content",
+        "name": "Content",
+        "limit": 2,
+        "settings": [
+          {
+            "type": "richtext",
+            "id": "description",
+            "default": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>",
+            "label": "Description"
+          },
+          {
+            "type": "color",
+            "id": "desc_color",
+            "default": "#FFF",
+            "label": "Description"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Section Promo"
+      }
+    ]
+  }
+{% endschema %}

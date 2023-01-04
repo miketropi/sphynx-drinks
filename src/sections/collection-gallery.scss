@@ -1,0 +1,86 @@
+.collection-gallery {
+  padding: 2em 0;
+  position: relative;
+
+  &__decor-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-98%);
+    -webkit-transform: translateY(-98%);
+    width: 100%;
+    line-height: 0;
+  }
+
+  &__inner {
+
+  }
+
+  &__heading {
+    text-align: center;
+
+    h4 {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 900;
+      margin: 0;
+    }
+  }
+
+  &__desc {
+    max-width: 90%;
+    margin: 0 auto;
+    line-height: 1.5em;
+  }
+
+  // &__box-grid {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   margin: 0 -15px;
+
+  //   .box-item {
+  //     box-sizing: border-box;
+  //     padding: 0 15px 30px;
+  //     width: calc(100% / 3);
+  //   }
+  // }
+
+  &__box-grid {
+    margin-top: 40px;
+    
+    .grid-sizer,
+    .grid-item {
+      width: calc(31%);
+    }
+
+    .box-item {
+      margin-bottom: 30px;
+      line-height: 0;
+      overflow: hidden;
+
+      &.__box-size_1 {
+        height: 260px;
+
+        &.__fix-design {
+          height: calc(260px - 30px);
+        }
+      }
+
+      &.__box-size_2 {
+        height: calc(260px * 2);
+
+        &.__fix-design {
+          height: calc(260px * 2 - 30px);
+        }
+      }
+    }
+
+    .box-item__inner {
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

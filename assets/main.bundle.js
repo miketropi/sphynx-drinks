@@ -1,6 +1,51 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/js/collection-gallery.js":
+/*!**************************************!*\
+  !*** ./src/js/collection-gallery.js ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ CollectionGallery)
+/* harmony export */ });
+Object(function webpackMissingModule() { var e = new Error("Cannot find module 'masonry-layout'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
+
+function CollectionGallery() {
+  var Grid = document.querySelectorAll('.collection-gallery__box-grid');
+  var CacheList = [];
+  if (!Grid) return;
+  _toConsumableArray(Grid).forEach(function (elem) {
+    var msnry = new Object(function webpackMissingModule() { var e = new Error("Cannot find module 'masonry-layout'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())(elem, {
+      // options...
+      columnWidth: '.grid-sizer',
+      itemSelector: '.grid-item',
+      gutter: 30
+    });
+    CacheList.push(msnry);
+  });
+
+  // trigger while browser load complated
+  window.addEventListener('load', function () {
+    console.log(CacheList);
+    [].concat(CacheList).forEach(function (m) {
+      m.layout();
+    });
+  });
+}
+CollectionGallery();
+
+/***/ }),
+
 /***/ "./src/js/home_slider.js":
 /*!*******************************!*\
   !*** ./src/js/home_slider.js ***!
@@ -62,18 +107,31 @@ var HomeSlider = /*#__PURE__*/function () {
         slidesToShow: 1,
         slidesToScroll: 1,
         responsive: [{
+          breakpoint: 1200,
+          settings: {
+            arrows: false
+          }
+        }, {
           breakpoint: 1024,
           settings: {
             arrows: false
           }
         }]
       });
-      var scrollAmount = 0;
-      document.addEventListener('wheel', function (event) {
-        var DIVIDE_AMOUNT = 40;
-        if (scrollAmount < 5) {}
-        scrollAmount += event.deltaY / DIVIDE_AMOUNT;
-        console.log(scrollAmount);
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).on("scroll", function () {
+        if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(window).width() < 767) return;
+        var pixels = jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).scrollTop();
+        var pageHeight = jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).height() - jquery__WEBPACK_IMPORTED_MODULE_0___default()(window).height();
+        var progress = 100 * pixels / pageHeight * 10 + 50;
+        var imgAnimation = jquery__WEBPACK_IMPORTED_MODULE_0___default()(".slide-media__image-animation img");
+        var imgSlide = jquery__WEBPACK_IMPORTED_MODULE_0___default()(".slide-media__image img");
+        if (progress >= 100 || progress <= 50) return;
+        if (imgAnimation.length) {
+          imgAnimation.css("max-width", progress + "%");
+        }
+        if (imgSlide.length) {
+          imgSlide.css("max-width", progress + "%");
+        }
       });
     }
   }]);
@@ -94,6 +152,8 @@ var initHomeSlider = function initHomeSlider() {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _js_home_slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/home_slider */ "./src/js/home_slider.js");
+/* harmony import */ var _js_collection_gallery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/collection-gallery */ "./src/js/collection-gallery.js");
+
 
 (0,_js_home_slider__WEBPACK_IMPORTED_MODULE_0__.initHomeSlider)();
 

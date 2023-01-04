@@ -1,18 +1,21 @@
 <div
   class="section-home-slider-inner--item"
-  style="background-color: {{block.settings.background_item}}">
+  style="background-color: {{block.settings.background_item}}; padding-top: {{block.settings.padding_top}}px; padding-bottom: {{block.settings.padding_bottom}}px;"
+  {{ block.shopify_attributes }}>
   <div
     class="page-width section-home-slider-inner--item-wrapper">
     <div
       class="slide-col slide-content">
       {%- if block.settings.heading_slide != blank -%}
         <h2
-          class="heading-slide">{{ block.settings.heading_slide }}</h2>
+          class="heading-slide"
+          style="color: {{block.settings.heading_color_item}}">{{ block.settings.heading_slide }}</h2>
       {%- endif -%}
 
       {%- if block.settings.description_slide != blank -%}
         <p
-          class="desc-slide">{{ block.settings.description_slide }}</p>
+          class="desc-slide"
+          style="color: {{block.settings.desc_color_item}}">{{ block.settings.description_slide }}</p>
       {%- endif -%}
 
       {%- if block.settings.button_slide != blank -%}
