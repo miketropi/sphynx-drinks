@@ -357,3 +357,41 @@ ul.menu-style-inline li.menu-link:hover > ul {
   width: 34.5%;
   padding-left: 85px;
 }
+
+.collection-gallery {
+  padding: 2em 0;
+  position: relative;
+}
+.collection-gallery__decor-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-98%);
+  -webkit-transform: translateY(-98%);
+  width: 100%;
+  line-height: 0;
+}
+.collection-gallery__heading {
+  text-align: center;
+}
+.collection-gallery__heading h4 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  margin: 0;
+}
+.collection-gallery__desc {
+  max-width: 90%;
+  margin: 0 auto;
+  line-height: 1.5em;
+}
+.collection-gallery__box-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.collection-gallery__box-grid .box-item {
+  box-sizing: border-box;
+  padding: 0 15px 30px;
+  width: 33.3333333333%;
+}
