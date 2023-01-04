@@ -24,12 +24,11 @@
           {%- for block in section.blocks -%}
 
             <div class="box-item grid-item __box-{{ block.settings.box_size }} {{ block.settings.custom_class }}" style="background: url({{ block.settings.image | image_url }}) no-repeat center center / cover; background-size: 110%;">
-              <div class="box-item__inner" style="color: black;">{% comment %} <img
-                src="{{ block.settings.image | image_url }}"
-                width=""
-                height=""
-                loading="lazy"
-                alt="" /> {% endcomment %}
+              <div class="box-item__inner" style="color: black;">
+                <div class="box-info">
+                  <h4 class="box-name">{{ block.settings.name }}</h4>
+                  <a href="" target="_blank">Shop Now</a>
+                </div>
               </div>
             </div>
           {%- endfor -%}
