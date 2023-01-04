@@ -19,10 +19,11 @@
         <div class="collection-gallery__desc" style="color: {{ section.settings.description_color }};">{{ section.settings.description }}</div>
       </div>
       <div class="collection-gallery__box-grid">
+        <div class="grid-sizer"></div>
         {%- if section.blocks.size > 0 -%}
           {%- for block in section.blocks -%}
 
-            <div class="box-item">
+            <div class="box-item grid-item">
               <div class="box-item__inner" style="color: black;">
                 {% comment %} {{ block.settings | json }} {% endcomment %}
                 <img

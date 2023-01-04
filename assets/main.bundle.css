@@ -386,12 +386,16 @@ ul.menu-style-inline li.menu-link:hover > ul {
   line-height: 1.5em;
 }
 .collection-gallery__box-grid {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 -15px;
+  margin-top: 40px;
+}
+.collection-gallery__box-grid .grid-sizer {
+  width: 33.3333333333%;
 }
 .collection-gallery__box-grid .box-item {
-  box-sizing: border-box;
-  padding: 0 15px 30px;
-  width: 33.3333333333%;
+  margin-bottom: 30px;
+  line-height: 0;
+}
+.collection-gallery__box-grid .box-item__inner img {
+  width: 100%;
+  height: auto;
 }
