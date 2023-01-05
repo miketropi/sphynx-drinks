@@ -1,4 +1,4 @@
-<div class="collection-gallery" style="background-color: {{ section.settings.background_color }}">
+<div class="collection-gallery" style="background-color: {{ section.settings.background_color }}; padding-top: {{ section.settings.spacing_top }}; padding-bottom: {{ section.settings.spacing_bottom }};">
   <div class="collection-gallery__decor-top">
     <svg
       viewBox="0 0 1920 48"
@@ -142,6 +142,16 @@
         "id": "background_color",
         "label": "Background Color",
         "default": "#FFFFFF"
+      }, {
+        "type": "text",
+        "id": "spacing_top",
+        "label": "Spacing Top",
+        "default": "3em"
+      }, {
+        "type": "text",
+        "id": "spacing_bottom",
+        "label": "Spacing Bottom",
+        "default": "3em"
       }
     ],
     "presets": [
