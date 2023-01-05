@@ -1,0 +1,97 @@
+<div class="blog-sidebar">
+
+  <div class="block-widget block-category">
+    <h3 class="block-widget__title">Category</h3>
+    <div class="block-widget__content">
+      <ul class="list-category">
+        {% for link in linklists.blogs-menu.links -%}
+          <li class="item-category">
+            {{ link.title | link_to: link.url }}
+          </li>
+        {%- endfor %}
+      </ul>
+    </div>
+  </div>
+
+  <div class="block-widget block-post">
+    <h3 class="block-widget__title">Trending Posts</h3>
+    <div class="block-widget__content">
+      <ul class="list-post">
+        {% for article in blog.articles  limit: 3 %}
+          <li class="item-post">
+            <a href="{{ article.url }}" class="item-post__link">
+              <div class="item-post__thumb">
+                {%- if article.image -%}
+                  <img src="{{ article.image | image_url: width: 150 }}" alt="{{ article.image.alt | escape }}">
+                {%- endif -%}
+              </div>
+              <div class="item-post__content">
+                <div class="item-post__by">by {{ article.author }}</div>
+                <h3
+                  class="item-post__title"
+                  id="Article-{{ article.id }}">
+                  {{ article.title | escape }}
+                </h3>
+              </div>
+            </a>
+          </li>
+        {% endfor %}
+
+
+        {% comment %} {% for link in linklists.blogs-menu.links %}
+          {% assign blog = link.object %}
+          {% for article in blog.articles  limit: 3 %}
+            <li class="item-post">
+              <a href="{{ article.url }}" class="item-post__link">
+                <div class="item-post__thumb">
+                  {%- if article.image -%}
+                    <img src="{{ article.image | image_url: width: 150 }}" alt="{{ article.image.alt | escape }}">
+                  {%- endif -%}
+                </div>
+                <div class="item-post__content">
+                  <div class="item-post__by">by {{ article.author }}</div>
+                  <h3
+                    class="item-post__title"
+                    id="Article-{{ article.id }}">
+                    {{ article.title | escape }}
+                  </h3>
+                </div>
+              </a>
+            </li>
+          {% endfor %}
+        {% endfor %} {% endcomment %}
+      </ul>
+    </div>
+  </div>
+
+  <div class="block-widget block-tag">
+    <h3 class="block-widget__title">Tags</h3>
+    <div class="block-widget__content">
+      {%- if blog.tags.size > 0 -%}
+        <ul class="list-tag">
+          {% for link in linklists.blogs-menu.links %}
+            {% assign blog = link.object %}
+            {%- for tag in blog.all_tags -%}
+              {%- liquid
+                        if tag contains "_"
+                            assign tag_starts_with = tag | slice: 0
+        
+                            if tag_starts_with == "_"
+                            if tag_count
+                                assign tag_count = tag_count | minus: 1 | at_least: 0
+                            endif
+        
+                            continue
+                            endif
+                        endif
+                    -%}
+              <li class="item-tag">
+                <a href="/blogs/{{ blog.handle }}/tagged/{{ tag | handleize }}" class="link{% if current_tags contains tag %} is-selected{% endif %}">{{ tag }}</a>
+              </li>
+            {%- endfor -%}
+          {% endfor %}
+        </ul>
+      {%- endif -%}
+    </div>
+  </div>
+</div>

@@ -321,12 +321,11 @@ ul.menu-style-inline li.menu-link:hover > ul {
 }
 
 .copyright-text__container {
-  width: 334px;
+  width: 365px;
   max-width: 100%;
   margin: 0 auto;
   text-align: center;
 }
-
 .__type_footer-brand-image {
   display: flex;
   justify-content: center;
@@ -339,7 +338,8 @@ ul.menu-style-inline li.menu-link:hover > ul {
   max-width: 100%;
 }
 
-.single-post__container {
+.single-post__container,
+.related-acticles__container {
   width: var(--site-container-width);
   padding: 0;
   margin: 0 auto;
@@ -357,4 +357,125 @@ ul.menu-style-inline li.menu-link:hover > ul {
 .single-post__sidebar {
   width: 34.5%;
   padding-left: 85px;
+}
+
+.related-acticles__title {
+  text-align: center;
+}
+
+.related-acticles__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.related-acticles__list .post-item-wrap {
+  width: 33.33%;
+  padding: 0 15px;
+}
+.related-acticles__list .post-item__thumb {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 66%;
+}
+.related-acticles__list .post-item__thumb img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.collection-gallery {
+  padding: 2em 0;
+  position: relative;
+}
+.collection-gallery__decor-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-98%);
+  -webkit-transform: translateY(-98%);
+  width: 100%;
+  line-height: 0;
+}
+.collection-gallery__heading {
+  text-align: center;
+}
+.collection-gallery__heading h4 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  margin: 0;
+}
+.collection-gallery__desc {
+  max-width: 90%;
+  margin: 0 auto;
+  line-height: 1.5em;
+}
+.collection-gallery__box-grid {
+  margin-top: 40px;
+}
+.collection-gallery__box-grid .grid-sizer,
+.collection-gallery__box-grid .grid-item {
+  width: 31%;
+}
+.collection-gallery__box-grid .box-item {
+  margin-bottom: 30px;
+  line-height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+}
+.collection-gallery__box-grid .box-item.__box-size_1 {
+  height: 260px;
+}
+.collection-gallery__box-grid .box-item.__box-size_1.__fix-design {
+  height: 230px;
+}
+.collection-gallery__box-grid .box-item.__box-size_2 {
+  height: 520px;
+}
+.collection-gallery__box-grid .box-item.__box-size_2.__fix-design {
+  height: 490px;
+}
+.collection-gallery__box-grid .box-item__inner img {
+  width: 100%;
+  height: auto;
+}
+
+.section-ins-feed-app h2 {
+  text-align: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 120%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 70px;
+  margin-top: 0;
+}
+@media (max-width: 767px) {
+  .section-ins-feed-app h2 {
+    margin-bottom: 40px;
+    font-size: 28px;
+  }
+}
+.section-ins-feed-app h2 span {
+  display: block;
+  color: #F05123;
+}
+@media (max-width: 1024px) {
+  .section-ins-feed-app #insta-feed .instafeed-container {
+    width: 33.3333% !important;
+    padding-top: 33.3333% !important;
+  }
+}
+@media (max-width: 767px) {
+  .section-ins-feed-app #insta-feed .instafeed-container {
+    width: 50% !important;
+    padding-top: 50% !important;
+  }
 }

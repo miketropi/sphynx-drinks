@@ -960,6 +960,104 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "60ddbcd1-f01b-4f31-9ab0-01b1ecc4a42d": {
+      "type": "collection-gallery",
+      "blocks": {
+        "af03a39d-1d6e-4625-964d-5a181a93b673": {
+          "type": "collection_gallery_item",
+          "settings": {
+            "collection": "amplify",
+            "image": "shopify:\/\/shop_images\/collection-6.png",
+            "name": "MIXERS",
+            "redirect_url": "",
+            "box_size": "size_1",
+            "custom_class": ""
+          }
+        },
+        "86a0e8ce-c05e-4063-8313-a2c87fb5c979": {
+          "type": "collection_gallery_item",
+          "settings": {
+            "collection": "4-pines",
+            "image": "shopify:\/\/shop_images\/collection-2.png",
+            "name": "NON-ALCOHOLIC CIDER",
+            "redirect_url": "",
+            "box_size": "size_2",
+            "custom_class": ""
+          }
+        },
+        "d1bf0e65-5fd4-409e-b7c2-a79e3cedb9fd": {
+          "type": "collection_gallery_item",
+          "settings": {
+            "collection": "absolute-zero",
+            "image": "shopify:\/\/shop_images\/collection-3.png",
+            "name": "TONIC AND SODA",
+            "redirect_url": "",
+            "box_size": "size_1",
+            "custom_class": ""
+          }
+        },
+        "51422e25-33be-4467-8987-4d28759a8f00": {
+          "type": "collection_gallery_item",
+          "settings": {
+            "collection": "almost-zero",
+            "image": "shopify:\/\/shop_images\/collection-4.png",
+            "name": "NON-ALCOHOLIC WINE",
+            "redirect_url": "",
+            "box_size": "size_2",
+            "custom_class": ""
+          }
+        },
+        "c3e6b2f5-8be3-4ca0-a321-4e1ee779d131": {
+          "type": "collection_gallery_item",
+          "settings": {
+            "collection": "1883",
+            "image": "shopify:\/\/shop_images\/collection-1.png",
+            "name": "NON-ALCOHOLIC BEER",
+            "redirect_url": "",
+            "box_size": "size_1",
+            "custom_class": ""
+          }
+        },
+        "85745617-3560-4c2c-8a7d-4db438cb2c85": {
+          "type": "collection_gallery_item",
+          "settings": {
+            "collection": "altina",
+            "image": "shopify:\/\/shop_images\/collection-5.png",
+            "name": "NON-ALCOHOLIC SPIRITS",
+            "redirect_url": "",
+            "box_size": "size_1",
+            "custom_class": ""
+          }
+        },
+        "2d844ba7-5f95-4dee-b02f-e3ec17897fa2": {
+          "type": "collection_gallery_item",
+          "settings": {
+            "collection": "apple-thief",
+            "image": "shopify:\/\/shop_images\/collection-7.png",
+            "name": "PREMIXED",
+            "redirect_url": "",
+            "box_size": "size_1",
+            "custom_class": "__fix-design"
+          }
+        }
+      },
+      "block_order": [
+        "af03a39d-1d6e-4625-964d-5a181a93b673",
+        "86a0e8ce-c05e-4063-8313-a2c87fb5c979",
+        "d1bf0e65-5fd4-409e-b7c2-a79e3cedb9fd",
+        "51422e25-33be-4467-8987-4d28759a8f00",
+        "c3e6b2f5-8be3-4ca0-a321-4e1ee779d131",
+        "85745617-3560-4c2c-8a7d-4db438cb2c85",
+        "2d844ba7-5f95-4dee-b02f-e3ec17897fa2"
+      ],
+      "settings": {
+        "heading": "SHOP BY COLLECTION",
+        "description": "<p>Sphynx has made it simple to find your favourite alcohol-free drinks. Australia is leading the charge regarding delicious alcohol-free alternatives, and you’ll have no worries picking up the perfect tipple with our online collection. Whether you’re shopping for beers and cider, wines or spirits, you can order non-alcoholic drinks online at Sphynx by simply navigating the categories on our website. We also have tonics, sodas, and mixers among our selection of alcohol-free beverages and some excellent pre-mixed, no-alcohol drink options.<\/p>",
+        "heading_color": "#000000",
+        "description_color": "#8b8b8b",
+        "background_color": "#ffffff"
+      }
     }
   },
   "order": [
@@ -980,6 +1078,7 @@
     "multicolumn",
     "d0aa582c-04cc-4c59-a7d3-21d175133f25",
     "16686615660cb3138f",
-    "bcb17a56-7e13-41c0-97aa-5cf6242be8a5"
+    "bcb17a56-7e13-41c0-97aa-5cf6242be8a5",
+    "60ddbcd1-f01b-4f31-9ab0-01b1ecc4a42d"
   ]
 }

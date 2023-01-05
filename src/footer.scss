@@ -60,10 +60,14 @@ $footer-background-color: black !default;
 }
 
 .copyright-text__container {
-  width: 334px;
+  width: 365px;
   max-width: 100%;
   margin: 0 auto;
   text-align: center;
+
+  p {
+    
+  }
 }
 
 .__type_footer-brand-image {
