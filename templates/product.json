@@ -714,28 +714,6 @@
         "padding_bottom": 72
       }
     },
-    "1672892548ba17d7bc": {
-      "type": "apps",
-      "blocks": {
-        "9a95755a-b961-4272-b776-19b26e872a07": {
-          "type": "shopify:\/\/apps\/instafeed-instagram-feed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
-          "settings": {
-            "heading_size": 20,
-            "feed_width": 100,
-            "html_area": ""
-          }
-        }
-      },
-      "block_order": [
-        "9a95755a-b961-4272-b776-19b26e872a07"
-      ],
-      "settings": {
-        "heading": "follow the good vibes <span>@sphynxdrinks<\/span>",
-        "padding_top": 36,
-        "padding_bottom": 0,
-        "color_heading": "#000000"
-      }
-    },
     "79af2c79-7b48-43d5-ae4a-3c0cf2d30e6a": {
       "type": "collection-gallery",
       "blocks": {
@@ -842,6 +820,28 @@
         "spacing_top": "3em",
         "spacing_bottom": "3em"
       }
+    },
+    "1672892548ba17d7bc": {
+      "type": "apps",
+      "blocks": {
+        "9a95755a-b961-4272-b776-19b26e872a07": {
+          "type": "shopify:\/\/apps\/instafeed-instagram-feed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "heading_size": 20,
+            "feed_width": 100,
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "9a95755a-b961-4272-b776-19b26e872a07"
+      ],
+      "settings": {
+        "heading": "follow the good vibes <span>@sphynxdrinks<\/span>",
+        "padding_top": 36,
+        "padding_bottom": 0,
+        "color_heading": "#000000"
+      }
     }
   },
   "order": [
@@ -858,7 +858,7 @@
     "tab-collage",
     "testimonials",
     "multicolumn",
-    "1672892548ba17d7bc",
-    "79af2c79-7b48-43d5-ae4a-3c0cf2d30e6a"
+    "79af2c79-7b48-43d5-ae4a-3c0cf2d30e6a",
+    "1672892548ba17d7bc"
   ]
 }
