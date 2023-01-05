@@ -19,7 +19,7 @@
 }
 
 .pagination__item {
-  color: rgb(var(--color-link));
+  color: #F05123;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,17 +27,18 @@
   min-width: 3.4rem;
   min-height: 3.4rem;
   margin: 0 0.4rem;
+  font-weight: 700;
   text-decoration: none;
+  font-size: 1.5rem;
   white-space: nowrap;
   transition: color var(--duration-default) ease;
-  font-family: var(--font-button-family);
+  font-family: 'Montserrat';
   padding-top: calc(var(--font-button-baseline));
 }
 
 .pagination__item--current {
   cursor: not-allowed;
   color: rgb(var(--color-button-text));
-  background-color: rgb(var(--color-button-background));
-  opacity: 0.55;
+  background-color: #F05123;
   border-radius: var(--button-radius);
 }

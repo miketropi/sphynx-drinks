@@ -25,6 +25,7 @@
           {%- if enable_filtering and filter_type != 'drawer' -%}
             <div id="FacetDrawer">
               <div class="facets__inner">
+              <h2 class="filter-heading">FILTER</h2>
                 <div class="facets__main">
                   {%- liquid
                     if collection.metafields.theme.filter_max_items.value != blank
@@ -34,7 +35,7 @@
                   {%- for filter in results.filters -%}
                     {%- case filter.type -%}
                     {%- when 'boolean' or 'list' -%}
-                      <details open class="js-filter" data-index="{{ forloop.index }}"{% if filter_max_items %} aria-expanded="false"{% endif %}>
+                      <details  class="js-filter" data-index="{{ forloop.index }}"{% if filter_max_items %} aria-expanded="false"{% endif %}>
                         <summary class="facets__header">
                           <span class="facets__selected">
                             {{ filter.label | escape }}
@@ -42,7 +43,7 @@
                               <span class="count-bubble">{{ filter.active_values.size }}</span>
                             {%- endif -%}
                           </span>
-                          {% render 'icon', icon: 'caret' %}
+                          <span class="facets__selected_icon"><span>                          
                         </summary>
                         <facet-remove>
                           <a href="{{ filter.url_to_remove }}" class="facets__reset link link--underline" >{{ 'products.facets.reset' | t }}</a>
@@ -108,7 +109,7 @@
                           assign filter_max_value_amount = filter_max_value_amount | replace: ',', ''
                         endif
                       -%}
-                      <details open class="js-filter" data-index="{{ forloop.index }}">
+                      <details class="js-filter" data-index="{{ forloop.index }}">
                         <summary class="facets__header">
                           <span class="facets__selected">
                             {{ filter.label | escape }}
@@ -116,7 +117,7 @@
                               <span class="count-bubble count-bubble--dot"></span>
                             {%- endif -%}
                           </span>
-                          {% render 'icon', icon: 'caret' %}
+                          <span class="facets__selected_icon"><span> 
                         </summary>
                         <facet-remove>
                           <a href="{{ filter.url_to_remove }}" class="facets__reset link link--underline" >{{ 'products.facets.reset' | t }}</a>

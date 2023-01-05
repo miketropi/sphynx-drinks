@@ -934,6 +934,28 @@ ul.menu-style-inline li.menu-link:hover > ul {
   color: #8B8B8B;
   margin-top: 0;
 }
+.template-collection .collection-grid-section .facets__form .filter-heading {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 95%;
+  text-transform: uppercase;
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+.template-collection .collection-grid-section .facets__form .facets__main .js-filter .facets__header .facets__selected {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 95%;
+  color: #F05123;
+}
+.template-collection .collection-grid-section .facets__form .facets__main .js-filter .facets__header .facets__list {
+  padding-bottom: 0;
+}
 .template-collection .collection-grid-section .product-grid-container #product-grid .grid__item .card-wrapper,
 .template-collection .collection-grid-section .product-grid-container #product-grid .grid__item a,
 .template-collection .collection-grid-section .product-grid-container #product-grid .grid__item .card-information__wrapper {
@@ -950,18 +972,19 @@ ul.menu-style-inline li.menu-link:hover > ul {
 .template-collection .collection-grid-section .product-grid-container #product-grid .grid__item .card__media.media-wrapper .card-article-info {
   color: rgb(240, 81, 35);
 }
-.template-collection .collection-grid-section .product-grid-container #product-grid .grid__item .rating-star-wrap {
+
+.rating-star-wrap {
   position: relative;
   width: 77px;
   height: 13px;
   display: block;
 }
-.template-collection .collection-grid-section .product-grid-container #product-grid .grid__item .rating-star-wrap .rating-star-img {
+.rating-star-wrap .rating-star-img {
   position: absolute;
   left: 0;
   top: 0;
 }
-.template-collection .collection-grid-section .product-grid-container #product-grid .grid__item .rating-star-wrap .rating-star-img.rating-star-img-fill::before {
+.rating-star-wrap .rating-star-img.rating-star-img-fill::before {
   content: "";
   position: absolute;
   right: 0;
