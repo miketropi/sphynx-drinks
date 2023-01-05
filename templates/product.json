@@ -754,7 +754,7 @@
         "944cc9a6-c043-4f02-a7fa-73ce3b2ce08a": {
           "type": "collection_gallery_item",
           "settings": {
-            "collection": "",
+            "collection": "4-pines",
             "image": "shopify:\/\/shop_images\/c2.jpg",
             "name": "NON-ALCOHOLIC CIDER",
             "hover_color_background": "#F05123",
@@ -766,8 +766,9 @@
         "2385986d-cc2d-4d2a-a5fd-6e36750e5e16": {
           "type": "collection_gallery_item",
           "settings": {
-            "collection": "",
-            "name": "",
+            "collection": "absolute-zero",
+            "image": "shopify:\/\/shop_images\/c3.jpg",
+            "name": "TONIC AND SODA",
             "hover_color_background": "#F05123",
             "redirect_url": "",
             "box_size": "size_1",
@@ -777,19 +778,21 @@
         "dfbc02da-64e2-4dfa-9ef6-444f04fab8e9": {
           "type": "collection_gallery_item",
           "settings": {
-            "collection": "",
-            "name": "",
+            "collection": "almost-zero",
+            "image": "shopify:\/\/shop_images\/c4.jpg",
+            "name": "NON-ALCOHOLIC WINE",
             "hover_color_background": "#F05123",
             "redirect_url": "",
-            "box_size": "size_1",
+            "box_size": "size_2",
             "custom_class": ""
           }
         },
         "a929520e-fdcb-45d8-9ac3-aff43835e062": {
           "type": "collection_gallery_item",
           "settings": {
-            "collection": "",
-            "name": "",
+            "collection": "altina",
+            "image": "shopify:\/\/shop_images\/c5.jpg",
+            "name": "NON-ALCOHOLIC SPIRITS",
             "hover_color_background": "#F05123",
             "redirect_url": "",
             "box_size": "size_1",
@@ -799,8 +802,9 @@
         "739aabc3-2eb6-4bec-954d-54add7115078": {
           "type": "collection_gallery_item",
           "settings": {
-            "collection": "",
-            "name": "",
+            "collection": "amplify",
+            "image": "shopify:\/\/shop_images\/c6.jpg",
+            "name": "MIXERS",
             "hover_color_background": "#F05123",
             "redirect_url": "",
             "box_size": "size_1",
@@ -810,8 +814,9 @@
         "d14b991a-96fc-4005-adae-9c53d17a3f29": {
           "type": "collection_gallery_item",
           "settings": {
-            "collection": "",
-            "name": "",
+            "collection": "apple-thief",
+            "image": "shopify:\/\/shop_images\/c7.jpg",
+            "name": "PREMIXED",
             "hover_color_background": "#F05123",
             "redirect_url": "",
             "box_size": "size_1",
