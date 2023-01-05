@@ -6,17 +6,18 @@
 
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}
-      px;
-      padding-bottom: {{ section.settings.padding_bottom }}
-      px;
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
 {%- endstyle -%}
 
-{{ 'section-blog-post.css' | asset_url | stylesheet_tag }}
-
 <div class="single-post-section section-{{ section.id }}-padding">
+  <div class="single-post__decor-top">
+    <svg viewBox="0 0 1920 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 58.2454H53C107 58.2454 213 58.2454 320 46.7262C427 35.2069 533 12.1684 640 16.1406C747 20.1127 853 50.3011 960 54.2733C1067 58.2454 1173 35.2069 1280 20.1127C1387 4.62132 1493 -2.92577 1600 1.04638C1707 4.62132 1813 20.1127 1867 27.6598L1920 35.2069V149.605H1867C1813 149.605 1707 149.605 1600 149.605C1493 149.605 1387 149.605 1280 149.605C1173 149.605 1067 149.605 960 149.605C853 149.605 747 149.605 640 149.605C533 149.605 427 149.605 320 149.605C213 149.605 107 149.605 53 149.605H0V58.2454Z" fill="white"/>
+    </svg>      
+  </div>
   <div class="single-post__container">
     <div class="single-post__wrap">
       <div class="single-post__content">
@@ -67,7 +68,7 @@
         </article>
       </div>
 
-      <div class="single-post__sidebar">
+      <div class="single-post__sidebar"> {{ section.settings.category_title }}
         {% render 'blog-sidebar' %}
       </div>
     </div>
@@ -112,7 +113,36 @@
       {
         "type": "post_sidebar",
         "name": "Post Sidebar",
-        "limit": 1
+        "limit": 1,
+        "settings": [
+          {
+            "type": "text",
+            "id": "category_title",
+            "default": "Category",
+            "label": "Category Title"
+          },
+          {
+            "type": "text",
+            "id": "post_title",
+            "default": "Trending Posts",
+            "label": "Post Title"
+          },
+          {
+            "type": "range",
+            "id": "post_limit",
+            "min": 2,
+            "max": 4,
+            "step": 1,
+            "default": 3,
+            "label": "Post Limit"
+          },
+          {
+            "type": "text",
+            "id": "tag_title",
+            "default": "Tags",
+            "label": "Tag Title"
+          }
+        ]
       }
     ]
   }

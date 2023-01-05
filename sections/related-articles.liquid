@@ -12,20 +12,28 @@
   }
 {%- endstyle -%}
 
-{{ 'section-related-articles.css' | asset_url | stylesheet_tag }}
+<div class="related-acticles-section section-{{ section.id }}-padding">
+  <div class="related-acticles__decor-top">
+    <svg viewBox="0 0 1920 85" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 37.3447H53.6313C107.263 37.3447 212.38 37.3447 319.642 33.4169C426.905 29.4892 534.168 22.0701 639.285 14.2146C746.548 6.35915 853.81 -1.49633 961.073 0.249333C1066.19 2.43141 1173.45 14.2146 1280.72 14.2146C1385.83 14.2146 1493.1 2.43141 1600.36 0.249333C1707.62 -1.49633 1812.74 6.35915 1866.37 10.2869L1920 14.2146V84.4776H1866.37C1812.74 84.4776 1707.62 84.4776 1600.36 84.4776C1493.1 84.4776 1385.83 84.4776 1280.72 84.4776C1173.45 84.4776 1066.19 84.4776 961.073 84.4776C853.81 84.4776 746.548 84.4776 639.285 84.4776C534.168 84.4776 426.905 84.4776 319.642 84.4776C212.38 84.4776 107.263 84.4776 53.6313 84.4776H0V37.3447Z" fill="#F05123"/>
+    </svg>
+  </div>
+  <div class="related-acticles__container">
+    <div class="related-acticles__header">
+      <h2 class="related-acticles__title">{{ section.settings.heading | escape }}</h2>
 
-<div class="related-acticles section-{{ section.id }}-padding">
-    <div class="related-acticles__container">
-        <h2 class="related-acticles__title">{{ section.settings.heading | escape }}</h2>
-        <div class="related-acticles__list">
-            {%- for article in blog.articles limit: section.settings.post_limit -%}
-    
-                {% render 'article-loop-item', article: article %}
-
-            {% endfor %}
-            
-        </div>
+      <div class="related-acticles__view-all">
+        <a href="{{ blog.url }}" class="view-all-btn">
+          VIEW ALL
+        </a>
+      </div>
     </div>
+    <div class="related-acticles__list">
+      {%- for article in blog.articles limit: section.settings.post_limit -%}
+        {% render 'article-loop-item', article: article %}
+      {% endfor %}
+    </div>
+  </div>
 </div>
 
 {% schema %}

@@ -1,5 +1,5 @@
 .collection-gallery {
-  padding: 2em 0;
+  // padding: 2em 0;
   position: relative;
 
   &__decor-top {
@@ -74,13 +74,119 @@
           height: calc(260px * 2 - 30px);
         }
       }
+
+      &__decor {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: .2s ease;
+        -webkit-transition: .2s ease;
+
+        svg {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          transform: translateY(-98%);
+          -webkit-transform: translateY(-98%);
+        }
+      }
     }
 
     .box-item__inner {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      // background: #F05123;
+      background: rgb(0,0,0);
+      background: linear-gradient(0deg, rgba(0,0,0,0.38279061624649857) 0%, rgba(0,212,255,0) 100%);
 
       img {
         width: 100%;
         height: auto;
+      }
+
+      .box-info {
+        padding: 26px;
+        text-align: center;
+        transform: translateY(40%);
+        -webkit-transform: translateY(40%);
+        transition: .3s ease;
+        -webkit-transition: .3s ease;
+
+        .box-name {
+          font-size: 1.3em;
+          font-family: 'Montserrat';
+          font-weight: 600;
+          margin: 0;
+          margin-bottom: 1em;
+        }
+
+        a.button {
+          background: #FFC85E;
+          border-radius: 8px;
+          border: none;
+          font-family: 'Montserrat';
+          font-weight: bold;
+          letter-spacing: 0;
+          text-transform: initial;
+          font-size: 1.2em;
+          min-width: auto;
+          visibility: hidden;
+          opacity: 0;
+          white-space: normal;
+          transition: .3s ease;
+          -webkit-transition: .3s ease;
+
+          svg {
+            margin-left: 4px;
+            width: 24px;
+
+            path {
+              transition: .3s ease;
+              -webkit-transition: .3s ease;
+            }
+          }
+
+          &:hover {
+            color: black;
+            
+            svg {
+
+              path {
+                stroke: black;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .box-item {
+
+      &:hover {
+
+        .box-item__inner {
+  
+          .box-info {
+            transform: translateY(0%);
+            -webkit-transform: translateY(0%);
+  
+            a.button { 
+              visibility: visible;
+              opacity: 1;
+            }
+          }
+        }
+
+        .box-item__decor {
+          top: 30%;
+          opacity: 1;
+        }
       }
     }
   }

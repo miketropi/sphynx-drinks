@@ -1,0 +1,59 @@
+
+<div class="product-carousel product-carousel__container" style="padding: 5em 0">
+  <div class="site-container">
+      <div class="product-carousel__heading">
+        <h4>{{ section.settings.heading }}</h4>
+        <a href="{{ section.settings.redirect_url }}" target="_blank">{{ section.settings.redirect_label }}</a>
+      </div>
+      {% comment %} {%- assign productBestSelling = collections.products | sort_by: 'best-selling' -%} {% endcomment %}
+      {% assign bestSelling = collections[section.settings.collection].products %}
+      {% for product in bestSelling limit: section.settings.limit_number %}
+        {{ product | json }}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Product Carousel",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "Products"
+      },
+      {
+        "type": "text",
+        "id": "redirect_label",
+        "label": "Redirect Label",
+        "default": "VIEW ALL"
+      },
+      {
+        "type": "text",
+        "id": "redirect_url",
+        "label": "Redirect URl",
+        "default": "#"
+      },
+      {
+        "type": "collection",
+        "id": "collection",
+        "label": "Select Collection"
+      },
+      {
+        "type": "number",
+        "id": "limit_number",
+        "label": "Limit Number Products",
+        "default": 6
+      }
+    ],
+    "blocks": [],
+    "presets": [
+      {
+        "name": "Product Carousel"
+      }
+    ]
+  }
+{% endschema %}
+

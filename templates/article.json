@@ -1,28 +1,36 @@
 {
   "sections": {
+    "page-title": {
+      "type": "page-title",
+      "settings": {
+        "heading": "Non alcoholic drinks blog",
+        "description": "The best non alcoholic drinks blog, reviews and recipes",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "main": {
       "type": "main-article",
       "blocks": {
         "post_content": {
           "type": "post_content",
           "settings": {
+
           }
         },
         "post_sidebar": {
           "type": "post_sidebar",
           "settings": {
+            "category_title": "Category",
+            "post_title": "Trending Posts",
+            "post_limit": 3,
+            "tag_title": "Tags"
           }
         }
       },
       "block_order": [
         "post_content",
-        "featured_image",
-        "title",
-        "content",
-        "share",
         "post_sidebar"
-        
-        
       ],
       "settings": {
         "padding_top": 36,
@@ -36,11 +44,12 @@
         "post_limit": 3,
         "show_view_all": true,
         "padding_top": 36,
-        "padding_bottom": 72
+        "padding_bottom": 36
       }
     }
   },
   "order": [
+    "page-title",
     "main",
     "related-articles"
   ]
