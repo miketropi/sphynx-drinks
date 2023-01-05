@@ -820,7 +820,7 @@
             "hover_color_background": "#F05123",
             "redirect_url": "",
             "box_size": "size_1",
-            "custom_class": ""
+            "custom_class": "__fix-design"
           }
         }
       },
