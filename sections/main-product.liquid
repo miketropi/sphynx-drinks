@@ -57,7 +57,7 @@
   <link id="ModelViewerOverride" rel="stylesheet" href="{{ 'component-model-viewer-ui.css' | asset_url }}" media="print" onload="this.media='all'">
 {%- endif -%}
 
-<section class="page-width section-{{ section.id }}-padding">
+<section class="site-container section-{{ section.id }}-padding"> 
   <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.gallery_layout }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}{% if section.settings.gallery_layout != 'stacked' and section.settings.show_thumbnails == false %} product--hide-thumbnails{% endif %}{% if section.settings.mobile_image_ratio == 'adapt' %} product--mobile-adapt{% endif %}{% unless section.settings.enable_image_zoom %} product--zoom-disabled{% endunless %}">
     <product-recently-viewed data-product-id="{{ product.id }}" class="hidden"></product-recently-viewed>
     <div class="grid__item product__media-wrapper">

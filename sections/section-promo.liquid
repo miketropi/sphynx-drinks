@@ -29,7 +29,7 @@
   .section-promo .section-promo-wrapper .section-promo-row {
     display: flex;
     flex-wrap: wrap;
-    align-items:center;
+    align-items: center;
     margin-right: -15px;
     margin-left: -15px;
   }
@@ -83,8 +83,10 @@
     margin-bottom: 0;
   }
   .section-promo .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top }}px;
-    padding-bottom: {{ section.settings.padding_bottom }}px;
+    padding-top: {{ section.settings.padding_top }}
+    px;
+    padding-bottom: {{ section.settings.padding_bottom }}
+    px;
   }
 {%- endstyle -%}
 <div class="section-promo-wrapper section-{{ section.id }}-padding">
@@ -100,7 +102,10 @@
           {%- case block.type -%}
             {%- when 'heading' -%}
             {%- if block.settings.heading != blank -%}
-              <h2 class="section-promo-heading" style="color: {{block.settings.heading_color}}" {{ block.shopify_attributes }}>
+              <h2
+                class="section-promo-heading"
+                style="color: {{block.settings.heading_color}}"
+                {{ block.shopify_attributes }}>
                 {{ block.settings.heading }}
               </h2>
             {%- endif -%}
@@ -112,7 +117,10 @@
           {%- case block.type -%}
             {%- when 'content' -%}
             {%- if block.settings.description != blank -%}
-              <div class="section-promo-description" style="color: {{block.settings.desc_color}}" {{ block.shopify_attributes }}>
+              <div
+                class="section-promo-description"
+                style="color: {{block.settings.desc_color}}"
+                {{ block.shopify_attributes }}>
                 {{ block.settings.description }}
               </div>
             {%- endif -%}
@@ -172,8 +180,7 @@
             "id": "heading",
             "default": "Charity Donation With Every Alcohol-Free Drink Purchased",
             "label": "Heading"
-          },
-          {
+          }, {
             "type": "color",
             "id": "heading_color",
             "default": "#FFC85E",
@@ -190,8 +197,7 @@
             "id": "description",
             "default": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>",
             "label": "Description"
-          },
-          {
+          }, {
             "type": "color",
             "id": "desc_color",
             "default": "#FFF",
@@ -202,7 +208,14 @@
     ],
     "presets": [
       {
-        "name": "Section Promo"
+        "name": "Section Promo",
+        "blocks": [
+          {
+            "type": "heading"
+          }, {
+            "type": "content"
+          }
+        ]
       }
     ]
   }

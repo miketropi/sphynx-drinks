@@ -2,15 +2,19 @@
 
 {%- style -%}
   .section-card-w-icon .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top }}px;
-    padding-bottom: {{ section.settings.padding_bottom }}px;
+    padding-top: {{ section.settings.padding_top }}
+    px;
+    padding-bottom: {{ section.settings.padding_bottom }}
+    px;
     background-color: {{ section.settings.bg_color }}
   }
   .section-card-w-icon .card-with-icon-wrapper.section-{{ section.id }}-padding .card-with-icon--heading {
-    color: {{ section.settings.heading_color }};
+    color: {{ section.settings.heading_color }}
+    ;
   }
   .section-card-w-icon .card-with-icon-wrapper.section-{{ section.id }}-padding .card-with-icon--subheading {
-    color: {{ section.settings.subheading_color }};
+    color: {{ section.settings.subheading_color }}
+    ;
   }
 {%- endstyle -%}
 
@@ -138,7 +142,7 @@
           }, {
             "type": "color",
             "id": "desc_color",
-            "default": "#F05123",
+            "default": "#8B8B8B",
             "label": "SubHeading"
           }
         ]

@@ -6,16 +6,14 @@
 
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}
-      px;
-      padding-bottom: {{ section.settings.padding_bottom }}
-      px;
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
 {%- endstyle -%}
 
 <div class="section-{{ section.id }}-padding">
-  <h2>{{ section.settings.heading }}</h2>
+  <h2 style="color:{{section.settings.color_heading}}">{{ section.settings.heading }}</h2>
   {%- for block in section.blocks -%}
     {% render block %}
   {%- endfor -%}
@@ -32,10 +30,12 @@
         "id": "heading",
         "default": "follow the good vibes <span>sdfsdf</span>",
         "label": "Heading"
-      }, {
+      },
+      {
         "type": "header",
         "content": "t:sections.all.padding.header.content"
-      }, {
+      },
+      {
         "type": "range",
         "id": "padding_top",
         "min": 0,
@@ -44,7 +44,8 @@
         "unit": "t:sections.all.padding.padding_top.unit",
         "label": "t:sections.all.padding.padding_top.label",
         "default": 36
-      }, {
+      },
+      {
         "type": "range",
         "id": "padding_bottom",
         "min": 0,
@@ -53,6 +54,11 @@
         "unit": "t:sections.all.padding.padding_bottom.unit",
         "label": "t:sections.all.padding.padding_bottom.label",
         "default": 36
+      }, {
+        "type": "color",
+        "id": "color_heading",
+        "label": "Heading Color",
+        "default": "#000"
       }
     ],
     "blocks": [
