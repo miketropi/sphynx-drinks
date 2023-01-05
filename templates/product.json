@@ -454,7 +454,7 @@
         "heading": "follow the good vibes <span>sdfsdf<\/span>",
         "padding_top": 36,
         "padding_bottom": 36,
-        "color_heading": "#000"
+        "color_heading": "#000000"
       }
     },
     "recently-viewed-products": {
@@ -733,7 +733,109 @@
         "heading": "follow the good vibes <span>@sphynxdrinks<\/span>",
         "padding_top": 36,
         "padding_bottom": 0,
-        "color_heading": "#000"
+        "color_heading": "#000000"
+      }
+    },
+    "79af2c79-7b48-43d5-ae4a-3c0cf2d30e6a": {
+      "type": "collection-gallery",
+      "blocks": {
+        "92b586c7-8916-4227-94a3-7c93792382e3": {
+          "type": "collection_gallery_item",
+          "settings": {
+            "collection": "1883",
+            "image": "shopify:\/\/shop_images\/c1.jpg",
+            "name": "NON-ALCOHOLIC BEER",
+            "hover_color_background": "#F05123",
+            "redirect_url": "",
+            "box_size": "size_1",
+            "custom_class": ""
+          }
+        },
+        "944cc9a6-c043-4f02-a7fa-73ce3b2ce08a": {
+          "type": "collection_gallery_item",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/c2.jpg",
+            "name": "NON-ALCOHOLIC CIDER",
+            "hover_color_background": "#F05123",
+            "redirect_url": "",
+            "box_size": "size_2",
+            "custom_class": ""
+          }
+        },
+        "2385986d-cc2d-4d2a-a5fd-6e36750e5e16": {
+          "type": "collection_gallery_item",
+          "settings": {
+            "collection": "",
+            "name": "",
+            "hover_color_background": "#F05123",
+            "redirect_url": "",
+            "box_size": "size_1",
+            "custom_class": ""
+          }
+        },
+        "dfbc02da-64e2-4dfa-9ef6-444f04fab8e9": {
+          "type": "collection_gallery_item",
+          "settings": {
+            "collection": "",
+            "name": "",
+            "hover_color_background": "#F05123",
+            "redirect_url": "",
+            "box_size": "size_1",
+            "custom_class": ""
+          }
+        },
+        "a929520e-fdcb-45d8-9ac3-aff43835e062": {
+          "type": "collection_gallery_item",
+          "settings": {
+            "collection": "",
+            "name": "",
+            "hover_color_background": "#F05123",
+            "redirect_url": "",
+            "box_size": "size_1",
+            "custom_class": ""
+          }
+        },
+        "739aabc3-2eb6-4bec-954d-54add7115078": {
+          "type": "collection_gallery_item",
+          "settings": {
+            "collection": "",
+            "name": "",
+            "hover_color_background": "#F05123",
+            "redirect_url": "",
+            "box_size": "size_1",
+            "custom_class": ""
+          }
+        },
+        "d14b991a-96fc-4005-adae-9c53d17a3f29": {
+          "type": "collection_gallery_item",
+          "settings": {
+            "collection": "",
+            "name": "",
+            "hover_color_background": "#F05123",
+            "redirect_url": "",
+            "box_size": "size_1",
+            "custom_class": ""
+          }
+        }
+      },
+      "block_order": [
+        "92b586c7-8916-4227-94a3-7c93792382e3",
+        "944cc9a6-c043-4f02-a7fa-73ce3b2ce08a",
+        "2385986d-cc2d-4d2a-a5fd-6e36750e5e16",
+        "dfbc02da-64e2-4dfa-9ef6-444f04fab8e9",
+        "a929520e-fdcb-45d8-9ac3-aff43835e062",
+        "739aabc3-2eb6-4bec-954d-54add7115078",
+        "d14b991a-96fc-4005-adae-9c53d17a3f29"
+      ],
+      "settings": {
+        "heading": "SHOP BY COLLECTION",
+        "description": "",
+        "heading_color": "#000000",
+        "description_color": "#8B8B8B",
+        "background_color": "#FFFFFF",
+        "spacing_top": "3em",
+        "spacing_bottom": "3em"
       }
     }
   },
@@ -751,6 +853,7 @@
     "tab-collage",
     "testimonials",
     "multicolumn",
-    "1672892548ba17d7bc"
+    "1672892548ba17d7bc",
+    "79af2c79-7b48-43d5-ae4a-3c0cf2d30e6a"
   ]
 }
