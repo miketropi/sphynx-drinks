@@ -451,10 +451,10 @@
         "449dba7b-a55d-496e-9fda-ec0829382728"
       ],
       "settings": {
-        "include_margins": true,
-        "show_divider": false,
+        "heading": "follow the good vibes <span>sdfsdf<\/span>",
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 36,
+        "color_heading": "#000"
       }
     },
     "recently-viewed-products": {
@@ -713,6 +713,28 @@
         "padding_top": 36,
         "padding_bottom": 72
       }
+    },
+    "1672892548ba17d7bc": {
+      "type": "apps",
+      "blocks": {
+        "9a95755a-b961-4272-b776-19b26e872a07": {
+          "type": "shopify:\/\/apps\/instafeed-instagram-feed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "heading_size": 20,
+            "feed_width": 100,
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "9a95755a-b961-4272-b776-19b26e872a07"
+      ],
+      "settings": {
+        "heading": "follow the good vibes <span>@sphynxdrinks<\/span>",
+        "padding_top": 36,
+        "padding_bottom": 0,
+        "color_heading": "#000"
+      }
     }
   },
   "order": [
@@ -728,6 +750,7 @@
     "video-hero",
     "tab-collage",
     "testimonials",
-    "multicolumn"
+    "multicolumn",
+    "1672892548ba17d7bc"
   ]
 }
