@@ -1,0 +1,164 @@
+{{ 'section-cta-image-text.css' | asset_url | stylesheet_tag }}
+<div class="section-cta-img-text-wrapper section-{{ section.id }}-padding">
+  <div class="section-cta-img-text-bg">
+    <div class="section-cta-img-text-overlay"></div>
+    {%- if section.settings.background != blank -%}
+      <img src="{{ section.settings.background | image_url }}" alt="bg" />
+    {%- endif -%}
+  </div>
+  <div class="page-width">
+    <div class="section-cta-img-text-grid">
+      <div class="section-cta-img-text-column section-cta-img-text-content">
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+            {%- when 'heading' -%}
+            {%- if block.settings.heading != blank -%}
+              <h2
+                class="section-heading"
+                style="color: {{block.settings.heading_color}}"
+                {{ block.shopify_attributes }}>
+                {{ block.settings.heading }}
+              </h2>
+            {%- endif -%}
+            {%- when 'content' -%}
+            {%- if block.settings.description != blank -%}
+              <div
+                class="section-desc"
+                style="color: {{block.settings.desc_color}}"
+                {{ block.shopify_attributes }}>
+                {{ block.settings.description }}
+              </div>
+            {%- endif -%}
+            {%- when 'button' -%}
+            {%- if block.settings.btn_label != blank -%}
+              <a
+                class="section-button"
+                href="{{block.settings.btn_url}}"
+                style="background-color: {{block.settings.btn_bg}}"
+                {{ block.shopify_attributes }}>
+                {{ block.settings.btn_label }}
+              </a>
+            {%- endif -%}
+          {%- endcase -%}
+        {%- endfor -%}
+      </div>
+      <div class="section-cta-img-text-column section-cta-img-text-media">
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+            {%- when 'media' -%}
+            {%- if section.settings.media != blank -%}
+              <img src="{{ section.settings.media | image_url }}" alt="media" />
+            {%- endif -%}
+          {%- endcase -%}
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Section CTA Image Text",
+    "tag": "section",
+    "class": "section-cta-img-text",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Background"
+      },
+      {
+        "type": "image_picker",
+        "id": "background",
+        "label": "Background Image"
+      },
+      {
+        "type": "header",
+        "content": "Options"
+      },
+      {
+        "type": "checkbox",
+        "id": "overlay_bg",
+        "label": "Background Overlay",
+        "default": true
+      }, {
+        "type": "checkbox",
+        "id": "reverse_col",
+        "label": "Reverse column",
+        "default": false
+      }
+    ],
+    "blocks": [
+      {
+        "type": "heading",
+        "name": "Heading",
+        "limit": 2,
+        "settings": [
+          {
+            "type": "text",
+            "id": "heading",
+            "default": "Charity Donation With Every Alcohol-Free Drink Purchased",
+            "label": "Heading"
+          }, {
+            "type": "color",
+            "id": "heading_color",
+            "default": "#FFC85E",
+            "label": "Heading"
+          }
+        ]
+      }, {
+        "type": "content",
+        "name": "Content",
+        "limit": 2,
+        "settings": [
+          {
+            "type": "richtext",
+            "id": "description",
+            "default": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>",
+            "label": "Description"
+          }, {
+            "type": "color",
+            "id": "desc_color",
+            "default": "#FFF",
+            "label": "Description"
+          }
+        ]
+      }, {
+        "type": "button",
+        "name": "Button",
+        "limit": 2,
+        "settings": [
+          {
+            "type": "text",
+            "id": "btn_label",
+            "default": "Shop now",
+            "label": "Button label"
+          }, {
+            "type": "url",
+            "id": "btn_url",
+            "label": "Button Url"
+          }, {
+            "type": "color",
+            "id": "btn_bg",
+            "default": "#F05123",
+            "label": "Background Button"
+          }
+        ]
+      }, {
+        "type": "media",
+        "name": "Media",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "media",
+            "label": "Image"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Section CTA Image Text"
+      }
+    ]
+  }
+{% endschema %}

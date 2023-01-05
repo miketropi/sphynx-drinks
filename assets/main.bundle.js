@@ -11155,6 +11155,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/sections/cta_image_text.scss":
+/*!******************************************!*\
+  !*** ./src/sections/cta_image_text.scss ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
 /***/ "./node_modules/slick-carousel/slick/slick.js":
 /*!****************************************************!*\
   !*** ./node_modules/slick-carousel/slick/slick.js ***!
@@ -14286,6 +14299,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
 /******/ 			"/main.bundle": 0,
+/******/ 			"section-cta-image-text": 0,
 /******/ 			"section-card-w-icon": 0,
 /******/ 			"section-home-slider": 0,
 /******/ 			"main.bundle": 0
@@ -14338,10 +14352,11 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["section-card-w-icon","section-home-slider","main.bundle"], () => (__webpack_require__("./src/main.js")))
-/******/ 	__webpack_require__.O(undefined, ["section-card-w-icon","section-home-slider","main.bundle"], () => (__webpack_require__("./src/main.scss")))
-/******/ 	__webpack_require__.O(undefined, ["section-card-w-icon","section-home-slider","main.bundle"], () => (__webpack_require__("./src/sections/home_slider.scss")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["section-card-w-icon","section-home-slider","main.bundle"], () => (__webpack_require__("./src/sections/card_w_icon.scss")))
+/******/ 	__webpack_require__.O(undefined, ["section-cta-image-text","section-card-w-icon","section-home-slider","main.bundle"], () => (__webpack_require__("./src/main.js")))
+/******/ 	__webpack_require__.O(undefined, ["section-cta-image-text","section-card-w-icon","section-home-slider","main.bundle"], () => (__webpack_require__("./src/main.scss")))
+/******/ 	__webpack_require__.O(undefined, ["section-cta-image-text","section-card-w-icon","section-home-slider","main.bundle"], () => (__webpack_require__("./src/sections/home_slider.scss")))
+/******/ 	__webpack_require__.O(undefined, ["section-cta-image-text","section-card-w-icon","section-home-slider","main.bundle"], () => (__webpack_require__("./src/sections/card_w_icon.scss")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["section-cta-image-text","section-card-w-icon","section-home-slider","main.bundle"], () => (__webpack_require__("./src/sections/cta_image_text.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
