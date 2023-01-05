@@ -22,12 +22,29 @@
         <div class="grid-sizer"></div>
         {%- if section.blocks.size > 0 -%}
           {%- for block in section.blocks -%}
-
-            <div class="box-item grid-item __box-{{ block.settings.box_size }} {{ block.settings.custom_class }}" style="background: url({{ block.settings.image | image_url }}) no-repeat center center / cover; background-size: 110%;">
+            {%- assign collectionUrl = collections[block.settings.collection].url -%}
+            <div class="box-item grid-item __box-{{ block.settings.box_size }} {{ block.settings.custom_class }}" style="background: url({{ block.settings.image | image_url }}) no-repeat center center / cover;">
               <div class="box-item__inner" style="color: black;">
+                <div class="box-item__decor" style="background: {{ block.settings.hover_color_background }};">
+                  <svg
+                    viewBox="0 0 432 68"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M0.132385 36.9075L18.1215 34.5579C36.1106 31.621 72.0888 26.922 108.067 20.4608C144.045 13.9996 180.023 6.36369 216.002 2.83941C251.98 -1.27225 287.958 -1.27225 323.936 5.18893C359.914 11.6501 395.893 23.9851 413.882 30.4463L431.871 36.9075V67.4512H413.882C395.893 67.4512 359.914 67.4512 323.936 67.4512C287.958 67.4512 251.98 67.4512 216.002 67.4512C180.023 67.4512 144.045 67.4512 108.067 67.4512C72.0888 67.4512 36.1106 67.4512 18.1215 67.4512H0.132385V36.9075Z"
+                      fill="{{ block.settings.hover_color_background }}" />
+                  </svg>
+                </div>
                 <div class="box-info">
                   <h4 class="box-name">{{ block.settings.name }}</h4>
-                  <a href="" target="_blank">Shop Now</a>
+                  <a
+                    class="button"
+                    href="{{ collectionUrl }}"
+                    target="_blank">
+                    Shop Now {% render 'icon', icon: 'arrow-bold' %}
+                  </a>
                 </div>
               </div>
             </div>
@@ -65,6 +82,11 @@
             "label": "Name"
           },
           {
+            "type": "color",
+            "id": "hover_color_background",
+            "label": "Hover Color Background",
+            "default": "#F05123"
+          }, {
             "type": "text",
             "id": "redirect_url",
             "label": "Redirect Url"

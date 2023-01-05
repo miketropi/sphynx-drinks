@@ -439,9 +439,92 @@ ul.menu-style-inline li.menu-link:hover > ul {
 .collection-gallery__box-grid .box-item.__box-size_2.__fix-design {
   height: 490px;
 }
+.collection-gallery__box-grid .box-item__decor {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.2s ease;
+  -webkit-transition: 0.2s ease;
+}
+.collection-gallery__box-grid .box-item__decor svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  transform: translateY(-98%);
+  -webkit-transform: translateY(-98%);
+}
+.collection-gallery__box-grid .box-item__inner {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3827906162) 0%, rgba(0, 212, 255, 0) 100%);
+}
 .collection-gallery__box-grid .box-item__inner img {
   width: 100%;
   height: auto;
+}
+.collection-gallery__box-grid .box-item__inner .box-info {
+  padding: 26px;
+  text-align: center;
+  transform: translateY(40%);
+  -webkit-transform: translateY(40%);
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+}
+.collection-gallery__box-grid .box-item__inner .box-info .box-name {
+  font-size: 1.3em;
+  font-family: "Montserrat";
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 1em;
+}
+.collection-gallery__box-grid .box-item__inner .box-info a.button {
+  background: #FFC85E;
+  border-radius: 8px;
+  border: none;
+  font-family: "Montserrat";
+  font-weight: bold;
+  letter-spacing: 0;
+  text-transform: initial;
+  font-size: 1.2em;
+  min-width: auto;
+  visibility: hidden;
+  opacity: 0;
+  white-space: normal;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+}
+.collection-gallery__box-grid .box-item__inner .box-info a.button svg {
+  margin-left: 4px;
+  width: 24px;
+}
+.collection-gallery__box-grid .box-item__inner .box-info a.button svg path {
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+}
+.collection-gallery__box-grid .box-item__inner .box-info a.button:hover {
+  color: black;
+}
+.collection-gallery__box-grid .box-item__inner .box-info a.button:hover svg path {
+  stroke: black;
+}
+.collection-gallery__box-grid .box-item:hover .box-item__inner .box-info {
+  transform: translateY(0%);
+  -webkit-transform: translateY(0%);
+}
+.collection-gallery__box-grid .box-item:hover .box-item__inner .box-info a.button {
+  visibility: visible;
+  opacity: 1;
+}
+.collection-gallery__box-grid .box-item:hover .box-item__decor {
+  top: 30%;
+  opacity: 1;
 }
 
 .section-ins-feed-app {
