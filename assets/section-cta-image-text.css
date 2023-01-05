@@ -75,3 +75,16 @@
 .section-cta-img-text-wrapper .page-width .section-cta-img-text-grid .section-cta-img-text-column.section-cta-img-text-content .section-desc p {
   margin: 0;
 }
+.section-cta-img-text-wrapper .page-width .section-cta-img-text-grid .section-cta-img-text-column.section-cta-img-text-content .section-button {
+  padding: 25px 30px;
+  background: #F05123;
+  border-radius: 8px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 95%;
+  color: #FFFFFF;
+  text-decoration: none;
+  display: inline-block;
+}

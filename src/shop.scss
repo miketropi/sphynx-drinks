@@ -1,0 +1,84 @@
+.template-collection {
+    background-color: #fff;
+    color: rgb(var(--color-background));
+
+    .rich-text {
+        h2 {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 36px;
+            line-height: 95%;
+            text-transform: uppercase;
+            color: #000000;
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        .rich-text__text {
+            max-width: 100%;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 146%;
+            color: #8B8B8B;
+            margin-top: 0;
+        }
+    }
+
+    //product filter grid
+    .collection-grid-section {
+        .facets__header {}
+
+        .product-grid-container {
+            #product-grid {
+                .grid__item {
+                    .card-wrapper,
+                    a,
+                    .card-information__wrapper {
+                        color: rgb(240, 81, 35);
+
+                        a {
+                            position: relative;
+                        }
+                    }
+
+                    .card__media.media-wrapper {
+                        background-color: transparent;
+
+                        .card-article-info {
+                            color: rgb(240, 81, 35);
+                        }
+                    }
+
+                    .rating-star-wrap {
+                        position: relative;
+                        width: 77px;
+                        height: 13px;
+                        display: block;
+
+                        .rating-star-img {
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+
+                            &.rating-star-img-fill {
+                                &::before {
+                                    content: '';
+                                    position: absolute;
+                                    right: 0;
+                                    top: 0;
+                                    height: 100%;
+                                    width: calc(100% - var(--percent, 0%));
+                                    background-color: white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

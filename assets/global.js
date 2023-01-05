@@ -1795,12 +1795,12 @@ class PriceMoney extends HTMLElement {
         const price_without_symbol = price.slice(0, price.lastIndexOf(symbol));
         const price_without_decimal = price.slice(0, price.lastIndexOf(money_symbol_decimal));
         const decimal = price_without_symbol.replace(price_without_decimal, '').trim();
-        html = html.replace(decimal, `<sup class="price__suffix">${decimal}</sup>`);
+        html = html.replace(decimal, `<span class="price__suffix">${decimal}</span>`);
       }
       else {
         const price_without_decimal = price.slice(0, price.lastIndexOf(money_symbol_decimal));
         const decimal = price.replace(price_without_decimal, '').trim();
-        html = html.replace(decimal, `<sup class="price__suffix">${decimal}</sup>`);
+        html = html.replace(decimal, `<span class="price__suffix">${decimal}</span>`);
       }
     }
 

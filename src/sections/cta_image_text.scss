@@ -79,9 +79,24 @@
                             line-height: 146%;
                             color: #FFFFFF;
                             margin-bottom: 40px;
+
                             p {
                                 margin: 0;
                             }
+                        }
+
+                        .section-button {
+                            padding: 25px 30px;
+                            background: #F05123;
+                            border-radius: 8px;
+                            font-family: 'Montserrat';
+                            font-style: normal;
+                            font-weight: 900;
+                            font-size: 22px;
+                            line-height: 95%;
+                            color: #FFFFFF;
+                            text-decoration: none;
+                            display: inline-block;
                         }
                     }
                 }
