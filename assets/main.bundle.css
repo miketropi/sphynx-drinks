@@ -444,6 +444,9 @@ ul.menu-style-inline li.menu-link:hover > ul {
   height: auto;
 }
 
+.section-ins-feed-app {
+  background-color: #fff;
+}
 .section-ins-feed-app h2 {
   text-align: center;
   font-family: "Montserrat";
