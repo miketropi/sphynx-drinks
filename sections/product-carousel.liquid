@@ -1,15 +1,21 @@
+<div class="product-carousel product-carousel__container" style="padding-top: {{ section.settings.spacing_top }}; padding-bottom: {{ section.settings.spacing_bottom }}; background: {{ section.settings.background_color }};">
+  <div class="product-carousel__decor-top">
+    <svg viewBox="0 0 1920 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 27.2201L35.2 28.8793C70.4 30.5385 142.4 33.857 212.8 30.5385C284.8 27.2201 355.2 17.2647 427.2 10.6278C497.6 3.99093 569.6 0.672481 640 2.3317C710.4 3.99093 782.4 10.6278 852.8 8.9686C924.8 7.30938 995.2 -2.64597 1067.2 0.672481C1137.6 3.99093 1209.6 20.5832 1280 28.8793C1350.4 37.1754 1422.4 37.1754 1492.8 30.5385C1564.8 23.9016 1635.2 10.6278 1707.2 7.30938C1777.6 3.99093 1849.6 10.6278 1884.8 13.9463L1920 17.2647V57.0861H1884.8C1849.6 57.0861 1777.6 57.0861 1707.2 57.0861C1635.2 57.0861 1564.8 57.0861 1492.8 57.0861C1422.4 57.0861 1350.4 57.0861 1280 57.0861C1209.6 57.0861 1137.6 57.0861 1067.2 57.0861C995.2 57.0861 924.8 57.0861 852.8 57.0861C782.4 57.0861 710.4 57.0861 640 57.0861C569.6 57.0861 497.6 57.0861 427.2 57.0861C355.2 57.0861 284.8 57.0861 212.8 57.0861C142.4 57.0861 70.4 57.0861 35.2 57.0861H0V27.2201Z" fill="{{ section.settings.background_color }}"/>
+    </svg>
 
-<div class="product-carousel product-carousel__container" style="padding: 5em 0">
+  </div>
   <div class="site-container">
       <div class="product-carousel__heading">
-        <h4>{{ section.settings.heading }}</h4>
-        <a href="{{ section.settings.redirect_url }}" target="_blank">{{ section.settings.redirect_label }}</a>
+        <h4 style="color: {{ section.settings.heading_color }}">{{ section.settings.heading }}</h4>
+        <a class="redirect-link" href="{{ section.settings.redirect_url }}" target="_blank">{{ section.settings.redirect_label }}</a>
       </div>
-      {% comment %} {%- assign productBestSelling = collections.products | sort_by: 'best-selling' -%} {% endcomment %}
-      {% assign bestSelling = collections[section.settings.collection].products %}
-      {% for product in bestSelling limit: section.settings.limit_number %}
-        {{ product | json }}
-      {% endfor %}
+      {% assign _products = collections[section.settings.collection].products %}
+      <div class="slide-product-container">
+        {% for product in _products limit: section.settings.limit_number %}
+          {%- render 'product-slide-item' | product: product -%}
+        {% endfor %} 
+      </div> <!-- .slide-product-container -->
     </div>
   </div>
 </div>
@@ -23,6 +29,12 @@
         "id": "heading",
         "label": "Heading",
         "default": "Products"
+      },
+      {
+        "type": "color",
+        "id": "heading_color",
+        "label": "Heading Color",
+        "default": "#000000"
       },
       {
         "type": "text",
@@ -46,6 +58,24 @@
         "id": "limit_number",
         "label": "Limit Number Products",
         "default": 6
+      },
+      {
+        "type": "color",
+        "id": "background_color",
+        "label": "Background Color",
+        "default": "#FFC85E"
+      },
+      {
+        "type": "text",
+        "id": "spacing_top",
+        "label": "Spacing Top",
+        "default": "3em"
+      },
+      {
+        "type": "text",
+        "id": "spacing_bottom",
+        "label": "Spacing Bottom",
+        "default": "4em"
       }
     ],
     "blocks": [],

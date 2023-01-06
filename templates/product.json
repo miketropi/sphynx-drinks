@@ -714,6 +714,20 @@
         "padding_bottom": 72
       }
     },
+    "dd90819b-0606-498e-a984-7734f55cf375": {
+      "type": "product-carousel",
+      "settings": {
+        "heading": "the best sellers",
+        "heading_color": "#000000",
+        "redirect_label": "VIEW ALL",
+        "redirect_url": "#",
+        "collection": "beer-and-cider",
+        "limit_number": 6,
+        "background_color": "#ffc85e",
+        "spacing_top": "3em",
+        "spacing_bottom": "4em"
+      }
+    },
     "79af2c79-7b48-43d5-ae4a-3c0cf2d30e6a": {
       "type": "collection-gallery",
       "blocks": {
@@ -723,7 +737,7 @@
             "collection": "1883",
             "image": "shopify:\/\/shop_images\/c1.jpg",
             "name": "NON-ALCOHOLIC BEER",
-            "hover_color_background": "#F05123",
+            "hover_color_background": "#000000",
             "redirect_url": "",
             "box_size": "size_1",
             "custom_class": ""
@@ -735,7 +749,7 @@
             "collection": "4-pines",
             "image": "shopify:\/\/shop_images\/c2.jpg",
             "name": "NON-ALCOHOLIC CIDER",
-            "hover_color_background": "#F05123",
+            "hover_color_background": "#000000",
             "redirect_url": "",
             "box_size": "size_2",
             "custom_class": ""
@@ -747,7 +761,7 @@
             "collection": "absolute-zero",
             "image": "shopify:\/\/shop_images\/c3.jpg",
             "name": "TONIC AND SODA",
-            "hover_color_background": "#F05123",
+            "hover_color_background": "#000000",
             "redirect_url": "",
             "box_size": "size_1",
             "custom_class": ""
@@ -759,7 +773,7 @@
             "collection": "almost-zero",
             "image": "shopify:\/\/shop_images\/c4.jpg",
             "name": "NON-ALCOHOLIC WINE",
-            "hover_color_background": "#F05123",
+            "hover_color_background": "#000000",
             "redirect_url": "",
             "box_size": "size_2",
             "custom_class": ""
@@ -771,7 +785,7 @@
             "collection": "altina",
             "image": "shopify:\/\/shop_images\/c5.jpg",
             "name": "NON-ALCOHOLIC SPIRITS",
-            "hover_color_background": "#F05123",
+            "hover_color_background": "#000000",
             "redirect_url": "",
             "box_size": "size_1",
             "custom_class": ""
@@ -783,7 +797,7 @@
             "collection": "amplify",
             "image": "shopify:\/\/shop_images\/c6.jpg",
             "name": "MIXERS",
-            "hover_color_background": "#F05123",
+            "hover_color_background": "#000000",
             "redirect_url": "",
             "box_size": "size_1",
             "custom_class": ""
@@ -795,7 +809,7 @@
             "collection": "apple-thief",
             "image": "shopify:\/\/shop_images\/c7.jpg",
             "name": "PREMIXED",
-            "hover_color_background": "#F05123",
+            "hover_color_background": "#000000",
             "redirect_url": "",
             "box_size": "size_1",
             "custom_class": "__fix-design"
@@ -815,8 +829,8 @@
         "heading": "SHOP BY COLLECTION",
         "description": "",
         "heading_color": "#000000",
-        "description_color": "#8B8B8B",
-        "background_color": "#FFFFFF",
+        "description_color": "#8b8b8b",
+        "background_color": "#ffffff",
         "spacing_top": "3em",
         "spacing_bottom": "3em"
       }
@@ -858,6 +872,7 @@
     "tab-collage",
     "testimonials",
     "multicolumn",
+    "dd90819b-0606-498e-a984-7734f55cf375",
     "79af2c79-7b48-43d5-ae4a-3c0cf2d30e6a",
     "1672892548ba17d7bc"
   ]

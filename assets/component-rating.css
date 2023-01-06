@@ -1,6 +1,11 @@
 .rating {
-  display: inline-block;
-  margin: 0;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 95%;
+  color: #F05123;
+  margin-bottom: 20px;
 }
 
 .rating-star {
@@ -16,10 +21,10 @@
 }
 
 .rating-star::before {
-  content: '\2605\2605\2605\2605\2605';
+  /* content: '\2605\2605\2605\2605\2605';
   background: linear-gradient(90deg, var(--color-reviews) var(--percent), rgba(var(--color-foreground), 0.15) var(--percent));
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
 }
 
 .rating-text {

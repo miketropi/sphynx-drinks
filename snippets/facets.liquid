@@ -33,7 +33,13 @@
     endfor
   endif
 -%}
-
+{%- liquid
+  assign from = paginate.current_page | minus: 1 | times: paginate.page_size | plus: 1
+  assign to = paginate.page_size | times: paginate.current_page
+  if paginate.current_page == paginate.pages
+    assign to = paginate.items
+  endif
+-%}
 <{% if enable_sticky_facet %}sticky-facet-filters class="facet-filters facet-filters-sticky"{% else %}div class="facet-filters"{% endif %} id="main-facet-filters" data-id="{{ section.id }}">
   <div class="page-width{% if enable_filtering and filter_type == 'drawer' %} facets-container-drawer{% endif %}">
     {%- if enable_filtering or enable_sorting or enable_viewing -%}
@@ -58,7 +64,7 @@
                           <span class="count-bubble count-bubble--dot"></span>
                         </span>
                       {%- endif -%}
-                      {% render 'icon', icon: 'plus' %}
+                      <span class="facets__selected_icon"><span>
                     </span>
                   </summary>
                   <div class="facets__display">
@@ -275,9 +281,13 @@
                   if results.results_count
                     echo 'templates.search.results_with_count' | t: terms: results.terms, count: results.results_count
                   elsif results.products_count == results.all_products_count
-                    echo 'products.facets.product_count_simple' | t: count: results.products_count
-                  else
-                    echo 'products.facets.product_count' | t: product_count: results.products_count, count: results.all_products_count
+                    echo 'products.facets.product_count_simple' | t: count: paginate.items, data_from: from, data_to: to
+                  else 
+                   if paginate.pages == 1
+                    echo 'products.facets.product_count.pageone' | t: count: paginate.items, data_from: from, data_to: to
+                    else
+                    echo 'products.facets.product_count' | t: count: paginate.items, data_from: from, data_to: to
+                   endif
                   endif
                 -%}
               </p>
@@ -550,9 +560,13 @@
           if results.results_count
             echo 'templates.search.results_with_count' | t: terms: results.terms, count: results.results_count
           elsif results.products_count == results.all_products_count
-            echo 'products.facets.product_count_simple' | t: count: results.products_count
-          else
-            echo 'products.facets.product_count' | t: product_count: results.products_count, count: results.all_products_count
+            echo 'products.facets.product_count_simple' | t: count: paginate.items, data_from: from, data_to: to
+          else 
+           if paginate.pages == 1
+            echo 'products.facets.product_count.pageone' | t: count: paginate.items, data_from: from, data_to: to
+            else
+            echo 'products.facets.product_count' | t: count: paginate.items, data_from: from, data_to: to
+           endif
           endif
         -%}
       </p>

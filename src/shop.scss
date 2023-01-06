@@ -1,0 +1,242 @@
+.template-collection {
+    background-color: #fff;
+    color: rgb(var(--color-background));
+
+    .rich-text {
+        h2 {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 36px;
+            line-height: 95%;
+            text-transform: uppercase;
+            color: #000000;
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        .rich-text__text {
+            max-width: 100%;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 146%;
+            color: #8B8B8B;
+            margin-top: 0;
+        }
+    }
+
+    //product filter grid 
+    .collection-grid-section {
+        .facets__form {
+            .filter-heading {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 900;
+                font-size: 36px;
+                line-height: 95%;
+                text-transform: uppercase;
+                color: #000000;
+                margin-top: 0;
+                margin-bottom: 12px;
+            }
+
+            .facets__main {
+                .js-filter {
+                    .facets__header {
+                        .facets__selected {
+                            font-family: 'Montserrat';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 24px;
+                            line-height: 95%;
+                            color: #F05123;
+                        }
+
+                        .facets__list {
+                            padding-bottom: 0;
+
+                        }
+                    }
+                }
+            }
+        }
+
+        .product-grid-container {
+            #product-grid {
+                display: grid;
+                grid-row-gap: 2.5rem;
+                grid-column-gap: 2.5rem;
+                grid-template-columns: repeat(4, 1fr);
+
+                @media (max-width: 1600px) {
+                    grid-row-gap: 1.5rem;
+                    grid-column-gap: 1.5rem;
+                }
+
+                @media (max-width: 1400px) {
+                    grid-template-columns: repeat(3, 1fr);
+                }
+                @media (max-width: 991px) {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+                .grid__item {
+                    max-width: 100%;
+                    width: 100%;
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
+
+.product-grid {
+    .grid__item {
+
+        .card-wrapper,
+        a,
+        .card-information__wrapper {
+            color: rgb(240, 81, 35);
+
+            a {
+                position: relative;
+            }
+        }
+
+        .card__media.media-wrapper {
+            background-color: transparent;
+
+            .card-article-info {
+                color: rgb(240, 81, 35);
+            }
+        }
+
+        .card-wrapper {
+            color: inherit;
+            display: block;
+            position: relative;
+            text-decoration: none;
+            height: 100%;
+            background: #FFFFFF;
+            border: solid 12px transparent;
+            border-radius: 22px;
+            padding: 17px;
+            transition: all 0.5s ease;
+
+            @media (max-width: 1600px) {
+                border: solid 8px transparent;
+                padding: 12px;
+            }
+
+            @media (max-width: 1200px) {}
+
+            &:hover {
+                border: solid 12px #F05123;
+
+                @media (max-width: 1600px) {
+                    border: solid 8px #F05123;
+                    padding: 12px;
+                }
+            }
+
+            .media {
+                padding: 0;
+                height: 324px;
+                margin-bottom: 30px;
+
+                @media (max-width: 1600px) {
+                    height: 234px;
+                }
+
+            }
+
+            .card-information {
+                min-height: calc(100% - 324px);
+                padding-bottom: 40px;
+
+                @media (max-width: 1600px) {
+                    min-height: calc(100% - 234px);
+                }
+
+                .card-information__button {
+                    .button {
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 900;
+                        font-size: 16px;
+                        line-height: 95%;
+                        color: #FFFFFF !important;
+                        background: #F05123;
+                        border-radius: 8px;
+                        padding: 10px 25px;
+                        border: 1px solid #F05123;
+                        min-width: auto;
+                        text-transform: none;
+                        letter-spacing: normal;
+
+                        @media (max-width: 1200px) {
+                            font-size: 14px;
+                        }
+
+                        &:hover {
+                            color: #F05123 !important;
+                        }
+                    }
+
+                }
+
+                .button--soldout {
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 16px;
+                    line-height: 95%;
+                    color: #F05123;
+                    border: 1px solid #F05123;
+                    border-radius: 8px;
+                    padding: 11px 25px;
+                    text-transform: none;
+                    letter-spacing: normal;
+                    background-color: white !important;
+                    min-width: auto;
+                    opacity: 1;
+                    position: absolute;
+                    bottom: 17px;
+                    left: 17px;
+
+                    @media (max-width: 1200px) {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+.rating-star-wrap {
+    position: relative;
+    width: 77px;
+    height: 13px;
+    display: block;
+
+    .rating-star-img {
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        &.rating-star-img-fill {
+            &::before {
+                content: '';
+                position: absolute;
+                right: 0;
+                top: 0;
+                height: 100%;
+                width: calc(100% - var(--percent-rating) * var(--percent-unit));
+                background-color: white;
+            }
+        }
+    }
+}

@@ -22,7 +22,7 @@
   display: none;
   width: 100%;
   padding: 0 5rem;
-  background-color: rgba(var(--color-background), 0.7);
+  background-color: rgba(var(--color-background), 0.2);
 }
 
 .collection.loading .loading-overlay {

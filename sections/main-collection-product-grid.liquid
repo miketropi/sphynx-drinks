@@ -42,13 +42,22 @@
 
 {%- if settings.quick_view_enabled and section.settings.enable_quick_view -%}
   <link rel="stylesheet" href="{{ 'section-main-product.css' | asset_url }}" media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="{{ 'component-deferred-media.css' | asset_url }}" media="print" onload="this.media='all'">
+  <link
+    rel="stylesheet"
+    href="{{ 'component-deferred-media.css' | asset_url }}"
+    media="print"
+    onload="this.media='all'"
+  >
   <link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">
 {%- endif -%}
 {%- if enable_sticky_facet -%}
   <link rel="stylesheet" href="{{ 'component-facet-sticky.css' | asset_url }}" media="print" onload="this.media='all'">
 {%- endif -%}
-
+{%- paginate collection.products by products_per_page -%}
+  {%- liquid
+    assign paginate = paginate
+  -%}
+  {%- endpaginate -%}
 <div class="section-{{ section.id }}-padding{% if filter_type == 'vertical' %} facets-vertical page-width{% endif %}">
   {%- if enable_filtering or enable_sorting or enable_viewing -%}
     {%- if collection.all_products_count > 0 -%}
@@ -57,20 +66,20 @@
 
       {%- liquid
         if filter_type != 'vertical'
-          render 'facets', results: collection, enable_filtering: enable_filtering, filter_type: filter_type, enable_sorting: enable_sorting, enable_viewing: enable_viewing, enable_sticky_facet: enable_sticky_facet, default_layout: default_layout
+          render 'facets', paginate: paginate, results: collection, enable_filtering: enable_filtering, filter_type: filter_type, enable_sorting: enable_sorting, enable_viewing: enable_viewing, enable_sticky_facet: enable_sticky_facet, default_layout: default_layout
         else
-          render 'facets-vertical', results: collection, enable_filtering: enable_filtering, filter_type: filter_type, enable_sorting: enable_sorting, enable_viewing: enable_viewing, enable_sticky_facet: enable_sticky_facet, default_layout: default_layout
+          render 'facets-vertical', paginate: paginate, results: collection, enable_filtering: enable_filtering, filter_type: filter_type, enable_sorting: enable_sorting, enable_viewing: enable_viewing, enable_sticky_facet: enable_sticky_facet, default_layout: default_layout
         endif
       -%}
     {%- endif -%}
   {%- endif -%}
-
+  
   <div class="product-grid-container{% if filter_type != 'vertical' %} page-width{% endif %}">
     {%- liquid
       if enable_filtering or enable_sorting or enable_viewing
         if collection.all_products_count > 0
           if filter_type == 'vertical'
-            render 'facets-vertical-top', results: collection, enable_filtering: enable_filtering, filter_type: filter_type, enable_sorting: enable_sorting, enable_viewing: enable_viewing, enable_sticky_facet: enable_sticky_facet, default_layout: default_layout
+            render 'facets-vertical-top', paginate: paginate, results: collection, enable_filtering: enable_filtering, filter_type: filter_type, enable_sorting: enable_sorting, enable_viewing: enable_viewing, enable_sticky_facet: enable_sticky_facet, default_layout: default_layout
           endif
         endif
       endif
@@ -88,7 +97,7 @@
                   if collection.filters.size > 0
                     echo 'sections.collection_template.empty' | t
                     echo '<br/>'
-                    echo 'sections.collection_template.use_fewer_filters_html' | t: link: collection.url, class: "link link--underline"
+                    echo 'sections.collection_template.use_fewer_filters_html' | t: link: collection.url, class: 'link link--underline'
                   else
                     echo 'sections.collection_template.no_products' | t
                   endif
@@ -97,7 +106,15 @@
             </div>
           </div>
         {%- else -%}
-          <div class="collection">
+          <div class="collection">            
+            {%- liquid
+              assign from = paginate.current_page | minus: 1 | times: paginate.page_size | plus: 1
+              assign to = paginate.page_size | times: paginate.current_page
+              if paginate.current_page == paginate.pages
+                assign to = paginate.items
+              endif
+            -%}
+            {% comment %} <div class="product-count__text">Showing {{ from }}-{{ to }} of {{ paginate.items }}<div> {% endcomment %}
             <div class="loading-overlay"></div>
             {%- liquid
               assign grid_class = 'grid grid--2-col'
@@ -105,7 +122,7 @@
               if section.settings.columns_mobile == '1'
                 assign grid_class = grid_class | append: ' grid--1-col-mobile'
               endif
-            
+
               if products_per_row == 3
                 assign grid_class = grid_class | append: ' grid--3-col-tablet grid--3-col-desktop'
               elsif products_per_row == 4
