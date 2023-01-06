@@ -714,6 +714,20 @@
         "padding_bottom": 72
       }
     },
+    "dd90819b-0606-498e-a984-7734f55cf375": {
+      "type": "product-carousel",
+      "settings": {
+        "heading": "the best sellers",
+        "heading_color": "#000000",
+        "redirect_label": "VIEW ALL",
+        "redirect_url": "#",
+        "collection": "bestsellers",
+        "limit_number": 6,
+        "background_color": "#FFC85E",
+        "spacing_top": "3em",
+        "spacing_bottom": "4em"
+      }
+    },
     "79af2c79-7b48-43d5-ae4a-3c0cf2d30e6a": {
       "type": "collection-gallery",
       "blocks": {
@@ -858,6 +872,7 @@
     "tab-collage",
     "testimonials",
     "multicolumn",
+    "dd90819b-0606-498e-a984-7734f55cf375",
     "79af2c79-7b48-43d5-ae4a-3c0cf2d30e6a",
     "1672892548ba17d7bc"
   ]
