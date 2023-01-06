@@ -32,7 +32,7 @@
                       assign filter_max_items = collection.metafields.theme.filter_max_items.value
                     endif
                   -%}
-                  {%- for filter in results.filters -%}
+                  {%- for filter in results.filters -%} 
                     {%- case filter.type -%}
                     {%- when 'boolean' or 'list' -%}
                       <details  class="js-filter" data-index="{{ forloop.index }}"{% if filter_max_items %} aria-expanded="false"{% endif %}>

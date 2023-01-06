@@ -261,33 +261,33 @@
         elsif decimal > 0.7
           assign rating_decimal = 1
         endif
+
+        assign count_reviews = 0
+        assign get_count_view = card_product.metafields.reviews.rating_count
+        if get_count_view
+          assign count_reviews = get_count_view
+        endif
+
+        assign percent_reviews = 100
+        assign percent_unit = 0
+        if card_product.metafields.reviews.rating
+          assign percent_reviews = card_product.metafields.reviews.rating.value
+          assign percent_unit = 20
+        endif
       %}
-      <div
-        class="rating"
-        role="img"
-        aria-label="{{ 'accessibility.star_reviews_info' | t: rating_value: card_product.metafields.reviews.rating.value, rating_max: card_product.metafields.reviews.rating.value.scale_max }}"
-      >
-        <span
-          aria-hidden="true"
-          class="rating-star"
-          style="--rating: {{ card_product.metafields.reviews.rating.value.rating | floor }}; --rating-max: {{ card_product.metafields.reviews.rating.value.scale_max }}; --rating-decimal: {{ rating_decimal }};"
-        >
+
+      <div class="rating" style="--percent-rating: {{percent_reviews}}%; --percent-unit: {{percent_unit}}" role="img" aria-label="{{ 'accessibility.star_reviews_info' | t: rating_value: card_product.metafields.reviews.rating.value, rating_max: card_product.metafields.reviews.rating.value.scale_max }}">
+        <span aria-hidden="true" class="rating-star" style="--rating: {{ card_product.metafields.reviews.rating.value.rating | floor }}; --rating-max: {{ card_product.metafields.reviews.rating.value.scale_max }}; --rating-decimal: {{ rating_decimal }};">
           <span class="rating-star-wrap">
             <span class="rating-star-img rating-star-img-fill">
-              <img
-                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE0AAAANCAYAAADsUePcAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAFpSURBVHjaxNY9SxxBGADg54676kSCjZ0pTCwSELvtTG11BqwMZvMnQrBLHfwR7i9QMUX6NNlWEORCGjtLAyGSFJfi5uSy7H3s7sG8sMzOzD7MMjM777aGw6HSyNNnOMF7SfZdlWhiY/sFbHsG30M/lFWjiY3t59pW6U7L01Vc4SlusS3J7hdcqfo2tl/QtktgC28DhA0chfZ5g9a3sX0FO9ppefoOW9gM5Ut0J577i2sM8AMDSXYaBqtvY/uathM6+9ifsQ5d7IQLLnC6BBvb17Ljz/MQlwueGl/wZqLexMb2texo0pLsNw5wPgd+xmtJ9uuxpYmN7Wva/7Nnnj7HV6yXwDvsSrLBlIO0vo3tK9pi9lxDb8pr9fBkxmo0sbF9JVuctBdYmaj/mbhfCdllWjSxsX0lW5y0cecDPuIVPuBnob8smtjYvpLtlKTYcxxLspvQ9k2enuFT4R/GEm1sX8n+AwAA//8DAJKQ+Q1JDc5eAAAAAElFTkSuQmCC"
-                alt="star fill"
-              >
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE0AAAANCAYAAADsUePcAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAFpSURBVHjaxNY9SxxBGADg54676kSCjZ0pTCwSELvtTG11BqwMZvMnQrBLHfwR7i9QMUX6NNlWEORCGjtLAyGSFJfi5uSy7H3s7sG8sMzOzD7MMjM777aGw6HSyNNnOMF7SfZdlWhiY/sFbHsG30M/lFWjiY3t59pW6U7L01Vc4SlusS3J7hdcqfo2tl/QtktgC28DhA0chfZ5g9a3sX0FO9ppefoOW9gM5Ut0J577i2sM8AMDSXYaBqtvY/uathM6+9ifsQ5d7IQLLnC6BBvb17Ljz/MQlwueGl/wZqLexMb2texo0pLsNw5wPgd+xmtJ9uuxpYmN7Wva/7Nnnj7HV6yXwDvsSrLBlIO0vo3tK9pi9lxDb8pr9fBkxmo0sbF9JVuctBdYmaj/mbhfCdllWjSxsX0lW5y0cecDPuIVPuBnob8smtjYvpLtlKTYcxxLspvQ9k2enuFT4R/GEm1sX8n+AwAA//8DAJKQ+Q1JDc5eAAAAAElFTkSuQmCC" alt="star fill"/>
             </span>
             <span class="rating-star-img">
-              <img
-                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE0AAAANCAYAAADsUePcAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAGjSURBVHjaxNexa9VAGADw33s8dBVqQUGkVNFBnBRPxKlSHLqrW0AKOklFFAcd3ASRQgfRSQ6X/gsOnSWDS2tBEEFEUeigboqV52CUNLTPl8tw3xKS43d3fMl9uesNh0PbRllM4TbuC/GdNtHF5vZj2P4Ifh5Xqmvb6GJz+//a/g7ZnsYszmK2uh/3TaXb3H5M2/u3PMuih90Y4BoOC/GysniKN1jCJn4IcdgYLN3m9gl2UMGrmMReHMAEFqpul7CIE/iIDWWxIcTHnW1un2j/fGll8QpfMI9deC/Eb7WJ7cFB/MQTTAjxWNWWbnP7RPu3pl3Ed8wJcW0LhBC/CnEVM/iFC7XWLja3T7L1mrYfz/AC94S4Wcv4AHdwGvNC/NCoC+k2t0+w/VpWP+E6TlXrvB6TOINb2066i83tE2xzyzGN9aojymKm1vE6pkb8sLvY3L6V7W05EZTFIl5iDTexD5/xAMdxUogLO+xx0m1u39IOGvwQzlX7kxUs4xLu4ghGHUm62Ny+lW0mbQVH8VCIb6tnj5TFc9zA6xEDd7G5fSv7ewDPCsAoHZp19gAAAABJRU5ErkJggg=="
-                alt="star"
-              >
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE0AAAANCAYAAADsUePcAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAGjSURBVHjaxNexa9VAGADw33s8dBVqQUGkVNFBnBRPxKlSHLqrW0AKOklFFAcd3ASRQgfRSQ6X/gsOnSWDS2tBEEFEUeigboqV52CUNLTPl8tw3xKS43d3fMl9uesNh0PbRllM4TbuC/GdNtHF5vZj2P4Ifh5Xqmvb6GJz+//a/g7ZnsYszmK2uh/3TaXb3H5M2/u3PMuih90Y4BoOC/GysniKN1jCJn4IcdgYLN3m9gl2UMGrmMReHMAEFqpul7CIE/iIDWWxIcTHnW1un2j/fGll8QpfMI9deC/Eb7WJ7cFB/MQTTAjxWNWWbnP7RPu3pl3Ed8wJcW0LhBC/CnEVM/iFC7XWLja3T7L1mrYfz/AC94S4Wcv4AHdwGvNC/NCoC+k2t0+w/VpWP+E6TlXrvB6TOINb2066i83tE2xzyzGN9aojymKm1vE6pkb8sLvY3L6V7W05EZTFIl5iDTexD5/xAMdxUogLO+xx0m1u39IOGvwQzlX7kxUs4xLu4ghGHUm62Ny+lW0mbQVH8VCIb6tnj5TFc9zA6xEDd7G5fSv7ewDPCsAoHZp19gAAAABJRU5ErkJggg==" alt="star"/>
             </span>
           </span>
         </span>
-        <span aria-hidden="true">({{ card_product.metafields.reviews.rating_count }} reviews)</span>
+        <span aria-hidden="true">({{ count_reviews }} reviews)</span>
       </div>
       <p class="rating-text caption">
         <span aria-hidden="true">

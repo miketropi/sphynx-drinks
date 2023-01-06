@@ -1185,7 +1185,7 @@ facet-drawer.loading>details[open]>summary::after {
 
 .price-range {
   position: relative;
-  width: 100%;
+  width: 90%;
   display: flex;
 }
 
@@ -1379,7 +1379,7 @@ facet-drawer.loading>details[open]>summary::after {
   flex: 1 1 auto;
   margin: auto;
   text-align: center;
-  color: rgb(var(--color-background));
+  color: white;
 }
 
 .no-js layout-switcher {
@@ -1524,7 +1524,7 @@ facet-drawer.loading>details[open]>summary::after {
   .facets-vertical {
     display: flex;
     align-items: flex-start;
-    column-gap: 5rem;
+    column-gap: 4.5rem;
   }
 
   .facets-vertical .product-grid-container {
@@ -1579,7 +1579,7 @@ facet-drawer.loading>details[open]>summary::after {
 
   .facets-vertical>.facet-filters .facets__form {
     display: block;
-    padding-inline-end: 1.5rem;
+    padding-inline-end: 0;
   }
 
   .facets-vertical>.facet-filters .facets__main {
@@ -1651,7 +1651,7 @@ facet-drawer.loading>details[open]>summary::after {
 }
 
 @media (max-width: 767px){
-  .product-count__text {
+  #ProductCountMobile {
     color: #FFF;
   }
   .mobile-facets__summary, .mobile-facets__list {

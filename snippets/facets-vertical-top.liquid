@@ -33,7 +33,13 @@
     endfor
   endif
 -%}
-
+{%- liquid
+  assign from = paginate.current_page | minus: 1 | times: paginate.page_size | plus: 1
+  assign to = paginate.page_size | times: paginate.current_page
+  if paginate.current_page == paginate.pages
+    assign to = paginate.items
+  endif
+-%}
 <{% if enable_sticky_facet %}sticky-facet-filters class="facet-filters facet-filters-sticky"{% else %}div class="facet-filters"{% endif %} id="main-facet-filters" data-id="{{ section.id }}">
   <div class="page-width{% unless enable_sorting or enable_viewing %} medium-hide large-up-hide{% endunless %}">
     {%- if enable_filtering or enable_sorting or enable_viewing -%}
@@ -97,9 +103,13 @@
                   if results.results_count
                     echo 'templates.search.results_with_count' | t: terms: results.terms, count: results.results_count
                   elsif results.products_count == results.all_products_count
-                    echo 'products.facets.product_count_simple' | t: count: results.products_count
+                    echo 'products.facets.product_count_simple' | t: count: paginate.items, data_from: from, data_to: to
                   else
-                    echo 'products.facets.product_count' | t: product_count: results.products_count, count: results.all_products_count
+                    if paginate.pages == 1
+                      echo 'products.facets.product_count.pageone' | t: count: paginate.items, data_from: from, data_to: to
+                    else
+                      echo 'products.facets.product_count' | t: count: paginate.items, data_from: from, data_to: to
+                    endif
                   endif
                 -%}
               </p>
@@ -160,9 +170,13 @@
                             if results.results_count
                               echo 'templates.search.results_with_count' | t: terms: results.terms, count: results.results_count
                             elsif results.products_count == results.all_products_count
-                              echo 'products.facets.product_count_simple' | t: count: results.products_count
+                              echo 'products.facets.product_count_simple' | t: count: paginate.items, data_from: from, data_to: to
                             else
-                              echo 'products.facets.product_count' | t: product_count: results.products_count, count: results.all_products_count
+                            if paginate.pages == 1
+                            echo 'products.facets.product_count.pageone' | t: count: paginate.items, data_from: from, data_to: to
+                            else
+                            echo 'products.facets.product_count' | t: count: paginate.items, data_from: from, data_to: to
+                           endif
                             endif
                           -%}
                         </p>
@@ -351,15 +365,19 @@
     </div>
   {%- endif -%}
 
-  <div class="product-count{% if enable_sorting and enable_viewing == false %} medium-hide large-up-hide{% endif %}" role="status">
+  <div class="product-count{% if enable_sorting and enable_viewing == false %} medium-hide large-up-hide{% endif %}" role="status">    
     <p id="ProductCount" class="product-count__text">
       {%- liquid
         if results.results_count
           echo 'templates.search.results_with_count' | t: terms: results.terms, count: results.results_count
         elsif results.products_count == results.all_products_count
-          echo 'products.facets.product_count_simple' | t: count: results.products_count
-        else
-          echo 'products.facets.product_count' | t: product_count: results.products_count, count: results.all_products_count
+          echo 'products.facets.product_count_simple' | t: count: paginate.items, data_from: from, data_to: to
+        else 
+         if paginate.pages == 1
+          echo 'products.facets.product_count.pageone' | t: count: paginate.items, data_from: from, data_to: to
+          else
+          echo 'products.facets.product_count' | t: count: paginate.items, data_from: from, data_to: to
+         endif
         endif
       -%}
     </p>
