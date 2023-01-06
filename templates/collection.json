@@ -41,7 +41,7 @@
       ],
       "settings": {
         "text_alignment": "left",
-        "narrow": true,
+        "narrow": false,
         "show_divider": false,
         "mobile_text_alignment": "left",
         "padding_top": 36,
