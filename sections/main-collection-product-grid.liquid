@@ -53,7 +53,11 @@
 {%- if enable_sticky_facet -%}
   <link rel="stylesheet" href="{{ 'component-facet-sticky.css' | asset_url }}" media="print" onload="this.media='all'">
 {%- endif -%}
-
+{%- paginate collection.products by products_per_page -%}
+  {%- liquid
+    assign paginate = paginate
+  -%}
+  {%- endpaginate -%}
 <div class="section-{{ section.id }}-padding{% if filter_type == 'vertical' %} facets-vertical page-width{% endif %}">
   {%- if enable_filtering or enable_sorting or enable_viewing -%}
     {%- if collection.all_products_count > 0 -%}
@@ -62,18 +66,14 @@
 
       {%- liquid
         if filter_type != 'vertical'
-          render 'facets', results: collection, enable_filtering: enable_filtering, filter_type: filter_type, enable_sorting: enable_sorting, enable_viewing: enable_viewing, enable_sticky_facet: enable_sticky_facet, default_layout: default_layout
+          render 'facets', paginate: paginate, results: collection, enable_filtering: enable_filtering, filter_type: filter_type, enable_sorting: enable_sorting, enable_viewing: enable_viewing, enable_sticky_facet: enable_sticky_facet, default_layout: default_layout
         else
-          render 'facets-vertical', results: collection, enable_filtering: enable_filtering, filter_type: filter_type, enable_sorting: enable_sorting, enable_viewing: enable_viewing, enable_sticky_facet: enable_sticky_facet, default_layout: default_layout
+          render 'facets-vertical', paginate: paginate, results: collection, enable_filtering: enable_filtering, filter_type: filter_type, enable_sorting: enable_sorting, enable_viewing: enable_viewing, enable_sticky_facet: enable_sticky_facet, default_layout: default_layout
         endif
       -%}
     {%- endif -%}
   {%- endif -%}
-  {%- paginate collection.products by products_per_page -%}
-  {%- liquid
-    assign paginate = paginate
-  -%}
-  {%- endpaginate -%}
+  
   <div class="product-grid-container{% if filter_type != 'vertical' %} page-width{% endif %}">
     {%- liquid
       if enable_filtering or enable_sorting or enable_viewing
