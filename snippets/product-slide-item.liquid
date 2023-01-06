@@ -1,0 +1,28 @@
+<div class="product-slide-item">
+  <div class="product-slide-item__inner">
+    {% comment %} {{ product | json }} {% endcomment %}
+    <a href="{{ product.url | within: collection }}" class="__p-thumb">
+      <img
+        loading="lazy"
+        width=""
+        height=""
+        src="{{ product.featured_media | image_url: width: 550 }}"
+        alt="{{ product.title }}" />
+    </a>
+    <div class="__p-entry">
+      <h4 class="__p-title">
+        <a href="{{ product.url | within: collection }}">{{ product.title }}</a>
+      </h4>
+      <div class="__p-meta">
+        <div class="__p-first-collection">{{ product.collections[0].title }}</div>
+        {% liquid  
+          assign ratingValue = product.metafields.reviews.rating.value 
+          assign ratingCount = product.metafields.reviews.rating_count 
+        %}
+        {%- render 'product-rating-template' | rating: ratingValue, count: ratingCount -%}
+        {%- render 'product-price-template' | product: product -%}
+        {%- render 'addtocart-button-template' | product: product -%}
+      </div>
+    </div>
+  </div>
+</div>

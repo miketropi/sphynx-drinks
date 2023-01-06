@@ -58,17 +58,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "initHomeSlider": () => (/* binding */ initHomeSlider)
 /* harmony export */ });
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! slick-carousel */ "./node_modules/slick-carousel/slick/slick.js");
-/* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(slick_carousel__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! slick-carousel */ "./node_modules/slick-carousel/slick/slick.js");
+/* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(slick_carousel__WEBPACK_IMPORTED_MODULE_0__);
+/* provided dependency */ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
 function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
 function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
-
+// import $ from 'jquery';
 
 var HomeSlider = /*#__PURE__*/function () {
   function HomeSlider() {
@@ -85,11 +84,11 @@ var HomeSlider = /*#__PURE__*/function () {
   _createClass(HomeSlider, [{
     key: "initializeSlider",
     value: function initializeSlider() {
-      this.$slider = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this.slider).find('.section-home-slider-inner');
-      this.slideTimer = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this.slider).data('speed');
-      this.slideAutoplay = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this.slider).data('autoplay');
-      this.slideArrows = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this.slider).data('arrows');
-      this.slideInfinite = jquery__WEBPACK_IMPORTED_MODULE_0___default()(this.slider).data('infinite');
+      this.$slider = $(this.slider).find('.section-home-slider-inner');
+      this.slideTimer = $(this.slider).data('speed');
+      this.slideAutoplay = $(this.slider).data('autoplay');
+      this.slideArrows = $(this.slider).data('arrows');
+      this.slideInfinite = $(this.slider).data('infinite');
 
       // this.$slider.on('init', (instance, slick) => {
       //     this.updateNumbers(slick.currentSlide, slick.slideCount);
@@ -119,13 +118,13 @@ var HomeSlider = /*#__PURE__*/function () {
           }
         }]
       });
-      jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).on("scroll", function () {
-        if (jquery__WEBPACK_IMPORTED_MODULE_0___default()(window).width() < 767) return;
-        var pixels = jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).scrollTop();
-        var pageHeight = jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).height() - jquery__WEBPACK_IMPORTED_MODULE_0___default()(window).height();
+      $(document).on("scroll", function () {
+        if ($(window).width() < 767) return;
+        var pixels = $(document).scrollTop();
+        var pageHeight = $(document).height() - $(window).height();
         var progress = 100 * pixels / pageHeight * 10 + 50;
-        var imgAnimation = jquery__WEBPACK_IMPORTED_MODULE_0___default()(".slide-media__image-animation img");
-        var imgSlide = jquery__WEBPACK_IMPORTED_MODULE_0___default()(".slide-media__image img");
+        var imgAnimation = $(".slide-media__image-animation img");
+        var imgSlide = $(".slide-media__image img");
         if (progress >= 100 || progress <= 50) return;
         if (imgAnimation.length) {
           imgAnimation.css("max-width", progress + "%");
@@ -144,6 +143,88 @@ var initHomeSlider = function initHomeSlider() {
 
 /***/ }),
 
+/***/ "./src/js/product-carousel.js":
+/*!************************************!*\
+  !*** ./src/js/product-carousel.js ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ ProductCarousel)
+/* harmony export */ });
+/* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! slick-carousel */ "./node_modules/slick-carousel/slick/slick.js");
+/* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(slick_carousel__WEBPACK_IMPORTED_MODULE_0__);
+/* provided dependency */ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
+
+function ProductCarousel() {
+  var elems = document.querySelectorAll('.slide-product-container');
+  if (!elems) return;
+  var slideOpts = {};
+  _toConsumableArray(elems).forEach(function (el) {
+    $(el).slick({
+      slidesToShow: 5,
+      slidesToScroll: 1
+    });
+  });
+}
+ProductCarousel();
+
+/***/ }),
+
+/***/ "./src/js/rating-rendering.js":
+/*!************************************!*\
+  !*** ./src/js/rating-rendering.js ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ ratingRendering)
+/* harmony export */ });
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
+function ratingRendering() {
+  var ratingElems = document.querySelectorAll('.__rating-elem');
+  if (!ratingElems) return;
+  var startRenderHtml = function startRenderHtml(number, max) {
+    var _temp = '';
+    for (var i = 1; i <= max; i++) {
+      var startColor = '#FEFEFE';
+      if (i <= number) {
+        startColor = '#FFC85E';
+      }
+      _temp += "<span>\n      <svg width=\"13\" height=\"13\" viewBox=\"0 0 13 13\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n      <path d=\"M6.60602 0.134766L8.55555 4.08429L12.9152 4.72152L9.7606 7.79407L10.5051 12.1348L6.60602 10.0843L2.70697 12.1348L3.45145 7.79407L0.296875 4.72152L4.6565 4.08429L6.60602 0.134766Z\" fill=\"".concat(startColor, "\"/>\n      </svg>\n      </span>");
+    }
+    return "<div class=\"__start\">".concat(_temp, "</div>");
+  };
+  _toConsumableArray(ratingElems).forEach(function (el) {
+    var _el$dataset = el.dataset,
+      value = _el$dataset.value,
+      count = _el$dataset.count,
+      max = _el$dataset.max;
+    if (!value) return;
+    var text = count <= 1 ? 'review' : 'reviews';
+    var __html = startRenderHtml(value, max);
+    el.innerHTML = "<div class=\"__review\">\n      ".concat(__html, " \n      <span class=\"__count\">(").concat(count, " ").concat(text, ")</span>\n    </div>");
+  });
+}
+ratingRendering();
+
+/***/ }),
+
 /***/ "./src/main.js":
 /*!*********************!*\
   !*** ./src/main.js ***!
@@ -154,6 +235,10 @@ var initHomeSlider = function initHomeSlider() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _js_home_slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/home_slider */ "./src/js/home_slider.js");
 /* harmony import */ var _js_collection_gallery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/collection-gallery */ "./src/js/collection-gallery.js");
+/* harmony import */ var _js_rating_rendering__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/rating-rendering */ "./src/js/rating-rendering.js");
+/* harmony import */ var _js_product_carousel__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/product-carousel */ "./src/js/product-carousel.js");
+
+
 
 
 (0,_js_home_slider__WEBPACK_IMPORTED_MODULE_0__.initHomeSlider)();
