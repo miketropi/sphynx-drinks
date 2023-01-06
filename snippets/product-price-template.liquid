@@ -1,0 +1,15 @@
+<div class="__p-price">
+  {% if product.available %}
+    {% if product.price_varies %}
+      From
+      <span class="__price-number __price-from">{{ product.price_min | money }}</span>
+      to
+      <span class="__price-number __price-to">{{ product.price_max | money }}</span>
+    {% else %}
+      <span class="__price-number">{{ product.price }}</span>
+    {% endif %}
+  {% else %}
+    <span class="__sold-out">{{ 'products.product.sold_out' | t }}</span>
+  {% endif %}
+</div>
+<!-- .__p-price -->

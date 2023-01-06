@@ -1,4 +1,3 @@
-
 <div class="product-carousel product-carousel__container" style="padding: 5em 0">
   <div class="site-container">
       <div class="product-carousel__heading">
@@ -6,10 +5,12 @@
         <a href="{{ section.settings.redirect_url }}" target="_blank">{{ section.settings.redirect_label }}</a>
       </div>
       {% comment %} {%- assign productBestSelling = collections.products | sort_by: 'best-selling' -%} {% endcomment %}
-      {% assign bestSelling = collections[section.settings.collection].products %}
-      {% for product in bestSelling limit: section.settings.limit_number %}
-        {{ product | json }}
-      {% endfor %}
+      {% assign _products = collections[section.settings.collection].products %}
+      <div class="slide-product-container">
+        {% for product in _products limit: section.settings.limit_number %}
+          {%- render 'product-slide-item' | product: product -%}
+        {% endfor %} 
+      </div> <!-- .slide-product-container -->
     </div>
   </div>
 </div>
