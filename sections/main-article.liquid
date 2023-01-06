@@ -20,57 +20,60 @@
   </div>
   <div class="single-post__container">
     <div class="single-post__wrap">
-      <div class="single-post__content">
-        <article class="post-template">
-
-          <div class="post-template__image">
-            <img src="{{ article.image | image_url: width: 1100 }}" alt="{{ article.image.alt | escape }}">
-          </div>
-
-          <div class="post-template__category">{{ blog.title | link_to: blog.url, class: "link" }}</div>
-
-          <h1 class="post-template__title" itemprop="headline">{{ article.title | escape }}</h1>
-
-          <div class="post-template__content">{{ article.content }}</div>
-
-          <div class="post-template__tag-share">
-            <div class="post-template__tag">
-              {%- if blog.tags.size > 0 -%}
-                <ul class="list-tag">
-                  {%- for tag in article.tags -%}
-                    {%- liquid
-                                if tag contains "_"
-                                    assign tag_starts_with = tag | slice: 0
-                
-                                    if tag_starts_with == "_"
-                                    if tag_count
-                                        assign tag_count = tag_count | minus: 1 | at_least: 0
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when 'post_content'-%}
+          <div class="single-post__content">
+            <article class="post-template">
+    
+              <div class="post-template__image">
+                <img src="{{ article.image | image_url: width: 1100 }}" alt="{{ article.image.alt | escape }}">
+              </div>
+    
+              <div class="post-template__category">{{ blog.title | link_to: blog.url, class: "link" }}</div>
+    
+              <h1 class="post-template__title" itemprop="headline">{{ article.title | escape }}</h1>
+    
+              <div class="post-template__content">{{ article.content }}</div>
+    
+              <div class="post-template__tag-share">
+                <div class="post-template__tag">
+                  {%- if blog.tags.size > 0 -%}
+                    <ul class="list-tag">
+                      {%- for tag in article.tags -%}
+                        {%- liquid
+                                    if tag contains "_"
+                                        assign tag_starts_with = tag | slice: 0
+                    
+                                        if tag_starts_with == "_"
+                                        if tag_count
+                                            assign tag_count = tag_count | minus: 1 | at_least: 0
+                                        endif
+                    
+                                        continue
+                                        endif
                                     endif
-                
-                                    continue
-                                    endif
-                                endif
-                            -%}
-                    <li class="item-tag">
-                      <a href="/blogs/{{ blog.handle }}/tagged/{{ tag | handleize }}" class="link{% if current_tags contains tag %} is-selected{% endif %}">{{ tag }}</a>
-                    </li>
-                  {%- endfor -%}
-                </ul>
-              {%- endif -%}
-            </div>
-
-            <div class="post-template__share">
-              {% render 'social-sharing', share_title: article.title, share_permalink: article.url, share_image: article.image %}
-            </div>
+                                -%}
+                        <li class="item-tag">
+                          <a href="/blogs/{{ blog.handle }}/tagged/{{ tag | handleize }}" class="link{% if current_tags contains tag %} is-selected{% endif %}">{{ tag }}</a>
+                        </li>
+                      {%- endfor -%}
+                    </ul>
+                  {%- endif -%}
+                </div>
+    
+                <div class="post-template__share">
+                  {% render 'social-sharing', share_title: article.title, share_permalink: article.url, share_image: article.image %}
+                </div>
+              </div>
+            </article>
           </div>
-
-
-        </article>
-      </div>
-
-      <div class="single-post__sidebar"> {{ section.settings.category_title }}
-        {% render 'blog-sidebar' %}
-      </div>
+          {%- when 'post_sidebar'-%}
+          <div class="single-post__sidebar">
+            {% render 'blog-sidebar'  %}
+          </div>
+        {%- endcase -%}
+      {%- endfor -%}
     </div>
   </div>
 </div>
@@ -89,7 +92,7 @@
         "id": "padding_top",
         "min": 0,
         "max": 100,
-        "step": 4,
+        "step": 5,
         "unit": "t:sections.all.padding.padding_top.unit",
         "label": "t:sections.all.padding.padding_top.label",
         "default": 0
@@ -98,10 +101,10 @@
         "id": "padding_bottom",
         "min": 0,
         "max": 100,
-        "step": 4,
+        "step": 5,
         "unit": "t:sections.all.padding.padding_bottom.unit",
         "label": "t:sections.all.padding.padding_bottom.label",
-        "default": 36
+        "default": 80
       }
     ],
     "blocks": [
@@ -113,36 +116,7 @@
       {
         "type": "post_sidebar",
         "name": "Post Sidebar",
-        "limit": 1,
-        "settings": [
-          {
-            "type": "text",
-            "id": "category_title",
-            "default": "Category",
-            "label": "Category Title"
-          },
-          {
-            "type": "text",
-            "id": "post_title",
-            "default": "Trending Posts",
-            "label": "Post Title"
-          },
-          {
-            "type": "range",
-            "id": "post_limit",
-            "min": 2,
-            "max": 4,
-            "step": 1,
-            "default": 3,
-            "label": "Post Limit"
-          },
-          {
-            "type": "text",
-            "id": "tag_title",
-            "default": "Tags",
-            "label": "Tag Title"
-          }
-        ]
+        "limit": 1
       }
     ]
   }
