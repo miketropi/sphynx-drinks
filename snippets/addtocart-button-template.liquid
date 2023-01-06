@@ -1,13 +1,15 @@
-<form method="post" action="/cart/add">
-  <input
-    type="hidden"
-    name="id"
-    value="{{ product.variants.first.id }}" />
-  <input
-    min="1"
-    type="hidden"
-    id="quantity"
-    name="quantity"
-    value="1" />
-  <button type="submit" class="button">Add to cart</button>
-</form>
+{% if product.available %}
+  <form method="post" action="/cart/add">
+    <input
+      type="hidden"
+      name="id"
+      value="{{ product.variants.first.id }}" />
+    <input
+      min="1"
+      type="hidden"
+      id="quantity"
+      name="quantity"
+      value="1" />
+    <button type="submit" class="button">Add to cart</button>
+  </form>
+{% endif %}
