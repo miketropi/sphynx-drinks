@@ -10,7 +10,6 @@
         <h4 style="color: {{ section.settings.heading_color }}">{{ section.settings.heading }}</h4>
         <a class="redirect-link" href="{{ section.settings.redirect_url }}" target="_blank">{{ section.settings.redirect_label }}</a>
       </div>
-      {% comment %} {%- assign productBestSelling = collections.products | sort_by: 'best-selling' -%} {% endcomment %}
       {% assign _products = collections[section.settings.collection].products %}
       <div class="slide-product-container">
         {% for product in _products limit: section.settings.limit_number %}
