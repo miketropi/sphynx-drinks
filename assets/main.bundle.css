@@ -1770,10 +1770,33 @@ ul.menu-style-inline li.menu-link:hover > ul {
     padding: 12px;
   }
 }
+.section-prod-cat-carousel .product-cat-carousel .section-row .section-col.product-cat-carousel .product-cat-carousel-inner .card-wrapper .media-wrapper {
+  background-color: transparent;
+}
+.section-prod-cat-carousel .product-cat-carousel .section-row .section-col.product-cat-carousel .product-cat-carousel-inner .card-wrapper .card-article-info {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 95% !important;
+  color: #F05123;
+  text-transform: none;
+  margin-bottom: 7px;
+}
+.section-prod-cat-carousel .product-cat-carousel .section-row .section-col.product-cat-carousel .product-cat-carousel-inner .card-wrapper .price {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 95%;
+  color: #F05123;
+  margin-bottom: 20px;
+}
 .section-prod-cat-carousel .product-cat-carousel .section-row .section-col.product-cat-carousel .product-cat-carousel-inner .card-wrapper .media {
   padding: 0;
   height: 324px;
   margin-bottom: 30px;
+  background-color: transparent;
 }
 @media (max-width: 1600px) {
   .section-prod-cat-carousel .product-cat-carousel .section-row .section-col.product-cat-carousel .product-cat-carousel-inner .card-wrapper .media {
@@ -1788,6 +1811,18 @@ ul.menu-style-inline li.menu-link:hover > ul {
   .section-prod-cat-carousel .product-cat-carousel .section-row .section-col.product-cat-carousel .product-cat-carousel-inner .card-wrapper .card-information {
     min-height: calc(100% - 234px);
   }
+}
+.section-prod-cat-carousel .product-cat-carousel .section-row .section-col.product-cat-carousel .product-cat-carousel-inner .card-wrapper .card-information .card-information__text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 120% !important;
+  text-decoration: none;
+  display: block;
+  text-transform: uppercase;
+  color: #F05123;
+  margin-bottom: 7px;
 }
 .section-prod-cat-carousel .product-cat-carousel .section-row .section-col.product-cat-carousel .product-cat-carousel-inner .card-wrapper .card-information .card-information__button {
   left: 12px;
