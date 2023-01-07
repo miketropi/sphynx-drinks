@@ -1780,7 +1780,6 @@ ul.menu-style-inline li.menu-link:hover > ul {
   color: black;
 }
 
-<<<<<<< HEAD
 .section-prod-cat-carousel .product-cat-carousel .section-row {
   display: flex;
   flex-wrap: wrap;
@@ -2049,7 +2048,8 @@ ul.menu-style-inline li.menu-link:hover > ul {
   .section-prod-cat-carousel .product-cat-carousel .section-row .section-col.product-cat-carousel .product-cat-carousel-inner .card-wrapper .card-information .button--soldout {
     font-size: 14px;
   }
-=======
+}
+
 .main-product__inner {
   display: flex;
   flex-wrap: wrap;
@@ -2232,5 +2232,4 @@ ul.menu-style-inline li.menu-link:hover > ul {
 }
 .__product-add-cart-form .__product-qty input[name=quantity]:focus-visible {
   box-shadow: none;
->>>>>>> df36ded (Update single product)
 }
