@@ -31,12 +31,19 @@
     </div>
     <div class="related-acticles__list">
       {% assign skip_articles = article.handle | split: '.....' %}
+      {% assign counter = 0 %}
 
-        {%- for article in blog.articles limit: section.settings.post_limit -%}
+      {%- for article in blog.articles -%}
+        {% if counter < 3 %}
           {% unless skip_articles contains article.handle %}
-            {% render 'article-loop-item', article: article %}
+            {% assign counter = counter | plus: 1 %}
+
+            <div class="post-item-wrap">
+              {% render 'article-loop-item', article: article %}
+            </div>
           {% endunless %}
-        {% endfor %}
+        {% endif %}
+      {% endfor %}
     </div>
   </div>
 </div>

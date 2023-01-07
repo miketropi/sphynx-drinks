@@ -12,12 +12,12 @@
   }
 {%- endstyle -%}
 
-<div class="featured-blog-section section-{{ section.id }}-padding">
-  <div class="featured-blog__container">
-    <h2 class="featured-blog__title">{{ section.settings.heading | escape }}</h2>
-    <div class="featured-blog__list">
+<div class="morden-blog-section section-{{ section.id }}-padding">
+  <div class="morden-blog__container">
+    <h2 class="morden-blog__title">{{ section.settings.heading | escape }}</h2>
+    <div class="morden-blog__list">
       {%- for article in section.settings.blog.articles limit: section.settings.post_limit -%}
-        <div class="post-item-wrap">
+        <div class="post-item-wrap post-index-{{ forloop.index }}">
           {% render 'article-loop-item', article: article %}
         </div>
       {% endfor %}
@@ -27,14 +27,14 @@
 
 {% schema %}
 {
-  "name": "Featured Blog",
+  "name": "Morden Blog",
   "tag": "section",
   "class": "section",
   "settings": [
     {
       "type": "text",
       "id": "heading",
-      "default": "Featured Blog",
+      "default": "Morden Blog",
       "label": "t:sections.all.heading.label"
     },
     {
@@ -48,7 +48,7 @@
       "min": 3,
       "max": 6,
       "step": 1,
-      "default": 3,
+      "default": 5,
       "label": "t:sections.featured-blog.settings.post_limit.label"
     },
     {
@@ -81,7 +81,7 @@
   ],
   "presets": [
     {
-      "name": "Featured Blog",
+      "name": "Modern Blog",
       "settings": {
         "blog": "News"
       },

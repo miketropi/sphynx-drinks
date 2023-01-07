@@ -37,49 +37,52 @@
     <h3 class="block-widget__title">Trending Posts</h3>
     <div class="block-widget__content">
       <div class="list-post">
-        {% for article in blog.articles  limit: 3 %}
-          <div class="item-post">
-            <div class="item-post__thumb">
-              {%- if article.image -%}
-                <a href="{{ article.url }}">
-                  <img src="{{ article.image | image_url: width: 150 }}" alt="{{ article.image.alt | escape }}">
-                </a>
-              {%- endif -%}
-            </div>
-            <div class="item-post__content">
-              <div class="item-post__by">by {{ article.author }}</div>
-              <h3 class="item-post__title">
-                <a href="{{ article.url }}">
-                  {{ article.title | escape }}
-                </a>
-              </h3>
-            </div>
-          </div>
-        {% endfor %}
-
-
-        {% comment %} {% for link in linklists.blogs-menu.links %}
+        {% assign skip_articles = article.handle | split: '.....' %}
+        {% assign counter = 0 %}
+        
+        {% for link in linklists.blogs-menu.links %}
           {% assign blog = link.object %}
-          {% for article in blog.articles  limit: 3 %}
-            <li class="item-post">
-              <a href="{{ article.url }}" class="item-post__link">
-                <div class="item-post__thumb">
-                  {%- if article.image -%}
-                    <img src="{{ article.image | image_url: width: 150 }}" alt="{{ article.image.alt | escape }}">
-                  {%- endif -%}
+          {% for article in blog.articles %}
+            {% if counter < 3 %}
+              {% unless skip_articles contains article.handle %}
+                {% assign counter = counter | plus: 1 %}
+    
+                <div class="item-post">
+                  <div class="item-post__thumb">
+                    {%- if article.image -%}
+                      <a href="{{ article.url }}">
+                        <img
+                          srcset="{%- if article.image.width >= 375 -%}
+                          {{ article.image | image_url: width: 375 }} 375w{%- endif -%}
+                          {%- if article.image.width >= 750 -%},{{ article.image | image_url: width: 750 }} 750w{%- endif -%}
+                          {%- if article.image.width >= 1100 -%},{{ article.image | image_url: width: 1100 }} 1100w{%- endif -%}
+                          {%- if article.image.width >= 1500 -%},{{ article.image | image_url: width: 1500 }} 1500w{%- endif -%}
+                          {%- if article.image.width >= 2200 -%},{{ article.image | image_url: width: 2200 }} 2200w{%- endif -%}
+                          {%- if article.image.width >= 3000 -%},{{ article.image | image_url: width: 3000 }} 3000w{%- endif -%},
+                          {{ article.image | image_url }} {{ article.image.width }}w"
+                          src="{{ article.image | image_url: width: 300 }}"
+                          sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 }}px, (min-width: 750px) calc(100vw - 10rem), 100vw"
+                          loading="lazy"
+                          width="{{ article.image.width }}"
+                          height="{{ article.image.height }}"
+                          alt="{{ article.image.alt | escape }}">
+                      </a>
+                    {%- endif -%}
+                  </div>
+                  <div class="item-post__content">
+                    <div class="item-post__by">by {{ article.author }}</div>
+                    <h3 class="item-post__title">
+                      <a href="{{ article.url }}">
+                        {{ article.title | escape }}
+                      </a>
+                    </h3>
+                  </div>
                 </div>
-                <div class="item-post__content">
-                  <div class="item-post__by">by {{ article.author }}</div>
-                  <h3
-                    class="item-post__title"
-                    id="Article-{{ article.id }}">
-                    {{ article.title | escape }}
-                  </h3>
-                </div>
-              </a>
-            </li>
+              {% endunless %}
+            {% endif %}
+
           {% endfor %}
-        {% endfor %} {% endcomment %}
+        {% endfor %}
       </div>
     </div>
   </div>
