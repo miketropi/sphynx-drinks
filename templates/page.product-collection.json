@@ -42,7 +42,7 @@
         "redirect_url": "#",
         "collection": "absolute-zero",
         "limit_number": 6,
-        "background_color": "#FFF",
+        "background_color": "#ffffff",
         "spacing_top": "3em",
         "spacing_bottom": "4em"
       }
