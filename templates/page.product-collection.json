@@ -1,0 +1,56 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "narrow": true,
+        "padding_top": 60,
+        "padding_bottom": 72
+      }
+    },
+    "b0889754-84e9-42ef-9ca0-28f17ac093f0": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16659669942500__b0889754-84e9-42ef-9ca0-28f17ac093f0-167307664871c81790-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "our collections",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "template--16659669942500__b0889754-84e9-42ef-9ca0-28f17ac093f0-167307664871c81790-0"
+      ],
+      "settings": {
+        "text_alignment": "center",
+        "narrow": true,
+        "show_divider": false,
+        "mobile_text_alignment": "center",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "fd217b58-d385-45d4-b2c2-2e7a5583230f": {
+      "type": "product-category-carousel",
+      "settings": {
+        "heading": "non-alcoholic beer",
+        "heading_color": "#000000",
+        "description": "<p>Et tellus aliquet sit tortor risus et sed pulvinar mauris. Vestibulum mauris elementum suscipit sed. Proin sit at ipsum dictumst purus a sit. Ipsum pellentesque sed vulputate volutpat ultrices tempor. Volutpat et tortor fringilla vitae elit. Commodo facilisi sed pellentesque mauris orci. Varius sed fusce urna diam dignissim nec amet. Habitant nec sit massa risus. Lobortis suspendisse urna non.<\/p>",
+        "redirect_label": "Shop Non-Alc Beer",
+        "redirect_url": "#",
+        "collection": "absolute-zero",
+        "limit_number": 6,
+        "background_color": "#ffffff",
+        "spacing_top": "3em",
+        "spacing_bottom": "4em"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "b0889754-84e9-42ef-9ca0-28f17ac093f0",
+    "fd217b58-d385-45d4-b2c2-2e7a5583230f"
+  ]
+}

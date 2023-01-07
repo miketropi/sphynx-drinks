@@ -1,0 +1,111 @@
+<div
+  class="product-cat-carousel"
+  style="padding-top: {{ section.settings.spacing_top }}; padding-bottom: {{ section.settings.spacing_bottom }}; background: {{ section.settings.background_color }};"
+>
+  <div class="site-container">
+    <div class="section-row">
+      <div class="section-col product-cat-carousel-content">
+        {%- if section.settings.heading != blank -%}
+          <h2 style="color: {{ section.settings.heading_color }}">{{ section.settings.heading }}</h2>
+        {%- endif -%}
+        {%- if section.settings.description != blank -%}
+          <div class="product-cat-carousel-content-desc">{{ section.settings.description }}</div>
+        {%- endif -%}
+        {%- if section.settings.redirect_label != blank -%}
+          <a class="redirect-link" href="{{ section.settings.redirect_url }}" target="_blank">
+            {{- section.settings.redirect_label -}}
+          </a>
+        {%- endif -%}
+      </div>
+
+      <div class="section-col product-cat-carousel">
+        {% assign _products = collections[section.settings.collection].products %}
+        <div class="product-cat-carousel-inner">
+          {% for product in _products limit: section.settings.limit_number %}     
+          <div class="product-cat-carousel-item">       
+            {% render 'product-cat-carousel-item',
+              card_product: product
+            %}
+          </div> 
+          {% endfor %}
+        </div>
+        <!-- .slide-product-container -->
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Product Category Carousel",
+  "tag": "section",
+  "class": "section-prod-cat-carousel",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Your Heading Here"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading Color",
+      "default": "#000000"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "default": "<p>Et tellus aliquet sit tortor risus et sed pulvinar mauris. Vestibulum mauris elementum suscipit sed. Proin sit at ipsum dictumst purus a sit. Ipsum pellentesque sed vulputate volutpat ultrices tempor. Volutpat et tortor fringilla vitae elit. Commodo facilisi sed pellentesque mauris orci. Varius sed fusce urna diam dignissim nec amet. Habitant nec sit massa risus. Lobortis suspendisse urna non.</p>",
+      "label": "Description"
+    },
+    {
+      "type": "text",
+      "id": "redirect_label",
+      "label": "Redirect Label",
+      "default": "Push the button"
+    },
+    {
+      "type": "text",
+      "id": "redirect_url",
+      "label": "Redirect URl",
+      "default": "#"
+    },
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Select Collection"
+    },
+    {
+      "type": "number",
+      "id": "limit_number",
+      "label": "Limit Number Products",
+      "default": 6
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#FFF"
+    },
+    {
+      "type": "text",
+      "id": "spacing_top",
+      "label": "Spacing Top",
+      "default": "3em"
+    },
+    {
+      "type": "text",
+      "id": "spacing_bottom",
+      "label": "Spacing Bottom",
+      "default": "4em"
+    }
+  ],
+  "blocks": [],
+  "presets": [
+    {
+      "name": "Product Category Carousel"
+    }
+  ]
+}
+{% endschema %}

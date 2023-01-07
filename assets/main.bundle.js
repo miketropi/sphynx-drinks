@@ -143,6 +143,66 @@ var initHomeSlider = function initHomeSlider() {
 
 /***/ }),
 
+/***/ "./src/js/prod-cat-carousel.js":
+/*!*************************************!*\
+  !*** ./src/js/prod-cat-carousel.js ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ ProductCatCarousel)
+/* harmony export */ });
+/* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! slick-carousel */ "./node_modules/slick-carousel/slick/slick.js");
+/* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(slick_carousel__WEBPACK_IMPORTED_MODULE_0__);
+/* provided dependency */ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
+
+function ProductCatCarousel() {
+  var elems = document.querySelectorAll('.product-cat-carousel-inner');
+  if (!elems) return;
+  var prevIcon = "\n  <svg width=\"43\" height=\"43\" viewBox=\"0 0 43 43\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n  <circle r=\"21\" transform=\"matrix(-1 0 0 1 21.9263 21.3164)\" fill=\"#F05123\"/>\n  <path d=\"M14.9263 21.1934H28.9263\" stroke=\"white\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n  <path d=\"M21.9263 28.1934L28.9263 21.1934L21.9263 14.1934\" stroke=\"white\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n  </svg>\n  \n  ";
+  var nextIcon = "\n  <svg width=\"43\" height=\"43\" viewBox=\"0 0 43 43\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle r=\"21\" transform=\"matrix(-1 0 0 1 21.9263 21.3164)\" fill=\"#F05123\"/>\n<path d=\"M14.9263 21.1934H28.9263\" stroke=\"white\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M21.9263 28.1934L28.9263 21.1934L21.9263 14.1934\" stroke=\"white\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>\n\n  ";
+  _toConsumableArray(elems).forEach(function (el) {
+    $(el).slick({
+      dots: false,
+      infinite: false,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      prevArrow: "<span class=\"__slide-nav __slide-prev\">".concat(prevIcon, "</span>"),
+      nextArrow: "<span class=\"__slide-nav __slide-next\">".concat(nextIcon, "</span>"),
+      responsive: [{
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1
+        }
+      }, {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      }, {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      }]
+    });
+  });
+}
+ProductCatCarousel();
+
+/***/ }),
+
 /***/ "./src/js/product-carousel.js":
 /*!************************************!*\
   !*** ./src/js/product-carousel.js ***!
@@ -263,6 +323,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _js_collection_gallery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/collection-gallery */ "./src/js/collection-gallery.js");
 /* harmony import */ var _js_rating_rendering__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/rating-rendering */ "./src/js/rating-rendering.js");
 /* harmony import */ var _js_product_carousel__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/product-carousel */ "./src/js/product-carousel.js");
+/* harmony import */ var _js_prod_cat_carousel__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./js/prod-cat-carousel */ "./src/js/prod-cat-carousel.js");
+
 
 
 
