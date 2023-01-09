@@ -2,6 +2,7 @@
   "sections": {
     "empty-space": {
       "type": "empty-space",
+      "disabled": true,
       "settings": {
         "desktop_height": 36,
         "mobile_height": 0
@@ -157,6 +158,11 @@
             "color_scheme": "accent-3"
           }
         },
+        "68164fad-d775-495e-96b4-6bd798803c71": {
+          "type": "addtocart-form",
+          "settings": {
+          }
+        },
         "share": {
           "type": "share",
           "settings": {
@@ -210,6 +216,7 @@
         "27bfa052-ba43-4f78-a35d-1ebf7e5febb2",
         "buy_buttons",
         "inventory_status",
+        "68164fad-d775-495e-96b4-6bd798803c71",
         "share",
         "related_buttons",
         "sticky_cart",
@@ -292,6 +299,7 @@
     },
     "rich-text": {
       "type": "rich-text",
+      "disabled": true,
       "blocks": {
         "heading": {
           "type": "heading",
@@ -418,6 +426,7 @@
     },
     "product-recommendations": {
       "type": "product-recommendations",
+      "disabled": true,
       "settings": {
         "heading": "You May Also Like",
         "heading_size": "h2",
@@ -440,6 +449,7 @@
     },
     "165638266010f0404e": {
       "type": "apps",
+      "disabled": true,
       "blocks": {
         "449dba7b-a55d-496e-9fda-ec0829382728": {
           "type": "shopify:\/\/apps\/product-reviews\/blocks\/reviews\/bae150af-8da8-48b2-9867-398188115e5f",
@@ -451,7 +461,7 @@
         "449dba7b-a55d-496e-9fda-ec0829382728"
       ],
       "settings": {
-        "heading": "follow the good vibes <span>sdfsdf<\/span>",
+        "heading": "follow the good vibes sdfsdf",
         "padding_top": 36,
         "padding_bottom": 36,
         "color_heading": "#000000"
@@ -657,6 +667,7 @@
     },
     "multicolumn": {
       "type": "multicolumn",
+      "disabled": true,
       "blocks": {
         "column-0": {
           "type": "column",
