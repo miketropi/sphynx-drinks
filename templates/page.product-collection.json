@@ -159,8 +159,8 @@
         "layout": "with_icon",
         "heading": "",
         "bg_color": "#ffc85e",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 124,
+        "padding_bottom": 124
       }
     }
   },
