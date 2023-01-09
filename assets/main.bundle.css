@@ -1910,6 +1910,10 @@ ul.menu-style-inline li.menu-link:hover > ul {
     height: 30px;
     top: calc(50% - 15px);
   }
+  .section-prod-cat-carousel .product-cat-carousel .section-row .section-col.product-cat-carousel .__slide-nav svg {
+    height: 30px;
+    width: 30px;
+  }
 }
 .section-prod-cat-carousel .product-cat-carousel .section-row .section-col.product-cat-carousel .__slide-nav.slick-disabled {
   display: none;
@@ -2019,8 +2023,8 @@ ul.menu-style-inline li.menu-link:hover > ul {
   }
 }
 .section-prod-cat-carousel .product-cat-carousel .section-row .section-col.product-cat-carousel .product-cat-carousel-inner .card-wrapper .media img {
-  -o-object-fit: none;
-     object-fit: none;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .section-prod-cat-carousel .product-cat-carousel .section-row .section-col.product-cat-carousel .product-cat-carousel-inner .card-wrapper .card-information {
   min-height: calc(100% - 324px);
@@ -2044,8 +2048,15 @@ ul.menu-style-inline li.menu-link:hover > ul {
   margin-bottom: 7px;
 }
 .section-prod-cat-carousel .product-cat-carousel .section-row .section-col.product-cat-carousel .product-cat-carousel-inner .card-wrapper .card-information .card-information__button {
-  left: 12px;
-  bottom: 12px;
+  left: 17px;
+  bottom: 17px;
+  position: absolute;
+}
+@media (max-width: 1600px) {
+  .section-prod-cat-carousel .product-cat-carousel .section-row .section-col.product-cat-carousel .product-cat-carousel-inner .card-wrapper .card-information .card-information__button {
+    bottom: 12px;
+    left: 12px;
+  }
 }
 .section-prod-cat-carousel .product-cat-carousel .section-row .section-col.product-cat-carousel .product-cat-carousel-inner .card-wrapper .card-information .card-information__button .button {
   font-family: "Montserrat";
@@ -2065,6 +2076,7 @@ ul.menu-style-inline li.menu-link:hover > ul {
 @media (max-width: 1200px) {
   .section-prod-cat-carousel .product-cat-carousel .section-row .section-col.product-cat-carousel .product-cat-carousel-inner .card-wrapper .card-information .card-information__button .button {
     font-size: 14px;
+    padding: 10px 15px;
   }
 }
 .section-prod-cat-carousel .product-cat-carousel .section-row .section-col.product-cat-carousel .product-cat-carousel-inner .card-wrapper .card-information .card-information__button .button:hover {
