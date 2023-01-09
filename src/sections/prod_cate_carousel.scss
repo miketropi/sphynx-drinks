@@ -222,9 +222,10 @@
                                 margin-bottom: 20px;
                                 .price__sale{
                                     display: none;
-                                    dd{
-                                        margin: 0;
-                                    }
+                                    
+                                }
+                                dd{
+                                    margin: 0;
                                 }
                                 price-money+price-money::before {
                                     content: '\2013';

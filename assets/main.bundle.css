@@ -1999,7 +1999,7 @@ ul.menu-style-inline li.menu-link:hover > ul {
 .section-prod-cat-carousel .product-cat-carousel .section-row .section-col.product-cat-carousel .product-cat-carousel-inner .card-wrapper .price .price__sale {
   display: none;
 }
-.section-prod-cat-carousel .product-cat-carousel .section-row .section-col.product-cat-carousel .product-cat-carousel-inner .card-wrapper .price .price__sale dd {
+.section-prod-cat-carousel .product-cat-carousel .section-row .section-col.product-cat-carousel .product-cat-carousel-inner .card-wrapper .price dd {
   margin: 0;
 }
 .section-prod-cat-carousel .product-cat-carousel .section-row .section-col.product-cat-carousel .product-cat-carousel-inner .card-wrapper .price price-money + price-money::before {
