@@ -77,7 +77,9 @@
       "settings": {
         "layout": "default",
         "heading": "no more hair of the dog",
-        "bg_color": "",
+        "image_left": "shopify:\/\/shop_images\/Group_628.png",
+        "image_right": "shopify:\/\/shop_images\/Group_629.png",
+        "bg_color": "#ffc85e",
         "padding_top": 36,
         "padding_bottom": 36
       }
