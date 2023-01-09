@@ -162,6 +162,32 @@
         "padding_top": 124,
         "padding_bottom": 124
       }
+    },
+    "d0ecab29-8888-4e9c-a078-7ed5744ff393": {
+      "type": "product-category-carousel",
+      "settings": {
+        "heading": "non-alcoholic SPIRITS",
+        "heading_color": "#000000",
+        "description": "<p>Et tellus aliquet sit tortor risus et sed pulvinar mauris. Vestibulum mauris elementum suscipit sed. Proin sit at ipsum dictumst purus a sit. Ipsum pellentesque sed vulputate volutpat ultrices tempor. Volutpat et tortor fringilla vitae elit. Commodo facilisi sed pellentesque mauris orci. Varius sed fusce urna diam dignissim nec amet. Habitant nec sit massa risus. Lobortis suspendisse urna non.<\/p>",
+        "redirect_label": "Shop Non-Alc Spirits",
+        "redirect_url": "#",
+        "collection": "beer-and-cider",
+        "limit_number": 6,
+        "background_color": "#FFF",
+        "spacing_top": "3em",
+        "spacing_bottom": "4em"
+      }
+    },
+    "4c01aa0d-b816-4661-8b62-aaa429150e08": {
+      "type": "section-cta",
+      "settings": {
+        "layout": "default",
+        "heading": "",
+        "bg_color": "",
+        "bg_image": "shopify:\/\/shop_images\/CTA.png",
+        "padding_top": 144,
+        "padding_bottom": 144
+      }
     }
   },
   "order": [
@@ -172,6 +198,8 @@
     "80965b5f-0ae9-4a54-b9a0-34dff9f19ac4",
     "42e31d86-cde4-41ca-bbcc-cc2af37f4f58",
     "1cb3e542-8924-414d-8551-9be5837884ee",
-    "427dec03-ac19-4f7a-be94-f7b85e42d6e0"
+    "427dec03-ac19-4f7a-be94-f7b85e42d6e0",
+    "d0ecab29-8888-4e9c-a078-7ed5744ff393",
+    "4c01aa0d-b816-4661-8b62-aaa429150e08"
   ]
 }
