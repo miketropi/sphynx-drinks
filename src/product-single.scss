@@ -102,7 +102,7 @@
 }
 
 .__product-add-cart-form {
-  margin: 1em 0; 
+  margin: 1em 0 1.5em; 
 
   .__sold-out {
     border: solid 2px #f05124;
@@ -224,6 +224,26 @@
       &:focus-visible {
         box-shadow: none;
       }
+    }
+  }
+}
+
+.breadcrumbs-container {
+  background: white; 
+  color: #8B8B8B; 
+  padding: 1em 0 .3em;
+
+  .breadcrumbs-nav {
+    font-size: .8em;
+    font-weight: 600;
+
+    a {
+      color: #F05123;
+      text-decoration: none;
+    }
+
+    .__bc-item {
+      letter-spacing: 0;
     }
   }
 }

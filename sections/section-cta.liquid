@@ -1,0 +1,147 @@
+<div
+  class="section-cta-inner layout-{{section.settings.layout}}"
+  style="padding-top: {{section.settings.padding_top}}px;padding-bottom: {{section.settings.padding_bottom}}px;"
+>
+  <div
+    class="background-mask"
+    style="background-color: {{ section.settings.bg_color }}; background-image: url({{section.settings.bg_image | image_url}}) "
+  >1</div>
+  <div class="site-container">
+    <div class="row">
+      {%- if section.settings.layout == 'default' -%}
+        <div class="col">
+          {%- if section.settings.image_left != blank -%}
+            <img src="{{section.settings.image_left | image_url}}" alt="">
+          {%- endif -%}
+        </div>
+
+        <div class="col">
+          {%- if section.settings.heading != blank -%}
+            <h2 class="section-heading">{{ section.settings.heading }}</h2>
+          {%- endif -%}
+        </div>
+
+        <div class="col">
+          {%- if section.settings.image_right != blank -%}
+            <img src="{{section.settings.image_right | image_url}}" alt="">
+          {%- endif -%}
+        </div>
+      {%- else -%}
+        {%- for block in section.blocks -%}
+          <div class="col" {{ block.shopify_attributes }}>
+            <div class="section-cta-item">
+              {%- if block.settings.icon != blank -%}
+                <img src="{{block.settings.icon | image_url}}" alt="icon">
+              {%- endif -%}
+              <div class="bl-content">{{ block.settings.text }}</div>
+            </div>
+          </div>
+        {%- endfor -%}
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Section CTA",
+  "tag": "section",
+  "class": "section-cta",
+  "settings": [
+    {
+      "type": "select",
+      "id": "layout",
+      "options": [
+        {
+          "value": "default",
+          "label": "Default"
+        },
+        {
+          "value": "with_icon",
+          "label": "Icon & Text"
+        }
+      ],
+      "default": "default",
+      "label": "Layout"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "no more hair of the dog",
+      "label": "Heading"
+    },
+    {
+      "type": "header",
+      "content": "Media"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_left",
+      "label": "Image Left"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_right",
+      "label": "Image Right"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background Color"
+    },
+    {
+      "type": "image_picker",
+      "id": "bg_image",
+      "label": "Background Image"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.header.content"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "t:sections.all.padding.padding_top.unit",
+      "label": "t:sections.all.padding.padding_top.label",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "t:sections.all.padding.padding_bottom.unit",
+      "label": "t:sections.all.padding.padding_bottom.label",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "bl_icon",
+      "name": "Icon & Text",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Content",
+          "default": "<p>Local Business</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Section CTA"
+    }
+  ]
+}
+{% endschema %}

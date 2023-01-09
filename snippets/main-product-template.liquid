@@ -9,7 +9,10 @@
       <div class="__product-gallery">
         <div class="main-product__gallery-thumb">
           {% for image in product.images %}
-            <a class="main-product__gallery-thumb-item" href="{{ image.src | img_url: 'large' }}" data-imageurl="{{ image.src | img_url: 'large' }}">
+            <a
+              class="main-product__gallery-thumb-item"
+              href="{{ image.src | img_url: 'large' }}"
+              data-imageurl="{{ image.src | img_url: 'large' }}">
               <img
                 loading="lazy"
                 width=""
@@ -23,7 +26,7 @@
           <img
             loading="lazy"
             width=""
-            height="" 
+            height=""
             src="{{ featured_image | img_url: 'large' }}"
             alt="{{ featured_image.alt | escape }}"
             id="ProductPhotoImg" />
@@ -33,21 +36,21 @@
       <div class="__product-info">
         {%- for block in blocks -%}
           {%- case block.type -%}
-            
-            {%- when '@app' -%} 
-              {% render block %}
+
+            {%- when '@app' -%}
+            {% render block %}
 
             {%- when 'title' -%}
-              <div class="product__title" {{ block.shopify_attributes }}>
-                <h1 class="{{ block.settings.title_size }}">
-                  {{ product.title | escape }}
-                </h1>
-              </div>
-            
+            <div class="product__title" {{ block.shopify_attributes }}>
+              <h1 class="{{ block.settings.title_size }}">
+                {{ product.title | escape }}
+              </h1>
+            </div>
+
             {%- when 'text' -%}
-              {%- if block.settings.text != blank -%}
-                <p class="product__text{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}" {{ block.shopify_attributes }}>
-                  {%- liquid
+            {%- if block.settings.text != blank -%}
+              <p class="product__text{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}" {{ block.shopify_attributes }}>
+                {%- liquid
                     if block.settings.text != product.vendor
                       render 'icon-accordion', icon: block.settings.icon
                       echo block.settings.text
@@ -55,42 +58,44 @@
                       echo product.vendor | link_to_vendor : class: "link"
                     endif
                   -%}
-                </p>
-              {%- endif -%}
-            
-            {%- when 'sku' -%}
-              <p class="product__sku{% if block.settings.sku_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.sku_style == 'subtitle' %} subtitle{% endif %}" id="sku-{{ section.id }}" {{ block.shopify_attributes }}>
-                {{- product.selected_or_first_available_variant.sku -}}
               </p>
+            {%- endif -%}
+
+            {%- when 'sku' -%}
+            <p
+              class="product__sku{% if block.settings.sku_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.sku_style == 'subtitle' %} subtitle{% endif %}"
+              id="sku-{{ section.id }}"
+              {{ block.shopify_attributes }}>
+              {{- product.selected_or_first_available_variant.sku -}}
+            </p>
 
             {%- when 'description' -%}
-              <div class="product__description rte" {{ block.shopify_attributes }}>{{ product.description }}</div>
+            <div class="product__description rte" {{ block.shopify_attributes }}>{{ product.description }}</div>
 
             {%- when 'custom_liquid' -%}
-              {{ block.settings.custom_liquid }}
-            
+            {{ block.settings.custom_liquid }}
+
             {%- when 'share' -%}
-              <div class="share-button" {{ block.shopify_attributes }}>
-                {%- liquid
+            <div class="share-button" {{ block.shopify_attributes }}>
+              {%- liquid
                   assign share_image = product.selected_or_first_available_variant.featured_media.preview_image | default: product.featured_media.preview_image
                   render 'social-sharing', share_title: product.title, share_permalink: product.url, share_image: share_image
                 -%}
-              </div>
+            </div>
 
+            {%- when 'addtocart-form' -%}
+            <div class="__product-add-cart-form">
+              {%- if product.available -%}
+                {%- render 'addtocart-form-single' | product: product -%}
+              {%- else -%}
+                <span class="__sold-out">Sold Out</span>
+              {%- endif -%}
+            </div>
           {% endcase %}
         {%- endfor -%}
-
-        <div class="__product-add-cart-form">
-          
-          {%- if product.available -%}
-            {%- render 'addtocart-form-single' | product: product -%}    
-          {%- else -%}
-            <span class="__sold-out">Sold Out</span>
-          {%- endif -%}
-        </div>
       </div>
       <!-- .__product-info -->
     </div>
   </div>
 </div>
-<!-- .main-product --> 
+<!-- .main-product -->

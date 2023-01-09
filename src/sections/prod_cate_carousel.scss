@@ -129,6 +129,10 @@
                             width: 30px;
                             height: 30px;
                             top: calc(50% - 15px);
+                            svg{
+                                height: 30px;
+                                width: 30px;
+                            }
                         }
 
                         &.slick-disabled {
@@ -199,16 +203,50 @@
                                     padding: 12px;
                                 }
                             }
-
+                            .media-wrapper{
+                                background-color: transparent;
+                            }
+                            .card-article-info {
+                                font-family: 'Montserrat';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 10px;
+                                line-height: 95% !important;
+                                color: #F05123;
+                                text-transform: none;
+                                margin-bottom: 7px;
+                            }
+                            .price {
+                                font-family: 'Montserrat';
+                                font-style: normal;
+                                font-weight: 800;
+                                font-size: 16px;
+                                line-height: 95%;
+                                color: #F05123;
+                                margin-bottom: 20px;
+                                .price__sale{
+                                    display: none;
+                                    
+                                }
+                                dd{
+                                    margin: 0;
+                                }
+                                price-money+price-money::before {
+                                    content: '\2013';
+                                    margin-inline-end: 0.7rem;
+                                }
+                            }
                             .media {
                                 padding: 0;
                                 height: 324px;
                                 margin-bottom: 30px;
-
+                                background-color: transparent;
                                 @media (max-width: 1600px) {
                                     height: 234px;
                                 }
-
+                                img{
+                                    object-fit:cover;
+                                }
                             }
 
                             .card-information {
@@ -218,11 +256,26 @@
                                 @media (max-width: 1600px) {
                                     min-height: calc(100% - 234px);
                                 }
-
+                                .card-information__text {
+                                    font-family: 'Montserrat';
+                                    font-style: normal;
+                                    font-weight: 800;
+                                    font-size: 16px;
+                                    line-height: 120% !important;
+                                    text-decoration: none;
+                                    display: block;
+                                    text-transform: uppercase;
+                                    color: #F05123;
+                                    margin-bottom: 7px;
+                                }
                                 .card-information__button {
-                                    left: 12px;
-                                    bottom: 12px;
-
+                                    left: 17px;
+                                    bottom: 17px;
+                                    position: absolute;
+                                    @media (max-width: 1600px) {
+                                        bottom: 12px;
+                                        left: 12px;
+                                    }
                                     .button {
                                         font-family: 'Montserrat';
                                         font-style: normal;
@@ -240,6 +293,7 @@
 
                                         @media (max-width: 1200px) {
                                             font-size: 14px;
+                                            padding: 10px 15px;
                                         }
 
                                         &:hover {
