@@ -9,6 +9,41 @@
         "padding_bottom": 72
       }
     },
+    "7da4ba01-21fa-4c7d-93fa-3d7f577f7641": {
+      "type": "section-cta",
+      "blocks": {
+        "e95c8989-6e20-41df-98be-da8be5d88ac0": {
+          "type": "bl_icon",
+          "settings": {
+            "text": "<p>Local Business<\/p>"
+          }
+        },
+        "14e3c183-682f-4883-a16d-c744f2e66191": {
+          "type": "bl_icon",
+          "settings": {
+            "text": "<p>Local Business<\/p>"
+          }
+        },
+        "02f62c27-dc5b-4365-8c5e-ed9aae38beb1": {
+          "type": "bl_icon",
+          "settings": {
+            "text": "<p>Local Business<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "e95c8989-6e20-41df-98be-da8be5d88ac0",
+        "14e3c183-682f-4883-a16d-c744f2e66191",
+        "02f62c27-dc5b-4365-8c5e-ed9aae38beb1"
+      ],
+      "settings": {
+        "layout": "default",
+        "heading": "no more hair of the dog",
+        "bg_color": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "b0889754-84e9-42ef-9ca0-28f17ac093f0": {
       "type": "rich-text",
       "blocks": {
@@ -50,6 +85,7 @@
   },
   "order": [
     "main",
+    "7da4ba01-21fa-4c7d-93fa-3d7f577f7641",
     "b0889754-84e9-42ef-9ca0-28f17ac093f0",
     "fd217b58-d385-45d4-b2c2-2e7a5583230f"
   ]
