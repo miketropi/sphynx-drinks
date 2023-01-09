@@ -51,6 +51,10 @@
     .grid-sizer,
     .grid-item {
       width: calc(31%);
+
+      @media(max-width: 768px) {
+        width: 48%;
+      }
     }
 
     .box-item {

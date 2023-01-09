@@ -237,6 +237,44 @@
         "padding_bottom": 36
       }
     },
+    "5c89955e-98ba-4d72-997a-d1e92a461f34": {
+      "type": "section-cta",
+      "blocks": {
+        "c3ea4503-6ef7-436b-889c-1bbecb2d97b8": {
+          "type": "bl_icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/map-pin.png",
+            "text": "<p>Local Business<\/p>"
+          }
+        },
+        "9c8783b3-960e-460d-aa94-988bb636002f": {
+          "type": "bl_icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/heart.png",
+            "text": "<p>Purchase with Purpose<\/p>"
+          }
+        },
+        "476b903d-38e1-4b6b-b866-514272ff72b6": {
+          "type": "bl_icon",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/coffee.png",
+            "text": "<p>Curated Range<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "c3ea4503-6ef7-436b-889c-1bbecb2d97b8",
+        "9c8783b3-960e-460d-aa94-988bb636002f",
+        "476b903d-38e1-4b6b-b866-514272ff72b6"
+      ],
+      "settings": {
+        "layout": "with_icon",
+        "heading": "no more hair of the dog",
+        "bg_color": "#f05123",
+        "padding_top": 124,
+        "padding_bottom": 124
+      }
+    },
     "guarantees": {
       "type": "guarantees",
       "disabled": true,
@@ -735,8 +773,8 @@
         "collection": "beer-and-cider",
         "limit_number": 6,
         "background_color": "#ffc85e",
-        "spacing_top": "3em",
-        "spacing_bottom": "4em"
+        "spacing_top": "8em",
+        "spacing_bottom": "6em"
       }
     },
     "79af2c79-7b48-43d5-ae4a-3c0cf2d30e6a": {
@@ -872,6 +910,7 @@
   "order": [
     "empty-space",
     "main",
+    "5c89955e-98ba-4d72-997a-d1e92a461f34",
     "guarantees",
     "rich-text",
     "product-details",
