@@ -15,8 +15,10 @@
         "template--16659669942500__b0889754-84e9-42ef-9ca0-28f17ac093f0-167307664871c81790-0": {
           "type": "heading",
           "settings": {
-            "heading": "our collections",
-            "heading_size": "h1"
+            "heading": "OUR COLLECTIONS",
+            "font_size": 36,
+            "font_family": "Montserrat",
+            "font_weight": "900"
           }
         }
       },
@@ -28,8 +30,8 @@
         "narrow": true,
         "show_divider": false,
         "mobile_text_alignment": "center",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 52,
+        "padding_bottom": 52
       }
     },
     "fd217b58-d385-45d4-b2c2-2e7a5583230f": {
@@ -77,11 +79,13 @@
       "settings": {
         "layout": "default",
         "heading": "no more hair of the dog",
+        "font_size": 48,
         "image_left": "shopify:\/\/shop_images\/Group_628.png",
         "image_right": "shopify:\/\/shop_images\/Group_629.png",
         "bg_color": "#ffc85e",
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 36,
+        "custom_class": ""
       }
     },
     "80965b5f-0ae9-4a54-b9a0-34dff9f19ac4": {
@@ -94,7 +98,7 @@
         "redirect_url": "#",
         "collection": "beer-and-cider",
         "limit_number": 6,
-        "background_color": "#FFF",
+        "background_color": "#ffffff",
         "spacing_top": "3em",
         "spacing_bottom": "4em"
       }
@@ -104,10 +108,12 @@
       "settings": {
         "layout": "default",
         "heading": "no more hair of the dog",
+        "font_size": 48,
         "bg_color": "",
         "bg_image": "shopify:\/\/shop_images\/Union.png",
         "padding_top": 124,
-        "padding_bottom": 124
+        "padding_bottom": 124,
+        "custom_class": ""
       }
     },
     "1cb3e542-8924-414d-8551-9be5837884ee": {
@@ -120,7 +126,7 @@
         "redirect_url": "#",
         "collection": "beer-and-cider",
         "limit_number": 6,
-        "background_color": "#FFF",
+        "background_color": "#ffffff",
         "spacing_top": "3em",
         "spacing_bottom": "4em"
       }
@@ -158,9 +164,11 @@
       "settings": {
         "layout": "with_icon",
         "heading": "",
+        "font_size": 48,
         "bg_color": "#ffc85e",
         "padding_top": 124,
-        "padding_bottom": 124
+        "padding_bottom": 124,
+        "custom_class": ""
       }
     },
     "d0ecab29-8888-4e9c-a078-7ed5744ff393": {
@@ -173,7 +181,7 @@
         "redirect_url": "#",
         "collection": "beer-and-cider",
         "limit_number": 6,
-        "background_color": "#FFF",
+        "background_color": "#ffffff",
         "spacing_top": "3em",
         "spacing_bottom": "4em"
       }
@@ -183,10 +191,22 @@
       "settings": {
         "layout": "default",
         "heading": "",
+        "font_size": 48,
         "bg_color": "",
         "bg_image": "shopify:\/\/shop_images\/CTA.png",
         "padding_top": 144,
-        "padding_bottom": 144
+        "padding_bottom": 144,
+        "custom_class": ""
+      }
+    },
+    "4b03a358-6ced-447e-bf3a-bfa97b914973": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "related articles",
+        "blog": "news",
+        "post_limit": 3,
+        "padding_top": 92,
+        "padding_bottom": 92
       }
     },
     "167323513056f14371": {
@@ -205,10 +225,10 @@
         "6788e3cd-5839-4484-99d2-d39556708c0f"
       ],
       "settings": {
-        "heading": "follow the good vibes <span>@sphynxdrinks<\/span>",
-        "padding_top": 36,
+        "heading": "follow the good vibes <span>@sphynxdrinks<span><\/span><\/span>",
+        "padding_top": 32,
         "padding_bottom": 0,
-        "color_heading": "#000"
+        "color_heading": "#000000"
       }
     }
   },
@@ -223,6 +243,7 @@
     "427dec03-ac19-4f7a-be94-f7b85e42d6e0",
     "d0ecab29-8888-4e9c-a078-7ed5744ff393",
     "4c01aa0d-b816-4661-8b62-aaa429150e08",
+    "4b03a358-6ced-447e-bf3a-bfa97b914973",
     "167323513056f14371"
   ]
 }
