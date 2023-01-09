@@ -773,8 +773,8 @@
         "collection": "beer-and-cider",
         "limit_number": 6,
         "background_color": "#ffc85e",
-        "spacing_top": "3em",
-        "spacing_bottom": "4em"
+        "spacing_top": "8em",
+        "spacing_bottom": "6em"
       }
     },
     "79af2c79-7b48-43d5-ae4a-3c0cf2d30e6a": {
