@@ -24,6 +24,7 @@ $footer-background-color: black !default;
 
     .footer-col {
       margin-bottom: 1.5em;
+      padding-right: 15px;
 
       &.__type_membership-form {
         width: 40%;
@@ -51,6 +52,23 @@ $footer-background-color: black !default;
           }
         }
       } 
+
+      @media(max-width: 1024px) {
+        width: 50% !important;
+
+        &.__type_vertical-menu,
+        &.__type_footer-socials {
+          width: 30% !important;
+        }
+      }
+
+      @media(max-width: 585px) {
+
+        &.__type_membership-form,
+        &.__type_footer-brand-image {
+          width: 100% !important;
+        }
+      }
     }
   }
 
