@@ -272,7 +272,8 @@
         "heading": "no more hair of the dog",
         "bg_color": "#f05123",
         "padding_top": 124,
-        "padding_bottom": 124
+        "padding_bottom": 124,
+        "custom_class": "__custom-zindex"
       }
     },
     "guarantees": {
@@ -343,7 +344,8 @@
           "type": "heading",
           "settings": {
             "heading": "A MENU OF FLAVOURS & STYLES: THE BEST RANGE OF NON-ALC DRINKS IN AUSTRALIA",
-            "heading_size": "h1"
+            "heading_size": "h1",
+            "font_family": "Flavory Display"
           }
         },
         "text": {
@@ -359,7 +361,8 @@
           "type": "heading",
           "settings": {
             "heading": "",
-            "heading_size": "h1"
+            "heading_size": "h1",
+            "font_family": "Flavory Display"
           }
         }
       },
@@ -774,7 +777,8 @@
         "limit_number": 6,
         "background_color": "#ffc85e",
         "spacing_top": "8em",
-        "spacing_bottom": "6em"
+        "spacing_bottom": "6em",
+        "constom_class": "__custom-margin-top"
       }
     },
     "79af2c79-7b48-43d5-ae4a-3c0cf2d30e6a": {
