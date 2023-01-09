@@ -1,15 +1,31 @@
+{%- style -%}
+  .section-cta .section-cta-inner .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+
+  @media (max-width: 767px){
+    .section-cta .section-cta-inner .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top_mobile }}px;
+      padding-bottom: {{ section.settings.padding_bottom_mobile }}px;
+  }
+  }
+{%- endstyle -%}
 <div
-  class="section-cta-inner layout-{{section.settings.layout}} {{section.settings.custom_class}}"
+  class="section-cta-inner section-{{ section.id }}-padding layout-{{section.settings.layout}} {{section.settings.custom_class}}"
   style="padding-top: {{section.settings.padding_top}}px;padding-bottom: {{section.settings.padding_bottom}}px;"
 >
   <div
     class="background-mask"
-    style="background-color: {{ section.settings.bg_color }}; 
-    {%- if section.settings.bg_image != blank -%}
-      background-image: url({{section.settings.bg_image | image_url}}) 
-    {%- endif -%}
+    style="
+      background-color: {{ section.settings.bg_color }};
+      {%- if section.settings.bg_image != blank -%}
+        background-image: url({{section.settings.bg_image | image_url}})
+      {%- endif -%}
     "
-  >background-mask</div>
+  >
+    background-mask
+  </div>
   <div class="site-container">
     <div class="row">
       {%- if section.settings.layout == 'default' -%}
@@ -21,7 +37,9 @@
 
         <div class="col">
           {%- if section.settings.heading != blank -%}
-            <h2 class="section-heading" style="font-size: {{section.settings.font_size}}px">{{ section.settings.heading }}</h2>
+            <h2 class="section-heading" style="font-size: {{section.settings.font_size}}px">
+              {{ section.settings.heading }}
+            </h2>
           {%- endif -%}
         </div>
 
@@ -99,15 +117,15 @@
       "label": "Image Right"
     },
     {
+      "type": "image_picker",
+      "id": "bg_image",
+      "label": "Background Image"
+    },
+    {
       "type": "color",
       "id": "bg_color",
       "default": "#FFC85E",
       "label": "Background Color"
-    },
-    {
-      "type": "image_picker",
-      "id": "bg_image",
-      "label": "Background Image"
     },
     {
       "type": "header",
@@ -132,6 +150,30 @@
       "unit": "t:sections.all.padding.padding_bottom.unit",
       "label": "t:sections.all.padding.padding_bottom.label",
       "default": 124
+    },
+    {
+      "type": "header",
+      "content": "Section Padding on Mobile"
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "t:sections.all.padding.padding_top.unit",
+      "label": "t:sections.all.padding.padding_top.label",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "t:sections.all.padding.padding_bottom.unit",
+      "label": "t:sections.all.padding.padding_bottom.label",
+      "default": 60
     },
     {
       "type": "text",
