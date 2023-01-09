@@ -220,6 +220,16 @@
                                 line-height: 95%;
                                 color: #F05123;
                                 margin-bottom: 20px;
+                                .price__sale{
+                                    display: none;
+                                    dd{
+                                        margin: 0;
+                                    }
+                                }
+                                price-money+price-money::before {
+                                    content: '\2013';
+                                    margin-inline-end: 0.7rem;
+                                }
                             }
                             .media {
                                 padding: 0;
@@ -229,7 +239,9 @@
                                 @media (max-width: 1600px) {
                                     height: 234px;
                                 }
-
+                                img{
+                                    object-fit:none;
+                                }
                             }
 
                             .card-information {
