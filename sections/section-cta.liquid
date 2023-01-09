@@ -21,7 +21,7 @@
 
         <div class="col">
           {%- if section.settings.heading != blank -%}
-            <h2 class="section-heading">{{ section.settings.heading }}</h2>
+            <h2 class="section-heading" style="font-size: {{section.settings.font_size}}px">{{ section.settings.heading }}</h2>
           {%- endif -%}
         </div>
 
@@ -73,6 +73,16 @@
       "id": "heading",
       "default": "no more hair of the dog",
       "label": "Heading"
+    },
+    {
+      "type": "range",
+      "id": "font_size",
+      "min": 12,
+      "max": 60,
+      "step": 1,
+      "unit": "px",
+      "label": "Font size",
+      "default": 48
     },
     {
       "type": "header",

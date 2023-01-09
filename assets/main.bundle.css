@@ -2249,7 +2249,7 @@ ul.menu-style-inline li.menu-link:hover > ul {
 }
 @media (max-width: 767px) {
   .section-cta-inner .row .col .section-heading {
-    font-size: 36px;
+    font-size: 36px !important;
   }
 }
 .section-cta-inner .row .col .section-cta-item {
