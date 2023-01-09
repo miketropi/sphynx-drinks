@@ -199,6 +199,16 @@
         "custom_class": ""
       }
     },
+    "4b03a358-6ced-447e-bf3a-bfa97b914973": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "related articles",
+        "blog": "news",
+        "post_limit": 3,
+        "padding_top": 92,
+        "padding_bottom": 92
+      }
+    },
     "167323513056f14371": {
       "type": "apps",
       "blocks": {
@@ -215,8 +225,8 @@
         "6788e3cd-5839-4484-99d2-d39556708c0f"
       ],
       "settings": {
-        "heading": "follow the good vibes <span>@sphynxdrinks<\/span>",
-        "padding_top": 36,
+        "heading": "follow the good vibes @sphynxdrinks",
+        "padding_top": 32,
         "padding_bottom": 0,
         "color_heading": "#000000"
       }
@@ -233,6 +243,7 @@
     "427dec03-ac19-4f7a-be94-f7b85e42d6e0",
     "d0ecab29-8888-4e9c-a078-7ed5744ff393",
     "4c01aa0d-b816-4661-8b62-aaa429150e08",
+    "4b03a358-6ced-447e-bf3a-bfa97b914973",
     "167323513056f14371"
   ]
 }
