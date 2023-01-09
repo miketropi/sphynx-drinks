@@ -238,6 +238,14 @@
   color: #F05123;
 }
 
+.__custom-margin-top {
+  margin-top: -6%;
+}
+
+.__custom-zindex {
+  z-index: 9;
+}
+
 .site-brand__url {
   display: inline-block;
 }
