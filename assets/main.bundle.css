@@ -637,6 +637,14 @@ ul.menu-style-inline li.menu-link:hover > ul {
 .__post_item_style .post-item__title a:hover, .morden-blog-section .morden-blog__list .post-item__title a:hover, .featured-blog-section .featured-blog__list .post-item__title a:hover, .related-acticles-section .related-acticles__list .post-item__title a:hover, .main-blog-section .main-blog__list .post-item__title a:hover {
   color: #F05123;
 }
+.__post_item_style .post-item__excerpt, .morden-blog-section .morden-blog__list .post-item__excerpt, .featured-blog-section .featured-blog__list .post-item__excerpt, .related-acticles-section .related-acticles__list .post-item__excerpt, .main-blog-section .main-blog__list .post-item__excerpt {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0;
+  color: #8B8B8B;
+  margin-top: 10px;
+}
 .__post_item_style .post-item__read, .morden-blog-section .morden-blog__list .post-item__read, .featured-blog-section .featured-blog__list .post-item__read, .related-acticles-section .related-acticles__list .post-item__read, .main-blog-section .main-blog__list .post-item__read {
   margin-top: 40px;
 }
@@ -674,7 +682,7 @@ ul.menu-style-inline li.menu-link:hover > ul {
   transition: transform var(--duration-long) ease;
 }
 .__post_item_style .post-item__read .read-link-btn svg, .morden-blog-section .morden-blog__list .post-item__read .read-link-btn svg, .featured-blog-section .featured-blog__list .post-item__read .read-link-btn svg, .related-acticles-section .related-acticles__list .post-item__read .read-link-btn svg, .main-blog-section .main-blog__list .post-item__read .read-link-btn svg {
-  margin-left: 8px;
+  margin-left: 10px;
 }
 .__post_item_style .post-item__read .read-link-btn:hover:after, .morden-blog-section .morden-blog__list .post-item__read .read-link-btn:hover:after, .featured-blog-section .featured-blog__list .post-item__read .read-link-btn:hover:after, .related-acticles-section .related-acticles__list .post-item__read .read-link-btn:hover:after, .main-blog-section .main-blog__list .post-item__read .read-link-btn:hover:after {
   transform: rotate3d(0, 0, 1, 0deg) translate3d(0, 0, 0);
@@ -1241,14 +1249,41 @@ ul.menu-style-inline li.menu-link:hover > ul {
 .morden-blog-section .morden-blog__list .post-index-1 {
   grid-area: myArea;
 }
+.morden-blog-section .morden-blog__list .post-item__title {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+.morden-blog-section .morden-blog__list .post-item__thumb {
+  height: 230px;
+  padding-bottom: 0;
+  border-radius: 8px;
+}
+.morden-blog-section .morden-blog__list .post-item__excerpt {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+.morden-blog-section .morden-blog__list .post-item__read {
+  margin-top: 30px;
+}
+.morden-blog-section .morden-blog__list .post-item__read .read-link-btn {
+  padding: 20px 30px;
+  border-radius: 8px;
+}
+.morden-blog-section .morden-blog__list .post-index-1 .post-item__thumb {
+  height: 715px;
+}
 @media (max-width: 991.98px) {
-  .morden-blog-section .morden-blog__list .post-item-wrap {
-    width: 50%;
+  .morden-blog-section .morden-blog__list {
+    grid-template-areas: "myArea . " "myArea . " ". .";
   }
 }
 @media (max-width: 767.98px) {
-  .morden-blog-section .morden-blog__list .post-item-wrap {
-    width: 100%;
+  .morden-blog-section .morden-blog__list {
+    grid-template-areas: "myArea" "myArea" "." "." "." ".";
   }
 }
 

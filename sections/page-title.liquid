@@ -14,12 +14,17 @@
 
 <div class="page-title-section section-{{ section.id }}-padding">
   <div class="page-title__container">
-    <h1 class="page-title__heading">
-        {{ section.settings.heading | escape }}
-    </h1>
-    <div class="page-title__description">
-        {{ section.settings.description | escape }}
-    </div>
+    {%- if section.settings.heading != blank -%}
+      <h1 class="page-title__heading">
+          {{ section.settings.heading | escape }}
+      </h1>
+    {%- endif -%}
+
+    {%- if section.settings.description != blank -%}
+      <div class="page-title__description">
+          {{ section.settings.description | escape }}
+      </div>
+    {%- endif -%}
   </div>
 </div>
 
@@ -70,7 +75,16 @@
     
   ],
   "presets": [
-    
+    {
+      "name": "Page Title",
+      "settings": {
+        "heading": "This is page title",
+        "description": "This is page description"
+      },
+      "blocks": [
+        
+      ]
+    }
   ]
 }
 {% endschema %}

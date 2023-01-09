@@ -29,6 +29,10 @@
                 {{ article.title | escape }}
             </a>
         </h3>
+
+        <div class="post-item__excerpt">
+            {{ article.excerpt | escape }}
+        </div>
         
         <div class="post-item__read">
             <a href="{{ article.url }}" class="read-link-btn">Read<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">

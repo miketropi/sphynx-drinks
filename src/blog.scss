@@ -223,6 +223,14 @@
                 }
             }
         }
+        &__excerpt {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            letter-spacing: 0;
+            color: #8B8B8B;
+            margin-top: 10px;
+        }       
         &__read {
             margin-top: 40px;
             .read-link-btn {
@@ -257,7 +265,7 @@
                     transition: transform var(--duration-long) ease;
                 }
                 svg {
-                    margin-left: 8px;
+                    margin-left: 10px;
                 }
                 &:hover {
                     &:after {
@@ -894,19 +902,59 @@
                 grid-area: myArea;
             }
             @extend .__post_item_style;
+            .post-item {
+                &__title {
+                    overflow: hidden;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 1;
+                }
+                &__thumb {
+                    height: 230px;
+                    padding-bottom: 0;
+                    border-radius: 8px;
+                }
+                &__excerpt {
+                    overflow: hidden;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 3;
+                }
+                &__read {
+                    margin-top: 30px;
+                    .read-link-btn {
+                        padding: 20px 30px;
+                        border-radius: 8px;
+                    }
+                }
+            }
+            .post-index-1 .post-item {
+                &__thumb {
+                    height: 715px;
+                }
+            }
         }
     }
     @media(max-width: 991.98px) {
         .morden-blog {
-            &__list .post-item-wrap {
-                width: 50%;
+            &__list {
+                grid-template-areas:
+                'myArea . '
+                'myArea . '
+                '. .';
             }
         }
     }
     @media(max-width: 767.98px) {
         .morden-blog {
-            &__list .post-item-wrap {
-                width: 100%;
+            &__list {
+                grid-template-areas:
+                'myArea'
+                'myArea'
+                '.'
+                '.'
+                '.'
+                '.';
             }
         }
     }
