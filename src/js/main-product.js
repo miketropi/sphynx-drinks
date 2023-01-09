@@ -31,9 +31,26 @@ const updateVariant = () => {
   })
 }
 
+const ProductGalleryHandle = () => {
+  const $GalleryContainer = $('.__product-gallery');
+  const $PreviewImageTag = $GalleryContainer.find('.main-product__image img');
+
+  $GalleryContainer.find('.main-product__gallery-thumb-item').on('click', function(e) {
+    e.preventDefault();
+    const imageUrl = $(this).data('imageurl');
+    $PreviewImageTag.attr('src', imageUrl);
+
+    $(this)
+      .addClass('__active')
+      .siblings()
+      .removeClass('__active')
+  })
+}
+
 export default function MainProduct() {
   QtyUpdateUI();
   updateVariant();
+  ProductGalleryHandle();
 }
 
 MainProduct();

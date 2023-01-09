@@ -1,0 +1,28 @@
+{% assign collectionItem = product.collections | first %}
+
+<div class="breadcrumbs-container">
+  <div class="site-container">
+    <nav class="breadcrumbs-nav">
+      {% comment %} Root {% endcomment %}
+      <a
+        href="{{ routes.root_url }}"
+        class="__bc-item"
+        title="{{ 'general.breadcrumbs.home_link_title' | t }}">{{ 'general.breadcrumbs.home' | t }}</a>
+
+      {% comment %} Collection {% endcomment %}
+      {%- if collectionItem -%}
+        <span class="__slash">/</span>
+        <a
+          class="__bc-item"
+          href="{{ collectionItem.url }}"
+          title="{{ collectionItem.title }}">{{ collectionItem.title }}</a>
+      {%- endif -%}
+
+      {% comment %} Product {% endcomment %}
+      <span class="__slash">/</span>
+      <span class="__bc-item" title="{{ product.title }}">{{ product.title }}</span>
+    </nav>
+    <!-- .breadcrumbs-nav -->
+  </div>
+</div>
+<!-- .breadcrumbs-container -->

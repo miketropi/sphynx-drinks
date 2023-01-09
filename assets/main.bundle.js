@@ -180,9 +180,20 @@ var updateVariant = function updateVariant() {
     $cartForm.find('button#AddToCart .current-price').html(price);
   });
 };
+var ProductGalleryHandle = function ProductGalleryHandle() {
+  var $GalleryContainer = $('.__product-gallery');
+  var $PreviewImageTag = $GalleryContainer.find('.main-product__image img');
+  $GalleryContainer.find('.main-product__gallery-thumb-item').on('click', function (e) {
+    e.preventDefault();
+    var imageUrl = $(this).data('imageurl');
+    $PreviewImageTag.attr('src', imageUrl);
+    $(this).addClass('__active').siblings().removeClass('__active');
+  });
+};
 function MainProduct() {
   QtyUpdateUI();
   updateVariant();
+  ProductGalleryHandle();
 }
 MainProduct();
 
