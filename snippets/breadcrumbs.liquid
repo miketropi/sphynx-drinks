@@ -1,25 +1,32 @@
 {% comment %}
-  Renders the breadcrumb.
+Renders the breadcrumb.
 
-  Accepts:
-  - text_style: {String} The text style
-  - show_divider: {String} Show devider
+Accepts:
+- text_style: {String} The text style
+- show_divider: {String} Show devider
 
-  Usage:
-  {% render 'breadcrumbs' %}
+Usage:
+{% render 'breadcrumbs' %}
 {% endcomment %}
 
 {%- unless template.name == 'index' or template.name == 'cart' -%}
-  <nav class="breadcrumb{% if text_style == 'uppercase' %} caption-with-letter-spacing{% elsif text_style == 'subtitle' %} subtitle{% endif %}{% if show_divider %} breadcrumb--divider{% endif %}" role="navigation" aria-label="breadcrumbs">
-    <a href="{{ routes.root_url }}" class="link" title="{{ 'general.breadcrumbs.home_link_title' | t }}">{{ 'general.breadcrumbs.home' | t }}</a>
+  <nav
+    class="breadcrumb{% if text_style == 'uppercase' %} caption-with-letter-spacing{% elsif text_style == 'subtitle' %} subtitle{% endif %}{% if show_divider %} breadcrumb--divider{% endif %}"
+    role="navigation"
+    aria-label="breadcrumbs">
+    <a
+      href="{{ routes.root_url }}"
+      class="link"
+      title="{{ 'general.breadcrumbs.home_link_title' | t }}">{{ 'general.breadcrumbs.home' | t }}</a>
 
     {%- if template.name == 'product' -%}
       {%- if collection and collection.handle %}
         <span class="breadcrumb__divider" aria-hidden="true">/</span>
-        {% capture url %}{{ routes.collections_url }}/{{ collection.handle }}{% endcapture %}
+        {% capture url %}
+          {{ routes.collections_url }}/{{ collection.handle }}{% endcapture %}
         {{ collection.title | link_to: url, class: "link" }}
       {%- endif %}
-      
+
       <span class="breadcrumb__divider" aria-hidden="true">/</span>
 
     {%- elsif template.name == 'collection' and collection.handle %}
@@ -27,7 +34,8 @@
 
       {%- if current_tags -%}
 
-        {% capture url %}{{ routes.collections_url }}/{{ collection.handle }}{% endcapture %}
+        {% capture url %}
+          {{ routes.collections_url }}/{{ collection.handle }}{% endcapture %}
         {{ collection.title | link_to: url, class: "link" }}
 
         <span class="breadcrumb__divider" aria-hidden="true">/</span>
