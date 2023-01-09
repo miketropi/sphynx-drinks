@@ -273,7 +273,7 @@
         "bg_color": "#f05123",
         "padding_top": 124,
         "padding_bottom": 124,
-        "custom_class": ""
+        "custom_class": "__custom-zindex"
       }
     },
     "guarantees": {
