@@ -1,11 +1,15 @@
 <div
-  class="section-cta-inner layout-{{section.settings.layout}}"
+  class="section-cta-inner layout-{{section.settings.layout}} {{section.settings.custom_class}}"
   style="padding-top: {{section.settings.padding_top}}px;padding-bottom: {{section.settings.padding_bottom}}px;"
 >
   <div
     class="background-mask"
-    style="background-color: {{ section.settings.bg_color }}; background-image: url({{section.settings.bg_image | image_url}}) "
-  >1</div>
+    style="background-color: {{ section.settings.bg_color }}; 
+    {%- if section.settings.bg_image != blank -%}
+      background-image: url({{section.settings.bg_image | image_url}}) 
+    {%- endif -%}
+    "
+  >background-mask</div>
   <div class="site-container">
     <div class="row">
       {%- if section.settings.layout == 'default' -%}
@@ -87,6 +91,7 @@
     {
       "type": "color",
       "id": "bg_color",
+      "default": "#FFC85E",
       "label": "Background Color"
     },
     {
@@ -103,20 +108,25 @@
       "id": "padding_top",
       "min": 0,
       "max": 200,
-      "step": 4,
+      "step": 2,
       "unit": "t:sections.all.padding.padding_top.unit",
       "label": "t:sections.all.padding.padding_top.label",
-      "default": 36
+      "default": 124
     },
     {
       "type": "range",
       "id": "padding_bottom",
       "min": 0,
       "max": 200,
-      "step": 4,
+      "step": 2,
       "unit": "t:sections.all.padding.padding_bottom.unit",
       "label": "t:sections.all.padding.padding_bottom.label",
-      "default": 36
+      "default": 124
+    },
+    {
+      "type": "text",
+      "id": "custom_class",
+      "label": "Custom Class"
     }
   ],
   "blocks": [
