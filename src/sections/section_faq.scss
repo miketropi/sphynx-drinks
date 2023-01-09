@@ -1,0 +1,103 @@
+.faq-section {
+    position: relative;
+    background-color: #FFFFFF;
+    .faq {
+        &__decor-top {
+            position: absolute;
+            width: 100%;
+            top: 0;
+            line-height: 0;
+            transform: translateY(-98%);
+            -webkit-transform: translateY(-98%);
+        }
+        &__container {
+            // width: var(--site-container-width);
+            width: 840px;
+            padding: 0 0 67px;
+            margin: 0 auto;
+            max-width: calc(100% - 30px);
+            overflow: hidden;
+        }
+        &__title {
+            font-family: 'Montserrat';
+            font-weight: 900;
+            font-size: 36px;
+            line-height: 120%;
+            text-transform: uppercase;
+            color: #000000;
+            margin-bottom: 42px;
+        }
+        &__list {
+            > div:last-child {
+                margin-bottom: 0;
+            }
+        } 
+        &__item {
+            margin-bottom: 30px;
+            border-bottom: 2px solid #F05123;
+            &.open {
+                .faq__icon {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+        &__question {
+            position: relative;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 120%;
+            letter-spacing: 0;
+            color: #F05123;
+            cursor: pointer;
+            padding: 20px 25px 20px 0;
+        }
+        &__icon {
+            position: absolute; 
+            top: 23px;
+            right: 0;
+            transition: transform var(--duration-default) ease;
+        }
+        &__answer {
+            display: none;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 146%;
+            letter-spacing: 0;
+            color: #8B8B8B;
+            padding-bottom: 50px;
+            > *:first-child {
+                margin-top: 0;
+            }
+            > *:last-child {
+                margin-bottom: 0;
+            }
+        }
+        &__rt-item {
+            margin-bottom: 30px;
+        }
+        &__rt-question {
+            position: relative;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 120%;
+            letter-spacing: 0;
+            color: #F05123;
+            margin: 0;
+            padding: 20px 0;
+        }
+        &__rt-answer {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 146%;
+            letter-spacing: 0;
+            color: #8B8B8B;
+            > *:first-child {
+                margin-top: 0;
+            }
+            > *:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    
+}

@@ -18,7 +18,7 @@
     <div class="morden-blog__list">
       {%- for article in section.settings.blog.articles limit: section.settings.post_limit -%}
         <div class="post-item-wrap post-index-{{ forloop.index }}">
-          {% render 'article-modern-item', article: article %}
+          {% render 'article-modern-item', blog: section.settings.blog, article: article %}
         </div>
       {% endfor %}
     </div>

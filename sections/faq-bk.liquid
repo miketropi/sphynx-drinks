@@ -12,43 +12,40 @@
   }
 {%- endstyle -%}
 
-<div class="faq-section section-{{ section.id }}-padding">
-  <div class="faq__decor-top">
-    <svg viewBox="0 0 1920 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 58.2454H53C107 58.2454 213 58.2454 320 46.7262C427 35.2069 533 12.1684 640 16.1406C747 20.1127 853 50.3011 960 54.2733C1067 58.2454 1173 35.2069 1280 20.1127C1387 4.62132 1493 -2.92577 1600 1.04638C1707 4.62132 1813 20.1127 1867 27.6598L1920 35.2069V149.605H1867C1813 149.605 1707 149.605 1600 149.605C1493 149.605 1387 149.605 1280 149.605C1173 149.605 1067 149.605 960 149.605C853 149.605 747 149.605 640 149.605C533 149.605 427 149.605 320 149.605C213 149.605 107 149.605 53 149.605H0V58.2454Z" fill="white"></path>
-    </svg>      
-  </div>
-  <div class="faq__container">
-    {%- if section.settings.heading != blank -%}
-      <h2 class="faq__title">{{ section.settings.heading | escape }}</h2>
-    {%- endif -%}
+{{ 'section-faq.css' | asset_url | stylesheet_tag }}
 
-    <div class="faq__list">
+<div class="section-{{ section.id }}-padding{% if section.settings.show_divider %} section--divider{% endif %}">
+  {%- if section.settings.secondary_background -%}
+    <div class="faq--colored">
+  {%- endif -%}
+    <div class="faq page-width{% if section.settings.narrow %} page-width--inner{% endif %}">
+      <div class="title-wrapper{% if section.settings.heading == blank %} title-wrapper--no-heading{% endif %}">
+        <h2 class="title {{ section.settings.heading_size }}">{{ section.settings.heading | escape }}</h2>
+      </div>
+
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'rich-text' -%}
-            <div class="faq__rt-item">
-              <div class="faq__rt-question">{{ block.settings.title | escape }}</div>
-              <div class="faq__rt-answer">{{ block.settings.text }}</div>
-            </div>
+            <h3 {{ block.shopify_attributes }}>{{ block.settings.title | escape }}</h3>
+            <div class="rte">{{ block.settings.text }}</div>
           {%- when 'question' -%}
-            <div class="faq__item">
-              <div class="faq__question">
-                {{ block.settings.title | escape }}
-                  <span class="faq__icon">
-                    <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M4.5 6.91016L9 11.4102L13.5 6.91016" stroke="#F05123" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                  </span>
-              </div>
-              <div class="faq__answer">
+            <details {{ block.shopify_attributes }}>
+              <summary>
+                <span>
+                  <span class="icon icon-plus-alt"></span>
+                  {{ block.settings.title | escape }}
+                </span>
+              </summary>
+              <div class="rte typeset">
                 {{ block.settings.text }}
               </div>
-            </div>
+            </details>
         {%- endcase -%}
       {%- endfor -%}
     </div>
-  </div>
+  {%- if section.settings.secondary_background -%}
+    </div>
+  {%- endif -%}
 </div>
 
 {% schema %}
@@ -62,6 +59,44 @@
       "id": "heading",
       "default": "FAQs",
       "label": "t:sections.all.heading.label"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h2",
+          "label": "t:sections.all.heading_size.options__1.label"
+        },
+        {
+          "value": "h1",
+          "label": "t:sections.all.heading_size.options__2.label"
+        },
+        {
+          "value": "h0",
+          "label": "t:sections.all.heading_size.options__3.label"
+        }
+      ],
+      "default": "h2",
+      "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "narrow",
+      "default": true,
+      "label": "t:sections.all.narrow.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "secondary_background",
+      "default": false,
+      "label": "t:sections.faq.settings.secondary_background.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_divider",
+      "default": false,
+      "label": "t:sections.all.show_divider.label"
     },
     {
       "type": "header",
