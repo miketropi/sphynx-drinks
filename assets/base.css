@@ -163,6 +163,8 @@ html {
 body {
   color: rgb(var(--color-foreground));
   background-color: rgb(var(--color-background));
+  color: black;
+  background-color: white;
   overflow-x: hidden;
 /*   background-image: linear-gradient(
         -45deg, 
@@ -284,6 +286,7 @@ h5,
   font-style: var(--font-heading-style);
   letter-spacing: calc(var(--font-heading-scale) * 0.06rem);
   color: rgb(var(--color-heading));
+  color: black;
   line-height: calc(1 + 0.3 / max(1, var(--font-heading-scale)));
   font-weight: 400;
 }

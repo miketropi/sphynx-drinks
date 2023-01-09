@@ -67,7 +67,7 @@
                 padding-top: 15px;
                 padding-bottom: 15px;
                 text-align: center;
-
+                display: block;
                 &:nth-child(2) {
                     @media (min-width: 768px) {
                         -webkit-box-flex: 0;

@@ -6,7 +6,9 @@
     width: auto;
   }
 }
-
+.site-header{
+  background-color: rgb(var(--color-background));
+}
 .site-header__nth1 {
   display: flex;
   flex-wrap: wrap;

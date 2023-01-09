@@ -246,6 +246,10 @@
   width: auto;
 }
 
+.site-header {
+  background-color: rgb(var(--color-background));
+}
+
 .site-header__nth1 {
   display: flex;
   flex-wrap: wrap;
@@ -2168,6 +2172,7 @@ ul.menu-style-inline li.menu-link:hover > ul {
   padding-top: 15px;
   padding-bottom: 15px;
   text-align: center;
+  display: block;
 }
 @media (min-width: 768px) {
   .section-cta-inner .row .col:nth-child(2) {
