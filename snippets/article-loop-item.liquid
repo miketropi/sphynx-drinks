@@ -1,29 +1,41 @@
-<div class="post-item-wrap">
-    <div class="post-item">
-        <div class="post-item__thumb">
-            {%- if article.image -%}
-                <img src="{{ article.image | image_url: width: 550 }}" alt="{{ article.image.alt | escape }}">
-            {%- endif -%}
-        </div>
+<div class="post-item">
+    <div class="post-item__thumb">
+        {%- if article.image -%}
+            <img
+                srcset="{%- if article.image.width >= 375 -%}
+                {{ article.image | image_url: width: 375 }} 375w{%- endif -%}
+                {%- if article.image.width >= 750 -%},{{ article.image | image_url: width: 750 }} 750w{%- endif -%}
+                {%- if article.image.width >= 1100 -%},{{ article.image | image_url: width: 1100 }} 1100w{%- endif -%}
+                {%- if article.image.width >= 1500 -%},{{ article.image | image_url: width: 1500 }} 1500w{%- endif -%}
+                {%- if article.image.width >= 2200 -%},{{ article.image | image_url: width: 2200 }} 2200w{%- endif -%}
+                {%- if article.image.width >= 3000 -%},{{ article.image | image_url: width: 3000 }} 3000w{%- endif -%},
+                {{ article.image | image_url }} {{ article.image.width }}w"
+                src="{{ article.image | image_url: width: 1100 }}"
+                sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 }}px, (min-width: 750px) calc(100vw - 10rem), 100vw"
+                loading="lazy"
+                width="{{ article.image.width }}"
+                height="{{ article.image.height }}"
+                alt="{{ article.image.alt | escape }}">
+        {%- endif -%}
+    </div>
 
-        <div class="post-item__content">
-            <div class="post-item__category">
-                {{ blog.title | link_to: blog.url, class: "link" }}
-            </div>
-            
-            <h3 class="post-item__title">
-                <a href="{{ article.url }}">
-                    {{ article.title | escape }}
-                </a>
-            </h3>
-            
-            <div class="post-item__read">
-                <a href="{{ article.url }}" class="read-link-btn">Read<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5.88867 12H19.8887" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M12.8887 5L19.8887 12L12.8887 19" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg> 
-                </a>
-            </div>
+    <div class="post-item__content">
+        <div class="post-item__category">
+            {{ blog.title | link_to: blog.url, class: "link" }}
+        </div>
+        
+        <h3 class="post-item__title">
+            <a href="{{ article.url }}">
+                {{ article.title | escape }}
+            </a>
+        </h3>
+        
+        <div class="post-item__read">
+            <a href="{{ article.url }}" class="read-link-btn">Read<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.88867 12H19.8887" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12.8887 5L19.8887 12L12.8887 19" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg> 
+            </a>
         </div>
     </div>
 </div>

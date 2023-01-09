@@ -1,4 +1,8 @@
 {%- style -%}
+  #shopify-section-{{ section.id }} {
+    --image-position: {{ section.settings.image_position }};
+  }
+  
   .section-{{ section.id }}-padding {
     padding-top: calc({{ section.settings.padding_top }}px * 0.75);
     padding-bottom: calc({{ section.settings.padding_bottom }}px  * 0.75);
@@ -27,7 +31,9 @@
             {%- paginate blog.articles by section.settings.per_page -%}
               <div class="main-blog__list">
                 {%- for article in blog.articles -%}
-                  {% render 'article-loop-item', article: article %}
+                  <div class="post-item-wrap">
+                    {% render 'article-loop-item', article: article %}
+                  </div>
                 {%- endfor -%}
               </div>
 

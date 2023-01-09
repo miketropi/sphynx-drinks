@@ -143,6 +143,51 @@ var initHomeSlider = function initHomeSlider() {
 
 /***/ }),
 
+/***/ "./src/js/main-product.js":
+/*!********************************!*\
+  !*** ./src/js/main-product.js ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ MainProduct)
+/* harmony export */ });
+/* provided dependency */ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+var QtyUpdateUI = function QtyUpdateUI() {
+  $('body').on('click', '.__product-qty .__qty-update', function () {
+    var $self = $(this);
+    var $qtyInput = $self.parent().find('input[name=quantity]');
+    var currentNumber = parseInt($qtyInput.val());
+    if ($self.hasClass('__qty-decrease')) {
+      currentNumber = currentNumber - 1;
+    }
+    if ($self.hasClass('__qty-increase')) {
+      currentNumber = currentNumber + 1;
+    }
+    if (currentNumber <= 1) {
+      currentNumber = 1;
+    }
+    $qtyInput.val(currentNumber);
+  });
+};
+var updateVariant = function updateVariant() {
+  var $cartForm = $('form#AddToCartForm');
+  $('body').on('change', 'select#productSelect', function () {
+    var $select = $(this);
+    var price = $select.find("option[value=\"".concat(this.value, "\"]")).data('price');
+    $cartForm.find('button#AddToCart .current-price').html(price);
+  });
+};
+function MainProduct() {
+  QtyUpdateUI();
+  updateVariant();
+}
+MainProduct();
+
+/***/ }),
+
 /***/ "./src/js/prod-cat-carousel.js":
 /*!*************************************!*\
   !*** ./src/js/prod-cat-carousel.js ***!
@@ -324,6 +369,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _js_rating_rendering__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/rating-rendering */ "./src/js/rating-rendering.js");
 /* harmony import */ var _js_product_carousel__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/product-carousel */ "./src/js/product-carousel.js");
 /* harmony import */ var _js_prod_cat_carousel__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./js/prod-cat-carousel */ "./src/js/prod-cat-carousel.js");
+/* harmony import */ var _js_main_product__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./js/main-product */ "./src/js/main-product.js");
+
 
 
 

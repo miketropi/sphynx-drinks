@@ -1,0 +1,229 @@
+.main-product {
+
+  &__container {
+
+  }
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .__product-gallery {
+      width: 55%;
+      display: flex;
+      justify-content: space-between;
+
+      img {
+        width: 100%;
+      }
+
+      .main-product__gallery-thumb {
+        width: 20%;
+        padding-top: 10%;
+
+        .main-product__gallery-thumb-item {
+          display: inline-block;
+          width: 100%;
+          line-height: 0;
+
+          img {
+            border-radius: 100px;
+            background-color: #F0F0F0;
+          }
+        }
+      }
+
+      .main-product__image {
+        width: 70%;
+      }
+    }
+
+    .__product-info {
+      width: 40%;
+      padding-top: 2.5em;
+      letter-spacing: 0;
+
+      .product__title {
+        margin-bottom: 0;
+
+        h1 {
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: 800;
+          font-size: 2em;
+          color: #F05123;
+          letter-spacing: 0;
+        }
+      }
+
+      .spr-summary-starrating {
+        padding: 1em 0 2em;
+        align-items: center;
+        line-height: normal;
+      }
+
+      .product__text {
+        display: inline-flex;
+        align-items: center;
+        margin-right: 2em;
+        margin-bottom: .6em;
+        color: #8B8B8B;
+        line-height: normal;
+
+        svg {
+          fill: #F05123;
+          height: 18px;
+        }
+      }
+
+      .share-button {
+
+        .list-social {
+          display: flex;
+          flex-wrap: wrap;
+
+          .list-social__item {
+            margin-right: 2em;
+          }
+
+          .label {
+            color: #8B8B8B;
+            background-image: none;
+          }
+
+          svg {
+            color: #F05123;
+          }
+        }
+      }
+    }
+  }
+}
+
+.__product-add-cart-form {
+  margin: 1em 0; 
+
+  .__sold-out {
+    border: solid 2px #f05124;
+    color: #F05123;
+    font-family: "Montserrat";
+    font-weight: bold;
+    padding: 0.7em 1.5em;
+    border-radius: 8px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+
+  form {
+
+  }
+
+  button[type=submit] {
+    width: 100%;
+    border-radius: 8px;
+    background-color: #F05123;
+    border-color: #F05123;
+    margin-top: 1em;
+    letter-spacing: 0;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 1em;
+
+    &:hover {
+      color: black;
+    }
+
+    .current-price {
+      margin-left: 4px;
+    }
+  }
+
+  .__group-2-cols {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .__product-variant-select {
+    width: 65%;
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      border: solid #F05123;
+      border-width: 2px 2px 0 0;
+      right: 15px;
+      top: 43%;
+      -webkit-transform: translateY(-50%) rotate(135deg);
+      transform: translateY(-50%) rotate(135deg);
+      pointer-events: none;
+    }
+
+    select {
+      appearance: none;
+      -webkit-appearance: none;
+      padding: 1em;
+      border: solid 2px #F05123;
+      border-radius: 8px;
+      width: 100%;
+      font-weight: bold;
+      
+      &:focus-visible {
+        outline: none !important;
+        box-shadow: none !important;
+      }
+    }
+  }
+
+  .__product-qty {
+    display: flex;
+    align-items: center;
+
+    .__qty-update {
+      width: 45.66px;
+      height: 45.66px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #FFC85E;
+      border-radius: 55px;
+      cursor: pointer;
+      -webkit-user-select: none; /* Safari */
+      -ms-user-select: none; /* IE 10 and IE 11 */
+      user-select: none; /* Standard syntax */
+
+      svg {
+        transform: scale(.6);
+        -webkit-transform: scale(.6);
+      }
+    }
+
+    input[name=quantity] {
+      width: 50px;
+      border: none;
+      text-align: center;
+      font-weight: bold;
+      appearance: none;
+      font-size: 20px;
+      color: #f05124;
+      appearance: none;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+      }
+
+      &:focus-visible {
+        box-shadow: none;
+      }
+    }
+  }
+}
