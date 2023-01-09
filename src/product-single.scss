@@ -14,6 +14,10 @@
       display: flex;
       justify-content: space-between;
 
+      @media(max-width: 768px) {
+        width: 100%;
+      }
+
       img {
         width: 100%;
       }
@@ -43,6 +47,10 @@
       width: 40%;
       padding-top: 2.5em;
       letter-spacing: 0;
+
+      @media(max-width: 768px) {
+        width: 100%;
+      }
 
       .product__title {
         margin-bottom: 0;

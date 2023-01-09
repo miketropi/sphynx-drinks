@@ -1,5 +1,6 @@
 .product-carousel {
   position: relative;
+  overflow: hidden;
 
   &__decor-top {
     position: absolute;
@@ -90,6 +91,10 @@
         color: black;
         font-size: .9em;
         font-weight: 400;
+
+        .__p-first-collection {
+          letter-spacing: 0;
+        }
 
         .__p-title {
           font-size: 1em;
