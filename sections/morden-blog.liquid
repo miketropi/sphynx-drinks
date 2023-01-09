@@ -18,7 +18,7 @@
     <div class="morden-blog__list">
       {%- for article in section.settings.blog.articles limit: section.settings.post_limit -%}
         <div class="post-item-wrap post-index-{{ forloop.index }}">
-          {% render 'article-loop-item', article: article %}
+          {% render 'article-modern-item', article: article %}
         </div>
       {% endfor %}
     </div>
@@ -46,7 +46,7 @@
       "type": "range",
       "id": "post_limit",
       "min": 3,
-      "max": 6,
+      "max": 8,
       "step": 1,
       "default": 5,
       "label": "t:sections.featured-blog.settings.post_limit.label"
