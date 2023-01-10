@@ -28,13 +28,15 @@
         <div class="image-animate media--{{ section.settings.image_ratio }} media-mobile--{{ section.settings.mobile_image_ratio }} {% if section.settings.image != blank %}media{% else %}media--placeholder{% endif %}">
           {%- if section.settings.image != blank -%}
             <img
-              srcset="{%- if section.settings.image.width >= 165 -%}{{ section.settings.image | image_url: width: 165 }} 165w{%- endif -%}
+              srcset="
+                {%- if section.settings.image.width >= 165 -%}{{ section.settings.image | image_url: width: 165 }} 165w{%- endif -%}
                 {%- if section.settings.image.width >= 375 -%},{{ section.settings.image | image_url: width: 375 }} 375w{%- endif -%}
                 {%- if section.settings.image.width >= 550 -%},{{ section.settings.image | image_url: width: 550 }} 550w{%- endif -%}
                 {%- if section.settings.image.width >= 750 -%},{{ section.settings.image | image_url: width: 750 }} 750w{%- endif -%}
                 {%- if section.settings.image.width >= 1100 -%},{{ section.settings.image | image_url: width: 1100 }} 1100w{%- endif -%}
                 {%- if section.settings.image.width >= 1500 -%},{{ section.settings.image | image_url: width: 1500 }} 1500w{%- endif -%},
-                {{ section.settings.image | image_url }} {{ section.settings.image.width }}w"
+                {{ section.settings.image | image_url }} {{ section.settings.image.width }}w
+              "
               src="{{ section.settings.image | image_url: width: 1500 }}"
               sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
               alt="{{ section.settings.image.alt | escape }}"
@@ -42,7 +44,7 @@
               width="{{ section.settings.image.width }}"
               height="{{ section.settings.image.height }}"
               class="image-fit"
-            />
+            >
           {%- else -%}
             {{ 'image' | placeholder_svg_tag: 'placeholder' }}
           {%- endif -%}
@@ -54,27 +56,41 @@
         {%- for block in section.blocks -%}
           {% case block.type %}
             {%- when 'heading' -%}
-              <h2 class="image-with-text__heading {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</h2>
+              <h2 class="image-with-text__heading {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
+                {{ block.settings.heading | escape }}
+              </h2>
             {%- when 'text' -%}
-              <div class="image-with-text__text{% if block.settings.secondary_color %} image-with-text__text--colored{% endif %} {{ block.settings.text_size }} rte" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+              <div
+                class="image-with-text__text{% if block.settings.secondary_color %} image-with-text__text--colored{% endif %} {{ block.settings.text_size }} rte"
+                {{ block.shopify_attributes }}
+              >
+                {{ block.settings.text }}
+              </div>
             {%- when 'button' -%}
               {%- if block.settings.button_label != blank -%}
-                {%- if block.settings.button_style_secondary -%}
-                  <a class="button button--cta"{% if block.settings.button_link != blank %} href="{{ block.settings.button_link }}"{% else %} role="link" aria-disabled="true"{% endif %} {{ block.shopify_attributes }}>
-                    <span class="label">{{ block.settings.button_label | escape }}</span>
-                    {% render 'icon', icon: 'arrow' %}
-                  </a>
-                {%- else -%}
-                  <a class="button"{% if block.settings.button_link != blank %} href="{{ block.settings.button_link }}"{% else %} role="link" aria-disabled="true"{% endif %} {{ block.shopify_attributes }}>
-                    {{ block.settings.button_label | escape }}
-                  </a>
-                {%- endif -%}
+                <a
+                  class="button"
+                  {% if block.settings.button_link != blank %}
+                    href="{{ block.settings.button_link }}"
+                  {% else %}
+                    role="link"
+                  {% endif %}
+                  {{ block.shopify_attributes }}
+                >
+                  {{ block.settings.button_label | escape }}
+                  <span class="button-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5 12H19" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M12 5L19 12L12 19" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                </a>
               {%- endif -%}
           {%- endcase -%}
         {%- endfor -%}
       </div>
     </div>
-  </div>
+  </div> 
 </div>
 
 {% schema %}
@@ -405,12 +421,6 @@
           "type": "url",
           "id": "button_link",
           "label": "t:sections.all.button_link.label"
-        },
-        {
-          "type": "checkbox",
-          "id": "button_style_secondary",
-          "default": false,
-          "label": "t:sections.all.button_style_secondary.label"
         }
       ]
     }

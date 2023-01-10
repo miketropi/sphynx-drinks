@@ -1,0 +1,43 @@
+.section-gallery-carousel{
+    .gallery-carousel-inner{
+        display: flex;
+        align-items: center;
+        overflow-x: auto;
+        overflow-y: hidden;
+        .gallery-carousel-item{
+            height: 350px;
+            width: 100%;
+            position: relative;
+            flex: 0 0 350px;
+            max-width: 350px;
+            @media (max-width: 767px){
+                height: 150px;
+                flex: 0 0 150px;
+                max-width: 150px;
+            }
+            &:nth-child(even) {                
+                margin-top: 110px;
+                @media (max-width: 767px){
+                    margin-top: 60px;
+                }
+                img{
+                    transform: rotate(15deg);
+                }
+            }
+            img{
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                object-position: center;
+                transform: rotate(-15deg);
+                border-radius: 18px;
+                @media (max-width: 767px){
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}
