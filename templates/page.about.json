@@ -216,6 +216,120 @@
         "spacing_bottom": "4em",
         "constom_class": ""
       }
+    },
+    "cedd3fd8-89ad-4838-a2d7-50a94c3bbe7d": {
+      "type": "collection-gallery",
+      "blocks": {
+        "a6f4f40e-154f-49a2-817a-8ba834be1beb": {
+          "type": "collection_gallery_item",
+          "settings": {
+            "collection": "absolute-zero",
+            "image": "shopify:\/\/shop_images\/c1.jpg",
+            "name": "non-alcoholic BEER",
+            "text_color": "#FFFFFF",
+            "hover_color_background": "#000000",
+            "redirect_url": "",
+            "box_size": "size_1",
+            "custom_class": ""
+          }
+        },
+        "28b87199-d642-44c6-871c-9c1865d6b0a2": {
+          "type": "collection_gallery_item",
+          "settings": {
+            "collection": "almost-zero",
+            "image": "shopify:\/\/shop_images\/c4.jpg",
+            "name": "non-alcoholic wine",
+            "text_color": "#FFFFFF",
+            "hover_color_background": "#000000",
+            "redirect_url": "",
+            "box_size": "size_2",
+            "custom_class": ""
+          }
+        },
+        "bfc38386-c1cd-42af-85a4-c29a39a67e73": {
+          "type": "collection_gallery_item",
+          "settings": {
+            "collection": "almost-zero",
+            "image": "shopify:\/\/shop_images\/c2.jpg",
+            "name": "non-alcoholic cider",
+            "text_color": "#FFFFFF",
+            "hover_color_background": "#F05123",
+            "redirect_url": "",
+            "box_size": "size_2",
+            "custom_class": ""
+          }
+        },
+        "32cbf356-e5c2-4b25-a6f9-e3c829b79fe9": {
+          "type": "collection_gallery_item",
+          "settings": {
+            "collection": "absolute-zero",
+            "image": "shopify:\/\/shop_images\/c5.jpg",
+            "name": "non-alcoholic spirits",
+            "text_color": "#FFFFFF",
+            "hover_color_background": "#F05123",
+            "redirect_url": "",
+            "box_size": "size_1",
+            "custom_class": ""
+          }
+        },
+        "8593a97b-fd54-4bfa-8097-9dddce480488": {
+          "type": "collection_gallery_item",
+          "settings": {
+            "collection": "altina",
+            "image": "shopify:\/\/shop_images\/c3.jpg",
+            "name": "tonic and soda",
+            "text_color": "#FFFFFF",
+            "hover_color_background": "#F05123",
+            "redirect_url": "",
+            "box_size": "size_1",
+            "custom_class": ""
+          }
+        },
+        "4daffa9f-bbbc-4d90-bfc2-cce873da0309": {
+          "type": "collection_gallery_item",
+          "settings": {
+            "collection": "mixers",
+            "image": "shopify:\/\/shop_images\/c6.jpg",
+            "name": "mixers",
+            "text_color": "#FFFFFF",
+            "hover_color_background": "#F05123",
+            "redirect_url": "",
+            "box_size": "size_1",
+            "custom_class": ""
+          }
+        },
+        "143984a2-6e1d-4cf7-8ad7-beda59b42918": {
+          "type": "collection_gallery_item",
+          "settings": {
+            "collection": "banks-botanicals",
+            "image": "shopify:\/\/shop_images\/c7.jpg",
+            "name": "premixed",
+            "text_color": "#FFFFFF",
+            "hover_color_background": "#F05123",
+            "redirect_url": "",
+            "box_size": "size_1",
+            "custom_class": ""
+          }
+        }
+      },
+      "block_order": [
+        "a6f4f40e-154f-49a2-817a-8ba834be1beb",
+        "28b87199-d642-44c6-871c-9c1865d6b0a2",
+        "bfc38386-c1cd-42af-85a4-c29a39a67e73",
+        "32cbf356-e5c2-4b25-a6f9-e3c829b79fe9",
+        "8593a97b-fd54-4bfa-8097-9dddce480488",
+        "4daffa9f-bbbc-4d90-bfc2-cce873da0309",
+        "143984a2-6e1d-4cf7-8ad7-beda59b42918"
+      ],
+      "settings": {
+        "heading": "SHOP BY COLLECTION",
+        "description": "<p>Sphynx has made it simple to find your favourite alcohol-free drinks. Australia is leading the charge regarding delicious alcohol-free alternatives, and you’ll have no worries picking up the perfect tipple with our online collection. Whether you’re shopping for beers and cider, wines or spirits, you can order non-alcoholic drinks online at Sphynx by simply navigating the categories on our website. We also have tonics, sodas, and mixers among our selection of alcohol-free beverages and some excellent pre-mixed, no-alcohol drink options.<\/p>",
+        "heading_color": "#000000",
+        "description_color": "#8B8B8B",
+        "background_color": "#FFFFFF",
+        "spacing_top": "3em",
+        "spacing_bottom": "3em"
+      }
     }
   },
   "order": [
@@ -226,6 +340,7 @@
     "d5e67535-7d0b-451a-9b92-ab71777b1e83",
     "2b209d02-e655-4ad4-b80b-b87b90e69463",
     "image-with-text-0",
-    "a54a2eea-6008-4bfb-abb4-f1d72f9f56f3"
+    "a54a2eea-6008-4bfb-abb4-f1d72f9f56f3",
+    "cedd3fd8-89ad-4838-a2d7-50a94c3bbe7d"
   ]
 }
