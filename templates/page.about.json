@@ -46,8 +46,10 @@
       "type": "section-cta",
       "settings": {
         "layout": "default",
-        "heading": "no more hair of the dog",
+        "heading": "LET THE GOOD TIMES ROLL",
         "font_size": 48,
+        "image_left": "shopify:\/\/shop_images\/Group_628.png",
+        "image_right": "shopify:\/\/shop_images\/Group_629.png",
         "bg_color": "#FFC85E",
         "padding_top": 124,
         "padding_bottom": 124,
