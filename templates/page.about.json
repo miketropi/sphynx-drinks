@@ -58,44 +58,6 @@
         "custom_class": ""
       }
     },
-    "image-with-text-0": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "OUR MISSION",
-            "heading_size": "h1"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Sphynx was founded by three mates who got sick of scouring the dusty corners of bottle shops for a decent non-alc drink. It's crazy, we know: non-alcoholic drinks are the fastest growing sector of the liquor industry, with new brands and exciting styles arriving each day. By establishing Sphynx, the mission was to build the biggest and best range of non-alc drinks in Australia, offering tasty alternatives to the booming community of sorta-drinkers in one, seamless online store. Because why should we miss out on the party?<\/p>",
-            "text_size": "typeset",
-            "secondary_color": false
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/sd-banner-faq.jpg",
-        "image_position": "center center",
-        "layout": "image_first",
-        "text_box_position": "middle",
-        "text_alignment": "left",
-        "image_ratio": "550px",
-        "full_width": false,
-        "show_divider": false,
-        "mobile_text_alignment": "left",
-        "mobile_image_ratio": "auto",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "d5e67535-7d0b-451a-9b92-ab71777b1e83": {
       "type": "multicolumn",
       "blocks": {
@@ -193,6 +155,52 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "image-with-text-0": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "COOL CATS ONLY",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our brand celebrates the idea that you don't need to drink to have a good time. We're not here to push a belief or an agenda, but just to connect you – whatever your story or taste is – with our wild selection of delicious drinks, in a fun, vibrant community. Relax, chill out, and let the good times happen.<br\/><br\/>There's a world of delicious flavours begging to be sipped - get amongst it.<\/p>",
+            "text_size": "typeset",
+            "secondary_color": false
+          }
+        },
+        "d9c50a40-55f1-4888-9a8d-73bb0af74c60": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Now",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "d9c50a40-55f1-4888-9a8d-73bb0af74c60"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Group_593_09c3d022-0927-45a2-84cf-d27a62e6f357.png",
+        "image_position": "center center",
+        "layout": "image_first",
+        "text_box_position": "middle",
+        "text_alignment": "left",
+        "image_ratio": "550px",
+        "full_width": false,
+        "show_divider": false,
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "auto",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -200,8 +208,8 @@
     "d8d0dede-fdf0-499d-b970-2a0d859e7634",
     "rich-text-0",
     "98375ad3-b370-4f79-bf9e-e5f23eebf64d",
-    "image-with-text-0",
     "d5e67535-7d0b-451a-9b92-ab71777b1e83",
-    "2b209d02-e655-4ad4-b80b-b87b90e69463"
+    "2b209d02-e655-4ad4-b80b-b87b90e69463",
+    "image-with-text-0"
   ]
 }
