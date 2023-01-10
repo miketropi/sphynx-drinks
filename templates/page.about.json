@@ -349,7 +349,7 @@
       "settings": {
         "heading": "follow the good vibes <span>@sphynxdrinks<\/span>",
         "padding_top": 36,
-        "padding_bottom": 36,
+        "padding_bottom": 0,
         "color_heading": "#000"
       }
     }
