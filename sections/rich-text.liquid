@@ -22,9 +22,9 @@
     {%- for block in section.blocks -%}
       {%- case block.type -%}
         {%- when 'heading' -%}
-          <h2 {{ block.shopify_attributes }} style="font-family: {{block.settings.font_family}}; font-size: {{block.settings.font_size}}px; font-weight: {{block.settings.font_weight}}">{{ block.settings.heading  }}</h2>
+          <h2 {{ block.shopify_attributes }} style="color: {{block.settings.heading_color}};font-family: {{block.settings.font_family}}; font-size: {{block.settings.font_size}}px; font-weight: {{block.settings.font_weight}}">{{ block.settings.heading  }}</h2>
         {%- when 'text' -%}
-          <div class="rich-text__text{% if block.settings.secondary_color %} rich-text__text--colored{% endif %} {{ block.settings.text_size }} rte" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+          <div class="rich-text__text{% if block.settings.secondary_color %} rich-text__text--colored{% endif %} rte" style="font-size: {{ block.settings.font_size }}px; color: {{block.settings.desc_color}}; font-weight: {{block.settings.font_weight}}" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
         {%- when 'button' -%}
           {%- if block.settings.button_label != blank -%}
             {%- if block.settings.button_style_secondary -%}
@@ -203,6 +203,12 @@
           ],
           "default": "900",
           "label": "Font Weight"
+        },
+        {
+          "type": "color",
+          "id": "heading_color",
+          "default": "#000",
+          "label": "Color"
         }
       ]
     },
@@ -218,30 +224,56 @@
           "label": "t:sections.all.text.label"
         },
         {
-          "type": "select",
-          "id": "text_size",
-          "options": [
-            {
-              "value": "typeset",
-              "label": "t:sections.all.text_size.options__1.label"
-            },
-            {
-              "value": "typeset2",
-              "label": "t:sections.all.text_size.options__2.label"
-            },
-            {
-              "value": "typeset3",
-              "label": "t:sections.all.text_size.options__3.label"
-            }
-          ],
-          "default": "typeset2",
-          "label": "t:sections.all.text_size.label"
+          "type": "range",
+          "id": "font_size",
+          "min": 12,
+          "max": 60,
+          "step": 1,
+          "unit": "px",
+          "label": "Font size",
+          "default": 36
         },
         {
-          "type": "checkbox",
-          "id": "secondary_color",
-          "default": false,
-          "label": "t:sections.all.secondary_color.label"
+          "type": "select",
+          "id": "font_weight",
+          "options": [ 
+            {
+              "value": "300",
+              "label": "300"
+            },
+            {
+              "value": "400",
+              "label": "400"
+            },
+            {
+              "value": "500",
+              "label": "500"
+            },
+            {
+              "value": "600",
+              "label": "600"
+            },
+            {
+              "value": "700",
+              "label": "700"
+            },
+            {
+              "value": "800",
+              "label": "800"
+            },
+            {
+              "value": "900",
+              "label": "900"
+            }
+          ],
+          "default": "400",
+          "label": "Font Weight"
+        },
+        {
+          "type": "color",
+          "id": "desc_color",
+          "default": "#000",
+          "label": "Color"
         }
       ]
     },

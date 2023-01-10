@@ -328,14 +328,14 @@ h3,
 .h3 {
   font-size: calc(var(--font-heading-scale) * 1.7rem);
 /*     CUSTOM CODE */
-    font-family: 'Flavory Sans' !important;
+    font-family: 'Flavory Sans';
 }
 
 @media only screen and (min-width: 750px) {
   h3,
   .h3 {
     font-size: calc(var(--font-heading-scale) * 2rem);
-    font-family: 'Flavory Sans' !important;
+    font-family: 'Flavory Sans';
   }
 }
 
