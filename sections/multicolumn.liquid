@@ -74,8 +74,8 @@
             {%- endif -%}
             {%- if block.settings.title != blank or block.settings.text != blank or block.settings.button_label != blank -%}
               <div class="multicolumn-card__info">
-                <h3 class="{{ block.settings.title_size }}">{{ block.settings.title | escape }}</h3>
-                <div class="rte typeset">{{ block.settings.text }}</div>
+                <h3 class="{{ block.settings.title_size }}" style="color: {{block.settings.heading_color}};font-family: {{block.settings.ff_title}}; font-size: {{block.settings.fz_title}}px; font-weight: {{block.settings.fw_title}}">{{ block.settings.title | escape }}</h3>
+                <div class="rte typeset" style="color: {{block.settings.desc_color}};font-family: {{block.settings.ff_text}}; font-size: {{block.settings.fz_text}}px; font-weight: {{block.settings.fw_text}}">{{ block.settings.text }}</div>
                 {%- if block.settings.button_label != blank -%}
                   {%- if block.settings.button_style_secondary -%}
                     <a class="button button--cta"{% if block.settings.button_link != blank %} href="{{ block.settings.button_link }}"{% else %} role="link" aria-disabled="true"{% endif %}>
@@ -299,8 +299,8 @@
       "type": "range",
       "id": "padding_top",
       "min": 0,
-      "max": 100,
-      "step": 4,
+      "max": 200,
+      "step": 2,
       "unit": "t:sections.all.padding.padding_top.unit",
       "label": "t:sections.all.padding.padding_top.label",
       "default": 36
@@ -309,8 +309,8 @@
       "type": "range",
       "id": "padding_bottom",
       "min": 0,
-      "max": 100,
-      "step": 4,
+      "max": 200,
+      "step": 2,
       "unit": "t:sections.all.padding.padding_bottom.unit",
       "label": "t:sections.all.padding.padding_bottom.label",
       "default": 36
@@ -333,30 +333,154 @@
           "label": "t:sections.multicolumn.blocks.column.settings.title.label"
         },
         {
+          "type": "range",
+          "id": "fz_title",
+          "min": 12,
+          "max": 60,
+          "step": 1,
+          "unit": "px",
+          "label": "Font size",
+          "default": 36
+        },
+        {
           "type": "select",
-          "id": "title_size",
+          "id": "ff_title",
           "options": [
             {
-              "value": "h4",
-              "label": "t:sections.all.heading_size.options__1.label"
+              "value": "Flavory Display",
+              "label": "Flavory Display"
             },
             {
-              "value": "h3",
-              "label": "t:sections.all.heading_size.options__2.label"
-            },
-            {
-              "value": "h2",
-              "label": "t:sections.all.heading_size.options__3.label"
+              "value": "Montserrat",
+              "label": "Montserrat"
             }
           ],
-          "default": "h3",
-          "label": "t:sections.all.heading_size.label"
+          "default": "Flavory Display",
+          "label": "Font Family"
+        },
+        {
+          "type": "select",
+          "id": "fw_title",
+          "options": [ 
+            {
+              "value": "300",
+              "label": "300"
+            },
+            {
+              "value": "400",
+              "label": "400"
+            },
+            {
+              "value": "500",
+              "label": "500"
+            },
+            {
+              "value": "600",
+              "label": "600"
+            },
+            {
+              "value": "700",
+              "label": "700"
+            },
+            {
+              "value": "800",
+              "label": "800"
+            },
+            {
+              "value": "900",
+              "label": "900"
+            }
+          ],
+          "default": "900",
+          "label": "Font Weight"
+        },
+        {
+          "type": "color",
+          "id": "heading_color",
+          "default": "#000",
+          "label": "Color"
+        },
+        {
+          "type": "header",
+          "content": "Description"
         },
         {
           "type": "richtext",
           "id": "text",
           "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
           "label": "t:sections.multicolumn.blocks.column.settings.text.label"
+        },
+        {
+          "type": "range",
+          "id": "fz_text",
+          "min": 12,
+          "max": 60,
+          "step": 1,
+          "unit": "px",
+          "label": "Font size",
+          "default": 16
+        },
+        {
+          "type": "select",
+          "id": "ff_text",
+          "options": [
+            {
+              "value": "Flavory Display",
+              "label": "Flavory Display"
+            },
+            {
+              "value": "Montserrat",
+              "label": "Montserrat"
+            }
+          ],
+          "default": "Flavory Display",
+          "label": "Font Family"
+        },
+        {
+          "type": "select",
+          "id": "fw_text",
+          "options": [ 
+            {
+              "value": "300",
+              "label": "300"
+            },
+            {
+              "value": "400",
+              "label": "400"
+            },
+            {
+              "value": "500",
+              "label": "500"
+            },
+            {
+              "value": "600",
+              "label": "600"
+            },
+            {
+              "value": "700",
+              "label": "700"
+            },
+            {
+              "value": "800",
+              "label": "800"
+            },
+            {
+              "value": "900",
+              "label": "900"
+            }
+          ],
+          "default": "400",
+          "label": "Font Weight"
+        },
+        {
+          "type": "color",
+          "id": "desc_color",
+          "default": "#8B8B8B",
+          "label": "Color"
+        },
+        {
+          "type": "header",
+          "content": "Button"
         },
         {
           "type": "text",

@@ -8,9 +8,24 @@
         value="{{ search.terms | escape }}">
       <input type="submit" value="Search">
       <span class="__search-icon">
-        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M10 17.6953C13.866 17.6953 17 14.5613 17 10.6953C17 6.82932 13.866 3.69531 10 3.69531C6.13401 3.69531 3 6.82932 3 10.6953C3 14.5613 6.13401 17.6953 10 17.6953Z" stroke="#F05123" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M15 15.6953L21 21.6953" stroke="#F05123" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <svg
+          width="24"
+          height="25"
+          viewBox="0 0 24 25"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M10 17.6953C13.866 17.6953 17 14.5613 17 10.6953C17 6.82932 13.866 3.69531 10 3.69531C6.13401 3.69531 3 6.82932 3 10.6953C3 14.5613 6.13401 17.6953 10 17.6953Z"
+            stroke="#F05123"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path
+            d="M15 15.6953L21 21.6953"
+            stroke="#F05123"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round" />
         </svg>
       </span>
     </form>
@@ -41,6 +56,7 @@
         <span class="cart-link__bubble{% if cart.item_count > -1 %} cart-link__bubble--visible{% endif %}">{{ cart.item_count }}</span>
       </div>
     </a>
+    {%- render 'mini-cart-custom' -%}
   </div>
 
   <div class="header-extra-tools__item __user-login">

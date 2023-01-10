@@ -37,7 +37,7 @@
 
         <div class="col">
           {%- if section.settings.heading != blank -%}
-            <h2 class="section-heading" style="font-size: {{section.settings.font_size}}px">
+            <h2 class="section-heading" style="color: {{section.settings.heading_color}};font-size: {{section.settings.font_size}}px">
               {{ section.settings.heading }}
             </h2>
           {%- endif -%}
@@ -101,6 +101,12 @@
       "unit": "px",
       "label": "Font size",
       "default": 48
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "default": "#FFF",
+      "label": "Color"
     },
     {
       "type": "header",

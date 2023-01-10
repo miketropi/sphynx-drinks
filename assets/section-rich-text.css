@@ -33,9 +33,6 @@
   margin-top: 3rem;
 }
 
-.rich-text__text {
-  max-width: 72.6rem;
-}
 
 .rich-text__text--colored {
   color: rgba(var(--color-foreground), 0.55);

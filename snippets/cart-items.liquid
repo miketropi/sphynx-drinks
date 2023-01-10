@@ -1,0 +1,130 @@
+{% comment %} {{ cart | json }} {% endcomment %}
+<form
+  action="{{ routes.cart_url }}"
+  class="cart__contents critical-hidden"
+  method="post"
+  id="cart">
+  {%- if cart != empty -%}
+    <table class="cart-items">
+      <thead>
+        <tr>
+          <th class="__product-cart-item __thumb"></th>
+          <th class="__product-cart-info __info"></th>
+          <th class="__product-cart-price __price"></th>
+        </tr>
+      </thead>
+      <tbody>
+        {%- for item in cart.items -%}
+          <tr>
+            <td class="__thumb">
+              {% if item.image %}
+                <img
+                  class="cart-item__image"
+                  srcset="{{ item.image | image_url: width: 70 }} 1x, {{ item.image | image_url: width: 140 }} 2x"
+                  src="{{ item.image | image_url: width: 70 }}"
+                  alt="{{ item.image.alt | escape | split: '#' | first }}"
+                  loading="lazy"
+                  width="70"
+                  height="{{ 70 | divided_by: item.image.aspect_ratio | ceil }}" />
+              {% endif %}
+            </td>
+            <td class="__info">
+              <small class="__vendor-text">{{ item.product.vendor }}</small>
+              <h4 class="__product-name">
+                <a href="{{ item.product.url }}" class="cart-item__name link">{{ item.product.title | escape }}</a>
+              </h4>
+              <div class="__opt-with-value">
+                {%- for o in item.options_with_values -%}
+                  <div class="__o-item">
+                    <span class="__name">{{ o.name }}:</span>
+                    <span class="__value">{{ o.value }}</span>
+                  </div>
+                {%- endfor -%}
+              </div>
+              <div class="__qty">
+                <span class="__name">Qty:</span>
+                {% comment %} Update Qty {% endcomment %}
+                <div class="__update-qty">
+                  <span class="__decrease-qty">-</span>
+                  <input
+                    type="number"
+                    min=0
+                    name="quantity[]"
+                    value="{{ item.quantity }}" />
+                  <span class="__increase-qty">+</span>
+                </div>
+              </div>
+            </td>
+            <td class="__price">
+              <div class="cart-item__price-wrapper">
+                {%- if item.original_price != item.final_price -%}
+                  <dl class="cart-item__discounted-prices">
+                    <dt class="visually-hidden">
+                      {{ 'products.product.price.regular_price' | t }}
+                    </dt>
+                    <dd class="price--on-sale">
+                      <s class="price price-item--regular price--end">
+                        <price-money>
+                          <bdi>{{ item.original_price | money }}</bdi>
+                        </price-money>
+                      </s>
+                    </dd>
+                    <dt class="visually-hidden">
+                      {{ 'products.product.price.sale_price' | t }}
+                    </dt>
+                    <dd class="price price--end">
+                      <price-money>
+                        <bdi>{{ item.final_price | money }}</bdi>
+                      </price-money>
+                    </dd>
+                  </dl>
+                {%- else -%}
+                  <span class="price price--end">
+                    <price-money>
+                      <bdi>{{ item.original_price | money }}</bdi>
+                    </price-money>
+                  </span>
+                {%- endif -%}
+
+                {%- if item.variant.available and item.unit_price_measurement -%}
+                  <div class="unit-price">
+                    <span class="visually-hidden">{{ 'products.product.price.unit_price' | t }}</span>
+                    <price-money>
+                      <bdi>{{ item.variant.unit_price | money }}</bdi>
+                    </price-money>
+                    <span aria-hidden="true">/</span>
+                    <span class="visually-hidden">&nbsp;{{ 'accessibility.unit_price_separator' | t }}&nbsp;</span>
+                    {%- if item.variant.unit_price_measurement.reference_value != 1 -%}
+                      {{- item.variant.unit_price_measurement.reference_value -}}
+                    {%- endif -%}
+                    {{ item.variant.unit_price_measurement.reference_unit }}
+                  </div>
+                {%- endif -%}
+              </div>
+
+              {% comment %} Remove item {% endcomment %}
+              <a
+                href="{{ item.url_to_remove }}"
+                class="__remove-cart-item"
+                title="Remove {{ item.title }}">
+                {% render 'icon', icon: 'remove' %}
+              </a>
+            </td>
+          </tr>
+        {%- endfor -%}
+      </tbody>
+    </table>
+  {%- endif -%}
+
+  <p
+    class="visually-hidden"
+    id="cart-live-region-text"
+    aria-live="polite"
+    role="status"></p>
+  <p
+    class="visually-hidden"
+    id="shopping-cart-line-item-status"
+    aria-live="polite"
+    aria-hidden="true"
+    role="status">{{ 'accessibility.loading' | t }}</p>
+</form>

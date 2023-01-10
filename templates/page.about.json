@@ -1,49 +1,5 @@
 {
   "sections": {
-    "image-banner": {
-      "type": "image-banner",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Our Story",
-            "heading_size": "h0"
-          }
-        },
-        "text": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p>Share information about your brand with your customers.<\/p>",
-            "text_size": "typeset3",
-            "secondary_color": false
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/sd-main-banner-about.jpg",
-        "image_position": "bottom center",
-        "text_box_position": "bottom-center",
-        "text_alignment": "center",
-        "image_ratio": "550px",
-        "show_text_box": false,
-        "full_width": true,
-        "show_divider": false,
-        "mobile_text_alignment": "center",
-        "mobile_image_ratio": "400px",
-        "stack_images_on_mobile": false,
-        "show_text_below": false,
-        "colors_text": "#ffffff",
-        "colors_overlay": "#000000",
-        "colors_overlay_opacity": 0,
-        "padding_top": 0,
-        "padding_bottom": 36
-      }
-    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -53,158 +9,170 @@
         "padding_bottom": 72
       }
     },
+    "d8d0dede-fdf0-499d-b970-2a0d859e7634": {
+      "type": "page-title",
+      "settings": {
+        "heading": "GOOD TIMES ANDDELICIOUS DRINKS",
+        "description": "",
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
     "rich-text-0": {
       "type": "rich-text",
       "blocks": {
-        "a7486cc0-c460-4593-9835-1a0dc2bf33de": {
-          "type": "heading",
-          "settings": {
-            "heading": "GOOD TIMES & DELICIOUS DRINKS",
-            "heading_size": "h1"
-          }
-        },
         "text": {
           "type": "text",
           "settings": {
             "text": "<p>Sphynx drinks is all about enjoying the moment, without ruining the next day. Our carefully-curated selection of drinks, ranging from crisp craft beers to local drops of booze-free wine, shows there's never been a better time to ditch the hair of the dog and join the non-alc party.<\/p>",
-            "text_size": "typeset2",
-            "secondary_color": false
+            "font_size": 16,
+            "font_weight": "700",
+            "desc_color": "#000"
           }
         }
       },
       "block_order": [
-        "a7486cc0-c460-4593-9835-1a0dc2bf33de",
         "text"
       ],
       "settings": {
-        "text_alignment": "left",
-        "narrow": true,
+        "text_alignment": "center",
+        "narrow": false,
         "show_divider": false,
-        "mobile_text_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "mobile_text_alignment": "center",
+        "padding_top": 60,
+        "padding_bottom": 60
       }
     },
-    "image-with-text-0": {
-      "type": "image-with-text",
+    "98375ad3-b370-4f79-bf9e-e5f23eebf64d": {
+      "type": "section-cta",
+      "settings": {
+        "layout": "default",
+        "heading": "LET THE GOOD TIMES ROLL",
+        "font_size": 48,
+        "heading_color": "#FFF",
+        "image_left": "shopify:\/\/shop_images\/Group_628.png",
+        "image_right": "shopify:\/\/shop_images\/Group_629.png",
+        "bg_color": "#ffc85e",
+        "padding_top": 30,
+        "padding_bottom": 30,
+        "padding_top_mobile": 60,
+        "padding_bottom_mobile": 60,
+        "custom_class": ""
+      }
+    },
+    "d5e67535-7d0b-451a-9b92-ab71777b1e83": {
+      "type": "multicolumn",
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "template--16656683991268__d5e67535-7d0b-451a-9b92-ab71777b1e83-1673335647e33c3c42-0": {
+          "type": "column",
           "settings": {
-            "heading": "OUR MISSION",
-            "heading_size": "h1"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
+            "title": "OUR MISSION",
+            "fz_title": 36,
+            "ff_title": "Montserrat",
+            "fw_title": "900",
+            "heading_color": "#000",
             "text": "<p>Sphynx was founded by three mates who got sick of scouring the dusty corners of bottle shops for a decent non-alc drink. It's crazy, we know: non-alcoholic drinks are the fastest growing sector of the liquor industry, with new brands and exciting styles arriving each day. By establishing Sphynx, the mission was to build the biggest and best range of non-alc drinks in Australia, offering tasty alternatives to the booming community of sorta-drinkers in one, seamless online store. Because why should we miss out on the party?<\/p>",
-            "text_size": "typeset",
-            "secondary_color": false
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/sd-banner-faq.jpg",
-        "image_position": "center center",
-        "layout": "image_first",
-        "text_box_position": "middle",
-        "text_alignment": "left",
-        "image_ratio": "550px",
-        "full_width": true,
-        "show_divider": false,
-        "mobile_text_alignment": "left",
-        "mobile_image_ratio": "auto",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "image-with-text-1": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "JOIN OUR COMMUNITY",
-            "heading_size": "h1"
+            "fz_text": 16,
+            "ff_text": "Montserrat",
+            "fw_text": "400",
+            "desc_color": "#8B8B8B",
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false
           }
         },
-        "text": {
-          "type": "text",
+        "template--16656683991268__d5e67535-7d0b-451a-9b92-ab71777b1e83-1673335647e33c3c42-1": {
+          "type": "column",
           "settings": {
+            "title": "JOIN OUR COMMUNITY",
+            "fz_title": 36,
+            "ff_title": "Montserrat",
+            "fw_title": "900",
+            "heading_color": "#000",
             "text": "<p>Whether you've never been a drinker, you're cutting back or you've thrown it in, there's no reason to leave the party. We've curated the best range of non-alc drinks on the planet, so no matter your story or your taste, there's a stool at our table waiting.<\/p>",
-            "text_size": "typeset",
-            "secondary_color": false
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/elevate-Euyr_8yImIQ-unsplash.jpg",
-        "image_position": "center center",
-        "layout": "text_first",
-        "text_box_position": "middle",
-        "text_alignment": "left",
-        "image_ratio": "550px",
-        "full_width": true,
-        "show_divider": false,
-        "mobile_text_alignment": "left",
-        "mobile_image_ratio": "auto",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "165814915093f0f080": {
-      "type": "rich-text",
-      "blocks": {
-        "1658149150943de6b8-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "\"LET THE GOOD TIMES ROLL\"",
-            "heading_size": "h1"
-          }
-        },
-        "1658149150943de6b8-1": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
-            "text_size": "typeset2",
-            "secondary_color": false
-          }
-        },
-        "1658149150943de6b8-2": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "Button label",
+            "fz_text": 16,
+            "ff_text": "Montserrat",
+            "fw_text": "400",
+            "desc_color": "#8B8B8B",
+            "button_label": "",
             "button_link": "",
             "button_style_secondary": false
           }
         }
       },
       "block_order": [
-        "1658149150943de6b8-0",
-        "1658149150943de6b8-1",
-        "1658149150943de6b8-2"
+        "template--16656683991268__d5e67535-7d0b-451a-9b92-ab71777b1e83-1673335647e33c3c42-0",
+        "template--16656683991268__d5e67535-7d0b-451a-9b92-ab71777b1e83-1673335647e33c3c42-1"
       ],
       "settings": {
-        "text_alignment": "center",
-        "narrow": true,
+        "heading": "",
+        "heading_size": "h1",
+        "image_ratio": "landscape",
+        "image_position": "center center",
+        "text_alignment": "left",
         "show_divider": false,
         "mobile_text_alignment": "left",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
     },
-    "image-with-text-2": {
+    "2b209d02-e655-4ad4-b80b-b87b90e69463": {
+      "type": "gallery-carousel",
+      "blocks": {
+        "template--16656683991268__2b209d02-e655-4ad4-b80b-b87b90e69463-1673335953324756bb-0": {
+          "type": "image_item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_169_8644be26-dad9-4596-9906-c3ebdf310a7f.png"
+          }
+        },
+        "template--16656683991268__2b209d02-e655-4ad4-b80b-b87b90e69463-1673335953324756bb-1": {
+          "type": "image_item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_170_e7ab7e89-6a03-4aa3-8e44-8fde256cac02.png"
+          }
+        },
+        "template--16656683991268__2b209d02-e655-4ad4-b80b-b87b90e69463-1673335953324756bb-2": {
+          "type": "image_item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_163_6fbf35a8-4874-4709-ac7c-4284e100189e.png"
+          }
+        },
+        "5bf7e5fb-7b88-4345-bfa6-8c0cde08a142": {
+          "type": "image_item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_164_59f0525d-283b-41f2-92b8-8fa323f2557f.png"
+          }
+        },
+        "465a2083-22d5-43da-8d1d-893c111aed18": {
+          "type": "image_item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_165_08072a2b-7d5b-4838-9553-a5d9fcf2ca66.png"
+          }
+        },
+        "f5c62c8c-12a0-41c0-a652-e73f71851b0a": {
+          "type": "image_item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_166_371a735a-8b18-497f-a6a7-3eaba92f59e6.png"
+          }
+        }
+      },
+      "block_order": [
+        "template--16656683991268__2b209d02-e655-4ad4-b80b-b87b90e69463-1673335953324756bb-0",
+        "template--16656683991268__2b209d02-e655-4ad4-b80b-b87b90e69463-1673335953324756bb-1",
+        "template--16656683991268__2b209d02-e655-4ad4-b80b-b87b90e69463-1673335953324756bb-2",
+        "5bf7e5fb-7b88-4345-bfa6-8c0cde08a142",
+        "465a2083-22d5-43da-8d1d-893c111aed18",
+        "f5c62c8c-12a0-41c0-a652-e73f71851b0a"
+      ],
+      "settings": {
+        "full_width": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image-with-text-0": {
       "type": "image-with-text",
       "blocks": {
         "heading": {
@@ -217,160 +185,201 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Our brand celebrates the idea that you don't need to drink to have a good time. We're not here to push a belief or an agenda, but just to connect you – whatever your story or taste is – with our wild selection of delicious drinks, in a fun, vibrant community. Relax, chill out, and let the good times happen. <br\/><br\/>There's a world of delicious flavours begging to be sipped - get amongst it.<\/p>",
-            "text_size": "typeset",
-            "secondary_color": false
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/sd-banner-home-1.jpg",
-        "image_position": "center center",
-        "layout": "image_first",
-        "text_box_position": "middle",
-        "text_alignment": "left",
-        "image_ratio": "550px",
-        "full_width": true,
-        "show_divider": false,
-        "mobile_text_alignment": "left",
-        "mobile_image_ratio": "auto",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "image-with-text-overlay": {
-      "type": "image-with-text-overlay",
-      "disabled": true,
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "GOOD BUSINESS",
-            "heading_size": "h1"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Sphynx was born from the idea that a business can do good in the world, as well as do good business. We're here for delicious drinks, but that shouldn't mean we can't make a difference, too. <br\/><br\/>A percentage of every single sale goes back to the community, through our close-knit network of non-profit partners. It's not a big deal, but it's our way of saying thanks.<\/p>",
+            "text": "<p>Our brand celebrates the idea that you don't need to drink to have a good time. We're not here to push a belief or an agenda, but just to connect you – whatever your story or taste is – with our wild selection of delicious drinks, in a fun, vibrant community. Relax, chill out, and let the good times happen.<br\/><br\/>There's a world of delicious flavours begging to be sipped - get amongst it.<\/p>",
             "text_size": "typeset",
             "secondary_color": false
           }
         },
-        "button": {
+        "d9c50a40-55f1-4888-9a8d-73bb0af74c60": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
+            "button_label": "Shop Now",
+            "button_link": ""
           }
         }
       },
       "block_order": [
         "heading",
         "text",
-        "button"
+        "d9c50a40-55f1-4888-9a8d-73bb0af74c60"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Test-pattern-2.jpg",
+        "image": "shopify:\/\/shop_images\/Group_593_09c3d022-0927-45a2-84cf-d27a62e6f357.png",
         "image_position": "center center",
-        "text_box_position": "flex-start",
+        "layout": "text_first",
+        "text_box_position": "middle",
         "text_alignment": "left",
         "image_ratio": "550px",
-        "full_width": true,
+        "full_width": false,
         "show_divider": false,
-        "mobile_text_box_position": "image_first",
-        "mobile_text_alignment": "center",
-        "mobile_image_ratio": "500px",
-        "colors_text": "#212326",
-        "colors_overlay": "#f3f3f3",
-        "colors_overlay_opacity": 92,
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "auto",
         "padding_top": 36,
-        "padding_bottom": 0
+        "padding_bottom": 88
       }
     },
-    "empty-space": {
-      "type": "empty-space",
-      "disabled": true,
+    "a54a2eea-6008-4bfb-abb4-f1d72f9f56f3": {
+      "type": "product-carousel",
       "settings": {
-        "desktop_height": 0,
-        "mobile_height": 48
+        "heading": "the best sellers",
+        "heading_color": "#000000",
+        "redirect_label": "VIEW ALL",
+        "redirect_url": "#",
+        "collection": "beer-and-cider",
+        "limit_number": 6,
+        "background_color": "#ffc85e",
+        "spacing_top": "3em",
+        "spacing_bottom": "7em",
+        "constom_class": ""
       }
     },
-    "1657282394c10bbe96": {
-      "type": "multicolumn",
+    "cedd3fd8-89ad-4838-a2d7-50a94c3bbe7d": {
+      "type": "collection-gallery",
       "blocks": {
-        "1657282394669ac5b8-0": {
-          "type": "column",
+        "a6f4f40e-154f-49a2-817a-8ba834be1beb": {
+          "type": "collection_gallery_item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/sd-banner-home-1.jpg",
-            "title": "FIND YOUR FLAVOUR",
-            "title_size": "h3",
-            "text": "<p>We've scoured the world for the best brands and styles. Discover the biggest and most thoughtfully-curated range in non-alc drinks.<\/p>",
-            "button_label": "Shop Now",
-            "button_link": "shopify:\/\/collections\/all",
-            "button_style_secondary": false
+            "collection": "absolute-zero",
+            "image": "shopify:\/\/shop_images\/c1.jpg",
+            "name": "non-alcoholic BEER",
+            "text_color": "#ffffff",
+            "hover_color_background": "#000000",
+            "redirect_url": "",
+            "box_size": "size_1",
+            "custom_class": ""
           }
         },
-        "1657282394669ac5b8-1": {
-          "type": "column",
+        "28b87199-d642-44c6-871c-9c1865d6b0a2": {
+          "type": "collection_gallery_item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/sd-main-banner-con.jpg",
-            "title": "CONTACT THE CAT",
-            "title_size": "h3",
-            "text": "<p>Reach out to us to get advice on our range, partner with us or chinwag about all things Sphynx.<\/p>",
-            "button_label": "Contact",
-            "button_link": "shopify:\/\/pages\/contact",
-            "button_style_secondary": false
+            "collection": "almost-zero",
+            "image": "shopify:\/\/shop_images\/c4.jpg",
+            "name": "non-alcoholic wine",
+            "text_color": "#ffffff",
+            "hover_color_background": "#000000",
+            "redirect_url": "",
+            "box_size": "size_2",
+            "custom_class": ""
           }
         },
-        "1657282394669ac5b8-2": {
-          "type": "column",
+        "bfc38386-c1cd-42af-85a4-c29a39a67e73": {
+          "type": "collection_gallery_item",
           "settings": {
-            "image": "shopify:\/\/shop_images\/sd-banner-faq.jpg",
-            "title": "PUB TRIVIA: FAQs",
-            "title_size": "h3",
-            "text": "<p>Want to dive into the fine print? Pull up a stool and browse our FAQs, from shipping timelines to returns policies.<\/p>",
-            "button_label": "Find Out More",
-            "button_link": "shopify:\/\/pages\/faq",
-            "button_style_secondary": false
+            "collection": "almost-zero",
+            "image": "shopify:\/\/shop_images\/c2.jpg",
+            "name": "non-alcoholic cider",
+            "text_color": "#ffffff",
+            "hover_color_background": "#000000",
+            "redirect_url": "",
+            "box_size": "size_2",
+            "custom_class": ""
+          }
+        },
+        "32cbf356-e5c2-4b25-a6f9-e3c829b79fe9": {
+          "type": "collection_gallery_item",
+          "settings": {
+            "collection": "absolute-zero",
+            "image": "shopify:\/\/shop_images\/c5.jpg",
+            "name": "non-alcoholic spirits",
+            "text_color": "#ffffff",
+            "hover_color_background": "#000000",
+            "redirect_url": "",
+            "box_size": "size_1",
+            "custom_class": ""
+          }
+        },
+        "8593a97b-fd54-4bfa-8097-9dddce480488": {
+          "type": "collection_gallery_item",
+          "settings": {
+            "collection": "altina",
+            "image": "shopify:\/\/shop_images\/c3.jpg",
+            "name": "tonic and soda",
+            "text_color": "#ffffff",
+            "hover_color_background": "#000000",
+            "redirect_url": "",
+            "box_size": "size_1",
+            "custom_class": ""
+          }
+        },
+        "4daffa9f-bbbc-4d90-bfc2-cce873da0309": {
+          "type": "collection_gallery_item",
+          "settings": {
+            "collection": "mixers",
+            "image": "shopify:\/\/shop_images\/c6.jpg",
+            "name": "mixers",
+            "text_color": "#ffffff",
+            "hover_color_background": "#000000",
+            "redirect_url": "",
+            "box_size": "size_1",
+            "custom_class": ""
+          }
+        },
+        "143984a2-6e1d-4cf7-8ad7-beda59b42918": {
+          "type": "collection_gallery_item",
+          "settings": {
+            "collection": "banks-botanicals",
+            "image": "shopify:\/\/shop_images\/c7.jpg",
+            "name": "premixed",
+            "text_color": "#ffffff",
+            "hover_color_background": "#000000",
+            "redirect_url": "",
+            "box_size": "size_1",
+            "custom_class": "__fix-design"
           }
         }
       },
       "block_order": [
-        "1657282394669ac5b8-0",
-        "1657282394669ac5b8-1",
-        "1657282394669ac5b8-2"
+        "a6f4f40e-154f-49a2-817a-8ba834be1beb",
+        "28b87199-d642-44c6-871c-9c1865d6b0a2",
+        "bfc38386-c1cd-42af-85a4-c29a39a67e73",
+        "32cbf356-e5c2-4b25-a6f9-e3c829b79fe9",
+        "8593a97b-fd54-4bfa-8097-9dddce480488",
+        "4daffa9f-bbbc-4d90-bfc2-cce873da0309",
+        "143984a2-6e1d-4cf7-8ad7-beda59b42918"
       ],
       "settings": {
-        "heading": "Sphynx Drinks",
-        "heading_size": "h1",
-        "image_ratio": "landscape",
-        "image_position": "center center",
-        "text_alignment": "center",
-        "show_divider": false,
-        "mobile_text_alignment": "left",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
+        "heading": "SHOP BY COLLECTION",
+        "description": "<p>Sphynx has made it simple to find your favourite alcohol-free drinks. Australia is leading the charge regarding delicious alcohol-free alternatives, and you’ll have no worries picking up the perfect tipple with our online collection. Whether you’re shopping for beers and cider, wines or spirits, you can order non-alcoholic drinks online at Sphynx by simply navigating the categories on our website. We also have tonics, sodas, and mixers among our selection of alcohol-free beverages and some excellent pre-mixed, no-alcohol drink options.<\/p>",
+        "heading_color": "#000000",
+        "description_color": "#8b8b8b",
+        "background_color": "#ffffff",
+        "spacing_top": "3em",
+        "spacing_bottom": "3em"
+      }
+    },
+    "167333714508fa35b7": {
+      "type": "apps",
+      "blocks": {
+        "aa29c3f3-3ede-425e-84c8-d6ddf818999c": {
+          "type": "shopify:\/\/apps\/instafeed-instagram-feed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "heading_size": 20,
+            "feed_width": 100,
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "aa29c3f3-3ede-425e-84c8-d6ddf818999c"
+      ],
+      "settings": {
+        "heading": "follow the good vibes <span>@sphynxdrinks<\/span>",
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 0,
+        "color_heading": "#000000"
       }
     }
   },
   "order": [
-    "image-banner",
     "main",
+    "d8d0dede-fdf0-499d-b970-2a0d859e7634",
     "rich-text-0",
+    "98375ad3-b370-4f79-bf9e-e5f23eebf64d",
+    "d5e67535-7d0b-451a-9b92-ab71777b1e83",
+    "2b209d02-e655-4ad4-b80b-b87b90e69463",
     "image-with-text-0",
-    "image-with-text-1",
-    "165814915093f0f080",
-    "image-with-text-2",
-    "image-with-text-overlay",
-    "empty-space",
-    "1657282394c10bbe96"
+    "a54a2eea-6008-4bfb-abb4-f1d72f9f56f3",
+    "cedd3fd8-89ad-4838-a2d7-50a94c3bbe7d",
+    "167333714508fa35b7"
   ]
 }
