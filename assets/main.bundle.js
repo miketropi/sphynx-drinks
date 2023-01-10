@@ -47,6 +47,39 @@ CollectionGallery();
 
 /***/ }),
 
+/***/ "./src/js/faq-toggle.js":
+/*!******************************!*\
+  !*** ./src/js/faq-toggle.js ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ faqToggle)
+/* harmony export */ });
+/* provided dependency */ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+function faqToggle() {
+  var faqElems = document.querySelectorAll('.faq__item');
+  if (!faqElems) return;
+  $('.faq__question').on('click', function () {
+    if ($(this).parent().hasClass('open')) {
+      $(this).parent().removeClass('open');
+      $(this).parent().find('.faq__answer').slideUp();
+    } else {
+      $(this).parents('.faq__list').find('.faq__item').each(function () {
+        $(this).removeClass('open');
+        $(this).find('.faq__answer').slideUp();
+      });
+      $(this).parent().addClass('open');
+      $(this).parent().find('.faq__answer').slideDown();
+    }
+  });
+}
+faqToggle();
+
+/***/ }),
+
 /***/ "./src/js/home_slider.js":
 /*!*******************************!*\
   !*** ./src/js/home_slider.js ***!
@@ -381,6 +414,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _js_product_carousel__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/product-carousel */ "./src/js/product-carousel.js");
 /* harmony import */ var _js_prod_cat_carousel__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./js/prod-cat-carousel */ "./src/js/prod-cat-carousel.js");
 /* harmony import */ var _js_main_product__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./js/main-product */ "./src/js/main-product.js");
+/* harmony import */ var _js_faq_toggle__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./js/faq-toggle */ "./src/js/faq-toggle.js");
+
 
 
 

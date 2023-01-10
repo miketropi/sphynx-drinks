@@ -4,5 +4,6 @@ import './js/rating-rendering';
 import './js/product-carousel'; 
 import './js/prod-cat-carousel'; 
 import './js/main-product';
+import './js/faq-toggle';
 
 initHomeSlider();

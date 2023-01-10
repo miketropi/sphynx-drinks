@@ -38,7 +38,7 @@
                   </svg>
                 </div>
                 <div class="box-info">
-                  <h4 class="box-name">{{ block.settings.name }}</h4>
+                  <h4 class="box-name" style="color: {{ block.settings.text_color }};">{{ block.settings.name }}</h4>
                   <a
                     class="button"
                     href="{{ collectionUrl }}"
@@ -82,6 +82,11 @@
             "label": "Name"
           },
           {
+            "type": "color",
+            "id": "text_color",
+            "label": "Text Color",
+            "default": "#FFFFFF"
+          }, {
             "type": "color",
             "id": "hover_color_background",
             "label": "Hover Color Background",

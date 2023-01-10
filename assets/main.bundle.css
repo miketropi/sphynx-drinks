@@ -154,6 +154,7 @@
 }
 .membership-register-form .footer-heading-text p {
   margin-top: 0;
+  color: white;
 }
 .membership-register-form .__form-container {
   margin-top: 29px;
@@ -238,6 +239,14 @@
   color: #F05123;
 }
 
+.__custom-margin-top {
+  margin-top: -6%;
+}
+
+.__custom-zindex {
+  z-index: 9;
+}
+
 .site-brand__url {
   display: inline-block;
 }
@@ -247,7 +256,7 @@
 }
 
 .site-header {
-  background-color: rgb(var(--color-background));
+  background-color: #F05123;
 }
 
 .site-header__nth1 {
@@ -385,6 +394,7 @@ ul.menu-style-inline li.menu-link:hover > ul {
 }
 .site-footer__inner .footer-col {
   margin-bottom: 1.5em;
+  padding-right: 15px;
 }
 .site-footer__inner .footer-col.__type_membership-form {
   width: 40%;
@@ -406,6 +416,19 @@ ul.menu-style-inline li.menu-link:hover > ul {
 .site-footer__inner .footer-col.__type_vertical-menu h4.__heading-empty, .site-footer__inner .footer-col.__type_footer-socials h4.__heading-empty {
   height: 32px;
   display: block;
+}
+@media (max-width: 1024px) {
+  .site-footer__inner .footer-col {
+    width: 50% !important;
+  }
+  .site-footer__inner .footer-col.__type_vertical-menu, .site-footer__inner .footer-col.__type_footer-socials {
+    width: 30% !important;
+  }
+}
+@media (max-width: 585px) {
+  .site-footer__inner .footer-col.__type_membership-form, .site-footer__inner .footer-col.__type_footer-brand-image {
+    width: 100% !important;
+  }
 }
 .site-footer__copyright {
   padding: 50px 0 60px;
@@ -835,9 +858,7 @@ ul.menu-style-inline li.menu-link:hover > ul {
 }
 .post-template__tag-share .social-sharing__link {
   color: #F05123;
-  transition-property: color;
-  transition-timing-function: ease;
-  transition-duration: var(--duration-default);
+  transition: color var(--duration-default) ease;
 }
 .post-template__tag-share .social-sharing__link .icon {
   margin: 0;
@@ -1274,7 +1295,7 @@ ul.menu-style-inline li.menu-link:hover > ul {
   border-radius: 8px;
 }
 .morden-blog-section .morden-blog__list .post-index-1 .post-item__thumb {
-  height: 715px;
+  height: 748px;
 }
 @media (max-width: 991.98px) {
   .morden-blog-section .morden-blog__list {
@@ -1323,7 +1344,7 @@ ul.menu-style-inline li.menu-link:hover > ul {
 @media (max-width: 768px) {
   .collection-gallery__box-grid .grid-sizer,
   .collection-gallery__box-grid .grid-item {
-    width: 48%;
+    width: 47% !important;
   }
 }
 .collection-gallery__box-grid .box-item {
@@ -1390,7 +1411,7 @@ ul.menu-style-inline li.menu-link:hover > ul {
   margin-bottom: 1em;
 }
 .collection-gallery__box-grid .box-item__inner .box-info a.button {
-  background: #FFC85E;
+  background: #F05123;
   border-radius: 8px;
   border: none;
   font-family: "Montserrat";
@@ -2284,6 +2305,102 @@ ul.menu-style-inline li.menu-link:hover > ul {
   line-height: 95%;
   color: #FFFFFF;
   margin: 0;
+}
+
+.faq-section {
+  position: relative;
+  background-color: #FFFFFF;
+}
+.faq-section .faq__decor-top {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  line-height: 0;
+  transform: translateY(-98%);
+  -webkit-transform: translateY(-98%);
+}
+.faq-section .faq__container {
+  width: 840px;
+  padding: 0 0 67px;
+  margin: 0 auto;
+  max-width: calc(100% - 30px);
+  overflow: hidden;
+}
+.faq-section .faq__title {
+  font-family: "Montserrat";
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 42px;
+}
+.faq-section .faq__list > div:last-child {
+  margin-bottom: 0;
+}
+.faq-section .faq__item {
+  margin-bottom: 30px;
+  border-bottom: 2px solid #F05123;
+}
+.faq-section .faq__item.open .faq__icon {
+  transform: rotate(180deg);
+}
+.faq-section .faq__question {
+  position: relative;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0;
+  color: #F05123;
+  cursor: pointer;
+  padding: 20px 25px 20px 0;
+}
+.faq-section .faq__icon {
+  position: absolute;
+  top: 23px;
+  right: 0;
+  transition: transform var(--duration-default) ease;
+}
+.faq-section .faq__answer {
+  display: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 146%;
+  letter-spacing: 0;
+  color: #8B8B8B;
+  padding-bottom: 50px;
+}
+.faq-section .faq__answer > *:first-child {
+  margin-top: 0;
+}
+.faq-section .faq__answer > *:last-child {
+  margin-bottom: 0;
+}
+.faq-section .faq__rt-item {
+  margin-bottom: 30px;
+}
+.faq-section .faq__rt-question {
+  position: relative;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0;
+  color: #F05123;
+  margin: 0;
+  padding: 20px 0;
+}
+.faq-section .faq__rt-answer {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 146%;
+  letter-spacing: 0;
+  color: #8B8B8B;
+}
+.faq-section .faq__rt-answer > *:first-child {
+  margin-top: 0;
+}
+.faq-section .faq__rt-answer > *:last-child {
+  margin-bottom: 0;
 }
 
 .main-product__inner {
