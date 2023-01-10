@@ -5,6 +5,7 @@
       "settings": {
         "heading": "Non alcoholic drinks blog",
         "description": "The best non alcoholic drinks blog, reviews and recipes",
+        "show_shape_divider": true,
         "padding_top": 80,
         "padding_bottom": 80
       }
@@ -31,7 +32,7 @@
       ],
       "settings": {
         "per_page": 12,
-        "padding_top": 0,
+        "padding_top": 48,
         "padding_bottom": 80
       }
     }

@@ -9,149 +9,126 @@
         "padding_bottom": 36
       }
     },
-    "image-banner": {
-      "type": "image-banner",
-      "blocks": {
-        "image-banner-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "PUB TRIVIA: FAQs",
-            "heading_size": "h0"
-          }
-        },
-        "image-banner-1": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p>Answers to Your Questions<\/p>",
-            "text_size": "typeset2",
-            "secondary_color": false
-          }
-        }
-      },
-      "block_order": [
-        "image-banner-0",
-        "image-banner-1"
-      ],
+    "page-title": {
+      "type": "page-title",
       "settings": {
-        "image": "shopify:\/\/shop_images\/sd-banner-faq.jpg",
-        "image_position": "bottom center",
-        "text_box_position": "middle-center",
-        "text_alignment": "center",
-        "image_ratio": "adapt",
-        "show_text_box": false,
-        "full_width": true,
-        "show_divider": false,
-        "mobile_text_alignment": "center",
-        "mobile_image_ratio": "300px",
-        "stack_images_on_mobile": false,
-        "show_text_below": false,
-        "colors_text": "#ffffff",
-        "colors_overlay": "#a61aff",
-        "colors_overlay_opacity": 0,
-        "padding_top": 0,
-        "padding_bottom": 36
+        "heading": "You’ve got questions? We’ve got answers!",
+        "description": "",
+        "show_shape_divider": true,
+        "padding_top": 80,
+        "padding_bottom": 80
       }
     },
-    "1657282129da015cd4": {
-      "type": "rich-text",
-      "blocks": {
-        "16572821297ca8a085-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "ABOUT SPHYNX",
-            "heading_size": "h1"
-          }
-        },
-        "16572821297ca8a085-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Got questions about Sphynx? Pull up a stool and pour yourself a cold, non-alc beer: we've got all the answers (and a side of banter).<\/p>",
-            "text_size": "typeset2",
-            "secondary_color": false
-          }
-        },
-        "16572821297ca8a085-2": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "16572821297ca8a085-0",
-        "16572821297ca8a085-1",
-        "16572821297ca8a085-2"
-      ],
-      "settings": {
-        "text_alignment": "left",
-        "narrow": true,
-        "show_divider": false,
-        "mobile_text_alignment": "left",
-        "padding_top": 0,
-        "padding_bottom": 36
-      }
-    },
-    "faq": {
+    "faq-0": {
       "type": "faq",
       "blocks": {
         "question-0": {
           "type": "question",
           "settings": {
-            "title": "Are there options to buy custom packages and larger quantities at better prices?",
-            "text": "<p>Absolutely. Reach out our team for a chat about what we can offer your business or group–we can craft custom packages for end of year or special occasion gifting, source niche products, or offer gift cards and delivery options. <\/p>"
+            "title": "Dolor eget habitant non volutpat?",
+            "text": "<p>Because a cat is chilled out and laid-back, with a no-stress attitude and a commitment to finer things in life. Because a cat is confident in its own skin (or fur), happy to run its own race and curious about doing things a little differently. And because when you're choosing non-alc drinks, whether it's every once in a while or as a permanent change, there's no more hair of the dog–it's about the good times, enjoying the moment, and not regretting it the next day.<\/p>"
           }
         },
         "question-1": {
           "type": "question",
           "settings": {
-            "title": "How long does delivery take?",
-            "text": "<p>You can see the precise delivery schedule at checkout, but it’s usually less than a few days.<\/p>"
+            "title": "Mauris purus etiam in consectetur tempus?",
+            "text": "<p>Because a cat is chilled out and laid-back, with a no-stress attitude and a commitment to finer things in life. Because a cat is confident in its own skin (or fur), happy to run its own race and curious about doing things a little differently. And because when you're choosing non-alc drinks, whether it's every once in a while or as a permanent change, there's no more hair of the dog–it's about the good times, enjoying the moment, and not regretting it the next day.<\/p>"
           }
         },
         "question-2": {
           "type": "question",
           "settings": {
-            "title": "Where do you deliver?",
-            "text": "<p>Anywhere in Australia!<\/p>"
+            "title": "Facilisis commodo vulputate justo?",
+            "text": "<p>Because a cat is chilled out and laid-back, with a no-stress attitude and a commitment to finer things in life. Because a cat is confident in its own skin (or fur), happy to run its own race and curious about doing things a little differently. And because when you're choosing non-alc drinks, whether it's every once in a while or as a permanent change, there's no more hair of the dog–it's about the good times, enjoying the moment, and not regretting it the next day.<\/p>"
           }
         },
         "question-3": {
           "type": "question",
           "settings": {
-            "title": "Do non-alcoholic drinks contain anytime alcohol?",
-            "text": "<p>Some do, and some don’t. All of our offering falls under the legal category of non-alcoholic drinks, but there may still be a small amount of alcohol in some (less than 0.5%), due to the fermentation process of creating some beers and wines. You’ll be able to see these precise alcohol amounts on each product. Because most of our range is still marketed and branded in a similar way to alcohol brands, they’re not suitable for children.<\/p>"
+            "title": "Et phasellus a maecenas nam arcu eu habitant adipiscing?",
+            "text": "<p>Because a cat is chilled out and laid-back, with a no-stress attitude and a commitment to finer things in life. Because a cat is confident in its own skin (or fur), happy to run its own race and curious about doing things a little differently. And because when you're choosing non-alc drinks, whether it's every once in a while or as a permanent change, there's no more hair of the dog–it's about the good times, enjoying the moment, and not regretting it the next day.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "question-0",
+        "question-1",
+        "question-2",
+        "question-3"
+      ],
+      "settings": {
+        "heading": "Product and IngredIents",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "faq-1": {
+      "type": "faq",
+      "blocks": {
+        "question-0": {
+          "type": "question",
+          "settings": {
+            "title": "Mauris purus etiam in consectetur tempus?",
+            "text": "<p>Because a cat is chilled out and laid-back, with a no-stress attitude and a commitment to finer things in life. Because a cat is confident in its own skin (or fur), happy to run its own race and curious about doing things a little differently. And because when you're choosing non-alc drinks, whether it's every once in a while or as a permanent change, there's no more hair of the dog–it's about the good times, enjoying the moment, and not regretting it the next day.<\/p>"
+          }
+        },
+        "question-1": {
+          "type": "question",
+          "settings": {
+            "title": "Facilisis commodo vulputate justo?",
+            "text": "<p>Because a cat is chilled out and laid-back, with a no-stress attitude and a commitment to finer things in life. Because a cat is confident in its own skin (or fur), happy to run its own race and curious about doing things a little differently. And because when you're choosing non-alc drinks, whether it's every once in a while or as a permanent change, there's no more hair of the dog–it's about the good times, enjoying the moment, and not regretting it the next day.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "question-0",
+        "question-1",
+        "question-2",
+        "question-3"
+      ],
+      "settings": {
+        "heading": "Orders and Shipping",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "faq-2": {
+      "type": "faq",
+      "blocks": {
+        "question-0": {
+          "type": "question",
+          "settings": {
+            "title": "Mauris purus etiam in consectetur tempus?",
+            "text": "<p>Because a cat is chilled out and laid-back, with a no-stress attitude and a commitment to finer things in life. Because a cat is confident in its own skin (or fur), happy to run its own race and curious about doing things a little differently. And because when you're choosing non-alc drinks, whether it's every once in a while or as a permanent change, there's no more hair of the dog–it's about the good times, enjoying the moment, and not regretting it the next day.<\/p>"
+          }
+        },
+        "question-1": {
+          "type": "question",
+          "settings": {
+            "title": "Facilisis commodo vulputate justo?",
+            "text": "<p>Because a cat is chilled out and laid-back, with a no-stress attitude and a commitment to finer things in life. Because a cat is confident in its own skin (or fur), happy to run its own race and curious about doing things a little differently. And because when you're choosing non-alc drinks, whether it's every once in a while or as a permanent change, there's no more hair of the dog–it's about the good times, enjoying the moment, and not regretting it the next day.<\/p>"
+          }
+        },
+        "question-2": {
+          "type": "question",
+          "settings": {
+            "title": "Commodo pellentesque pharetra arcu dui blandit?",
+            "text": "<p>Because a cat is chilled out and laid-back, with a no-stress attitude and a commitment to finer things in life. Because a cat is confident in its own skin (or fur), happy to run its own race and curious about doing things a little differently. And because when you're choosing non-alc drinks, whether it's every once in a while or as a permanent change, there's no more hair of the dog–it's about the good times, enjoying the moment, and not regretting it the next day.<\/p>"
+          }
+        },
+        "question-3": {
+          "type": "question",
+          "settings": {
+            "title": "Viverra sem non viverra quam adipiscing dignissim?",
+            "text": "<p>Because a cat is chilled out and laid-back, with a no-stress attitude and a commitment to finer things in life. Because a cat is confident in its own skin (or fur), happy to run its own race and curious about doing things a little differently. And because when you're choosing non-alc drinks, whether it's every once in a while or as a permanent change, there's no more hair of the dog–it's about the good times, enjoying the moment, and not regretting it the next day.<\/p>"
           }
         },
         "question-4": {
           "type": "question",
           "settings": {
-            "title": "I’ve got questions about the range or service - who can I speak to?",
-            "text": "<p>Reach out to our Customer Service team and we’ll talk you through anything you want to know, from our range to our delivery timings. <\/p>"
-          }
-        },
-        "question-5": {
-          "type": "question",
-          "settings": {
-            "title": "Why the cat?",
+            "title": "Duis aliquam egestas amet montes faucibus?",
             "text": "<p>Because a cat is chilled out and laid-back, with a no-stress attitude and a commitment to finer things in life. Because a cat is confident in its own skin (or fur), happy to run its own race and curious about doing things a little differently. And because when you're choosing non-alc drinks, whether it's every once in a while or as a permanent change, there's no more hair of the dog–it's about the good times, enjoying the moment, and not regretting it the next day.<\/p>"
-          }
-        },
-        "d08db08a-02c1-4f83-bc0f-de3ded507ced": {
-          "type": "question",
-          "settings": {
-            "title": "Who should buy non-alcoholic drinks?",
-            "text": "<p>Anyone who wants to! Sphynx is a no-judgement space, so whether you’ve never drunk, you’re cutting back or throwing in the towel completely, you’re welcome at our table. We would say that if there are medical reasons for avoiding alcohol, you should speak to a professional about whether our range is right for you.<\/p>"
-          }
-        },
-        "03d60e82-72ff-4114-b9c5-ae8cc2264efc": {
-          "type": "question",
-          "settings": {
-            "title": "Are you locally owned?",
-            "text": "<p>We’re 100% Australian owned and operated. We were founded by three mates who recognised that the non-alcoholic drinks industry wasn’t being looked after by the big boys in liquor - they tend to shove a limited range in to a dusty corner of the furthest fridge. We wanted to create a place where anyone can find a huge, fun range of drinks, from non-alc beers to spirits, ciders and more.<\/p>"
           }
         }
       },
@@ -160,173 +137,10 @@
         "question-1",
         "question-2",
         "question-3",
-        "question-4",
-        "question-5",
-        "d08db08a-02c1-4f83-bc0f-de3ded507ced",
-        "03d60e82-72ff-4114-b9c5-ae8cc2264efc"
+        "question-4"
       ],
       "settings": {
-        "heading": "",
-        "heading_size": "h2",
-        "narrow": true,
-        "secondary_background": false,
-        "show_divider": false,
-        "padding_top": 16,
-        "padding_bottom": 36
-      }
-    },
-    "16612431893896c368": {
-      "type": "faq",
-      "disabled": true,
-      "blocks": {
-        "1661243189531583d8-0": {
-          "type": "question",
-          "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
-          }
-        },
-        "1661243189531583d8-1": {
-          "type": "question",
-          "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "1661243189531583d8-0",
-        "1661243189531583d8-1"
-      ],
-      "settings": {
-        "heading": "FAQs",
-        "heading_size": "h2",
-        "narrow": true,
-        "secondary_background": false,
-        "show_divider": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "rich-text-0": {
-      "type": "rich-text",
-      "blocks": {
-        "rich-text-0-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "CAN'T FIND WHAT YOU'RE LOOKING FOR?",
-            "heading_size": "h2"
-          }
-        },
-        "rich-text-0-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Don't stress: our expert Customer Service team is ready for a chin wag if you've got any questions. Email <a href=\"mailto:hello@sphynxdrinks.com.au\" title=\"mailto:hello@sphynxdrinks.com.au\">hello@sphynxdrinks.com.au<\/a> for more info.<\/p>",
-            "text_size": "typeset",
-            "secondary_color": false
-          }
-        }
-      },
-      "block_order": [
-        "rich-text-0-0",
-        "rich-text-0-1"
-      ],
-      "settings": {
-        "text_alignment": "left",
-        "narrow": true,
-        "show_divider": false,
-        "mobile_text_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "rich-text-1": {
-      "type": "rich-text",
-      "blocks": {
-        "rich-text-1-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Other inquiries? Let's chat.",
-            "heading_size": "h2"
-          }
-        },
-        "rich-text-1-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Visit out <a href=\"\/pages\/contact\" title=\"Contact\">Contact<\/a> Page<\/p>",
-            "text_size": "typeset",
-            "secondary_color": false
-          }
-        }
-      },
-      "block_order": [
-        "rich-text-1-0",
-        "rich-text-1-1"
-      ],
-      "settings": {
-        "text_alignment": "left",
-        "narrow": true,
-        "show_divider": false,
-        "mobile_text_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 72
-      }
-    },
-    "165638421589e923b0": {
-      "type": "multicolumn",
-      "blocks": {
-        "165638421581304a7f-0": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/sd-main-banner-about.jpg",
-            "title": "ABOUT SPHYNX",
-            "title_size": "h3",
-            "text": "<p>Find out more about the cool cats at Sphynx Drinks and hear how it purred to life.<\/p>",
-            "button_label": "Read More",
-            "button_link": "shopify:\/\/pages\/our-story",
-            "button_style_secondary": false
-          }
-        },
-        "165638421581304a7f-1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/sd-banner-home-1.jpg",
-            "title": "FIND YOUR FLAVOUR",
-            "title_size": "h3",
-            "text": "<p>We've scoured the world for the best brands and styles. Discover the biggest and most thoughtfully-curated range in non alc drinks.<\/p>",
-            "button_label": "Shop Now",
-            "button_link": "shopify:\/\/collections\/all",
-            "button_style_secondary": false
-          }
-        },
-        "165638421581304a7f-2": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/sd-main-banner-con.jpg",
-            "title": "CONTACT THE CAT",
-            "title_size": "h3",
-            "text": "<p>Reach out to us to get advice on our range, partner with us or chinway about all things Sphynx.<br\/><\/p>",
-            "button_label": "Contact",
-            "button_link": "shopify:\/\/pages\/contact",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "165638421581304a7f-0",
-        "165638421581304a7f-1",
-        "165638421581304a7f-2"
-      ],
-      "settings": {
-        "heading": "Sphynx Drinks",
-        "heading_size": "h1",
-        "image_ratio": "landscape",
-        "image_position": "center center",
-        "text_alignment": "center",
-        "show_divider": false,
-        "mobile_text_alignment": "left",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
+        "heading": "Returns and Exchanges",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -334,12 +148,9 @@
   },
   "order": [
     "main",
-    "image-banner",
-    "1657282129da015cd4",
-    "faq",
-    "16612431893896c368",
-    "rich-text-0",
-    "rich-text-1",
-    "165638421589e923b0"
+    "page-title",
+    "faq-0",
+    "faq-1",
+    "faq-2"
   ]
 }

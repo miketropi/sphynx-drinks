@@ -13,11 +13,6 @@
 {%- endstyle -%}
 
 <div class="single-post-section section-{{ section.id }}-padding">
-  <div class="single-post__decor-top">
-    <svg viewBox="0 0 1920 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 58.2454H53C107 58.2454 213 58.2454 320 46.7262C427 35.2069 533 12.1684 640 16.1406C747 20.1127 853 50.3011 960 54.2733C1067 58.2454 1173 35.2069 1280 20.1127C1387 4.62132 1493 -2.92577 1600 1.04638C1707 4.62132 1813 20.1127 1867 27.6598L1920 35.2069V149.605H1867C1813 149.605 1707 149.605 1600 149.605C1493 149.605 1387 149.605 1280 149.605C1173 149.605 1067 149.605 960 149.605C853 149.605 747 149.605 640 149.605C533 149.605 427 149.605 320 149.605C213 149.605 107 149.605 53 149.605H0V58.2454Z" fill="white"/>
-    </svg>      
-  </div>
   <div class="single-post__container">
     <div class="single-post__wrap">
       {%- for block in section.blocks -%}
@@ -107,19 +102,19 @@
         "id": "padding_top",
         "min": 0,
         "max": 100,
-        "step": 5,
+        "step": 4,
         "unit": "t:sections.all.padding.padding_top.unit",
         "label": "t:sections.all.padding.padding_top.label",
-        "default": 0
+        "default": 36
       }, {
         "type": "range",
         "id": "padding_bottom",
         "min": 0,
         "max": 100,
-        "step": 5,
+        "step": 4,
         "unit": "t:sections.all.padding.padding_bottom.unit",
         "label": "t:sections.all.padding.padding_bottom.label",
-        "default": 80
+        "default": 36
       }
     ],
     "blocks": [

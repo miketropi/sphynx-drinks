@@ -1,0 +1,90 @@
+.morden-blog-section {
+    position: relative;
+    background: #FFFFFF;
+    .morden-blog {
+        &__container {
+            width: var(--site-container-width);
+            padding: 0;
+            margin: 0 auto;
+            max-width: calc(100% - 30px);
+            overflow: hidden;
+        }
+        &__title {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 36px;
+            line-height: 95%;
+            letter-spacing: 0;
+            text-transform: uppercase;
+            text-align: center;
+            color: #000000;
+            margin: 0 0 80px;
+        }
+        &__list {
+            display: grid;
+            grid-template-areas:
+                'myArea . .'
+                'myArea . .';
+            grid-gap: 40px;
+            .post-index-1 {
+                grid-area: myArea;
+            }
+            @extend .__post_item_style;
+            .post-item {
+                &__title {
+                    overflow: hidden;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 1;
+                }
+                &__thumb {
+                    height: 230px;
+                    padding-bottom: 0;
+                    border-radius: 8px;
+                }
+                &__excerpt {
+                    overflow: hidden;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 3;
+                }
+                &__read {
+                    margin-top: 30px;
+                    .read-link-btn {
+                        padding: 20px 30px;
+                        border-radius: 8px;
+                    }
+                }
+            }
+            .post-index-1 .post-item {
+                &__thumb {
+                    height: 748px;
+                }
+            }
+        }
+    }
+    @media(max-width: 991.98px) {
+        .morden-blog {
+            &__list {
+                grid-template-areas:
+                'myArea . '
+                'myArea . '
+                '. .';
+            }
+        }
+    }
+    @media(max-width: 767.98px) {
+        .morden-blog {
+            &__list {
+                grid-template-areas:
+                'myArea'
+                'myArea'
+                '.'
+                '.'
+                '.'
+                '.';
+            }
+        }
+    }
+}
