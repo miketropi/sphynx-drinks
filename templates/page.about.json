@@ -253,7 +253,7 @@
             "image": "shopify:\/\/shop_images\/c2.jpg",
             "name": "non-alcoholic cider",
             "text_color": "#FFFFFF",
-            "hover_color_background": "#F05123",
+            "hover_color_background": "#000000",
             "redirect_url": "",
             "box_size": "size_2",
             "custom_class": ""
@@ -266,7 +266,7 @@
             "image": "shopify:\/\/shop_images\/c5.jpg",
             "name": "non-alcoholic spirits",
             "text_color": "#FFFFFF",
-            "hover_color_background": "#F05123",
+            "hover_color_background": "#000000",
             "redirect_url": "",
             "box_size": "size_1",
             "custom_class": ""
@@ -279,7 +279,7 @@
             "image": "shopify:\/\/shop_images\/c3.jpg",
             "name": "tonic and soda",
             "text_color": "#FFFFFF",
-            "hover_color_background": "#F05123",
+            "hover_color_background": "#000000",
             "redirect_url": "",
             "box_size": "size_1",
             "custom_class": ""
@@ -292,7 +292,7 @@
             "image": "shopify:\/\/shop_images\/c6.jpg",
             "name": "mixers",
             "text_color": "#FFFFFF",
-            "hover_color_background": "#F05123",
+            "hover_color_background": "#000000",
             "redirect_url": "",
             "box_size": "size_1",
             "custom_class": ""
@@ -305,7 +305,7 @@
             "image": "shopify:\/\/shop_images\/c7.jpg",
             "name": "premixed",
             "text_color": "#FFFFFF",
-            "hover_color_background": "#F05123",
+            "hover_color_background": "#000000",
             "redirect_url": "",
             "box_size": "size_1",
             "custom_class": ""
