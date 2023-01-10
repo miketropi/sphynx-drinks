@@ -9,6 +9,15 @@
         "padding_bottom": 72
       }
     },
+    "d8d0dede-fdf0-499d-b970-2a0d859e7634": {
+      "type": "page-title",
+      "settings": {
+        "heading": "GOOD TIMES ANDDELICIOUS DRINKS",
+        "description": "",
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
     "rich-text-0": {
       "type": "rich-text",
       "blocks": {
@@ -84,6 +93,7 @@
   },
   "order": [
     "main",
+    "d8d0dede-fdf0-499d-b970-2a0d859e7634",
     "rich-text-0",
     "image-with-text-0"
   ]
