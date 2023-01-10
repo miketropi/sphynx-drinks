@@ -21,35 +21,39 @@
     "rich-text-0": {
       "type": "rich-text",
       "blocks": {
-        "a7486cc0-c460-4593-9835-1a0dc2bf33de": {
-          "type": "heading",
-          "settings": {
-            "heading": "GOOD TIMES & DELICIOUS DRINKS",
-            "font_size": 36,
-            "font_family": "Flavory Display",
-            "font_weight": "900"
-          }
-        },
         "text": {
           "type": "text",
           "settings": {
             "text": "<p>Sphynx drinks is all about enjoying the moment, without ruining the next day. Our carefully-curated selection of drinks, ranging from crisp craft beers to local drops of booze-free wine, shows there's never been a better time to ditch the hair of the dog and join the non-alc party.<\/p>",
-            "text_size": "typeset2",
+            "text_size": "typeset3",
             "secondary_color": false
           }
         }
       },
       "block_order": [
-        "a7486cc0-c460-4593-9835-1a0dc2bf33de",
         "text"
       ],
       "settings": {
-        "text_alignment": "left",
-        "narrow": true,
+        "text_alignment": "center",
+        "narrow": false,
         "show_divider": false,
-        "mobile_text_alignment": "left",
+        "mobile_text_alignment": "center",
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "98375ad3-b370-4f79-bf9e-e5f23eebf64d": {
+      "type": "section-cta",
+      "settings": {
+        "layout": "default",
+        "heading": "no more hair of the dog",
+        "font_size": 48,
+        "bg_color": "#FFC85E",
+        "padding_top": 124,
+        "padding_bottom": 124,
+        "padding_top_mobile": 60,
+        "padding_bottom_mobile": 60,
+        "custom_class": ""
       }
     },
     "image-with-text-0": {
@@ -95,6 +99,7 @@
     "main",
     "d8d0dede-fdf0-499d-b970-2a0d859e7634",
     "rich-text-0",
+    "98375ad3-b370-4f79-bf9e-e5f23eebf64d",
     "image-with-text-0"
   ]
 }
