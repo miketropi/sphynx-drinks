@@ -308,7 +308,7 @@
             "hover_color_background": "#000000",
             "redirect_url": "",
             "box_size": "size_1",
-            "custom_class": ""
+            "custom_class": "__fix-design"
           }
         }
       },
