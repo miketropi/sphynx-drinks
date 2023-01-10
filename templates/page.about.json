@@ -190,7 +190,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/Group_593_09c3d022-0927-45a2-84cf-d27a62e6f357.png",
         "image_position": "center center",
-        "layout": "image_first",
+        "layout": "text_first",
         "text_box_position": "middle",
         "text_alignment": "left",
         "image_ratio": "550px",
@@ -201,6 +201,21 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "a54a2eea-6008-4bfb-abb4-f1d72f9f56f3": {
+      "type": "product-carousel",
+      "settings": {
+        "heading": "the best sellers",
+        "heading_color": "#000000",
+        "redirect_label": "VIEW ALL",
+        "redirect_url": "#",
+        "collection": "beer-and-cider",
+        "limit_number": 6,
+        "background_color": "#FFC85E",
+        "spacing_top": "3em",
+        "spacing_bottom": "4em",
+        "constom_class": ""
+      }
     }
   },
   "order": [
@@ -210,6 +225,7 @@
     "98375ad3-b370-4f79-bf9e-e5f23eebf64d",
     "d5e67535-7d0b-451a-9b92-ab71777b1e83",
     "2b209d02-e655-4ad4-b80b-b87b90e69463",
-    "image-with-text-0"
+    "image-with-text-0",
+    "a54a2eea-6008-4bfb-abb4-f1d72f9f56f3"
   ]
 }
