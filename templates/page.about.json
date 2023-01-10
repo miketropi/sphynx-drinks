@@ -35,7 +35,7 @@
       ],
       "settings": {
         "text_alignment": "center",
-        "narrow": true,
+        "narrow": false,
         "show_divider": false,
         "mobile_text_alignment": "center",
         "padding_top": 36,
