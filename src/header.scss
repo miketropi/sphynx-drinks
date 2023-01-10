@@ -23,6 +23,10 @@
 
 .site-header__extra-tools {
   margin-left: auto;
+
+  .header-extra-tools__item {
+    position: relative;
+  }
 }
 
 .site-header__brand {
