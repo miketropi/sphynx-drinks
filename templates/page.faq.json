@@ -4,7 +4,6 @@
       "type": "main-page",
       "disabled": true,
       "settings": {
-        "narrow": true,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -83,9 +82,7 @@
       },
       "block_order": [
         "question-0",
-        "question-1",
-        "question-2",
-        "question-3"
+        "question-1"
       ],
       "settings": {
         "heading": "Orders and Shipping",
@@ -144,6 +141,27 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "1a4b3c54-0f8b-4100-aa37-45783877fc32": {
+      "type": "section-cta",
+      "settings": {
+        "layout": "default",
+        "heading": "More questions? Send us a note",
+        "font_size": 16,
+        "font_family": "Montserrat",
+        "font_weight": "900",
+        "heading_color": "#000",
+        "image_left": "shopify:\/\/shop_images\/Group_628.png",
+        "image_right": "shopify:\/\/shop_images\/Group_629.png",
+        "bg_color": "#FFC85E",
+        "btn_label": "Contact Us",
+        "button_link": "shopify:\/\/pages\/contact",
+        "padding_top": 124,
+        "padding_bottom": 124,
+        "padding_top_mobile": 60,
+        "padding_bottom_mobile": 0,
+        "custom_class": ""
+      }
     }
   },
   "order": [
@@ -151,6 +169,7 @@
     "page-title",
     "faq-0",
     "faq-1",
-    "faq-2"
+    "faq-2",
+    "1a4b3c54-0f8b-4100-aa37-45783877fc32"
   ]
 }
