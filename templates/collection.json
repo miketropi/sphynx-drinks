@@ -23,15 +23,19 @@
           "type": "heading",
           "settings": {
             "heading": "NON-ALCOHOLIC BEER",
-            "heading_size": "h0"
+            "font_size": 36,
+            "font_family": "Montserrat",
+            "font_weight": "900",
+            "heading_color": "#000"
           }
         },
         "template--16656684155108__b024aa67-a57b-48a2-97a6-e7868636c099-167299139468bdb5ef-1": {
           "type": "text",
           "settings": {
             "text": "<p>At integer egestas mi aliquam sapien tempus eget eget. Pellentesque egestas diam pulvinar mauris eu ultricies feugiat eu. Facilisis adipiscing ultrices facilisi tellus ipsum euismod ut a. Semper amet in mauris cras elementum aliquam facilisi viverra a. Non non donec id nibh ornare vitae arcu. Semper mi tempus ac aliquam cursus pharetra. Vitae ultrices sed id mi diam. Quam ac tincidunt id aliquet phasellus est tristique nisl at. Viverra justo praesent consectetur tellus nunc donec dignissim molestie. Maecenas mattis ultricies non viverra fermentum. Faucibus dolor in feugiat at varius interdum orci accumsan. Aliquam pellentesque a eget mi volutpat scelerisque a arcu.<\/p>",
-            "text_size": "typeset2",
-            "secondary_color": false
+            "font_size": 16,
+            "font_weight": "400",
+            "desc_color": "#000"
           }
         }
       },
