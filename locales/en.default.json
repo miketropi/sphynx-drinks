@@ -401,7 +401,7 @@
       "guest_title": "Continue as a guest",
       "password": "Password",
       "title": "Login",
-      "sign_in": "Sign in",
+      "sign_in": "Login",
       "submit": "Submit",
       "dont_have_account": "Don't have an account yet?",
       "return": "Return to Store"
@@ -452,7 +452,7 @@
       "last_name": "Last name",
       "email": "Email",
       "password": "Password",
-      "submit": "Create",
+      "submit": "Register",
       "return": "Return to Store"
     },
     "reset_password": {

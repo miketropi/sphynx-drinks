@@ -7,39 +7,47 @@
       {%- if form.errors contains 'form' -%}
         <div class="form__message errors" tabindex="-1" autofocus>
           {% render 'icon', icon: 'error' %}
-          <div class="rte">{{ form.errors.messages['form'] }}</div>
+          <div class="rte">{{ form.errors.messages.form }}</div>
         </div>
       {%- endif -%}
-      <div class="field">      
-        <input
-          type="text"
-          name="customer[first_name]"
-          id="RegisterForm-FirstName"
-          {% if form.first_name %}value="{{ form.first_name }}"{% endif %}
-          autocomplete="given-name"
-          placeholder="{{ 'customer.register.first_name' | t }}"
-        >
-        <label class="visually-hidden" for="RegisterForm-FirstName">{{ 'customer.register.first_name' | t }}</label>
+      <div class="field-name">
+        <div class="field field-first_name">
+          <input
+            type="text"
+            name="customer[first_name]"
+            id="RegisterForm-FirstName"
+            {% if form.first_name %}
+              value="{{ form.first_name }}"
+            {% endif %}
+            autocomplete="given-name"
+            placeholder="{{ 'customer.register.first_name' | t }}"
+          >
+          <label class="visually-hidden" for="RegisterForm-FirstName">{{ 'customer.register.first_name' | t }}</label>
+        </div>
+        <div class="field field-last_name">
+          <input
+            type="text"
+            name="customer[last_name]"
+            id="RegisterForm-LastName"
+            {% if form.last_name %}
+              value="{{ form.last_name }}"
+            {% endif %}
+            autocomplete="family-name"
+            placeholder="{{ 'customer.register.last_name' | t }}"
+          >
+          <label class="visually-hidden" for="RegisterForm-LastName">{{ 'customer.register.last_name' | t }}</label>
+        </div>
       </div>
       <div class="field">
-        <input
-          type="text"
-          name="customer[last_name]"
-          id="RegisterForm-LastName"
-          {% if form.last_name %}value="{{ form.last_name }}"{% endif %}
-          autocomplete="family-name"
-          placeholder="{{ 'customer.register.last_name' | t }}"
-        >
-        <label class="visually-hidden" for="RegisterForm-LastName">{{ 'customer.register.last_name' | t }}</label>
-      </div>
-      <div class="field">      
         <input
           required="required"
           class="required{% if form.errors contains 'email' %} invalid{% endif %}"
           type="email"
           name="customer[email]"
           id="RegisterForm-email"
-          {% if form.email %} value="{{ form.email }}"{% endif %}
+          {% if form.email %}
+            value="{{ form.email }}"
+          {% endif %}
           spellcheck="false"
           autocapitalize="off"
           autocomplete="email"
@@ -55,10 +63,11 @@
       {%- if form.errors contains 'email' -%}
         <span id="RegisterForm-email-error" class="form__message errors">
           {% render 'icon', icon: 'error' %}
-          {{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}.
+          {{ form.errors.translated_fields.email | capitalize }}
+          {{ form.errors.messages.email }}.
         </span>
       {%- endif -%}
-      <div class="field">     
+      <div class="field">
         <input
           required="required"
           class="required{% if form.errors contains 'password' %} invalid{% endif %}"
@@ -77,17 +86,22 @@
       {%- if form.errors contains 'password' -%}
         <span id="RegisterForm-password-error" class="form__message errors">
           {% render 'icon', icon: 'error' %}
-          {{ form.errors.translated_fields['password'] | capitalize }} {{ form.errors.messages['password'] }}.
+          {{ form.errors.translated_fields.password | capitalize }}
+          {{ form.errors.messages.password }}.
         </span>
       {%- endif -%}
 
       <button class="button" type="submit">
         {{ 'customer.register.submit' | t }}
+        <span class="button-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 12H19" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 5L19 12L12 19" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
       </button>
 
-      <a class="link link--underline" href="{{ routes.root_url }}">
-        {{ 'customer.register.return' | t }}
-      </a>
+      <a class="link link-recover-pw link-recover-register" href="#recover">{{ 'customer.login_page.forgot_password' | t }}</a>
     {%- endform -%}
   </form-state>
 </div>
