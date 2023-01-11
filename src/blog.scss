@@ -368,6 +368,213 @@
                 }
             }
         }
+
+        .card-wrapper {
+            color: inherit;
+            display: block;
+            position: relative;
+            text-decoration: none;
+            height: 100%;
+            background: #FFFFFF;
+            border: solid 12px transparent;
+            border-radius: 22px;
+            padding: 17px;
+            transition: all 0.5s ease;
+            max-width: 250px;
+            margin: 16px auto;
+            @media (max-width: 1600px) {
+                border: solid 8px transparent;
+                padding: 12px;
+            }
+
+            @media (max-width: 1200px) {}
+
+            &:hover {
+                border: solid 12px #F05123;
+
+                @media (max-width: 1600px) {
+                    border: solid 8px #F05123;
+                    padding: 12px;
+                }
+            }
+            .media-wrapper{
+                background-color: transparent;
+            }
+            .card-article-info {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 10px;
+                line-height: 95% !important;
+                color: #F05123;
+                text-transform: none;
+                margin-bottom: 7px;
+            }
+            .price {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 800;
+                font-size: 16px;
+                line-height: 95%;
+                color: #F05123;
+                margin-bottom: 20px;
+                .price__sale{
+                    display: none;
+                    
+                }
+                dd{
+                    margin: 0;
+                }
+                price-money+price-money::before {
+                    content: '\2013';
+                    margin-inline-end: 0.7rem;
+                }
+            }
+            .media {
+                padding: 0;
+                height: 324px;
+                margin-bottom: 30px;
+                background-color: transparent;
+                @media (max-width: 1600px) {
+                    height: 234px;
+                }
+                img{
+                    object-fit:cover;
+                }
+            }
+
+            .card-information {
+                min-height: calc(100% - 324px);
+                padding-bottom: 40px;
+
+                @media (max-width: 1600px) {
+                    min-height: calc(100% - 234px);
+                }
+                .card-information__text {
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 800;
+                    font-size: 16px;
+                    line-height: 120% !important;
+                    text-decoration: none;
+                    display: block;
+                    text-transform: uppercase;
+                    color: #F05123;
+                    margin-bottom: 7px;
+                }
+                .card-information__button {
+                    left: 17px;
+                    bottom: 17px;
+                    position: absolute;
+                    @media (max-width: 1600px) {
+                        bottom: 12px;
+                        left: 12px;
+                    }
+                    .button {
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 900;
+                        font-size: 16px;
+                        line-height: 95%;
+                        color: #FFFFFF !important;
+                        background: #F05123;
+                        border-radius: 8px;
+                        padding: 10px 25px;
+                        border: 1px solid #F05123;
+                        min-width: auto;
+                        text-transform: none;
+                        letter-spacing: normal;
+
+                        @media (max-width: 1200px) {
+                            font-size: 14px;
+                            padding: 10px 15px;
+                        }
+
+                        &:hover {
+                            color: #F05123 !important;
+                        }
+                    }
+
+                }
+
+                .button--soldout {
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 16px;
+                    line-height: 95%;
+                    color: #F05123;
+                    border: 1px solid #F05123;
+                    border-radius: 8px;
+                    padding: 11px 25px;
+                    text-transform: none;
+                    letter-spacing: normal;
+                    background-color: white !important;
+                    min-width: auto;
+                    opacity: 1;
+                    position: absolute;
+                    bottom: 17px;
+                    left: 17px;
+
+                    @media (max-width: 1600px) {
+                        bottom: 12px;
+                        left: 12px;
+                    }
+
+                    @media (max-width: 1200px) {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .rating {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 10px;
+                line-height: 95%;
+                color: #F05123;
+                margin-bottom: 20px;
+            }
+
+            .rating-star {
+                --letter-spacing: 0.3;
+                --font-size: 1.5;
+                --percent: calc((var(--rating) / var(--rating-max) + var(--rating-decimal) * var(--font-size) / (var(--rating-max) * (var(--letter-spacing) + var(--font-size)))) * 100%);
+                letter-spacing: calc(var(--letter-spacing) * 1rem);
+                font-size: calc(var(--font-size) * 1rem);
+                line-height: 1;
+                display: inline-block;
+                font-family: Times;
+                margin: 0;
+            }
+
+            .rating-star::before {
+                /* content: '\2605\2605\2605\2605\2605';
+                background: linear-gradient(90deg, var(--color-reviews) var(--percent), rgba(var(--color-foreground), 0.15) var(--percent));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent; */
+            }
+
+            .rating-text {
+                display: none;
+            }
+
+            .rating-count {
+                display: none;
+                margin: 0;
+            }
+
+            @media (forced-colors: active) {
+                .rating {
+                    display: none;
+                }
+
+                .rating-text {
+                    display: block;
+                }
+            }
+        }
     }
     &__tag-share {
         display: flex;

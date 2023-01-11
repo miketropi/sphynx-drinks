@@ -31,6 +31,14 @@
         }
         &__form {
             width: 50%;
+            .form-status-list {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 146%;
+                letter-spacing: 0;
+                color: #4bb543;
+                margin: 0 0 30px;
+            }
             .field {
                 margin-bottom: 20px;
                 &__input {
@@ -38,6 +46,7 @@
                     font-weight: 400;
                     font-size: 16px;
                     line-height: 146%;
+                    letter-spacing: 0;
                     color: #8B8B8B;
                     background: #F0F0F0;
                     padding: 26px 32px;
@@ -61,7 +70,6 @@
                 color: #FFFFFF;
                 background: #F05123;
                 cursor: pointer;
-                margin-bottom: 60px;
                 padding: 25px 60px;
                 border: none;
                 border-radius: 12px;
@@ -176,6 +184,20 @@
             justify-content: space-between;
             .field {
                 width: calc(50% - 10px);
+            }
+        }
+    }
+    @media(max-width: 991.98px) {
+        .contact {
+            &__wrap {
+                flex-direction: column;
+            }
+            &__infor {
+                width: 100%;
+                margin-bottom: 60px;
+            }
+            &__form {
+                width: 100%;
             }
         }
     }

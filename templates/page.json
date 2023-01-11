@@ -3,9 +3,8 @@
     "main": {
       "type": "main-page",
       "settings": {
-        "narrow": true,
-        "padding_top": 60,
-        "padding_bottom": 72
+        "padding_top": 80,
+        "padding_bottom": 80
       }
     }
   },
