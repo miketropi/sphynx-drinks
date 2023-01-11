@@ -5,5 +5,6 @@ import './js/product-carousel';
 import './js/prod-cat-carousel'; 
 import './js/main-product';
 import './js/faq-toggle';
+import './js/minicart';
 
 initHomeSlider();

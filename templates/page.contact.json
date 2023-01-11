@@ -1,49 +1,5 @@
 {
   "sections": {
-    "image-banner": {
-      "type": "image-banner",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Contact Us",
-            "heading_size": "h0"
-          }
-        },
-        "text": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p>Questions? Comments? Let your customers get in touch with you by filling out the email form below.<\/p>",
-            "text_size": "typeset3",
-            "secondary_color": false
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/sd-main-banner-con.jpg",
-        "image_position": "bottom center",
-        "text_box_position": "middle-center",
-        "text_alignment": "center",
-        "image_ratio": "450px",
-        "show_text_box": false,
-        "full_width": true,
-        "show_divider": false,
-        "mobile_text_alignment": "left",
-        "mobile_image_ratio": "250px",
-        "stack_images_on_mobile": true,
-        "show_text_below": true,
-        "colors_text": "#ffffff",
-        "colors_overlay": "#000000",
-        "colors_overlay_opacity": 0,
-        "padding_top": 0,
-        "padding_bottom": 36
-      }
-    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -53,89 +9,14 @@
         "padding_bottom": 72
       }
     },
-    "166124185556d6ec69": {
-      "type": "rich-text",
-      "blocks": {
-        "16612418558cbad175-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "CONTACT US",
-            "heading_size": "h1"
-          }
-        },
-        "16612418558cbad175-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Questions? Feedback? Want to have a yarn over a cold non-alc beer? Don't hesitate to reach out.<\/p>",
-            "text_size": "typeset2",
-            "secondary_color": false
-          }
-        },
-        "16612418558cbad175-2": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "16612418558cbad175-0",
-        "16612418558cbad175-1",
-        "16612418558cbad175-2"
-      ],
+    "page-title": {
+      "type": "page-title",
       "settings": {
-        "text_alignment": "left",
-        "narrow": true,
-        "show_divider": false,
-        "mobile_text_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "1657281938f52c4780": {
-      "type": "rich-text",
-      "disabled": true,
-      "blocks": {
-        "1657281938a0fbc84c-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Get in touch",
-            "heading_size": "h1"
-          }
-        },
-        "1657281938a0fbc84c-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Questions? Comments? Let your customers get in touch with you by filling out the email form below.<\/p>",
-            "text_size": "typeset",
-            "secondary_color": false
-          }
-        },
-        "1657281938a0fbc84c-2": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "1657281938a0fbc84c-0",
-        "1657281938a0fbc84c-1",
-        "1657281938a0fbc84c-2"
-      ],
-      "settings": {
-        "text_alignment": "left",
-        "narrow": false,
-        "show_divider": false,
-        "mobile_text_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 0
+        "heading": "Contact Us",
+        "description": "",
+        "show_shape_divider": true,
+        "padding_top": 80,
+        "padding_bottom": 80
       }
     },
     "form": {
@@ -143,22 +24,13 @@
       "blocks": {
         "contact-0": {
           "type": "contact",
-          "disabled": true,
-          "settings": {
-            "heading": "Information",
-            "text": "info@yourstore.com",
-            "link": "mailto:info@yourstore.com"
-          }
-        },
-        "contact-1": {
-          "type": "contact",
           "settings": {
             "heading": "Customer service",
             "text": "hello@sphynxdrinks.com.au",
             "link": "mailto:hello@sphynxdrinks.com.au"
           }
         },
-        "contact-2": {
+        "contact-1": {
           "type": "contact",
           "settings": {
             "heading": "Sales",
@@ -166,157 +38,33 @@
             "link": "mailto:drinks@sphynxdrinks.com.au"
           }
         },
-        "contact-3": {
+        "contact-2": {
           "type": "contact",
           "settings": {
             "heading": "Mailing Address",
             "text": "PO Box 412, St Leonards  NSW  1590",
             "link": ""
           }
-        },
-        "media": {
-          "type": "media",
-          "settings": {
-            "heading": "Follow us"
-          }
         }
       },
       "block_order": [
         "contact-0",
         "contact-1",
-        "contact-2",
-        "contact-3",
-        "media"
+        "contact-2"
       ],
       "settings": {
-        "heading": "Let's Chat",
-        "show_phone": true,
-        "show_divider": false,
-        "padding_top": 28,
-        "padding_bottom": 36
-      }
-    },
-    "map": {
-      "type": "map",
-      "disabled": true,
-      "blocks": {
-        "map-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Our Store",
-            "heading_size": "h2"
-          }
-        },
-        "map-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>620 King Street West<br\/>Toronto, ON M5V 1M7, Canada<\/p><p>Mon - Fri, 8:30am - 10:30pm<br\/>Saturday, 8:30am - 10:30pm<br\/>Sunday, 8:30am - 10:30pm<\/p>",
-            "text_size": "typeset",
-            "secondary_color": false
-          }
-        },
-        "map-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "Get directions",
-            "button_link": "",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "map-0",
-        "map-1",
-        "map-2"
-      ],
-      "settings": {
-        "map_address": "620 King Street West Toronto, ON M5V 1M7, Canada",
-        "map_api_key": "",
-        "map_zoom": 14,
-        "map_style": "standard",
-        "image_position": "center center",
-        "text_box_position": "flex-start",
-        "text_alignment": "left",
-        "image_ratio": "550px",
-        "full_width": false,
-        "show_divider": false,
-        "mobile_text_box_position": "image_first",
-        "mobile_text_alignment": "left",
-        "mobile_image_ratio": "auto",
-        "colors_text": "#212326",
-        "colors_overlay": "#f3f3f3",
-        "colors_overlay_opacity": 92,
+        "heading": "Get in Touch",
+        "description": "Questions? Feedback? Want to have a yarn over a cold non-alc beer? Don't hesitate to reach out.",
+        "button_text": "Read FAQs",
+        "button_link": "/pages/faq",
         "padding_top": 36,
-        "padding_bottom": 0
-      }
-    },
-    "165691626751c02520": {
-      "type": "multicolumn",
-      "blocks": {
-        "16569162679171fc75-0": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/sd-main-banner-about.jpg",
-            "title": "ABOUT SPHYNX",
-            "title_size": "h3",
-            "text": "<p>Find out more about the cool cats at Sphynx Drinks and hear how it purred to life.<\/p>",
-            "button_label": "READ MORE",
-            "button_link": "shopify:\/\/pages\/our-story",
-            "button_style_secondary": false
-          }
-        },
-        "16569162679171fc75-1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/sd-banner-home-1.jpg",
-            "title": "FIND YOUR FLAVOUR",
-            "title_size": "h3",
-            "text": "<p>We've scoured the world for the best brands and styles. Discover the biggest and most thoughtfully-curated range in non alc drinks.<\/p>",
-            "button_label": "SHOP NOW",
-            "button_link": "shopify:\/\/collections",
-            "button_style_secondary": false
-          }
-        },
-        "16569162679171fc75-2": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/sd-banner-faq.jpg",
-            "title": "PUB TRIVIA: FAQs",
-            "title_size": "h3",
-            "text": "<p>Want to dive into the fine print? Pull up a stool and browse our FAQs, from shipping timelines to returns policies.<\/p>",
-            "button_label": "FIND OUT MORE",
-            "button_link": "shopify:\/\/pages\/faq",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "16569162679171fc75-0",
-        "16569162679171fc75-1",
-        "16569162679171fc75-2"
-      ],
-      "settings": {
-        "heading": "SPHYNX DRINKS",
-        "heading_size": "h1",
-        "image_ratio": "landscape",
-        "image_position": "center center",
-        "text_alignment": "center",
-        "show_divider": false,
-        "mobile_text_alignment": "left",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 36 
       }
     }
   },
   "order": [
-    "image-banner",
     "main",
-    "166124185556d6ec69",
-    "1657281938f52c4780",
-    "form",
-    "map",
-    "165691626751c02520"
+    "page-title",
+    "form"
   ]
 }

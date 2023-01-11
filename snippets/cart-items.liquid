@@ -50,7 +50,8 @@
                     type="number"
                     min=0
                     name="quantity[]"
-                    value="{{ item.quantity }}" />
+                    value="{{ item.quantity }}"
+                    data-id="{{ item.id }}" />
                   <span class="__increase-qty">+</span>
                 </div>
               </div>
@@ -58,48 +59,54 @@
             <td class="__price">
               <div class="cart-item__price-wrapper">
                 {%- if item.original_price != item.final_price -%}
-                  <dl class="cart-item__discounted-prices">
-                    <dt class="visually-hidden">
-                      {{ 'products.product.price.regular_price' | t }}
-                    </dt>
-                    <dd class="price--on-sale">
-                      <s class="price price-item--regular price--end">
-                        <price-money>
-                          <bdi>{{ item.original_price | money }}</bdi>
-                        </price-money>
-                      </s>
-                    </dd>
-                    <dt class="visually-hidden">
-                      {{ 'products.product.price.sale_price' | t }}
-                    </dt>
-                    <dd class="price price--end">
-                      <price-money>
-                        <bdi>{{ item.final_price | money }}</bdi>
-                      </price-money>
-                    </dd>
-                  </dl>
+                  <s>{{ item.original_price | money }}</s>
+                  {{ item.final_price | money }}
                 {%- else -%}
-                  <span class="price price--end">
-                    <price-money>
-                      <bdi>{{ item.original_price | money }}</bdi>
-                    </price-money>
-                  </span>
+                  {{ item.original_price | money }}
+                {%- endif -%}
+                {% comment %} {%- if item.original_price != item.final_price -%}
+                <dl class="cart-item__discounted-prices">
+                <dt class="visually-hidden">
+                {{ 'products.product.price.regular_price' | t }}
+                </dt>
+                <dd class="price--on-sale">
+                <s class="price price-item--regular price--end">
+                <price-money>
+                <bdi>{{ item.original_price | money }}</bdi>
+                </price-money>
+                </s>
+                </dd>
+                <dt class="visually-hidden">
+                {{ 'products.product.price.sale_price' | t }}
+                </dt>
+                <dd class="price price--end">
+                <price-money>
+                <bdi>{{ item.final_price | money }}</bdi>
+                </price-money>
+                </dd>
+                </dl>
+                {%- else -%}
+                <span class="price price--end">
+                <price-money>
+                <bdi>{{ item.original_price | money }}</bdi>
+                </price-money>
+                </span>
                 {%- endif -%}
 
                 {%- if item.variant.available and item.unit_price_measurement -%}
-                  <div class="unit-price">
-                    <span class="visually-hidden">{{ 'products.product.price.unit_price' | t }}</span>
-                    <price-money>
-                      <bdi>{{ item.variant.unit_price | money }}</bdi>
-                    </price-money>
-                    <span aria-hidden="true">/</span>
-                    <span class="visually-hidden">&nbsp;{{ 'accessibility.unit_price_separator' | t }}&nbsp;</span>
-                    {%- if item.variant.unit_price_measurement.reference_value != 1 -%}
-                      {{- item.variant.unit_price_measurement.reference_value -}}
-                    {%- endif -%}
-                    {{ item.variant.unit_price_measurement.reference_unit }}
-                  </div>
+                <div class="unit-price">
+                <span class="visually-hidden">{{ 'products.product.price.unit_price' | t }}</span>
+                <price-money>
+                <bdi>{{ item.variant.unit_price | money }}</bdi>
+                </price-money>
+                <span aria-hidden="true">/</span>
+                <span class="visually-hidden">&nbsp;{{ 'accessibility.unit_price_separator' | t }}&nbsp;</span>
+                {%- if item.variant.unit_price_measurement.reference_value != 1 -%}
+                {{- item.variant.unit_price_measurement.reference_value -}}
                 {%- endif -%}
+                {{ item.variant.unit_price_measurement.reference_unit }}
+                </div>
+                {%- endif -%} {% endcomment %}
               </div>
 
               {% comment %} Remove item {% endcomment %}

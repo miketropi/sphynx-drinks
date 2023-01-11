@@ -25,8 +25,9 @@
           "type": "text",
           "settings": {
             "text": "<p>Sphynx drinks is all about enjoying the moment, without ruining the next day. Our carefully-curated selection of drinks, ranging from crisp craft beers to local drops of booze-free wine, shows there's never been a better time to ditch the hair of the dog and join the non-alc party.<\/p>",
-            "text_size": "typeset3",
-            "secondary_color": false
+            "font_size": 16,
+            "font_weight": "700",
+            "desc_color": "#000"
           }
         }
       },
@@ -38,8 +39,8 @@
         "narrow": false,
         "show_divider": false,
         "mobile_text_alignment": "center",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 60,
+        "padding_bottom": 60
       }
     },
     "98375ad3-b370-4f79-bf9e-e5f23eebf64d": {
@@ -48,11 +49,12 @@
         "layout": "default",
         "heading": "LET THE GOOD TIMES ROLL",
         "font_size": 48,
+        "heading_color": "#FFF",
         "image_left": "shopify:\/\/shop_images\/Group_628.png",
         "image_right": "shopify:\/\/shop_images\/Group_629.png",
         "bg_color": "#ffc85e",
-        "padding_top": 124,
-        "padding_bottom": 124,
+        "padding_top": 30,
+        "padding_bottom": 30,
         "padding_top_mobile": 60,
         "padding_bottom_mobile": 60,
         "custom_class": ""
@@ -65,8 +67,15 @@
           "type": "column",
           "settings": {
             "title": "OUR MISSION",
-            "title_size": "h3",
+            "fz_title": 36,
+            "ff_title": "Montserrat",
+            "fw_title": "900",
+            "heading_color": "#000",
             "text": "<p>Sphynx was founded by three mates who got sick of scouring the dusty corners of bottle shops for a decent non-alc drink. It's crazy, we know: non-alcoholic drinks are the fastest growing sector of the liquor industry, with new brands and exciting styles arriving each day. By establishing Sphynx, the mission was to build the biggest and best range of non-alc drinks in Australia, offering tasty alternatives to the booming community of sorta-drinkers in one, seamless online store. Because why should we miss out on the party?<\/p>",
+            "fz_text": 16,
+            "ff_text": "Montserrat",
+            "fw_text": "400",
+            "desc_color": "#8B8B8B",
             "button_label": "",
             "button_link": "",
             "button_style_secondary": false
@@ -76,8 +85,15 @@
           "type": "column",
           "settings": {
             "title": "JOIN OUR COMMUNITY",
-            "title_size": "h3",
+            "fz_title": 36,
+            "ff_title": "Montserrat",
+            "fw_title": "900",
+            "heading_color": "#000",
             "text": "<p>Whether you've never been a drinker, you're cutting back or you've thrown it in, there's no reason to leave the party. We've curated the best range of non-alc drinks on the planet, so no matter your story or your taste, there's a stool at our table waiting.<\/p>",
+            "fz_text": 16,
+            "ff_text": "Montserrat",
+            "fw_text": "400",
+            "desc_color": "#8B8B8B",
             "button_label": "",
             "button_link": "",
             "button_style_secondary": false
@@ -199,7 +215,7 @@
         "mobile_text_alignment": "left",
         "mobile_image_ratio": "auto",
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 88
       }
     },
     "a54a2eea-6008-4bfb-abb4-f1d72f9f56f3": {
@@ -213,7 +229,7 @@
         "limit_number": 6,
         "background_color": "#ffc85e",
         "spacing_top": "3em",
-        "spacing_bottom": "4em",
+        "spacing_bottom": "7em",
         "constom_class": ""
       }
     },

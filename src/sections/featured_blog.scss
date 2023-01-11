@@ -1,0 +1,50 @@
+.featured-blog-section {
+    position: relative;
+    background: #FFFFFF;
+    .featured-blog {
+        &__container {
+            width: var(--site-container-width);
+            padding: 0;
+            margin: 0 auto;
+            max-width: calc(100% - 30px);
+            overflow: hidden;
+        }
+        &__title {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 36px;
+            line-height: 95%;
+            letter-spacing: 0;
+            text-transform: uppercase;
+            text-align: center;
+            color: #000000;
+            margin: 0 0 80px;
+        }
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -17.5px -80px;
+            .post-item-wrap {
+                width: 33.33%;
+                padding: 0 17.5px;
+                margin-bottom: 80px;
+            }
+            @extend .__post_item_style;
+        }
+    }
+    @media(max-width: 991.98px) {
+        .featured-blog {
+            &__list .post-item-wrap {
+                width: 50%;
+            }
+        }
+    }
+    @media(max-width: 767.98px) {
+        .featured-blog {
+            &__list .post-item-wrap {
+                width: 100%;
+            }
+        }
+    }
+}
