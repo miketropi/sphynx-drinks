@@ -262,6 +262,62 @@
   transition: 0.3s ease;
   -webkit-transition: 0.3s ease;
 }
+.mini-cart .__loading-ui {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(1, 1, 1, 0.3);
+  z-index: 9;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+}
+.mini-cart.__loading .__loading-ui {
+  visibility: visible;
+  opacity: 1;
+}
+.mini-cart__sub-total {
+  display: flex;
+  justify-content: space-between;
+}
+.mini-cart__sub-total .totals__subtotal,
+.mini-cart__sub-total .totals__subtotal-value {
+  font-family: "Montserrat";
+  font-size: 1em;
+  color: #F05123;
+  letter-spacing: 0;
+  font-weight: bold;
+}
+.mini-cart__buttons .button {
+  width: 100%;
+  background: #F05123;
+  border-color: #F05123;
+  border-radius: 8px;
+  margin-bottom: 4px;
+  font-family: "Montserrat";
+  font-weight: bold;
+  letter-spacing: 0;
+}
+.mini-cart__buttons .button:hover {
+  color: black;
+}
+.mini-cart__buttons .button-url {
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+  color: black;
+  font-family: "Montserrat";
+  margin-top: 1em;
+  letter-spacing: 0;
+  text-decoration: none;
+}
 .mini-cart__header {
   display: flex;
   flex-wrap: wrap;
@@ -370,7 +426,12 @@
   text-align: right;
 }
 .mini-cart__items table.cart-items tbody td.__price .cart-item__price-wrapper {
-  margin-top: 20px;
+  margin-top: 19px;
+  font-family: "Montserrat";
+  font-weight: bold;
+  color: #F05123;
+  letter-spacing: 0;
+  margin-bottom: 10px;
 }
 .mini-cart__items table.cart-items tbody td.__price .__remove-cart-item {
   width: 24px;

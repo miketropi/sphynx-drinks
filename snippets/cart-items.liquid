@@ -3,7 +3,7 @@
   action="{{ routes.cart_url }}"
   class="cart__contents critical-hidden"
   method="post"
-  id="cart">
+  id="minicart">
   {%- if cart != empty -%}
     <table class="cart-items">
       <thead>
@@ -59,10 +59,12 @@
             <td class="__price">
               <div class="cart-item__price-wrapper">
                 {%- if item.original_price != item.final_price -%}
-                  <s>{{ item.original_price | money }}</s>
-                  {{ item.final_price | money }}
+                  <s>
+                    <span>{{ item.original_price | money }}</span>
+                  </s>
+                  <span>{{ item.final_price | money }}</span>
                 {%- else -%}
-                  {{ item.original_price | money }}
+                  <span>{{ item.original_price | money }}</span>
                 {%- endif -%}
                 {% comment %} {%- if item.original_price != item.final_price -%}
                 <dl class="cart-item__discounted-prices">
