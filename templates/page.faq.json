@@ -157,9 +157,9 @@
         "btn_label": "Contact Us",
         "button_link": "shopify:\/\/pages\/contact",
         "padding_top": 124,
-        "padding_bottom": 124,
+        "padding_bottom": 0,
         "padding_top_mobile": 60,
-        "padding_bottom_mobile": 60,
+        "padding_bottom_mobile": 0,
         "custom_class": "cta-faq"
       }
     }
