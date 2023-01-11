@@ -2553,10 +2553,39 @@ ul.menu-style-inline li.menu-link:hover > ul {
   line-height: 95%;
   color: #FFFFFF;
 }
-@media (max-width: 767px) {
-  .section-cta-inner .row .col .section-heading {
-    font-size: 36px !important;
-  }
+.section-cta-inner .row .col .section-button {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 95%;
+  color: #FFFFFF;
+  background: #F05123;
+  border-radius: 12px;
+  display: inline-block;
+  padding: 19px 60px 23px;
+  text-decoration: none;
+  margin-top: 20px;
+  transition: all 0.5s ease;
+  border: none;
+  letter-spacing: normal;
+  text-transform: none;
+}
+.section-cta-inner .row .col .section-button span {
+  display: inline-block;
+  margin-left: 10px;
+  /* margin-top: 16px; */
+  position: relative;
+  top: 3px;
+}
+.section-cta-inner .row .col .section-button span path {
+  transition: all 0.5s ease;
+}
+.section-cta-inner .row .col .section-button:hover {
+  color: #F05123;
+}
+.section-cta-inner .row .col .section-button:hover span path {
+  stroke: #F05123;
 }
 .section-cta-inner .row .col .section-cta-item {
   display: flex;

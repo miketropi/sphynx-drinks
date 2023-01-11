@@ -68,6 +68,7 @@
                 padding-bottom: 15px;
                 text-align: center;
                 display: block;
+
                 &:nth-child(2) {
                     @media (min-width: 768px) {
                         -webkit-box-flex: 0;
@@ -100,9 +101,43 @@
                     font-size: 48px;
                     line-height: 95%;
                     color: #FFFFFF;
+                }
 
-                    @media (max-width: 767px) {
-                        font-size: 36px !important;
+                .section-button {
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 22px;
+                    line-height: 95%;
+                    color: #FFFFFF;
+                    background: #F05123;
+                    border-radius: 12px;
+                    display: inline-block;
+                    padding: 19px 60px 23px;
+                    text-decoration: none;
+                    margin-top: 20px;
+                    transition: all 0.5s ease;
+                    border: none;
+                    letter-spacing: normal;
+                    text-transform: none;
+                    span {
+                        display: inline-block;
+                        margin-left: 10px;
+                        /* margin-top: 16px; */
+                        position: relative;
+                        top: 3px;
+                        path{
+                            transition: all 0.5s ease;
+                        }
+                    }
+
+                    &:hover{
+                        color: #F05123;
+                        span{
+                            path{
+                                stroke: #F05123;
+                            }
+                        }
                     }
                 }
 
@@ -111,19 +146,24 @@
                     align-items: center;
                     justify-content: center;
                     flex-wrap: wrap;
+
                     @media (max-width: 991px) {
                         flex-direction: column;
                     }
-                    img{
+
+                    img {
                         @media (max-width: 991px) {
                             margin-bottom: 20px;
                         }
                     }
+
                     .bl-content {
                         margin-left: 20px;
+
                         @media (max-width: 991px) {
                             margin-left: 0;
                         }
+
                         p {
                             font-family: 'Montserrat';
                             font-style: normal;

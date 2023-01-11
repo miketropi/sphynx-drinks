@@ -28,27 +28,7 @@
   </div>
   <div class="site-container">
     <div class="row">
-      {%- if section.settings.layout == 'default' -%}
-        <div class="col">
-          {%- if section.settings.image_left != blank -%}
-            <img src="{{section.settings.image_left | image_url}}" alt="">
-          {%- endif -%}
-        </div>
-
-        <div class="col">
-          {%- if section.settings.heading != blank -%}
-            <h2 class="section-heading" style="color: {{section.settings.heading_color}};font-size: {{section.settings.font_size}}px">
-              {{ section.settings.heading }}
-            </h2>
-          {%- endif -%}
-        </div>
-
-        <div class="col">
-          {%- if section.settings.image_right != blank -%}
-            <img src="{{section.settings.image_right | image_url}}" alt="">
-          {%- endif -%}
-        </div>
-      {%- else -%}
+      {%- if section.settings.layout == 'with_icon' -%}
         {%- for block in section.blocks -%}
           <div class="col" {{ block.shopify_attributes }}>
             <div class="section-cta-item">
@@ -59,6 +39,37 @@
             </div>
           </div>
         {%- endfor -%}
+      {%- else -%}
+        <div class="col">
+          {%- if section.settings.image_left != blank -%}
+            <img src="{{section.settings.image_left | image_url}}" alt="">
+          {%- endif -%}
+        </div>
+
+        <div class="col">
+          {%- if section.settings.heading != blank -%}
+            <h2
+              class="section-heading"
+              style="color: {{section.settings.heading_color}};font-family: {{section.settings.font_family}}; font-size: {{section.settings.font_size}}px; font-weight: {{section.settings.font_weight}}"
+            >
+              {{ section.settings.heading }}
+            </h2>
+          {%- endif -%}
+          {%- if section.settings.btn_label != blank -%}
+            <a href="{{section.settings.button_link}}" class="button section-button">{{section.settings.btn_label}} <span class="button-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 12H19" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 5L19 12L12 19" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span></a>
+          {%- endif -%}
+        </div>
+
+        <div class="col">
+          {%- if section.settings.image_right != blank -%}
+            <img src="{{section.settings.image_right | image_url}}" alt="">
+          {%- endif -%}
+        </div>
       {%- endif -%}
     </div>
   </div>
@@ -100,12 +111,64 @@
       "step": 1,
       "unit": "px",
       "label": "Font size",
-      "default": 48
+      "default": 36
+    },
+    {
+      "type": "select",
+      "id": "font_family",
+      "options": [
+        {
+          "value": "Flavory Display",
+          "label": "Flavory Display"
+        },
+        {
+          "value": "Montserrat",
+          "label": "Montserrat"
+        }
+      ],
+      "default": "Flavory Display",
+      "label": "Font Family"
+    },
+    {
+      "type": "select",
+      "id": "font_weight",
+      "options": [ 
+        {
+          "value": "300",
+          "label": "300"
+        },
+        {
+          "value": "400",
+          "label": "400"
+        },
+        {
+          "value": "500",
+          "label": "500"
+        },
+        {
+          "value": "600",
+          "label": "600"
+        },
+        {
+          "value": "700",
+          "label": "700"
+        },
+        {
+          "value": "800",
+          "label": "800"
+        },
+        {
+          "value": "900",
+          "label": "900"
+        }
+      ],
+      "default": "900",
+      "label": "Font Weight"
     },
     {
       "type": "color",
       "id": "heading_color",
-      "default": "#FFF",
+      "default": "#000",
       "label": "Color"
     },
     {
@@ -132,6 +195,21 @@
       "id": "bg_color",
       "default": "#FFC85E",
       "label": "Background Color"
+    },
+    {
+      "type": "header",
+      "content": "Button"
+    },
+    {
+      "type": "text",
+      "id": "btn_label",
+      "default": "Button Label",
+      "label": "Button label"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
     },
     {
       "type": "header",
