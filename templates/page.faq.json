@@ -159,7 +159,7 @@
         "padding_top": 124,
         "padding_bottom": 124,
         "padding_top_mobile": 60,
-        "padding_bottom_mobile": 0,
+        "padding_bottom_mobile": 60,
         "custom_class": ""
       }
     }
