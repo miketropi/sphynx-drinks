@@ -38,8 +38,8 @@
 }
 
 .customer:not(.account, .order) {
-  margin: 6rem auto 9rem;
-  max-width: 64rem;
+  margin: 6rem auto 14rem;
+  max-width: 55rem;
 }
 
 .customer .typeset {
@@ -62,7 +62,7 @@
 }
 
 .customer form {
-  margin-top: 4rem;
+  margin-top: 3rem;
 }
 
 .customer .button {
@@ -70,20 +70,15 @@
   margin-inline-end: 2rem;
 }
 
-@media screen and (max-width: 420px) {
-  .customer .button {
-    width: 100%;
-    margin-inline-end: 0;
-  }
-}
 
 .customer .button--tertiary {
   margin: 0;
 }
 
 .customer .button + .link {
-  display: inline-block;
+  display: block;
   font-size: 1.6rem;
+  background: none;
 }
 
 .customer ul {
@@ -378,7 +373,6 @@
 .login a {
   display: block;
   margin: 0 auto;
-  width: fit-content;
 }
 
 .login a[href='#recover'] {

@@ -48,11 +48,6 @@
 
   <h1 id="login" class="h2" tabindex="-1">{{ 'customer.login_page.title' | t }}</h1>
   <div>
-    <p class="typeset">{{ 'customer.login_page.dont_have_account' | t }}
-      <a href="{{ routes.account_register_url }}" class="link">
-        {{ 'customer.login_page.create_account' | t }}
-      </a>
-    </p>
     {%- if recover_success == true -%}
       <small class="form__message" tabindex="-1" autofocus>
         {% render 'icon', icon: 'success' %}
@@ -104,12 +99,23 @@
             >
             <label class="visually-hidden" for="CustomerPassword">{{ 'customer.login_page.password' | t }}</label>
           </div>
-
-          <a class="link" href="#recover">{{ 'customer.login_page.forgot_password' | t }}</a>
+          
         {%- endif -%}
 
-        <button class="button" type="submit">{{ 'customer.login_page.sign_in' | t }}</button>
-        <a class="link link--underline" href="{{ routes.root_url }}">{{ 'customer.login_page.return' | t }}</a>
+        <button class="button" type="submit">{{ 'customer.login_page.sign_in' | t }} <span class="button-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 12H19" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 5L19 12L12 19" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span></button>
+        <a class="link link-recover-pw" href="#recover">{{ 'customer.login_page.forgot_password' | t }}</a>
+        <div class="footer-login">
+          <a href="{{ routes.account_register_url }}" class="link-footer-login">
+            {{ 'customer.login_page.create_account' | t }}
+          </a>
+          <a class="link-footer-login" href="{{ routes.root_url }}">Continue as Guest</a>
+        </div>
+        
       {%- endform -%}
     </form-state>
   </div>
