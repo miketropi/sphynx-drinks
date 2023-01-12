@@ -120,21 +120,39 @@
                     border: none;
                     letter-spacing: normal;
                     text-transform: none;
+                    min-width: auto;
+
+                    @media (max-width: 1024px) {
+                        font-size: 18px;
+                        padding: 11px 30px 15px;
+                    }
+
                     span {
                         display: inline-block;
                         margin-left: 10px;
                         /* margin-top: 16px; */
                         position: relative;
                         top: 3px;
-                        path{
+
+                        @media (max-width: 1024px) {
+                            margin-left: 5px;
+
+                            svg {
+                                width: 20px;
+                                height: 20px;
+                            }
+                        }
+
+                        path {
                             transition: all 0.5s ease;
                         }
                     }
 
-                    &:hover{
+                    &:hover {
                         color: #F05123;
-                        span{
-                            path{
+
+                        span {
+                            path {
                                 stroke: #F05123;
                             }
                         }
