@@ -1,11 +1,11 @@
-<div class="quick-container">
-  <div class="quick-icon" data-product='{{ product | json }}'>
+<div 
+  class="quick-container quick-action-popup" 
+  data-product-url="{{ product.url }}?view=quickaction">
+  <div class="quick-icon">
     <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" role="presentation" class="icon icon-search" fill="none" viewBox="0 0 15 17">
       <circle cx="7.11113" cy="7.11113" r="6.56113" stroke="currentColor" stroke-width="1.1" fill="none"></circle>
       <path d="M11.078 12.3282L13.8878 16.0009" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" fill="none"></path>
     </svg>
   </div>
-
-  <div class=""></div>
   {% comment %} {{ product | json }} {% endcomment %}
 </div> <!-- .quick-container -->

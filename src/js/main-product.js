@@ -27,7 +27,7 @@ const updateVariant = () => {
     const $select = $(this);
     const price = $select.find(`option[value="${ this.value }"]`).data('price');
 
-    $cartForm.find('button#AddToCart .current-price').html(price);
+    $('body').find('form#AddToCartForm button#AddToCart .current-price').html(price);
   })
 }
 

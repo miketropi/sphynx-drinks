@@ -7,5 +7,6 @@ import './js/main-product';
 import './js/faq-toggle';
 import './js/minicart';
 import './js/mobile-menu';
+import './js/quick-action-popup';
 
 initHomeSlider();

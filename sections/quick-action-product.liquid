@@ -1,0 +1,22 @@
+<div id="quick-action-product" class="quick-action-product quick-action-product__container">
+  {% comment %} {{ product | json }} {% endcomment %}
+  <div class="quick-action-product__inner">
+    <h4 class="__product-title">{{ product.title }}</h4>
+    <div class="__product-add-cart-form">
+      {%- render 'addtocart-form-single' | product: product -%}
+    </div>
+
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Quick Action Product",
+    "settings": [],
+    "presets": [
+      {
+        "name": "Quick Action Product"
+      }
+    ]
+  }
+{% endschema %}

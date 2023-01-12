@@ -498,3 +498,43 @@
     transform: rotate(450deg);
   }
 }
+
+.quick-action-product {
+  width: 500px;
+  padding: 2em;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 16px;
+  
+  .__product-title {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    color: black;
+    margin: 0;
+  }
+}
+
+.__popup-quick-action-product {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  background: rgba(1,1,1,.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+}
+
+body.__quick-popup-show {
+
+  .__popup-quick-action-product {
+    visibility: visible;
+    opacity: 1;
+  }
+}

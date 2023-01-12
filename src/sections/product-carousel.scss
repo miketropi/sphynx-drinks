@@ -62,7 +62,29 @@
   }
 
   .product-slide-item {
-    
+    position: relative;
+
+    .quick-container {
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      right: 32px;
+      top: 16px;
+      background: #f05124;
+      border-radius: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .quick-icon{
+        width: 50%;
+        line-height: 0;
+
+        svg {
+          color: white;
+        }
+      }
+    }
 
     &__inner {
       padding: 1em;
