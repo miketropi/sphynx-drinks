@@ -63,6 +63,17 @@
         }
       }
     }
+
+    &.__mini-cart {
+
+      &:hover {
+
+        .mini-cart {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+    }
   }
   &__mobile-toggle {
     display: none;

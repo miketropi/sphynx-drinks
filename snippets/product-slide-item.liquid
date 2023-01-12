@@ -1,6 +1,7 @@
 <div class="product-slide-item">
   <div class="product-slide-item__inner">
     {% comment %} {{ product | json }} {% endcomment %}
+    {% render 'quick-action-popup' | product | product %}
     <a href="{{ product.url | within: collection }}" class="__p-thumb">
       <img
         loading="lazy"
