@@ -1,4 +1,5 @@
 import { initHomeSlider } from "./js/home_slider";
+import { initPanelCarousel } from "./js/panel-carousel";
 import './js/collection-gallery';
 import './js/rating-rendering';
 import './js/product-carousel'; 
@@ -10,3 +11,4 @@ import './js/mobile-menu';
 import './js/quick-action-popup';
 
 initHomeSlider();
+initPanelCarousel();

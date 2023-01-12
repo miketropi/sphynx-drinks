@@ -18,9 +18,7 @@ export default function ProductCatCarousel() {
 <circle r="21" transform="matrix(-1 0 0 1 21.9263 21.3164)" fill="#F05123"/>
 <path d="M14.9263 21.1934H28.9263" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M21.9263 28.1934L28.9263 21.1934L21.9263 14.1934" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-
-  `;
+</svg>`;
 
   [...elems].forEach(el => {
     $(el).slick({

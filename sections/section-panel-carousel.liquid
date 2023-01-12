@@ -1,0 +1,164 @@
+{{ 'section-card-w-icon.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-panel-carousel .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+    background-color: {{ section.settings.bg_color }}
+  }
+{%- endstyle -%}
+
+<div class="section-panel-carousel-inner section-{{ section.id }}-padding" data-speed="{{section.settings.speed}}" data-autoplay="{{section.settings.autoplay}}" data-arrows="{{section.settings.arrows}}" data-dots="{{section.settings.dots}}" data-infinite="{{section.settings.infinite}}">
+  <div class="section-container">
+    <div class="section-panel-carousel-wrap">
+      {%- for block in section.blocks -%}
+        <div
+          class="section-panel-carousel-wrap__item"
+          style="background-color: {{block.settings.bg_item_color}}"
+          {{ block.shopify_attributes }}
+        >
+            <h3 class="section-panel-carousel-wrap__item-title" style="color: {{block.settings.heading_color}}">{{ block.settings.heading }}</h3>
+            <div class="section-panel-carousel-wrap__item-desc" style="color: {{block.settings.content_color}}">{{ block.settings.panel_text }}</div>
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Section Panel Carousel",
+  "tag": "section",
+  "class": "section-panel-carousel",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "bg_image",
+      "label": "Background Image"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.header.content"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "t:sections.all.padding.padding_top.unit",
+      "label": "t:sections.all.padding.padding_top.label",
+      "default": 154
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "t:sections.all.padding.padding_bottom.unit",
+      "label": "t:sections.all.padding.padding_bottom.label",
+      "default": 154
+    },
+    {
+      "type": "header",
+      "content": "Settings Carousel"
+    },
+    {
+      "type": "checkbox",
+      "id": "autoplay",
+      "label": "Autoplay",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "arrows",
+      "label": "Arrows",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "dots",
+      "label": "Dots",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "infinite",
+      "label": "Infinite",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "speed",
+      "default": "500",
+      "label": "Speed (ms)"
+    },
+    {
+      "type": "header",
+      "content": "Background Color"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "default": "#FFC85E",
+      "label": "Section background"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "panel_item",
+      "name": "Panel Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "default": "Experience The Sphynx Curated Collection of No-Alcohol Drinks and Party On!",
+          "label": "Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "panel_text",
+          "label": "Content",
+          "default": "<p>At Sphynx, the game plan is a simple one. We are unwavering in our mission to seek out and furnish you with the latest, most extraordinary, and incredible non-alcoholic beverage options available anywhere! Maybe you’re a wine drinker, love a cold crisp cider after work, or enjoy a few bevvies watching the footy. Sphynx zero-alcohol beverages hit the spot every time and were accumulated diligently after hours of tasting the country’s best non-alcoholic drinks. Australia can be massively proud of its brewing industry, and you can keep the party going without feeling rotten in the morning.</p>"
+        },
+        {
+          "type": "header",
+          "content": "Color settings"
+        },
+        {
+          "type": "color",
+          "id": "heading_color",
+          "default": "#000",
+          "label": "Heading Color"
+        },
+        {
+          "type": "color",
+          "id": "content_color",
+          "default": "#8B8B8B",
+          "label": "Content Color"
+        },
+        {
+          "type": "color",
+          "id": "bg_item_color",
+          "default": "#FFF",
+          "label": "Background Color"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Section Panel Carousel",
+      "blocks": [
+        {
+          "type": "panel_item"
+        },
+        {
+          "type": "panel_item"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
