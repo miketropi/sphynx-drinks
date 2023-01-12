@@ -150,16 +150,16 @@
         "font_size": 16,
         "font_family": "Montserrat",
         "font_weight": "900",
-        "heading_color": "#000",
+        "heading_color": "#000000",
         "image_left": "shopify:\/\/shop_images\/Group_628.png",
         "image_right": "shopify:\/\/shop_images\/Group_629.png",
-        "bg_color": "#FFC85E",
+        "bg_color": "#ffc85e",
         "btn_label": "Contact Us",
         "button_link": "shopify:\/\/pages\/contact",
         "padding_top": 0,
         "padding_bottom": 0,
-        "padding_top_mobile": 0,
-        "padding_bottom_mobile": 0,
+        "padding_top_mobile": 60,
+        "padding_bottom_mobile": 60,
         "custom_class": "cta-faq"
       }
     }
