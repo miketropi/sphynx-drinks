@@ -1,0 +1,36 @@
+<ul class="menu menu-style-mobile">
+    {% for link in menu.links %}
+      <li class="menu-link">
+        <a href="{{ link.url }}">
+          {{ link.title }}
+        </a>
+        {% if link.links.size > 0 %}
+        <span class="menu-icon-arrow">
+            <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3.5 5.44531L7 8.94531L10.5 5.44531" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </span>
+        {% endif %}
+        
+        {% if link.links.size > 0 %}
+          <ul class="menu dropdown-child">
+            {% for child_link in link.links %}
+              <li class="menu-link">
+                <a href="{{ child_link.url }}">{{ child_link.title }}</a>
+  
+                {% if child_link.links.size > 0 %}
+                  <ul class="menu dropdown-grandchild">
+                    {% for grandchild_link in child_link.links %}
+                      <li class="menu-link">
+                        <a href="{{ grandchild_link.url }}">{{ grandchild_link.title }}</a>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                {% endif %}
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>

@@ -1,0 +1,59 @@
+{%- liquid
+  assign logo = section.settings.logo
+  assign mobile_logo = section.settings.mobile_logo | default: logo
+-%}
+
+<header class="site-header">
+  <div class="site-container site-header__container site-header__nth1">
+    <div class="site-header__brand">
+      <a href="{{ routes.root_url }}" class="site-brand site-brand__url">
+        <img
+          class="site-brand__image-desktop"
+          src="{{ logo | img_url }}"
+          width=""
+          height=""
+          alt="{{ logo.alt | default: shop.name | escape }}"
+          loading="lazy" />
+      </a>
+    </div>
+    <div class="site-header__owner-menu">
+      {%- render 'site-menu-inline', menu: section.settings.menu -%}
+    </div>
+    <div class="site-header__extra-tools">
+      {%- render 'header-extra-tools' -%}
+    </div>
+  </div>
+  
+  <div class=" site-header__container site-header__nth2 site-menu-container">
+    <div class="site-container">
+      {%- render 'site-menu-inline', menu: section.settings.second_main_menu -%}
+    </div> 
+  </div>
+</header>
+
+{% schema %}
+  {
+    "name": "t:sections.header.name",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "logo",
+        "label": "t:sections.header.settings.logo.label"
+      }, { 
+        "type": "image_picker",
+        "id": "mobile_logo",
+        "label": "t:sections.header.settings.mobile_logo.label"
+      }, {
+        "type": "link_list",
+        "id": "menu",
+        "default": "main-menu",
+        "label": "t:sections.header.settings.menu.label"
+      }, {
+        "type": "link_list",
+        "id": "second_main_menu",
+        // "default": "second-main-menu",
+        "label": "Second Menu"
+      }
+    ]
+  }
+{% endschema %}

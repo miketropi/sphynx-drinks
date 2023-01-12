@@ -5,29 +5,77 @@
 
 <header class="site-header">
   <div class="site-container site-header__container site-header__nth1">
-    <div class="site-header__brand">
-      <a href="{{ routes.root_url }}" class="site-brand site-brand__url">
-        <img
-          class="site-brand__image-desktop"
-          src="{{ logo | img_url }}"
-          width=""
-          height=""
-          alt="{{ logo.alt | default: shop.name | escape }}"
-          loading="lazy" />
-      </a>
+    <div class="site-header__brand-nav">
+      <div class="site-header__brand">
+        <a href="{{ routes.root_url }}" class="site-brand site-brand__url">
+          <img
+            class="site-brand__image-desktop"
+            src="{{ logo | img_url }}"
+            width=""
+            height=""
+            alt="{{ logo.alt | default: shop.name | escape }}"
+            loading="lazy" />
+        </a>
+      </div>
+      <div class="site-header__owner-menu">
+        {%- render 'site-menu-inline', menu: section.settings.menu -%}
+      </div>
     </div>
-    <div class="site-header__owner-menu">
-      {%- render 'site-menu-inline', menu: section.settings.menu -%}
+
+    <div class="site-header__search-tools">
+      {%- render 'header-search-tools' -%}
     </div>
+
     <div class="site-header__extra-tools">
       {%- render 'header-extra-tools' -%}
     </div>
+    <div class="site-header__mobile-tools">
+      <div class="site-header__mobile-toggle">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 464.205 464.205" style="enable-background:new 0 0 512 512" xml:space="preserve" class="bars">
+          <path d="m435.192 406.18h-406.179c-16.024 0-29.013-12.99-29.013-29.013s12.989-29.013 29.013-29.013h406.18c16.023 0 29.013 12.99 29.013 29.013-.001 16.023-12.99 29.013-29.014 29.013z" fill="#ffffff" data-original="#ffffff" class=""></path>
+          <path d="m435.192 261.115h-406.179c-16.024 0-29.013-12.989-29.013-29.012s12.989-29.013 29.013-29.013h406.18c16.023 0 29.013 12.989 29.013 29.013s-12.99 29.012-29.014 29.012z" fill="#ffffff" data-original="#ffffff" class=""></path>
+          <path d="m435.192 116.051h-406.179c-16.024 0-29.013-12.989-29.013-29.013s12.989-29.013 29.013-29.013h406.18c16.023 0 29.013 12.989 29.013 29.013s-12.99 29.013-29.014 29.013z" fill="#ffffff" data-original="#ffffff" class=""></path>
+        </svg>
+      </div>
+    </div>
   </div>
   
-  <div class=" site-header__container site-header__nth2 site-menu-container">
+  <div class="site-header__divider"></div>
+
+  <div class="site-header__container site-header__nth2 site-menu-container">
     <div class="site-container">
       {%- render 'site-menu-inline', menu: section.settings.second_main_menu -%}
     </div> 
+  </div>
+
+  <div class="site-header__mobile">
+    <div class="site-mobile__close">
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" x="0" y="0" viewBox="0 0 329.26933 329" style="enable-background:new 0 0 512 512" xml:space="preserve" class="close">
+        <path d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0" fill="#ffffff" data-original="#ffffff" class=""></path>
+      </svg>
+    </div>
+
+    <div class="site-mobile__wrap">
+      <div class="site-mobile__brand">
+        <a href="{{ routes.root_url }}" class="site-brand site-brand__url">
+          <img
+            class="site-brand__image-desktop"
+            src="{{ logo | img_url }}"
+            width=""
+            height=""
+            alt="{{ logo.alt | default: shop.name | escape }}"
+            loading="lazy" />
+        </a>
+      </div>
+
+      <div class="site-mobile__owner-menu">
+        {%- render 'site-menu-inline', menu: section.settings.menu -%}
+      </div>
+
+      <div class="site-mobile__menu">
+        {%- render 'site-menu-mobile', menu: section.settings.second_main_menu -%}
+      </div>
+    </div>
   </div>
 </header>
 

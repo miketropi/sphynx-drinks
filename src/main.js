@@ -6,5 +6,6 @@ import './js/prod-cat-carousel';
 import './js/main-product';
 import './js/faq-toggle';
 import './js/minicart';
+import './js/mobile-menu';
 
 initHomeSlider();

@@ -346,6 +346,32 @@ MiniCart();
 
 /***/ }),
 
+/***/ "./src/js/mobile-menu.js":
+/*!*******************************!*\
+  !*** ./src/js/mobile-menu.js ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ mobileMenu)
+/* harmony export */ });
+/* provided dependency */ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+function mobileMenu() {
+  var mobileElems = document.querySelectorAll('.site-header__mobile');
+  if (!mobileElems) return;
+  $('.site-header__mobile-toggle').on('click', function () {
+    $('.site-header__mobile').addClass('open');
+  });
+  $('.site-mobile__close').on('click', function () {
+    $('.site-header__mobile').removeClass('open');
+  });
+}
+mobileMenu();
+
+/***/ }),
+
 /***/ "./src/js/prod-cat-carousel.js":
 /*!*************************************!*\
   !*** ./src/js/prod-cat-carousel.js ***!
@@ -530,6 +556,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _js_main_product__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./js/main-product */ "./src/js/main-product.js");
 /* harmony import */ var _js_faq_toggle__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./js/faq-toggle */ "./src/js/faq-toggle.js");
 /* harmony import */ var _js_minicart__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./js/minicart */ "./src/js/minicart.js");
+/* harmony import */ var _js_mobile_menu__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./js/mobile-menu */ "./src/js/mobile-menu.js");
+
 
 
 
