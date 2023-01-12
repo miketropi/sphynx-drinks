@@ -14,8 +14,11 @@ const updateMiniCartUi = (html) => {
       selector: '.cart-link__bubble'
     },
     {
-      selector: '#MainContent'
-    }
+      selector: '#main-cart-items'
+    },
+    {
+      selector: '.cart__footer-wrapper'
+    },
   ];
 
   updateElems.forEach(item => {

@@ -283,7 +283,9 @@ var updateMiniCartUi = function updateMiniCartUi(html) {
   }, {
     selector: '.cart-link__bubble'
   }, {
-    selector: '#MainContent'
+    selector: '#main-cart-items'
+  }, {
+    selector: '.cart__footer-wrapper'
   }];
   updateElems.forEach(function (item) {
     if ($(item.selector).length <= 0) return;

@@ -45,5 +45,16 @@
     &:not(:last-child) {
       margin-right: 1.3em;
     }
+
+    &.__mini-cart {
+
+      &:hover {
+
+        .mini-cart {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+    }
   }
 }
