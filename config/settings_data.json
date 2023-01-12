@@ -95,7 +95,7 @@
           "autorotate_speed": 5,
           "show_navigation": true,
           "colors_text": "#000000",
-          "colors_background": "#ffffff"
+          "colors_background": "#ffc85e"
         }
       },
       "header": {
