@@ -1,97 +1,112 @@
 .section-card-w-icon {
-    
-
     .card-with-icon-wrapper {
-        padding-top: 60px;
-        padding-bottom: 60px;
-        background-color: white;
-        .card-with-icon--heading {
-            font-style: normal;
-            font-weight: 900;
-            font-size: 36px;
-            line-height: 95%;
-            font-family: 'Montserrat';
-            color: #000000;
-            text-align: center;
-            margin-top: 0;
-            margin-bottom: 15px;
+        .section-container {
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+            max-width: 1680px;
 
-            @media (max-width: 767px) {
-                font-size: 32px;
-                line-height: 110%;
-            }
-        }
-
-        .card-with-icon--subheading {
-            font-style: normal;
-            font-weight: 700;
-            font-size: 24px;
-            line-height: 95%;
-            text-align: center;
-            color: #F05123;
-            @media (max-width: 767px) {
-                font-size: 20px;
-            }
-        }
-
-        .card-with-icon-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-column-gap: 50px;
-            margin-top: 50px;
-
-            @media (max-width: 767px) {
-                grid-template-columns: repeat(1, 1fr);
-                grid-column-gap: 0;
-                grid-row-gap: 40px;
-            }
-
-            .card-with-icon__item {
-                display: flex;
-                flex-wrap: wrap;
-
-                @media (max-width: 1200px) {
-                    flex-direction: column;
-                }
-
-                &-icon {
-                    width: 100%;
-                    max-width: 86px;
-
-                    img {
-                        max-width: 86px;
-                    }
-                }
-
-                &-content {
-                    width: 100%;
-                    max-width: calc(100% - 86px);
-                    padding-left: 35px;
-                    margin-top: 25px;
-
-                    @media (max-width: 1200px) {
-                        padding-left: 0;
-                        max-width: 100%;
-                    }
-                }
-
-                &-title {
-                    font-style: normal;
-                    font-weight: 700;
-                    font-size: 24px;
-                    line-height: 95%;
+            .card-with-icon {
+                &--heading {
                     font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 28px;
+                    line-height: 120%;
                     color: #000000;
                     margin-top: 0;
-                    margin-bottom: 10px;
+                    margin-bottom: 62px;
+                    text-align: center;
+                    @media (min-width: 768px) {
+                        line-height: 95%;
+                        font-size: 36px;
+                    }
+                    span{
+                        display: block;
+                    }
                 }
 
-                &-desc {
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 16px;
-                    line-height: 146%;
-                    color: #8B8B8B;
+                &-grid {
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
+                    margin-right: -15px;
+                    margin-left: -15px;
+                }
+
+                &__item {
+                    position: relative;
+                    width: 100%;
+                    min-height: 1px;
+                    padding-right: 15px;
+                    padding-left: 15px;
+                    margin-bottom: 62px;
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                    @media (min-width: 768px) {
+                        -webkit-box-flex: 0;
+                        -ms-flex: 0 0 33.3333%;
+                        flex: 0 0 33.3333%;
+                        max-width: 33.3333%;
+                        margin-bottom: 0px;
+                    }
+
+                    &-icon {
+                        width: 64px;
+                        height: 64px;
+                        background: #F05123;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        position: absolute;
+                        left: 50%;
+                        top: -32px;
+                        transform: translateX(-50%);
+                        img{
+                            max-width: 100%;
+                            max-height: 100%;
+                            height: auto;
+                            width: auto;
+                        }
+                    }
+
+                    &-inner {
+                        background: #FFFFFF;
+                        border-radius: 18px;
+                        text-align: center;
+                    }
+
+                    &-content {
+                        padding: 50px 25px 35px;
+                    }
+
+                    &-title {
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 24px;
+                        line-height: 95%;
+                        text-align: center;
+                        color: #000000;
+                        margin: 0;
+                    }
+
+                    &-desc {
+                        font-family: 'Montserrat';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 146%;
+                        text-align: center;
+                        color: #8B8B8B;
+                        margin-top: 20px;
+                    }
                 }
             }
         }

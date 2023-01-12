@@ -2,10 +2,8 @@
 
 {%- style -%}
   .section-card-w-icon .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top }}
-    px;
-    padding-bottom: {{ section.settings.padding_bottom }}
-    px;
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
     background-color: {{ section.settings.bg_color }}
   }
   .section-card-w-icon .card-with-icon-wrapper.section-{{ section.id }}-padding .card-with-icon--heading {
@@ -19,26 +17,28 @@
 {%- endstyle -%}
 
 <div class="card-with-icon-wrapper section-{{ section.id }}-padding">
-  <div class="page-width">
+  <div class="section-container">
     {%- if section.settings.heading_card != blank -%}
       <h2 class="card-with-icon--heading">{{ section.settings.heading_card }}</h2>
-    {%- endif -%}
-
-    {%- if section.settings.subheading_card != blank -%}
-      <p class="card-with-icon--subheading">{{ section.settings.subheading_card }}</p>
     {%- endif -%}
 
     <div class="card-with-icon-grid">
       {%- for block in section.blocks -%}
         <div class="card-with-icon__item" {{ block.shopify_attributes }}>
-          <div class="card-with-icon__item-icon">
-            {%- if block.settings.icon != blank -%}
-              <img src="{{ block.settings.icon | image_url }}" alt="icon">
-            {%- endif -%}
-          </div>
-          <div class="card-with-icon__item-content">
-            <h4 class="card-with-icon__item-title" style="color: {{block.settings.title_color}}">{{ block.settings.title }}</h4>
-            <div class="card-with-icon__item-desc" style="color: {{block.settings.desc_color}}">{{ block.settings.text }}</div>
+          <div class="card-with-icon__item-inner" style="background-color: {{block.settings.bg_item_color}}">
+            <div class="card-with-icon__item-icon">
+              {%- if block.settings.card_icon != blank -%}
+                <img src="{{ block.settings.card_icon | image_url }}" alt="icon">
+              {%- endif -%}
+            </div>
+            <div class="card-with-icon__item-content">
+              <h4 class="card-with-icon__item-title" style="color: {{block.settings.heading_color}}">
+                {{ block.settings.card_heading }}
+              </h4>
+              <div class="card-with-icon__item-desc" style="color: {{block.settings.content_color}}">
+                {{ block.settings.text }}
+              </div>
+            </div>
           </div>
         </div>
       {%- endfor -%}
@@ -47,118 +47,111 @@
 </div>
 
 {% schema %}
-  {
-    "name": "Card with icon",
-    "tag": "section",
-    "class": "section-card-w-icon",
-    "settings": [
-      {
-        "type": "text",
-        "id": "heading_card",
-        "default": "The Sphynx Non-Alcoholic Beverages Guarantee",
-        "label": "Heading"
-      },
-      {
-        "type": "text",
-        "id": "subheading_card",
-        "default": "Non-alc drinks for cool cats",
-        "label": "SubHeading"
-      },
-      {
-        "type": "header",
-        "content": "t:sections.all.mobile_layout.header.content"
-      },
-      {
-        "type": "header",
-        "content": "t:sections.all.padding.header.content"
-      }, {
-        "type": "range",
-        "id": "padding_top",
-        "min": 0,
-        "max": 100,
-        "step": 4,
-        "unit": "t:sections.all.padding.padding_top.unit",
-        "label": "t:sections.all.padding.padding_top.label",
-        "default": 60
-      }, {
-        "type": "range",
-        "id": "padding_bottom",
-        "min": 0,
-        "max": 100,
-        "step": 4,
-        "unit": "t:sections.all.padding.padding_bottom.unit",
-        "label": "t:sections.all.padding.padding_bottom.label",
-        "default": 60
-      }, {
-        "type": "header",
-        "content": "Background Color"
-      }, {
-        "type": "color",
-        "id": "heading_color",
-        "default": "#000",
-        "label": "Heading"
-      }, {
-        "type": "color",
-        "id": "subheading_color",
-        "default": "#F05123",
-        "label": "SubHeading"
-      }, {
-        "type": "color",
-        "id": "bg_color",
-        "default": "#FFFFFF",
-        "label": "Section background"
-      }
-    ],
-    "blocks": [
-      {
-        "type": "card_item",
-        "name": "Card Item",
-        "settings": [
-          {
-            "type": "image_picker",
-            "id": "icon",
-            "label": "Icon"
-          },
-          {
-            "type": "text",
-            "id": "title",
-            "default": "Card item heading",
-            "label": "Heading"
-          },
-          {
-            "type": "richtext",
-            "id": "text",
-            "label": "Content",
-            "default": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>"
-          },
-          {
-            "type": "header",
-            "content": "Color settings"
-          }, {
-            "type": "color",
-            "id": "title_color",
-            "default": "#000",
-            "label": "Heading"
-          }, {
-            "type": "color",
-            "id": "desc_color",
-            "default": "#8B8B8B",
-            "label": "SubHeading"
-          }
-        ]
-      }
-    ],
-    "presets": [
-      {
-        "name": "Card with icon",
-        "blocks": [
-          {
-            "type": "card_item"
-          }, {
-            "type": "card_item"
-          }
-        ]
-      }
-    ]
-  }
+{
+  "name": "Card with Icon",
+  "tag": "section",
+  "class": "section-card-w-icon",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading_card",
+      "default": "The Sphynx Non-Alcoholic Beverages Guarantee",
+      "label": "Heading"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.header.content"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "t:sections.all.padding.padding_top.unit",
+      "label": "t:sections.all.padding.padding_top.label",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "t:sections.all.padding.padding_bottom.unit",
+      "label": "t:sections.all.padding.padding_bottom.label",
+      "default": 60
+    },
+    {
+      "type": "header",
+      "content": "Background Color"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "default": "#FFC85E",
+      "label": "Section background"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "card_item",
+      "name": "Card Item",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "card_icon",
+          "label": "Icon"
+        },
+        {
+          "type": "text",
+          "id": "card_heading",
+          "default": "Card heading",
+          "label": "Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Content",
+          "default": "<p>Founded by three great mates, Sphynx is exceptionally proud to be a 100% Australian-owned and operated online non-alcoholic beverages company providing thirsty Australians with an alternative.</p>"
+        },
+        {
+          "type": "header",
+          "content": "Color settings"
+        },
+        {
+          "type": "color",
+          "id": "heading_color",
+          "default": "#000",
+          "label": "Heading Color"
+        },
+        {
+          "type": "color",
+          "id": "content_color",
+          "default": "#8B8B8B",
+          "label": "Content Color"
+        },
+        {
+          "type": "color",
+          "id": "bg_item_color",
+          "default": "#FFF",
+          "label": "Background Color"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Card with Icon",
+      "blocks": [
+        {
+          "type": "card_item"
+        },
+        {
+          "type": "card_item"
+        }
+      ]
+    }
+  ]
+}
 {% endschema %}
