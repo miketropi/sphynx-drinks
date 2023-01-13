@@ -5,6 +5,13 @@ export async function __requestUpdateCart(data) {
   });
 }
 
+const updateCartNote = () => {
+  $('body').on('change', 'textarea#mini-cart-note', async function() {
+    const note = this.value;
+    await $.post(routes.cart_update_url, { note })
+  })
+}
+
 const updateMiniCartUi = (html) => {
   const updateElems = [
     {
@@ -72,6 +79,7 @@ const updateQty = () => {
 
 export default function MiniCart() {
   updateQty();
+  updateCartNote();
 }
 
 MiniCart(); 

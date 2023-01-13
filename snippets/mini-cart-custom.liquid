@@ -24,6 +24,15 @@
     <div class="mini-cart__items">
       {%- render 'cart-items' -%}
     </div>
+    <div class="mini-cart__note">
+      <cart-note class="cart__note field">
+        <textarea
+          class="text-area text-area--resize-vertical field__input"
+          name="note"
+          id="mini-cart-note"
+          placeholder="Order notes">{{ cart.note }}</textarea>
+      </cart-note>
+    </div>
     <div class="mini-cart__sub-total">
       <h3 class="totals__subtotal">{{ 'sections.cart.subtotal' | t }}</h3>
       <p class="totals__subtotal-value" id="mini-cart__total-price">{{ cart.total_price | money_with_currency }}</p>

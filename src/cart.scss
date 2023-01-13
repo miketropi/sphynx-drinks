@@ -1,0 +1,43 @@
+cart-items {
+  font-family: "Montserrat";
+
+  .title-wrapper {
+
+    h1.title {
+      font-family: "Montserrat";
+      letter-spacing: 0;
+      font-weight: bold;
+    }
+    
+    .link {
+      color: #f9b82f !important;
+      letter-spacing: 0;
+      font-weight: 600;
+    }
+  }
+
+  .button--tertiary {
+    background: #f9b82f !important;
+  }
+
+  quantity-input {
+    border-color: #f05124 !important;
+
+    button {
+      background: #f05124 !important;
+    }
+  }
+}
+
+.cart__footer {
+  margin-bottom: 5em;
+
+  .totals {
+
+    * {
+      font-family: 'Montserrat';
+      letter-spacing: 0;
+      font-weight: 600;
+    }
+  }
+}
