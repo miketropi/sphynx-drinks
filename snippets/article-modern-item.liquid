@@ -34,12 +34,12 @@
             {{ article.excerpt | escape }}
         </div>
         
-        <div class="post-item__read">
+        {% comment %} <div class="post-item__read">
             <a href="{{ article.url }}" class="read-link-btn">Read<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5.88867 12H19.8887" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M12.8887 5L19.8887 12L12.8887 19" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg> 
             </a>
-        </div>
+        </div> {% endcomment %}
     </div>
 </div>

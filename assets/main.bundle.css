@@ -585,7 +585,11 @@ body.__quick-popup-show .__popup-quick-action-product {
   visibility: visible;
   opacity: 1;
 }
-.site-header__mobile-toggle {
+.site-header__mobile-tools {
+  display: flex;
+  align-items: center;
+}
+.site-header__mobile-search-toggle, .site-header__mobile-menu-toggle {
   display: none;
   position: relative;
   width: 25px;
@@ -593,12 +597,18 @@ body.__quick-popup-show .__popup-quick-action-product {
   cursor: pointer;
   margin-left: 20px;
 }
-.site-header__mobile-toggle svg {
+.site-header__mobile-search-toggle.open svg, .site-header__mobile-menu-toggle.open svg {
+  display: none;
+}
+.site-header__mobile-search-toggle.open svg.close, .site-header__mobile-menu-toggle.open svg.close {
+  display: block;
+}
+.site-header__mobile-search-toggle svg, .site-header__mobile-menu-toggle svg {
   position: absolute;
   width: 100%;
   height: auto;
 }
-.site-header__mobile-toggle svg.close {
+.site-header__mobile-search-toggle svg.close, .site-header__mobile-menu-toggle svg.close {
   display: none;
 }
 .site-header__mobile {
@@ -671,8 +681,19 @@ body.__quick-popup-show .__popup-quick-action-product {
   .site-header__owner-menu, .site-header__divider, .site-header__nth2 {
     display: none !important;
   }
-  .site-header__mobile-toggle {
+  .site-header__mobile-search-toggle, .site-header__mobile-menu-toggle {
     display: block;
+  }
+  .site-header__search-tools {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 998;
+    background: #f05123;
+    padding: 15px;
+    border-top: 1px solid #FFFFFF;
   }
 }
 
@@ -774,34 +795,40 @@ ul.menu-style-mobile ul.dropdown-child {
   margin: 0;
   padding: 15px 0 0;
 }
-ul.menu-style-mobile ul.dropdown-child li.menu-link {
-  padding-left: 15px;
-}
 ul.menu-style-mobile ul.dropdown-child li.menu-link:last-child {
   padding-bottom: 0;
 }
+ul.menu-style-mobile ul.dropdown-child li.menu-link a {
+  padding-left: 15px;
+}
 ul.menu-style-mobile li.menu-link {
   position: relative;
+  border-top: 1px solid #FFFFFF;
+}
+ul.menu-style-mobile li.menu-link a {
+  display: block;
   font-weight: 800;
   font-size: 16px;
   line-height: 150%;
   letter-spacing: -0.02em;
+  text-decoration: none;
   color: #FFFFFF;
   padding: 15px 0;
-  border-top: 1px solid #FFFFFF;
-}
-ul.menu-style-mobile li.menu-link a {
-  text-decoration: none;
-  color: inherit;
 }
 ul.menu-style-mobile li.menu-link .menu-icon-arrow {
-  float: right;
+  position: absolute;
+  top: 15px;
+  right: 0;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 25px;
   height: 25px;
   cursor: pointer;
+  transition: transform var(--duration-default) ease;
+}
+ul.menu-style-mobile li.menu-link .menu-icon-arrow.open {
+  transform: rotate(180deg);
 }
 
 .site-footer {
@@ -3034,17 +3061,32 @@ ul.menu-style-mobile li.menu-link .menu-icon-arrow {
   max-width: calc(100% - 30px);
   overflow: hidden;
 }
+.morden-blog-section .morden-blog__header {
+  text-align: center;
+  margin-bottom: 75px;
+}
 .morden-blog-section .morden-blog__title {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 900;
   font-size: 36px;
-  line-height: 95%;
+  line-height: 120%;
   letter-spacing: 0;
   text-transform: uppercase;
-  text-align: center;
   color: #000000;
-  margin: 0 0 80px;
+  margin: 0;
+}
+.morden-blog-section .morden-blog__view-all {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 146%;
+  letter-spacing: 0;
+  color: #F05123;
+  margin-top: 10px;
+}
+.morden-blog-section .morden-blog__view-all a {
+  color: inherit;
+  text-decoration: underline;
 }
 .morden-blog-section .morden-blog__list {
   display: grid;
@@ -3054,16 +3096,25 @@ ul.menu-style-mobile li.menu-link .menu-icon-arrow {
 .morden-blog-section .morden-blog__list .post-index-1 {
   grid-area: myArea;
 }
+.morden-blog-section .morden-blog__list .post-item {
+  background: #F9F9F9;
+  overflow: hidden;
+  border-radius: 18px;
+}
+.morden-blog-section .morden-blog__list .post-item__thumb {
+  height: 230px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-radius: 0;
+}
+.morden-blog-section .morden-blog__list .post-item__content {
+  padding: 20px 20px 35px;
+}
 .morden-blog-section .morden-blog__list .post-item__title {
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
-}
-.morden-blog-section .morden-blog__list .post-item__thumb {
-  height: 230px;
-  padding-bottom: 0;
-  border-radius: 8px;
 }
 .morden-blog-section .morden-blog__list .post-item__excerpt {
   overflow: hidden;
@@ -3079,7 +3130,7 @@ ul.menu-style-mobile li.menu-link .menu-icon-arrow {
   border-radius: 8px;
 }
 .morden-blog-section .morden-blog__list .post-index-1 .post-item__thumb {
-  height: 748px;
+  height: 694px;
 }
 @media (max-width: 991.98px) {
   .morden-blog-section .morden-blog__list {

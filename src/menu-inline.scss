@@ -118,33 +118,41 @@ ul.menu-style-mobile {
     margin: 0;
     padding: 15px 0 0;
     li.menu-link {
-      padding-left: 15px;
       &:last-child {
         padding-bottom: 0;
+      }
+      a {
+        padding-left: 15px;
       }
     }
   }
   li.menu-link {
     position: relative;
-    font-weight: 800;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: -0.02em;
-    color: #FFFFFF;
-    padding: 15px 0;
     border-top: 1px solid #FFFFFF;
     a {
+      display: block;
+      font-weight: 800;
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: -0.02em;
       text-decoration: none;
-      color: inherit;
+      color: #FFFFFF;
+      padding: 15px 0;
     }
     .menu-icon-arrow {
-      float: right;
+      position: absolute;
+      top: 15px;
+      right: 0;
       display: inline-flex;
       align-items: center;
       justify-content: center;
       width: 25px;
       height: 25px;
       cursor: pointer;
+      transition: transform var(--duration-default) ease;
+      &.open {
+        transform: rotate(180deg);
+      }
     }
   }
 }

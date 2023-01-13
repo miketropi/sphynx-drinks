@@ -75,13 +75,26 @@
       }
     }
   }
-  &__mobile-toggle {
+  &__mobile-tools {
+    display: flex;
+    align-items: center;
+  }
+  &__mobile-search-toggle,
+  &__mobile-menu-toggle {
     display: none;
     position: relative;
     width: 25px;
     height: 25px;
     cursor: pointer;
     margin-left: 20px;
+    &.open {
+      svg {
+        display: none;
+        &.close {
+          display: block;
+        }
+      }
+    }
     svg {
       position: absolute;
       width: 100%;
@@ -167,8 +180,20 @@
     &__nth2 {
       display: none !important;
     }
-    &__mobile-toggle {
+    &__mobile-search-toggle,
+    &__mobile-menu-toggle {
       display: block;
+    }
+    &__search-tools {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      z-index: 998;
+      background: #f05123;
+      padding: 15px;
+      border-top: 1px solid #FFFFFF;
     }
   }
 }
