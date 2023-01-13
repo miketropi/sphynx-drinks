@@ -226,6 +226,7 @@
   top: 100%;
   background: white;
   width: 420px;
+  max-width: calc(100vw - 40px);
   z-index: 9;
   padding: 2em;
   border-radius: 8px;
@@ -234,6 +235,14 @@
   visibility: hidden;
   transition: .3s ease;
   -webkit-transition: .3s ease;
+
+  @media(max-width: 576px) {
+    position: fixed;
+    left: 50%;
+    top: 10vh;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+  }
 
   .__loading-ui {
     position: absolute;
@@ -419,6 +428,7 @@
                 width: 30px;
                 text-align: center;
                 -moz-appearance: textfield;
+                margin: 0 10px;
 
                 &::-webkit-outer-spin-button,
                 &::-webkit-inner-spin-button {

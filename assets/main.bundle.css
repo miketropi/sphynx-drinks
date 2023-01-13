@@ -257,6 +257,7 @@
   top: 100%;
   background: white;
   width: 420px;
+  max-width: calc(100vw - 40px);
   z-index: 9;
   padding: 2em;
   border-radius: 8px;
@@ -265,6 +266,15 @@
   visibility: hidden;
   transition: 0.3s ease;
   -webkit-transition: 0.3s ease;
+}
+@media (max-width: 576px) {
+  .mini-cart {
+    position: fixed;
+    left: 50%;
+    top: 10vh;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+  }
 }
 .mini-cart .__loading-ui {
   position: absolute;
@@ -413,6 +423,7 @@
   width: 30px;
   text-align: center;
   -moz-appearance: textfield;
+  margin: 0 10px;
 }
 .mini-cart__items table.cart-items tbody td.__info .__update-qty > input::-webkit-outer-spin-button, .mini-cart__items table.cart-items tbody td.__info .__update-qty > input::-webkit-inner-spin-button {
   -webkit-appearance: none;

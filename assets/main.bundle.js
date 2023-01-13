@@ -338,17 +338,18 @@ var updateQty = function updateQty() {
       }
     }, _callee2, this);
   })));
-  $miniCart.on('click', '.__decrease-qty', function (e) {
+  $miniCart.on('click touchstart', '.__decrease-qty', function (e) {
     e.preventDefault();
     var $inputQty = $(this).parent().find('input[name="quantity[]"]');
     var value = parseInt($inputQty.val());
     var newValue = value - 1;
+    console.log(newValue);
     if (newValue <= 0) {
       newValue = 1;
     }
     $inputQty.val(newValue).trigger('change');
   });
-  $miniCart.on('click', '.__increase-qty', function (e) {
+  $miniCart.on('click touchstart', '.__increase-qty', function (e) {
     e.preventDefault();
     var $inputQty = $(this).parent().find('input[name="quantity[]"]');
     var value = parseInt($inputQty.val());
