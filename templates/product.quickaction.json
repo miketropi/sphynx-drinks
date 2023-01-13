@@ -2,6 +2,7 @@
   "sections": {
     "main": {
       "type": "main-product-modal",
+      "disabled": true,
       "blocks": {
         "vendor": {
           "type": "text",
@@ -43,7 +44,8 @@
             "show_variant_labels": true,
             "picker_type": "button",
             "enable_color_swatches": true,
-            "swatch_type": "round"
+            "swatch_type": "round",
+            "size_chart": ""
           }
         },
         "inventory_status": {
@@ -82,6 +84,7 @@
         "read_more": {
           "type": "read_more",
           "settings": {
+            "show_icon": false
           }
         },
         "share": {
@@ -110,9 +113,15 @@
         "enable_image_fill": true,
         "mobile_image_ratio": "adapt_first"
       }
+    },
+    "81221ea5-d309-4f71-bee9-d473cc9e5082": {
+      "type": "quick-action-product",
+      "settings": {
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "81221ea5-d309-4f71-bee9-d473cc9e5082"
   ]
 }
