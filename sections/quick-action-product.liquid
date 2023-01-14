@@ -5,14 +5,22 @@
     <div class="__product-add-cart-form">
       {%- render 'addtocart-form-single' | product: product -%}
     </div>
-
+    {%- if section.settings.description -%}
+      <div class="__desc">{{ section.settings.description }}</div>
+    {%- endif -%}
   </div>
 </div>
 
 {% schema %}
   {
     "name": "Quick Action Product",
-    "settings": [],
+    "settings": [
+      {
+        "type": "text",
+        "id": "description",
+        "label": "Description"
+      }
+    ],
     "presets": [
       {
         "name": "Quick Action Product"

@@ -5,6 +5,13 @@ export async function __requestUpdateCart(data) {
   });
 }
 
+const updateCartNote = () => {
+  $('body').on('change', 'textarea#mini-cart-note', async function() {
+    const note = this.value;
+    await $.post(routes.cart_update_url, { note })
+  })
+}
+
 const updateMiniCartUi = (html) => {
   const updateElems = [
     {
@@ -43,12 +50,12 @@ const updateQty = () => {
     $('.mini-cart').removeClass('__loading');
   })
 
-  $miniCart.on('click', '.__decrease-qty', function(e) {
+  $miniCart.on('click touchstart', '.__decrease-qty', function(e) {
     e.preventDefault();
     const $inputQty = $(this).parent().find('input[name="quantity[]"]');
     let value = parseInt($inputQty.val());
     let newValue = value - 1;
-    
+    console.log(newValue)
     if(newValue <= 0) {
       newValue = 1;
     }
@@ -56,7 +63,7 @@ const updateQty = () => {
     $inputQty.val(newValue).trigger('change');
   })
 
-  $miniCart.on('click', '.__increase-qty', function(e) {
+  $miniCart.on('click touchstart', '.__increase-qty', function(e) {
     e.preventDefault();
     const $inputQty = $(this).parent().find('input[name="quantity[]"]');
     let value = parseInt($inputQty.val());
@@ -72,6 +79,7 @@ const updateQty = () => {
 
 export default function MiniCart() {
   updateQty();
+  updateCartNote();
 }
 
 MiniCart(); 

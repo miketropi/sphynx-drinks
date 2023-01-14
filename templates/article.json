@@ -16,13 +16,11 @@
         "post_content": {
           "type": "post_content",
           "settings": {
-
           }
         },
         "post_sidebar": {
           "type": "post_sidebar",
           "settings": {
-            
           }
         }
       },
