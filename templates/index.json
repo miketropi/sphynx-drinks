@@ -189,6 +189,23 @@
         "bg_color": "#FFC85E"
       }
     },
+    "1bb65e81-d3ba-45ca-9c38-6518c725ad12": {
+      "type": "featured-collection-carousel",
+      "settings": {
+        "collection": "beer-and-cider",
+        "heading": "The best sellers",
+        "label_showall": "",
+        "link_showall": "",
+        "products_to_show": 10,
+        "autoplay": true,
+        "arrows": true,
+        "dots": true,
+        "infinite": true,
+        "speed": "5000",
+        "padding_top": 70,
+        "padding_bottom": 70
+      }
+    },
     "image-with-text-0": {
       "type": "image-with-text",
       "blocks": {
@@ -340,6 +357,7 @@
     "05a3923b-a232-4cf4-9fe4-c1e4714b9a2c",
     "8e7e9f80-9dc1-4376-9347-3d70f1ee5046",
     "c5da33ec-1001-49f4-8e1c-1ae3dfbda2f8",
+    "1bb65e81-d3ba-45ca-9c38-6518c725ad12",
     "image-with-text-0",
     "image-with-text-1",
     "a1abf3de-3bb7-4d86-b28f-ec8b85055b1a",
