@@ -14,7 +14,17 @@
 
 <div class="morden-blog-section section-{{ section.id }}-padding">
   <div class="morden-blog__container">
-    <h2 class="morden-blog__title">{{ section.settings.heading | escape }}</h2>
+    <div class="morden-blog__header">
+      <h2 class="morden-blog__title">{{ section.settings.heading | escape }}</h2>
+      {%- if section.settings.show_view_all -%}
+        <div class="morden-blog__view-all">
+          <a href="{{ section.settings.blog.url }}" class="view-all-btn">
+            View all
+          </a>
+        </div>
+      {%- endif -%}
+    </div>
+    
     <div class="morden-blog__list">
       {%- for article in section.settings.blog.articles limit: section.settings.post_limit -%}
         <div class="post-item-wrap post-index-{{ forloop.index }}">
@@ -36,6 +46,12 @@
       "id": "heading",
       "default": "Morden Blog",
       "label": "t:sections.all.heading.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_view_all",
+      "default": true,
+      "label": "t:sections.featured-blog.settings.show_view_all.label"
     },
     {
       "type": "blog",

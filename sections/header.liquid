@@ -1,6 +1,5 @@
 {%- liquid
   assign logo = section.settings.logo
-  assign mobile_logo = section.settings.mobile_logo | default: logo
 -%}
 
 <header class="site-header">
@@ -25,12 +24,22 @@
     <div class="site-header__search-tools">
       {%- render 'header-search-tools' -%}
     </div>
-
+    
     <div class="site-header__extra-tools">
       {%- render 'header-extra-tools' -%}
     </div>
     <div class="site-header__mobile-tools">
-      <div class="site-header__mobile-toggle">
+      <div class="site-header__mobile-search-toggle"> 
+      <svg viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg" class="search">
+        <path d="M10 17.6953C13.866 17.6953 17 14.5613 17 10.6953C17 6.82932 13.866 3.69531 10 3.69531C6.13401 3.69531 3 6.82932 3 10.6953C3 14.5613 6.13401 17.6953 10 17.6953Z" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path d="M15 15.6953L21 21.6953" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" x="0" y="0" viewBox="0 0 329.26933 329" style="enable-background:new 0 0 512 512" xml:space="preserve" class="close">
+        <path d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0" fill="#ffffff" data-original="#ffffff" class=""></path>
+      </svg>
+    </div>
+
+      <div class="site-header__mobile-menu-toggle">
         <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 464.205 464.205" style="enable-background:new 0 0 512 512" xml:space="preserve" class="bars">
           <path d="m435.192 406.18h-406.179c-16.024 0-29.013-12.99-29.013-29.013s12.989-29.013 29.013-29.013h406.18c16.023 0 29.013 12.99 29.013 29.013-.001 16.023-12.99 29.013-29.014 29.013z" fill="#ffffff" data-original="#ffffff" class=""></path>
           <path d="m435.192 261.115h-406.179c-16.024 0-29.013-12.989-29.013-29.012s12.989-29.013 29.013-29.013h406.18c16.023 0 29.013 12.989 29.013 29.013s-12.99 29.012-29.014 29.012z" fill="#ffffff" data-original="#ffffff" class=""></path>
@@ -87,10 +96,6 @@
         "type": "image_picker",
         "id": "logo",
         "label": "t:sections.header.settings.logo.label"
-      }, { 
-        "type": "image_picker",
-        "id": "mobile_logo",
-        "label": "t:sections.header.settings.mobile_logo.label"
       }, {
         "type": "link_list",
         "id": "menu",

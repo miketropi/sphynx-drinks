@@ -110,15 +110,17 @@
             "heading": "GOOD VIBES ONLY",
             "font_size": 36,
             "font_family": "Flavory Display",
-            "font_weight": "900"
+            "font_weight": "900",
+            "heading_color": "#000"
           }
         },
         "text": {
           "type": "text",
           "settings": {
             "text": "<p>Discover the massive range of non-alc drinks at Sphynx Drinks, an online festival full of crafty crisp pale ales, cocktail party starters and everything in between.<\/p>",
-            "text_size": "typeset",
-            "secondary_color": false
+            "font_size": 16,
+            "font_weight": "400",
+            "desc_color": "#000"
           }
         }
       },
@@ -265,15 +267,17 @@
             "heading": "WHY THE SPHYNX?",
             "font_size": 36,
             "font_family": "Flavory Display",
-            "font_weight": "900"
+            "font_weight": "900",
+            "heading_color": "#000"
           }
         },
         "template--16209525309668__a5805a9a-97c3-4963-b030-90fc05c65834-1668981743e8da70db-1": {
           "type": "text",
           "settings": {
             "text": "<p>Because a cat is chilled out and laid-back, with a no-stress attitude and a commitment to finer things in life. Because a cat is confident in its own skin (or fur), happy to run its own race and curious about doing things a little differently. And because when you're choosing non-alc drinks, whether it's every once in a while or as a permanent change, there's no more hair of the dog–it's about the good times, enjoying the moment, and not regretting it the next day.<\/p>",
-            "text_size": "typeset",
-            "secondary_color": false
+            "font_size": 16,
+            "font_weight": "400",
+            "desc_color": "#000"
           }
         },
         "template--16209525309668__a5805a9a-97c3-4963-b030-90fc05c65834-1668981743e8da70db-2": {
@@ -537,8 +541,7 @@
           "type": "button",
           "settings": {
             "button_label": "SHOP AWARD WINNERS",
-            "button_link": "shopify:\/\/collections\/award-winners",
-            "button_style_secondary": false
+            "button_link": "shopify:\/\/collections\/award-winners"
           }
         }
       },
@@ -597,15 +600,17 @@
             "heading": "<span style=\"font-family: Flavory Sans;\">NO MORE HAIR OF THE DOG: NON-ALC DRINKS FOR COOL CATS<\/span>",
             "font_size": 36,
             "font_family": "Flavory Display",
-            "font_weight": "900"
+            "font_weight": "900",
+            "heading_color": "#000"
           }
         },
         "subheading": {
           "type": "text",
           "settings": {
             "text": "<p><\/p>",
-            "text_size": "typeset3",
-            "secondary_color": false
+            "font_size": 16,
+            "font_weight": "400",
+            "desc_color": "#000"
           }
         }
       },
@@ -653,8 +658,7 @@
           "type": "button",
           "settings": {
             "button_label": "SHOP ALL",
-            "button_link": "shopify:\/\/collections",
-            "button_style_secondary": false
+            "button_link": "shopify:\/\/collections"
           }
         }
       },
@@ -784,8 +788,15 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/sd-main-banner-about.jpg",
             "title": "ABOUT SPHYNX",
-            "title_size": "h3",
+            "fz_title": 36,
+            "ff_title": "Flavory Display",
+            "fw_title": "900",
+            "heading_color": "#000",
             "text": "<p>Find out more about the cool cats at Sphynx Drinks and hear how it purred to life.<\/p>",
+            "fz_text": 16,
+            "ff_text": "Flavory Display",
+            "fw_text": "400",
+            "desc_color": "#8B8B8B",
             "button_label": "READ MORE",
             "button_link": "shopify:\/\/pages\/our-story",
             "button_style_secondary": false
@@ -796,8 +807,15 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/sd-banner-home-1.jpg",
             "title": "FIND YOUR FLAVOUR",
-            "title_size": "h3",
+            "fz_title": 36,
+            "ff_title": "Flavory Display",
+            "fw_title": "900",
+            "heading_color": "#000",
             "text": "<p>We've scoured the world for the best brands and styles. Discover the biggest and most thoughtfully-curated range in non alc drinks<\/p>",
+            "fz_text": 16,
+            "ff_text": "Flavory Display",
+            "fw_text": "400",
+            "desc_color": "#8B8B8B",
             "button_label": "SHOP NOW",
             "button_link": "shopify:\/\/collections",
             "button_style_secondary": false
@@ -808,8 +826,15 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/sd-main-banner-con.jpg",
             "title": "CONTACT THE CAT",
-            "title_size": "h3",
+            "fz_title": 36,
+            "ff_title": "Flavory Display",
+            "fw_title": "900",
+            "heading_color": "#000",
             "text": "<p>Reach out to us to get advice on our range, partner with us or chinwag about all things Sphynx.<\/p>",
+            "fz_text": 16,
+            "ff_text": "Flavory Display",
+            "fw_text": "400",
+            "desc_color": "#8B8B8B",
             "button_label": "CONTACT",
             "button_link": "shopify:\/\/pages\/contact",
             "button_style_secondary": false
@@ -844,7 +869,8 @@
             "heading": "@sphynxdrinks",
             "font_size": 36,
             "font_family": "Flavory Display",
-            "font_weight": "900"
+            "font_weight": "900",
+            "heading_color": "#000"
           }
         },
         "template--16209525309668__d0aa582c-04cc-4c59-a7d3-21d175133f25-16690748939f234e44-1": {
@@ -852,8 +878,9 @@
           "disabled": true,
           "settings": {
             "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
-            "text_size": "typeset2",
-            "secondary_color": false
+            "font_size": 16,
+            "font_weight": "400",
+            "desc_color": "#000"
           }
         },
         "template--16209525309668__d0aa582c-04cc-4c59-a7d3-21d175133f25-16690748939f234e44-2": {
@@ -956,7 +983,8 @@
             "collection": "amplify",
             "image": "shopify:\/\/shop_images\/collection-6.png",
             "name": "MIXERS",
-            "hover_color_background": "#F05123",
+            "text_color": "#FFFFFF",
+            "hover_color_background": "#f05123",
             "redirect_url": "",
             "box_size": "size_1",
             "custom_class": ""
@@ -968,7 +996,8 @@
             "collection": "4-pines",
             "image": "shopify:\/\/shop_images\/collection-2.png",
             "name": "NON-ALCOHOLIC CIDER",
-            "hover_color_background": "#F05123",
+            "text_color": "#FFFFFF",
+            "hover_color_background": "#f05123",
             "redirect_url": "",
             "box_size": "size_2",
             "custom_class": ""
@@ -980,7 +1009,8 @@
             "collection": "absolute-zero",
             "image": "shopify:\/\/shop_images\/collection-3.png",
             "name": "TONIC AND SODA",
-            "hover_color_background": "#F05123",
+            "text_color": "#FFFFFF",
+            "hover_color_background": "#f05123",
             "redirect_url": "",
             "box_size": "size_1",
             "custom_class": ""
@@ -992,7 +1022,8 @@
             "collection": "almost-zero",
             "image": "shopify:\/\/shop_images\/collection-4.png",
             "name": "NON-ALCOHOLIC WINE",
-            "hover_color_background": "#F05123",
+            "text_color": "#FFFFFF",
+            "hover_color_background": "#f05123",
             "redirect_url": "",
             "box_size": "size_2",
             "custom_class": ""
@@ -1004,7 +1035,8 @@
             "collection": "1883",
             "image": "shopify:\/\/shop_images\/collection-1.png",
             "name": "NON-ALCOHOLIC BEER",
-            "hover_color_background": "#F05123",
+            "text_color": "#FFFFFF",
+            "hover_color_background": "#f05123",
             "redirect_url": "",
             "box_size": "size_1",
             "custom_class": ""
@@ -1016,7 +1048,8 @@
             "collection": "altina",
             "image": "shopify:\/\/shop_images\/collection-5.png",
             "name": "NON-ALCOHOLIC SPIRITS",
-            "hover_color_background": "#F05123",
+            "text_color": "#FFFFFF",
+            "hover_color_background": "#f05123",
             "redirect_url": "",
             "box_size": "size_1",
             "custom_class": ""
@@ -1028,7 +1061,8 @@
             "collection": "apple-thief",
             "image": "shopify:\/\/shop_images\/collection-7.png",
             "name": "PREMIXED",
-            "hover_color_background": "#F05123",
+            "text_color": "#FFFFFF",
+            "hover_color_background": "#f05123",
             "redirect_url": "",
             "box_size": "size_1",
             "custom_class": "__fix-design"
@@ -1080,7 +1114,8 @@
       "type": "morden-blog",
       "settings": {
         "heading": "Morden Blog",
-        "blog": "news",
+        "show_view_all": true,
+        "blog": "recipes",
         "post_limit": 5,
         "padding_top": 80,
         "padding_bottom": 80

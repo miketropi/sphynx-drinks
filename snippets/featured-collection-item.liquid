@@ -341,7 +341,7 @@
   </div>
 
   {%- if settings.quick_view_enabled and enable_quick_view -%}
-    <quick-view-drawer>
+    <div class="quick-container quick-action-popup" data-product-url="{{ card_product.url }}?view=quickaction">
       <details>
         <summary class="quick-view__summary" tabindex="-1">
           VIEW
@@ -350,6 +350,6 @@
           <div class="quick-view__content"></div>
         </quick-view>
       </details>
-    </quick-view-drawer>
+    </div>
   {%- endif -%}
 </div>

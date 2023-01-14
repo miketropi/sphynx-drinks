@@ -9,17 +9,32 @@
             max-width: calc(100% - 30px);
             overflow: hidden;
         }
+        &__header {
+            text-align: center;
+            margin-bottom: 75px;
+        }
         &__title {
             font-family: 'Montserrat';
             font-style: normal;
             font-weight: 900;
             font-size: 36px;
-            line-height: 95%;
+            line-height: 120%;
             letter-spacing: 0;
             text-transform: uppercase;
-            text-align: center;
             color: #000000;
-            margin: 0 0 80px;
+            margin: 0;
+        }
+        &__view-all {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 146%;
+            letter-spacing: 0;
+            color: #F05123;
+            margin-top: 10px;
+            a {
+                color: inherit;
+                text-decoration: underline;
+            }
         }
         &__list {
             display: grid;
@@ -32,16 +47,23 @@
             }
             @extend .__post_item_style;
             .post-item {
+                background: #F9F9F9;
+                overflow: hidden;
+                border-radius: 18px;
+                &__thumb {
+                    height: 230px;
+                    margin-bottom: 0;
+                    padding-bottom: 0;
+                    border-radius: 0;
+                }
+                &__content {
+                    padding: 20px 20px 35px
+                }
                 &__title {
                     overflow: hidden;
                     display: -webkit-box;
                     -webkit-box-orient: vertical;
                     -webkit-line-clamp: 1;
-                }
-                &__thumb {
-                    height: 230px;
-                    padding-bottom: 0;
-                    border-radius: 8px;
                 }
                 &__excerpt {
                     overflow: hidden;
@@ -59,7 +81,7 @@
             }
             .post-index-1 .post-item {
                 &__thumb {
-                    height: 748px;
+                    height: 694px;
                 }
             }
         }

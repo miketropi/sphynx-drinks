@@ -1,21 +1,13 @@
 {%- style -%}
-  #shopify-section-{{ section.id }} {
-    --image-position: {{ section.settings.image_position }};
-  }
+    #shopify-section-{{ section.id }} {
+      --image-position: {{ section.settings.image_position }};
+    }
 
-  .section-{{ section.id }}-padding {
-    padding-top: calc({{ section.settings.padding_top }}px * 0.75);
-    padding-bottom: calc({{ section.settings.padding_bottom }}px  * 0.75);
-  }
-
-  @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
-  }
 {%- endstyle -%}
-
 
 <div class="section-ft-collection-carousel-inner section-{{ section.id }}-padding">
   <div class="section-container">
@@ -23,7 +15,7 @@
     {%- if section.settings.label_showall != blank -%}
       <a href="{{ section.settings.link_showall }}" class="link-show-all">{{ section.settings.label_showall }}</a>
     {%- endif -%}
-    <div class="section-ft-collection-carousel-wrap">
+    <div class="section-ft-collection-carousel-wrap" data-speed="{{section.settings.speed}}" data-autoplay="{{section.settings.autoplay}}" data-arrows="{{section.settings.arrows}}" data-dots="{{section.settings.dots}}" data-infinite="{{section.settings.infinite}}">
       <div class="ft-collection-carousel-wrap">
         {%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}
           <div class="carousel-item">
@@ -42,6 +34,7 @@
           </div>
         {%- endfor -%}
       </div>
+      <div class="carousel-nav"><div class="carousel-nav-inner"></div></div>
     </div>
   </div>
 </div>
@@ -114,7 +107,7 @@
     {
       "type": "text",
       "id": "speed",
-      "default": "500",
+      "default": "5000",
       "label": "Speed (ms)"
     },
     {

@@ -37,12 +37,44 @@ class FeaturedCollectionCarousel {
             infinite: this.slideInfinite,
             autoplay: this.slideAutoplay,
             autoplaySpeed: this.slideTimer,
-            arrows: true,
-            slidesToShow: 4,
+            arrows: this.slideArrows,
+            slidesToShow: 5,
             slidesToScroll: 1,
             prevArrow: `<span class="__slide-nav __slide-prev">${ this.prevIcon }</span>`,
             nextArrow: `<span class="__slide-nav __slide-next">${ this.nextIcon }</span>`,
-            
+            appendArrows: '.carousel-nav .carousel-nav-inner', 
+            appendDots: '.carousel-nav .carousel-nav-inner',
+            responsive: [
+                {
+                    breakpoint: 1400,
+                    settings: {
+                      slidesToShow: 4,
+                      slidesToScroll: 1,
+                    }
+                  },
+                {
+                  breakpoint: 1024,
+                  settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true,
+                  }
+                },
+                {
+                  breakpoint: 991,
+                  settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                  }
+                },
+                {
+                  breakpoint: 480,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                  }
+                }
+              ]
         });
 
     }
