@@ -1,5 +1,38 @@
 {
   "sections": {
+    "6f70226f-cf6b-4a39-a3c5-c9982266e148": {
+      "type": "hero-section",
+      "blocks": {
+        "template--16656683270372__6f70226f-cf6b-4a39-a3c5-c9982266e148-16736680464e956660-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "All the best deals and current offers at Sphynx Drinks, all-in-one place!",
+            "font_size": 54,
+            "font_family": "Montserrat",
+            "font_weight": "900",
+            "heading_color": "#000"
+          }
+        },
+        "template--16656683270372__6f70226f-cf6b-4a39-a3c5-c9982266e148-16736680464e956660-1": {
+          "type": "button",
+          "settings": {
+            "btn_label": "Button Label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16656683270372__6f70226f-cf6b-4a39-a3c5-c9982266e148-16736680464e956660-0",
+        "template--16656683270372__6f70226f-cf6b-4a39-a3c5-c9982266e148-16736680464e956660-1"
+      ],
+      "settings": {
+        "media": "shopify:\/\/shop_images\/Rectangle_211.png",
+        "bg_color": "#FFC85E",
+        "padding_top": 70,
+        "padding_bottom": 70,
+        "custom_class": ""
+      }
+    },
     "image-with-text-0": {
       "type": "image-with-text",
       "blocks": {
@@ -147,6 +180,7 @@
     }
   },
   "order": [
+    "6f70226f-cf6b-4a39-a3c5-c9982266e148",
     "image-with-text-0",
     "image-with-text-1",
     "a1abf3de-3bb7-4d86-b28f-ec8b85055b1a",
