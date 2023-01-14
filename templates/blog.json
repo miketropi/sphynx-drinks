@@ -16,13 +16,11 @@
         "blog_content": {
           "type": "blog_content",
           "settings": {
-
           }
         },
         "blog_sidebar": {
           "type": "blog_sidebar",
           "settings": {
-            
           }
         }
       },

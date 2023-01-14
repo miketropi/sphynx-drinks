@@ -140,6 +140,41 @@
         "padding_bottom": 70
       }
     },
+    "c5da33ec-1001-49f4-8e1c-1ae3dfbda2f8": {
+      "type": "card-width-icon",
+      "blocks": {
+        "template--16656683270372__c5da33ec-1001-49f4-8e1c-1ae3dfbda2f8-1673668650b0f017a6-0": {
+          "type": "card_item",
+          "settings": {
+            "card_heading": "Card heading",
+            "text": "<p>Founded by three great mates, Sphynx is exceptionally proud to be a 100% Australian-owned and operated online non-alcoholic beverages company providing thirsty Australians with an alternative.<\/p>",
+            "heading_color": "#000",
+            "content_color": "#8B8B8B",
+            "bg_item_color": "#FFF"
+          }
+        },
+        "template--16656683270372__c5da33ec-1001-49f4-8e1c-1ae3dfbda2f8-1673668650b0f017a6-1": {
+          "type": "card_item",
+          "settings": {
+            "card_heading": "Card heading",
+            "text": "<p>Founded by three great mates, Sphynx is exceptionally proud to be a 100% Australian-owned and operated online non-alcoholic beverages company providing thirsty Australians with an alternative.<\/p>",
+            "heading_color": "#000",
+            "content_color": "#8B8B8B",
+            "bg_item_color": "#FFF"
+          }
+        }
+      },
+      "block_order": [
+        "template--16656683270372__c5da33ec-1001-49f4-8e1c-1ae3dfbda2f8-1673668650b0f017a6-0",
+        "template--16656683270372__c5da33ec-1001-49f4-8e1c-1ae3dfbda2f8-1673668650b0f017a6-1"
+      ],
+      "settings": {
+        "heading_card": "<span>The Sphynx<\/span> Non-Alcoholic Beverages Guarantee",
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "bg_color": "#FFC85E"
+      }
+    },
     "image-with-text-0": {
       "type": "image-with-text",
       "blocks": {
@@ -290,6 +325,7 @@
     "6f70226f-cf6b-4a39-a3c5-c9982266e148",
     "05a3923b-a232-4cf4-9fe4-c1e4714b9a2c",
     "8e7e9f80-9dc1-4376-9347-3d70f1ee5046",
+    "c5da33ec-1001-49f4-8e1c-1ae3dfbda2f8",
     "image-with-text-0",
     "image-with-text-1",
     "a1abf3de-3bb7-4d86-b28f-ec8b85055b1a",
