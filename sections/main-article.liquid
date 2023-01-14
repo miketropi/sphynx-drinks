@@ -80,7 +80,7 @@
           </div>
           {%- when 'post_sidebar'-%}
           <div class="single-post__sidebar">
-            {% render 'blog-sidebar'  %}
+            {% render 'blog-sidebar', blog: section.settings.blog, post_limit: section.settings.post_limit %}
           </div>
         {%- endcase -%}
       {%- endfor -%}
@@ -115,6 +115,21 @@
         "unit": "t:sections.all.padding.padding_bottom.unit",
         "label": "t:sections.all.padding.padding_bottom.label",
         "default": 36
+      }, {
+        "type": "header",
+        "content": "Blog Sidebar"
+      }, {
+        "type": "blog",
+        "id": "blog",
+        "label": "t:sections.featured-blog.settings.blog.label"
+      }, {
+        "type": "range",
+        "id": "post_limit",
+        "min": 3,
+        "max": 6,
+        "step": 1,
+        "default": 3,
+        "label": "t:sections.featured-blog.settings.post_limit.label"
       }
     ],
     "blocks": [
