@@ -672,6 +672,13 @@ function ProductCarousel() {
           slidesToShow: 2,
           slidesToScroll: 1
         }
+      }, {
+        breakpoint: 426,
+        settings: {
+          arrows: false,
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
       }]
     });
   });

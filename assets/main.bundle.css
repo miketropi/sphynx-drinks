@@ -193,8 +193,11 @@
   color: #8B8B8B;
   border: none;
   border-radius: 8px;
-  background-color: #FFFFFF;
   padding: 23px 30px;
+  background-color: white;
+  width: 340px;
+  max-width: 100%;
+  padding: 1.5em;
 }
 .membership-register-form .__form-container .button {
   background-color: #F05123;
@@ -2011,6 +2014,18 @@ ul.menu-style-mobile li.menu-link .menu-icon-arrow.open {
     width: 47% !important;
   }
 }
+@media (max-width: 500px) {
+  .collection-gallery__box-grid .grid-sizer,
+  .collection-gallery__box-grid .grid-item {
+    width: 45% !important;
+  }
+}
+@media (max-width: 320px) {
+  .collection-gallery__box-grid .grid-sizer,
+  .collection-gallery__box-grid .grid-item {
+    width: 100% !important;
+  }
+}
 .collection-gallery__box-grid .box-item {
   margin-bottom: 30px;
   line-height: 0;
@@ -2032,10 +2047,9 @@ ul.menu-style-mobile li.menu-link .menu-icon-arrow.open {
 .collection-gallery__box-grid .box-item__decor {
   position: absolute;
   left: 0;
-  top: 50%;
+  top: 85%;
   width: 100%;
   height: 100%;
-  opacity: 0;
   transition: 0.2s ease;
   -webkit-transition: 0.2s ease;
 }
@@ -2062,8 +2076,8 @@ ul.menu-style-mobile li.menu-link .menu-icon-arrow.open {
 .collection-gallery__box-grid .box-item__inner .box-info {
   padding: 26px;
   text-align: center;
-  transform: translateY(40%);
-  -webkit-transform: translateY(40%);
+  transform: translateY(50%);
+  -webkit-transform: translateY(50%);
   transition: 0.3s ease;
   -webkit-transition: 0.3s ease;
 }
