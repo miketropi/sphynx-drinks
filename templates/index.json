@@ -221,34 +221,26 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "JOIN THE PARTY",
+            "heading": "Charity Donation With Every Alcohol-Free Drink Purchased",
             "heading_size": "h1"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Our mission is simple: to curate the best range of non-alc drinks in the world. There's a festival of amazing flavours waiting to be discovered and it's our mission to taste them all! You could say, we did the hard work so you didn't have to, but in truth it was a pretty fun time. Whether you're after craft beers, booze-free spirits or beautiful wines, we've done the due diligence and we've got the perfect drop for you.<\/p>",
+            "text": "<p>With every single sale of a non-alcoholic drink at Sphynx, a percentage of the profit gets gifted to some of our close-knit ring of non-profit charities. Helping the community is part of the Sphynx DNA, and with every purchase of zero-alcohol drinks, you’re helping those in society who need a little lift and saving yourself from the morning after. These are the best non-alcoholic beverages Australia has, and we’re proud of being able to pay it forward.<\/p>",
             "text_size": "typeset",
             "secondary_color": false
-          }
-        },
-        "button": {
-          "type": "button",
-          "settings": {
-            "button_label": "SHOP AWARD WINNERS",
-            "button_link": "shopify:\/\/collections\/award-winners"
           }
         }
       },
       "block_order": [
         "subheading",
         "heading",
-        "text",
-        "button"
+        "text"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/blake-wisz-Qg8G7PSXt4A-unsplash.jpg",
+        "image": "shopify:\/\/shop_images\/Rectangle_229.png",
         "image_position": "center center",
         "layout": "text_first",
         "text_box_position": "middle",
