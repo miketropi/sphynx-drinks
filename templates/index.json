@@ -481,6 +481,23 @@
         "padding_bottom": 70,
         "custom_class": ""
       }
+    },
+    "cd357b2a-fb79-4170-a634-95f0a4a293c5": {
+      "type": "featured-collection-carousel",
+      "settings": {
+        "collection": "bestsellers",
+        "heading": "The best sellers",
+        "label_showall": "Shop all Best Sellers",
+        "link_showall": "",
+        "products_to_show": 5,
+        "autoplay": true,
+        "arrows": true,
+        "dots": true,
+        "infinite": true,
+        "speed": "5000",
+        "padding_top": 70,
+        "padding_bottom": 70
+      }
     }
   },
   "order": [
@@ -495,6 +512,7 @@
     "a1abf3de-3bb7-4d86-b28f-ec8b85055b1a",
     "fe21cc71-ace1-46a3-a5ca-7f6c157faaaa",
     "16686615660cb3138f",
-    "218226e6-a49e-4067-bcbc-48c60058bd52"
+    "218226e6-a49e-4067-bcbc-48c60058bd52",
+    "cd357b2a-fb79-4170-a634-95f0a4a293c5"
   ]
 }
