@@ -80,6 +80,98 @@ faqToggle();
 
 /***/ }),
 
+/***/ "./src/js/featured-collection-carousel.js":
+/*!************************************************!*\
+  !*** ./src/js/featured-collection-carousel.js ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "initFeaturedCollectionCarousel": () => (/* binding */ initFeaturedCollectionCarousel)
+/* harmony export */ });
+/* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! slick-carousel */ "./node_modules/slick-carousel/slick/slick.js");
+/* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(slick_carousel__WEBPACK_IMPORTED_MODULE_0__);
+/* provided dependency */ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+
+var FeaturedCollectionCarousel = /*#__PURE__*/function () {
+  function FeaturedCollectionCarousel() {
+    _classCallCheck(this, FeaturedCollectionCarousel);
+    this.carousel = document.querySelector('.section-ft-collection-carousel-wrap');
+    this.slideTimer = 500;
+    this.slideAutoplay = true;
+    this.slideArrows = true;
+    this.slideInfinite = true;
+    this.prevIcon = "\n  <svg width=\"43\" height=\"43\" viewBox=\"0 0 43 43\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n  <circle r=\"21\" transform=\"matrix(-1 0 0 1 21.9263 21.3164)\" fill=\"#F05123\"/>\n  <path d=\"M14.9263 21.1934H28.9263\" stroke=\"white\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n  <path d=\"M21.9263 28.1934L28.9263 21.1934L21.9263 14.1934\" stroke=\"white\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n  </svg>";
+    this.nextIcon = "\n  <svg width=\"43\" height=\"43\" viewBox=\"0 0 43 43\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle r=\"21\" transform=\"matrix(-1 0 0 1 21.9263 21.3164)\" fill=\"#F05123\"/>\n<path d=\"M14.9263 21.1934H28.9263\" stroke=\"white\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M21.9263 28.1934L28.9263 21.1934L21.9263 14.1934\" stroke=\"white\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>";
+    if (this.carousel) {
+      this.initializeCarousel();
+    }
+  }
+  _createClass(FeaturedCollectionCarousel, [{
+    key: "initializeCarousel",
+    value: function initializeCarousel() {
+      this.$slider = $(this.carousel).find('.ft-collection-carousel-wrap');
+      this.slideTimer = $(this.carousel).data('speed');
+      this.slideAutoplay = $(this.carousel).data('autoplay');
+      this.slideArrows = $(this.carousel).data('arrows');
+      this.slideInfinite = $(this.carousel).data('infinite');
+      this.$slider.slick({
+        dots: true,
+        infinite: this.slideInfinite,
+        autoplay: this.slideAutoplay,
+        autoplaySpeed: this.slideTimer,
+        arrows: this.slideArrows,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        prevArrow: "<span class=\"__slide-nav __slide-prev\">".concat(this.prevIcon, "</span>"),
+        nextArrow: "<span class=\"__slide-nav __slide-next\">".concat(this.nextIcon, "</span>"),
+        appendArrows: '.carousel-nav .carousel-nav-inner',
+        appendDots: '.carousel-nav .carousel-nav-inner',
+        responsive: [{
+          breakpoint: 1400,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 1
+          }
+        }, {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: true
+          }
+        }, {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        }, {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }]
+      });
+    }
+  }]);
+  return FeaturedCollectionCarousel;
+}();
+var initFeaturedCollectionCarousel = function initFeaturedCollectionCarousel() {
+  new FeaturedCollectionCarousel();
+};
+
+/***/ }),
+
 /***/ "./src/js/home_slider.js":
 /*!*******************************!*\
   !*** ./src/js/home_slider.js ***!
@@ -756,15 +848,17 @@ ratingRendering();
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _js_home_slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/home_slider */ "./src/js/home_slider.js");
 /* harmony import */ var _js_panel_carousel__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/panel-carousel */ "./src/js/panel-carousel.js");
-/* harmony import */ var _js_collection_gallery__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/collection-gallery */ "./src/js/collection-gallery.js");
-/* harmony import */ var _js_rating_rendering__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/rating-rendering */ "./src/js/rating-rendering.js");
-/* harmony import */ var _js_product_carousel__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./js/product-carousel */ "./src/js/product-carousel.js");
-/* harmony import */ var _js_prod_cat_carousel__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./js/prod-cat-carousel */ "./src/js/prod-cat-carousel.js");
-/* harmony import */ var _js_main_product__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./js/main-product */ "./src/js/main-product.js");
-/* harmony import */ var _js_faq_toggle__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./js/faq-toggle */ "./src/js/faq-toggle.js");
-/* harmony import */ var _js_minicart__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./js/minicart */ "./src/js/minicart.js");
-/* harmony import */ var _js_mobile_menu__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./js/mobile-menu */ "./src/js/mobile-menu.js");
-/* harmony import */ var _js_quick_action_popup__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./js/quick-action-popup */ "./src/js/quick-action-popup.js");
+/* harmony import */ var _js_featured_collection_carousel__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/featured-collection-carousel */ "./src/js/featured-collection-carousel.js");
+/* harmony import */ var _js_collection_gallery__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/collection-gallery */ "./src/js/collection-gallery.js");
+/* harmony import */ var _js_rating_rendering__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./js/rating-rendering */ "./src/js/rating-rendering.js");
+/* harmony import */ var _js_product_carousel__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./js/product-carousel */ "./src/js/product-carousel.js");
+/* harmony import */ var _js_prod_cat_carousel__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./js/prod-cat-carousel */ "./src/js/prod-cat-carousel.js");
+/* harmony import */ var _js_main_product__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./js/main-product */ "./src/js/main-product.js");
+/* harmony import */ var _js_faq_toggle__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./js/faq-toggle */ "./src/js/faq-toggle.js");
+/* harmony import */ var _js_minicart__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./js/minicart */ "./src/js/minicart.js");
+/* harmony import */ var _js_mobile_menu__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./js/mobile-menu */ "./src/js/mobile-menu.js");
+/* harmony import */ var _js_quick_action_popup__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./js/quick-action-popup */ "./src/js/quick-action-popup.js");
+
 
 
 
@@ -778,6 +872,7 @@ __webpack_require__.r(__webpack_exports__);
 
 (0,_js_home_slider__WEBPACK_IMPORTED_MODULE_0__.initHomeSlider)();
 (0,_js_panel_carousel__WEBPACK_IMPORTED_MODULE_1__.initPanelCarousel)();
+(0,_js_featured_collection_carousel__WEBPACK_IMPORTED_MODULE_2__.initFeaturedCollectionCarousel)();
 
 /***/ }),
 
