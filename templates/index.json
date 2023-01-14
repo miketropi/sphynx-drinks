@@ -123,6 +123,23 @@
         "custom_class": ""
       }
     },
+    "8e7e9f80-9dc1-4376-9347-3d70f1ee5046": {
+      "type": "featured-collection-carousel",
+      "settings": {
+        "collection": "bestsellers",
+        "heading": "Special offers",
+        "label_showall": "Shop all Best Sellers",
+        "link_showall": "",
+        "products_to_show": 12,
+        "autoplay": true,
+        "arrows": true,
+        "dots": true,
+        "infinite": true,
+        "speed": "5000",
+        "padding_top": 70,
+        "padding_bottom": 70
+      }
+    },
     "image-with-text-0": {
       "type": "image-with-text",
       "blocks": {
@@ -272,6 +289,7 @@
   "order": [
     "6f70226f-cf6b-4a39-a3c5-c9982266e148",
     "05a3923b-a232-4cf4-9fe4-c1e4714b9a2c",
+    "8e7e9f80-9dc1-4376-9347-3d70f1ee5046",
     "image-with-text-0",
     "image-with-text-1",
     "a1abf3de-3bb7-4d86-b28f-ec8b85055b1a",
