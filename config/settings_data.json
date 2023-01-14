@@ -102,7 +102,6 @@
         "type": "header",
         "settings": {
           "logo": "shopify:\/\/shop_images\/Asset_1_4x_6e2e6a3a-4349-4f93-a737-600c979d0aaa.png",
-          "mobile_logo": "shopify:\/\/shop_images\/sphynx-test-logo.png",
           "menu": "main-menu",
           "second_main_menu": "second-main-menu"
         }
@@ -113,14 +112,14 @@
           "e5ce58ea-d43c-42eb-ae8d-f362f06ba071": {
             "type": "membership-form",
             "settings": {
-              "heading": "FIND YOUR FLAVOUR",
+              "heading": "Sign up",
               "description": "Apply for our free membership to receive exclusive deals, news, and events."
             }
           },
           "0130e6e7-d300-4ed4-b84f-2b8d18054be6": {
             "type": "footer-brand-image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/Logo-Icon.png"
+              "image": "shopify:\/\/shop_images\/footer-logo.png"
             }
           },
           "16453796-efe6-46c8-8bf8-80b6800f35ca": {
