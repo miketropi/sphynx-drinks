@@ -254,6 +254,23 @@
         "padding_bottom": 36
       }
     },
+    "2d3fbef1-fbe7-43ba-99a1-9f9008bf4d0b": {
+      "type": "featured-collection-carousel",
+      "settings": {
+        "collection": "beer-and-cider",
+        "heading": "Featured collection",
+        "label_showall": "Shop all Best Sellers",
+        "link_showall": "",
+        "products_to_show": 10,
+        "autoplay": true,
+        "arrows": true,
+        "dots": true,
+        "infinite": true,
+        "speed": "5000",
+        "padding_top": 70,
+        "padding_bottom": 70
+      }
+    },
     "image-with-text-1": {
       "type": "image-with-text",
       "blocks": {
@@ -269,34 +286,26 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "A FESTIVAL OF FLAVOURS",
+            "heading": "Why Choose Sphynx No Alcohol Drinks?",
             "heading_size": "h1"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>There's never been a more exciting time for fans of non-alc drinks – we're discovering new flavours, styles and brands every day. But it's always been difficult shopping them all in one stop. The big retailers tend to stock a few in the dustiest corners of the fridge, and it can be tough tracking down a curated range of quality options online. No more, cool cats: whatever your taste, whatever your tipple of choice is, we've got the drink for you. To that, we'll raise a glass and say cheers.<\/p>",
+            "text": "<p>Over the past few years, more and more Australians have been reducing their consumption of alcohol. It has seen people searching for alcohol-free drink alternatives that allow them to enjoy the taste of their favourite beverage without the drawbacks. Zero-alcohol beverages are seeing people able to socialise, have fun, and party just as hard with an alcohol-free drink in their hand. With no more smashing hangovers, plus the excellent health benefits over regular boozy beverages, why choose anything else?<\/p>",
             "text_size": "typeset",
             "secondary_color": false
-          }
-        },
-        "button": {
-          "type": "button",
-          "settings": {
-            "button_label": "SHOP ALL",
-            "button_link": "shopify:\/\/collections"
           }
         }
       },
       "block_order": [
         "subheading",
         "heading",
-        "text",
-        "button"
+        "text"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/poolside-shape.jpg",
+        "image": "shopify:\/\/shop_images\/Rectangle_229s.png",
         "image_position": "80% 50%",
         "layout": "image_first",
         "text_box_position": "middle",
@@ -351,6 +360,7 @@
     "c5da33ec-1001-49f4-8e1c-1ae3dfbda2f8",
     "1bb65e81-d3ba-45ca-9c38-6518c725ad12",
     "image-with-text-0",
+    "2d3fbef1-fbe7-43ba-99a1-9f9008bf4d0b",
     "image-with-text-1",
     "a1abf3de-3bb7-4d86-b28f-ec8b85055b1a",
     "16686615660cb3138f"
