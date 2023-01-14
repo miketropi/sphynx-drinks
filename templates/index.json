@@ -330,6 +330,46 @@
         "padding_bottom": 80
       }
     },
+    "fe21cc71-ace1-46a3-a5ca-7f6c157faaaa": {
+      "type": "section-panel-carousel",
+      "blocks": {
+        "template--16656683270372__fe21cc71-ace1-46a3-a5ca-7f6c157faaaa-16736692087857a499-0": {
+          "type": "panel_item",
+          "settings": {
+            "heading": "Experience The Sphynx Curated Collection of No-Alcohol Drinks and Party On!",
+            "panel_text": "<p>At Sphynx, the game plan is a simple one. We are unwavering in our mission to seek out and furnish you with the latest, most extraordinary, and incredible non-alcoholic beverage options available anywhere! Maybe you’re a wine drinker, love a cold crisp cider after work, or enjoy a few bevvies watching the footy. Sphynx zero-alcohol beverages hit the spot every time and were accumulated diligently after hours of tasting the country’s best non-alcoholic drinks. Australia can be massively proud of its brewing industry, and you can keep the party going without feeling rotten in the morning.<\/p>",
+            "heading_color": "#000",
+            "content_color": "#8B8B8B",
+            "bg_item_color": "#FFF"
+          }
+        },
+        "template--16656683270372__fe21cc71-ace1-46a3-a5ca-7f6c157faaaa-16736692087857a499-1": {
+          "type": "panel_item",
+          "settings": {
+            "heading": "Experience The Sphynx Curated Collection of No-Alcohol Drinks and Party On!",
+            "panel_text": "<p>At Sphynx, the game plan is a simple one. We are unwavering in our mission to seek out and furnish you with the latest, most extraordinary, and incredible non-alcoholic beverage options available anywhere! Maybe you’re a wine drinker, love a cold crisp cider after work, or enjoy a few bevvies watching the footy. Sphynx zero-alcohol beverages hit the spot every time and were accumulated diligently after hours of tasting the country’s best non-alcoholic drinks. Australia can be massively proud of its brewing industry, and you can keep the party going without feeling rotten in the morning.<\/p>",
+            "heading_color": "#000",
+            "content_color": "#8B8B8B",
+            "bg_item_color": "#FFF"
+          }
+        }
+      },
+      "block_order": [
+        "template--16656683270372__fe21cc71-ace1-46a3-a5ca-7f6c157faaaa-16736692087857a499-0",
+        "template--16656683270372__fe21cc71-ace1-46a3-a5ca-7f6c157faaaa-16736692087857a499-1"
+      ],
+      "settings": {
+        "bg_image": "shopify:\/\/shop_images\/7ab24fa888d331379790ecefe7ca5b33.jpg",
+        "padding_top": 154,
+        "padding_bottom": 154,
+        "autoplay": true,
+        "arrows": true,
+        "dots": false,
+        "infinite": true,
+        "speed": "5000",
+        "bg_color": "#FFC85E"
+      }
+    },
     "16686615660cb3138f": {
       "type": "apps",
       "blocks": {
@@ -363,6 +403,7 @@
     "2d3fbef1-fbe7-43ba-99a1-9f9008bf4d0b",
     "image-with-text-1",
     "a1abf3de-3bb7-4d86-b28f-ec8b85055b1a",
+    "fe21cc71-ace1-46a3-a5ca-7f6c157faaaa",
     "16686615660cb3138f"
   ]
 }
