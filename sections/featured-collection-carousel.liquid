@@ -1,0 +1,151 @@
+{%- style -%}
+  #shopify-section-{{ section.id }} {
+    --image-position: {{ section.settings.image_position }};
+  }
+
+  .section-{{ section.id }}-padding {
+    padding-top: calc({{ section.settings.padding_top }}px * 0.75);
+    padding-bottom: calc({{ section.settings.padding_bottom }}px  * 0.75);
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+
+<div class="section-ft-collection-carousel-inner section-{{ section.id }}-padding">
+  <div class="section-container">
+    <h2 class="title">{{ section.settings.heading | escape }}</h2>
+    {%- if section.settings.label_showall != blank -%}
+      <a href="{{ section.settings.link_showall }}" class="link-show-all">{{ section.settings.label_showall }}</a>
+    {%- endif -%}
+    <div class="section-ft-collection-carousel-wrap">
+      <div class="ft-collection-carousel-wrap">
+        {%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}
+          <div class="carousel-item">
+            {% render 'featured-collection-item',
+              card_product: product,
+              media_size: 'portrait',
+              show_secondary_image: false,
+              show_quick_buy: true,
+              show_vendor: true,
+              show_rating: true,
+              enable_quick_view: true,
+              enable_color_swatches: true,
+              enable_countdown: true,
+              enable_image_fill: true
+            %}
+          </div>
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Collection Carousel",
+  "tag": "section",
+  "class": "section-ft-collection-carousel",
+  "settings": [
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "t:sections.featured-collection.settings.collection.label"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "Featured collection",
+      "label": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "label_showall",
+      "default": "Shop all Best Sellers",
+      "label": "Label show all"
+    },
+    {
+      "type": "url",
+      "id": "link_showall",
+      "label": "Link show all"
+    },
+    {
+      "type": "range",
+      "id": "products_to_show",
+      "min": 1,
+      "max": 12,
+      "step": 1,
+      "default": 5,
+      "label": "Products to show"
+    },
+    {
+      "type": "header",
+      "content": "Settings Carousel"
+    },
+    {
+      "type": "checkbox",
+      "id": "autoplay",
+      "label": "Autoplay",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "arrows",
+      "label": "Arrows",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "dots",
+      "label": "Dots",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "infinite",
+      "label": "Infinite",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "speed",
+      "default": "500",
+      "label": "Speed (ms)"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.header.content"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "t:sections.all.padding.padding_top.unit",
+      "label": "t:sections.all.padding.padding_top.label",
+      "default": 70
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "t:sections.all.padding.padding_bottom.unit",
+      "label": "t:sections.all.padding.padding_bottom.label",
+      "default": 70
+    }
+  ],
+  "presets": [
+    {
+      "name": "Collection Carousel"
+    }
+  ]
+}
+{% endschema %}
