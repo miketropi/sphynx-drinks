@@ -62,6 +62,8 @@
                 .card-wrapper {
                     .card--product {
                         .card__media {
+                            background-color: transparent;
+
                             .media {
                                 padding: 0;
                                 height: 280px;
@@ -96,6 +98,7 @@
                         color: #000000;
                         letter-spacing: normal;
                         margin-bottom: 5px;
+                        text-transform: none;
                     }
 
                     .card-information__text {
@@ -108,12 +111,35 @@
                         text-transform: none;
                         letter-spacing: normal;
                         margin-bottom: 10px;
+                        text-decoration: none;
+                    }
+                    .card__badge{
+                        display: none;
                     }
 
                     .card-information__button {
                         position: relative;
                         left: 0;
                         bottom: 0;
+
+                        .button {
+                            font-family: 'Montserrat';
+                            font-style: normal;
+                            font-weight: 900;
+                            font-size: 16px;
+                            line-height: 95%;
+                            color: #FFFFFF !important;
+                            background: #F05123;
+                            border-radius: 8px;
+                            padding: 10px 25px;
+                            border: 1px solid #F05123;
+                            min-width: auto;
+                            text-transform: none;
+                            letter-spacing: normal;
+                            &:hover{
+                                color: #F05123 !important;
+                            }
+                        }
                     }
 
                     .rating {
@@ -139,6 +165,17 @@
                         color: #000000;
                         letter-spacing: normal;
                         margin-bottom: 20px;
+                        price-money+price-money::before {
+                            content: '\2013';
+                            margin-inline-end: 0.7rem;
+                        }
+                        .price__sale {
+                            display: none;
+                        }
+
+                        dd {
+                            margin: 0;
+                        }
                     }
 
                     .button--soldout {
@@ -188,9 +225,11 @@
             margin-top: 50px;
             display: flex;
             justify-content: center;
-            @media (max-width: 767px){
+
+            @media (max-width: 767px) {
                 margin-top: 30px;
             }
+
             &-inner {
                 position: relative;
                 display: inline-block;

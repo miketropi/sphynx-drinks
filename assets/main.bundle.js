@@ -104,7 +104,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 var FeaturedCollectionCarousel = /*#__PURE__*/function () {
   function FeaturedCollectionCarousel() {
     _classCallCheck(this, FeaturedCollectionCarousel);
-    this.carousel = document.querySelector('.section-ft-collection-carousel-wrap');
+    this.carousel = $('.section-ft-collection-carousel-wrap');
     this.slideTimer = 500;
     this.slideAutoplay = true;
     this.slideArrows = true;

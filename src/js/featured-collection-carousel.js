@@ -2,7 +2,7 @@ import slick from 'slick-carousel';
 
 class FeaturedCollectionCarousel {
     constructor() {
-        this.carousel = document.querySelector('.section-ft-collection-carousel-wrap');
+        this.carousel = $('.section-ft-collection-carousel-wrap');
         this.slideTimer = 500;
         this.slideAutoplay = true;
         this.slideArrows = true;
