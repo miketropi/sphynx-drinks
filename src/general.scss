@@ -17,13 +17,22 @@
   form {
     width: 100%;
     position: relative;
-
+    ::placeholder {
+      color: #CDCDCD;
+    }
     input[name=q] {
       width: 100%;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 146%;
+      letter-spacing: 0;
+      color: #8B8B8B;
       border-radius: 8px;
       border: none;
-      background: white;  
-      padding: 1em;
+      background: #FFFFFF;  
+      padding: 13px 40px 13px 20px;
     }
 
     input[type=submit] {
@@ -64,49 +73,61 @@
 }
 
 .membership-register-form {
-
+  max-width: 360px;
   .footer-heading-text {
 
     h4 {
-      font-family: "Flavory Display";
+      font-family: 'Montserrat';
       font-style: normal;
-      font-weight: 400;
-      font-size: 64px;
+      font-weight: 900;
+      font-size: 36px;
+      line-height: 120%;
       color: #F05123;
-      margin: 0
+      margin: 0 0 10px;
     }
 
     p {
-      margin-top: 0;
-      color: white;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 146%;
+      letter-spacing: 0;
+      color: #FFFFFF;
+      margin: 0 0 25px;
     }
   }
 
   .__form-container {
-    margin-top: 29px;
-
+    ::placeholder {
+      color: #CDCDCD;
+    }
     .__field {
 
     }
 
     .__field__input {
+      width: 100%;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 146%;
+      letter-spacing: 0;
+      color: #8B8B8B;
       border: none;
       border-radius: 8px;
-      background-color: white;
-      width: 340px;
-      padding: 1.5em;
+      background-color: #FFFFFF;
+      padding: 23px 30px;
     }
 
     .button {
       background-color: #F05123;
-      color: white;
-      font-size: 1.1em;
-      font-weight: 800;
-      padding: 15px 20px;
+      font-weight: 900;
+      font-size: 22px;
+      line-height: 120%;
+      letter-spacing: 0;
+      padding: 22px 30px;
       border: none;
       white-space: nowrap;
-      letter-spacing: 0;
-      display: inherit;
       margin-top: 15px;
       border-radius: 8px;
       width: auto;
@@ -125,12 +146,12 @@
       }
 
       &:hover {
-        color: black;
+        color: #000000;
 
         svg {
 
           path {
-            stroke: black;
+            stroke: #000000;
           }
         }
       }
@@ -147,7 +168,10 @@
 
     li {
       list-style: none;
-      margin-right: 1.5em;
+      margin-right: 20px;
+      &:last-child {
+        margin-right: 0;
+      }
 
       svg {
         height: 22px;
@@ -183,11 +207,17 @@
 
   li {
     list-style: none;
-    margin-bottom: 4px;
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
 
     a {
-      color: white;
-      font-size: 1em;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 146%;
+      letter-spacing: 0;
+      color: #FFFFFF;
       text-decoration: none;
       border-bottom: solid 1px transparent;
       transition: .3s ease;

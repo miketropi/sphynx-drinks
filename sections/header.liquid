@@ -1,6 +1,5 @@
 {%- liquid
   assign logo = section.settings.logo
-  assign mobile_logo = section.settings.mobile_logo | default: logo
 -%}
 
 <header class="site-header">
@@ -97,10 +96,6 @@
         "type": "image_picker",
         "id": "logo",
         "label": "t:sections.header.settings.logo.label"
-      }, { 
-        "type": "image_picker",
-        "id": "mobile_logo",
-        "label": "t:sections.header.settings.mobile_logo.label"
       }, {
         "type": "link_list",
         "id": "menu",
