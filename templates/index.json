@@ -498,6 +498,53 @@
         "padding_top": 70,
         "padding_bottom": 70
       }
+    },
+    "3b7415e3-0a45-421f-a0dd-3fc7fb5666a4": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16656683270372__3b7415e3-0a45-421f-a0dd-3fc7fb5666a4-1673669719762af3e6-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Find Your Perfect Non-Alcoholic Beverage at Sphynx Drinks",
+            "heading_size": "h1"
+          }
+        },
+        "template--16656683270372__3b7415e3-0a45-421f-a0dd-3fc7fb5666a4-1673669719762af3e6-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Wherever your tastes lie, we’ll have the perfect non-alcoholic beverage that allows you to enjoy the party without any regrets and that following day hangover that makes you regret the night before. Whether it’s a non-alcoholic beer, non-alcoholic wine, or non-alcoholic spirits, Sphynx alcohol-free drinks are ideal for enjoying the taste of your favourite beverage without the adverse effects of alcohol. With our outstanding selection of Australian drinks, non-alcoholic options allow you to enjoy yourself and party while staying responsible and sober.<\/p>",
+            "text_size": "typeset2",
+            "secondary_color": false
+          }
+        },
+        "template--16656683270372__3b7415e3-0a45-421f-a0dd-3fc7fb5666a4-1673669719762af3e6-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16656683270372__3b7415e3-0a45-421f-a0dd-3fc7fb5666a4-1673669719762af3e6-0",
+        "template--16656683270372__3b7415e3-0a45-421f-a0dd-3fc7fb5666a4-1673669719762af3e6-1",
+        "template--16656683270372__3b7415e3-0a45-421f-a0dd-3fc7fb5666a4-1673669719762af3e6-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Rectangle_229_52dfdb31-94c2-4cde-8198-3fd789029c7f.png",
+        "image_position": "center center",
+        "layout": "text_first",
+        "text_box_position": "middle",
+        "text_alignment": "left",
+        "image_ratio": "adapt",
+        "full_width": false,
+        "show_divider": false,
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "auto",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -513,6 +560,7 @@
     "fe21cc71-ace1-46a3-a5ca-7f6c157faaaa",
     "16686615660cb3138f",
     "218226e6-a49e-4067-bcbc-48c60058bd52",
-    "cd357b2a-fb79-4170-a634-95f0a4a293c5"
+    "cd357b2a-fb79-4170-a634-95f0a4a293c5",
+    "3b7415e3-0a45-421f-a0dd-3fc7fb5666a4"
   ]
 }
