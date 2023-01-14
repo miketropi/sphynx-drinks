@@ -33,6 +33,31 @@
         "custom_class": ""
       }
     },
+    "05a3923b-a232-4cf4-9fe4-c1e4714b9a2c": {
+      "type": "section-box-collections",
+      "blocks": {
+        "template--16656683270372__05a3923b-a232-4cf4-9fe4-c1e4714b9a2c-167366809358b917ac-0": {
+          "type": "box_collection_item",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16656683270372__05a3923b-a232-4cf4-9fe4-c1e4714b9a2c-167366809358b917ac-0"
+      ],
+      "settings": {
+        "subheading": "SPHYNX DRINKS",
+        "heading": "Join The Party With The Best Non-Alcoholic Drinks Australia Offers!",
+        "text": "<p>Join the Sphynx party and crack open a well-earned zero-alcohol beer or your favourite bottle of zero-alcohol wine! We’ve made it our mission to provide Australians with the best selection of non-alcoholic drinks anywhere in the country. Our painstakingly curated range of alcohol-free beverages includes beers, ciders, wines, spirits, cheeky tonics, sodas and awesome mixers.<\/p>",
+        "btn_label": "",
+        "button_link": "",
+        "bg_color": "#F8F8F8",
+        "padding_top": 74,
+        "padding_bottom": 74,
+        "custom_class": ""
+      }
+    },
     "image-with-text-0": {
       "type": "image-with-text",
       "blocks": {
@@ -181,6 +206,7 @@
   },
   "order": [
     "6f70226f-cf6b-4a39-a3c5-c9982266e148",
+    "05a3923b-a232-4cf4-9fe4-c1e4714b9a2c",
     "image-with-text-0",
     "image-with-text-1",
     "a1abf3de-3bb7-4d86-b28f-ec8b85055b1a",
