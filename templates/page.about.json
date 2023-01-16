@@ -51,11 +51,11 @@
         "font_size": 48,
         "font_family": "Flavory Display",
         "font_weight": "900",
-        "heading_color": "#ffffff",
+        "heading_color": "#f05123",
         "image_left": "shopify:\/\/shop_images\/Group_628.png",
         "image_right": "shopify:\/\/shop_images\/Group_629.png",
         "bg_color": "#ffc85e",
-        "btn_label": "Button Label",
+        "btn_label": "",
         "button_link": "",
         "padding_top": 30,
         "padding_bottom": 30,
@@ -182,16 +182,13 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "COOL CATS ONLY",
-            "heading_size": "h1"
+            "heading": "COOL CATS ONLY"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Our brand celebrates the idea that you don't need to drink to have a good time. We're not here to push a belief or an agenda, but just to connect you – whatever your story or taste is – with our wild selection of delicious drinks, in a fun, vibrant community. Relax, chill out, and let the good times happen.<br\/><br\/>There's a world of delicious flavours begging to be sipped - get amongst it.<\/p>",
-            "text_size": "typeset",
-            "secondary_color": false
+            "text": "<p>Our brand celebrates the idea that you don't need to drink to have a good time. We're not here to push a belief or an agenda, but just to connect you – whatever your story or taste is – with our wild selection of delicious drinks, in a fun, vibrant community. Relax, chill out, and let the good times happen.<br\/><br\/>There's a world of delicious flavours begging to be sipped - get amongst it.<\/p>"
           }
         },
         "d9c50a40-55f1-4888-9a8d-73bb0af74c60": {
@@ -209,17 +206,12 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Group_593_09c3d022-0927-45a2-84cf-d27a62e6f357.png",
-        "image_position": "center center",
+        "image_radius": false,
         "layout": "text_first",
-        "text_box_position": "middle",
-        "text_alignment": "left",
-        "image_ratio": "550px",
-        "full_width": false,
-        "show_divider": false,
-        "mobile_text_alignment": "left",
-        "mobile_image_ratio": "auto",
         "padding_top": 36,
-        "padding_bottom": 88
+        "padding_bottom": 88,
+        "container_width": "normal",
+        "custom_class": ""
       }
     },
     "a54a2eea-6008-4bfb-abb4-f1d72f9f56f3": {
