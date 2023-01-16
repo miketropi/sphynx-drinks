@@ -250,7 +250,7 @@
         "heading": "Featured collection",
         "label_showall": "Shop all Best Sellers",
         "link_showall": "",
-        "products_to_show": 10,
+        "products_to_show": 6,
         "autoplay": true,
         "arrows": true,
         "dots": true,
