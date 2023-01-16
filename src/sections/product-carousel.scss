@@ -39,7 +39,18 @@
 .slide-product-container {
   position: relative;
   margin-top: 2em;
-
+  .slick-track{
+    display: flex;
+    .slick-slide{
+      height: auto;
+      >div{
+        height: 100%;
+        .product-slide-item, .product-slide-item__inner{
+          height: 100%;
+        }
+      }
+    }
+  }
   .__slide-nav {
     position: absolute;
     top: calc(50% - 21px);
