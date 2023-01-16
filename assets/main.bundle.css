@@ -2553,6 +2553,8 @@ ul.menu-style-mobile li.menu-link .menu-icon-arrow.open {
 }
 .slide-product-container .product-slide-item__inner .__p-entry .__p-price {
   margin: 1em 0;
+  font-size: 1.3em;
+  letter-spacing: 0;
 }
 .slide-product-container .product-slide-item__inner .__p-entry .__p-price span {
   font-weight: bold;
