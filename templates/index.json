@@ -126,7 +126,7 @@
     "8e7e9f80-9dc1-4376-9347-3d70f1ee5046": {
       "type": "featured-collection-carousel",
       "settings": {
-        "collection": "bestsellers",
+        "collection": "beer-and-cider",
         "heading": "Special offers",
         "label_showall": "Shop all Best Sellers",
         "link_showall": "",
