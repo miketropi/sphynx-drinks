@@ -10,7 +10,7 @@
             "font_size": 54,
             "font_family": "Montserrat",
             "font_weight": "900",
-            "heading_color": "#000"
+            "heading_color": "#000000"
           }
         },
         "template--16656683270372__6f70226f-cf6b-4a39-a3c5-c9982266e148-16736680464e956660-1": {
@@ -27,7 +27,7 @@
       ],
       "settings": {
         "media": "shopify:\/\/shop_images\/Rectangle_211.png",
-        "bg_color": "#FFC85E",
+        "bg_color": "#ffc85e",
         "padding_top": 70,
         "padding_bottom": 70,
         "custom_class": ""
@@ -117,7 +117,7 @@
         "text": "<p>Join the Sphynx party and crack open a well-earned zero-alcohol beer or your favourite bottle of zero-alcohol wine! We’ve made it our mission to provide Australians with the best selection of non-alcoholic drinks anywhere in the country. Our painstakingly curated range of alcohol-free beverages includes beers, ciders, wines, spirits, cheeky tonics, sodas and awesome mixers.<\/p>",
         "btn_label": "",
         "button_link": "",
-        "bg_color": "#F8F8F8",
+        "bg_color": "#f8f8f8",
         "padding_top": 74,
         "padding_bottom": 74,
         "custom_class": ""
@@ -126,18 +126,18 @@
     "8e7e9f80-9dc1-4376-9347-3d70f1ee5046": {
       "type": "featured-collection-carousel",
       "settings": {
-        "collection": "bestsellers",
+        "collection": "beer-and-cider",
         "heading": "Special offers",
         "label_showall": "Shop all Best Sellers",
         "link_showall": "",
-        "products_to_show": 12,
+        "products_to_show": 6,
         "autoplay": true,
         "arrows": true,
         "dots": true,
         "infinite": true,
         "speed": "5000",
-        "padding_top": 70,
-        "padding_bottom": 70
+        "padding_top": 74,
+        "padding_bottom": 74
       }
     },
     "c5da33ec-1001-49f4-8e1c-1ae3dfbda2f8": {
@@ -149,9 +149,9 @@
             "card_icon": "shopify:\/\/shop_images\/australia-2_1.png",
             "card_heading": "Australian Business",
             "text": "<p>Founded by three great mates, Sphynx is exceptionally proud to be a 100% Australian-owned and operated online non-alcoholic beverages company providing thirsty Australians with an alternative.<\/p>",
-            "heading_color": "#000",
-            "content_color": "#8B8B8B",
-            "bg_item_color": "#FFF"
+            "heading_color": "#000000",
+            "content_color": "#8b8b8b",
+            "bg_item_color": "#ffffff"
           }
         },
         "template--16656683270372__c5da33ec-1001-49f4-8e1c-1ae3dfbda2f8-1673668650b0f017a6-1": {
@@ -160,9 +160,9 @@
             "card_icon": "shopify:\/\/shop_images\/heart_1.png",
             "card_heading": "Purchase Non-Alcoholic Drinks with Purpose",
             "text": "<p>We’re passionate about zero alcohol beverages and the community, so a percentage of all sales goes to our favourite non-profit organisations to help others in need.<\/p>",
-            "heading_color": "#000",
-            "content_color": "#8B8B8B",
-            "bg_item_color": "#FFF"
+            "heading_color": "#000000",
+            "content_color": "#8b8b8b",
+            "bg_item_color": "#ffffff"
           }
         },
         "e76535a2-4008-4eda-b6a7-c9af585d5e69": {
@@ -171,9 +171,9 @@
             "card_icon": "shopify:\/\/shop_images\/beer_1.png",
             "card_heading": "Curated Range of Zero Alcohol Drinks",
             "text": "<p>Working in partnership with the best local breweries, distillers, and winemakers to curate the globe’s finest selection of alcohol-free drinks Australia or the world has ever seen..<\/p>",
-            "heading_color": "#000",
-            "content_color": "#8B8B8B",
-            "bg_item_color": "#FFF"
+            "heading_color": "#000000",
+            "content_color": "#8b8b8b",
+            "bg_item_color": "#ffffff"
           }
         }
       },
@@ -186,7 +186,7 @@
         "heading_card": "<span>The Sphynx<\/span> Non-Alcoholic Beverages Guarantee",
         "padding_top": 60,
         "padding_bottom": 60,
-        "bg_color": "#FFC85E"
+        "bg_color": "#ffc85e"
       }
     },
     "1bb65e81-d3ba-45ca-9c38-6518c725ad12": {
@@ -196,14 +196,14 @@
         "heading": "The best sellers",
         "label_showall": "",
         "link_showall": "",
-        "products_to_show": 10,
+        "products_to_show": 6,
         "autoplay": true,
         "arrows": true,
         "dots": true,
         "infinite": true,
         "speed": "5000",
-        "padding_top": 70,
-        "padding_bottom": 70
+        "padding_top": 76,
+        "padding_bottom": 76
       }
     },
     "image-with-text-0": {
@@ -213,24 +213,19 @@
           "type": "text",
           "disabled": true,
           "settings": {
-            "text": "<p>SUBHEADING<\/p>",
-            "text_size": "typeset2",
-            "secondary_color": true
+            "text": "<p>SUBHEADING<\/p>"
           }
         },
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Charity Donation With Every Alcohol-Free Drink Purchased",
-            "heading_size": "h1"
+            "heading": "Charity Donation With Every Alcohol-Free Drink Purchased"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>With every single sale of a non-alcoholic drink at Sphynx, a percentage of the profit gets gifted to some of our close-knit ring of non-profit charities. Helping the community is part of the Sphynx DNA, and with every purchase of zero-alcohol drinks, you’re helping those in society who need a little lift and saving yourself from the morning after. These are the best non-alcoholic beverages Australia has, and we’re proud of being able to pay it forward.<\/p>",
-            "text_size": "typeset",
-            "secondary_color": false
+            "text": "<p>With every single sale of a non-alcoholic drink at Sphynx, a percentage of the profit gets gifted to some of our close-knit ring of non-profit charities. Helping the community is part of the Sphynx DNA, and with every purchase of zero-alcohol drinks, you’re helping those in society who need a little lift and saving yourself from the morning after. These are the best non-alcoholic beverages Australia has, and we’re proud of being able to pay it forward.<\/p>"
           }
         }
       },
@@ -241,17 +236,11 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Rectangle_229.png",
-        "image_position": "center center",
+        "image_radius": false,
         "layout": "text_first",
-        "text_box_position": "middle",
-        "text_alignment": "left",
-        "image_ratio": "550px",
-        "full_width": true,
-        "show_divider": false,
-        "mobile_text_alignment": "left",
-        "mobile_image_ratio": "auto",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "custom_class": ""
       }
     },
     "2d3fbef1-fbe7-43ba-99a1-9f9008bf4d0b": {
@@ -261,14 +250,14 @@
         "heading": "Featured collection",
         "label_showall": "Shop all Best Sellers",
         "link_showall": "",
-        "products_to_show": 10,
+        "products_to_show": 6,
         "autoplay": true,
         "arrows": true,
         "dots": true,
         "infinite": true,
         "speed": "5000",
-        "padding_top": 70,
-        "padding_bottom": 70
+        "padding_top": 76,
+        "padding_bottom": 76
       }
     },
     "image-with-text-1": {
@@ -278,24 +267,19 @@
           "type": "text",
           "disabled": true,
           "settings": {
-            "text": "<p><em>SUBHEADING<\/em><\/p>",
-            "text_size": "typeset",
-            "secondary_color": true
+            "text": "<p><em>SUBHEADING<\/em><\/p>"
           }
         },
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Why Choose Sphynx No Alcohol Drinks?",
-            "heading_size": "h1"
+            "heading": "Why Choose Sphynx No Alcohol Drinks?"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Over the past few years, more and more Australians have been reducing their consumption of alcohol. It has seen people searching for alcohol-free drink alternatives that allow them to enjoy the taste of their favourite beverage without the drawbacks. Zero-alcohol beverages are seeing people able to socialise, have fun, and party just as hard with an alcohol-free drink in their hand. With no more smashing hangovers, plus the excellent health benefits over regular boozy beverages, why choose anything else?<\/p>",
-            "text_size": "typeset",
-            "secondary_color": false
+            "text": "<p>Over the past few years, more and more Australians have been reducing their consumption of alcohol. It has seen people searching for alcohol-free drink alternatives that allow them to enjoy the taste of their favourite beverage without the drawbacks. Zero-alcohol beverages are seeing people able to socialise, have fun, and party just as hard with an alcohol-free drink in their hand. With no more smashing hangovers, plus the excellent health benefits over regular boozy beverages, why choose anything else?<\/p>"
           }
         }
       },
@@ -306,28 +290,22 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Rectangle_229s.png",
-        "image_position": "80% 50%",
+        "image_radius": false,
         "layout": "image_first",
-        "text_box_position": "middle",
-        "text_alignment": "left",
-        "image_ratio": "550px",
-        "full_width": true,
-        "show_divider": false,
-        "mobile_text_alignment": "left",
-        "mobile_image_ratio": "auto",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "custom_class": ""
       }
     },
     "a1abf3de-3bb7-4d86-b28f-ec8b85055b1a": {
       "type": "morden-blog",
       "settings": {
-        "heading": "Morden Blog",
+        "heading": "RECIPES",
         "show_view_all": true,
         "blog": "recipes",
         "post_limit": 5,
-        "padding_top": 80,
-        "padding_bottom": 80
+        "padding_top": 76,
+        "padding_bottom": 76
       }
     },
     "fe21cc71-ace1-46a3-a5ca-7f6c157faaaa": {
@@ -338,9 +316,9 @@
           "settings": {
             "heading": "Experience The Sphynx Curated Collection of No-Alcohol Drinks and Party On!",
             "panel_text": "<p>At Sphynx, the game plan is a simple one. We are unwavering in our mission to seek out and furnish you with the latest, most extraordinary, and incredible non-alcoholic beverage options available anywhere! Maybe you’re a wine drinker, love a cold crisp cider after work, or enjoy a few bevvies watching the footy. Sphynx zero-alcohol beverages hit the spot every time and were accumulated diligently after hours of tasting the country’s best non-alcoholic drinks. Australia can be massively proud of its brewing industry, and you can keep the party going without feeling rotten in the morning.<\/p>",
-            "heading_color": "#000",
-            "content_color": "#8B8B8B",
-            "bg_item_color": "#FFF"
+            "heading_color": "#000000",
+            "content_color": "#8b8b8b",
+            "bg_item_color": "#ffffff"
           }
         },
         "template--16656683270372__fe21cc71-ace1-46a3-a5ca-7f6c157faaaa-16736692087857a499-1": {
@@ -348,9 +326,9 @@
           "settings": {
             "heading": "Experience The Sphynx Curated Collection of No-Alcohol Drinks and Party On!",
             "panel_text": "<p>At Sphynx, the game plan is a simple one. We are unwavering in our mission to seek out and furnish you with the latest, most extraordinary, and incredible non-alcoholic beverage options available anywhere! Maybe you’re a wine drinker, love a cold crisp cider after work, or enjoy a few bevvies watching the footy. Sphynx zero-alcohol beverages hit the spot every time and were accumulated diligently after hours of tasting the country’s best non-alcoholic drinks. Australia can be massively proud of its brewing industry, and you can keep the party going without feeling rotten in the morning.<\/p>",
-            "heading_color": "#000",
-            "content_color": "#8B8B8B",
-            "bg_item_color": "#FFF"
+            "heading_color": "#000000",
+            "content_color": "#8b8b8b",
+            "bg_item_color": "#ffffff"
           }
         }
       },
@@ -367,7 +345,7 @@
         "dots": false,
         "infinite": true,
         "speed": "5000",
-        "bg_color": "#FFC85E"
+        "bg_color": "#ffc85e"
       }
     },
     "218226e6-a49e-4067-bcbc-48c60058bd52": {
@@ -457,17 +435,17 @@
         "bg_color": "#ffffff",
         "padding_top": 70,
         "padding_bottom": 70,
-        "custom_class": ""
+        "custom_class": "secondary-box-st"
       }
     },
     "cd357b2a-fb79-4170-a634-95f0a4a293c5": {
       "type": "featured-collection-carousel",
       "settings": {
-        "collection": "bestsellers",
+        "collection": "beer-and-cider",
         "heading": "The best sellers",
         "label_showall": "Shop all Best Sellers",
         "link_showall": "",
-        "products_to_show": 5,
+        "products_to_show": 6,
         "autoplay": true,
         "arrows": true,
         "dots": true,
@@ -483,16 +461,13 @@
         "template--16656683270372__3b7415e3-0a45-421f-a0dd-3fc7fb5666a4-1673669719762af3e6-0": {
           "type": "heading",
           "settings": {
-            "heading": "Find Your Perfect Non-Alcoholic Beverage at Sphynx Drinks",
-            "heading_size": "h1"
+            "heading": "Find Your Perfect Non-Alcoholic Beverage at Sphynx Drinks"
           }
         },
         "template--16656683270372__3b7415e3-0a45-421f-a0dd-3fc7fb5666a4-1673669719762af3e6-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Wherever your tastes lie, we’ll have the perfect non-alcoholic beverage that allows you to enjoy the party without any regrets and that following day hangover that makes you regret the night before. Whether it’s a non-alcoholic beer, non-alcoholic wine, or non-alcoholic spirits, Sphynx alcohol-free drinks are ideal for enjoying the taste of your favourite beverage without the adverse effects of alcohol. With our outstanding selection of Australian drinks, non-alcoholic options allow you to enjoy yourself and party while staying responsible and sober.<\/p>",
-            "text_size": "typeset2",
-            "secondary_color": false
+            "text": "<p>Wherever your tastes lie, we’ll have the perfect non-alcoholic beverage that allows you to enjoy the party without any regrets and that following day hangover that makes you regret the night before. Whether it’s a non-alcoholic beer, non-alcoholic wine, or non-alcoholic spirits, Sphynx alcohol-free drinks are ideal for enjoying the taste of your favourite beverage without the adverse effects of alcohol. With our outstanding selection of Australian drinks, non-alcoholic options allow you to enjoy yourself and party while staying responsible and sober.<\/p>"
           }
         },
         "template--16656683270372__3b7415e3-0a45-421f-a0dd-3fc7fb5666a4-1673669719762af3e6-2": {
@@ -511,17 +486,11 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Rectangle_229_52dfdb31-94c2-4cde-8198-3fd789029c7f.png",
-        "image_position": "center center",
+        "image_radius": false,
         "layout": "text_first",
-        "text_box_position": "middle",
-        "text_alignment": "left",
-        "image_ratio": "adapt",
-        "full_width": false,
-        "show_divider": false,
-        "mobile_text_alignment": "left",
-        "mobile_image_ratio": "auto",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 0,
+        "padding_bottom": 50,
+        "custom_class": ""
       }
     },
     "2bd6e3f1-891a-485d-8e27-22ba4560abb2": {
@@ -587,9 +556,10 @@
         "3b323c13-012f-49ea-81f4-8aa111752a34"
       ],
       "settings": {
-        "heading": "Non-Alcoholic Drinks &  Non-Alcoholic Beverages FAQs",
-        "padding_top": 36,
-        "padding_bottom": 84
+        "heading": "Non-Alcoholic Drinks &<br>  Non-Alcoholic Beverages FAQs",
+        "padding_top": 48,
+        "padding_bottom": 84,
+        "custom_class": "faq-homepage"
       }
     },
     "16686615660cb3138f": {
