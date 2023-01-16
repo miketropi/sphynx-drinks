@@ -4,7 +4,6 @@
       "type": "main-page",
       "disabled": true,
       "settings": {
-        "narrow": true,
         "padding_top": 60,
         "padding_bottom": 72
       }
@@ -18,7 +17,8 @@
             "heading": "OUR COLLECTIONS",
             "font_size": 36,
             "font_family": "Montserrat",
-            "font_weight": "900"
+            "font_weight": "900",
+            "heading_color": "#000"
           }
         }
       },
@@ -80,11 +80,18 @@
         "layout": "default",
         "heading": "no more hair of the dog",
         "font_size": 48,
+        "font_family": "Flavory Display",
+        "font_weight": "900",
+        "heading_color": "#ffffff",
         "image_left": "shopify:\/\/shop_images\/Group_628.png",
         "image_right": "shopify:\/\/shop_images\/Group_629.png",
         "bg_color": "#ffc85e",
+        "btn_label": "",
+        "button_link": "",
         "padding_top": 36,
         "padding_bottom": 36,
+        "padding_top_mobile": 60,
+        "padding_bottom_mobile": 60,
         "custom_class": ""
       }
     },
@@ -109,10 +116,17 @@
         "layout": "default",
         "heading": "no more hair of the dog",
         "font_size": 48,
-        "bg_color": "",
+        "font_family": "Flavory Display",
+        "font_weight": "900",
+        "heading_color": "#ffffff",
         "bg_image": "shopify:\/\/shop_images\/Union.png",
+        "bg_color": "",
+        "btn_label": "",
+        "button_link": "",
         "padding_top": 124,
         "padding_bottom": 124,
+        "padding_top_mobile": 60,
+        "padding_bottom_mobile": 60,
         "custom_class": ""
       }
     },
@@ -165,9 +179,16 @@
         "layout": "with_icon",
         "heading": "",
         "font_size": 48,
+        "font_family": "Flavory Display",
+        "font_weight": "900",
+        "heading_color": "#000",
         "bg_color": "#ffc85e",
+        "btn_label": "Button Label",
+        "button_link": "",
         "padding_top": 124,
         "padding_bottom": 124,
+        "padding_top_mobile": 60,
+        "padding_bottom_mobile": 60,
         "custom_class": ""
       }
     },
@@ -192,10 +213,17 @@
         "layout": "default",
         "heading": "",
         "font_size": 48,
-        "bg_color": "",
+        "font_family": "Flavory Display",
+        "font_weight": "900",
+        "heading_color": "#000",
         "bg_image": "shopify:\/\/shop_images\/CTA.png",
+        "bg_color": "",
+        "btn_label": "",
+        "button_link": "",
         "padding_top": 144,
         "padding_bottom": 144,
+        "padding_top_mobile": 60,
+        "padding_bottom_mobile": 60,
         "custom_class": ""
       }
     },
