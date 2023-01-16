@@ -240,6 +240,7 @@
         "layout": "text_first",
         "padding_top": 0,
         "padding_bottom": 0,
+        "container_width": "wide",
         "custom_class": ""
       }
     },
@@ -294,6 +295,7 @@
         "layout": "image_first",
         "padding_top": 0,
         "padding_bottom": 0,
+        "container_width": "wide",
         "custom_class": ""
       }
     },
@@ -305,7 +307,9 @@
         "blog": "recipes",
         "post_limit": 5,
         "padding_top": 76,
-        "padding_bottom": 76
+        "padding_bottom": 76,
+        "container_width": "wide",
+        "custom_class": ""
       }
     },
     "fe21cc71-ace1-46a3-a5ca-7f6c157faaaa": {
@@ -490,6 +494,7 @@
         "layout": "text_first",
         "padding_top": 0,
         "padding_bottom": 50,
+        "container_width": "wide",
         "custom_class": ""
       }
     },
