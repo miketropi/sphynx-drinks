@@ -1,6 +1,7 @@
 .faq-section {
     position: relative;
     background-color: #FFFFFF;
+
     .faq {
         &__container {
             // width: var(--site-container-width);
@@ -10,6 +11,7 @@
             max-width: calc(100% - 30px);
             overflow: hidden;
         }
+
         &__title {
             font-family: 'Montserrat';
             font-weight: 900;
@@ -18,21 +20,37 @@
             text-transform: uppercase;
             color: #000000;
             margin-bottom: 42px;
+
+            @media (max-width: 767px) {
+                font-size: 28px;
+
+                br {
+                    display: none;
+                }
+            }
         }
+
         &__list {
-            > div:last-child {
+            >div:last-child {
                 margin-bottom: 0;
             }
-        } 
+        }
+
         &__item {
             margin-bottom: 30px;
             border-bottom: 2px solid #F05123;
+
+            @media (max-width: 767px) {
+                margin-bottom: 15px;
+            }
+
             &.open {
                 .faq__icon {
                     transform: rotate(180deg);
                 }
             }
         }
+
         &__question {
             position: relative;
             font-weight: 700;
@@ -42,13 +60,18 @@
             color: #F05123;
             cursor: pointer;
             padding: 20px 25px 20px 0;
+            @media (max-width: 767px) {
+                font-size: 20px;
+            }
         }
+
         &__icon {
-            position: absolute; 
+            position: absolute;
             top: 23px;
             right: 0;
             transition: transform var(--duration-default) ease;
         }
+
         &__answer {
             display: none;
             font-weight: 400;
@@ -57,16 +80,20 @@
             letter-spacing: 0;
             color: #8B8B8B;
             padding-bottom: 50px;
-            > *:first-child {
+
+            >*:first-child {
                 margin-top: 0;
             }
-            > *:last-child {
+
+            >*:last-child {
                 margin-bottom: 0;
             }
         }
+
         &__rt-item {
             margin-bottom: 30px;
         }
+
         &__rt-question {
             position: relative;
             font-weight: 700;
@@ -77,19 +104,22 @@
             margin: 0;
             padding: 20px 0;
         }
+
         &__rt-answer {
             font-weight: 400;
             font-size: 16px;
             line-height: 146%;
             letter-spacing: 0;
             color: #8B8B8B;
-            > *:first-child {
+
+            >*:first-child {
                 margin-top: 0;
             }
-            > *:last-child {
+
+            >*:last-child {
                 margin-bottom: 0;
             }
         }
     }
-    
+
 }

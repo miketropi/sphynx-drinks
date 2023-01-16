@@ -640,6 +640,14 @@ body.__quick-popup-show .__popup-quick-action-product {
   text-align: center;
   margin-bottom: 30px;
 }
+@media (max-width: 767px) {
+  .faq-homepage.faq-section .faq__container .faq__title {
+    font-size: 18px;
+  }
+  .faq-homepage.faq-section .faq__container .faq__title br {
+    display: none;
+  }
+}
 
 .section-box-collections .section-inner.secondary-box-st .row .col-collection-list .box-collection-item-media {
   background: #F8F8F8;
@@ -3089,12 +3097,25 @@ ul.menu-style-mobile li.menu-link .menu-icon-arrow.open {
   color: #000000;
   margin-bottom: 42px;
 }
+@media (max-width: 767px) {
+  .faq-section .faq__title {
+    font-size: 28px;
+  }
+  .faq-section .faq__title br {
+    display: none;
+  }
+}
 .faq-section .faq__list > div:last-child {
   margin-bottom: 0;
 }
 .faq-section .faq__item {
   margin-bottom: 30px;
   border-bottom: 2px solid #F05123;
+}
+@media (max-width: 767px) {
+  .faq-section .faq__item {
+    margin-bottom: 15px;
+  }
 }
 .faq-section .faq__item.open .faq__icon {
   transform: rotate(180deg);
@@ -3108,6 +3129,11 @@ ul.menu-style-mobile li.menu-link .menu-icon-arrow.open {
   color: #F05123;
   cursor: pointer;
   padding: 20px 25px 20px 0;
+}
+@media (max-width: 767px) {
+  .faq-section .faq__question {
+    font-size: 20px;
+  }
 }
 .faq-section .faq__icon {
   position: absolute;
@@ -3282,6 +3308,11 @@ ul.menu-style-mobile li.menu-link .menu-icon-arrow.open {
 }
 .morden-blog-section .morden-blog__list .post-index-1 .post-item__thumb {
   height: 694px;
+}
+@media (max-width: 767.98px) {
+  .morden-blog-section .morden-blog__list .post-index-1 .post-item__thumb {
+    height: 230px;
+  }
 }
 @media (max-width: 991.98px) {
   .morden-blog-section .morden-blog__list {

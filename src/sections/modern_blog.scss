@@ -82,6 +82,9 @@
             .post-index-1 .post-item {
                 &__thumb {
                     height: 694px;
+                    @media(max-width: 767.98px) {
+                        height: 230px;
+                    }
                 }
             }
         }
