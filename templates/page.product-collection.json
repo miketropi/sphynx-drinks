@@ -218,7 +218,7 @@
         "heading_color": "#000",
         "bg_image": "shopify:\/\/shop_images\/CTA.png",
         "bg_color": "",
-        "btn_label": "Button Label",
+        "btn_label": "",
         "button_link": "",
         "padding_top": 144,
         "padding_bottom": 144,
