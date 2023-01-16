@@ -3987,6 +3987,9 @@ ul.menu-style-mobile li.menu-link .menu-icon-arrow.open {
   transform: translateY(-50%);
 }
 
+.section-hero-home {
+  overflow-x: hidden;
+}
 @media (max-width: 767px) {
   .section-hero-home .section-inner {
     padding-top: 50px;
