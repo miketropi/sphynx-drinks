@@ -300,7 +300,7 @@
     "a1abf3de-3bb7-4d86-b28f-ec8b85055b1a": {
       "type": "morden-blog",
       "settings": {
-        "heading": "Morden Blog",
+        "heading": "RECIPES",
         "show_view_all": true,
         "blog": "recipes",
         "post_limit": 5,
