@@ -37,7 +37,7 @@
     <h3 class="block-widget__title">Trending Posts</h3>
     <div class="block-widget__content">
       <div class="list-post">
-        {% for article in blog.articles limit: post_limit %}
+        {% for article in trending_blog.articles limit: trending_post_limit %}
           <div class="item-post">
             <div class="item-post__thumb">
               {%- if article.image -%}

@@ -35,7 +35,7 @@
           </div>
           {%- when 'blog_sidebar'-%}
           <div class="main-blog__sidebar">
-            {% render 'blog-sidebar', blog: section.settings.blog, post_limit: section.settings.post_limit %}
+            {% render 'blog-sidebar', trending_blog: section.settings.blog, trending_post_limit: section.settings.post_limit %}
           </div>
         {%- endcase -%}
       {%- endfor -%}
