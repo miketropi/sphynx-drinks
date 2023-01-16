@@ -1,11 +1,19 @@
 .section-image-w-text {
     .section-container {
-        width: 100%;
-        padding-right: 15px;
-        padding-left: 15px;
-        margin-right: auto;
-        margin-left: auto;
-        max-width: 1650px;
+        width: var(--site-container-width);
+        padding: 0;
+        margin: 0 auto;
+        max-width: calc(100% - 30px);
+
+        &.container-wide {
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+            max-width: 1650px;
+        }
+
     }
 
     .image-with-text {
@@ -27,7 +35,7 @@
                 }
             }
 
-            &--reverse{
+            &--reverse {
                 flex-direction: row-reverse;
             }
         }
@@ -48,7 +56,7 @@
         }
 
         &__content {
-            @media (max-width: 767px){
+            @media (max-width: 767px) {
                 margin-top: 30px;
             }
         }
@@ -61,7 +69,8 @@
             line-height: 120%;
             color: #000000;
             margin: 0;
-            @media (max-width: 767px){
+
+            @media (max-width: 767px) {
                 font-size: 28px;
             }
         }
@@ -93,27 +102,33 @@
             border-color: #F05123;
             min-width: auto;
             margin-top: 30px;
-            @media (max-width: 767px){
+
+            @media (max-width: 767px) {
                 padding: 18px 25px 24px;
                 font-size: 18px;
-                .button-icon{
+
+                .button-icon {
                     margin-left: 5px;
                 }
-                svg{
+
+                svg {
                     width: 20px;
                     height: 20px;
                 }
             }
-            .button-icon{
+
+            .button-icon {
                 margin-left: 10px;
                 position: relative;
                 top: 4px;
             }
-            &:hover{
+
+            &:hover {
                 color: #F05123;
-                .button-icon{
-                    
-                    path{
+
+                .button-icon {
+
+                    path {
                         stroke: #F05123;
                     }
                 }

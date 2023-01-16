@@ -657,6 +657,14 @@ body.__quick-popup-show .__popup-quick-action-product {
   position: relative;
   background-color: #F05123;
 }
+.site-header .site-container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1680px;
+}
 .site-header__nth1 {
   display: flex;
   flex-wrap: wrap;
@@ -3231,6 +3239,14 @@ ul.menu-style-mobile li.menu-link .menu-icon-arrow.open {
   position: relative;
   background: #FFFFFF;
 }
+.morden-blog-section.container-wide .morden-blog__container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1680px;
+}
 .morden-blog-section .morden-blog__container {
   width: var(--site-container-width);
   padding: 0;
@@ -3277,6 +3293,7 @@ ul.menu-style-mobile li.menu-link .menu-icon-arrow.open {
   background: #F9F9F9;
   overflow: hidden;
   border-radius: 18px;
+  height: 100%;
 }
 .morden-blog-section .morden-blog__list .post-item__thumb {
   height: 230px;
@@ -4699,6 +4716,12 @@ cart-items quantity-input button {
 }
 
 .section-image-w-text .section-container {
+  width: var(--site-container-width);
+  padding: 0;
+  margin: 0 auto;
+  max-width: calc(100% - 30px);
+}
+.section-image-w-text .section-container.container-wide {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
