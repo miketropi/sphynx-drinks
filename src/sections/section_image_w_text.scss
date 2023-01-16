@@ -1,0 +1,123 @@
+.section-image-w-text {
+    .section-container {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 1650px;
+    }
+
+    .image-with-text {
+        &__grid {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin-right: -35px;
+            margin-left: -35px;
+            align-items: center;
+
+            &.image-with-text__radius {
+                .image-animate {
+                    img {
+                        border-radius: 18px;
+                    }
+                }
+            }
+
+            &--reverse{
+                flex-direction: row-reverse;
+            }
+        }
+
+        &__col {
+            position: relative;
+            width: 100%;
+            min-height: 1px;
+            padding-right: 35px;
+            padding-left: 35px;
+
+            @media (min-width: 768px) {
+                -webkit-box-flex: 0;
+                -ms-flex: 0 0 50%;
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+        }
+
+        &__content {
+            @media (max-width: 767px){
+                margin-top: 30px;
+            }
+        }
+
+        &__heading {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 32px;
+            line-height: 120%;
+            color: #000000;
+            margin: 0;
+            @media (max-width: 767px){
+                font-size: 28px;
+            }
+        }
+
+        &__text {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 160%;
+            color: #8B8B8B;
+            margin-bottom: 0;
+            margin-top: 20px;
+        }
+
+        &__button {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 22px;
+            line-height: 95%;
+            color: #FFFFFF;
+            background: #F05123;
+            border-radius: 8px;
+            padding: 18px 30px 24px;
+            display: inline-block;
+            letter-spacing: normal;
+            text-transform: none;
+            border-color: #F05123;
+            min-width: auto;
+            margin-top: 30px;
+            @media (max-width: 767px){
+                padding: 18px 25px 24px;
+                font-size: 18px;
+                .button-icon{
+                    margin-left: 5px;
+                }
+                svg{
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+            .button-icon{
+                margin-left: 10px;
+                position: relative;
+                top: 4px;
+            }
+            &:hover{
+                color: #F05123;
+                .button-icon{
+                    
+                    path{
+                        stroke: #F05123;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -17,9 +17,11 @@
   form {
     width: 100%;
     position: relative;
+
     ::placeholder {
       color: #CDCDCD;
     }
+
     input[name=q] {
       width: 100%;
       font-family: 'Montserrat';
@@ -31,7 +33,7 @@
       color: #8B8B8B;
       border-radius: 8px;
       border: none;
-      background: #FFFFFF;  
+      background: #FFFFFF;
       padding: 13px 40px 13px 20px;
     }
 
@@ -74,6 +76,7 @@
 
 .membership-register-form {
   max-width: 360px;
+
   .footer-heading-text {
 
     h4 {
@@ -100,9 +103,8 @@
     ::placeholder {
       color: #CDCDCD;
     }
-    .__field {
 
-    }
+    .__field {}
 
     .__field__input {
       width: 100%;
@@ -169,6 +171,7 @@
     li {
       list-style: none;
       margin-right: 20px;
+
       &:last-child {
         margin-right: 0;
       }
@@ -190,7 +193,7 @@
         &:hover {
 
           svg {
-            
+
             path {
               stroke: #F05123;
             }
@@ -208,6 +211,7 @@
   li {
     list-style: none;
     margin-bottom: 10px;
+
     &:last-child {
       margin-bottom: 0;
     }
@@ -260,7 +264,7 @@
   z-index: 9;
   padding: 2em;
   border-radius: 8px;
-  box-shadow: 0 0 20px -4px rgba(1,1,1,.2);
+  box-shadow: 0 0 20px -4px rgba(1, 1, 1, .2);
   opacity: 0;
   visibility: hidden;
   transition: .3s ease;
@@ -278,7 +282,7 @@
     position: absolute;
     left: 0;
     top: 0;
-    background: rgba(1,1,1,.3);
+    background: rgba(1, 1, 1, .3);
     z-index: 9;
     width: 100%;
     height: 100%;
@@ -297,10 +301,10 @@
         stroke: white !important;
       }
     }
-  } 
+  }
 
   &.__loading {
-    
+
     .__loading-ui {
       visibility: visible;
       opacity: 1;
@@ -403,7 +407,7 @@
               border-radius: 1px;
             }
           }
-          
+
           &.__info {
 
             .__vendor-text {
@@ -428,7 +432,7 @@
               }
             }
 
-            .__opt-with-value, 
+            .__opt-with-value,
             .__qty {
               font-size: .7em;
               margin-bottom: 4px;
@@ -453,7 +457,7 @@
               display: flex;
               align-items: center;
 
-              > input {
+              >input {
                 border: none;
                 width: 30px;
                 text-align: center;
@@ -466,8 +470,8 @@
                   appearance: none;
                 }
               }
-              
-              > span {
+
+              >span {
                 display: flex;
                 width: 16px;
                 height: 16px;
@@ -486,7 +490,7 @@
           &.__price {
             text-align: right;
 
-            .cart-item__price-wrapper{
+            .cart-item__price-wrapper {
               margin-top: 19px;
               font-family: "Montserrat";
               font-weight: bold;
@@ -496,11 +500,11 @@
             }
 
             .__remove-cart-item {
-              width: 24px; 
+              width: 24px;
               display: inline-block;
 
               svg {
-                color: #F05123; 
+                color: #F05123;
               }
             }
           }
@@ -523,6 +527,7 @@
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(270deg);
   }
@@ -540,10 +545,12 @@
   0% {
     stroke-dashoffset: 280;
   }
+
   50% {
     stroke-dashoffset: 75;
     transform: rotate(135deg);
   }
+
   100% {
     stroke-dashoffset: 280;
     transform: rotate(450deg);
@@ -556,7 +563,7 @@
   box-sizing: border-box;
   background-color: white;
   border-radius: 16px;
-  
+
   .__product-title {
     font-family: 'Montserrat';
     font-weight: bold;
@@ -574,7 +581,7 @@
   width: 100%;
   height: 100%;
   z-index: 99;
-  background: rgba(1,1,1,.6);
+  background: rgba(1, 1, 1, .6);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -596,7 +603,7 @@
     -webkit-transition: .3s ease;
 
     svg {
-      
+
       .path {
         stroke: white;
       }
@@ -651,5 +658,36 @@ body.__quick-popup-show {
   .__popup-quick-action-product {
     visibility: visible;
     opacity: 1;
+  }
+}
+
+.faq-homepage.faq-section {
+  .faq__container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1120px;
+
+    .faq__title {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.section-box-collections {
+  .section-inner {
+    &.secondary-box-st{
+      .row {
+        .col-collection-list {
+          .box-collection-item-media {
+            background: #F8F8F8;
+          }
+        }
+      }
+    }
+    
   }
 }

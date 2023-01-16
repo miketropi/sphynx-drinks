@@ -38,6 +38,9 @@
                     text-align: center;
                     padding-top: 50px;
                     padding-bottom: 50px;
+                    @media (max-width: 767px) {
+                        overflow: hidden;
+                    }
                     &::before{
                         content: '';
                         position: absolute;

@@ -625,6 +625,23 @@ body.__quick-popup-show .__popup-quick-action-product {
   opacity: 1;
 }
 
+.faq-homepage.faq-section .faq__container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1120px;
+}
+.faq-homepage.faq-section .faq__container .faq__title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section-box-collections .section-inner.secondary-box-st .row .col-collection-list .box-collection-item-media {
+  background: #F8F8F8;
+}
+
 .site-header {
   position: relative;
   background-color: #F05123;
@@ -3925,6 +3942,11 @@ ul.menu-style-mobile li.menu-link .menu-icon-arrow.open {
   padding-top: 50px;
   padding-bottom: 50px;
 }
+@media (max-width: 767px) {
+  .section-hero-home .section-inner .row .col.col-media {
+    overflow: hidden;
+  }
+}
 .section-hero-home .section-inner .row .col.col-media::before {
   content: "";
   position: absolute;
@@ -4381,6 +4403,11 @@ ul.menu-style-mobile li.menu-link .menu-icon-arrow.open {
   margin: 12px;
   height: auto;
 }
+@media (max-width: 480px) {
+  .section-ft-collection-carousel-wrap .ft-collection-carousel-wrap .slick-track .slick-slide {
+    margin: 0;
+  }
+}
 .section-ft-collection-carousel-wrap .ft-collection-carousel-wrap .slick-track .slick-slide > div {
   height: 100%;
 }
@@ -4390,6 +4417,9 @@ ul.menu-style-mobile li.menu-link .menu-icon-arrow.open {
   border-radius: 18px;
   padding: 25px 30px;
   height: 100%;
+}
+.section-ft-collection-carousel-wrap .ft-collection-carousel-wrap .carousel-item .card-wrapper {
+  position: relative;
 }
 .section-ft-collection-carousel-wrap .ft-collection-carousel-wrap .carousel-item .card-wrapper .card--product .card__media {
   background-color: transparent;
@@ -4430,8 +4460,9 @@ ul.menu-style-mobile li.menu-link .menu-icon-arrow.open {
   font-style: normal;
   font-weight: 800;
   font-size: 16px;
-  line-height: 120%;
+  line-height: 120% !important;
   color: #000000;
+  display: inline-block;
   text-transform: none;
   letter-spacing: normal;
   margin-bottom: 10px;
@@ -4616,4 +4647,109 @@ cart-items quantity-input button {
   font-family: "Montserrat";
   letter-spacing: 0;
   font-weight: 600;
+}
+
+.section-image-w-text .section-container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1650px;
+}
+.section-image-w-text .image-with-text__grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -35px;
+  margin-left: -35px;
+  align-items: center;
+}
+.section-image-w-text .image-with-text__grid.image-with-text__radius .image-animate img {
+  border-radius: 18px;
+}
+.section-image-w-text .image-with-text__grid--reverse {
+  flex-direction: row-reverse;
+}
+.section-image-w-text .image-with-text__col {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 35px;
+  padding-left: 35px;
+}
+@media (min-width: 768px) {
+  .section-image-w-text .image-with-text__col {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+@media (max-width: 767px) {
+  .section-image-w-text .image-with-text__content {
+    margin-top: 30px;
+  }
+}
+.section-image-w-text .image-with-text__heading {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 120%;
+  color: #000000;
+  margin: 0;
+}
+@media (max-width: 767px) {
+  .section-image-w-text .image-with-text__heading {
+    font-size: 28px;
+  }
+}
+.section-image-w-text .image-with-text__text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #8B8B8B;
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+.section-image-w-text .image-with-text__button {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 95%;
+  color: #FFFFFF;
+  background: #F05123;
+  border-radius: 8px;
+  padding: 18px 30px 24px;
+  display: inline-block;
+  letter-spacing: normal;
+  text-transform: none;
+  border-color: #F05123;
+  min-width: auto;
+  margin-top: 30px;
+}
+@media (max-width: 767px) {
+  .section-image-w-text .image-with-text__button {
+    padding: 18px 25px 24px;
+    font-size: 18px;
+  }
+  .section-image-w-text .image-with-text__button .button-icon {
+    margin-left: 5px;
+  }
+  .section-image-w-text .image-with-text__button svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+.section-image-w-text .image-with-text__button .button-icon {
+  margin-left: 10px;
+  position: relative;
+  top: 4px;
+}
+.section-image-w-text .image-with-text__button:hover {
+  color: #F05123;
+}
+.section-image-w-text .image-with-text__button:hover .button-icon path {
+  stroke: #F05123;
 }

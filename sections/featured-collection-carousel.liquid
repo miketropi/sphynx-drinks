@@ -1,15 +1,11 @@
 {%- style -%}
-    #shopify-section-{{ section.id }} {
-      --image-position: {{ section.settings.image_position }};
-    }
-
-    .section-{{ section.id }}-padding {
+    #section-{{ section.id }}-padding { 
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
 {%- endstyle -%}
 
-<div class="section-ft-collection-carousel-inner section-{{ section.id }}-padding">
+<div id="section-{{ section.id }}-padding" class="section-ft-collection-carousel-inner">
   <div class="section-container">
     <h2 class="title">{{ section.settings.heading | escape }}</h2>
     {%- if section.settings.label_showall != blank -%}

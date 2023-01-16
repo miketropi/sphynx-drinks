@@ -73,6 +73,7 @@
   background: #FFFFFF;
   border-radius: 18px;
   text-align: center;
+  height: 100%;
 }
 .section-card-w-icon .card-with-icon-wrapper .section-container .card-with-icon__item-content {
   padding: 50px 25px 35px;
