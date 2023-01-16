@@ -4,7 +4,6 @@
       "type": "main-page",
       "disabled": true,
       "settings": {
-        "narrow": false,
         "padding_top": 60,
         "padding_bottom": 72
       }
@@ -56,9 +55,9 @@
         "heading": "Get in Touch",
         "description": "Questions? Feedback? Want to have a yarn over a cold non-alc beer? Don't hesitate to reach out.",
         "button_text": "Read FAQs",
-        "button_link": "/pages/faq",
+        "button_link": "\/pages\/faq",
         "padding_top": 80,
-        "padding_bottom": 80 
+        "padding_bottom": 100
       }
     }
   },
