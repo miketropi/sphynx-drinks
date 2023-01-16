@@ -4756,9 +4756,15 @@ cart-items quantity-input button {
 .section-image-w-text .image-with-text__grid {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -35px;
-  margin-left: -35px;
+  margin-right: -15px;
+  margin-left: -15px;
   align-items: center;
+}
+@media (min-width: 1200px) {
+  .section-image-w-text .image-with-text__grid {
+    margin-right: -35px;
+    margin-left: -35px;
+  }
 }
 .section-image-w-text .image-with-text__grid.image-with-text__radius .image-animate img {
   border-radius: 18px;
@@ -4770,13 +4776,19 @@ cart-items quantity-input button {
   position: relative;
   width: 100%;
   min-height: 1px;
-  padding-right: 35px;
-  padding-left: 35px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 @media (min-width: 768px) {
   .section-image-w-text .image-with-text__col {
     flex: 0 0 50%;
     max-width: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  .section-image-w-text .image-with-text__col {
+    padding-right: 35px;
+    padding-left: 35px;
   }
 }
 @media (max-width: 767px) {

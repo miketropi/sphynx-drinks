@@ -23,9 +23,14 @@
             display: flex;
             -ms-flex-wrap: wrap;
             flex-wrap: wrap;
-            margin-right: -35px;
-            margin-left: -35px;
+            margin-right: -15px;
+            margin-left: -15px;
             align-items: center;
+
+            @media (min-width: 1200px) {
+                margin-right: -35px;
+                margin-left: -35px;
+            }
 
             &.image-with-text__radius {
                 .image-animate {
@@ -44,14 +49,18 @@
             position: relative;
             width: 100%;
             min-height: 1px;
-            padding-right: 35px;
-            padding-left: 35px;
+            padding-right: 15px;
+            padding-left: 15px;
 
             @media (min-width: 768px) {
                 -webkit-box-flex: 0;
                 -ms-flex: 0 0 50%;
                 flex: 0 0 50%;
                 max-width: 50%;
+            }
+            @media (min-width: 1200px) {
+                padding-right: 35px;
+                padding-left: 35px;
             }
         }
 
