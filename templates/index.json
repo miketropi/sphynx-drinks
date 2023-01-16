@@ -441,11 +441,11 @@
     "cd357b2a-fb79-4170-a634-95f0a4a293c5": {
       "type": "featured-collection-carousel",
       "settings": {
-        "collection": "bestsellers",
+        "collection": "beer-and-cider",
         "heading": "The best sellers",
         "label_showall": "Shop all Best Sellers",
         "link_showall": "",
-        "products_to_show": 5,
+        "products_to_show": 6,
         "autoplay": true,
         "arrows": true,
         "dots": true,
