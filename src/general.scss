@@ -273,6 +273,10 @@
   transition: .3s ease;
   -webkit-transition: .3s ease;
 
+  &.__no-item-in-cart {
+    display: none !important;
+  }
+
   @media(max-width: 576px) {
     position: fixed;
     left: 50%;

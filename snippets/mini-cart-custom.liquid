@@ -7,51 +7,53 @@
 {% endif %}
 
 {% comment %} {{ cart.items | json }} {% endcomment %}
-<div class="mini-cart mini-cart--container" id="mini-cart__header">
-  <div class="__loading-ui">
-    <div class="loading-overlay__spinner">
-      {% render 'icon', icon: 'spinner' %}
-    </div>
-  </div>
-
-  <div class="mini-cart__inner">
-    <div class="mini-cart__header">
-      <h3>Cart</h3>
-      <span class="__count">{{ qtyNumber }}
-        {% if qtyNumber > 1 %}items{% else %}item{% endif %}
-      </span>
-    </div>
-    <div class="mini-cart__items">
-      {%- render 'cart-items' -%}
-    </div>
-    <div class="mini-cart__note">
-      <cart-note class="cart__note field">
-        <textarea
-          class="text-area text-area--resize-vertical field__input"
-          name="note"
-          id="mini-cart-note"
-          placeholder="Order notes">{{ cart.note }}</textarea>
-      </cart-note>
-    </div>
-    <div class="mini-cart__sub-total">
-      <h3 class="totals__subtotal">{{ 'sections.cart.subtotal' | t }}</h3>
-      <p class="totals__subtotal-value" id="mini-cart__total-price">{{ cart.total_price | money_with_currency }}</p>
+<div class="mini-cart mini-cart--container {% if cartSize == 0 %} __no-item-in-cart{% endif %}" id="mini-cart__header">
+  {% if cartSize > 0 %}
+    <div class="__loading-ui">
+      <div class="loading-overlay__spinner">
+        {% render 'icon', icon: 'spinner' %}
+      </div>
     </div>
 
-    <div class="mini-cart__buttons">
-      {% comment %} <a class="button" href="{{ routes.cart_url }}">Go Cart</a> {% endcomment %}
-      <button
-        type="submit"
-        class="cart__checkout-button button"
-        name="checkout"
-        {% if cart == empty %}
-        disabled
-        {% endif %}
-        form="minicart">
-        {{ 'sections.cart.checkout' | t }}
-      </button>
-      <a class="button-url" href="{{ routes.all_products_collection_url }}">Continue shopping</a>
+    <div class="mini-cart__inner">
+      <div class="mini-cart__header">
+        <h3>Cart</h3>
+        <span class="__count">{{ qtyNumber }}
+          {% if qtyNumber > 1 %}items{% else %}item{% endif %}
+        </span>
+      </div>
+      <div class="mini-cart__items">
+        {%- render 'cart-items' -%}
+      </div>
+      <div class="mini-cart__note">
+        <cart-note class="cart__note field">
+          <textarea
+            class="text-area text-area--resize-vertical field__input"
+            name="note"
+            id="mini-cart-note"
+            placeholder="Order notes">{{ cart.note }}</textarea>
+        </cart-note>
+      </div>
+      <div class="mini-cart__sub-total">
+        <h3 class="totals__subtotal">{{ 'sections.cart.subtotal' | t }}</h3>
+        <p class="totals__subtotal-value" id="mini-cart__total-price">{{ cart.total_price | money_with_currency }}</p>
+      </div>
+
+      <div class="mini-cart__buttons">
+        {% comment %} <a class="button" href="{{ routes.cart_url }}">Go Cart</a> {% endcomment %}
+        <button
+          type="submit"
+          class="cart__checkout-button button"
+          name="checkout"
+          {% if cart == empty %}
+          disabled
+          {% endif %}
+          form="minicart">
+          {{ 'sections.cart.checkout' | t }}
+        </button>
+        <a class="button-url" href="{{ routes.all_products_collection_url }}">Continue shopping</a>
+      </div>
     </div>
-  </div>
+  {% endif %}
 </div>
 <!-- .mini-cart -->

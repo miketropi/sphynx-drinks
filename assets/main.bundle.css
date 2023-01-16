@@ -309,6 +309,9 @@
   transition: 0.3s ease;
   -webkit-transition: 0.3s ease;
 }
+.mini-cart.__no-item-in-cart {
+  display: none !important;
+}
 @media (max-width: 576px) {
   .mini-cart {
     position: fixed;
@@ -4737,6 +4740,10 @@ cart-items quantity-input button {
   font-family: "Montserrat";
   letter-spacing: 0;
   font-weight: 600;
+}
+
+iframe.ybSyad5RbtOghAuCHUvv {
+  border-radius: 30px !important;
 }
 
 .section-image-w-text .section-container {
