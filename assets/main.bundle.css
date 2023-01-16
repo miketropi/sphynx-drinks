@@ -4339,6 +4339,9 @@ ul.menu-style-mobile li.menu-link .menu-icon-arrow.open {
   -webkit-mask-size: cover;
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .section-panel-carousel-inner .section-container {
   width: 100%;
@@ -4628,6 +4631,7 @@ ul.menu-style-mobile li.menu-link .menu-icon-arrow.open {
   right: -60px;
   height: 43px;
   width: 43px;
+  cursor: pointer;
 }
 .section-ft-collection-carousel-wrap .carousel-nav-inner .__slide-nav.__slide-prev {
   transform: rotate(180deg);
