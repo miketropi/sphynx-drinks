@@ -292,8 +292,8 @@
         "image": "shopify:\/\/shop_images\/Rectangle_229s.png",
         "image_radius": false,
         "layout": "image_first",
-        "padding_top": 36,
-        "padding_bottom": 36,
+        "padding_top": 0,
+        "padding_bottom": 0,
         "custom_class": ""
       }
     },
@@ -304,8 +304,8 @@
         "show_view_all": true,
         "blog": "recipes",
         "post_limit": 5,
-        "padding_top": 80,
-        "padding_bottom": 80
+        "padding_top": 76,
+        "padding_bottom": 76
       }
     },
     "fe21cc71-ace1-46a3-a5ca-7f6c157faaaa": {
@@ -488,8 +488,8 @@
         "image": "shopify:\/\/shop_images\/Rectangle_229_52dfdb31-94c2-4cde-8198-3fd789029c7f.png",
         "image_radius": false,
         "layout": "text_first",
-        "padding_top": 36,
-        "padding_bottom": 36,
+        "padding_top": 0,
+        "padding_bottom": 50,
         "custom_class": ""
       }
     },
@@ -557,7 +557,7 @@
       ],
       "settings": {
         "heading": "Non-Alcoholic Drinks &<br>  Non-Alcoholic Beverages FAQs",
-        "padding_top": 36,
+        "padding_top": 48,
         "padding_bottom": 84,
         "custom_class": "faq-homepage"
       }
