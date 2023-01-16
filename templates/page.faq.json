@@ -11,7 +11,7 @@
     "page-title": {
       "type": "page-title",
       "settings": {
-        "heading": "You’ve got questions? We’ve got answers!",
+        "heading": "You’ve got questions? <br>We’ve got answers!",
         "description": "",
         "show_shape_divider": true,
         "padding_top": 80,

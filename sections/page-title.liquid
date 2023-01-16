@@ -16,15 +16,15 @@
   <div class="page-title__container">
     {%- if section.settings.heading != blank -%}
       <h1 class="page-title__heading">
-          {{ section.settings.heading | escape }}
+          {{ section.settings.heading }}
       </h1>
     {%- endif -%}
 
     {%- if section.settings.description != blank -%}
       <div class="page-title__description">
-          {{ section.settings.description | escape }}
+          {{ section.settings.description }}
       </div>
-    {%- endif -%}
+    {%- endif -%} 
   </div>
   {%- if section.settings.show_shape_divider -%}
     <div class="page-title__shape-divider">
