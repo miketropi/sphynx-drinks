@@ -4,7 +4,7 @@
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  max-width: 1680px;
+  max-width: calc(var(--site-container-width) + 30px);
 }
 .section-card-w-icon .card-with-icon-wrapper .section-container .card-with-icon--heading {
   font-family: "Montserrat";
@@ -82,7 +82,7 @@
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 1.3em;
   line-height: 95%;
   text-align: center;
   color: #000000;

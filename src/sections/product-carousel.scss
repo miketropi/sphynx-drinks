@@ -16,11 +16,12 @@
     text-align: center;
 
     h4 {
-      font-family: 'Montserrat';
+      font-family: "Montserrat";
       font-style: normal;
-      font-weight: bold;
+      font-weight: 900;
       margin: 0;
-      padding: 0;
+      font-size: 1.5em;
+      letter-spacing: 0;
       text-transform: uppercase;
     }
 
@@ -28,7 +29,7 @@
       font-family: 'Montserrat';
       font-style: normal;
       font-weight: 600;
-      font-size: 1.2em;
+      font-size: 1em;
       color: #F05123;
       text-transform: uppercase;
       text-decoration: none;
@@ -128,13 +129,15 @@
 
         .__p-first-collection {
           letter-spacing: 0;
+          font-size: .9em;
+          font-weight: 500;
+          color: #262626;
         }
 
         .__p-title {
           font-size: 1em;
           font-weight: bold;
           font-family: 'Montserrat';
-          text-transform: uppercase;
           letter-spacing: 0;
           margin-bottom: 0; 
           font-size: 1em;
@@ -151,8 +154,8 @@
         }
 
         .__p-price {
-          margin: 1em 0;
-          font-size: 1.3em;
+          margin: 0.3em 0;
+          font-size: 1em;
           letter-spacing: 0;
           
           span {
@@ -199,6 +202,8 @@
           min-width: auto;
           border-color: #F05123;
           width: 100%;
+          text-transform: inherit;
+          margin-top: 10px;
 
           &:hover {
             color: black;

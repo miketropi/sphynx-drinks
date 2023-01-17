@@ -222,7 +222,13 @@
   left: 17px;
   bottom: 17px;
 }
-
+@media (max-width: 1600px) {
+  .card-information__button {
+    position: absolute;
+    left: 12px;
+    bottom: 12px;
+  }
+}
 .card-information__wrapper {
   width: 100%;
   line-height: calc(1 + 0.4 / var(--font-body-scale));
@@ -301,7 +307,7 @@
 
   .card:hover .media.media--hover-effect>img:first-child:only-child,
   .card-wrapper:hover .media.media--hover-effect>img:first-child:only-child {
-    transform: scale(1.03);
+    transform: scale(1.03) translate(-50%, -50%);
   }
 
   .card-wrapper:hover .media.media--hover-effect>img+img {

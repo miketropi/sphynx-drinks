@@ -20,10 +20,12 @@
     text-align: center;
 
     h4 {
-      font-family: 'Montserrat';
+      font-family: "Montserrat";
       font-style: normal;
       font-weight: 900;
       margin: 0;
+      font-size: 1.5em;
+      letter-spacing: 0;
     }
   }
 
@@ -131,28 +133,32 @@
         -webkit-transition: .3s ease;
 
         .box-name {
-          font-size: 1.3em;
+          font-size: 1em;
           font-family: 'Montserrat';
-          font-weight: 600;
+          font-weight: bold;
           margin: 0;
           margin-bottom: 1em;
+          letter-spacing: 0;
         }
 
         a.button {
           background: #F05123;
           border-radius: 8px;
+          padding: 10px 20px;
           border: none;
-          font-family: 'Montserrat';
+          min-height: auto;
+          font-family: "Montserrat";
           font-weight: bold;
           letter-spacing: 0;
           text-transform: initial;
-          font-size: 1.2em;
+          font-size: .9em;
           min-width: auto;
+          letter-spacing: 0;
           visibility: hidden;
           opacity: 0;
           white-space: normal;
-          transition: .3s ease;
-          -webkit-transition: .3s ease;
+          transition: 0.3s ease;
+          -webkit-transition: 0.3s ease;
 
           svg {
             margin-left: 4px;

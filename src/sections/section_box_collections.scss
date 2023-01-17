@@ -6,7 +6,7 @@
             padding-left: 15px;
             margin-right: auto;
             margin-left: auto;
-            max-width: 1680px;
+            max-width: calc(var(--site-container-width) + 30px);
         }
 
         .row {
@@ -45,7 +45,7 @@
                     font-family: 'Montserrat';
                     font-style: normal;
                     font-weight: 700;
-                    font-size: 24px;
+                    font-size: 20px;
                     line-height: 120%;
                     text-transform: uppercase;
                     color: #F05123;
@@ -174,8 +174,11 @@
                         }
 
                         &-media {
-                            max-width: 154px;
+                            // max-width: 154px;
+                            // width: 100%;
                             width: 100%;
+                            max-width: 120px;
+                            height: 120px;
                             overflow: hidden;
                             position: relative;
                             background: #FFFFFF;
@@ -239,7 +242,8 @@
                                 font-family: 'Montserrat';
                                 font-style: normal;
                                 font-weight: 700;
-                                font-size: 16px;
+                                font-size: .9em;
+                                letter-spacing: 0;
                                 line-height: 120%;
                                 text-align: center;
                                 color: #000000;

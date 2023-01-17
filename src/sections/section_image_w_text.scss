@@ -6,13 +6,13 @@
         max-width: calc(100% - 30px);
 
         &.container-wide {
-            width: 100%;
+            width: 100%; 
             padding-right: 15px;
             padding-left: 15px;
             margin-right: auto;
             margin-left: auto;
-            max-width: 1650px;
             overflow: hidden;
+            max-width: calc(var(--site-container-width) + 30px);
         }
 
     }
