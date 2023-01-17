@@ -1002,6 +1002,11 @@ ul.menu-style-mobile li.menu-link .menu-icon-arrow.open {
   margin-bottom: 1.5em;
   padding-right: 15px;
 }
+@media (max-width: 585px) {
+  .site-footer__inner .footer-col {
+    margin-bottom: 2em;
+  }
+}
 .site-footer__inner .footer-col.__type_membership-form {
   width: 33.33%;
 }
@@ -1024,6 +1029,12 @@ ul.menu-style-mobile li.menu-link .menu-icon-arrow.open {
   height: 32px;
   display: block;
 }
+@media (max-width: 767px) {
+  .site-footer__inner .footer-col.__type_vertical-menu h4.__heading-empty, .site-footer__inner .footer-col.__type_footer-socials h4.__heading-empty {
+    margin: 0;
+    height: 20px;
+  }
+}
 @media (max-width: 1024px) {
   .site-footer__inner .footer-col {
     width: 50% !important;
@@ -1042,6 +1053,11 @@ ul.menu-style-mobile li.menu-link .menu-icon-arrow.open {
 }
 .site-footer__copyright {
   padding: 25px 0 45px;
+}
+@media (max-width: 767px) {
+  .site-footer__copyright {
+    padding: 0px 0 30px;
+  }
 }
 
 .copyright-text__container {

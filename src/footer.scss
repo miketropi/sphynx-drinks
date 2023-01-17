@@ -14,10 +14,6 @@ $footer-background-color: black !default;
     -webkit-transform: translateY(-98%);
   }
 
-  &__container {
-
-  }
-
   &__inner {
     display: flex;
     flex-wrap: wrap;
@@ -25,7 +21,9 @@ $footer-background-color: black !default;
     .footer-col {
       margin-bottom: 1.5em;
       padding-right: 15px;
-
+      @media(max-width: 585px) {
+        margin-bottom: 2em;
+      }
       &.__type_membership-form {
         width: 33.33%;
       }
@@ -50,6 +48,10 @@ $footer-background-color: black !default;
           &.__heading-empty {
             height: 32px;
             display: block;
+            @media (max-width: 767px){
+              margin: 0;
+              height: 20px;
+            }
           }
         }
       } 
@@ -80,6 +82,9 @@ $footer-background-color: black !default;
 
   &__copyright {
     padding: 25px 0 45px;
+    @media (max-width: 767px){
+      padding: 0px 0 30px;
+    }
   }
 }
 
