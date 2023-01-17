@@ -156,6 +156,9 @@
                     height: 234px;
                 }
 
+                img {
+                    object-fit: contain;
+                }
             }
 
             .card-information {
@@ -243,5 +246,75 @@
                 background-color: white;
             }
         }
+    }
+}
+
+.template-search {
+    &__page-title {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 36px;
+        line-height: 120%;
+        text-transform: uppercase;
+        color: #000000;
+    }
+    .shopify-section-filters-sticky {
+        background-color: #F05123;
+        > .page-width::after {
+            display: none;
+        }
+        .list-view__item {
+            color: #FFFFFF;
+        }
+    }
+    facet-drawer+.sorting {
+        margin-inline-start: 10px;
+    }
+    .facet-checkbox input[type='radio']:checked~.label {
+        color: #F05123;
+    }
+    .facets__selected_icon {
+        position: static;
+        width: auto;
+        height: auto;
+        &::before,
+        &::after {
+            display: none;
+        }
+        .icon-plus {
+            position: absolute;
+            top: 50%;
+            right: 1.5rem;
+            margin-top: -0.5rem;
+            height: 1rem;
+        }
+    }
+    .facets__header {
+        background: #FFFFFF;
+        z-index: 99;
+    }
+    .price-range__thumbs {
+        &:before {
+            background-color: #F05123;
+        }
+        &:after {
+            display: none;
+        }
+    }
+    .price-range__track {
+        --selected-range: #F05123;
+    }
+    .price-range__output-text {
+        color: #F05123;
+    }
+    .price-range+div {
+        color: #8B8B8B;
+    }
+    a.active-facets__button--dark {
+        color: #8B8B8B;
+    }
+    .list-view__item {
+        color: #8B8B8B;
     }
 }
