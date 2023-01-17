@@ -116,6 +116,11 @@
                         letter-spacing: normal;
                         margin-bottom: 10px;
                         text-decoration: none;
+                        min-height: 40px;
+                        overflow: hidden;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical;
                     }
                     .card__badge{
                         display: none;

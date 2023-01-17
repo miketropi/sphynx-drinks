@@ -370,6 +370,209 @@
         }
 
         .card-wrapper {
+            position: relative;
+            .card--product {
+                .card__media {
+                    background-color: transparent;
+
+                    .media {
+                        padding: 0;
+                        height: 280px;
+                        margin-bottom: 30px;
+                        background-color: transparent;
+
+                        img {
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            -o-object-fit: cover;
+                            object-fit: cover;
+                            -o-object-position: center;
+                            object-position: center;
+                            height: auto;
+                            width: auto;
+                            max-width: 100%;
+                            max-height: 100%;
+                            transform: translate(-50%, -50%);
+                        }
+                    }
+
+                }
+            }
+
+            .card-article-info {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 95%;
+                color: #000000;
+                letter-spacing: normal;
+                margin-bottom: 5px;
+                text-transform: none;
+            }
+
+            .card-information__text {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 800;
+                font-size: 16px;
+                line-height: 120% !important;
+                color: #000000;
+                display: inline-block;
+                text-transform: none;
+                letter-spacing: normal;
+                margin-bottom: 10px;
+                text-decoration: none;
+                min-height: 40px;
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+            }
+            .card__badge{
+                display: none;
+            }
+
+            .card-information__button {
+                position: relative;
+                left: 0;
+                bottom: 0;
+
+                .button {
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 16px;
+                    line-height: 95%;
+                    color: #FFFFFF !important;
+                    background: #F05123;
+                    border-radius: 8px;
+                    padding: 10px 25px;
+                    border: 1px solid #F05123;
+                    min-width: auto;
+                    text-transform: none;
+                    letter-spacing: normal;
+                    &:hover{
+                        color: #F05123 !important;
+                    }
+                }
+            }
+
+            .rating {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 10px;
+                line-height: 95%;
+                color: #F05123;
+                margin-bottom: 20px;
+
+                span {
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 95%;
+                    color: #000000;
+                    display: inline-block;
+                }
+            }
+
+            .rating-star {
+                --letter-spacing: 0.3;
+                --font-size: 1.5;
+                --percent: calc((var(--rating) / var(--rating-max) + var(--rating-decimal) * var(--font-size) / (var(--rating-max) * (var(--letter-spacing) + var(--font-size)))) * 100%);
+                letter-spacing: calc(var(--letter-spacing) * 1rem);
+                font-size: calc(var(--font-size) * 1rem);
+                line-height: 1;
+                display: inline-block;
+                font-family: Times;
+                margin: 0;
+            }
+
+            .rating-text {
+                display: none;
+            }
+
+            .rating-count {
+                display: none;
+                margin: 0;
+            }
+
+            @media (forced-colors: active) {
+                .rating {
+                    display: none;
+                }
+
+                .rating-text {
+                    display: block;
+                }
+            }
+
+            .price {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 800;
+                font-size: 24px;
+                line-height: 95%;
+                color: #000000;
+                letter-spacing: normal;
+                margin-bottom: 20px;
+                price-money+price-money::before {
+                    content: '\2013';
+                    margin-inline-end: 0.7rem;
+                }
+                .price__sale {
+                    display: none;
+                }
+
+                dd {
+                    margin: 0;
+                }
+            }
+
+            .button--soldout {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 900;
+                font-size: 16px;
+                line-height: 95%;
+                color: #CDCDCD;
+                border: 1px solid #CDCDCD;
+                border-radius: 8px;
+                letter-spacing: normal;
+                padding: 13px 34px;
+                min-width: auto;
+                text-transform: none;
+                background-color: transparent !important;
+            }
+
+            .quick-view__summary {
+                top: 100px;
+                right: unset;
+                left: calc(50% - 50px);
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 95%;
+                color: #FFFFFF;
+                background: #F05123;
+                height: 100px;
+                width: 100px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &::after {
+                    display: none;
+                }
+            }
+        }
+
+        .card-wrapper {
             color: inherit;
             display: block;
             position: relative;
