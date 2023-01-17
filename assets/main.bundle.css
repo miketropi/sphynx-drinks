@@ -2422,7 +2422,7 @@ ul.menu-style-mobile li.menu-link .menu-icon-arrow.open {
 }
 @media (max-width: 767px) {
   .template-collection .rich-text h2 {
-    font-size: 28px;
+    font-size: 28px !important;
   }
 }
 .template-collection .rich-text .rich-text__text {
@@ -2446,6 +2446,22 @@ ul.menu-style-mobile li.menu-link .menu-icon-arrow.open {
   margin-top: 0;
   margin-bottom: 12px;
 }
+@media (max-width: 1500px) {
+  .template-collection .collection-grid-section .facets__form .filter-heading {
+    font-size: 24px;
+  }
+}
+.template-collection .collection-grid-section .facets__form .facets__main .js-filter .facets__price {
+  color: black;
+}
+.template-collection .collection-grid-section .facets__form .facets__main .js-filter .facets__header {
+  padding: 1.5rem 0;
+}
+@media (max-width: 1500px) {
+  .template-collection .collection-grid-section .facets__form .facets__main .js-filter .facets__header {
+    padding: 1rem 0;
+  }
+}
 .template-collection .collection-grid-section .facets__form .facets__main .js-filter .facets__header .facets__selected {
   font-family: "Montserrat";
   font-style: normal;
@@ -2453,6 +2469,11 @@ ul.menu-style-mobile li.menu-link .menu-icon-arrow.open {
   font-size: 24px;
   line-height: 95%;
   color: #F05123;
+}
+@media (max-width: 1500px) {
+  .template-collection .collection-grid-section .facets__form .facets__main .js-filter .facets__header .facets__selected {
+    font-size: 20px;
+  }
 }
 .template-collection .collection-grid-section .facets__form .facets__main .js-filter .facets__header .facets__list {
   padding-bottom: 0;
@@ -2588,6 +2609,12 @@ ul.menu-style-mobile li.menu-link .menu-icon-arrow.open {
   position: absolute;
   bottom: 17px;
   left: 17px;
+}
+@media (max-width: 1600px) {
+  .product-grid .grid__item .card-wrapper .card-information .button--soldout {
+    bottom: 12px;
+    left: 12px;
+  }
 }
 @media (max-width: 1200px) {
   .product-grid .grid__item .card-wrapper .card-information .button--soldout {

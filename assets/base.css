@@ -82,9 +82,12 @@ html {
 }
 
 .page-width {
-  max-width: var(--page-width);
-  margin: 0 auto;
-  padding: 0 1.5rem;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: calc(var(--site-container-width) + 30px);
 }
 
 .page-width-desktop {
@@ -1271,10 +1274,13 @@ lazy-image {
   display: block;
   max-width: 100%;
   position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
+  top: 50%;
+  left: 50%;
+  max-height: 100%;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  transform: translate(-50%, -50%);
 }
 
 img {
@@ -3323,23 +3329,4 @@ use-animate {
 
 .flickity-page-dot.is-selected::after {
   transform: scale(1.5);
-}
-
-@media (min-width: 992px) {
-  .page-width {
-    max-width: 960px;
-  }
-
-}
-
-@media (min-width: 1200px) {
-  .page-width {
-    max-width: 1140px;
-  }
-}
-
-@media (min-width: 1600px) {
-  .page-width {
-    max-width: 1400px;
-  }
 }
