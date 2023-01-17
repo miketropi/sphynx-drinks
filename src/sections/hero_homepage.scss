@@ -77,6 +77,9 @@
                     line-height: 110%;
                     color: #000000;
                     margin: 0;
+                    @media (max-width: 1500px){
+                        font-size: 42px !important;
+                    }
                     @media (max-width: 1024px){
                         font-size: 40px !important;
                     }
@@ -103,6 +106,10 @@
                     letter-spacing: normal;
                     border-color: #F05123;
                     min-width: auto;
+                    @media (max-width: 1500px){
+                        font-size: 18px;
+                        padding: 11px 30px 20px;
+                    }
                     @media (max-width: 767px){
                         padding: 18px 25px 24px;
                         font-size: 18px;

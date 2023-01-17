@@ -39,6 +39,10 @@
         margin-top: 35px;
 
         .ft-collection-carousel-wrap {
+            margin: 0 -12px;
+            @media (max-width: 480px){
+                margin: 0;
+            }
             .slick-track {
                 display: flex;
 
