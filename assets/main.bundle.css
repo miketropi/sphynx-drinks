@@ -3466,7 +3466,7 @@ ul.menu-style-mobile li.menu-link .menu-icon-arrow.open {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  max-width: 1680px;
+  max-width: calc(var(--site-container-width) + 30px);
 }
 .morden-blog-section .morden-blog__container {
   width: var(--site-container-width);
@@ -4940,7 +4940,7 @@ iframe.ybSyad5RbtOghAuCHUvv {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  max-width: 1650px;
+  max-width: calc(var(--site-container-width) + 30px);
 }
 .section-image-w-text .image-with-text__grid {
   display: flex;
