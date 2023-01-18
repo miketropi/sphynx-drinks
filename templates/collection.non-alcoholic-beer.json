@@ -218,6 +218,99 @@
         "padding_bottom": 0,
         "color_heading": "#000"
       }
+    },
+    "06db6a3d-47db-4872-b044-e70e61b7caa0": {
+      "type": "faq",
+      "blocks": {
+        "template--16666413891812__06db6a3d-47db-4872-b044-e70e61b7caa0-167402801417be6bf0-0": {
+          "type": "question",
+          "settings": {
+            "title": "What is non alcoholic beer?",
+            "text": "<p>Non-alcoholic beer is exactly what it sounds like, beer without alcohol. During the brewing process, the alcohol can be removed using one of several processes, leaving you with an alcohol-free beer. In recent years it has proven more popular than ever with people who want to cut down their alcohol consumption but continue to enjoy the taste of their favourite refreshing ale, stout, or lager with less than 0.5% alcohol.<\/p>"
+          }
+        },
+        "template--16666413891812__06db6a3d-47db-4872-b044-e70e61b7caa0-167402801417be6bf0-1": {
+          "type": "question",
+          "settings": {
+            "title": "How do they make non alcoholic beer?",
+            "text": "<p>In recent years, more and more people have decided to either cut back on their consumption of alcohol or choose not to drink it at all. It has made the breweries put more time and effort into perfecting how alcohol-free beer gets produced, resulting in a far higher quality beverage. By far, the most common brewing process for non-alcoholic beer includes adding steam or water to the liquid and then boiling it under pressure. During this stage of brewing, alcohol gets released into a compressor as vapour, and what is left is zero-alcohol beer.<\/p>"
+          }
+        },
+        "a8ae0125-5aa2-4288-8106-8e866d50afc7": {
+          "type": "question",
+          "settings": {
+            "title": "Can drinking zero alcohol beer make me drunk?",
+            "text": "<p>For a beverage to be considered an alcohol-free beer, it must contain under 0.5% alcohol. It is practically impossible for an adult to get drunk at these levels. You simply couldn’t drink enough zero-alcohol beer even to get a light buzz, let alone suffer any of the usual side effects of consuming a regular beer. The beauty of a non-alcoholic beer is that you can enjoy all the fabulous flavours of your favourite beers and still drive home and function normally the next day.<\/p>"
+          }
+        },
+        "a80ce347-dfe7-45cc-a9af-f5e61b10e8c3": {
+          "type": "question",
+          "settings": {
+            "title": "Are alcohol-free beers healthy?",
+            "text": "<p>Alcohol-free beers are generally considered a healthier option than a regular pint. A full-flavoured low-alcohol beer makes a great alternative but will still be relatively high in carbs and calories. By opting for the best non-alcoholic beers Australia offers, you could help reduce the risk of heart disease, improve your sleep, help bone growth, and even help ward off illnesses like the common cold. You still need to be mindful of the quantity you drink, regardless of the percentage of alcohol present. If you choose to drink a non-alcoholic craft beer, you’ll still be at risk of weight gain and other possible health issues if you overindulge regularly. <\/p>"
+          }
+        },
+        "1cbb30e5-236c-40a5-be52-d21df7ac8a37": {
+          "type": "question",
+          "settings": {
+            "title": "How many calories are in your non alcohol beers?",
+            "text": "<p>Our entire selection of non-alcoholic beer is low-calorie compared to a regular pint. Our Fruh Kolsch Alcohol 16 is a 0.0% beer and has a total of 16 calories per bottle. Naked Mole NZ Haze Pale Ale comes in at 14 calories, and the Insel Brauerei Snorkelers Sea Slat IPA has a modest 32 calories. These are all low-calorie beverages, but some 0-alcohol beer comes in even lower. Holsten non alcoholic beer has just 4 calories per bottle, and Sober Carpenter IPA has the same amount. Although not calorie-free, alcohol-free beer is streaks ahead of regular grog when it comes to enjoying your favourite beer and watching your waistline.<\/p>"
+          }
+        },
+        "3bbd634a-70bf-4c3c-9aa5-f1ca3d21b9a0": {
+          "type": "question",
+          "settings": {
+            "title": "Is zero alcohol beer low in carbs?",
+            "text": "<p>Alcohol contains no carbs, so a low carb non-alcoholic beer isn’t necessarily lower in carbs than regular beer. During the process of making beer without alcohol, sugar often gets added to improve the flavour profile. Fear not, though, as the carbs in a non-alcohol beer come mainly from sugars, contain no vitamins or minerals, and get considered empty calories; they are only in small amounts as long as you don’t overindulge too often.<\/p>"
+          }
+        },
+        "a3583eb2-8ccb-4276-a091-e828fb7ecb1b": {
+          "type": "question",
+          "settings": {
+            "title": "Do you sell non alcoholic craft beers?",
+            "text": "<p>Sphynx has a fantastic non-alcoholic craft beer selection. You can place a non-alcoholic beer order online from brewers, including GRUVI, Big Drop, and Bravus. Between them, they offer the best non-alcohol IPA, a craft lager, and a raspberry gose craft beer that is perfectly refreshing and the favourite brew of many. Or a blood orange IPA that uses a unique recipe and provides cracking tropical and citrus aromas and taste. You can purchase all our non-alcoholic craft beers online with delivery to your doorstep.<\/p>"
+          }
+        },
+        "ccfca7a0-2d1d-4c80-ac33-8193352c5aa3": {
+          "type": "question",
+          "settings": {
+            "title": "Will drinking too many alcohol free beers make me fat?",
+            "text": "<p>You'll gain weight if you consume more calories than your body burns. It’s a little more complicated than that, but our alcohol-free beers are all pretty low calories, and to gain weight, you’d have to drink a heck of a lot of them. Drinking the best non-alcoholic beers Australia offers is a great way to cut down on your consumption of alcohol, or if you want to make a complete switch, you still need to be mindful of what you put in your body and the amount you consume.<\/p>"
+          }
+        },
+        "e31bcf24-9fb0-4742-a69c-6a4d825e948c": {
+          "type": "question",
+          "settings": {
+            "title": "Who offers the best non-alcoholic beer in Australia?",
+            "text": "<p>At Sphynx, we firmly believe that we offer the best non-alcoholic craft beer in Australia. The time we have spent sourcing and refining our zero-alcohol beer menu offers our customers the widest selection of non-alc and non-alcoholic craft beer options.  It means they can order their favourite non-alcoholic beer online and have it delivered to their front door within a few days of placing their order.<\/p>"
+          }
+        },
+        "324fc045-09fa-4c83-bfa6-776a0b29cbcc": {
+          "type": "question",
+          "settings": {
+            "title": "Can I order non-alcoholic beers online from the Sphynx Drinks website?",
+            "text": "<p>Customers can order any of our products from our non-alcoholic beer online store. Sphynx Drinks are based in Sydney, and we use the Australia Post eParcel Wine service to deliver our 0 alcohol beer. If you confirm your order before 10 am, we’ll get it on its way the same day.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16666413891812__06db6a3d-47db-4872-b044-e70e61b7caa0-167402801417be6bf0-0",
+        "template--16666413891812__06db6a3d-47db-4872-b044-e70e61b7caa0-167402801417be6bf0-1",
+        "a8ae0125-5aa2-4288-8106-8e866d50afc7",
+        "a80ce347-dfe7-45cc-a9af-f5e61b10e8c3",
+        "1cbb30e5-236c-40a5-be52-d21df7ac8a37",
+        "3bbd634a-70bf-4c3c-9aa5-f1ca3d21b9a0",
+        "a3583eb2-8ccb-4276-a091-e828fb7ecb1b",
+        "ccfca7a0-2d1d-4c80-ac33-8193352c5aa3",
+        "e31bcf24-9fb0-4742-a69c-6a4d825e948c",
+        "324fc045-09fa-4c83-bfa6-776a0b29cbcc"
+      ],
+      "settings": {
+        "heading": "FAQs",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "custom_class": "faq-homepage"
+      }
     }
   },
   "order": [
@@ -228,6 +321,7 @@
     "2b97c980-66e5-4606-9cdc-e9011d7087e1",
     "a13ea04f-329f-47b8-b1bd-530c14ebd2d2",
     "5a00a2a4-f476-482a-8af0-d620620d7601",
-    "167402735247237340"
+    "167402735247237340",
+    "06db6a3d-47db-4872-b044-e70e61b7caa0"
   ]
 }
