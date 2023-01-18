@@ -8,13 +8,14 @@
     justify-content: space-between;
 
     .__product-gallery {
-      width: 55%;
+      width: 50%;
       display: flex;
       justify-content: space-between;
-
+      padding-top: 60px;
       @media(max-width: 768px) {
         width: 100%;
         flex-direction: column-reverse;
+        padding-top: 20px;
       }
 
       img {
@@ -23,7 +24,6 @@
 
       .main-product__gallery-thumb {
         width: 20%;
-        padding-top: 10%;
         display: flex;
         flex-wrap: wrap;
         gap: 5px;
@@ -63,12 +63,12 @@
     }
 
     .__product-info {
-      width: 40%;
-      padding-top: 2.5em;
+      width: 45%;
       letter-spacing: 0;
 
       @media(max-width: 768px) {
         width: 100%;
+        margin-top: 20px;
       }
 
       .product__title {
@@ -142,8 +142,6 @@
     width: 100%;
     text-align: center;
   }
-
-  form {}
 
   button[type=submit] {
     width: 100%;

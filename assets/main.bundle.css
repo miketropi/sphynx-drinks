@@ -3931,19 +3931,20 @@ ul.menu-style-mobile li.menu-link .menu-icon-arrow.open {
   justify-content: space-between;
 }
 .main-product__inner .__product-gallery {
-  width: 55%;
+  width: 50%;
   display: flex;
   justify-content: space-between;
+  padding-top: 60px;
 }
 @media (max-width: 768px) {
   .main-product__inner .__product-gallery {
     width: 100%;
     flex-direction: column-reverse;
+    padding-top: 20px;
   }
 }
 .main-product__inner .__product-gallery .main-product__gallery-thumb {
   width: 20%;
-  padding-top: 10%;
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
@@ -3982,13 +3983,13 @@ ul.menu-style-mobile li.menu-link .menu-icon-arrow.open {
   }
 }
 .main-product__inner .__product-info {
-  width: 40%;
-  padding-top: 2.5em;
+  width: 45%;
   letter-spacing: 0;
 }
 @media (max-width: 768px) {
   .main-product__inner .__product-info {
     width: 100%;
+    margin-top: 20px;
   }
 }
 .main-product__inner .__product-info .product__title {
