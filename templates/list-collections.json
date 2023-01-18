@@ -103,7 +103,7 @@
         "description": "<p>Et tellus aliquet sit tortor risus et sed pulvinar mauris. Vestibulum mauris elementum suscipit sed. Proin sit at ipsum dictumst purus a sit. Ipsum pellentesque sed vulputate volutpat ultrices tempor. Volutpat et tortor fringilla vitae elit. Commodo facilisi sed pellentesque mauris orci. Varius sed fusce urna diam dignissim nec amet. Habitant nec sit massa risus. Lobortis suspendisse urna non.<\/p>",
         "redirect_label": "Shop Non-Alc Cider",
         "redirect_url": "#",
-        "collection": "beer",
+        "collection": "cider",
         "limit_number": 6,
         "background_color": "#ffffff",
         "spacing_top": "3em",
