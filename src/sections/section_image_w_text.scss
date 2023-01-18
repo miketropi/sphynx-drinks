@@ -1,20 +1,12 @@
 .section-image-w-text {
     .section-container {
-        width: var(--site-container-width);
-        padding: 0;
-        margin: 0 auto;
-        max-width: calc(100% - 30px);
-
-        &.container-wide {
-            width: 100%; 
+        width: 100%; 
             padding-right: 15px;
             padding-left: 15px;
             margin-right: auto;
             margin-left: auto;
             overflow: hidden;
             max-width: calc(var(--site-container-width) + 30px);
-        }
-
     }
 
     .image-with-text {

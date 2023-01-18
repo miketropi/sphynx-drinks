@@ -2473,6 +2473,7 @@ ul.menu-style-mobile li.menu-link .menu-icon-arrow.open {
   line-height: 146%;
   color: #8B8B8B;
   margin-top: 0;
+  text-align: center;
 }
 .template-collection .collection-grid-section .facets__form .filter-heading {
   font-family: "Montserrat";
@@ -5135,12 +5136,6 @@ iframe.ybSyad5RbtOghAuCHUvv {
 }
 
 .section-image-w-text .section-container {
-  width: var(--site-container-width);
-  padding: 0;
-  margin: 0 auto;
-  max-width: calc(100% - 30px);
-}
-.section-image-w-text .section-container.container-wide {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
