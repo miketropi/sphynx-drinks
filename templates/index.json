@@ -39,7 +39,7 @@
         "template--16656683270372__05a3923b-a232-4cf4-9fe4-c1e4714b9a2c-167366809358b917ac-0": {
           "type": "box_collection_item",
           "settings": {
-            "collection": "beer-and-cider",
+            "collection": "beer",
             "image": "shopify:\/\/shop_images\/beer.png",
             "image_hover": "shopify:\/\/shop_images\/Rectangle_118.png"
           }
@@ -126,7 +126,7 @@
     "8e7e9f80-9dc1-4376-9347-3d70f1ee5046": {
       "type": "featured-collection-carousel",
       "settings": {
-        "collection": "beer-and-cider",
+        "collection": "beer",
         "heading": "Special offers",
         "label_showall": "Shop all Best Sellers",
         "link_showall": "",
@@ -192,7 +192,7 @@
     "1bb65e81-d3ba-45ca-9c38-6518c725ad12": {
       "type": "featured-collection-carousel",
       "settings": {
-        "collection": "beer-and-cider",
+        "collection": "beer",
         "heading": "The best sellers",
         "label_showall": "",
         "link_showall": "",
@@ -247,7 +247,7 @@
     "2d3fbef1-fbe7-43ba-99a1-9f9008bf4d0b": {
       "type": "featured-collection-carousel",
       "settings": {
-        "collection": "beer-and-cider",
+        "collection": "beer",
         "heading": "Featured collection",
         "label_showall": "Shop all Best Sellers",
         "link_showall": "",
@@ -358,7 +358,7 @@
         "template--16656683270372__218226e6-a49e-4067-bcbc-48c60058bd52-167366809358b917ac-0": {
           "type": "box_collection_item",
           "settings": {
-            "collection": "beer-and-cider",
+            "collection": "beer",
             "image": "shopify:\/\/shop_images\/beer.png",
             "image_hover": "shopify:\/\/shop_images\/Rectangle_118.png"
           }
@@ -445,7 +445,7 @@
     "cd357b2a-fb79-4170-a634-95f0a4a293c5": {
       "type": "featured-collection-carousel",
       "settings": {
-        "collection": "beer-and-cider",
+        "collection": "beer",
         "heading": "The best sellers",
         "label_showall": "Shop all Best Sellers",
         "link_showall": "",

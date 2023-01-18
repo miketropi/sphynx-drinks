@@ -221,7 +221,7 @@
         "heading_color": "#000000",
         "redirect_label": "VIEW ALL",
         "redirect_url": "#",
-        "collection": "beer-and-cider",
+        "collection": "beer",
         "limit_number": 6,
         "background_color": "#ffc85e",
         "spacing_top": "3em",

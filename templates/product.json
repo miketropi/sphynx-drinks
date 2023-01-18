@@ -344,7 +344,6 @@
           "type": "heading",
           "settings": {
             "heading": "A MENU OF FLAVOURS & STYLES: THE BEST RANGE OF NON-ALC DRINKS IN AUSTRALIA",
-            "heading_size": "h1",
             "font_family": "Flavory Display"
           }
         },
@@ -352,16 +351,13 @@
           "type": "text",
           "disabled": true,
           "settings": {
-            "text": "<p><em>– SUBHEADING<\/em><\/p>",
-            "text_size": "typeset",
-            "secondary_color": true
+            "text": "<p><em>– SUBHEADING<\/em><\/p>"
           }
         },
         "342dca6a-5061-4618-866c-ed6bf6cd9cd9": {
           "type": "heading",
           "settings": {
             "heading": "",
-            "heading_size": "h1",
             "font_family": "Flavory Display"
           }
         }
@@ -715,7 +711,6 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/sd-main-banner-about.jpg",
             "title": "ABOUT SPHYNX",
-            "title_size": "h3",
             "text": "<p>Find out more about the cool cats at Sphynx Drinks and hear how it purred to life.<\/p>",
             "button_label": "READ MORE",
             "button_link": "shopify:\/\/pages\/our-story",
@@ -727,7 +722,6 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/sd-main-banner-con.jpg",
             "title": "CONTACT THE CAT",
-            "title_size": "h3",
             "text": "<p>Reach out to us to get advice on our range, partner with us or chinwag about all things Sphynx.<\/p>",
             "button_label": "CONTACT",
             "button_link": "shopify:\/\/pages\/contact",
@@ -739,7 +733,6 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/sd-banner-faq.jpg",
             "title": "PUB TRIVIA: FAQs",
-            "title_size": "h3",
             "text": "<p>PUB TRIVIA: FAQs Want to dive into the fine print? Pull up a stool and browse our FAQs, from shipping timelines to returns policies.<\/p>",
             "button_label": "FIND OUT MORE",
             "button_link": "shopify:\/\/pages\/faq",
@@ -773,7 +766,7 @@
         "heading_color": "#000000",
         "redirect_label": "VIEW ALL",
         "redirect_url": "#",
-        "collection": "beer-and-cider",
+        "collection": "beer",
         "limit_number": 6,
         "background_color": "#ffc85e",
         "spacing_top": "8em",
