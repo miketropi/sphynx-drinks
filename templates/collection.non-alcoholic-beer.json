@@ -162,7 +162,7 @@
         "image_radius": true,
         "layout": "text_first",
         "padding_top": 36,
-        "padding_bottom": 158,
+        "padding_bottom": 36,
         "container_width": "normal",
         "custom_class": ""
       }
