@@ -76,11 +76,42 @@
         "padding_top": 0,
         "padding_bottom": 140
       }
+    },
+    "8ac36cda-3598-40e7-abcc-62e20ee151c9": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16666413891812__8ac36cda-3598-40e7-abcc-62e20ee151c9-1674027245cee04d9d-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "From Well-Known No Alcohol Beer Brands To Niche Non Alcoholic Craft Beers, Sphynx Drinks Have It All"
+          }
+        },
+        "template--16666413891812__8ac36cda-3598-40e7-abcc-62e20ee151c9-1674027245cee04d9d-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Here at Sphynx, we made it our mission to bring every Australian non-alcoholic beer options that give more choice when they want to relax with a cold one. We spend countless hours searching for and taste-testing products from the best non-alcoholic beer brands, including Heineken, Weihenstephan, Peroni, Erdinger Weissbier, Clausthaler, and more.<br\/>With decade upon decade of 0 alcohol beer brewing from the Netherlands, Italy, and Germany, these titans of alcohol-free beer sit beautifully in our lineup.<\/p><p><br\/>As well as these more easily recognised alcohol-free beer brands, Sphynx carries the best non-alcoholic craft beer Australia offers. We’ve got the Bravus Rasberry Goose non-alcoholic craft beer, a Gruvi IPA, a Sober Carpenter Belgian White zero-alcohol beer, and Holgate Brewhouse Love All Pale Ale. We’ve put together a fantastic selection of non alcohol beers that have the refreshing crisp taste you want from a beer without the alcohol content or the rotten feeling of the following day.<br\/><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16666413891812__8ac36cda-3598-40e7-abcc-62e20ee151c9-1674027245cee04d9d-0",
+        "template--16666413891812__8ac36cda-3598-40e7-abcc-62e20ee151c9-1674027245cee04d9d-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Rectangle_229_1b8bb2a3-7196-47ea-ace9-9d2fba0491b2.png",
+        "image_radius": false,
+        "layout": "text_first",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "container_width": "normal",
+        "custom_class": ""
+      }
     }
   },
   "order": [
     "banner",
     "b024aa67-a57b-48a2-97a6-e7868636c099",
-    "product-grid"
+    "product-grid",
+    "8ac36cda-3598-40e7-abcc-62e20ee151c9"
   ]
 }
