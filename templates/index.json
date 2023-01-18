@@ -17,7 +17,7 @@
           "type": "button",
           "settings": {
             "btn_label": "Shop Now",
-            "button_link": ""
+            "button_link": "\/collections\/all"
           }
         }
       },
