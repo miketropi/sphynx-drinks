@@ -208,7 +208,7 @@
             font-family: 'Montserrat' !important;
             font-style: normal;
             font-weight: 700;
-            font-size: 24px;
+            font-size: 22px;
             line-height: 120%;
             letter-spacing: 0;
             text-transform: uppercase;
@@ -232,20 +232,20 @@
             margin-top: 10px;
         }       
         &__read {
-            margin-top: 40px;
+            margin-top: 30px;
             .read-link-btn {
                 position: relative;
                 z-index: 1;
                 overflow: hidden;
                 display: inline-flex;
                 font-weight: 900;
-                font-size: 22px;
+                font-size: 20px;
                 line-height: 95%;
                 letter-spacing: 0;
                 text-decoration: none;
                 color: #FFFFFF;
                 background: #F05123;
-                padding: 23px 60px;
+                padding: 17px 40px 14px;
                 border-radius: 12px;
                 &:after {
                     content: '';
@@ -266,6 +266,8 @@
                 }
                 svg {
                     margin-left: 10px;
+                    position: relative;
+                    top: -2px;
                 }
                 &:hover {
                     &:after {

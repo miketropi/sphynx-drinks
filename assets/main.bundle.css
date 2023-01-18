@@ -1280,7 +1280,7 @@ ul.menu-style-mobile li.menu-link .menu-icon-arrow.open {
   font-family: "Montserrat" !important;
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 120%;
   letter-spacing: 0;
   text-transform: uppercase;
@@ -1304,7 +1304,7 @@ ul.menu-style-mobile li.menu-link .menu-icon-arrow.open {
   margin-top: 10px;
 }
 .__post_item_style .post-item__read, .morden-blog-section .morden-blog__list .post-item__read, .featured-blog-section .featured-blog__list .post-item__read, .related-acticles-section .related-acticles__list .post-item__read, .main-blog-section .main-blog__list .post-item__read {
-  margin-top: 40px;
+  margin-top: 30px;
 }
 .__post_item_style .post-item__read .read-link-btn, .morden-blog-section .morden-blog__list .post-item__read .read-link-btn, .featured-blog-section .featured-blog__list .post-item__read .read-link-btn, .related-acticles-section .related-acticles__list .post-item__read .read-link-btn, .main-blog-section .main-blog__list .post-item__read .read-link-btn {
   position: relative;
@@ -1312,13 +1312,13 @@ ul.menu-style-mobile li.menu-link .menu-icon-arrow.open {
   overflow: hidden;
   display: inline-flex;
   font-weight: 900;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 95%;
   letter-spacing: 0;
   text-decoration: none;
   color: #FFFFFF;
   background: #F05123;
-  padding: 23px 60px;
+  padding: 17px 40px 14px;
   border-radius: 12px;
 }
 .__post_item_style .post-item__read .read-link-btn:after, .morden-blog-section .morden-blog__list .post-item__read .read-link-btn:after, .featured-blog-section .featured-blog__list .post-item__read .read-link-btn:after, .related-acticles-section .related-acticles__list .post-item__read .read-link-btn:after, .main-blog-section .main-blog__list .post-item__read .read-link-btn:after {
@@ -1341,6 +1341,8 @@ ul.menu-style-mobile li.menu-link .menu-icon-arrow.open {
 }
 .__post_item_style .post-item__read .read-link-btn svg, .morden-blog-section .morden-blog__list .post-item__read .read-link-btn svg, .featured-blog-section .featured-blog__list .post-item__read .read-link-btn svg, .related-acticles-section .related-acticles__list .post-item__read .read-link-btn svg, .main-blog-section .main-blog__list .post-item__read .read-link-btn svg {
   margin-left: 10px;
+  position: relative;
+  top: -2px;
 }
 .__post_item_style .post-item__read .read-link-btn:hover:after, .morden-blog-section .morden-blog__list .post-item__read .read-link-btn:hover:after, .featured-blog-section .featured-blog__list .post-item__read .read-link-btn:hover:after, .related-acticles-section .related-acticles__list .post-item__read .read-link-btn:hover:after, .main-blog-section .main-blog__list .post-item__read .read-link-btn:hover:after {
   transform: rotate3d(0, 0, 1, 0deg) translate3d(0, 0, 0);
@@ -2989,11 +2991,11 @@ ul.menu-style-mobile li.menu-link .menu-icon-arrow.open {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 900;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 95%;
   color: #FFFFFF;
   display: inline-block;
-  padding: 20px 25px 26px;
+  padding: 15px 25px 22px;
   background: #F05123;
   text-decoration: none;
   border-radius: 8px;
