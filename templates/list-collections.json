@@ -18,7 +18,7 @@
             "font_size": 36,
             "font_family": "Montserrat",
             "font_weight": "900",
-            "heading_color": "#000"
+            "heading_color": "#000000"
           }
         }
       },
@@ -42,7 +42,7 @@
         "description": "<p>Et tellus aliquet sit tortor risus et sed pulvinar mauris. Vestibulum mauris elementum suscipit sed. Proin sit at ipsum dictumst purus a sit. Ipsum pellentesque sed vulputate volutpat ultrices tempor. Volutpat et tortor fringilla vitae elit. Commodo facilisi sed pellentesque mauris orci. Varius sed fusce urna diam dignissim nec amet. Habitant nec sit massa risus. Lobortis suspendisse urna non.<\/p>",
         "redirect_label": "Shop Non-Alc Beer",
         "redirect_url": "#",
-        "collection": "almost-zero",
+        "collection": "beer",
         "limit_number": 6,
         "background_color": "#ffffff",
         "spacing_top": "3em",
@@ -181,7 +181,7 @@
         "font_size": 48,
         "font_family": "Flavory Display",
         "font_weight": "900",
-        "heading_color": "#000",
+        "heading_color": "#000000",
         "bg_color": "#ffc85e",
         "btn_label": "Button Label",
         "button_link": "",
@@ -215,7 +215,7 @@
         "font_size": 48,
         "font_family": "Flavory Display",
         "font_weight": "900",
-        "heading_color": "#000",
+        "heading_color": "#000000",
         "bg_image": "shopify:\/\/shop_images\/CTA.png",
         "bg_color": "",
         "btn_label": "",
