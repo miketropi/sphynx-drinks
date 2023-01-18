@@ -57,13 +57,14 @@
     "favicon": "shopify:\/\/shop_images\/sphynx-test-logo.png",
     "gift_card_logo_height": 70,
     "checkout_logo_image": "shopify:\/\/shop_images\/Asset_1_4x_6e2e6a3a-4349-4f93-a737-600c979d0aaa.png",
-    "checkout_logo_position": "center",
+    "checkout_logo_position": "left",
     "checkout_logo_size": "large",
-    "checkout_sidebar_background_color": "#f05123",
+    "checkout_body_background_color": "#ffeeee",
+    "checkout_sidebar_background_color": "#ffffff",
     "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
     "checkout_body_font": "Open Sans",
-    "checkout_accent_color": "#ed388f",
-    "checkout_button_color": "#00cfff",
+    "checkout_accent_color": "#f05123",
+    "checkout_button_color": "#f05123",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
