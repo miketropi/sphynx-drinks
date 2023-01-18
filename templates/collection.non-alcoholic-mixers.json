@@ -22,7 +22,7 @@
         "template--16656684155108__b024aa67-a57b-48a2-97a6-e7868636c099-167299139468bdb5ef-0": {
           "type": "heading",
           "settings": {
-            "heading": "NON-ALCOHOLIC BEER",
+            "heading": "Non-Alcoholic Spirits: <br>The Best Alcohol-Free Spirits Australia Offers!",
             "font_size": 36,
             "font_family": "Montserrat",
             "font_weight": "900",
@@ -32,7 +32,7 @@
         "template--16656684155108__b024aa67-a57b-48a2-97a6-e7868636c099-167299139468bdb5ef-1": {
           "type": "text",
           "settings": {
-            "text": "<p>At integer egestas mi aliquam sapien tempus eget eget. Pellentesque egestas diam pulvinar mauris eu ultricies feugiat eu. Facilisis adipiscing ultrices facilisi tellus ipsum euismod ut a. Semper amet in mauris cras elementum aliquam facilisi viverra a. Non non donec id nibh ornare vitae arcu. Semper mi tempus ac aliquam cursus pharetra. Vitae ultrices sed id mi diam. Quam ac tincidunt id aliquet phasellus est tristique nisl at. Viverra justo praesent consectetur tellus nunc donec dignissim molestie. Maecenas mattis ultricies non viverra fermentum. Faucibus dolor in feugiat at varius interdum orci accumsan. Aliquam pellentesque a eget mi volutpat scelerisque a arcu.<\/p>",
+            "text": "<p>Sphynx is exceptionally proud to bring you Australia's premier selection of the finest non-alcoholic spirits and to introduce you to an entirely new way of enjoying the flavour of your favourite liquor without getting yourself bent out of shape and crook. The desire for alcohol-free spirits has been snowballing, and we are fully on board to bring you the best alcohol-free spirits Australia offers. We’ve got you covered with Gin, Campari, Amaretto, Vermouth, Tequila, and more from Lyre’s non-alcoholic spirits range, as well as some true beauties from top non-alcohol spirit brands like John Ross, Drummerboy, ALTD, Fluere, and Brunswick Aces to name only a few.<\/p>",
             "font_size": 16,
             "font_weight": "400",
             "desc_color": "#000000"
@@ -76,11 +76,252 @@
         "padding_top": 0,
         "padding_bottom": 140
       }
+    },
+    "c4d2f2e4-2389-46fa-9020-d139b7a11a91": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16666421952740__c4d2f2e4-2389-46fa-9020-d139b7a11a91-16740297273b91c2e1-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Huge Selection Of Non-Alcoholic Spirits To Buy Online With Fast Australia-Wide Delivery"
+          }
+        },
+        "template--16666421952740__c4d2f2e4-2389-46fa-9020-d139b7a11a91-16740297273b91c2e1-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We’re committed to bringing you a huge range of the best non-alcoholic spirits you’ll find anywhere in Australia and possibly the world. We ventured out into the cosmos of zero-alcohol spirits and put together a beverage menu that we believe includes some absolute stunners from top brands that offer a non-alcoholic spirit. Abstinence, ALTD, Amplify, Banks & Burbidge, Brunswick Aces, Cedar’s, Drummerboy, Naked Life, Four Pillars, Ginologist, Glen Dochus, Ovant, Hellfire Bluff, John Ross, Kentuck 74, Lyre’s, and more.<br\/><br\/>All these leading-edge brands offer zero-alcohol spirits with flavour notes that include ginger, star anise, citrus, gentian root, rose petals, an orange twist, lemon peel, lemon myrtle, Jamaican allspice and chamomile tea. On top of that, you can buy alcohol-free spirits online right here and now, and you’ll get your no-alcohol spirit order delivered to your door safely and securely in as little as a few days. Get your zero-proof spirits order in before 10 am, and we’ll ensure it gets sent out the same day.<br\/><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16666421952740__c4d2f2e4-2389-46fa-9020-d139b7a11a91-16740297273b91c2e1-0",
+        "template--16666421952740__c4d2f2e4-2389-46fa-9020-d139b7a11a91-16740297273b91c2e1-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Rectangle_229_1b8bb2a3-7196-47ea-ace9-9d2fba0491b2.png",
+        "image_radius": true,
+        "layout": "text_first",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "container_width": "normal",
+        "custom_class": ""
+      }
+    },
+    "e071f92e-4f94-40d8-91ec-5b5c2aa0fe1e": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16666421952740__e071f92e-4f94-40d8-91ec-5b5c2aa0fe1e-16740297273b91c2e1-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "The Best Collection Of Alcohol-Free Spirits In The Southern Hemisphere"
+          }
+        },
+        "template--16666421952740__e071f92e-4f94-40d8-91ec-5b5c2aa0fe1e-16740297273b91c2e1-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We gathered the carefully curated collection of alcohol-free spirits at Sphynx to offer the most impressive range of non-alcoholic tequila, non-alcoholic cocktails, and alcohol-free spirits anywhere in the southern hemisphere. The best non-alcohol spirits make a truly delicious drink, either by themselves or mixed into a stunning virgin mocktail. Finding the highest quality alternatives to regular spirits took a lot of work. Still, through plenty of enjoyable taste testing, we finally have what we feel is the ultimate in non-alcoholic spirits.<br\/><br\/>The Sphynx spirit menu includes Lyres non-alcoholic spirits that comprise the fabulous Spiced Cane Spirit. A non-alcoholic spiced rum that matches its alcoholic counterpart is UK-made and perfect for making nonalcoholic mocktails. We have MeMento non-alcohol spirits from Italy. Fluere from the Netherlands, with raspberry, spiced cane, and original botanical blend spirits. Glen Dochus from Scotland with a barrel-aged malt and barley-based spirit, and the Australian-produced Drummerboy that makes a beautiful standalone drink when sipped neat or as alcohol-free spirits for mixing in cocktail recipes.<br\/><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16666421952740__e071f92e-4f94-40d8-91ec-5b5c2aa0fe1e-16740297273b91c2e1-0",
+        "template--16666421952740__e071f92e-4f94-40d8-91ec-5b5c2aa0fe1e-16740297273b91c2e1-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Rectangle_229s_4d381352-1d27-4f3a-b298-efdefe054aab.png",
+        "image_radius": true,
+        "layout": "image_first",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "container_width": "normal",
+        "custom_class": ""
+      }
+    },
+    "8003d1c8-4279-4bb2-8744-c1e812c9074a": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16666421952740__8003d1c8-4279-4bb2-8744-c1e812c9074a-16740297273b91c2e1-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Enjoy The Popular Selection Of Lyre's Non-Alcoholic Spirits Only at Sphynx Drinks"
+          }
+        },
+        "template--16666421952740__8003d1c8-4279-4bb2-8744-c1e812c9074a-16740297273b91c2e1-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Getting invited to a party, BBQ, or any social gathering can get awkward for anyone who is either cutting down on their alcohol consumption or abstaining entirely. Non-alcoholic spirits are a fantastic way of socialising and enjoying the tastes and aromas of some wonderful spirits and cocktails without the boozy element. Our alcohol-free spirits allow you to appreciate the tasting notes of no-alc gin with a light tonic, a spiced rum and coke, or beautiful mocktails mixed using the best no-alcohol spirits.<br\/><br\/>Non-alcoholic spirits allow you to enjoy the party, remember it, get home safely, and reap the health benefits of making the switch. We have the best no-alcohol spirits with all the flavour profiles and mouthfeel of their alcoholic counterparts. We have zero-alcohol spirits including the best non-alcoholic gin, rum, tequila, and whiskey. So whether you introduce these alcohol-free spirits into your regular drinking routine to help cut back or just want to enjoy non-alcoholic drinks at home, Sphynx has what you need.<br\/><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16666421952740__8003d1c8-4279-4bb2-8744-c1e812c9074a-16740297273b91c2e1-0",
+        "template--16666421952740__8003d1c8-4279-4bb2-8744-c1e812c9074a-16740297273b91c2e1-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Rectangle_229s_354bc0e8-50c3-482d-8a5b-01fa18eb95d7.png",
+        "image_radius": true,
+        "layout": "text_first",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "container_width": "normal",
+        "custom_class": ""
+      }
+    },
+    "63866b27-a5ec-4056-b905-b2f943a2d5c9": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16666421952740__63866b27-a5ec-4056-b905-b2f943a2d5c9-16740297273b91c2e1-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Explore The Best Non-Alcoholic Spirits Australia Offers Only At Sphynx Drinks"
+          }
+        },
+        "template--16666421952740__63866b27-a5ec-4056-b905-b2f943a2d5c9-16740297273b91c2e1-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Everyone at Sphynx would like to invite you to explore the incredible opportunities zero-alcohol spirits offer. You can delve into the ever-growing world of abstainers and still appreciate the wonderful flavours and aromas of the world's most popular alcoholic spirits. Enjoy a full-bodied dark rum, and knock back a shot of beautifully smooth tequila from the UK’s Lyres or Australias Drummerboy. Just because they removed the alcohol from zero-proof spirits doesn’t mean the party stops.<br\/><br\/>With non-alcoholic spirits, you can have a big night, party harder and longer, and not wake up bent out of shape the next morning. Or you can simply take a bottle of no-alcohol spirits to a BBQ, birthday party, wedding, or lunch date. Or any social occasion and simply sip on a no-alc G ‘n’ T, Mai Tai, or any of your favourite mocktails, made with some of the best non-alcoholic spirits Australia has on offer.<br\/><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16666421952740__63866b27-a5ec-4056-b905-b2f943a2d5c9-16740297273b91c2e1-0",
+        "template--16666421952740__63866b27-a5ec-4056-b905-b2f943a2d5c9-16740297273b91c2e1-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Rectangle_229fd.png",
+        "image_radius": false,
+        "layout": "image_first",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "container_width": "normal",
+        "custom_class": ""
+      }
+    },
+    "9fd9b622-7c94-4fb0-b6c2-9028f256fbf7": {
+      "type": "faq",
+      "blocks": {
+        "template--16666421952740__9fd9b622-7c94-4fb0-b6c2-9028f256fbf7-16740298746fb095cd-0": {
+          "type": "question",
+          "settings": {
+            "title": "What are non-alcoholic spirits?",
+            "text": "<p>Non-alcoholic spirits are beverages produced to replicate the taste and appearance of real spirits, such as gin, rum, or whiskey, but have an  ABV of less than 0.05%. The large alcohol-producing companies have recognised the public's desire for alcohol-free spirits, and we have witnessed a change in the industry in recent years. As well as the larger spirit distillers, many smaller, more niche distilleries have been producing award-winning non-alcohol spirits.<\/p>"
+          }
+        },
+        "template--16666421952740__9fd9b622-7c94-4fb0-b6c2-9028f256fbf7-16740298746fb095cd-1": {
+          "type": "question",
+          "settings": {
+            "title": "How are alcohol-free spirits made?",
+            "text": "<p>Distillers use several methods to produce the best alcohol-free spirits. Certain techniques implemented in creating a non-alcohol spirit are the same as a distiller would use to make regular spirits. Yeast and sugar are involved in the process of fermentation, and the result we get from this is ethanol production. Ethanol is the alcohol we consume in alcoholic beverages. To get the alcohol level ABV level to 40%, a distiller would separate the water and alcohol content to increase the alcohol level. Using this method, they can remove the alcohol and leave zero-proof spirits as the end product.<\/p>"
+          }
+        },
+        "e7ed426c-2e2d-4a87-a7ad-f70f04e0b0f3": {
+          "type": "question",
+          "settings": {
+            "title": "Is there any alcohol in no alcohol spirits?",
+            "text": "<p>For a beverage to be considered a no-alcohol spirit legally, it must have an ABV of no more than 0.5%. Although many distillers create nonalcoholic options in the same manner as regular spirits before removing the ethanol, most alcohol-free spirits contain between 0% and 0.5% ABV.<\/p>"
+          }
+        },
+        "58f6e75d-3914-4c15-83ed-54ea2d48e732": {
+          "type": "question",
+          "settings": {
+            "title": "Is it healthy to drink non alcohol spirits regularly?",
+            "text": "<p>Everything should be enjoyed in moderation, but non-alcohol spirits are far less likely to cause you any health issues. The alcohol you find in a regular spirit can be highly damaging to your brain, nervous system, heart, liver, and pancreas. Alcohol can also cause a rise in blood pressure and cholesterol, eventually leading to heart attacks. By opting for non-alcoholic spirits, you immediately eradicate those concerns. You must still be mindful of what you’re consuming, and zero-alcohol spirits often contain sugars that, if drunk in large volumes and regularly, could lead to issues down the line. <\/p>"
+          }
+        },
+        "7bd0634e-29e8-4548-b393-142aaf90f9bf": {
+          "type": "question",
+          "settings": {
+            "title": "Can I lose weight by drinking alcohol-free spirits?",
+            "text": "<p>According to a drinks market analysis, the global consumption of alcohol has been declining since 2016 as people look for alternatives and try to make more health-conscious decisions.By choosing to drink alcohol-free spirits over a regular glass of gin, rum, or whiskey, you’ll be saving yourself from consuming a fair amount of empty calories that could lead to serious weight gain over time.<br\/><br\/>Non-alcoholic spirits have a fraction of the calories of their alcoholic counterparts because ethanol is the highest-calorie product we consume. If you were to have a shot of Lyre’s non-alcoholic gin, you’d only ingest about 10 calories, whereas a regular shot of gin would come in at around 110. When you look at these numbers, it’s easy to see why people are switching to zero-alcohol spirits, losing weight, and becoming far healthier for it.<\/p>"
+          }
+        },
+        "53a6230a-0bb1-421e-b3ad-3ac32d28efa3": {
+          "type": "question",
+          "settings": {
+            "title": "What are popular cocktails made from zero-alcohol spirits?",
+            "text": "<p>Everyone has a go-to cocktail, and using zero-alcohol spirits to mix them is a great way to enjoy all the flavours of your favourite tiple while remaining sober and healthy. Make yourself a virgin Daiquiri, Pina Colada or Mojito using Lyre’s white Cane no-alcohol spirit. <br\/><br\/>Mix up an amaretto stone sour using Lyre’s Amaretti, orange juice, and orange peel. Or maybe a tequila sunrise using Drummerboy Mexican Agave no-alc tequila. Any cocktail you’d make with regular booze, just find the replacement non-alcoholic spirit, mix that in instead, and you’re good to go.<\/p>"
+          }
+        },
+        "4b8f3bec-a36e-4a2d-9243-9e62cad7491b": {
+          "type": "question",
+          "settings": {
+            "title": "Can I get still get drunk drinking zero-proof spirits?",
+            "text": "<p>Even if you’re an extreme lightweight when it comes to consuming alcohol, you won’t be getting drunk on zero-proof spirits. The alcohol by volume, or ABV, will be between 0% and 0.5%, so you just couldn’t put back the number of alcohol-free spirits needed to put you on your back.<\/p>"
+          }
+        },
+        "0b795c34-435d-4d66-b8b2-eba91ff3176d": {
+          "type": "question",
+          "settings": {
+            "title": "What's the age limit for buying non alcoholic spirits in Australia?",
+            "text": "<p>Non-alcoholic spirits in Australia have no age limit on people buying them because they are sold as alcohol-like or non-alcoholic. You can purchase no-alc beverages in shops or buy alcohol-free spirits online with no issues. The alcohol levels you will find in zero-alcohol spirits will be between 0% and 0.5%, so they contain roughly the same alcohol content as some fruit juices.<\/p>"
+          }
+        },
+        "a0759316-2f68-4628-ba75-a04cf9795f1e": {
+          "type": "question",
+          "settings": {
+            "title": "What are popular non-alcoholic spirits sold by Sphynx Drinks?",
+            "text": "<p>At Sphynx, we have all major brands that distil non-alcoholic spirits. Spiced rum is a popular choice for individuals that enjoy the signature burn of an excellent full-bodied rum, but it also mixes brilliantly to make nonalcoholic cocktails. Drummerboy produces a highly popular no-alc gin with citrus flavours in balance with peppermint for a warm, dry finish. We stock the best alcohol-free spirits, and we’re sure you’ll find something that ticks all the boxes.<\/p>"
+          }
+        },
+        "21f204b9-e29f-4e13-8248-3d7b18f6ad05": {
+          "type": "question",
+          "settings": {
+            "title": "Do Sphynx Drinks sell Lyre's non-alcoholic spirits?",
+            "text": "<p>Here at Sphynx Drinks, we have a fantastic selection of non-alcoholic spirits, including Lyre’s zero-proof spirits range. We’ve got everything from a 200ml bottle of Pink London Spirit Gin, with floral flavours and notes of juniper, cherry, red berry, and rose. We also carry their 700ml bottle of Dark Cane Spirit. A full-bodied dark rum alternative with the aroma of salted caramel with hints of vanilla, orange and maple, and fantastic to be sipped alone or used to mix up a Mai Tai or Dark & Stormy mocktail. We have more than 20 Lyre’s alcohol-free spirits on our current menu, and they are all well worth a visit next time you want a high-quality alternative to regular alcoholic drinks.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16666421952740__9fd9b622-7c94-4fb0-b6c2-9028f256fbf7-16740298746fb095cd-0",
+        "template--16666421952740__9fd9b622-7c94-4fb0-b6c2-9028f256fbf7-16740298746fb095cd-1",
+        "e7ed426c-2e2d-4a87-a7ad-f70f04e0b0f3",
+        "58f6e75d-3914-4c15-83ed-54ea2d48e732",
+        "7bd0634e-29e8-4548-b393-142aaf90f9bf",
+        "53a6230a-0bb1-421e-b3ad-3ac32d28efa3",
+        "4b8f3bec-a36e-4a2d-9243-9e62cad7491b",
+        "0b795c34-435d-4d66-b8b2-eba91ff3176d",
+        "a0759316-2f68-4628-ba75-a04cf9795f1e",
+        "21f204b9-e29f-4e13-8248-3d7b18f6ad05"
+      ],
+      "settings": {
+        "heading": "Non-Alcoholic Spirits FAQs",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "custom_class": "faq-homepage"
+      }
+    },
+    "1674030032e13aa9d9": {
+      "type": "apps",
+      "blocks": {
+        "1ee5a266-4cfb-4685-874d-379768c90b4d": {
+          "type": "shopify:\/\/apps\/instafeed-instagram-feed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "heading_size": 20,
+            "feed_width": 100,
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "1ee5a266-4cfb-4685-874d-379768c90b4d"
+      ],
+      "settings": {
+        "heading": "follow the good vibes <span>@sphynxdrinks<\/span>",
+        "padding_top": 36,
+        "padding_bottom": 0,
+        "color_heading": "#000000"
+      }
     }
   },
   "order": [
     "banner",
     "b024aa67-a57b-48a2-97a6-e7868636c099",
-    "product-grid"
+    "product-grid",
+    "c4d2f2e4-2389-46fa-9020-d139b7a11a91",
+    "e071f92e-4f94-40d8-91ec-5b5c2aa0fe1e",
+    "8003d1c8-4279-4bb2-8744-c1e812c9074a",
+    "63866b27-a5ec-4056-b905-b2f943a2d5c9",
+    "9fd9b622-7c94-4fb0-b6c2-9028f256fbf7",
+    "1674030032e13aa9d9"
   ]
 }
