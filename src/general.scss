@@ -83,7 +83,7 @@
       font-family: 'Montserrat';
       font-style: normal;
       font-weight: 900;
-      font-size: 36px;
+      font-size: 32px;
       line-height: 120%;
       color: #F05123;
       margin: 0 0 10px;
@@ -117,20 +117,19 @@
       color: #8B8B8B;
       border: none;
       border-radius: 8px;
-      padding: 23px 30px;
+      padding: 16px 25px;
       background-color: white;
       width: 340px;
       max-width: 100%;
-      padding: 1.5em;
     }
 
     .button {
       background-color: #F05123;
       font-weight: 900;
-      font-size: 22px;
+      font-size: 20px;
       line-height: 120%;
       letter-spacing: 0;
-      padding: 22px 30px;
+      padding: 17px 30px;
       border: none;
       white-space: nowrap;
       margin-top: 15px;
@@ -578,6 +577,7 @@
     letter-spacing: 0;
     color: black;
     margin: 0;
+    font-size: 1.5em;
   }
 }
 

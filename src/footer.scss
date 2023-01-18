@@ -2,7 +2,7 @@ $footer-background-color: black !default;
 
 .site-footer {
   background-color: $footer-background-color;
-  padding-top: 103px;
+  padding-top: 80px;
   position: relative;
 
   .footer-decor-top {
@@ -14,10 +14,6 @@ $footer-background-color: black !default;
     -webkit-transform: translateY(-98%);
   }
 
-  &__container {
-
-  }
-
   &__inner {
     display: flex;
     flex-wrap: wrap;
@@ -25,7 +21,9 @@ $footer-background-color: black !default;
     .footer-col {
       margin-bottom: 1.5em;
       padding-right: 15px;
-
+      @media(max-width: 585px) {
+        margin-bottom: 2em;
+      }
       &.__type_membership-form {
         width: 33.33%;
       }
@@ -42,14 +40,18 @@ $footer-background-color: black !default;
         h4 {
           font-family: 'Montserrat';
           font-weight: 700;
-          font-size: 22px;
+          font-size: 20px;
           line-height: 120%;
           color: #F05123;
-          margin: 0 0 40px;
+          margin: 0 0 30px;
 
           &.__heading-empty {
             height: 32px;
             display: block;
+            @media (max-width: 767px){
+              margin: 0;
+              height: 20px;
+            }
           }
         }
       } 
@@ -79,7 +81,10 @@ $footer-background-color: black !default;
   }
 
   &__copyright {
-    padding: 50px 0 60px;
+    padding: 25px 0 45px;
+    @media (max-width: 767px){
+      padding: 0px 0 30px;
+    }
   }
 }
 
@@ -111,7 +116,7 @@ $footer-background-color: black !default;
     max-width: 100%;
 
     img {
-      max-width: 100%;
+      max-width: 90%;
     }
   }
 }

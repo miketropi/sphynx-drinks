@@ -6,11 +6,12 @@
         max-width: calc(100% - 30px);
 
         &.container-wide {
-            width: 100%;
+            width: 100%; 
             padding-right: 15px;
             padding-left: 15px;
             margin-right: auto;
             margin-left: auto;
+            overflow: hidden;
             max-width: calc(var(--site-container-width) + 30px);
         }
 
@@ -30,6 +31,11 @@
             @media (min-width: 1200px) {
                 margin-right: -35px;
                 margin-left: -35px;
+            }
+            .image-animate {
+                img {
+                    width: 100%;
+                }
             }
 
             &.image-with-text__radius {
@@ -52,7 +58,7 @@
             padding-right: 15px;
             padding-left: 15px;
 
-            @media (min-width: 768px) {
+            @media (min-width: 992px) {
                 -webkit-box-flex: 0;
                 -ms-flex: 0 0 50%;
                 flex: 0 0 50%;
@@ -65,7 +71,7 @@
         }
 
         &__content {
-            @media (max-width: 767px) {
+            @media (max-width: 991.98px) {
                 margin-top: 30px;
             }
         }
@@ -79,7 +85,7 @@
             color: #000000;
             margin: 0;
 
-            @media (max-width: 767px) {
+            @media (max-width: 767.98px) {
                 font-size: 28px;
             }
         }
@@ -112,7 +118,7 @@
             min-width: auto;
             margin-top: 30px;
 
-            @media (max-width: 767px) {
+            @media (max-width: 767.98px) {
                 padding: 18px 25px 24px;
                 font-size: 18px;
 
