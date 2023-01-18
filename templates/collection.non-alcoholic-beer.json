@@ -167,6 +167,36 @@
         "custom_class": ""
       }
     },
+    "5a00a2a4-f476-482a-8af0-d620620d7601": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16666413891812__5a00a2a4-f476-482a-8af0-d620620d7601-1674027361aa0b795a-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Sphynx Drinks Stock The Top Non Alcoholic Beer Brands In Australia, And We Ship Australia-Wide"
+          }
+        },
+        "template--16666413891812__5a00a2a4-f476-482a-8af0-d620620d7601-1674027361aa0b795a-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Sphynx Drinks are on a mission that ensures our customers can continue to enjoy the party with the best non-alcoholic beer brands available anywhere in the world. Whether you want to buy a single can of Sobah Lemon Aspen Pilsner, a couple of tins of Molly Rose Citra Citra IPA or a 24-pack-carton of Nort Refreshing Ale. You’ll be spoilt for choice with our carefully curated list of the best non-alcoholic beers in Australia.<br\/><br\/><br\/>When you buy non-alcoholic beer online from us, we’ll ship it anywhere in the country, from Sydney to Perth, Port Lincoln to Port Stuart, using the Australia Post eParcel Wine service. From placing your order to enjoying the best 0-alcohol beer you’ve ever tasted will take only a few days. Christmas, New Year, and public holidays may slow delivery slightly, but get your order for non-alcoholic beers in before 10 am, and we’ll get it on its way the same day.<br\/><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16666413891812__5a00a2a4-f476-482a-8af0-d620620d7601-1674027361aa0b795a-0",
+        "template--16666413891812__5a00a2a4-f476-482a-8af0-d620620d7601-1674027361aa0b795a-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Rectangle_229fd.png",
+        "image_radius": false,
+        "layout": "image_first",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "container_width": "normal",
+        "custom_class": ""
+      }
+    },
     "167402735247237340": {
       "type": "apps",
       "blocks": {
@@ -197,6 +227,7 @@
     "8ac36cda-3598-40e7-abcc-62e20ee151c9",
     "2b97c980-66e5-4606-9cdc-e9011d7087e1",
     "a13ea04f-329f-47b8-b1bd-530c14ebd2d2",
+    "5a00a2a4-f476-482a-8af0-d620620d7601",
     "167402735247237340"
   ]
 }
