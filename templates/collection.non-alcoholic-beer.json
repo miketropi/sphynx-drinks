@@ -107,6 +107,36 @@
         "custom_class": ""
       }
     },
+    "2b97c980-66e5-4606-9cdc-e9011d7087e1": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16666413891812__2b97c980-66e5-4606-9cdc-e9011d7087e1-1674027361aa0b795a-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Buy Non Alcoholic Beer Online Today And Let Your Tastebuds Explore Our Legendary Collection of Zero Alcohol Beer"
+          }
+        },
+        "template--16666413891812__2b97c980-66e5-4606-9cdc-e9011d7087e1-1674027361aa0b795a-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We curated our non-alcohol beer menu to bring you the best non-alcoholic beer brands available on the market and give your tastebuds something to ponder. Beer drinkers have a massive selection of non-alcohol beer, including the Upflow Stout with a beautifully pure malt balanced bitterness, with chocolate and espresso notes providing a full creamy mouthfeel. Plus, the Bilpin Ginger Beer with a spicy heat and earthy ginger root fragrance to excite even the most seasoned drinkers.<br\/><br\/>If you’re looking to buy non-alcoholic beer that tickles your tastebuds beyond a stout or ginger beer, the Woodcutter Brown Ale from Big Drop is among the best zero-alcohol beers. A tremendous non-alchohol beer for winter with caramel and fruity aromas. Or the Bravus Raspberry Gose, which is a superb sour non-alcoholic beer. Australia is well on its way to changing its drinking habits, and beer without alcohol is being brewed to the finest quality and with truly stunning flavour profiles.<br\/><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16666413891812__2b97c980-66e5-4606-9cdc-e9011d7087e1-1674027361aa0b795a-0",
+        "template--16666413891812__2b97c980-66e5-4606-9cdc-e9011d7087e1-1674027361aa0b795a-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Rectangle_229s_4d381352-1d27-4f3a-b298-efdefe054aab.png",
+        "image_radius": false,
+        "layout": "image_first",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "container_width": "normal",
+        "custom_class": ""
+      }
+    },
     "167402735247237340": {
       "type": "apps",
       "blocks": {
@@ -135,6 +165,7 @@
     "b024aa67-a57b-48a2-97a6-e7868636c099",
     "product-grid",
     "8ac36cda-3598-40e7-abcc-62e20ee151c9",
+    "2b97c980-66e5-4606-9cdc-e9011d7087e1",
     "167402735247237340"
   ]
 }
