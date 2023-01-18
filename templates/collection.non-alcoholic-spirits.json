@@ -1,0 +1,327 @@
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "heading_size": "h0",
+        "show_description": true,
+        "show_image": true,
+        "apply_overlay": true,
+        "image_position": "center center",
+        "image_ratio": "450px",
+        "mobile_image_ratio": "250px",
+        "show_text_below": false,
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "b024aa67-a57b-48a2-97a6-e7868636c099": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16656684155108__b024aa67-a57b-48a2-97a6-e7868636c099-167299139468bdb5ef-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Non Alcohol Wine:<br> The Finest Collection of Alcohol Free Wines In Australia",
+            "font_size": 36,
+            "font_family": "Montserrat",
+            "font_weight": "900",
+            "heading_color": "#000000"
+          }
+        },
+        "template--16656684155108__b024aa67-a57b-48a2-97a6-e7868636c099-167299139468bdb5ef-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>With more than 130 non-alcohol wine choices in the Sphynx collection, we staunchly maintain that we have the finest and highest quality zero-alcohol wines available anywhere in Australia. Our menu holds the best alcohol-free red wine, Chardonnays, and stunning Rose wines that you guys and girls can enjoy, guilt-free and without the adverse side effects of opting for a regular glass of plonk. The wine-making process has evolved over time and allows for superb quality, non-alcoholic wines to get produced and provide everyone from the occasional wine drinker to the cork dorks a chance to enjoy our curated zero-alcohol wine list.<\/p>",
+            "font_size": 16,
+            "font_weight": "400",
+            "desc_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "template--16656684155108__b024aa67-a57b-48a2-97a6-e7868636c099-167299139468bdb5ef-0",
+        "template--16656684155108__b024aa67-a57b-48a2-97a6-e7868636c099-167299139468bdb5ef-1"
+      ],
+      "settings": {
+        "text_alignment": "left",
+        "narrow": false,
+        "show_divider": false,
+        "mobile_text_alignment": "left",
+        "padding_top": 52,
+        "padding_bottom": 100
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_row": 4,
+        "rows_per_page": 8,
+        "columns_mobile": "2",
+        "enable_sticky_facet": true,
+        "enable_filtering": true,
+        "filter_type": "vertical",
+        "enable_sorting": false,
+        "enable_viewing": false,
+        "image_ratio": "portrait",
+        "image_position": "center center",
+        "enable_image_fill": true,
+        "show_secondary_image": false,
+        "show_vendor": true,
+        "show_rating": true,
+        "show_quick_buy": true,
+        "enable_quick_view": false,
+        "enable_color_swatches": true,
+        "enable_countdown": true,
+        "padding_top": 0,
+        "padding_bottom": 140
+      }
+    },
+    "c4d2f2e4-2389-46fa-9020-d139b7a11a91": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16666421952740__c4d2f2e4-2389-46fa-9020-d139b7a11a91-16740297273b91c2e1-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Enjoy The Finest Wine Bouquets With A Wide And Varied Selection Of Zero Alcohol Wines"
+          }
+        },
+        "template--16666421952740__c4d2f2e4-2389-46fa-9020-d139b7a11a91-16740297273b91c2e1-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>It doesn’t matter whether you’re a regular wine drinker looking to practice mindful drinking and mix your familiar favourites with the great taste of our wine without alcohol. Or maybe alcohol just isn’t for you, but you still want to enjoy the incredible depth of flavour and aromas of a good Pinot Noir, Pinot Grigio, or a Brown Brothers Prosecco with crisp pear notes. Sphynx has pulled together a spectacular variety of non-alcohol wine, proving that dealcoholized wine is more than just grape juice.<br\/><br\/>Give our Vinada Airén Gold alcohol-free wine a crack if you want a great sparkling wine with fruity aromas, flavour, and a dry finish. Or, Maybe a red wine without alcohol, such as the Blue Nun Red. A full-bodied red with a flavour profile from red berries and is also vegan-friendly. Whatever your taste preference is, we will have wine without alcohol that you’ll fall in love with and want to keep on drinking long after the party ends.<br\/><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16666421952740__c4d2f2e4-2389-46fa-9020-d139b7a11a91-16740297273b91c2e1-0",
+        "template--16666421952740__c4d2f2e4-2389-46fa-9020-d139b7a11a91-16740297273b91c2e1-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Rectangle_229_1b8bb2a3-7196-47ea-ace9-9d2fba0491b2.png",
+        "image_radius": true,
+        "layout": "text_first",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "container_width": "normal",
+        "custom_class": ""
+      }
+    },
+    "e071f92e-4f94-40d8-91ec-5b5c2aa0fe1e": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16666421952740__e071f92e-4f94-40d8-91ec-5b5c2aa0fe1e-16740297273b91c2e1-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "An Exclusive Curated Selection Of No Alcohol Wines You Won't Find Anywhere Else"
+          }
+        },
+        "template--16666421952740__e071f92e-4f94-40d8-91ec-5b5c2aa0fe1e-16740297273b91c2e1-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The carefully curated non-alcoholic wine collection we have put together has taken countless hours, weeks, and months of taste testing. We’ve been through this process to ensure we only offer the world's most exclusive and best non-alcoholic wine choice to our community of buyers. From a preservative-free full-strength wine made using organic grapes to white alcohol-free wines that will leave you pleasantly surprised at how well they compare and surpass the alcoholic versions.<br\/><br\/>When your favourite wines have their alcohol removed, you might feel you are left will little more than fruit juice. This simply isn’t the case, and non-alcoholic sparkling wine, Cabernet Sauvignon, or McGuigan Zero Shiraz alcohol-free wine have all the depth and flavour profiles you would expect from your regular favourite wines. We only trade in the best alcohol-free wine available worldwide and guarantee that our non-alcoholic beverages will leave you rapt.<br\/><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16666421952740__e071f92e-4f94-40d8-91ec-5b5c2aa0fe1e-16740297273b91c2e1-0",
+        "template--16666421952740__e071f92e-4f94-40d8-91ec-5b5c2aa0fe1e-16740297273b91c2e1-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Rectangle_229s_4d381352-1d27-4f3a-b298-efdefe054aab.png",
+        "image_radius": true,
+        "layout": "image_first",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "container_width": "normal",
+        "custom_class": ""
+      }
+    },
+    "8003d1c8-4279-4bb2-8744-c1e812c9074a": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16666421952740__8003d1c8-4279-4bb2-8744-c1e812c9074a-16740297273b91c2e1-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "The Best Online Non-Alcoholic Wine Collection Offered in Australia"
+          }
+        },
+        "template--16666421952740__8003d1c8-4279-4bb2-8744-c1e812c9074a-16740297273b91c2e1-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>If you’ve ever wondered where to buy non-alcoholic wine, you can buy non-alcoholic wine online here at Sphynx Drinks. We’ve put in the leg work, so you don’t have to, and we’ve created the most comprehensive list with the best alcohol-free red wine, white wine, rosé, dessert, and sparkling wine choices obtainable in Australia. You can purchase them all from the comfort of your home from our online store and have them delivered to your door.<br\/><br\/>You can trundle your way through our non-alcohol wine list and find the perfect bottle for that special occasion. Order a bottle of Edenvale Sauvignon Blanc non-alcoholic wine online for an upcoming dinner party, and serve it with a pasta or fish dish. Or a barrel-aged red 0-alcohol wine from the award-winning Matarromera winery to go with cheeses or a steak course. Whatever your preference for non-alcoholic drinks, we’ve got the best zero-alcohol wine collection online in the country.<br\/><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16666421952740__8003d1c8-4279-4bb2-8744-c1e812c9074a-16740297273b91c2e1-0",
+        "template--16666421952740__8003d1c8-4279-4bb2-8744-c1e812c9074a-16740297273b91c2e1-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Rectangle_229s_354bc0e8-50c3-482d-8a5b-01fa18eb95d7.png",
+        "image_radius": true,
+        "layout": "text_first",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "container_width": "normal",
+        "custom_class": ""
+      }
+    },
+    "63866b27-a5ec-4056-b905-b2f943a2d5c9": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16666421952740__63866b27-a5ec-4056-b905-b2f943a2d5c9-16740297273b91c2e1-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Alcohol-Free Wines From Around The World, Buy Online With Fast Australia-Wide Delivery"
+          }
+        },
+        "template--16666421952740__63866b27-a5ec-4056-b905-b2f943a2d5c9-16740297273b91c2e1-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We supply the best zero-alcohol wine to Australians and give them what they want. Many Australians have been cutting their alcohol intake recently and found non-alcoholic wine a fantastic alternative. You can get alcohol-free wines online from Sphynx with flavours of dried herbs, white peach, ripe banana, refreshing citrus tones, and everything in between. We deliver all our non-alcoholic wines nationwide across Australia straight to your door, making it super simple and convenient.<br\/><br\/>We have wine without alcohol from around the world, including Spain, Australia, Germany, and the USA. We ship all orders, whether a single bottle of alcohol-free sparkling wine for a night in or a 6-pack of Vinada Sparkling Rose to enjoy during the festive season, using the Australia Post eParcel Wine service. It’s by far the safest, quickest, and most reliable service for securely delivering good non-alcoholic wine across Australia. <br\/><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16666421952740__63866b27-a5ec-4056-b905-b2f943a2d5c9-16740297273b91c2e1-0",
+        "template--16666421952740__63866b27-a5ec-4056-b905-b2f943a2d5c9-16740297273b91c2e1-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Rectangle_229fd.png",
+        "image_radius": false,
+        "layout": "image_first",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "container_width": "normal",
+        "custom_class": ""
+      }
+    },
+    "9fd9b622-7c94-4fb0-b6c2-9028f256fbf7": {
+      "type": "faq",
+      "blocks": {
+        "template--16666421952740__9fd9b622-7c94-4fb0-b6c2-9028f256fbf7-16740298746fb095cd-0": {
+          "type": "question",
+          "settings": {
+            "title": "What is no alcohol wine?",
+            "text": "<p>No alcohol wine or low-alcohol wine gets made using the same process as regular alcoholic wine, except the alcohol gets removed using a spinning cone. Non-alcoholic wine also tends to have added sugar or grape juice. The extra sugar content helps give the end product some body and flavour.<\/p>"
+          }
+        },
+        "template--16666421952740__9fd9b622-7c94-4fb0-b6c2-9028f256fbf7-16740298746fb095cd-1": {
+          "type": "question",
+          "settings": {
+            "title": "How is non-alcoholic wine made?",
+            "text": "<p>Non-alcoholic wines are produced using spinning cones, vacuum distillation, and reverse osmosis technology. The spinning cone breaks down the component parts of the ingredients and basically puts them all back together at the end, minus the alcohol. People who don’t know about alcohol-free wines often wrongly think that non-alcohol red wine and white are just grape juice. This simply isn’t the case, as a zero-alcohol wine goes through the same fermentation process as a regular wine before the alcohol gets removed. It means you still get a traditional wine's depth and flavour profile, only with no alcohol and a lot less calories.<\/p>"
+          }
+        },
+        "e7ed426c-2e2d-4a87-a7ad-f70f04e0b0f3": {
+          "type": "question",
+          "settings": {
+            "title": "How much alcohol content is there in non-alcoholic wine?",
+            "text": "<p>For a non-alcoholic drink to be considered alcohol-free, it must contain no more than 0.5% ABV, roughly the same amount you’ll find in fruit juice. ABV simply stands for Alcohol by Volume. In Australia, breweries and distilleries can only print low alcohol on a label if the product contains less than 1.15% alcohol and products with less than 0.5% alcohol don’t need to include the alcohol content on the product label, although most do. Sphynx stocks the best non-alcoholic wine products in the country, and all of our wines are clearly labelled and represented.<\/p>"
+          }
+        },
+        "58f6e75d-3914-4c15-83ed-54ea2d48e732": {
+          "type": "question",
+          "settings": {
+            "title": "Can I get drunk when drinking alcohol-free wines?",
+            "text": "<p>Getting drunk by drinking alcohol-free wines is virtually impossible, given how low the ABV is. It doesn’t matter whether you sit and drink non-alcoholic sparkling wines, Señorio De La Tautila Tinto, or enjoy the taste of a couple of bottles of Señorio De La Tautila Rosé non-alcoholic wine. You’re not getting drunk anytime soon by consuming non-alcoholic wine, but if you have a medical condition or are alcohol dependent, you should abstain from alcohol-removed wine.<\/p>"
+          }
+        },
+        "7bd0634e-29e8-4548-b393-142aaf90f9bf": {
+          "type": "question",
+          "settings": {
+            "title": "Can I lose weight by drinking alcohol-free wine?",
+            "text": "<p>Switching to a non-alcoholic sparkling wine, or an alternative to your favourite regular red, or rose wine, to reduce your alcohol intake has many health benefits, of which weight loss is one. Drinking alcohol-free wine can help reduce the risk of cancer, lower blood pressure, improve sleep, and aid in losing weight due to being lower calories than regular wine. A large glass of red wine can contain around 210 calories, whereas a large glass of alcohol-free wine can have as little as 18 calories. If you, like us here at Sphynx, find it relatively easy to drink 2-3 glasses of wine with a meal, the calorie saving can be substantial, so switching to zero-alcohol wines is a wise choice if you want to drop some weight.<\/p>"
+          }
+        },
+        "53a6230a-0bb1-421e-b3ad-3ac32d28efa3": {
+          "type": "question",
+          "settings": {
+            "title": "How does non-alcoholic wine taste compared to the real stuff?",
+            "text": "<p>For many of us, that first-ever sip of a regular red or white wine was far from euphoric, and it took time to become accustomed to the flavour. The same goes for non-alcoholic wine if you switch from a standard wine. The depth of flavour is there as we only source the best non-alcoholic wine. Buy online from Sphynx, and you’ll see why so many individuals have decided to cut down on their alcohol consumption but still enjoy the great taste of their favourite beverage.<\/p>"
+          }
+        },
+        "4b8f3bec-a36e-4a2d-9243-9e62cad7491b": {
+          "type": "question",
+          "settings": {
+            "title": "How many calories do zero-alcohol wines have?",
+            "text": "<p>Calorie values will vary depending on whether it’s red, white, or rose and the sugars added during vinification, but they aren’t a million miles apart. 100ml of a regular white wine will contain about 82 calories, and a red about 85. On the other hand, zero-alcohol wines will have 6-8 calories per 100ml. It’s pretty simple to see why many people have chosen to include a good non-alcoholic wine into their regular drinking or make a permanent switch to wine without alcohol. As well as ingesting fewer empty calories, there are many health benefits beyond just weight management to be had from drinking the best non-alcoholic wines. <\/p>"
+          }
+        },
+        "0b795c34-435d-4d66-b8b2-eba91ff3176d": {
+          "type": "question",
+          "settings": {
+            "title": "How much sugar is in no-alcohol wine?",
+            "text": "<p>Even though a no-alcohol wine may have some sugar added during vinification, it will most likely still be lower in calories than a traditional wine. Sphynx does a sparkling McGuigan Zero alcohol wine that contains only 5g of sugar or a La Tautila Tinto with only 4g. <\/p>"
+          }
+        },
+        "a0759316-2f68-4628-ba75-a04cf9795f1e": {
+          "type": "question",
+          "settings": {
+            "title": "Where can I buy alcohol-free wines in Australia?",
+            "text": "<p>The best place to buy alcohol-free wines in Australia is here at Sphynx. Not only do we carry the best quality non-alcoholic wines, but we also have a wine list that gives you the best choice of non-alcoholic wines available anywhere in Australia. We’ve made the purchase of our beverages super simple, and all you need to do is navigate through the wine menu here on our website, choose the plonk you want, and then just buy non-alcoholic wine online and get it delivered to your front door within a few days.<\/p>"
+          }
+        },
+        "21f204b9-e29f-4e13-8248-3d7b18f6ad05": {
+          "type": "question",
+          "settings": {
+            "title": "Who was the first person to make non-alcoholic wine?",
+            "text": "<p>Carl Jung had his de-alcoholised wine-making process patented in 1869. In the same year, an American minister and dentist named Dr Thomas Bramwell also pasturised grape juice and produced a non-alcoholic wine that could get consumed during Communion. At Sphynx, we sell a Carl Jung Vegan Shiraz, Vegan Merlot, and a Vegan Bio-Organic Chardonnay.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16666421952740__9fd9b622-7c94-4fb0-b6c2-9028f256fbf7-16740298746fb095cd-0",
+        "template--16666421952740__9fd9b622-7c94-4fb0-b6c2-9028f256fbf7-16740298746fb095cd-1",
+        "e7ed426c-2e2d-4a87-a7ad-f70f04e0b0f3",
+        "58f6e75d-3914-4c15-83ed-54ea2d48e732",
+        "7bd0634e-29e8-4548-b393-142aaf90f9bf",
+        "53a6230a-0bb1-421e-b3ad-3ac32d28efa3",
+        "4b8f3bec-a36e-4a2d-9243-9e62cad7491b",
+        "0b795c34-435d-4d66-b8b2-eba91ff3176d",
+        "a0759316-2f68-4628-ba75-a04cf9795f1e",
+        "21f204b9-e29f-4e13-8248-3d7b18f6ad05"
+      ],
+      "settings": {
+        "heading": "Non-Alcohol Wine FAQs",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "custom_class": "faq-homepage"
+      }
+    },
+    "1674030032e13aa9d9": {
+      "type": "apps",
+      "blocks": {
+        "1ee5a266-4cfb-4685-874d-379768c90b4d": {
+          "type": "shopify:\/\/apps\/instafeed-instagram-feed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "heading_size": 20,
+            "feed_width": 100,
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "1ee5a266-4cfb-4685-874d-379768c90b4d"
+      ],
+      "settings": {
+        "heading": "follow the good vibes <span>@sphynxdrinks<\/span>",
+        "padding_top": 36,
+        "padding_bottom": 0,
+        "color_heading": "#000"
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "b024aa67-a57b-48a2-97a6-e7868636c099",
+    "product-grid",
+    "c4d2f2e4-2389-46fa-9020-d139b7a11a91",
+    "e071f92e-4f94-40d8-91ec-5b5c2aa0fe1e",
+    "8003d1c8-4279-4bb2-8744-c1e812c9074a",
+    "63866b27-a5ec-4056-b905-b2f943a2d5c9",
+    "9fd9b622-7c94-4fb0-b6c2-9028f256fbf7",
+    "1674030032e13aa9d9"
+  ]
+}
