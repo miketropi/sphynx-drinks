@@ -284,10 +284,32 @@
         "21f204b9-e29f-4e13-8248-3d7b18f6ad05"
       ],
       "settings": {
-        "heading": "FAQs",
+        "heading": "Non-Alcohol Wine FAQs",
         "padding_top": 36,
         "padding_bottom": 36,
         "custom_class": "faq-homepage"
+      }
+    },
+    "1674030032e13aa9d9": {
+      "type": "apps",
+      "blocks": {
+        "1ee5a266-4cfb-4685-874d-379768c90b4d": {
+          "type": "shopify:\/\/apps\/instafeed-instagram-feed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "heading_size": 20,
+            "feed_width": 100,
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "1ee5a266-4cfb-4685-874d-379768c90b4d"
+      ],
+      "settings": {
+        "heading": "follow the good vibes <span>@sphynxdrinks<\/span>",
+        "padding_top": 36,
+        "padding_bottom": 0,
+        "color_heading": "#000"
       }
     }
   },
@@ -299,6 +321,7 @@
     "e071f92e-4f94-40d8-91ec-5b5c2aa0fe1e",
     "8003d1c8-4279-4bb2-8744-c1e812c9074a",
     "63866b27-a5ec-4056-b905-b2f943a2d5c9",
-    "9fd9b622-7c94-4fb0-b6c2-9028f256fbf7"
+    "9fd9b622-7c94-4fb0-b6c2-9028f256fbf7",
+    "1674030032e13aa9d9"
   ]
 }
