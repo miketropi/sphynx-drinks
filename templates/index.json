@@ -17,7 +17,7 @@
           "type": "button",
           "settings": {
             "btn_label": "Shop Now",
-            "button_link": ""
+            "button_link": "\/collections\/all"
           }
         }
       },
@@ -47,7 +47,7 @@
         "9462a21f-e18c-4e3c-a39c-958df210649b": {
           "type": "box_collection_item",
           "settings": {
-            "collection": "beer-and-cider",
+            "collection": "cider",
             "image": "shopify:\/\/shop_images\/champagne-bottle.png",
             "image_hover": "shopify:\/\/shop_images\/Rectangle_118.png"
           }
@@ -95,7 +95,7 @@
         "217edd80-eed7-4760-973e-bfdda2074fb6": {
           "type": "box_collection_item",
           "settings": {
-            "collection": "altina",
+            "collection": "gift-packs",
             "image": "shopify:\/\/shop_images\/liquor-shelf.png",
             "image_hover": "shopify:\/\/shop_images\/Rectangle_118.png"
           }
@@ -366,7 +366,7 @@
         "4549be45-199f-4799-8305-7bc82c248518": {
           "type": "box_collection_item",
           "settings": {
-            "collection": "beer-and-cider",
+            "collection": "cider",
             "image": "shopify:\/\/shop_images\/champagne-bottle.png",
             "image_hover": "shopify:\/\/shop_images\/Rectangle_118.png"
           }
@@ -374,7 +374,7 @@
         "787beabd-9168-4a0b-97af-8f870b5fcaf4": {
           "type": "box_collection_item",
           "settings": {
-            "collection": "beer-and-cider",
+            "collection": "wine",
             "image": "shopify:\/\/shop_images\/wine-glass.png",
             "image_hover": "shopify:\/\/shop_images\/Rectangle_118.png"
           }
@@ -414,7 +414,7 @@
         "9fb9f4a8-b8b2-45e4-adda-10249b9ffb94": {
           "type": "box_collection_item",
           "settings": {
-            "collection": "absolute-zero",
+            "collection": "gift-packs",
             "image": "shopify:\/\/shop_images\/liquor-shelf.png",
             "image_hover": "shopify:\/\/shop_images\/Rectangle_118.png"
           }
