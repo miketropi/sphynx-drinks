@@ -140,6 +140,7 @@ cart-items {
 
 .cart__ctas button {
   width: 100%;
+  background-color: #F;
 }
 
 .cart__ctas > *:not(noscript:first-child) + * {
@@ -177,6 +178,13 @@ cart-items {
 
 .cart__checkout-button {
   max-width: 36rem;
+  background-color: #F05123;
+  border-color: #F05123;
+  
+}
+
+.cart__checkout-button:hover {
+  color: #F05123;
 }
 
 #cart-errors {
