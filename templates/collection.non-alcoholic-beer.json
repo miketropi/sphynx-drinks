@@ -99,7 +99,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Rectangle_229_1b8bb2a3-7196-47ea-ace9-9d2fba0491b2.png",
-        "image_radius": false,
+        "image_radius": true,
         "layout": "text_first",
         "padding_top": 36,
         "padding_bottom": 36,
@@ -129,7 +129,37 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Rectangle_229s_4d381352-1d27-4f3a-b298-efdefe054aab.png",
-        "image_radius": false,
+        "image_radius": true,
+        "layout": "image_first",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "container_width": "normal",
+        "custom_class": ""
+      }
+    },
+    "a13ea04f-329f-47b8-b1bd-530c14ebd2d2": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16666413891812__a13ea04f-329f-47b8-b1bd-530c14ebd2d2-1674027361aa0b795a-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "No Doubt The Best Non Alcoholic Beer Australia Offers!"
+          }
+        },
+        "template--16666413891812__a13ea04f-329f-47b8-b1bd-530c14ebd2d2-1674027361aa0b795a-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>With the time we have spent and continue to devote to sourcing beer without alcohol. It’ll surely come as no surprise that here at Sphynx, we are incredibly proud and confident that we have put together a spread of the best non-alcoholic beer Australia has ever seen in one place. The team here all love a cold beer, and having the great options that we do for switching to a new flavour profile when you fancy something different is awesome.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16666413891812__a13ea04f-329f-47b8-b1bd-530c14ebd2d2-1674027361aa0b795a-0",
+        "template--16666413891812__a13ea04f-329f-47b8-b1bd-530c14ebd2d2-1674027361aa0b795a-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Rectangle_229s_354bc0e8-50c3-482d-8a5b-01fa18eb95d7.png",
+        "image_radius": true,
         "layout": "image_first",
         "padding_top": 36,
         "padding_bottom": 36,
@@ -166,6 +196,7 @@
     "product-grid",
     "8ac36cda-3598-40e7-abcc-62e20ee151c9",
     "2b97c980-66e5-4606-9cdc-e9011d7087e1",
+    "a13ea04f-329f-47b8-b1bd-530c14ebd2d2",
     "167402735247237340"
   ]
 }
