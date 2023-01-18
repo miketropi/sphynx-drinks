@@ -47,7 +47,7 @@
         "9462a21f-e18c-4e3c-a39c-958df210649b": {
           "type": "box_collection_item",
           "settings": {
-            "collection": "beer-and-cider",
+            "collection": "cider",
             "image": "shopify:\/\/shop_images\/champagne-bottle.png",
             "image_hover": "shopify:\/\/shop_images\/Rectangle_118.png"
           }
