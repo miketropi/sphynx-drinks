@@ -40,18 +40,22 @@
 
         .ft-collection-carousel-wrap {
             margin: 0 -12px;
-            @media (max-width: 480px){
+
+            @media (max-width: 480px) {
                 margin: 0;
             }
+
             .slick-track {
                 display: flex;
 
                 .slick-slide {
                     margin: 12px;
                     height: auto;
-                    @media (max-width: 480px){
+
+                    @media (max-width: 480px) {
                         margin: 0;
                     }
+
                     >div {
                         height: 100%;
                     }
@@ -68,6 +72,28 @@
 
                 .card-wrapper {
                     position: relative;
+
+                    .view-product {
+                        text-decoration: none;
+                        top: -10px;
+                        right: -10px;
+                        font-family: "Montserrat";
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 12px;
+                        line-height: 95%;
+                        color: #FFFFFF;
+                        background: #F05123;
+                        position: absolute;
+                        height: 50px;
+                        width: 50px;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        text-transform: uppercase;
+                    }
+
                     .card--product {
                         .card__media {
                             background-color: transparent;
@@ -127,7 +153,8 @@
                         -webkit-line-clamp: 2;
                         -webkit-box-orient: vertical;
                     }
-                    .card__badge{
+
+                    .card__badge {
                         display: none;
                     }
 
@@ -150,7 +177,8 @@
                             min-width: auto;
                             text-transform: none;
                             letter-spacing: normal;
-                            &:hover{
+
+                            &:hover {
                                 color: #F05123 !important;
                             }
                         }
@@ -179,10 +207,12 @@
                         color: #000000;
                         letter-spacing: normal;
                         margin-bottom: 20px;
+
                         price-money+price-money::before {
                             content: '\2013';
                             margin-inline-end: 0.7rem;
                         }
+
                         .price__sale {
                             display: none;
                         }
@@ -255,6 +285,7 @@
                     height: 43px;
                     width: 43px;
                     cursor: pointer;
+
                     &.__slide-prev {
                         transform: rotate(180deg);
                         right: unset;

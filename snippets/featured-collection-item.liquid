@@ -32,6 +32,7 @@
 {{ 'component-rating.css' | asset_url | stylesheet_tag }}
 
 <div class="card-wrapper">
+  <a href="{{card_product.url}}" class="view-product">View</a>
   <use-animate
     data-animate="zoom-fade-small"
     class="card card--product{% if card_product.featured_media == nil %} card--text{% endif %}"
@@ -326,8 +327,8 @@
                 -%}
               </add-to-cart>
             {%- else -%}
-              <a href="{{ card_product.url | within: collection }}" class="button button--small" tabindex="-1">
-                {{- 'products.product.view' | t -}}
+              <a href="{{ card_product.url | within: collection }}" class="button button--small quick-container quick-action-popup" tabindex="-1" data-product-url="{{ card_product.url }}?view=quickaction">
+                {{- 'products.product.add_to_cart' | t -}}
               </a>
             {%- endif -%}
           {%- endif -%}

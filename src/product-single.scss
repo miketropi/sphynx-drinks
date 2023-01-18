@@ -1,8 +1,6 @@
 .main-product {
 
-  &__container {
-
-  }
+  &__container {}
 
   &__inner {
     display: flex;
@@ -16,30 +14,51 @@
 
       @media(max-width: 768px) {
         width: 100%;
+        flex-direction: column-reverse;
       }
 
       img {
-        width: 100%;
+        // width: 100%;
       }
 
       .main-product__gallery-thumb {
         width: 20%;
         padding-top: 10%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        flex-direction: column;
+        @media(max-width: 768px) {
+          padding-top: 0;
+          width: 100%;
+          flex-direction: row;
+        }
 
         .main-product__gallery-thumb-item {
-          display: inline-block;
-          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 110px;
+          height: 110px;
           line-height: 0;
+          border-radius: 100px;
+          background-color: #F0F0F0;
 
           img {
-            border-radius: 100px;
-            background-color: #F0F0F0;
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            max-height: 90%;
           }
         }
       }
 
       .main-product__image {
         width: 70%;
+        @media(max-width: 768px) {
+          width: 100%;
+          margin-bottom: 15px;
+        }
       }
     }
 
@@ -110,7 +129,7 @@
 }
 
 .__product-add-cart-form {
-  margin: 1em 0 1.5em; 
+  margin: 1em 0 1.5em;
 
   .__sold-out {
     border: solid 2px #f05124;
@@ -124,9 +143,7 @@
     text-align: center;
   }
 
-  form {
-
-  }
+  form {}
 
   button[type=submit] {
     width: 100%;
@@ -179,7 +196,7 @@
       border-radius: 8px;
       width: 100%;
       font-weight: bold;
-      
+
       &:focus-visible {
         outline: none !important;
         box-shadow: none !important;
@@ -200,9 +217,12 @@
       background-color: #FFC85E;
       border-radius: 55px;
       cursor: pointer;
-      -webkit-user-select: none; /* Safari */
-      -ms-user-select: none; /* IE 10 and IE 11 */
-      user-select: none; /* Standard syntax */
+      -webkit-user-select: none;
+      /* Safari */
+      -ms-user-select: none;
+      /* IE 10 and IE 11 */
+      user-select: none;
+      /* Standard syntax */
 
       svg {
         transform: scale(.6);
@@ -237,8 +257,8 @@
 }
 
 .breadcrumbs-container {
-  background: white; 
-  color: #8B8B8B; 
+  background: white;
+  color: #8B8B8B;
   padding: 1em 0 .3em;
 
   .breadcrumbs-nav {
