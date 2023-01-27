@@ -324,30 +324,19 @@
             "content_color": "#8b8b8b",
             "bg_item_color": "#ffffff"
           }
-        },
-        "template--16656683270372__fe21cc71-ace1-46a3-a5ca-7f6c157faaaa-16736692087857a499-1": {
-          "type": "panel_item",
-          "settings": {
-            "heading": "Experience The Sphynx Curated Collection of No-Alcohol Drinks and Party On!",
-            "panel_text": "<p>At Sphynx, the game plan is a simple one. We are unwavering in our mission to seek out and furnish you with the latest, most extraordinary, and incredible non-alcoholic beverage options available anywhere! Maybe you’re a wine drinker, love a cold crisp cider after work, or enjoy a few bevvies watching the footy. Sphynx zero-alcohol beverages hit the spot every time and were accumulated diligently after hours of tasting the country’s best non-alcoholic drinks. Australia can be massively proud of its brewing industry, and you can keep the party going without feeling rotten in the morning.<\/p>",
-            "heading_color": "#000000",
-            "content_color": "#8b8b8b",
-            "bg_item_color": "#ffffff"
-          }
         }
       },
       "block_order": [
-        "template--16656683270372__fe21cc71-ace1-46a3-a5ca-7f6c157faaaa-16736692087857a499-0",
-        "template--16656683270372__fe21cc71-ace1-46a3-a5ca-7f6c157faaaa-16736692087857a499-1"
+        "template--16656683270372__fe21cc71-ace1-46a3-a5ca-7f6c157faaaa-16736692087857a499-0"
       ],
       "settings": {
         "bg_image": "shopify:\/\/shop_images\/7ab24fa888d331379790ecefe7ca5b33.jpg",
         "padding_top": 154,
         "padding_bottom": 154,
-        "autoplay": true,
-        "arrows": true,
+        "autoplay": false,
+        "arrows": false,
         "dots": false,
-        "infinite": true,
+        "infinite": false,
         "speed": "5000",
         "bg_color": "#ffc85e"
       }
