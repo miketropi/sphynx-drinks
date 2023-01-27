@@ -26,7 +26,7 @@
     "type_button_size": 14,
     "page_width": 1400,
     "spacing_sections": 0,
-    "page_transition_enabled": true,
+    "page_transition_enabled": false,
     "image_zoom_effect_enabled": true,
     "image_loading_bar_enabled": true,
     "button_border_thickness": 2,
