@@ -237,6 +237,25 @@
         "padding_bottom": 36
       }
     },
+    "165638266010f0404e": {
+      "type": "apps",
+      "blocks": {
+        "449dba7b-a55d-496e-9fda-ec0829382728": {
+          "type": "shopify:\/\/apps\/product-reviews\/blocks\/reviews\/bae150af-8da8-48b2-9867-398188115e5f",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "449dba7b-a55d-496e-9fda-ec0829382728"
+      ],
+      "settings": {
+        "heading": "",
+        "padding_top": 36,
+        "padding_bottom": 72,
+        "color_heading": "#000000"
+      }
+    },
     "5c89955e-98ba-4d72-997a-d1e92a461f34": {
       "type": "section-cta",
       "blocks": {
@@ -270,9 +289,17 @@
       "settings": {
         "layout": "with_icon",
         "heading": "no more hair of the dog",
+        "font_size": 36,
+        "font_family": "Flavory Display",
+        "font_weight": "900",
+        "heading_color": "#000",
         "bg_color": "#f05123",
+        "btn_label": "Button Label",
+        "button_link": "",
         "padding_top": 124,
         "padding_bottom": 124,
+        "padding_top_mobile": 60,
+        "padding_bottom_mobile": 60,
         "custom_class": "__custom-zindex"
       }
     },
@@ -344,21 +371,30 @@
           "type": "heading",
           "settings": {
             "heading": "A MENU OF FLAVOURS & STYLES: THE BEST RANGE OF NON-ALC DRINKS IN AUSTRALIA",
-            "font_family": "Flavory Display"
+            "font_size": 36,
+            "font_family": "Flavory Display",
+            "font_weight": "900",
+            "heading_color": "#000"
           }
         },
         "text": {
           "type": "text",
           "disabled": true,
           "settings": {
-            "text": "<p><em>– SUBHEADING<\/em><\/p>"
+            "text": "<p><em>– SUBHEADING<\/em><\/p>",
+            "font_size": 16,
+            "font_weight": "400",
+            "desc_color": "#000"
           }
         },
         "342dca6a-5061-4618-866c-ed6bf6cd9cd9": {
           "type": "heading",
           "settings": {
             "heading": "",
-            "font_family": "Flavory Display"
+            "font_size": 36,
+            "font_family": "Flavory Display",
+            "font_weight": "900",
+            "heading_color": "#000"
           }
         }
       },
@@ -482,26 +518,6 @@
         "enable_countdown": true,
         "padding_top": 36,
         "padding_bottom": 36
-      }
-    },
-    "165638266010f0404e": {
-      "type": "apps",
-      "disabled": true,
-      "blocks": {
-        "449dba7b-a55d-496e-9fda-ec0829382728": {
-          "type": "shopify:\/\/apps\/product-reviews\/blocks\/reviews\/bae150af-8da8-48b2-9867-398188115e5f",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "449dba7b-a55d-496e-9fda-ec0829382728"
-      ],
-      "settings": {
-        "heading": "follow the good vibes sdfsdf",
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "color_heading": "#000000"
       }
     },
     "recently-viewed-products": {
@@ -711,7 +727,15 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/sd-main-banner-about.jpg",
             "title": "ABOUT SPHYNX",
+            "fz_title": 36,
+            "ff_title": "Flavory Display",
+            "fw_title": "900",
+            "heading_color": "#000",
             "text": "<p>Find out more about the cool cats at Sphynx Drinks and hear how it purred to life.<\/p>",
+            "fz_text": 16,
+            "ff_text": "Flavory Display",
+            "fw_text": "400",
+            "desc_color": "#8B8B8B",
             "button_label": "READ MORE",
             "button_link": "shopify:\/\/pages\/our-story",
             "button_style_secondary": false
@@ -722,7 +746,15 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/sd-main-banner-con.jpg",
             "title": "CONTACT THE CAT",
+            "fz_title": 36,
+            "ff_title": "Flavory Display",
+            "fw_title": "900",
+            "heading_color": "#000",
             "text": "<p>Reach out to us to get advice on our range, partner with us or chinwag about all things Sphynx.<\/p>",
+            "fz_text": 16,
+            "ff_text": "Flavory Display",
+            "fw_text": "400",
+            "desc_color": "#8B8B8B",
             "button_label": "CONTACT",
             "button_link": "shopify:\/\/pages\/contact",
             "button_style_secondary": false
@@ -733,7 +765,15 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/sd-banner-faq.jpg",
             "title": "PUB TRIVIA: FAQs",
+            "fz_title": 36,
+            "ff_title": "Flavory Display",
+            "fw_title": "900",
+            "heading_color": "#000",
             "text": "<p>PUB TRIVIA: FAQs Want to dive into the fine print? Pull up a stool and browse our FAQs, from shipping timelines to returns policies.<\/p>",
+            "fz_text": 16,
+            "ff_text": "Flavory Display",
+            "fw_text": "400",
+            "desc_color": "#8B8B8B",
             "button_label": "FIND OUT MORE",
             "button_link": "shopify:\/\/pages\/faq",
             "button_style_secondary": false
@@ -783,6 +823,7 @@
             "collection": "1883",
             "image": "shopify:\/\/shop_images\/c1.jpg",
             "name": "NON-ALCOHOLIC BEER",
+            "text_color": "#FFFFFF",
             "hover_color_background": "#000000",
             "redirect_url": "",
             "box_size": "size_1",
@@ -795,6 +836,7 @@
             "collection": "4-pines",
             "image": "shopify:\/\/shop_images\/c2.jpg",
             "name": "NON-ALCOHOLIC CIDER",
+            "text_color": "#FFFFFF",
             "hover_color_background": "#000000",
             "redirect_url": "",
             "box_size": "size_2",
@@ -807,6 +849,7 @@
             "collection": "absolute-zero",
             "image": "shopify:\/\/shop_images\/c3.jpg",
             "name": "TONIC AND SODA",
+            "text_color": "#FFFFFF",
             "hover_color_background": "#000000",
             "redirect_url": "",
             "box_size": "size_1",
@@ -819,6 +862,7 @@
             "collection": "almost-zero",
             "image": "shopify:\/\/shop_images\/c4.jpg",
             "name": "NON-ALCOHOLIC WINE",
+            "text_color": "#FFFFFF",
             "hover_color_background": "#000000",
             "redirect_url": "",
             "box_size": "size_2",
@@ -831,6 +875,7 @@
             "collection": "altina",
             "image": "shopify:\/\/shop_images\/c5.jpg",
             "name": "NON-ALCOHOLIC SPIRITS",
+            "text_color": "#FFFFFF",
             "hover_color_background": "#000000",
             "redirect_url": "",
             "box_size": "size_1",
@@ -843,6 +888,7 @@
             "collection": "amplify",
             "image": "shopify:\/\/shop_images\/c6.jpg",
             "name": "MIXERS",
+            "text_color": "#FFFFFF",
             "hover_color_background": "#000000",
             "redirect_url": "",
             "box_size": "size_1",
@@ -855,6 +901,7 @@
             "collection": "apple-thief",
             "image": "shopify:\/\/shop_images\/c7.jpg",
             "name": "PREMIXED",
+            "text_color": "#FFFFFF",
             "hover_color_background": "#000000",
             "redirect_url": "",
             "box_size": "size_1",
@@ -907,13 +954,13 @@
   "order": [
     "empty-space",
     "main",
+    "165638266010f0404e",
     "5c89955e-98ba-4d72-997a-d1e92a461f34",
     "guarantees",
     "rich-text",
     "product-details",
     "image-comparison",
     "product-recommendations",
-    "165638266010f0404e",
     "recently-viewed-products",
     "video-hero",
     "tab-collage",
