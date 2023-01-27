@@ -38,8 +38,8 @@
       "settings": {
         "media": "shopify:\/\/shop_images\/Group_666_3e1a54c7-807a-4ad6-8ccc-a221c097b300.png",
         "bg_color": "#ffc85e",
-        "padding_top": 70,
-        "padding_bottom": 70,
+        "padding_top": 30,
+        "padding_bottom": 0,
         "custom_class": ""
       }
     },
