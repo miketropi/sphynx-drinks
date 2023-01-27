@@ -1,9 +1,11 @@
 .section-hero-home {
     overflow-x: hidden;
+
     .section-inner {
-        @media (max-width: 767px){
+        @media (max-width: 767px) {
             padding-top: 50px;
         }
+
         .row {
             display: -webkit-box;
             display: -ms-flexbox;
@@ -20,13 +22,14 @@
                 min-height: 1px;
                 padding-right: 15px;
                 padding-left: 15px;
-                
+
                 @media (min-width: 768px) {
                     -webkit-box-flex: 0;
                     -ms-flex: 0 0 50%;
                     flex: 0 0 50%;
                     max-width: 50%;
                 }
+
                 &.col-content {
                     @media (min-width: 768px) {
                         -webkit-box-flex: 0;
@@ -35,14 +38,19 @@
                         max-width: 55%;
                     }
                 }
+
                 &.col-media {
                     text-align: center;
                     padding-top: 50px;
-                    padding-bottom: 50px;
+                    padding-bottom: 0px;
+                    display: flex;
+                    align-items: flex-end;
+
                     @media (max-width: 767px) {
                         overflow: hidden;
                     }
-                    &::before{
+
+                    &::before {
                         content: '';
                         position: absolute;
                         left: 50%;
@@ -56,13 +64,15 @@
                         background-size: contain;
                         z-index: 1;
                     }
+
                     @media (min-width: 768px) {
                         -webkit-box-flex: 0;
                         -ms-flex: 0 0 45%;
                         flex: 0 0 45%;
                         max-width: 45%;
                     }
-                    img{
+
+                    img {
                         position: relative;
                         z-index: 2;
                     }
@@ -70,6 +80,12 @@
             }
 
             .col-content {
+                padding-right: 50px;
+                @media (max-width: 991px){
+                    padding-right: 0px; 
+                    padding-top: 30px;
+                    padding-bottom: 30px;
+                }
                 &--heading {
                     font-style: normal;
                     font-weight: 900;
@@ -77,14 +93,31 @@
                     line-height: 110%;
                     color: #000000;
                     margin: 0;
-                    @media (max-width: 1500px){
+
+                    @media (max-width: 1500px) {
                         font-size: 42px !important;
                     }
-                    @media (max-width: 1024px){
+
+                    @media (max-width: 1024px) {
                         font-size: 40px !important;
                     }
-                    @media (max-width: 767px){
+
+                    @media (max-width: 767px) {
                         font-size: 36px !important;
+                    }
+                }
+
+                &--desc {
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 140%;
+                    color: #000000;
+                    margin: 0;
+                    margin-top: 15px;
+                    p{
+                        margin: 0;
                     }
                 }
 
@@ -100,35 +133,41 @@
                     color: #FFFFFF;
                     padding: 18px 30px 24px;
                     display: inline-block;
-                    margin-top: 40px;
+                    margin-top: 50px;
                     text-decoration: none;
                     text-transform: none;
                     letter-spacing: normal;
                     border-color: #F05123;
                     min-width: auto;
-                    @media (max-width: 1500px){
+
+                    @media (max-width: 1500px) {
                         font-size: 18px;
                         padding: 11px 30px 20px;
                     }
-                    @media (max-width: 767px){
+
+                    @media (max-width: 767px) {
                         padding: 18px 25px 24px;
                         font-size: 18px;
                         margin-top: 30px;
-                        svg{
+
+                        svg {
                             width: 20px;
                             height: 20px;
                         }
                     }
-                    .button-icon{
+
+                    .button-icon {
                         display: inline-block;
                         margin-left: 10px;
                         position: relative;
                         top: 5px;
                     }
-                    &:hover{
+
+                    &:hover {
                         color: #F05123;
-                        .button-icon{
-                            path{
+
+                        .button-icon {
+                            path {
                                 stroke: #F05123;
                             }
                         }

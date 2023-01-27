@@ -4395,7 +4395,9 @@ ul.menu-style-mobile li.menu-link .menu-icon-arrow.open {
 .section-hero-home .section-inner .row .col.col-media {
   text-align: center;
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 0px;
+  display: flex;
+  align-items: flex-end;
 }
 @media (max-width: 767px) {
   .section-hero-home .section-inner .row .col.col-media {
@@ -4426,6 +4428,16 @@ ul.menu-style-mobile li.menu-link .menu-icon-arrow.open {
   position: relative;
   z-index: 2;
 }
+.section-hero-home .section-inner .row .col-content {
+  padding-right: 50px;
+}
+@media (max-width: 991px) {
+  .section-hero-home .section-inner .row .col-content {
+    padding-right: 0px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
 .section-hero-home .section-inner .row .col-content--heading {
   font-style: normal;
   font-weight: 900;
@@ -4449,6 +4461,19 @@ ul.menu-style-mobile li.menu-link .menu-icon-arrow.open {
     font-size: 36px !important;
   }
 }
+.section-hero-home .section-inner .row .col-content--desc {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  color: #000000;
+  margin: 0;
+  margin-top: 15px;
+}
+.section-hero-home .section-inner .row .col-content--desc p {
+  margin: 0;
+}
 .section-hero-home .section-inner .row .col-content--button {
   font-family: "Montserrat";
   font-style: normal;
@@ -4461,7 +4486,7 @@ ul.menu-style-mobile li.menu-link .menu-icon-arrow.open {
   color: #FFFFFF;
   padding: 18px 30px 24px;
   display: inline-block;
-  margin-top: 40px;
+  margin-top: 50px;
   text-decoration: none;
   text-transform: none;
   letter-spacing: normal;
