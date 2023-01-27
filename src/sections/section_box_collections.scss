@@ -151,24 +151,24 @@
 
                         &:hover {
                             .box-collection-item-media {
-                                background: #F05123;
+                                // background: #F05123;
                                 box-shadow: 0px 4px 16px 4px rgba(0, 0, 0, 0.18);
 
                                 &::before {
-                                    opacity: 1;
-                                    visibility: visible;
+                                    // opacity: 1;
+                                    // visibility: visible;
                                 }
 
                                 img {
-                                    &:first-child {
-                                        opacity: 0;
-                                        visibility: hidden;
-                                    }
+                                    // &:first-child {
+                                    //     opacity: 0;
+                                    //     visibility: hidden;
+                                    // }
 
-                                    &:last-child {
-                                        opacity: 1;
-                                        visibility: visible;
-                                    }
+                                    // &:last-child {
+                                    //     opacity: 1;
+                                    //     visibility: visible;
+                                    // }
                                 }
                             }
                         }

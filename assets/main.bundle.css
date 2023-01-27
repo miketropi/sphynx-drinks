@@ -4643,20 +4643,7 @@ ul.menu-style-mobile li.menu-link .menu-icon-arrow.open {
   text-align: center;
 }
 .section-box-collections .section-inner .row .col-collection-list .box-collection-item:hover .box-collection-item-media {
-  background: #F05123;
   box-shadow: 0px 4px 16px 4px rgba(0, 0, 0, 0.18);
-}
-.section-box-collections .section-inner .row .col-collection-list .box-collection-item:hover .box-collection-item-media::before {
-  opacity: 1;
-  visibility: visible;
-}
-.section-box-collections .section-inner .row .col-collection-list .box-collection-item:hover .box-collection-item-media img:first-child {
-  opacity: 0;
-  visibility: hidden;
-}
-.section-box-collections .section-inner .row .col-collection-list .box-collection-item:hover .box-collection-item-media img:last-child {
-  opacity: 1;
-  visibility: visible;
 }
 .section-box-collections .section-inner .row .col-collection-list .box-collection-item-media {
   width: 100%;
