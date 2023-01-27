@@ -137,6 +137,7 @@ predictive-search[open] .predictive-search--search-template {
 .predictive-search--search-template .predictive-search__item-heading {
   font-size: calc(var(--font-heading-scale) * 1.4rem);
   line-height: calc(1 + 0.2 / max(1, var(--font-heading-scale)));
+  font-family: 'Montserrat';
 }
 
 .predictive-search__heading {
@@ -145,6 +146,8 @@ predictive-search[open] .predictive-search--search-template {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: 'Montserrat';
+  font-size: 18px;
 }
 
 predictive-search .icon-spinner {
@@ -215,6 +218,7 @@ predictive-search[loading] .search-modal__form .search__button[type="button"] {
   line-height: 0;
   overflow: hidden;
   border-radius: min(var(--card-radius), 0.3rem);
+
 }
 
 .predictive-search__image img {
@@ -232,6 +236,15 @@ predictive-search[loading] .search-modal__form .search__button[type="button"] {
 
 .template-search__search .predictive-search__image {
   width: 5rem;
+  background-color: white;
+}
+
+.template-search__search .predictive-search__item--term{
+  background-color: #F05123;
+  border-color: #F05123;
+}
+.template-search__search .predictive-search__item--term:hover{
+  color: #F05123;
 }
 
 .template-search__search .search-modal__form .field {
