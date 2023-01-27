@@ -6,11 +6,20 @@
         "template--16656683270372__6f70226f-cf6b-4a39-a3c5-c9982266e148-16736680464e956660-0": {
           "type": "heading",
           "settings": {
-            "heading": "All the best deals and current offers at Sphynx Drinks, all-in-one place!",
+            "heading": "Free Six Pack of Beer Or Bottle Of Wine!",
             "font_size": 54,
             "font_family": "Montserrat",
             "font_weight": "900",
             "heading_color": "#000000"
+          }
+        },
+        "ca9d102c-5627-4bac-b43d-2153bd3e0c57": {
+          "type": "description",
+          "settings": {
+            "text": "<p>We're launching with a big, booze-free bang! Spend $40 and we'll send you a free bottle of delicious non-alc sparkling Classico wine from Lyres or a carefully-curated six of mixed beers.<\/p>",
+            "font_size": 20,
+            "font_weight": "400",
+            "heading_color": "#000"
           }
         },
         "template--16656683270372__6f70226f-cf6b-4a39-a3c5-c9982266e148-16736680464e956660-1": {
@@ -23,10 +32,11 @@
       },
       "block_order": [
         "template--16656683270372__6f70226f-cf6b-4a39-a3c5-c9982266e148-16736680464e956660-0",
+        "ca9d102c-5627-4bac-b43d-2153bd3e0c57",
         "template--16656683270372__6f70226f-cf6b-4a39-a3c5-c9982266e148-16736680464e956660-1"
       ],
       "settings": {
-        "media": "shopify:\/\/shop_images\/Rectangle_211.png",
+        "media": "shopify:\/\/shop_images\/Group_666_3e1a54c7-807a-4ad6-8ccc-a221c097b300.png",
         "bg_color": "#ffc85e",
         "padding_top": 70,
         "padding_bottom": 70,
