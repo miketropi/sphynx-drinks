@@ -16,8 +16,17 @@
         "padding_bottom": 36
       }
     },
+    "7d621882-93b2-4b1e-ae95-61092c5be4f1": {
+      "type": "page-title-collection",
+      "settings": {
+        "padding_top": 54,
+        "padding_bottom": 100,
+        "custom_class": ""
+      }
+    },
     "b024aa67-a57b-48a2-97a6-e7868636c099": {
       "type": "rich-text",
+      "disabled": true,
       "blocks": {
         "template--16656684155108__b024aa67-a57b-48a2-97a6-e7868636c099-167299139468bdb5ef-0": {
           "type": "heading",
@@ -80,6 +89,7 @@
   },
   "order": [
     "banner",
+    "7d621882-93b2-4b1e-ae95-61092c5be4f1",
     "b024aa67-a57b-48a2-97a6-e7868636c099",
     "product-grid"
   ]
