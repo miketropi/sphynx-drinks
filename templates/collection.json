@@ -86,6 +86,18 @@
         "padding_bottom": 140
       }
     },
+    "f4144c17-0de7-4b6b-9ad5-dce0e172b45f": {
+      "type": "image-text-collection",
+      "settings": {
+        "custom_class": ""
+      }
+    },
+    "d6aa26d7-2acd-4c97-837f-d600c696c6b2": {
+      "type": "faq-collection",
+      "settings": {
+        "custom_class": ""
+      }
+    },
     "167487097689e95ffb": {
       "type": "apps",
       "blocks": {
@@ -102,10 +114,10 @@
         "81b16a87-eee0-454a-bacf-f1f16231ee17"
       ],
       "settings": {
-        "heading": "follow the good vibes <span>@SPHYNXDRINKS<\/span>",
+        "heading": "follow the good vibes @SPHYNXDRINKS",
         "padding_top": 36,
         "padding_bottom": 0,
-        "color_heading": "#000"
+        "color_heading": "#000000"
       }
     }
   },
@@ -114,6 +126,8 @@
     "7d621882-93b2-4b1e-ae95-61092c5be4f1",
     "b024aa67-a57b-48a2-97a6-e7868636c099",
     "product-grid",
+    "f4144c17-0de7-4b6b-9ad5-dce0e172b45f",
+    "d6aa26d7-2acd-4c97-837f-d600c696c6b2",
     "167487097689e95ffb"
   ]
 }
