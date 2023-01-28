@@ -14,6 +14,10 @@
   position: relative;
 }
 
+.collection.collection--empty{
+  display: block !important;
+}
+
 .collection .loading-overlay {
   top: 0;
   right: 0;
