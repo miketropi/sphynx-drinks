@@ -1,0 +1,70 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: calc({{ section.settings.padding_top }}px * 0.75);
+    padding-bottom: 40px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="page-title-collection-wrap section-{{ section.id }}-padding {{section.settings.custom_class}}">
+  {%- if collection.metafields.collections.title_collection != blank -%}
+    <h1>{{ collection.metafields.collections.title_collection }}</h1>
+  {% else %}
+    <h1>{{ collection.title }}</h1>
+  {%- endif -%}
+
+  {%- if collection.description != blank -%}
+    <div class="collection-desc">{{ collection.description }}</div>
+  {%- endif -%}
+</div>
+
+{% schema %}
+{
+  "name": "Page Title Collection",
+  "tag": "section",
+  "class": "page-title-collection",
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.header.content"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "t:sections.all.padding.padding_top.unit",
+      "label": "t:sections.all.padding.padding_top.label",
+      "default": 52
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "unit": "t:sections.all.padding.padding_bottom.unit",
+      "label": "t:sections.all.padding.padding_bottom.label",
+      "default": 100
+    },
+    {
+      "type": "text",
+      "id": "custom_class",
+      "label": "Custom Class"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Page Title Collection",
+      "blocks": []
+    }
+  ]
+}
+{% endschema %}
