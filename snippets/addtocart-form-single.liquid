@@ -6,7 +6,8 @@
   action="/cart/add"
   method="post"
   enctype="multipart/form-data"
-  id="AddToCartForm">
+  id="AddToCartForm"
+  class="{% if ajax == true %}__add-to-cart-ajax{% endif %}">
   <div class="__group-2-cols">
 
     <div class="__product-variant-select">

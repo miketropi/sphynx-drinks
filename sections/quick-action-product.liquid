@@ -3,7 +3,7 @@
   <div class="quick-action-product__inner">
     <h4 class="__product-title">{{ product.title }}</h4>
     <div class="__product-add-cart-form">
-      {%- render 'addtocart-form-single' | product: product -%}
+      {%- render 'addtocart-form-single' | product: product, ajax: true -%}
     </div>
     {%- if section.settings.description -%}
       <div class="__desc">{{ section.settings.description }}</div>

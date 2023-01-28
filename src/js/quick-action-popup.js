@@ -80,6 +80,10 @@ export default function QuickActionPopup() {
     
   })
 
+  $(window).on('closeQuickActionPopup', () => {
+    popupObj.display(false);
+  })
+
   $('body').on('click', '.quick-action-popup', function(e) {
     e.preventDefault();
     const url = $(this).data('product-url');
