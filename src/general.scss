@@ -256,6 +256,14 @@
   }
 }
 
+body.__mini-cart-show {
+
+  .mini-cart {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
 .mini-cart {
   position: absolute;
   right: 0;
