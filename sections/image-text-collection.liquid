@@ -1,0 +1,53 @@
+{% assign size_image_text = collection.metafields.collection_img_text.heading | size | minus: 1 %}
+{% assign image_text_heading = collection.metafields.collection_img_text.heading %}
+{% assign image_text_desc = collection.metafields.collection_img_text.desc %}
+{% assign image_text_media = collection.metafields.collection_img_text.media %}
+
+{% if collection.metafields.collection_img_text.heading != 0 %}
+  {% for i in (0..size_image_text) %}
+    <div class="section-container image-with-text {{section.settings.custom_class}}">
+      <div class="image-with-text__grid image-with-text__radius">
+        <div class="image-with-text__col">
+          <div class="image-animate">
+            <img src="{{image_text_media[i]}}" alt="" loading="lazy" width="810" height="581" class="image-fit">
+          </div>
+        </div>
+        <div class="image-with-text__col">
+          <div class="image-with-text__content">
+            <h2 class="image-with-text__heading">
+              {% if image_text_heading[i] != blank %}
+                {{ image_text_heading[i] }}
+              {% endif %}
+            </h2>
+            <div class="image-with-text__text">
+              {% if image_text_desc[i] != blank %}
+                {{ image_text_desc[i] }}
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+{% endif %}
+
+{% schema %}
+{
+  "name": "Image text collection",
+  "tag": "section",
+  "class": "image-w-text-collection",
+  "settings": [
+    {
+      "type": "text",
+      "id": "custom_class",
+      "label": "Custom Class"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image text collection",
+      "blocks": []
+    }
+  ]
+}
+{% endschema %}

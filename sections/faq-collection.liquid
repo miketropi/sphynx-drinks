@@ -1,0 +1,50 @@
+{% assign size_faq = collection.metafields.collection_faq.question | size | minus: 1 %}
+{% assign faq_question = collection.metafields.collection_faq.question %}
+{% assign faq_answer = collection.metafields.collection_faq.answer %}
+
+<div class="faq__container">
+  {% if collection.metafields.collection.collection_heading_faq != blank %}
+    <h2 class="faq__title" style="text-align:center">{{ collection.metafields.collection.collection_heading_faq }}</h2>
+  {% endif %}
+
+  {% if collection.metafields.collection_faq.question != 0 %}
+    <div class="faq__list">
+      {% for i in (0..size_faq) %}
+        <div class="faq__item">
+          <div class="faq__question">
+            {{ faq_question[i] }}
+            <span class="faq__icon">
+              <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.5 6.91016L9 11.4102L13.5 6.91016" stroke="#F05123" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </span>
+          </div>
+          <div class="faq__answer">
+            {{ faq_answer[i] }}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  {% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "FAQ Collection",
+  "tag": "section",
+  "class": "faq-section faq-collection faq-homepage",
+  "settings": [
+    {
+      "type": "text",
+      "id": "custom_class",
+      "label": "Custom Class"
+    }
+  ],
+  "presets": [
+    {
+      "name": "FAQ Collection",
+      "blocks": []
+    }
+  ]
+}
+{% endschema %}

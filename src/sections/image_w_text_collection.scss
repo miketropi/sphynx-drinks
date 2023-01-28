@@ -1,0 +1,176 @@
+.image-w-text-collection {
+
+    .section-container {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        overflow: hidden;
+        max-width: calc(var(--site-container-width) + 30px);
+    }
+
+    .image-with-text {
+        padding-top: calc(36px * 0.75);
+        padding-bottom: calc(36px * 0.75);
+
+        @media (min-width: 992px) {
+            padding-top: 36px;
+            padding-bottom: 36px;
+        }
+
+        &:nth-child(even) {
+            .image-with-text__grid {
+                flex-direction: row-reverse;
+
+                .image-with-text__content {
+                    @media (min-width: 992px) {
+                        padding-right: 15px;
+                    }
+
+                    @media (min-width: 1400px) {
+                        padding-right: 50px;
+                    }
+                }
+            }
+        }
+
+        &:nth-child(odd) {
+            .image-with-text__grid {
+                .image-with-text__content {
+                    @media (min-width: 992px) {
+                        padding-left: 15px;
+                    }
+
+                    @media (min-width: 1400px) {
+                        padding-left: 50px;
+                    }
+                }
+            }
+        }
+
+        &__grid {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+            align-items: center;
+
+            .image-animate {
+                display: flex;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            &.image-with-text__radius {
+                .image-animate {
+                    img {
+                        border-radius: 18px;
+                    }
+                }
+            }
+        }
+
+        &__col {
+            position: relative;
+            width: 100%;
+            min-height: 1px;
+            padding-right: 15px;
+            padding-left: 15px;
+
+
+            @media (min-width: 992px) {
+                -webkit-box-flex: 0;
+                -ms-flex: 0 0 50%;
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+        }
+
+        &__content {
+            @media (max-width: 991.98px) {
+                margin-top: 30px;
+            }
+
+        }
+
+        &__heading {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 32px;
+            line-height: 120%;
+            color: #000000;
+            margin: 0;
+
+            @media (max-width: 767.98px) {
+                font-size: 28px;
+            }
+        }
+
+        &__text {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 160%;
+            color: #8B8B8B;
+            margin-bottom: 0;
+            margin-top: 20px;
+        }
+
+        &__button {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 22px;
+            line-height: 95%;
+            color: #FFFFFF;
+            background: #F05123;
+            border-radius: 8px;
+            padding: 18px 30px 24px;
+            display: inline-block;
+            letter-spacing: normal;
+            text-transform: none;
+            border-color: #F05123;
+            min-width: auto;
+            margin-top: 30px;
+
+            @media (max-width: 767.98px) {
+                padding: 18px 25px 24px;
+                font-size: 18px;
+
+                .button-icon {
+                    margin-left: 5px;
+                }
+
+                svg {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+
+            .button-icon {
+                margin-left: 10px;
+                position: relative;
+                top: 4px;
+            }
+
+            &:hover {
+                color: #F05123;
+
+                .button-icon {
+
+                    path {
+                        stroke: #F05123;
+                    }
+                }
+            }
+        }
+    }
+}
