@@ -629,6 +629,10 @@ body.__mini-cart-show .mini-cart {
   font-size: 0.9em;
 }
 
+.popup-floating {
+  display: none !important;
+}
+
 body.__quick-popup-show .__popup-quick-action-product {
   visibility: visible;
   opacity: 1;
