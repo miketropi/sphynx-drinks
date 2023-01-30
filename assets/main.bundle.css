@@ -2968,7 +2968,8 @@ ul.menu-style-mobile li.menu-link .menu-icon-arrow.open {
 .slide-product-container .product-slide-item__inner .__p-entry .__rating-elem .__review .__count {
   margin-left: 10px;
 }
-.slide-product-container .product-slide-item__inner .__p-entry button {
+.slide-product-container .product-slide-item__inner .__p-entry button,
+.slide-product-container .product-slide-item__inner .__p-entry .button {
   border-radius: 8px;
   background: #F05123;
   letter-spacing: 0;
@@ -2980,7 +2981,8 @@ ul.menu-style-mobile li.menu-link .menu-icon-arrow.open {
   text-transform: inherit;
   margin-top: 10px;
 }
-.slide-product-container .product-slide-item__inner .__p-entry button:hover {
+.slide-product-container .product-slide-item__inner .__p-entry button:hover,
+.slide-product-container .product-slide-item__inner .__p-entry .button:hover {
   color: black;
 }
 
