@@ -20,7 +20,7 @@
       "type": "page-title-collection",
       "settings": {
         "padding_top": 54,
-        "padding_bottom": 100,
+        "padding_bottom": 80,
         "custom_class": ""
       }
     },
