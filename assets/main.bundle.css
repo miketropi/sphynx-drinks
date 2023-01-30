@@ -886,6 +886,30 @@ body.__quick-popup-show .__popup-quick-action-product {
   }
 }
 
+.gm-menu-installed .site-header .gm-menu {
+  justify-content: space-between;
+  margin: 0 -4px;
+  position: inherit;
+}
+.gm-menu-installed .site-header .gm-menu p {
+  display: none !important;
+}
+.gm-menu-installed .site-header .gm-menu .gm-item.gm-level-0 > .gm-target {
+  padding: 26px 4px !important;
+}
+.gm-menu-installed .site-header .gm-menu .gm-submenu {
+  box-shadow: 0px 3px 15px #888888;
+}
+.gm-menu-installed .site-header .gm-menu .gm-submenu .gm-grid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: calc(var(--site-container-width) + 30px);
+  min-width: auto;
+}
+
 ul.menu-style-inline {
   margin: 0;
   padding: 0;
