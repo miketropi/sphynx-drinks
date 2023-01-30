@@ -19,7 +19,7 @@
             "text": "<p>We're launching with a big, booze-free bang! Spend $40 and we'll send you a free bottle of delicious non-alc sparkling Classico wine from Lyres or a carefully-curated six of mixed beers.<\/p>",
             "font_size": 20,
             "font_weight": "400",
-            "heading_color": "#000"
+            "heading_color": "#000000"
           }
         },
         "template--16656683270372__6f70226f-cf6b-4a39-a3c5-c9982266e148-16736680464e956660-1": {
@@ -36,10 +36,8 @@
         "template--16656683270372__6f70226f-cf6b-4a39-a3c5-c9982266e148-16736680464e956660-1"
       ],
       "settings": {
-        "media": "shopify:\/\/shop_images\/Group_666_3e1a54c7-807a-4ad6-8ccc-a221c097b300.png",
+        "media": "shopify:\/\/shop_images\/Group_666_997cd5fe-ddc9-4636-8750-c400b785bb22.png",
         "bg_color": "#ffc85e",
-        "padding_top": 30,
-        "padding_bottom": 0,
         "custom_class": ""
       }
     },
