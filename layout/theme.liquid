@@ -119,21 +119,21 @@
       <link
         rel="stylesheet"
         href="{{ 'component-predictive-search.css' | asset_url }}"
-        media="print"
+        media="all"
         onload="this.media='all'">
     {%- endif -%}
     {%- if settings.quick_view_enabled -%}
       <link
         rel="stylesheet"
         href="{{ 'component-quick-view.css' | asset_url }}"
-        media="print"
+        media="all"
         onload="this.media='all'">
     {%- endif -%}
     {%- if linklists.gift-wrapping.links.size > 0 and linklists.gift-wrapping.links.first.type == 'product_link' -%}
       <link
         rel="stylesheet"
         href="{{ 'component-gift-wrapping.css' | asset_url }}"
-        media="print"
+        media="all"
         onload="this.media='all'">
       <noscript>{{ 'component-gift-wrapping.css' | asset_url | stylesheet_tag }}</noscript>
     {%- endif -%}
@@ -155,7 +155,7 @@
     <link
       rel="stylesheet"
       href="{{ 'main.bundle.css' | asset_url }}"
-      media="print"
+      media="all"
       onload="this.media='all'">
   </head>
 
