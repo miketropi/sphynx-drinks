@@ -16,7 +16,9 @@
   {%- if collection.metafields.collections.title_collection != blank -%}
     <h1>{{ collection.metafields.collections.title_collection }}</h1>
   {% else %}
-    <h1>{{ collection.title }}</h1>
+    <h1>
+      {% if collection.title == 'Products' %} Shop Non-Alcoholic Drinks {% else %} {{ collection.title }} {% endif %}
+    </h1>
   {%- endif -%}
 
   {%- if collection.description != blank -%}
