@@ -83,7 +83,8 @@
       </div>
 
       <div class="site-mobile__menu">
-        {%- render 'site-menu-mobile', menu: section.settings.second_main_menu -%}
+        {% comment %} {%- render 'site-menu-mobile', menu: section.settings.second_main_menu -%} {% endcomment %}
+        <div id="site-mobile__menu"></div>
       </div>
     </div>
   </div>
