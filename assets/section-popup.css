@@ -447,6 +447,9 @@ promo-popup.hidden {
   min-width: auto;
   margin: 0;
   margin-inline-start: -0.1rem;
+  color: #FFFFFF;
+  background-color: #F05123;
+  box-shadow: none;
 }
 
 @media screen and (min-width: 750px) {

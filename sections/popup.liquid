@@ -47,6 +47,7 @@
   {%- endstyle -%}
 
   <link rel="stylesheet" href="{{ 'section-popup.css' | asset_url }}" media="print" onload="this.media='all'">
+  
   <noscript>{{ 'section-popup.css' | asset_url | stylesheet_tag }}</noscript>
 
   <promo-popup data-section-id="{{ section.id }}" class="hidden" data-delay="{{ section.settings.delay }}" data-expiry="{{ section.settings.expiry }}" data-test-mode="{% if section.settings.mode == 'testing' %}true{% else %}false{% endif %}">
