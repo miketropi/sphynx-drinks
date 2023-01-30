@@ -1,13 +1,13 @@
 class PromoPopup extends HTMLElement {
   constructor() {
     super();
-    return;
+    // return;
     // Prevent popup on Shopify robot challenge page
     if (window.location.pathname === '/challenge') {
       return;
     }
 
-    this.cookieName = 'beyours:promo-popup';
+    // this.cookieName = 'beyours:promo-popup';
 
     this.classes = {
       bodyClass: 'promo-popup--open',
