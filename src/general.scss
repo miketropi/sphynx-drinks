@@ -252,6 +252,7 @@
     .mini-cart {
       visibility: visible;
       opacity: 1;
+      // z-index: 9;
     }
   }
 }
@@ -261,6 +262,7 @@ body.__mini-cart-show {
   .mini-cart {
     visibility: visible;
     opacity: 1;
+    // z-index: 9;
   }
 }
 
@@ -271,14 +273,15 @@ body.__mini-cart-show {
   background: white;
   width: 420px;
   max-width: calc(100vw - 40px);
-  z-index: 9;
   padding: 2em;
   border-radius: 8px;
   box-shadow: 0 0 20px -4px rgba(1, 1, 1, .2);
   opacity: 0;
   visibility: hidden;
-  transition: .3s ease;
-  -webkit-transition: .3s ease;
+  z-index: 9;
+  // transition: .3s ease;
+  // -webkit-transition: .3s ease;
+  // z-index: -9;
 
   &.__no-item-in-cart {
     display: none !important;
