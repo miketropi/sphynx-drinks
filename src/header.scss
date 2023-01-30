@@ -288,7 +288,12 @@
           }
         }
       }
-
+      .gm-links{
+        padding: 20px 0 !important;
+        @media(max-width: 991px) {
+          padding: 10px 0 !important;
+        }
+      }
       .gm-submenu {
         box-shadow: 0px 3px 15px #888888;
         &.gm-mega{
@@ -296,6 +301,7 @@
             box-shadow: none;
             background-color: transparent !important;
             .gm-item{
+              
               .gm-heading {
                 .gm-target {
                   color: #FFFFFF !important;

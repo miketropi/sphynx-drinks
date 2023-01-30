@@ -925,6 +925,14 @@ body.__quick-popup-show .__popup-quick-action-product {
     font-size: 16px !important;
   }
 }
+.gm-menu-installed .site-header .gm-menu .gm-links {
+  padding: 20px 0 !important;
+}
+@media (max-width: 991px) {
+  .gm-menu-installed .site-header .gm-menu .gm-links {
+    padding: 10px 0 !important;
+  }
+}
 .gm-menu-installed .site-header .gm-menu .gm-submenu {
   box-shadow: 0px 3px 15px #888888;
 }
