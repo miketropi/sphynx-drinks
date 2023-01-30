@@ -1,4 +1,9 @@
 .faq-collection{
-    padding-bottom: 60px;
-    padding-top: 60px;
+    .faq__container{
+        padding-bottom: 60px;
+        padding-top: 60px;
+        &.faq-empty{
+            padding: 0;
+        }
+    }
 }

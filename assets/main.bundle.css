@@ -5467,7 +5467,10 @@ iframe.ybSyad5RbtOghAuCHUvv {
   stroke: #F05123;
 }
 
-.faq-collection {
+.faq-collection .faq__container {
   padding-bottom: 60px;
   padding-top: 60px;
+}
+.faq-collection .faq__container.faq-empty {
+  padding: 0;
 }

@@ -2,7 +2,7 @@
 {% assign faq_question = collection.metafields.collection_faq.question %}
 {% assign faq_answer = collection.metafields.collection_faq.answer %}
 
-<div class="faq__container">
+<div class="faq__container {% if collection.metafields.collection_faq.question == blank and collection.metafields.collection.collection_heading_faq == blank  %} faq-empty{% endif %}">
   {% if collection.metafields.collection.collection_heading_faq != blank %}
     <h2 class="faq__title" style="text-align:center">{{ collection.metafields.collection.collection_heading_faq }}</h2>
   {% endif %}
