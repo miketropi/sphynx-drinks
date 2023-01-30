@@ -22,7 +22,24 @@
         %}
         {%- render 'product-rating-template' | rating: ratingValue, count: ratingCount -%}
         {%- render 'product-price-template' | product: product -%}
-        {%- render 'addtocart-button-template' | product: product -%}
+        {%- if product.available -%}
+          <a
+            href="{{ product.url | within: collection }}"
+            class="button button--small quick-action-popup"
+            tabindex="-1"
+            data-product-url="{{ product.url }}?view=quickaction">
+            {% comment %} {{- 'products.product.view' | t -}} {% endcomment %}
+            {{- 'products.product.add_to_cart' | t -}}
+          </a>
+        {%- else -%}
+          <button
+            class="button button--small button--soldout"
+            type="button"
+            disabled="disabled">
+            {{ 'products.product.sold_out' | t }}
+          </button>
+        {%- endif -%}
+        {% comment %} {%- render 'addtocart-button-template' | product: product -%} {% endcomment %}
       </div>
     </div>
   </div>

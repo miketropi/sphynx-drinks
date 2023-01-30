@@ -14,7 +14,8 @@
   <div class="site-container">
     <div class="collection-gallery__inner">
       {% comment %} {{ section.settings | json }} {% endcomment %}
-      <div class="collection-gallery__heading">
+      <div
+        class="collection-gallery__heading">
         <h4 style="color: {{ section.settings.heading_color }};">{{ section.settings.heading }}</h4>
         <div class="collection-gallery__desc" style="color: {{ section.settings.description_color }};">{{ section.settings.description }}</div>
       </div>
@@ -25,7 +26,10 @@
             {%- assign collectionUrl = collections[block.settings.collection].url -%}
             <div class="box-item grid-item __box-{{ block.settings.box_size }} {{ block.settings.custom_class }}" style="background: url({{ block.settings.image | image_url }}) no-repeat center center / cover;">
               <div class="box-item__inner" style="color: black;">
-                <a class="__fake-link" href="{{ collectionUrl }}"></a>
+                <a
+                  class="__fake-link"
+                  target="_blank"
+                  href="{{ collectionUrl }}"></a>
                 <div class="box-item__decor" style="background: {{ block.settings.hover_color_background }};">
                   <svg
                     viewBox="0 0 432 68"
@@ -40,7 +44,10 @@
                 </div>
                 <div class="box-info">
                   <h4 class="box-name" style="color: {{ block.settings.text_color }};">{{ block.settings.name }}</h4>
-                  <a class="button" href="{{ routes.all_products_collection_url }}">
+                  <a
+                    class="button"
+                    href="{{ routes.all_products_collection_url }}"
+                    target="_blank">
                     Shop Now {% render 'icon', icon: 'arrow-bold' %}
                   </a>
                 </div>
