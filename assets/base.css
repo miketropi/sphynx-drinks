@@ -4,6 +4,9 @@
   --color-foreground: var(--color-base-text);
   --color-background: var(--color-base-background);
   --color-heading: var(--color-base-heading);
+  --bg-mask: url(bg-mask.png);
+  --bg-panel-mask: url(bg-panel-mask.png);
+  --shadow-mask: url(shadow-hero.png);
 }
 
 /* Primary button */

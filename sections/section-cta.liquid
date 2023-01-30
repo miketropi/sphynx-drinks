@@ -20,8 +20,8 @@
     style="
       background-color: {{ section.settings.bg_color }};
       {%- if section.settings.bg_image != blank -%}
-        background-image: url({{section.settings.bg_image | image_url}})
-      {%- endif -%}
+        background-image: url({{section.settings.bg_image | image_url}});
+      {%- endif -%}      
     "
   >
     background-mask
