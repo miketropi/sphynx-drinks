@@ -1,5 +1,5 @@
 <div class="blog-sidebar">
-  <div class="block-widget block-category">
+  {% comment %} <div class="block-widget block-category">
     <h3 class="block-widget__title">Category</h3>
     <div class="block-widget__content">
       <ul class="list-category">
@@ -31,10 +31,10 @@
         {%- endfor %}
       </ul>
     </div>
-  </div>
+  </div> {% endcomment %}
 
   <div class="block-widget block-post">
-    <h3 class="block-widget__title">Trending Posts</h3>
+    <h3 class="block-widget__title">Latest Recipes</h3>
     <div class="block-widget__content">
       <div class="list-post">
         {% for article in trending_blog.articles limit: trending_post_limit %}
@@ -61,7 +61,7 @@
               {%- endif -%}
             </div>
             <div class="item-post__content">
-              <div class="item-post__by">by {{ article.author }}</div>
+              {% comment %} <div class="item-post__by">by {{ article.author }}</div> {% endcomment %}
               <h3 class="item-post__title">
                 <a href="{{ article.url }}">
                   {{ article.title | escape }}
