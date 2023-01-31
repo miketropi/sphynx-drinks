@@ -90,7 +90,7 @@
           "19885a8f-c73b-4bdd-94ca-7ff2a454ba83"
         ],
         "settings": {
-          "only_homepage": true,
+          "only_homepage": false,
           "enable_compact": false,
           "autorotate": true,
           "autorotate_speed": 5,
