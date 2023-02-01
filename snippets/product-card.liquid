@@ -330,7 +330,7 @@
                 href="{{ card_product.url | within: collection }}" 
                 class="button button--small quick-action-popup" 
                 tabindex="-1"
-                data-product-url="{{ card_product.url }}?view=quickaction">
+                data-product-url="{{ card_product.url | split: '?' | first }}?view=quickaction">
                 {% comment %} {{- 'products.product.view' | t -}} {% endcomment %}
                 {{- 'products.product.add_to_cart' | t -}}
               </a>
