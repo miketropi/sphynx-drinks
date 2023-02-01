@@ -83,88 +83,6 @@
       "settings": {
         "heading": "NON-ALCOHOLIC DRINKS &NON-ALCOHOLIC BEVERAGES FAQS",
         "padding_top": 36,
-        "padding_bottom": 36,
-        "custom_class": ""
-      }
-    },
-    "faq-1": {
-      "type": "faq",
-      "blocks": {
-        "question-0": {
-          "type": "question",
-          "settings": {
-            "title": "Mauris purus etiam in consectetur tempus?",
-            "text": "<p>Because a cat is chilled out and laid-back, with a no-stress attitude and a commitment to finer things in life. Because a cat is confident in its own skin (or fur), happy to run its own race and curious about doing things a little differently. And because when you're choosing non-alc drinks, whether it's every once in a while or as a permanent change, there's no more hair of the dog–it's about the good times, enjoying the moment, and not regretting it the next day.<\/p>"
-          }
-        },
-        "question-1": {
-          "type": "question",
-          "settings": {
-            "title": "Facilisis commodo vulputate justo?",
-            "text": "<p>Because a cat is chilled out and laid-back, with a no-stress attitude and a commitment to finer things in life. Because a cat is confident in its own skin (or fur), happy to run its own race and curious about doing things a little differently. And because when you're choosing non-alc drinks, whether it's every once in a while or as a permanent change, there's no more hair of the dog–it's about the good times, enjoying the moment, and not regretting it the next day.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "question-0",
-        "question-1"
-      ],
-      "settings": {
-        "heading": "Orders and Shipping",
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "custom_class": ""
-      }
-    },
-    "faq-2": {
-      "type": "faq",
-      "blocks": {
-        "question-0": {
-          "type": "question",
-          "settings": {
-            "title": "Mauris purus etiam in consectetur tempus?",
-            "text": "<p>Because a cat is chilled out and laid-back, with a no-stress attitude and a commitment to finer things in life. Because a cat is confident in its own skin (or fur), happy to run its own race and curious about doing things a little differently. And because when you're choosing non-alc drinks, whether it's every once in a while or as a permanent change, there's no more hair of the dog–it's about the good times, enjoying the moment, and not regretting it the next day.<\/p>"
-          }
-        },
-        "question-1": {
-          "type": "question",
-          "settings": {
-            "title": "Facilisis commodo vulputate justo?",
-            "text": "<p>Because a cat is chilled out and laid-back, with a no-stress attitude and a commitment to finer things in life. Because a cat is confident in its own skin (or fur), happy to run its own race and curious about doing things a little differently. And because when you're choosing non-alc drinks, whether it's every once in a while or as a permanent change, there's no more hair of the dog–it's about the good times, enjoying the moment, and not regretting it the next day.<\/p>"
-          }
-        },
-        "question-2": {
-          "type": "question",
-          "settings": {
-            "title": "Commodo pellentesque pharetra arcu dui blandit?",
-            "text": "<p>Because a cat is chilled out and laid-back, with a no-stress attitude and a commitment to finer things in life. Because a cat is confident in its own skin (or fur), happy to run its own race and curious about doing things a little differently. And because when you're choosing non-alc drinks, whether it's every once in a while or as a permanent change, there's no more hair of the dog–it's about the good times, enjoying the moment, and not regretting it the next day.<\/p>"
-          }
-        },
-        "question-3": {
-          "type": "question",
-          "settings": {
-            "title": "Viverra sem non viverra quam adipiscing dignissim?",
-            "text": "<p>Because a cat is chilled out and laid-back, with a no-stress attitude and a commitment to finer things in life. Because a cat is confident in its own skin (or fur), happy to run its own race and curious about doing things a little differently. And because when you're choosing non-alc drinks, whether it's every once in a while or as a permanent change, there's no more hair of the dog–it's about the good times, enjoying the moment, and not regretting it the next day.<\/p>"
-          }
-        },
-        "question-4": {
-          "type": "question",
-          "settings": {
-            "title": "Duis aliquam egestas amet montes faucibus?",
-            "text": "<p>Because a cat is chilled out and laid-back, with a no-stress attitude and a commitment to finer things in life. Because a cat is confident in its own skin (or fur), happy to run its own race and curious about doing things a little differently. And because when you're choosing non-alc drinks, whether it's every once in a while or as a permanent change, there's no more hair of the dog–it's about the good times, enjoying the moment, and not regretting it the next day.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "question-0",
-        "question-1",
-        "question-2",
-        "question-3",
-        "question-4"
-      ],
-      "settings": {
-        "heading": "Returns and Exchanges",
-        "padding_top": 36,
         "padding_bottom": 88,
         "custom_class": ""
       }
@@ -195,8 +113,6 @@
     "main",
     "page-title",
     "faq-0",
-    "faq-1",
-    "faq-2",
     "1a4b3c54-0f8b-4100-aa37-45783877fc32"
   ]
 }
