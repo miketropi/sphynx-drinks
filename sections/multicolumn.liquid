@@ -83,7 +83,7 @@
                       {% render 'icon', icon: 'arrow' %}
                     </a>
                   {%- else -%}
-                    <a class="button button--tertiary"{% if block.settings.button_link != blank %} href="{{ block.settings.button_link }}"{% else %} role="link" aria-disabled="true"{% endif %}>
+                    <a class="button"{% if block.settings.button_link != blank %} href="{{ block.settings.button_link }}"{% else %} role="link" aria-disabled="true"{% endif %}>
                       {{ block.settings.button_label | escape }}
                     </a>
                   {%- endif -%}
