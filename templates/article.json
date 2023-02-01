@@ -31,7 +31,7 @@
       "settings": {
         "padding_top": 48,
         "padding_bottom": 80,
-        "blog": "trending",
+        "blog": "recipes",
         "post_limit": 3
       }
     },
