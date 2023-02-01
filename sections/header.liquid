@@ -53,8 +53,8 @@
 
   <div class="site-header__container site-header__nth2 site-menu-container">
     <div class="site-container">
-      {% comment %} {%- render 'site-menu-inline', menu: section.settings.second_main_menu -%} {% endcomment %}
-      <div id="main-menu-header"></div>
+      {%- render 'site-menu-inline', menu: section.settings.second_main_menu -%}
+      {% comment %} <div id="main-menu-header"></div> {% endcomment %}
     </div> 
   </div>
 
@@ -83,8 +83,8 @@
       </div>
 
       <div class="site-mobile__menu">
-        {% comment %} {%- render 'site-menu-mobile', menu: section.settings.second_main_menu -%} {% endcomment %}
-        <div id="site-mobile__menu"></div>
+        {%- render 'site-menu-mobile', menu: section.settings.second_main_menu -%}
+        {% comment %} <div id="site-mobile__menu"></div> {% endcomment %}
       </div>
     </div>
   </div>

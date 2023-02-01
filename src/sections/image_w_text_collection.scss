@@ -19,7 +19,7 @@
             padding-bottom: 36px;
         }
 
-        &:nth-child(even) {
+        &:nth-child(odd) {
             .image-with-text__grid {
                 flex-direction: row-reverse;
 
@@ -35,7 +35,7 @@
             }
         }
 
-        &:nth-child(odd) {
+        &:nth-child(even) {
             .image-with-text__grid {
                 .image-with-text__content {
                     @media (min-width: 992px) {
@@ -122,6 +122,9 @@
             color: #8B8B8B;
             margin-bottom: 0;
             margin-top: 20px;
+            a{
+                color: #F05123;
+            }
         }
 
         &__button {

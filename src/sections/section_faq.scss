@@ -37,7 +37,7 @@
         }
 
         &__item {
-            margin-bottom: 30px;
+            margin-bottom: 10px;
             border-bottom: 2px solid #F05123;
 
             @media (max-width: 767px) {
@@ -79,7 +79,7 @@
             line-height: 146%;
             letter-spacing: 0;
             color: #8B8B8B;
-            padding-bottom: 50px;
+            padding-bottom: 30px;
 
             >*:first-child {
                 margin-top: 0;

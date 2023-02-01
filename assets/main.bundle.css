@@ -3598,7 +3598,7 @@ ul.menu-style-mobile li.menu-link .menu-icon-arrow.open {
   margin-bottom: 0;
 }
 .faq-section .faq__item {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   border-bottom: 2px solid #F05123;
 }
 @media (max-width: 767px) {
@@ -3637,7 +3637,7 @@ ul.menu-style-mobile li.menu-link .menu-icon-arrow.open {
   line-height: 146%;
   letter-spacing: 0;
   color: #8B8B8B;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 .faq-section .faq__answer > *:first-child {
   margin-top: 0;
@@ -5423,26 +5423,26 @@ iframe.ybSyad5RbtOghAuCHUvv {
     padding-bottom: 36px;
   }
 }
-.image-w-text-collection .image-with-text:nth-child(even) .image-with-text__grid {
+.image-w-text-collection .image-with-text:nth-child(odd) .image-with-text__grid {
   flex-direction: row-reverse;
 }
 @media (min-width: 992px) {
-  .image-w-text-collection .image-with-text:nth-child(even) .image-with-text__grid .image-with-text__content {
+  .image-w-text-collection .image-with-text:nth-child(odd) .image-with-text__grid .image-with-text__content {
     padding-right: 15px;
   }
 }
 @media (min-width: 1400px) {
-  .image-w-text-collection .image-with-text:nth-child(even) .image-with-text__grid .image-with-text__content {
+  .image-w-text-collection .image-with-text:nth-child(odd) .image-with-text__grid .image-with-text__content {
     padding-right: 50px;
   }
 }
 @media (min-width: 992px) {
-  .image-w-text-collection .image-with-text:nth-child(odd) .image-with-text__grid .image-with-text__content {
+  .image-w-text-collection .image-with-text:nth-child(even) .image-with-text__grid .image-with-text__content {
     padding-left: 15px;
   }
 }
 @media (min-width: 1400px) {
-  .image-w-text-collection .image-with-text:nth-child(odd) .image-with-text__grid .image-with-text__content {
+  .image-w-text-collection .image-with-text:nth-child(even) .image-with-text__grid .image-with-text__content {
     padding-left: 50px;
   }
 }
@@ -5503,6 +5503,9 @@ iframe.ybSyad5RbtOghAuCHUvv {
   color: #8B8B8B;
   margin-bottom: 0;
   margin-top: 20px;
+}
+.image-w-text-collection .image-with-text__text a {
+  color: #F05123;
 }
 .image-w-text-collection .image-with-text__button {
   font-family: "Montserrat";
