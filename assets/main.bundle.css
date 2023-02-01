@@ -419,7 +419,7 @@ body.__mini-cart-show .mini-cart {
   width: 80px;
 }
 .mini-cart__items table.cart-items tbody td.__thumb img {
-  background: #F05123;
+  background: transparent;
   margin-top: 6px;
   border-radius: 1px;
 }
