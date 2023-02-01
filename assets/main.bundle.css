@@ -3764,6 +3764,7 @@ ul.menu-style-mobile li.menu-link .menu-icon-arrow.open {
 }
 .morden-blog-section .morden-blog__list {
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: "myArea . ." "myArea . .";
   grid-gap: 40px;
 }
