@@ -180,7 +180,8 @@ theme.initWhenVisible = function(options) {
     if(key_s != ''){
       
     }else{
-      document.querySelector('input[name=q]').focus();
+      //document.querySelector('input[name=q]').focus();
+      console.log('sdfsf');
     }
     
   }));
