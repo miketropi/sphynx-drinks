@@ -175,7 +175,7 @@ theme.initWhenVisible = function(options) {
   */
 
 
-  document.querySelectorAll('.__search-icon').forEach(search => document.addEventListener('click', function(){
+  document.querySelectorAll('.__search-icon').forEach(search => this.addEventListener('click', function(){
     var key_s = document.querySelector('input[name=q]').value;
     if(key_s != ''){
       
