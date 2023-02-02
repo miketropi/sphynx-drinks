@@ -176,7 +176,13 @@ theme.initWhenVisible = function(options) {
 
 
   document.querySelectorAll('.__search-icon').forEach(search => document.addEventListener('click', function(){
-    console.log('test!!');
+    var key_s = document.querySelector('input[name=q]').value;
+    if(key_s != ''){
+      
+    }else{
+      document.querySelector('input[name=q]').focus();
+    }
+    
   }));
   
 })();
