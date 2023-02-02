@@ -174,9 +174,10 @@ theme.initWhenVisible = function(options) {
   }
   */
 
-  jQuery('.header-extra-tools__item.__search-form form .__search-icon').click(function(){
+
+  document.querySelectorAll('.__search-icon').forEach(search => document.addEventListener('click', function(){
     console.log('test!!');
-  });
+  }));
   
 })();
 
