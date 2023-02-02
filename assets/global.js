@@ -173,6 +173,11 @@ theme.initWhenVisible = function(options) {
     });
   }
   */
+
+  $('.header-extra-tools__item.__search-form form .__search-icon').click(function(){
+    console.log('test!!');
+  });
+  
 })();
 
 // Prevent vertical scroll while using flickity sliders
