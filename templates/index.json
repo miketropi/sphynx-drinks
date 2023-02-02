@@ -442,9 +442,9 @@
     "cd357b2a-fb79-4170-a634-95f0a4a293c5": {
       "type": "featured-collection-carousel",
       "settings": {
-        "collection": "beer",
-        "heading": "The best sellers",
-        "label_showall": "Shop all Best Sellers",
+        "collection": "everything",
+        "heading": "Shop all Non-Alcoholic Drinks",
+        "label_showall": "Shop all Non-Alcoholic Drinks",
         "link_showall": "shopify:\/\/collections\/bestsellers",
         "products_to_show": 6,
         "autoplay": true,
