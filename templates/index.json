@@ -200,8 +200,8 @@
     "1bb65e81-d3ba-45ca-9c38-6518c725ad12": {
       "type": "featured-collection-carousel",
       "settings": {
-        "collection": "bestsellers",
-        "heading": "The best sellers",
+        "collection": "beer",
+        "heading": "Non-Alcoholic Beer picked for you",
         "label_showall": "",
         "link_showall": "",
         "products_to_show": 6,
