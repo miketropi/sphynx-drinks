@@ -65,10 +65,8 @@ function ajaxAddToCart() {
     (0,_helpers__WEBPACK_IMPORTED_MODULE_0__.updateMiniCartUi)(html);
 
     // scroll on top
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
+    // window.scrollTo({ top: 0, behavior: 'smooth' })
+
     $('body').addClass('__mini-cart-show');
     setTimeout(function () {
       $('body').removeClass('__mini-cart-show');

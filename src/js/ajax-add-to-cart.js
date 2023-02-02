@@ -36,7 +36,7 @@ export default function ajaxAddToCart() {
     updateMiniCartUi(html);
 
     // scroll on top
-    window.scrollTo({ top: 0, behavior: 'smooth' })
+    // window.scrollTo({ top: 0, behavior: 'smooth' })
 
     $('body').addClass('__mini-cart-show');
     setTimeout(() => {
