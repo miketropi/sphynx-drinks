@@ -3334,3 +3334,8 @@ use-animate {
 .flickity-page-dot.is-selected::after {
   transform: scale(1.5);
 }
+
+.header-extra-tools__item.__search-form form .__search-icon{
+  pointer-events: visible !important;
+  cursor: pointer !important;
+}
