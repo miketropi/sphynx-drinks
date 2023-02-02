@@ -180,21 +180,11 @@ theme.initWhenVisible = function(options) {
     if(key_s != ''){
       
     }else{
-      //document.querySelector('input[name=q]').focus();
-      console.log('sdfsf');
+      document.querySelector('input[name=q]').focus();
     }
     
   }));
 
-  // document.getElementsByClassName(".__search-icon")[0].addEventListener('click', function(){
-  //   var key_s = document.querySelector('input[name=q]').value;
-  //   if(key_s != ''){
-      
-  //   }else{
-  //     //document.querySelector('input[name=q]').focus();
-  //     console.log('sdfsf');
-  //   }
-  // });
   
 })();
 
