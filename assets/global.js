@@ -175,7 +175,18 @@ theme.initWhenVisible = function(options) {
   */
 
 
-  document.querySelectorAll('.__search-icon').forEach(search => this.addEventListener('click', function(){
+  // document.querySelectorAll('.__search-icon').forEach(search => this.addEventListener('click', function(){
+  //   var key_s = document.querySelector('input[name=q]').value;
+  //   if(key_s != ''){
+      
+  //   }else{
+  //     //document.querySelector('input[name=q]').focus();
+  //     console.log('sdfsf');
+  //   }
+    
+  // }));
+
+  document.getElementsByClassName(".__search-icon").addEventListener('click', function(){
     var key_s = document.querySelector('input[name=q]').value;
     if(key_s != ''){
       
@@ -183,8 +194,7 @@ theme.initWhenVisible = function(options) {
       //document.querySelector('input[name=q]').focus();
       console.log('sdfsf');
     }
-    
-  }));
+  });
   
 })();
 
