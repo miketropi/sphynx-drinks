@@ -136,7 +136,7 @@
       "settings": {
         "collection": "bestsellers",
         "heading": "Special offers",
-        "label_showall": "",
+        "label_showall": "Shop Specials",
         "link_showall": "",
         "products_to_show": 6,
         "autoplay": true,
@@ -202,7 +202,7 @@
       "settings": {
         "collection": "beer",
         "heading": "Non-Alcoholic Beer picked for you",
-        "label_showall": "",
+        "label_showall": "Shop Beer",
         "link_showall": "",
         "products_to_show": 6,
         "autoplay": true,
@@ -444,7 +444,7 @@
       "settings": {
         "collection": "everything",
         "heading": "Shop all Non-Alcoholic Drinks",
-        "label_showall": "Shop all Non-Alcoholic Drinks",
+        "label_showall": "Shop all Drinks",
         "link_showall": "shopify:\/\/collections\/bestsellers",
         "products_to_show": 6,
         "autoplay": true,
