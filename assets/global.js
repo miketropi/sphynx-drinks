@@ -178,7 +178,7 @@ theme.initWhenVisible = function(options) {
   document.querySelectorAll('.__search-icon').forEach(search => search.addEventListener('click', function(){
     var key_s = document.querySelector('input[name=q]').value;
     if(key_s != ''){
-      
+      document.querySelector('input[value=Search]').click();
     }else{
       document.querySelector('input[name=q]').focus();
     }
