@@ -255,8 +255,8 @@
     "2d3fbef1-fbe7-43ba-99a1-9f9008bf4d0b": {
       "type": "featured-collection-carousel",
       "settings": {
-        "collection": "bestsellers",
-        "heading": "Featured collection",
+        "collection": "wine",
+        "heading": "Non-Alcoholic Wine picked for you",
         "label_showall": "Shop all Best Sellers",
         "link_showall": "shopify:\/\/collections\/bestsellers",
         "products_to_show": 6,
