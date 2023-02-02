@@ -122,6 +122,7 @@
     @media(max-width: 991.98px) {
         .morden-blog {
             &__list {
+                grid-template-columns: 1fr 1fr;
                 grid-template-areas:
                     'myArea . '
                     'myArea . '
@@ -133,6 +134,7 @@
     @media(max-width: 767.98px) {
         .morden-blog {
             &__list {
+                grid-template-columns: 1fr;
                 grid-template-areas:
                     'myArea'
                     'myArea'
