@@ -174,7 +174,7 @@ theme.initWhenVisible = function(options) {
   }
   */
 
-  $('.header-extra-tools__item.__search-form form .__search-icon').click(function(){
+  jQuery('.header-extra-tools__item.__search-form form .__search-icon').click(function(){
     console.log('test!!');
   });
   
