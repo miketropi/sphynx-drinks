@@ -326,12 +326,13 @@ var customFilterProduct = function customFilterProduct() {
         $(this).hide();
       }
     }
-    if (filterItem.indexOf("Product type") != -1) {
-      console.log(filterItem);
-      $(this).find('.facets__selected').text('Type');
-    }
+
+    // if (filterItem.indexOf("Product type") != -1) {
+    //   $(this).find('.facets__selected').text('Type')
+    // }
   });
 };
+
 customFilterProduct();
 
 /***/ }),
