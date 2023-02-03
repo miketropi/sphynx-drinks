@@ -198,7 +198,7 @@
 }
 
 #shopify-product-reviews .spr-review {
-  padding-bottom: 3rem;
+  padding-bottom: 1.5rem;
 }
 
 @media screen and (min-width: 750px) {
@@ -207,7 +207,7 @@
   }
 
   #shopify-product-reviews .spr-review {
-    padding-top: 4rem;
+    padding-top: 1.5rem;
   }
 
   #shopify-product-reviews .spr-review:first-child {
@@ -324,7 +324,7 @@
   #shopify-product-reviews .spr-review-content {
     /* margin-top: -5rem; */
     /* padding-inline-start: 22rem; */
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
   }
 
   #shopify-product-reviews .spr-review-reply {
