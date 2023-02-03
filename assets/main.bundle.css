@@ -704,6 +704,10 @@ body.__quick-popup-show .__popup-quick-action-product {
   text-align: center;
 }
 
+a[href="/collections/specials"] {
+  color: #FFC85E !important;
+}
+
 .site-header {
   position: relative;
   background-color: #F05123;
