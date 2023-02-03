@@ -833,7 +833,7 @@
         "944cc9a6-c043-4f02-a7fa-73ce3b2ce08a": {
           "type": "collection_gallery_item",
           "settings": {
-            "collection": "4-pines",
+            "collection": "cider",
             "image": "shopify:\/\/shop_images\/c2.jpg",
             "name": "NON-ALCOHOLIC CIDER",
             "text_color": "#ffffff",
@@ -846,7 +846,7 @@
         "2385986d-cc2d-4d2a-a5fd-6e36750e5e16": {
           "type": "collection_gallery_item",
           "settings": {
-            "collection": "absolute-zero",
+            "collection": "tonic-and-soda",
             "image": "shopify:\/\/shop_images\/c3.jpg",
             "name": "TONIC AND SODA",
             "text_color": "#ffffff",
