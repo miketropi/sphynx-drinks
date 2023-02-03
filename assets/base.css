@@ -1527,7 +1527,7 @@ deferred-media {
   box-shadow: inset 0 0 0 0.1rem rgb(var(--color-button-border));
   transition: box-shadow var(--duration-default) ease;
   /*   CUSTOM CODE */
-  background: #ED388F;
+  background: #f05124;
   color: #fff;
 }
 

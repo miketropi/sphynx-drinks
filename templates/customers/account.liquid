@@ -11,7 +11,7 @@
   </div>
 
   <div class="grid main-page-account">
-    <div class="grid__item grid__item--three-quarter">
+    <div class="grid__item">
       <h2>{{ 'customer.orders.title' | t }}</h2>
 
       {% paginate customer.orders by 20 %}
@@ -103,7 +103,7 @@
       {% endpaginate %}
     </div>
 
-    <div class="grid__item grid__item--one-quarter">
+    <div class="grid__item">
       <h2>{{ 'customer.account.details' | t }}</h2>
 
       {{ customer.default_address | format_address }}
@@ -119,7 +119,7 @@
 <br /> -->
 <!-- Seal Subscriptions auto installation end -->
       
-<a class="button button--tertiary" href="{{ routes.account_addresses_url }}">
+<a class="button button-view-address" href="{{ routes.account_addresses_url }}">
         {{ 'customer.account.view_addresses' | t }} ({{ customer.addresses_count }})
       </a>
     </div>
