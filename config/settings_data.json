@@ -211,7 +211,7 @@
           "only_homepage": true,
           "only_visitor": true,
           "delay": 20,
-          "expiry": 30,
+          "expiry": 1,
           "width": 600,
           "padding": 40,
           "text_alignment": "center",
