@@ -48,7 +48,7 @@
         >
           <div class="multicolumn-card">
             {%- if block.settings.image != blank -%}
-              <use-animate data-animate="zoom-fade" class="media-wrapper-z">
+              <use-animate data-animate="zoom-fade" class="media-wrapper">
                 <lazy-image class="image-animate media media--{{ section.settings.image_ratio }}"
                   {%- if section.settings.image_ratio == 'adapt' %} style="--image-ratio-percent: {{ 1 | divided_by: highest_ratio | times: 100 }}%;"{% endif -%}
                 >
