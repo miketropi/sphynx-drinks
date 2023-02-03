@@ -42,7 +42,7 @@
         "description": "",
         "redirect_label": "Shop Non-Alc Beer",
         "redirect_url": "#",
-        "collection": "beer",
+        "collection": "non-alcoholic-beer-australia",
         "limit_number": 6,
         "background_color": "#ffffff",
         "spacing_top": "3em",
