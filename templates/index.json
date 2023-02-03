@@ -203,7 +203,7 @@
         "collection": "non-alcoholic-beer-australia",
         "heading": "Non-Alcoholic Beer picked for you",
         "label_showall": "Shop Beer",
-        "link_showall": "",
+        "link_showall": "shopify:\/\/collections\/non-alcoholic-beer-australia",
         "products_to_show": 6,
         "autoplay": true,
         "arrows": true,
