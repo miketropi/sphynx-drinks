@@ -235,7 +235,7 @@
         "a6f4f40e-154f-49a2-817a-8ba834be1beb": {
           "type": "collection_gallery_item",
           "settings": {
-            "collection": "absolute-zero",
+            "collection": "beer",
             "image": "shopify:\/\/shop_images\/c1.jpg",
             "name": "non-alcoholic BEER",
             "text_color": "#ffffff",
@@ -248,7 +248,7 @@
         "28b87199-d642-44c6-871c-9c1865d6b0a2": {
           "type": "collection_gallery_item",
           "settings": {
-            "collection": "almost-zero",
+            "collection": "wine",
             "image": "shopify:\/\/shop_images\/c4.jpg",
             "name": "non-alcoholic wine",
             "text_color": "#ffffff",
