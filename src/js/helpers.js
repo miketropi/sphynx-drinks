@@ -71,6 +71,11 @@ const customFilterProduct = () => {
       }
     }
 
+    if (collectionName != 'Products') {
+      if (filterItem.indexOf("Product type") != -1) {
+        $(this).hide();
+      }
+    }
     // if (filterItem.indexOf("Product type") != -1) {
     //   $(this).find('.facets__selected').text('Type')
     // }
