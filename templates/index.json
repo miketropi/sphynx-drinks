@@ -445,7 +445,7 @@
         "collection": "everything",
         "heading": "Shop all Non-Alcoholic Drinks",
         "label_showall": "Shop all Drinks",
-        "link_showall": "shopify:\/\/collections",
+        "link_showall": "https:\/\/sphynxdrinks.com.au\/collections\/all",
         "products_to_show": 6,
         "autoplay": true,
         "arrows": true,
