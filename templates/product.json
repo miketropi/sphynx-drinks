@@ -859,7 +859,7 @@
         "dfbc02da-64e2-4dfa-9ef6-444f04fab8e9": {
           "type": "collection_gallery_item",
           "settings": {
-            "collection": "almost-zero",
+            "collection": "wine",
             "image": "shopify:\/\/shop_images\/c4.jpg",
             "name": "NON-ALCOHOLIC WINE",
             "text_color": "#ffffff",
@@ -872,7 +872,7 @@
         "a929520e-fdcb-45d8-9ac3-aff43835e062": {
           "type": "collection_gallery_item",
           "settings": {
-            "collection": "altina",
+            "collection": "spirits",
             "image": "shopify:\/\/shop_images\/c5.jpg",
             "name": "NON-ALCOHOLIC SPIRITS",
             "text_color": "#ffffff",
@@ -885,7 +885,7 @@
         "739aabc3-2eb6-4bec-954d-54add7115078": {
           "type": "collection_gallery_item",
           "settings": {
-            "collection": "amplify",
+            "collection": "mixers",
             "image": "shopify:\/\/shop_images\/c6.jpg",
             "name": "MIXERS",
             "text_color": "#ffffff",
@@ -898,7 +898,7 @@
         "d14b991a-96fc-4005-adae-9c53d17a3f29": {
           "type": "collection_gallery_item",
           "settings": {
-            "collection": "apple-thief",
+            "collection": "pre-mixed",
             "image": "shopify:\/\/shop_images\/c7.jpg",
             "name": "PREMIXED",
             "text_color": "#ffffff",
