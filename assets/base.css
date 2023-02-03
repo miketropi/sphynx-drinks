@@ -3339,3 +3339,7 @@ use-animate {
   pointer-events: visible !important;
   cursor: pointer !important;
 }
+
+.multicolumn-card .media-wrapper{
+  background-color: transparent;
+}

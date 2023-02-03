@@ -210,7 +210,7 @@
           "mode": "enabled",
           "only_homepage": true,
           "only_visitor": true,
-          "delay": 25,
+          "delay": 20,
           "expiry": 30,
           "width": 600,
           "padding": 40,

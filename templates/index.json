@@ -71,7 +71,7 @@
         "e2842fd5-ef1f-4b1b-bb17-d6445a118f80": {
           "type": "box_collection_item",
           "settings": {
-            "collection": "spirits",
+            "collection": "non-alcoholic-spirits-australia",
             "image": "shopify:\/\/shop_images\/wine.png",
             "image_hover": "shopify:\/\/shop_images\/Rectangle_118.png"
           }
@@ -137,7 +137,7 @@
         "collection": "bestsellers",
         "heading": "Special offers",
         "label_showall": "Shop Specials",
-        "link_showall": "",
+        "link_showall": "shopify:\/\/collections\/specials",
         "products_to_show": 6,
         "autoplay": true,
         "arrows": true,
@@ -203,7 +203,7 @@
         "collection": "non-alcoholic-beer-australia",
         "heading": "Non-Alcoholic Beer picked for you",
         "label_showall": "Shop Beer",
-        "link_showall": "",
+        "link_showall": "shopify:\/\/collections\/non-alcoholic-beer-australia",
         "products_to_show": 6,
         "autoplay": true,
         "arrows": true,
@@ -258,7 +258,7 @@
         "collection": "non-alcoholic-wine-australia",
         "heading": "Non-Alcoholic Wine picked for you",
         "label_showall": "Shop Wine",
-        "link_showall": "shopify:\/\/collections\/bestsellers",
+        "link_showall": "shopify:\/\/collections\/non-alcoholic-wine-australia",
         "products_to_show": 6,
         "autoplay": true,
         "arrows": true,
@@ -379,7 +379,7 @@
         "c4511fab-d01e-4562-98cd-a640921f13bb": {
           "type": "box_collection_item",
           "settings": {
-            "collection": "spirits",
+            "collection": "non-alcoholic-spirits-australia",
             "image": "shopify:\/\/shop_images\/wine.png",
             "image_hover": "shopify:\/\/shop_images\/Rectangle_118.png"
           }
@@ -445,7 +445,7 @@
         "collection": "everything",
         "heading": "Shop all Non-Alcoholic Drinks",
         "label_showall": "Shop all Drinks",
-        "link_showall": "shopify:\/\/collections\/bestsellers",
+        "link_showall": "https:\/\/sphynxdrinks.com.au\/collections\/all",
         "products_to_show": 6,
         "autoplay": true,
         "arrows": true,

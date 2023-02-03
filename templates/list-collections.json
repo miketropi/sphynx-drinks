@@ -200,7 +200,7 @@
         "description": "",
         "redirect_label": "Shop Non-Alc Spirits",
         "redirect_url": "#",
-        "collection": "spirits",
+        "collection": "non-alcoholic-spirits-australia",
         "limit_number": 6,
         "background_color": "#ffffff",
         "spacing_top": "3em",
