@@ -292,7 +292,7 @@
         "font_size": 36,
         "font_family": "Flavory Display",
         "font_weight": "900",
-        "heading_color": "#000",
+        "heading_color": "#000000",
         "bg_color": "#f05123",
         "btn_label": "Button Label",
         "button_link": "",
@@ -374,7 +374,7 @@
             "font_size": 36,
             "font_family": "Flavory Display",
             "font_weight": "900",
-            "heading_color": "#000"
+            "heading_color": "#000000"
           }
         },
         "text": {
@@ -384,7 +384,7 @@
             "text": "<p><em>– SUBHEADING<\/em><\/p>",
             "font_size": 16,
             "font_weight": "400",
-            "desc_color": "#000"
+            "desc_color": "#000000"
           }
         },
         "342dca6a-5061-4618-866c-ed6bf6cd9cd9": {
@@ -394,7 +394,7 @@
             "font_size": 36,
             "font_family": "Flavory Display",
             "font_weight": "900",
-            "heading_color": "#000"
+            "heading_color": "#000000"
           }
         }
       },
@@ -730,12 +730,12 @@
             "fz_title": 36,
             "ff_title": "Flavory Display",
             "fw_title": "900",
-            "heading_color": "#000",
+            "heading_color": "#000000",
             "text": "<p>Find out more about the cool cats at Sphynx Drinks and hear how it purred to life.<\/p>",
             "fz_text": 16,
             "ff_text": "Flavory Display",
             "fw_text": "400",
-            "desc_color": "#8B8B8B",
+            "desc_color": "#8b8b8b",
             "button_label": "READ MORE",
             "button_link": "shopify:\/\/pages\/our-story",
             "button_style_secondary": false
@@ -749,12 +749,12 @@
             "fz_title": 36,
             "ff_title": "Flavory Display",
             "fw_title": "900",
-            "heading_color": "#000",
+            "heading_color": "#000000",
             "text": "<p>Reach out to us to get advice on our range, partner with us or chinwag about all things Sphynx.<\/p>",
             "fz_text": 16,
             "ff_text": "Flavory Display",
             "fw_text": "400",
-            "desc_color": "#8B8B8B",
+            "desc_color": "#8b8b8b",
             "button_label": "CONTACT",
             "button_link": "shopify:\/\/pages\/contact",
             "button_style_secondary": false
@@ -768,12 +768,12 @@
             "fz_title": 36,
             "ff_title": "Flavory Display",
             "fw_title": "900",
-            "heading_color": "#000",
+            "heading_color": "#000000",
             "text": "<p>PUB TRIVIA: FAQs Want to dive into the fine print? Pull up a stool and browse our FAQs, from shipping timelines to returns policies.<\/p>",
             "fz_text": 16,
             "ff_text": "Flavory Display",
             "fw_text": "400",
-            "desc_color": "#8B8B8B",
+            "desc_color": "#8b8b8b",
             "button_label": "FIND OUT MORE",
             "button_link": "shopify:\/\/pages\/faq",
             "button_style_secondary": false
@@ -820,10 +820,10 @@
         "92b586c7-8916-4227-94a3-7c93792382e3": {
           "type": "collection_gallery_item",
           "settings": {
-            "collection": "1883",
+            "collection": "beer",
             "image": "shopify:\/\/shop_images\/c1.jpg",
             "name": "NON-ALCOHOLIC BEER",
-            "text_color": "#FFFFFF",
+            "text_color": "#ffffff",
             "hover_color_background": "#000000",
             "redirect_url": "",
             "box_size": "size_1",
@@ -836,7 +836,7 @@
             "collection": "4-pines",
             "image": "shopify:\/\/shop_images\/c2.jpg",
             "name": "NON-ALCOHOLIC CIDER",
-            "text_color": "#FFFFFF",
+            "text_color": "#ffffff",
             "hover_color_background": "#000000",
             "redirect_url": "",
             "box_size": "size_2",
@@ -849,7 +849,7 @@
             "collection": "absolute-zero",
             "image": "shopify:\/\/shop_images\/c3.jpg",
             "name": "TONIC AND SODA",
-            "text_color": "#FFFFFF",
+            "text_color": "#ffffff",
             "hover_color_background": "#000000",
             "redirect_url": "",
             "box_size": "size_1",
@@ -862,7 +862,7 @@
             "collection": "almost-zero",
             "image": "shopify:\/\/shop_images\/c4.jpg",
             "name": "NON-ALCOHOLIC WINE",
-            "text_color": "#FFFFFF",
+            "text_color": "#ffffff",
             "hover_color_background": "#000000",
             "redirect_url": "",
             "box_size": "size_2",
@@ -875,7 +875,7 @@
             "collection": "altina",
             "image": "shopify:\/\/shop_images\/c5.jpg",
             "name": "NON-ALCOHOLIC SPIRITS",
-            "text_color": "#FFFFFF",
+            "text_color": "#ffffff",
             "hover_color_background": "#000000",
             "redirect_url": "",
             "box_size": "size_1",
@@ -888,7 +888,7 @@
             "collection": "amplify",
             "image": "shopify:\/\/shop_images\/c6.jpg",
             "name": "MIXERS",
-            "text_color": "#FFFFFF",
+            "text_color": "#ffffff",
             "hover_color_background": "#000000",
             "redirect_url": "",
             "box_size": "size_1",
@@ -901,7 +901,7 @@
             "collection": "apple-thief",
             "image": "shopify:\/\/shop_images\/c7.jpg",
             "name": "PREMIXED",
-            "text_color": "#FFFFFF",
+            "text_color": "#ffffff",
             "hover_color_background": "#000000",
             "redirect_url": "",
             "box_size": "size_1",
