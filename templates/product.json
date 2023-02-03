@@ -181,19 +181,6 @@
           "settings": {
             "show_quantity_selector": true
           }
-        },
-        "787c2308-ff7f-454c-aa36-9a330887003a": {
-          "type": "shopify:\/\/apps\/back-in-stock-customer-alerts\/blocks\/app-block\/bfa6a8c4-24e2-411a-9396-e35031b33f34",
-          "settings": {
-            "caption": "Email when available",
-            "font_size": 16,
-            "color": "#ffffff",
-            "background_color": "#000000",
-            "margin_top": 10,
-            "margin_bottom": 10,
-            "classes": "button button--full-width",
-            "style": "text-decoration:none"
-          }
         }
       },
       "block_order": [
@@ -219,8 +206,7 @@
         "68164fad-d775-495e-96b4-6bd798803c71",
         "share",
         "related_buttons",
-        "sticky_cart",
-        "787c2308-ff7f-454c-aa36-9a330887003a"
+        "sticky_cart"
       ],
       "settings": {
         "enable_sticky_info": true,
