@@ -90,9 +90,15 @@
               {%- else -%}
                 <span class="__sold-out">Sold Out</span>
               {%- endif -%}
+
+              {% if product.available == false %}
+                <button id="BIS_trigger" type="button" class="button btn-notify-available">NOTIFY ME WHEN AVAILABLE</button>
+              {% endif %}
             </div>
           {% endcase %}
+
         {%- endfor -%}
+        
       </div>
       <!-- .__product-info -->
     </div>

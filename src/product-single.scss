@@ -143,6 +143,15 @@
     text-align: center;
   }
 
+  .btn-notify-available{
+    border-radius: 8px;
+    width: 100%;
+    margin-top: 10px;
+    @media (max-width: 600px){
+      letter-spacing: normal;
+    }
+  }
+
   button[type=submit] {
     width: 100%;
     border-radius: 8px;

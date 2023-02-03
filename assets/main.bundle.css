@@ -4193,6 +4193,16 @@ ul.menu-style-mobile li.menu-link .menu-icon-arrow.open {
   width: 100%;
   text-align: center;
 }
+.__product-add-cart-form .btn-notify-available {
+  border-radius: 8px;
+  width: 100%;
+  margin-top: 10px;
+}
+@media (max-width: 600px) {
+  .__product-add-cart-form .btn-notify-available {
+    letter-spacing: normal;
+  }
+}
 .__product-add-cart-form button[type=submit] {
   width: 100%;
   border-radius: 8px;

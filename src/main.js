@@ -14,3 +14,4 @@ import './js/ajax-add-to-cart';
 
 initHomeSlider();
 initPanelCarousel();
+
