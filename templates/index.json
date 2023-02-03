@@ -137,7 +137,7 @@
         "collection": "bestsellers",
         "heading": "Special offers",
         "label_showall": "Shop Specials",
-        "link_showall": "",
+        "link_showall": "shopify:\/\/collections\/specials",
         "products_to_show": 6,
         "autoplay": true,
         "arrows": true,
