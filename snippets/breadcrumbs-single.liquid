@@ -8,7 +8,11 @@
         href="{{ routes.root_url }}"
         class="__bc-item"
         title="{{ 'general.breadcrumbs.home_link_title' | t }}">{{ 'general.breadcrumbs.home' | t }}</a>
-
+      <span class="__slash">/</span>
+      <a
+        class="__bc-item"
+        href="/collections"
+        title="Collections">Collections</a>
       {% comment %} Collection {% endcomment %}
       {%- if collectionItem -%}
         <span class="__slash">/</span>
