@@ -63,7 +63,7 @@
         "045c7c40-d824-4b32-96ff-b2c40baa4226": {
           "type": "box_collection_item",
           "settings": {
-            "collection": "wine",
+            "collection": "non-alcoholic-wine-australia",
             "image": "shopify:\/\/shop_images\/wine-glass.png",
             "image_hover": "shopify:\/\/shop_images\/Rectangle_118.png"
           }
@@ -255,7 +255,7 @@
     "2d3fbef1-fbe7-43ba-99a1-9f9008bf4d0b": {
       "type": "featured-collection-carousel",
       "settings": {
-        "collection": "wine",
+        "collection": "non-alcoholic-wine-australia",
         "heading": "Non-Alcoholic Wine picked for you",
         "label_showall": "Shop Wine",
         "link_showall": "shopify:\/\/collections\/bestsellers",
@@ -371,7 +371,7 @@
         "787beabd-9168-4a0b-97af-8f870b5fcaf4": {
           "type": "box_collection_item",
           "settings": {
-            "collection": "wine",
+            "collection": "non-alcoholic-wine-australia",
             "image": "shopify:\/\/shop_images\/wine-glass.png",
             "image_hover": "shopify:\/\/shop_images\/Rectangle_118.png"
           }
