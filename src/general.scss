@@ -575,12 +575,17 @@ body.__mini-cart-show {
 }
 
 .quick-action-product {
+  width: calc(100% - 30px);
+  margin: 0 auto;
   width: 500px;
   padding: 2em;
   box-sizing: border-box;
   background-color: white;
   border-radius: 16px;
-
+  @media (max-width: 600px){
+    width: calc(100% - 30px);
+    max-width: 500px;
+  }
   .__product-title {
     font-family: 'Montserrat';
     font-weight: bold;
@@ -661,6 +666,9 @@ body.__mini-cart-show {
     margin-bottom: .5em;
     cursor: pointer;
     transition: .3s ease;
+    @media (max-width: 600px){
+      margin-right: 15px;
+    }
   }
 
   .__desc {

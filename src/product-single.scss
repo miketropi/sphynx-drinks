@@ -12,6 +12,7 @@
       display: flex;
       justify-content: space-between;
       padding-top: 60px;
+
       @media(max-width: 768px) {
         width: 100%;
         flex-direction: column-reverse;
@@ -28,6 +29,7 @@
         flex-wrap: wrap;
         gap: 5px;
         flex-direction: column;
+
         @media(max-width: 768px) {
           padding-top: 0;
           width: 100%;
@@ -55,6 +57,7 @@
 
       .main-product__image {
         width: 70%;
+
         @media(max-width: 768px) {
           width: 100%;
           margin-bottom: 15px;
@@ -143,11 +146,12 @@
     text-align: center;
   }
 
-  .btn-notify-available{
+  .btn-notify-available {
     border-radius: 8px;
     width: 100%;
     margin-top: 10px;
-    @media (max-width: 600px){
+
+    @media (max-width: 600px) {
       letter-spacing: normal;
     }
   }
@@ -180,7 +184,9 @@
   .__product-variant-select {
     width: 65%;
     position: relative;
-
+    @media (max-width: 600px) {
+      margin-right: 5px;
+    }
     &:after {
       content: "";
       position: absolute;
@@ -229,7 +235,12 @@
       -ms-user-select: none;
       /* IE 10 and IE 11 */
       user-select: none;
+
       /* Standard syntax */
+      @media (max-width: 600px) {
+        width: 35.66px;
+        height: 35.66px;
+      }
 
       svg {
         transform: scale(.6);
@@ -248,7 +259,9 @@
       appearance: none;
       -moz-appearance: none;
       -webkit-appearance: none;
-
+      @media (max-width: 600px){
+        width: 40px;
+      }
       &::-webkit-outer-spin-button,
       &::-webkit-inner-spin-button {
         appearance: none;
