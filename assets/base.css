@@ -3355,3 +3355,7 @@ use-animate {
 .slide-product-container .product-slide-item__inner{
   border: none !important;
 }
+
+.product-carousel .slide-product-container .product-slide-item .quick-container{
+  display:none;
+}
