@@ -3344,10 +3344,10 @@ use-animate {
   background-color: transparent;
 }
 
-.product-grid .grid__item .card-wrapper{
+.product-grid .grid__item .card-wrapper,.section-prod-cat-carousel .product-cat-carousel .section-row .section-col.product-cat-carousel .product-cat-carousel-inner .card-wrapper{
   border: none !important;
 }
 
-.product-grid .grid__item .card-wrapper:hover{
+.product-grid .grid__item .card-wrapper:hover,.section-prod-cat-carousel .product-cat-carousel .section-row .section-col.product-cat-carousel .product-cat-carousel-inner .card-wrapper:hover{
   border: none !important;
 }
