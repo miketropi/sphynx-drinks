@@ -3343,3 +3343,7 @@ use-animate {
 .multicolumn-card .media-wrapper{
   background-color: transparent;
 }
+
+.product-grid .grid__item .card-wrapper:hover{
+  border: none !important;
+}
