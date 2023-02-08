@@ -307,6 +307,12 @@
         "settings": {
           "version": "v3"
         }
+      },
+      "17676569757753803255": {
+        "type": "shopify:\/\/apps\/cartix-cart-discounts-upsell\/blocks\/app-embed\/e1e19d44-60f2-4f05-8156-49ac0f614adf",
+        "disabled": false,
+        "settings": {
+        }
       }
     }
   },
