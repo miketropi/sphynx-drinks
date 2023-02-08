@@ -3344,6 +3344,10 @@ use-animate {
   background-color: transparent;
 }
 
+.product-grid .grid__item .card-wrapper{
+  border: none !important;
+}
+
 .product-grid .grid__item .card-wrapper:hover{
   border: none !important;
 }
