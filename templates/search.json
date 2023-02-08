@@ -8,7 +8,7 @@
         "columns_mobile": "2",
         "enable_sticky_facet": false,
         "enable_filtering": false,
-        "filter_type": "horizontal",
+        "filter_type": "vertical",
         "enable_sorting": false,
         "enable_viewing": false,
         "image_ratio": "portrait",
