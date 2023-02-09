@@ -186,12 +186,16 @@ theme.initWhenVisible = function(options) {
   }));
 
   document.querySelectorAll('.__qty-update').forEach(search => search.addEventListener('click', function(){
-    var qty = document.querySelector('input[name="quantity"]').value;
-    var e  = document.getElementById("productSelect");
-    var option= e.options[e.selectedIndex];
-    var price = option.getAttribute("data-price");
-    var priceClear = price.replace('$','');
-    console.log(priceClear);
+    setTimeout(function () {
+      var qty = document.querySelector('input[name="quantity"]').value;
+      var e  = document.getElementById("productSelect");
+      var option= e.options[e.selectedIndex];
+      var price = option.getAttribute("data-price");
+      var initialPrice = price.replace('$','');
+      let newPrice = initialPrice * qty;
+      var el = document.querySelector(".current-price"); 
+      el[0].innerHtml = '$'+ newPrice;
+    },200);
     
   }));
 
