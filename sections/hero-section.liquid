@@ -11,13 +11,13 @@
           {%- case block.type -%}
             {%- when 'heading' -%}
               {%- if block.settings.heading != blank -%}
-                <h1
+                <p
                   class="col-content--heading"
                   style="font-family: {{block.settings.font_family}}; font-size: {{block.settings.font_size}}px; color: {{block.settings.heading_color}}; font-weight: {{block.settings.font_weight}};"
                   {{ block.shopify_attributes }}
                 >
                   {{ block.settings.heading }}
-                </h1>
+                </p>
               {%- endif -%}
             {%- when 'description' -%}
               {%- if block.settings.text != blank -%}
