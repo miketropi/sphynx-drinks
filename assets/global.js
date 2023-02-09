@@ -185,6 +185,12 @@ theme.initWhenVisible = function(options) {
     
   }));
 
+  document.querySelectorAll('.__search-icon').forEach(search => search.addEventListener('click', function(){
+    var qty = document.querySelector('.__qty-update').value;
+    console.log(qty);
+    
+  }));
+
   
 })();
 
