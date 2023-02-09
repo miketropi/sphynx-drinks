@@ -3369,6 +3369,10 @@ use-animate {
   line-height: 22px;
 }
 
+.shipping-savings-message b{
+  font-weight:600;
+}
+
 .template-cart .icartShopifyCartContent .shipping-savings-message{
   border-bottom: none;
   border-right: none;
