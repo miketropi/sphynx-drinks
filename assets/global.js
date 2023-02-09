@@ -193,8 +193,8 @@ theme.initWhenVisible = function(options) {
       var price = option.getAttribute("data-price");
       var initialPrice = price.replace('$','');
       let newPrice = initialPrice * qty;
-      var el = document.querySelector(".current-price"); 
-      el.innerHtml = '$'+ newPrice;
+      var el = document.getElementsByClassName("current-price"); 
+      el[0].innerHtml = '$'+ newPrice;
     },200);
     
   }));
