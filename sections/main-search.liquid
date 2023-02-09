@@ -192,8 +192,9 @@
                     assign grid_class = grid_class | append: ' grid--3-col-tablet grid--4-col-desktop'
                   endif
                 -%}
+                {% assign search_products = search.results | sort:'title' %}
                 <ul id="product-grid" data-id="{{ section.id }}" class="product-grid {{ grid_class }}" role="list">
-                  {%- for item in search.results -%}
+                  {%- for item in search_products -%}
                     {%- liquid
                       assign lazy_load = true
                       if forloop.first
