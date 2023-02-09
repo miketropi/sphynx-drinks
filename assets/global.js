@@ -190,7 +190,8 @@ theme.initWhenVisible = function(options) {
     var item = this.closest('.cart-item');
     setTimeout(function () {
       var qty = item.querySelector('input[type="number"]').value;
-      var price = item.querySelector(".price--end");
+      var price = item.querySelector(".price--end").innerText;
+      console.log(price);
       var initialPrice = price.replace('$','');
       let newPrice = initialPrice * qty;
       console.log(newPrice);
