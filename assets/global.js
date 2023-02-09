@@ -193,6 +193,7 @@ theme.initWhenVisible = function(options) {
       var price = option.getAttribute("data-price");
       var initialPrice = price.replace('$','');
       let newPrice = initialPrice * qty;
+      console.log(newPrice);
       var el = document.getElementsByClassName("current-price"); 
       el[0].innerHtml = '$'+ newPrice;
     },200);
