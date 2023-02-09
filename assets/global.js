@@ -191,11 +191,9 @@ theme.initWhenVisible = function(options) {
     setTimeout(function () {
       var qty = item.querySelector('input[type="number"]').value;
       var price = item.querySelector(".price--end").innerText;
-      console.log(price);
       var initialPrice = price.replace('$','');
       let newPrice = initialPrice * qty;
-      console.log(newPrice);
-      var el = item.getElementsByClassName("cart-item__totals")[0]; 
+      var el = item.getElementsByClassName("cart-item__totals"); 
       el.querySelector('.price') = '$' + newPrice.toFixed(2);
     },200);
   } ));
