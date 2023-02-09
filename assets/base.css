@@ -3359,3 +3359,13 @@ use-animate {
 .product-carousel .slide-product-container .product-slide-item .quick-container{
   display:none;
 }
+
+.shipping-savings-message{
+  background-color: #fafafa;
+  border: 3px solid #F05123;
+  padding: 10px 20px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+}
