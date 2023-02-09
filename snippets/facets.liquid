@@ -341,7 +341,7 @@
                 <div class="mobile-facets__inner">
                   <div class="mobile-facets__header">
                     <div class="mobile-facets__header-inner">
-                      <h2 class="mobile-facets__heading medium-hide large-up-hide">
+                      <div class="mobile-facets__heading medium-hide large-up-hide">
                         {%- liquid
                           if enable_filtering and enable_sorting
                             echo 'products.facets.filter_and_sort' | t
@@ -351,14 +351,14 @@
                             echo 'products.facets.sort_button' | t
                           endif
                         -%}
-                      </h2>
-                      <h2 class="mobile-facets__heading small-hide">
+                      </div>
+                      <div class="mobile-facets__heading small-hide">
                         {%- liquid
                           if enable_filtering
                             echo 'products.facets.filter_button' | t
                           endif
                         -%}
-                      </h2>
+                      </div>
                       
                       <div class="product-count" role="status">
                         <p id="ProductCountMobile" class="product-count__text">
