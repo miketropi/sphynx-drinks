@@ -188,7 +188,7 @@ theme.initWhenVisible = function(options) {
   document.querySelectorAll('.__qty-update').forEach(search => search.addEventListener('click', updatePriceSingleProduct ));
   var productSelect = document.getElementById("productSelect");
 
-  if(productSelect  == null){
+  if(productSelect  != null){
      productSelect.onchange = function() { updatePriceSingleProduct() };
   }
 
