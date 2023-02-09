@@ -185,7 +185,14 @@ theme.initWhenVisible = function(options) {
     
   }));
 
-  document.querySelectorAll('.__qty-update').forEach(search => search.addEventListener('click', updatePriceSingleProduct ));
+  document.querySelectorAll('.__qty-update').forEach(update => update.addEventListener('click', updatePriceSingleProduct ));
+  document.querySelectorAll('.quantity__button').forEach(update => update.addEventListener('click', function(){
+    var item = this.closest('.cart-item');
+    console.log(item);
+    setTimeout(function () {
+     
+    },200);
+  } ));
   var productSelect = document.getElementById("productSelect");
 
   if(productSelect  != null){
