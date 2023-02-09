@@ -188,9 +188,14 @@ theme.initWhenVisible = function(options) {
   document.querySelectorAll('.__qty-update').forEach(update => update.addEventListener('click', updatePriceSingleProduct ));
   document.querySelectorAll('.quantity__button').forEach(update => update.addEventListener('click', function(){
     var item = this.closest('.cart-item');
-    console.log(item);
     setTimeout(function () {
-     
+      var qty = item.querySelector('input[type="number"]').value;
+      var price = item.querySelector(".price--end");
+      var initialPrice = price.replace('$','');
+      let newPrice = initialPrice * qty;
+      console.log(newPrice);
+      var el = item.getElementsByClassName("cart-item__totals")[0]; 
+      el.querySelector('.price') = '$' + newPrice.toFixed(2);
     },200);
   } ));
   var productSelect = document.getElementById("productSelect");
@@ -207,7 +212,6 @@ theme.initWhenVisible = function(options) {
       var price = option.getAttribute("data-price");
       var initialPrice = price.replace('$','');
       let newPrice = initialPrice * qty;
-      console.log(newPrice);
       var el = document.getElementsByClassName("current-price")[0]; 
       el.innerHTML = '$' + newPrice.toFixed(2);
     },200);
