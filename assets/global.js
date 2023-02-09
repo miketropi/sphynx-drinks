@@ -194,9 +194,11 @@ theme.initWhenVisible = function(options) {
       var initialPrice = price.replace('$','');
       let newPrice = initialPrice * qty;
       var el = item.querySelector(".cart-item__totals .price"); 
+      console.log(el);
       el.innerHtml = '$' + newPrice.toFixed(2);
     },200);
   } ));
+  
   var productSelect = document.getElementById("productSelect");
 
   if(productSelect  != null){
