@@ -3361,11 +3361,18 @@ use-animate {
 }
 
 .shipping-savings-message{
-  background-color: #fafafa;
+  background-color: #F8F7F8;
   border: 3px solid #F05123;
   padding: 10px 20px;
   text-align: center;
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
+}
+
+.template-cart #icartShopifyCartContent .shipping-savings-message{
+  border-bottom: none;
+  border-right: none;
+  border-left: none;
+  text-align: left;
 }
