@@ -46,6 +46,8 @@
       style="color: #fff">{{ 'general.continue_shopping' | t }}</a>
   </div>
 
+  {% render "shipping-savings-message" %}
+
   <div class="cart__warnings">
     <h2 class="cart__empty-text">{{ 'sections.cart.empty' | t }}</h2>
     <a href="{{ routes.all_products_collection_url }}" class="button button--tertiary">{{ 'general.continue_shopping' | t }}</a>
