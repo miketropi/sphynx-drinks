@@ -190,7 +190,8 @@ theme.initWhenVisible = function(options) {
     var e  = document.getElementById("productSelect");
     var option= e.options[e.selectedIndex];
     var price = option.getAttribute("data-price");
-    console.log(price);
+    var priceClear = price.replace('$','');
+    console.log(priceClear);
     
   }));
 
