@@ -193,8 +193,8 @@ theme.initWhenVisible = function(options) {
       var price = item.querySelector(".price--end").innerText;
       var initialPrice = price.replace('$','');
       let newPrice = initialPrice * qty;
-      var el = item.getElementsByClassName("cart-item__totals"); 
-      el.querySelector('.price')[0].innerHtml = '$' + newPrice.toFixed(2);
+      var el = item.querySelector(".cart-item__totals .price"); 
+      el.innerHtml = '$' + newPrice.toFixed(2);
     },200);
   } ));
   var productSelect = document.getElementById("productSelect");
