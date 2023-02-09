@@ -185,8 +185,8 @@ theme.initWhenVisible = function(options) {
     
   }));
 
-  document.querySelectorAll('.__search-icon').forEach(search => search.addEventListener('click', function(){
-    var qty = document.querySelector('.__qty-update').value;
+  document.querySelectorAll('.__qty-update').forEach(search => search.addEventListener('click', function(){
+    var qty = document.querySelector('input[name="quantity"]').value;
     console.log(qty);
     
   }));
