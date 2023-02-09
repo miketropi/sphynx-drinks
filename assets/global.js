@@ -186,7 +186,11 @@ theme.initWhenVisible = function(options) {
   }));
 
   document.querySelectorAll('.__qty-update').forEach(search => search.addEventListener('click', updatePriceSingleProduct ));
-  document.getElementById("productSelect").onchange = function() { updatePriceSingleProduct() };
+  var productSelect = document.getElementById("productSelect");
+
+  if(productSelect  == null){
+     productSelect.onchange = function() { updatePriceSingleProduct() };
+  }
 
   function updatePriceSingleProduct(){
     setTimeout(function () {
