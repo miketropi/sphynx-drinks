@@ -195,7 +195,7 @@ theme.initWhenVisible = function(options) {
       let newPrice = initialPrice * qty;
       var el = item.querySelector(".cart-item__totals .price"); 
       console.log(el);
-      el.innerHtml = '$' + newPrice.toFixed(2);
+      el.innerHTML = '$' + newPrice.toFixed(2);
     },200);
   } ));
   
