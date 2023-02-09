@@ -187,7 +187,12 @@ theme.initWhenVisible = function(options) {
 
   document.querySelectorAll('.__qty-update').forEach(search => search.addEventListener('click', function(){
     setTimeout(function () {
-      var qty = document.querySelector('input[name="quantity"]').value;
+     updatePriceSingleProduct();
+    },200);
+  }));
+
+  function updatePriceSingleProduct(){
+     var qty = document.querySelector('input[name="quantity"]').value;
       var e  = document.getElementById("productSelect");
       var option= e.options[e.selectedIndex];
       var price = option.getAttribute("data-price");
@@ -196,9 +201,7 @@ theme.initWhenVisible = function(options) {
       console.log(newPrice);
       var el = document.getElementsByClassName("current-price")[0]; 
       el.innerHTML = '$' + newPrice.toFixed(2);
-    },200);
-    
-  }));
+  }
 
   
 })();
