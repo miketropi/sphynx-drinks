@@ -5,6 +5,15 @@
   lang="{{ request.locale.iso_code }}"
   {%- if text_direction == 'rtl' %}dir="rtl"{% endif -%}>
   <head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HNMT7FQQTL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HNMT7FQQTL');
+</script>
     <meta
       charset="utf-8">
     <meta
