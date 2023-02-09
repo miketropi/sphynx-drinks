@@ -194,7 +194,7 @@ theme.initWhenVisible = function(options) {
       var initialPrice = price.replace('$','');
       let newPrice = initialPrice * qty;
       var el = item.getElementsByClassName("cart-item__totals"); 
-      el.querySelector('.price').innerHtml = '$' + newPrice.toFixed(2);
+      el.querySelector('.price')[0].innerHtml = '$' + newPrice.toFixed(2);
     },200);
   } ));
   var productSelect = document.getElementById("productSelect");
