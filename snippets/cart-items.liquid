@@ -4,6 +4,7 @@
   class="cart__contents critical-hidden"
   method="post"
   id="minicart">
+  {% render "shipping-savings-message" %}
   {%- if cart != empty -%}
     <table class="cart-items">
       <thead>
