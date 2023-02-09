@@ -194,8 +194,8 @@ theme.initWhenVisible = function(options) {
       var initialPrice = price.replace('$','');
       let newPrice = initialPrice * qty;
       console.log(newPrice);
-      var el = document.getElementsByClassName("current-price"); 
-      el[0].innerHtml = '$'+ newPrice;
+      var el = document.getElementsByClassName("current-price")[0]; 
+      el.innerHTML = '$' + newPrice;
     },200);
     
   }));
