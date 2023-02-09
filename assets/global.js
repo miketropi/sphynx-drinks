@@ -187,7 +187,10 @@ theme.initWhenVisible = function(options) {
 
   document.querySelectorAll('.__qty-update').forEach(search => search.addEventListener('click', function(){
     var qty = document.querySelector('input[name="quantity"]').value;
-    console.log(qty);
+    var e  = document.getElementById("productSelect");
+    var option= e.options[e.selectedIndex];
+    var price = option.getAttribute("data-price");
+    console.log(price);
     
   }));
 
