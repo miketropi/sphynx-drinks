@@ -1,0 +1,10 @@
+
+{% assign shipping_value = 9900 %}
+{% assign cart_total = cart.total_price %}
+{% assign shipping_value_left = shipping_value | minus: cart_total %}
+
+{% if shipping_value_left > 0 %}
+<p class="shipping-savings-message">
+  You are just {{ shipping_value_left | money }} away from FREE shipping!
+</p>
+{% endif %}
