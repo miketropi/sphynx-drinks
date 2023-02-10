@@ -5,6 +5,9 @@
     <p>{{ settings.description }}</p>
   </div>
   <div class="__form-container">
+
+      {{ form | json }}
+    
     {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form' -%}
       <input
         type="hidden"
