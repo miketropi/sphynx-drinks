@@ -5,17 +5,7 @@
     <p>{{ settings.description }}</p>
   </div>
   <div class="__form-container">
-    {%- if form.posted_successfully -%}
-        <h3
-          class="form__message"
-          id="ContactFooter-success"
-          tabindex="-1"
-          autofocus>
-          {% render 'icon', icon: 'success' %}
-          {{ 'newsletter.success' | t }}
-        </h3>
-    {% else %}
-      {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form' -%}
+    {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form' -%}
       <input
         type="hidden"
         name="contact[tags]"
@@ -60,7 +50,18 @@
       <div class="typeset rte">
         {{ section.settings.newsletter_text }}
       </div>
+
+      {%- if form.posted_successfully? -%}
+        <h3
+          class="form__message"
+          id="ContactFooter-success"
+          tabindex="-1"
+          autofocus>
+          {% render 'icon', icon: 'success' %}
+          {{ 'newsletter.success' | t }}
+        </h3>
+      {%- endif -%}
+
     {%- endform -%}
-    {%- endif -%} 
   </div>
 </div>
