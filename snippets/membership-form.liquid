@@ -4,7 +4,8 @@
     <h4>{{ settings.heading }}</h4>
     <p>{{ settings.description }}</p>
   </div>
-  <div class="__form-container test1">
+  <div class="__form-container">
+    {{ form : json }}
     {%- if form.posted_successfully -%}
         <h3
           class="form__message"
