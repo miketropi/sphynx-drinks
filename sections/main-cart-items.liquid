@@ -45,8 +45,9 @@
       class="link link--underline"
       style="color: #fff">{{ 'general.continue_shopping' | t }}</a>
   </div>
-
-  {% render "shipping-savings-message" %}
+  {%- if cart != empty -%}
+    {% render "shipping-savings-message" %}
+  {%- endif -%}
 
   <div class="cart__warnings">
     <h2 class="cart__empty-text">{{ 'sections.cart.empty' | t }}</h2>
