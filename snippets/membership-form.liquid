@@ -5,7 +5,7 @@
     <p>{{ settings.description }}</p>
   </div>
   <div class="__form-container">
-    {{ form | json }}
+    {{ form.email }}
     {%- if form.posted_successfully? -%}
       
         <h3
