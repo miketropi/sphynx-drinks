@@ -209,7 +209,7 @@
         ],
         "settings": {
           "mode": "enabled",
-          "only_homepage": true,
+          "only_homepage": false,
           "only_visitor": true,
           "delay": 20,
           "expiry": 1,
