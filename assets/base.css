@@ -3379,3 +3379,8 @@ use-animate {
   border-left: none;
   text-align: left;
 }
+
+.site-footer .form__message{
+      color: #fff;
+    font-size: 18px;
+}
