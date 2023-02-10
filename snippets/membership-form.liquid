@@ -5,6 +5,7 @@
     <p>{{ settings.description }}</p>
   </div>
   <div class="__form-container">
+    
     {%- if form.posted_successfully? -%}
       
         <h3
@@ -17,6 +18,20 @@
         </h3>
     
     {%- else -%}
+
+    {%- if form.errors -%}
+        <small class="form__message errors" id="ContactFooter-error">
+          {% render 'icon', icon: 'error' %}
+          {{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}
+        </small>
+    {%- endif -%}
+
+    {%- if form.email -%}
+        <small class="form__message errors" id="ContactFooter-error">
+          {% render 'icon', icon: 'error' %}
+          Your email was Subscribe!
+        </small>
+    {%- endif -%}
 
     {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form' -%}
       <input
@@ -53,13 +68,7 @@
           Sign Up {% render 'icon', icon: 'arrow-bold' %}
         </button>
       </div>
-      {%- if form.errors -%}
-        <small class="form__message errors" id="ContactFooter-error">
-          {% render 'icon', icon: 'error' %}
-          {{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}
-        </small>
-      {%- endif -%}
-
+      
       <div class="typeset rte">
         {{ section.settings.newsletter_text }}
       </div>
