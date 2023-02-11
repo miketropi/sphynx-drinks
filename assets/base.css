@@ -3389,3 +3389,8 @@ use-animate {
   height: 240px;
   object-fit: cover;
 }
+
+.template-collection .product-grid .grid__item .card-wrapper .media img{
+    height: 280px;
+    object-fit: cover;
+}
