@@ -3384,3 +3384,8 @@ use-animate {
       color: #fff;
     font-size: 18px;
 }
+
+.template-index .section-ft-collection-carousel-wrap .ft-collection-carousel-wrap .carousel-item .card-wrapper .card--product .card__media .media img{
+  height: 240px;
+  object-fit: cover;
+}
