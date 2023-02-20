@@ -3414,7 +3414,7 @@ use-animate {
   }
   
   .header-extra-tools__item.__mini-cart:hover .mini-cart .cart-items{
-    max-height: 250px;
+    max-height: 210px;
     overflow: auto;
     display: block;
     margin-bottom: 20px;
