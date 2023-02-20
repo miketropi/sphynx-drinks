@@ -3394,3 +3394,10 @@ use-animate {
     height: 280px;
     object-fit: cover;
 }
+
+.header-extra-tools__item.__mini-cart:hover .mini-cart .cart-items{
+  max-height: 250px;
+  overflow: auto;
+  display: block;
+  margin-bottom: 20px;
+}
