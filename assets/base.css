@@ -3396,6 +3396,18 @@ use-animate {
 }
 
 @media (max-width:768px){
+
+  .shipping-savings-message{
+    border: 1px solid #F05123;
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+
+  .header-extra-tools__item.__mini-cart .mini-cart{
+    padding: 15px;
+    top: 60px;
+  }
+  
   .site-header__extra-tools .header-extra-tools__item {
       position: relative;
       z-index: 99;
