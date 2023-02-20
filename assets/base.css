@@ -3428,3 +3428,10 @@ use-animate {
   
 }
 
+@media (max-width:322px){
+  .header-extra-tools__item.__mini-cart .mini-cart{
+    max-height: 380px;
+    overflow: auto;
+  }
+}
+
