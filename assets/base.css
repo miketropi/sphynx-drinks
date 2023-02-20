@@ -3419,5 +3419,12 @@ use-animate {
     display: block;
     margin-bottom: 20px;
   }
+
+  .mini-cart__note .text-area{
+        height: 60px;
+    min-height: auto !important;
+    padding: 5px;
+  }
+  
 }
 
