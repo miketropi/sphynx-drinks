@@ -3395,6 +3395,11 @@ use-animate {
     object-fit: cover;
 }
 
+.site-header__extra-tools .header-extra-tools__item {
+    position: relative;
+    z-index: 99;
+}
+
 .header-extra-tools__item.__mini-cart:hover .mini-cart .cart-items{
   max-height: 250px;
   overflow: auto;
