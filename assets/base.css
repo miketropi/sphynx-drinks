@@ -3395,14 +3395,17 @@ use-animate {
     object-fit: cover;
 }
 
-.site-header__extra-tools .header-extra-tools__item {
-    position: relative;
-    z-index: 99;
+@media (max-width:768px){
+  .site-header__extra-tools .header-extra-tools__item {
+      position: relative;
+      z-index: 99;
+  }
+  
+  .header-extra-tools__item.__mini-cart:hover .mini-cart .cart-items{
+    max-height: 250px;
+    overflow: auto;
+    display: block;
+    margin-bottom: 20px;
+  }
 }
 
-.header-extra-tools__item.__mini-cart:hover .mini-cart .cart-items{
-  max-height: 250px;
-  overflow: auto;
-  display: block;
-  margin-bottom: 20px;
-}
