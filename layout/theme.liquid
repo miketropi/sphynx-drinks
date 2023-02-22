@@ -165,7 +165,13 @@
       href="{{ 'main.bundle.css' | asset_url }}"
       media="all"
       onload="this.media='all'">
-  </head>
+  
+
+{% if content_for_header contains 'fastbundle.co' %}
+    {% render 'fast_bundle_service' %}
+{% endif %}
+
+</head>
 
   <body class="template-{{ request.page_type }}{% if request.design_mode %} shopify-design-mode{% endif %}"
     {%- if settings.image_zoom_effect_enabled %}data-animate-image{% endif -%}
