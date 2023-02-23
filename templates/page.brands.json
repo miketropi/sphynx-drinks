@@ -4,7 +4,6 @@
       "type": "main-page",
       "disabled": true,
       "settings": {
-        "narrow": true,
         "padding_top": 60,
         "padding_bottom": 72
       }
@@ -69,16 +68,13 @@
         "template--16611714662628__aa5cfb4e-cf9d-4299-afee-66a1e48f0aa2-16689850967912e0e9-0": {
           "type": "heading",
           "settings": {
-            "heading": "Curating The World's Best Brands",
-            "heading_size": "h1"
+            "heading": "Curating The World's Best Brands"
           }
         },
         "template--16611714662628__aa5cfb4e-cf9d-4299-afee-66a1e48f0aa2-16689850967912e0e9-1": {
           "type": "text",
           "settings": {
-            "text": "<p>We're proud to partner with the biggest, best & most delicious brands in non-alc drinks, from local brewers to regional wineries and international spirits companies.<\/p>",
-            "text_size": "typeset2",
-            "secondary_color": false
+            "text": "<p>We're proud to partner with the biggest, best & most delicious brands in non-alc drinks, from local brewers to regional wineries and international spirits companies.<\/p>"
           }
         },
         "template--16611714662628__aa5cfb4e-cf9d-4299-afee-66a1e48f0aa2-16689850967912e0e9-2": {
@@ -452,7 +448,7 @@
           "type": "logo",
           "settings": {
             "image": "shopify:\/\/shop_images\/LYRE.png",
-            "link": "shopify:\/\/collections\/lyres"
+            "link": "shopify:\/\/collections\/non-alcoholic-wine-australia-lyres"
           }
         },
         "template--16611714662628__950fa305-2787-4c13-a308-e88741c4ee29-16699367694355c9ca-3": {
@@ -764,7 +760,6 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/sd-main-banner-about.jpg",
             "title": "ABOUT SPHYNX",
-            "title_size": "h3",
             "text": "<p>Find out more about the cool cats at Sphynx Drinks and hear how it purred to life.<\/p>",
             "button_label": "Read More",
             "button_link": "shopify:\/\/pages\/our-story",
@@ -776,7 +771,6 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/sd-main-banner-con.jpg",
             "title": "CONTACT THE CAT",
-            "title_size": "h3",
             "text": "<p>Reach out to us to get advice on our range, partner with us or chinwag about all things Sphynx.<\/p>",
             "button_label": "Contact",
             "button_link": "shopify:\/\/pages\/contact",
@@ -788,7 +782,6 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/sd-banner-faq.jpg",
             "title": "PUB TRIVIA: FAQs",
-            "title_size": "h3",
             "text": "<p>Want to dive into the fine print? Pull up a stool and browse our FAQs, from shipping timelines to returns policies.<\/p>",
             "button_label": "FIND OUT MORE",
             "button_link": "shopify:\/\/pages\/faq",
