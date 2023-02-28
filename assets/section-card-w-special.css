@@ -1,0 +1,138 @@
+.section-card-w-list-special .card-with-special-wrapper .section-container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: calc(var(--site-container-width) + 30px);
+}
+.section-card-w-list-special .card-with-special-wrapper .section-container .card-with-special--heading {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 120%;
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 62px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .section-card-w-list-special .card-with-special-wrapper .section-container .card-with-special--heading {
+    line-height: 95%;
+    font-size: 36px;
+  }
+}
+.section-card-w-list-special .card-with-special-wrapper .section-container .card-with-special--heading span {
+  display: block;
+}
+.section-card-w-list-special .card-with-special-wrapper .section-container .card-with-special-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+      justify-content: center;
+}
+.section-card-w-list-special .card-with-special-wrapper .section-container .card-with-special__item {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 62px;
+}
+@media (min-width: 768px) {
+  .section-card-w-list-special .card-with-special-wrapper .section-container .card-with-special__item {
+    flex: 0 0 25%;
+    max-width: 25%;
+    margin-bottom: 30px;
+  }
+}
+.section-card-w-list-special .card-with-special-wrapper .section-container .card-with-special__item-special {
+  width: 64px;
+  height: 64px;
+  background: #F05123;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  top: -32px;
+  transform: translateX(-50%);
+}
+.section-card-w-list-special .card-with-special-wrapper .section-container .card-with-special__item-special img {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  width: auto;
+}
+.section-card-w-list-special .card-with-special-wrapper .section-container .card-with-special__item-inner {
+  background: #FFFFFF;
+  border-radius: 18px;
+  text-align: center;
+  height: 100%;
+      background-size: cover;
+    background-position: center;
+}
+.section-card-w-list-special .card-with-special-wrapper .section-container .card-with-special__item-content {
+  padding: 12px 38px 38px;
+  height: 320px;
+}
+.section-card-w-list-special .card-with-special-wrapper .section-container .card-with-special__item-title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.3em;
+  line-height: 95%;
+  text-align: center;
+  color: #000000;
+  margin: 0;
+  font-weight: 900;
+    font-size: 26px;
+    line-height: 120%;
+    text-shadow: 0px 1px 7px rgb(0 0 0 / 74);
+}
+.section-card-w-list-special .card-with-special-wrapper .section-container .card-with-special__item-button{
+    text-transform: inherit;
+    letter-spacing: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 95%;
+    border-radius: 8px;
+    padding: 18px 10px;
+    width: 200px;
+    position: absolute;
+    bottom: 38px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.section-card-w-list-special .card-with-special-wrapper .section-container .card-with-special__item-button:hover path{
+      stroke: #F05123;
+}
+.section-card-w-list-special .card-with-special-wrapper .section-container .card-with-special__item-desc {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 146%;
+  text-align: center;
+  color: #8B8B8B;
+  margin-top: 20px;
+}
+
+@media (max-width: 1369px) {
+  .section-card-w-list-special .card-with-special-wrapper .section-container .card-with-special__item{
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-bottom: 30px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .section-card-w-list-special .card-with-special-wrapper .section-container .card-with-special__item{
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
