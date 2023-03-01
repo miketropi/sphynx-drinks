@@ -3395,6 +3395,10 @@ use-animate {
     object-fit: cover;
 }
 
+.faq-section .faq__question{
+  margin:0;
+}
+
 @media (max-width:768px){
 
   .shipping-savings-message{
