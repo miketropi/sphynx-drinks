@@ -98,9 +98,13 @@ a{
     text-decoration: none;
 }
 
-.section-box-collections .section-inner .row .col-content--desc a:hover,
-.collection-desc a:hover{
+
+a:hover{
   font-weight: 600;
+}
+
+a.card-information__text:hover{
+  font-weight: 800;
 }
 
 .page-width-desktop {
