@@ -98,12 +98,8 @@ a{
     text-decoration: none;
 }
 
-
-a:hover{
-  font-weight: 800;
-}
-
-.section-box-collections .section-inner .row .col-content--desc a:hover{
+.section-box-collections .section-inner .row .col-content--desc a:hover,
+.collection-desc a:hover{
   font-weight: 600;
 }
 
