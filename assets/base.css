@@ -98,6 +98,11 @@ a{
     text-decoration: none;
 }
 
+
+a:hover{
+  text-weight: bold;
+}
+
 .page-width-desktop {
   padding: 0;
   margin: 0 auto;
