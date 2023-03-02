@@ -103,6 +103,12 @@ a:hover{
   font-weight: 800;
 }
 
+.section-box-collections .section-inner .row .col-content--desc a:hover{
+  a:hover{
+  font-weight: 600;
+}
+}
+
 .page-width-desktop {
   padding: 0;
   margin: 0 auto;
