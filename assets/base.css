@@ -107,6 +107,10 @@ a.card-information__text:hover{
   font-weight: 800;
 }
 
+.__p-title a:hover{
+  font-weight: 700;
+}
+
 .page-width-desktop {
   padding: 0;
   margin: 0 auto;
