@@ -6,7 +6,7 @@
         endif
   endfor
 -%}
- 
+
 {%- if product.compare_at_price > product.price or is_variant_sale == true  -%}
      <a href="{{ product.url }}" class="quick-container view-product p__badge">
         {%- assign on_sale_text = 'products.product.on_sale' | t -%}
