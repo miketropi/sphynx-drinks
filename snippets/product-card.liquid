@@ -1,6 +1,6 @@
 {% comment %}
   Renders a product card
- 
+
   Accepts:
   - card_product: {Object} Product Liquid object (optional)
   - media_size: {String} Size of the product image card. Values are "square" and "portrait". Default is "square" (optional)
@@ -32,6 +32,9 @@
 {{ 'component-rating.css' | asset_url | stylesheet_tag }}
 
 <div class="card-wrapper">
+
+  {% render 'product__bages' | product: card_product %}
+  
   <use-animate
     data-animate="zoom-fade-small"
     class="card card--product{% if card_product.featured_media == nil %} card--text{% endif %}"
