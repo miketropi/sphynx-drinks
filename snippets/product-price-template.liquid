@@ -1,12 +1,16 @@
-<div class="__p-price"> 
+<div class="__p-price">
   {% if product.available %}
-    {% if product.price_varies %}
-      <span class="__price-number __price-from">{{ product.price_min | money }}</span>
-      -
-      <span class="__price-number __price-to">{{ product.price_max | money }}</span>
-    {% else %}
-      <span class="__price-number">{{ product.price }}</span>
-    {% endif %}
+    {% for variant in product.variants %}
+        <label class="variant-item-price">
+          <span class="variant-price--title">{{ variant.title }}</span> 
+          <span class="variant-price--price">
+            {% if variant.compare_at_price %}
+              <price-money><bdi>{{ variant.compare_at_price | money }}</bdi></price-money>
+            {% endif %}
+            {{  variant.price | money}}
+          </span>
+        </label>
+    {% endfor %}
   {% else %}
     <span class="__sold-out">{{ 'products.product.sold_out' | t }}</span>
   {% endif %}
