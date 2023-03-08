@@ -1,5 +1,6 @@
 {% liquid  
   assign current_variant = product.selected_or_first_available_variant
+  assign form_cart_ID = "now" | date: "%Y%m%d%H%M%S"
 %}
 
 <form
@@ -7,10 +8,41 @@
   method="post"
   enctype="multipart/form-data"
   id="AddToCartForm"
-  class="{% if ajax == true %}__add-to-cart-ajax{% endif %}">
+  class="{% if ajax == true %}__add-to-cart-ajax{% endif %} form_cart_{{ form_cart_ID }}">
+ <div class="variant__picker">
+    
+    {% assign is_index  = '' %}
+    {% for variant in product.variants %}
+       {% assign is_checked  = '' %}
+       {% assign is_disabled = '' %}
+      {% assign p_active    = '' %}
+      {% if is_index == '' and variant.available %}
+            {% liquid
+              assign is_checked = 'checked="checked"' 
+              assign p_active = 'picker-selected'
+              assign is_index = 'true'
+            %}
+      {% endif %}
+      
+      {% if variant.available == blank %}
+        {% assign is_disabled = 'is-disabled' %}
+      {% endif %}
+      
+      <label class="variant__picker--radio {{ p_active }} {{ is_disabled }}"> 
+        <span class="variant__picker--title">{{ variant.title }}</span> 
+        <span class="variant__picker--price">
+          {% if variant.compare_at_price %}
+            <price-money><bdi>{{ variant.compare_at_price | money }}</bdi></price-money>
+          {% endif %}
+          {{  variant.price | money}}
+        </span>
+        <input type="radio" name="variant_price"  value="{{ variant.id }}" {{ is_checked }}>
+        <span class="checkmark"></span>
+      </label>
+    {% endfor %}
+  </div>
   <div class="__group-2-cols">
-
-    <div class="__product-variant-select">
+    <div class="__product-variant-select" style="display:none;">
       <select name="id" id="productSelect">
         {% for variant in product.variants %}
           {% if variant.available %}
@@ -74,8 +106,7 @@
         </svg>
       </span>
     </div>
-  </div>
-  <button
+    <button
     type="submit"
     name="add"
     id="AddToCart"
@@ -83,6 +114,52 @@
     Add to Cart -
     <span class="current-price">{{ current_variant.price | money }}</span>
   </button>
+  </div>
 
   {{ form | payment_button }}
 </form>
+
+<script>
+
+  var formAddCart = document.getElementsByClassName('form_cart_{{ form_cart_ID }}')[0];
+
+  if(formAddCart != undefined ){
+    
+     formAddCart.querySelectorAll('.__qty-update').forEach(update => update.addEventListener('click', updatePriceSingleProduct ));
+  
+    var productSelect = formAddCart.querySelector("#productSelect");
+  
+    if(productSelect  != null){
+      productSelect.onchange = function() { updatePriceSingleProduct() };
+      renderVariantPrice();
+    }
+
+    function updatePriceSingleProduct(){
+      setTimeout(function () {
+       var qty = formAddCart.querySelector('input[name="quantity"]').value;
+        var e  = formAddCart.querySelector("#productSelect");
+        var option= e.options[e.selectedIndex];
+        var price = option.getAttribute("data-price");
+        var initialPrice = price.replace('$','');
+        let newPrice = initialPrice * qty;
+        var el = formAddCart.getElementsByClassName("current-price")[0]; 
+        el.innerHTML = '$' + newPrice.toFixed(2);
+      },200);
+    }
+
+    //Variant Picker
+    function renderVariantPrice() {
+      formAddCart.querySelectorAll('.variant__picker--radio').forEach(update => update.addEventListener('click', function(){
+        var current = formAddCart.getElementsByClassName("picker-selected");
+        current[0].className = current[0].className.replace(" picker-selected", "");
+        this.className += " picker-selected";
+        var varian_id = this.querySelector('input[type="radio"]').value;
+        const $select = formAddCart.querySelector('#productSelect');
+        $select.value = varian_id;
+        updatePriceSingleProduct();
+      } ));
+    }
+  }
+  
+ 
+</script>
