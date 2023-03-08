@@ -1,8 +1,24 @@
 {% liquid  
   assign current_variant = product.selected_or_first_available_variant
   assign featured_image = current_variant.featured_image | default: product.featured_image
+
+  assign show_countdown = false
+  assign is_variant_sale = false
+  if product.metafields.theme.countdown.value != blank
+    assign now_time = 'now' | date: '%s' | times: 1
+    assign countdown_time = product.metafields.theme.countdown.value | date: '%s' | times: 1
+    if countdown_time > now_time
+      assign show_countdown = true
+    endif
+  endif
+
+  for variant in product.variants
+        if variant.compare_at_price > variant.price
+          assign is_variant_sale = true
+        endif
+  endfor
 %}
- 
+
 <div class="main-product main-product__container" style="background: white; padding: 1em 0 3em; color: black;">
   <div class="site-container">
     <div class="main-product__inner">
@@ -31,6 +47,14 @@
             alt="{{ featured_image.alt | escape }}"
             id="ProductPhotoImg" />
         </div>
+        {%- if product.compare_at_price > product.price or is_variant_sale == true  -%}
+            {%- assign on_sale_text = 'products.product.on_sale' | t -%}
+            {%- if on_sale_text != blank -%}
+              <span class="p__badge">{{ 'products.product.on_sale' | t }}</span>
+            {%- else -%}
+              <span class="p__badge">SALE {{ 'products.product.on_sale' | t }}</span>
+            {%- endif -%}
+        {% endif -%}
       </div>
       <!-- .__product-gallery -->
       <div class="__product-info">
