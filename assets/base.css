@@ -3749,6 +3749,12 @@ use-animate {
     margin-top: 20px;
     margin-left: 0
   }
+
+.main-product .__product-add-cart-form button[type=submit].button{
+  margin-top: 0;
+  margin-left: 20px;
+}
+
 @media (max-width:1024px){
   .__popup-quick-action-product__inner .quick-action-product{
     width: calc(100% - 30px);
