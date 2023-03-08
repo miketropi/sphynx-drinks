@@ -1,0 +1,19 @@
+{%- liquid
+  assign is_variant_sale = false
+  for variant in product.variants
+        if variant.compare_at_price > variant.price
+          assign is_variant_sale = true
+        endif
+  endfor
+-%}
+
+{%- if product.compare_at_price > product.price or is_variant_sale == true  -%}
+     <a href="{{ product.url }}" class="quick-container view-product p__badge">
+        {%- assign on_sale_text = 'products.product.on_sale' | t -%}
+        {%- if on_sale_text != blank -%}
+          {{ 'products.product.on_sale' | t }}
+        {%- else -%}
+          SALE
+        {%- endif -%}
+     </a>
+  {% endif -%}

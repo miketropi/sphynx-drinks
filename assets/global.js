@@ -185,7 +185,6 @@ theme.initWhenVisible = function(options) {
     
   }));
 
-  document.querySelectorAll('.__qty-update').forEach(update => update.addEventListener('click', updatePriceSingleProduct ));
   document.querySelectorAll('.quantity__button').forEach(update => update.addEventListener('click', function(){
     var item = this.closest('.cart-item');
     setTimeout(function () {
@@ -199,25 +198,6 @@ theme.initWhenVisible = function(options) {
     },200);
   } ));
   
-  var productSelect = document.getElementById("productSelect");
-
-  if(productSelect  != null){
-     productSelect.onchange = function() { updatePriceSingleProduct() };
-  }
-
-  function updatePriceSingleProduct(){
-    setTimeout(function () {
-     var qty = document.querySelector('input[name="quantity"]').value;
-      var e  = document.getElementById("productSelect");
-      var option= e.options[e.selectedIndex];
-      var price = option.getAttribute("data-price");
-      var initialPrice = price.replace('$','');
-      let newPrice = initialPrice * qty;
-      var el = document.getElementsByClassName("current-price")[0]; 
-      el.innerHTML = '$' + newPrice.toFixed(2);
-    },200);
-  }
-
   
 })();
 
