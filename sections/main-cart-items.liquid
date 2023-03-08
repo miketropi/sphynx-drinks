@@ -30,6 +30,28 @@
   }
 {%- endstyle -%}
 
+{%- capture money_price -%}
+  {%- if target == product and product.price_varies -%}
+
+
+    {% for variant in product.variants %}
+        <label class="variant-item-price">
+          <span class="variant-price--title">{{ variant.title }}</span> 
+          <span class="variant-price--price">
+            {% if variant.compare_at_price %}
+              <price-money><bdi>{{ variant.compare_at_price | money }}</bdi></price-money>
+            {% endif %}
+            {{  variant.price | money}}
+          </span>
+        </label>
+    {% endfor %}
+      
+
+  {%- else -%}
+    <price-money><bdi>{{ price | money }}</bdi></price-money>
+  {%- endif -%}
+{%- endcapture -%}
+
 {{ 'component-cart.css' | asset_url | stylesheet_tag }}
 {{ 'component-cart-items.css' | asset_url | stylesheet_tag }}
 {{ 'component-totals.css' | asset_url | stylesheet_tag }}
@@ -203,9 +225,10 @@
                         </dl>
                       {%- else -%}
                         <span class="price price--end">
-                          <price-money>
-                            <bdi>{{ item.original_price | money }}</bdi>
-                          </price-money>
+                          {% if item.variant.compare_at_price %}
+                            <price-money class="compare-at-price"><bdi>{{ item.variant.compare_at_price | money }}</bdi></price-money>
+                          {% endif %}
+                          {{  item.variant.price | money}}
                         </span>
                       {%- endif -%}
 
