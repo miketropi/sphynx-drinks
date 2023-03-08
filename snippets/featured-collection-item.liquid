@@ -1,6 +1,6 @@
 {% comment %}
   Renders a product card
- 
+
   Accepts:
   - card_product: {Object} Product Liquid object (optional)
   - media_size: {String} Size of the product image card. Values are "square" and "portrait". Default is "square" (optional)
@@ -20,6 +20,7 @@
 
 {%- liquid
   assign show_countdown = false
+  assign is_variant_sale = false
   if card_product.metafields.theme.countdown.value != blank
     assign now_time = 'now' | date: '%s' | times: 1
     assign countdown_time = card_product.metafields.theme.countdown.value | date: '%s' | times: 1
@@ -27,12 +28,28 @@
       assign show_countdown = true
     endif
   endif
+
+  for variant in card_product.variants
+        if variant.compare_at_price > variant.price
+          assign is_variant_sale = true
+        endif
+  endfor
+   
 -%}
 
 {{ 'component-rating.css' | asset_url | stylesheet_tag }}
 
 <div class="card-wrapper">
-  <a href="{{card_product.url}}" class="view-product">View</a>
+  {%- if card_product.compare_at_price > card_product.price or is_variant_sale == true  -%}
+     <a href="{{ card_product.url }}" class="view-product p__badge">
+        {%- assign on_sale_text = 'products.product.on_sale' | t -%}
+        {%- if on_sale_text != blank -%}
+          {{ 'products.product.on_sale' | t }}
+        {%- else -%}
+          SALE
+        {%- endif -%}
+     </a>
+  {% endif -%}
   <use-animate
     data-animate="zoom-fade-small"
     class="card card--product{% if card_product.featured_media == nil %} card--text{% endif %}"
