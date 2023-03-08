@@ -1,13 +1,30 @@
 <div id="quick-action-product" class="quick-action-product quick-action-product__container">
   {% comment %} {{ product | json }} {% endcomment %}
   <div class="quick-action-product__inner">
-    <h4 class="__product-title">{{ product.title }}</h4>
-    <div class="__product-add-cart-form">
-      {%- render 'addtocart-form-single' | product: product, ajax: true -%}
+    <div class="quick-action-product__inner-image">
+      <img
+            srcset="
+              {%- if product.featured_media.width >= 165 -%}{{ product.featured_media | image_url: width: 165 }} 165w{%- endif -%}
+              {%- if product.featured_media.width >= 375 -%},{{ product.featured_media | image_url: width: 375 }} 375w{%- endif -%}
+              {%- if product.featured_media.width >= 550 -%},{{ product.featured_media | image_url: width: 550 }} 550w{%- endif -%}
+              {%- if product.featured_media.width >= 750 -%},{{ product.featured_media | image_url: width: 750 }} 750w{%- endif -%}
+              {%- if product.featured_media.width >= 1100 -%},{{ product.featured_media | image_url: width: 1100 }} 1100w{%- endif -%},
+              {{ product.featured_media | image_url }} {{ product.featured_media.width }}w
+            "
+            src="{{ product.featured_media | image_url: width: 550 }}"
+            alt="{{ product.featured_media.alt | escape | split: '#' | first }}"
+            width="{{ product.featured_media.width }}"
+            height="{{ product.featured_media.height }}"
+          >
     </div>
-    {%- if section.settings.description -%}
-      <div class="__desc">{{ section.settings.description }}</div>
-    {%- endif -%}
+    <div class="quick-action-product__inner-content">
+      <h4 class="__product-title">{{ product.title }}</h4>
+      
+      <div class="__product-add-cart-form">
+        {%- render 'addtocart-form-single' | product: product, ajax: true -%}
+      </div>
+        
+    </div>
   </div>
 </div>
 
