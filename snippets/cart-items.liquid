@@ -65,8 +65,12 @@
                   </s>
                   <span>{{ item.final_price | money }}</span>
                 {%- else -%}
-                  <span>{{ item.original_price | money }}</span>
+                  {% if item.variant.compare_at_price %}
+                        <price-money class="compare-at-price"><bdi>{{ item.variant.compare_at_price | money }}</bdi></price-money>
+                  {% endif %}
+                  {{  item.variant.price | money}}
                 {%- endif -%}
+                
                 {% comment %} {%- if item.original_price != item.final_price -%}
                 <dl class="cart-item__discounted-prices">
                 <dt class="visually-hidden">
