@@ -3556,6 +3556,10 @@ use-animate {
     margin-left: 27px;
 }
 
+.main-product .__product-add-cart-form button[type=submit].button{
+  margin-top: 0;
+  margin-left: 20px;
+}
 
 .__product-add-cart-form .__group-2-cols{
   margin-top: 1em;
