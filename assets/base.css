@@ -3461,6 +3461,7 @@ use-animate {
 }
 
 /* Variant Picker */
+
 .variant__picker .variant__picker--radio{
   display: flex;
   justify-content: space-between;
@@ -3553,6 +3554,11 @@ use-animate {
 .__product-add-cart-form button[type=submit].button{
     margin-top: 0;
     margin-left: 27px;
+}
+
+.main-product .__product-add-cart-form button[type=submit].button{
+  margin-top: 0;
+  margin-left: 20px;
 }
 
 .__product-add-cart-form .__group-2-cols{
@@ -3750,10 +3756,6 @@ use-animate {
     margin-left: 0
   }
 
-.main-product .__product-add-cart-form button[type=submit].button{
-  margin-top: 0;
-  margin-left: 20px;
-}
 
 @media (max-width:1024px){
   .__popup-quick-action-product__inner .quick-action-product{
