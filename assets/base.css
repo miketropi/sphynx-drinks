@@ -3661,6 +3661,11 @@ use-animate {
         margin: 0;
     margin-top: 15px;
   }
+
+  .main-product .__product-add-cart-form button[type=submit].button{
+    margin-top: 10px;
+    margin-left: 0;
+  }
   
 }
 
