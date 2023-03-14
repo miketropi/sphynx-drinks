@@ -3617,6 +3617,19 @@ use-animate {
   margin-top: 20px;
 }
 
+@media (max-width:992px){
+  .main-product .__product-add-cart-form .__group-2-cols{
+    display:block;
+  }
+  .__product-add-cart-form .__product-qty {
+      justify-content: center;
+  }
+  .main-product .__product-add-cart-form button[type=submit].button {
+      margin-top: 10px;
+      margin-left: 0;
+  }
+}
+
 
 @media (max-width:768px){
 
