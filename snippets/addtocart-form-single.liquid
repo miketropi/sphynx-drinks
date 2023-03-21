@@ -39,6 +39,11 @@
         <input type="radio" name="variant_price"  value="{{ variant.id }}" {{ is_checked }}>
         <span class="checkmark"></span>
       </label>
+   {% if variant.available == blank %}
+        <a href="#" class="BIS_trigger link-in-product link-notify-me" data-product-data="{{ product | json | escape }}" data-variant-id="{{ variant.id }}">
+          Notify me when back in stock
+        </a>
+      {% endif %}
     {% endfor %}
   </div>
   <div class="__group-2-cols">
