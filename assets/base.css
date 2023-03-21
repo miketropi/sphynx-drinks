@@ -3868,4 +3868,28 @@ use-animate {
     color: #8b8b8b;
     margin-right: 5px;
 }
+.product-grid .grid__item .card-wrapper .card-information.card-notify{
+  padding-bottom: 60px;
+}
 
+.product-grid .grid__item .card-wrapper .card-information.card-notify .button--soldout{
+  bottom: 38px;
+}
+
+.product-grid .grid__item .card-wrapper .link-notify-me{
+  position: absolute;
+    bottom: 17px;
+    left: 17px;
+}
+
+.link-in-product.link-notify-me{
+  margin-bottom: 15px;
+}
+.link-notify-me{
+  font-weight: 600;
+    text-decoration: underline;
+    margin-top: 5px;
+    color: #F05123;
+  line-height: 1;
+    display: block;
+}
