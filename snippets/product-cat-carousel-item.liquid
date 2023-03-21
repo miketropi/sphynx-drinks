@@ -78,7 +78,7 @@
     {%- endif -%}
   </use-animate>
 
-  <div class="card-information">
+  <div class="card-information {% if card_product.available == false %}card-notify{% endif %}">
     {%- if card_product.featured_media -%}
       <a href="{{ card_product.url | within: collection }}" class="card-information__text h4" tabindex="-1">
         {{ card_product.title | escape }}
