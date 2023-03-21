@@ -173,6 +173,11 @@
       <button class="button button--small button--soldout" type="button" disabled="disabled">
         {{ 'products.product.sold_out' | t }}
       </button>
+    {% unless product.available %}
+        <a href="#" class="BIS_trigger link-notify-me" data-product-data="{{ card_product | json | escape }}">
+          Notify me
+        </a>
+      {% endunless %}
     {%- endif -%}
   </div>
 </div>
