@@ -112,7 +112,7 @@
     {%- endif -%}
   </use-animate>
 
-  <div class="card-information">
+  <div class="card-information {% if card_product.available == false %}card-notify{% endif %}">
     <div class="card__badge">
       {%- if card_product.metafields.theme.label.value != blank -%}
         {%- capture badge_styles -%}
