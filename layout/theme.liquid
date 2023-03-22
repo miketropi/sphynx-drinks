@@ -52,7 +52,9 @@
       src="https://www.pledge.to/assets/widget.js"
       async="async"></script>
 
-
+{% if canonical_url contains '?page=' %}
+<meta name="robots" content="noindex,follow" />
+{% endif %}
 
     {%- if settings.favicon != blank -%}
       <link
