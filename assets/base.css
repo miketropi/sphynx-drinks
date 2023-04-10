@@ -3939,9 +3939,6 @@ use-animate {
     grid-row-gap: 1rem !important;
     grid-column-gap: 1rem !important;
 }
-  .template-collection .product-grid .grid__item .card-wrapper .card-information .card-information__button .button{
-    padding: 10px 15px !important;
-  }
 }
 
 @media (max-width: 350px){
