@@ -3896,10 +3896,10 @@ use-animate {
 
 @media (max-width: 400px){
     .variant-price--price{
-      font-size: 14px;
+      font-size: 14px !important;
     }
   .card-information__text {
-    font-size: 12px;
+    font-size: 12px !important;
 }
   .product-grid .grid__item .card-wrapper{
     padding:5px !important;
