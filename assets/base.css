@@ -3894,6 +3894,15 @@ use-animate {
     display: block;
 }
 
+@media (max-width: 480px){
+  .variant-item-price{
+    flex-wrap: wrap;
+  }
+  .variant-price--price {
+    justify-content: start;
+}
+}
+
 @media (max-width: 400px){
     .variant-price--price{
       font-size: 14px !important;
