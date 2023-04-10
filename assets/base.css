@@ -3920,6 +3920,13 @@ use-animate {
   .template-collection .product-grid .grid__item .card-wrapper .card-information .card-information__button .button{
     padding: 10px 15px !important;
   }
+   .template-collection .product-grid .grid__item .card-wrapper{
+    padding:5px !important;
+  }
+    .template-collection .template-collection .collection-grid-section .product-grid-container #product-grid {
+    grid-row-gap: 1rem !important;
+    grid-column-gap: 1rem !important;
+}
 }
 
 @media (max-width: 350px){
@@ -3932,13 +3939,7 @@ use-animate {
   .template-collection .card-information__text {
     font-size: 12px !important;
 }
-  .template-collection .product-grid .grid__item .card-wrapper{
-    padding:5px !important;
-  }
-  .template-collection .template-collection .collection-grid-section .product-grid-container #product-grid {
-    grid-row-gap: 1rem !important;
-    grid-column-gap: 1rem !important;
-}
+ 
 }
 
 @media (max-width: 350px){
