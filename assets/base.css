@@ -3906,9 +3906,10 @@ use-animate {
     font-size: 12px !important;
 }
   .collection-grid-section .product-grid .grid__item .p__badge {
-    font-size: 12px;
-    width: 50px;
-    height: 50px;
+    font-size: 10px;
+    width: 40px;
+    height: 40px;
+    right: 4px;
   }
   .variant-price--title{
         font-size: 9px;
@@ -3950,11 +3951,6 @@ use-animate {
   .variant-price--price{
     display: block !important;
     text-align: left;
-  }
-  .collection-grid-section .product-grid .grid__item .p__badge {
-    font-size: 12px;
-    width: 60px;
-    height: 60px;
   }
   .template-collection .collection-grid-section .product-grid-container #product-gri{
         grid-template-columns: repeat(1,1fr);
