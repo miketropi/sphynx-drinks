@@ -3919,6 +3919,7 @@ use-animate {
   }
   .template-collection .product-grid .grid__item .card-wrapper .card-information .card-information__button .button{
     padding: 10px 15px !important;
+    font-size: 12px;
   }
    .template-collection .product-grid .grid__item .card-wrapper{
     padding:5px !important;
