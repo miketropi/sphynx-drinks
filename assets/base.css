@@ -3932,5 +3932,8 @@ use-animate {
     width: 60px;
     height: 60px;
   }
+  .template-collection .collection-grid-section .product-grid-container #product-gri{
+        grid-template-columns: repeat(1,1fr);
+  }
 }
 
