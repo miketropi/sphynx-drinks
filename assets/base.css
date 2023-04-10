@@ -3900,7 +3900,7 @@ use-animate {
   }
   .variant-price--price {
     justify-content: start;
-}
+} 
 }
 
 @media (max-width: 400px){
