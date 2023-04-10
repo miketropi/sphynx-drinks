@@ -3897,15 +3897,18 @@ use-animate {
 @media (max-width: 520px){
   .variant-price--price {
     justify-content: start;
-    font-size: 12px !important;
+    font-size: 10px !important;
 } 
+  .variant-price--price price-money{
+    font-size: 10px !important;
+  }
   .card-information__text {
     font-size: 10px !important;
 }
   .collection-grid-section .product-grid .grid__item .p__badge {
     font-size: 12px;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
   }
   .variant-price--title{
         font-size: 9px;
