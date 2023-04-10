@@ -3919,7 +3919,7 @@ use-animate {
   }
 }
 
-@media (max-width: 400px){
+@media (max-width: 350px){
   .template-collection .variant-item-price{
     flex-wrap: wrap;
   }
