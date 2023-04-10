@@ -3910,6 +3910,9 @@ use-animate {
   .variant-price--title{
         font-size: 9px;
   }
+  .variant-price--price price-money, .variant-price--price price-money span{
+    margin-right: 2px;
+  }
 }
 
 @media (max-width: 400px){
