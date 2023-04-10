@@ -3930,6 +3930,13 @@ use-animate {
 }
 }
 
+@media (max-width: 400px){
+  .template-collection .variant-price--title {
+    font-size: 8px;
+}
+ 
+}
+
 @media (max-width: 350px){
   .template-collection .variant-item-price{
     flex-wrap: wrap;
@@ -3940,10 +3947,6 @@ use-animate {
   .template-collection .card-information__text {
     font-size: 12px !important;
 }
- 
-}
-
-@media (max-width: 350px){
   .template-collection .rating-star{
     display: block;
   }
