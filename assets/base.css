@@ -3920,7 +3920,7 @@ use-animate {
 
 @media (max-width: 400px){
     .variant-price--price{
-      font-size: 14px !important;
+      font-size: 12px !important;
     }
   .card-information__text {
     font-size: 12px !important;
