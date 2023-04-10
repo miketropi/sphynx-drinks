@@ -3920,6 +3920,9 @@ use-animate {
 }
 
 @media (max-width: 400px){
+  .variant-item-price{
+    flex-wrap: wrap;
+  }
     .variant-price--price{
       font-size: 12px !important;
     }
