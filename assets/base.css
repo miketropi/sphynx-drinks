@@ -3917,6 +3917,9 @@ use-animate {
   .template-collection .variant-price--price price-money, .variant-price--price price-money span{
     margin-right: 2px;
   }
+  .template-collection .product-grid .grid__item .card-wrapper .card-information .card-information__button .button{
+    padding: 10px 15px !important;
+  }
 }
 
 @media (max-width: 350px){
@@ -3955,7 +3958,7 @@ use-animate {
     display: block !important;
     text-align: left;
   }
-  .template-collection .template-collection .collection-grid-section .product-grid-container #product-gri{
+  .template-collection .template-collection .collection-grid-section .product-grid-container #product-grid{
         grid-template-columns: repeat(1,1fr);
   }
 }
