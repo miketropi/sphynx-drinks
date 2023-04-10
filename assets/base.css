@@ -3897,9 +3897,16 @@ use-animate {
 @media (max-width: 520px){
   .variant-price--price {
     justify-content: start;
-    font-size: 10px !important;
+    font-size: 12px !important;
 } 
-  font-size: 12px !important;
+  .card-information__text {
+    font-size: 10px !important;
+}
+  .collection-grid-section .product-grid .grid__item .p__badge {
+    font-size: 12px;
+    width: 60px;
+    height: 60px;
+  }
 }
 
 @media (max-width: 400px){
