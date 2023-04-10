@@ -3907,6 +3907,9 @@ use-animate {
     width: 60px;
     height: 60px;
   }
+  .variant-price--title{
+        font-size: 9px;
+  }
 }
 
 @media (max-width: 400px){
