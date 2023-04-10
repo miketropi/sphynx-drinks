@@ -3894,7 +3894,7 @@ use-animate {
     display: block;
 }
 
-@media (max-width: 480px){
+@media (max-width: 520px){
   .variant-item-price{
     flex-wrap: wrap;
   }
