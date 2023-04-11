@@ -11,6 +11,7 @@ import './js/minicart';
 import './js/mobile-menu';
 import './js/quick-action-popup';
 import './js/ajax-add-to-cart';
+// import './popup-subscribed';
 
 initHomeSlider();
 initPanelCarousel();

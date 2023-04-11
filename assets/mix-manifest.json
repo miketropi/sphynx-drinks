@@ -1,5 +1,6 @@
 {
     "/main.bundle.js": "/main.bundle.js",
+    "/popup-subscribed.bundle.js": "/popup-subscribed.bundle.js",
     "/section-cta-image-text.css": "/section-cta-image-text.css",
     "/section-card-w-icon.css": "/section-card-w-icon.css",
     "/section-home-slider.css": "/section-home-slider.css",
