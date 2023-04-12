@@ -2,11 +2,12 @@
 
 {%- style -%}
   .section-card-w-list-special .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top }}
-    px;
-    padding-bottom: {{ section.settings.padding_bottom }}
-    px;
+    padding-top: {{ section.settings.padding_top | append: "px" }}
+    ;
+    padding-bottom: {{ section.settings.padding_bottom | append: "px" }}
+    ;
     background-color: {{ section.settings.bg_color }}
+    ;
   }
   .section-card-w-list-special .section-{{ section.id }}-padding {
     .card-with-special-wrapper.section-{{ section.id }}-padding .card-with-special--heading {
@@ -81,24 +82,16 @@
         "content": "t:sections.all.padding.header.content"
       },
       {
-        "type": "range",
+        "type": "text",
         "id": "padding_top",
-        "min": 0,
-        "max": 200,
-        "step": 2,
-        "unit": "t:sections.all.padding.padding_top.unit",
         "label": "t:sections.all.padding.padding_top.label",
-        "default": 60
+        "default": "60"
       },
       {
-        "type": "range",
+        "type": "text",
         "id": "padding_bottom",
-        "min": 0,
-        "max": 200,
-        "step": 2,
-        "unit": "t:sections.all.padding.padding_bottom.unit",
         "label": "t:sections.all.padding.padding_bottom.label",
-        "default": 60
+        "default": "60"
       }, {
         "type": "header",
         "content": "Background Color"

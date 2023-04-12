@@ -201,8 +201,8 @@
       ],
       "settings": {
         "heading_card": "This Months Specials",
-        "padding_top": 60,
-        "padding_bottom": 60,
+        "padding_top": "60",
+        "padding_bottom": "60",
         "bg_color": "#ffffff"
       }
     },

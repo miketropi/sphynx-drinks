@@ -1,7 +1,7 @@
 import axios from "axios";
 const ENDPOINT = 'https://api.sendinblue.com/v3';
 const API_KEY = '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';
-const CSS_INLINE = `.s-modal { position: fixed; left: 0; top: 0; width: 100%; height: 100%; background: rgba(1, 1, 1, .3); z-index: 999; font-family: Arial, Helvetica, sans-serif; color: black; letter-spacing: 0; } .s-modal__close { position: absolute; right: -18px; top: -18px; width: 36px; height: 36px; display: flex; justify-content: center; align-items: center; background-color: #f05124; color: white; border-radius: 30px; font-weight: bold; font-size: 12px; border: solid 2px white; box-shadow: 0 0 10px 2px rgba(1, 1, 1, .1); cursor: pointer; transition: 0.3s ease; -webkit-transition: 0.3s ease; } .s-modal__close:hover { background-color: black; } .s-modal__inner { position: relative; max-width: calc(100% - 40px); width: 550px; padding: 2em; background: white; border-radius: 8px; margin: 15vh auto; box-shadow: 0 0 8px 2px rgba(1, 1, 1, .1); } form.thanks-subscribe-form:after { content: ""; clear: both; display: block; } form.thanks-subscribe-form input[type=email], form.thanks-subscribe-form input[type=text] { width: 100%; padding: 12px; border: solid 1px black; border-radius: 3px; margin-bottom: 0.3em; font-size: 1em; } form.thanks-subscribe-form label { display: inline-block; width: 100%; margin-bottom: 0.5em; font-weight: bold; } form.thanks-subscribe-form button[type=submit] { float: right; margin-top: 1em; }`;
+const CSS_INLINE = `.s-modal { position: fixed; left: 0; top: 0; width: 100%; height: 100%; background: rgba(1, 1, 1, .3); z-index: 999; font-family: Arial, Helvetica, sans-serif; color: black; letter-spacing: 0; font-size: 1em; line-height: 1.5em; } .s-modal__close { position: absolute; right: -18px; top: -18px; width: 36px; height: 36px; display: flex; justify-content: center; align-items: center; background-color: #f05124; color: white; border-radius: 30px; font-weight: bold; font-size: 12px; border: solid 2px white; box-shadow: 0 0 10px 2px rgba(1, 1, 1, .1); cursor: pointer; transition: 0.3s ease; -webkit-transition: 0.3s ease; } .s-modal__close:hover { background-color: black; } .s-modal__inner { position: relative; max-width: calc(100% - 40px); width: 550px; box-sizing: border-box; padding: 2em; background: white; border-radius: 8px; margin: 15vh auto; box-shadow: 0 0 8px 2px rgba(1, 1, 1, .1); } form.thanks-subscribe-form:after { content: ""; clear: both; display: block; } form.thanks-subscribe-form input[type=email], form.thanks-subscribe-form input[type=text] { width: 100%; padding: 12px; border: solid 1px black; border-radius: 3px; margin-bottom: 0.3em; margin-top: 0.3em; font-size: 1em; box-sizing: border-box; } form.thanks-subscribe-form label { display: inline-block; width: 100%; margin-bottom: 0.5em; font-weight: bold; } form.thanks-subscribe-form .__button { float: right; margin-top: 1em; background: #f05124; border: none; color: white; padding: 12px 26px; border-radius: 20px; font-size: 1em; cursor: pointer; transition: 0.3s ease; -webkit-transition: 0.3s ease; } form.thanks-subscribe-form .__button:hover { background: black; }`;
 
 class SibApiV3 {
 
@@ -58,7 +58,7 @@ export default function PopupSubscribed() {
           Your friend's name* 
           <input type="text" name="f-name" placeholder="Enter name" required />
         </label>
-        <button type="submit" class="button">Submit</button> 
+        <button type="submit" class="__button">Submit</button> 
       </form>
     </div>`;
 
