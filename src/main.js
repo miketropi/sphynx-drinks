@@ -14,5 +14,5 @@ import './js/ajax-add-to-cart';
 // import './popup-subscribed';
 
 initHomeSlider();
-initPanelCarousel();
+initPanelCarousel(); 
 
