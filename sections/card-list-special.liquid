@@ -1,12 +1,163 @@
+{{ 'section-card-w-special.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-card-w-list-special .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top }}
+    px;
+    padding-bottom: {{ section.settings.padding_bottom }}
+    px;
+    background-color: {{ section.settings.bg_color }}
+  }
+  .section-card-w-list-special .section-{{ section.id }}-padding {
+    .card-with-special-wrapper.section-{{ section.id }}-padding .card-with-special--heading {
+      color: {{ section.settings.heading_color }}
+      ;
+    }
+    .section-card-w-list-special .section-{{ section.id }}-padding {
+      .card-with-special-wrapper.section-{{ section.id }}-padding .card-with-special--subheading {
+        color: {{ section.settings.subheading_color }}
+        ;
+      }
+{%- endstyle -%}
+
+<div class="card-with-special-wrapper section-{{ section.id }}-padding">
+  <div class="section-container">
+    {%- if section.settings.heading_card != blank -%}
+      <h2 class="card-with-special--heading">{{ section.settings.heading_card }}</h2>
+    {%- endif -%}
+
+    <div class="card-with-special-grid">
+      {%- for block in section.blocks -%}
+        <div class="card-with-special__item" {{ block.shopify_attributes }}>
+          <div class="card-with-special__item-inner" style="background-image: url({{ block.settings.card_image | image_url }})">
+            <div class="card-with-special__item-content">
+              <h4 class="card-with-special__item-title" style="color: {{block.settings.heading_color}}">
+                {{ block.settings.card_heading }}
+              </h4>
+              <a href="{{block.settings.shop_url}}" class="button button--small card-with-special__item-button">
+                {{ block.settings.shop_text }}
+                <svg
+                  width="25"
+                  height="24"
+                  viewBox="0 0 25 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M5.5 12H19.5"
+                    stroke="white"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path
+                    d="M12.5 5L19.5 12L12.5 19"
+                    stroke="white"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Card List Special",
+    "tag": "section",
+    "class": "section-card-w-list-special",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading_card",
+        "default": "This Months Specials",
+        "label": "Heading"
+      },
+      {
+        "type": "header",
+        "content": "t:sections.all.padding.header.content"
+      },
+      {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 200,
+        "step": 2,
+        "unit": "t:sections.all.padding.padding_top.unit",
+        "label": "t:sections.all.padding.padding_top.label",
+        "default": 60
+      },
+      {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 200,
+        "step": 2,
+        "unit": "t:sections.all.padding.padding_bottom.unit",
+        "label": "t:sections.all.padding.padding_bottom.label",
+        "default": 60
+      }, {
+        "type": "header",
+        "content": "Background Color"
+      }, {
+        "type": "color",
+        "id": "bg_color",
+        "default": "#FFC85E",
+        "label": "Section background"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "card_item",
+        "name": "Card Special",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "card_image",
+            "label": "Image"
+          },
+          {
+            "type": "text",
+            "id": "card_heading",
+            "default": "Card heading",
+            "label": "Heading"
+          },
+          {
+            "type": "text",
+            "id": "shop_text",
+            "default": "Shop Now",
+            "label": "Shop Text"
+          },
+          {
+            "type": "url",
+            "id": "shop_url",
+            "label": "Shop URL"
+          }, {
+            "type": "header",
+            "content": "Color settings"
+          }, {
+            "type": "color",
+            "id": "heading_color",
+            "default": "#000",
+            "label": "Heading Color"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Card List Special",
+        "blocks": [
+          {
+            "type": "card_item"
+          }, {
+            "type": "card_item"
+          }
+        ]
+      }
+    ]
   }
 {% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}

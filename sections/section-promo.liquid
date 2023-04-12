@@ -83,8 +83,10 @@
     margin-bottom: 0;
   }
   .section-promo .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top }}px;
-    padding-bottom: {{ section.settings.padding_bottom }}px;
+    padding-top: {{ section.settings.padding_top }}
+    px;
+    padding-bottom: {{ section.settings.padding_bottom }}
+    px;
   }
 {%- endstyle -%}
 <div class="section-promo-wrapper section-{{ section.id }}-padding">
@@ -148,23 +150,15 @@
         "content": "t:sections.all.padding.header.content"
       },
       {
-        "type": "range",
+        "type": "text",
         "id": "padding_top",
-        "min": 0,
-        "max": 200,
-        "step": 1,
-        "unit": "t:sections.all.padding.padding_top.unit",
         "label": "t:sections.all.padding.padding_top.label",
-        "default": 150
+        "default": "150"
       }, {
-        "type": "range",
+        "type": "text",
         "id": "padding_bottom",
-        "min": 0,
-        "max": 200,
-        "step": 1,
-        "unit": "t:sections.all.padding.padding_bottom.unit",
         "label": "t:sections.all.padding.padding_bottom.label",
-        "default": 135
+        "default": "135"
       }
     ],
     "blocks": [
