@@ -5603,3 +5603,114 @@ iframe.ybSyad5RbtOghAuCHUvv {
 .faq-collection .faq__container.faq-empty {
   padding: 0;
 }
+
+.ss-hero-slider {
+  position: relative;
+}
+.ss-hero-slider__decor {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.ss-hero-slider__decor > * {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.ss-hero-slider__inner {
+  position: relative;
+  z-index: 3;
+  padding: 4em 0;
+}
+.ss-hero-slider .__slide-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 42px;
+  height: 42px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  z-index: 9;
+  cursor: pointer;
+  opacity: 0;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+}
+.ss-hero-slider .__slide-nav.__slide-prev {
+  left: -50px;
+}
+.ss-hero-slider .__slide-nav.__slide-next {
+  right: -50px;
+}
+@media (max-width: 1470px) {
+  .ss-hero-slider .__slide-nav.__slide-prev {
+    left: 0px;
+  }
+  .ss-hero-slider .__slide-nav.__slide-next {
+    right: 0px;
+  }
+}
+.ss-hero-slider:hover .__slide-nav {
+  opacity: 1;
+}
+
+.hero-slide-item__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .hero-slide-item__inner {
+    flex-direction: column-reverse;
+  }
+}
+.hero-slide-item__entry {
+  width: 35%;
+}
+.hero-slide-item__entry h2 {
+  font-family: "Montserrat";
+  font-size: 54px;
+  font-weight: 900;
+  letter-spacing: 0;
+  margin-bottom: 0;
+}
+@media (max-width: 768px) {
+  .hero-slide-item__entry h2 {
+    font-size: 38px;
+  }
+}
+.hero-slide-item__entry .button {
+  border-radius: 6px;
+  font-family: "Montserrat";
+  letter-spacing: 0;
+  font-weight: 900;
+  text-transform: initial;
+  font-size: 1.3em;
+  padding: 16px;
+  margin-top: 0.7em;
+}
+.hero-slide-item__entry .button:hover svg path {
+  stroke: #f05124;
+}
+.hero-slide-item__image {
+  width: 60%;
+}
+@media (max-width: 768px) {
+  .hero-slide-item__entry {
+    width: 100%;
+    text-align: center;
+  }
+  .hero-slide-item__image {
+    width: 100%;
+    margin-top: 2em;
+  }
+}

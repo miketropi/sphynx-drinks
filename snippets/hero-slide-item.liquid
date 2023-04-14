@@ -1,0 +1,24 @@
+<div class="hero-slide-item {{ block.settings.item_custom_class }}">
+  <div class="hero-slide-item__inner">
+    <div class="hero-slide-item__entry">
+      {{ block.settings.content }}
+      {% if block.settings.show_button == true %}
+        <a
+          href="{{ block.settings.button_url }}"
+          class="button"
+          target="_blank">
+            {{ block.settings.button_text }}
+            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.5 12H19.5" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M12.5 5L19.5 12L12.5 19" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>  
+          </a>
+      {% endif %}
+    </div>
+    <div class="hero-slide-item__image">
+      {{ block.settings.slide_image | img_url: 'master' | img_tag }}
+    </div>
+  </div>
+  <!-- .hero-slide-item__inner -->
+</div>
+<!-- .hero-slide-item -->

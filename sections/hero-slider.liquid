@@ -1,0 +1,104 @@
+{% style %}
+
+{% endstyle %}
+
+<div class="section-inner section-{{ section.id }} {{ section.settings.custom_class }} ss-hero-slider">
+  <div class="ss-hero-slider__decor">
+    <div class="__background-color" style="background: {{ section.settings.background_color }};"> </div>
+    {% if section.settings.background_image %}
+    <div class="__background-image" style="background: url({{ section.settings.background_image | img_url: 'master' }}) no-repeat center center / cover, white;"> </div>
+    {% endif %}
+  </div>
+  <div class="ss-hero-slider__inner">
+    <div class="site-container">
+      <div data-doslick='{ "slidesToShow": 1, "slidesToScroll": 1, "speed": {{ section.settings.speed }}, "autoplay": {{ section.settings.autoplay }}, "autoplaySpeed": {{ section.settings.autoplay_speed }} }'>
+        {%- for block in section.blocks -%}
+          {%- render 'hero-slide-item' , block: block -%}
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+</div> <!-- .ss-hero-slider -->
+
+{% javascript %}
+  
+{% endjavascript %}
+
+{% schema %}
+  {
+    "name": "Hero Slider",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "autoplay",
+        "label": "Auto Play",
+        "default": false
+      }, {
+        "type": "number",
+        "id": "speed",
+        "label": "Speed",
+        "default": 500
+      }, {
+        "type": "number",
+        "id": "autoplay_speed",
+        "label": "Auto Play Speed",
+        "default": 2000
+      }, {
+        "type": "color_background",
+        "id": "background_color",
+        "label": "Background Color",
+        "default": "linear-gradient(0deg, rgba(252, 184, 46, 1), rgba(255, 224, 54, 1) 98%)"
+      }, {
+        "type": "image_picker",
+        "id": "background_image",
+        "label": "Background Image"
+      }, {
+        "type": "text",
+        "id": "custom_class",
+        "label": "Custom Class"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "hero-slide-item",
+        "name": "Slide Item",
+        "settings": [
+          {
+            "type": "richtext",
+            "id": "content",
+            "label": "Content",
+            "default": "<h2>Click to edit heading</h2><p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>"
+          }, {
+            "type": "image_picker",
+            "id": "slide_image",
+            "label": "Image"
+          }, {
+            "type": "checkbox",
+            "id": "show_button",
+            "label": "Show Button",
+            "default": true
+          }, {
+            "type": "text",
+            "id": "button_text",
+            "label": "Button Text",
+            "default": "Shop Now"
+          }, {
+            "type": "text",
+            "id": "button_url",
+            "label": "Button Url",
+            "default": "#"
+          }, {
+            "type": "text",
+            "id": "item_custom_class",
+            "label": "Custom Class"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Hero Slide"
+      }
+    ]
+  }
+{% endschema %}
