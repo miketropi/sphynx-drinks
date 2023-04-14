@@ -52,10 +52,12 @@
     @media(max-width: 1470px) {
       &.__slide-prev {
         left: 0px;
+        display: none;
       }
   
       &.__slide-next {
         right: 0px;
+        display: none;
       }
     }
   }

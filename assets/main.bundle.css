@@ -5653,9 +5653,11 @@ iframe.ybSyad5RbtOghAuCHUvv {
 @media (max-width: 1470px) {
   .ss-hero-slider .__slide-nav.__slide-prev {
     left: 0px;
+    display: none;
   }
   .ss-hero-slider .__slide-nav.__slide-next {
     right: 0px;
+    display: none;
   }
 }
 .ss-hero-slider:hover .__slide-nav {
