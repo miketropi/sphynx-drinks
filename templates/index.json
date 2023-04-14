@@ -2,6 +2,7 @@
   "sections": {
     "6f70226f-cf6b-4a39-a3c5-c9982266e148": {
       "type": "hero-section",
+      "disabled": true,
       "blocks": {
         "template--16656683270372__6f70226f-cf6b-4a39-a3c5-c9982266e148-16736680464e956660-0": {
           "type": "heading",
@@ -38,6 +39,45 @@
       "settings": {
         "media": "shopify:\/\/shop_images\/Group_666_997cd5fe-ddc9-4636-8750-c400b785bb22.png",
         "bg_color": "#ffc85e",
+        "custom_class": ""
+      }
+    },
+    "9b53a857-4733-43e5-be1a-40a3abf71846": {
+      "type": "hero-slider",
+      "blocks": {
+        "611dddbb-44b7-404e-ae6b-d02539c55139": {
+          "type": "hero-slide-item",
+          "settings": {
+            "content": "<h2>Entertainment Mixed Pack<\/h2><p>We've assembled a refreshing eight pack of our favourite non-alc delights, worth over $40 and absolutely free!<\/p>",
+            "slide_image": "shopify:\/\/shop_images\/Group_672.png",
+            "show_button": true,
+            "button_text": "Shop Now",
+            "button_url": "https:\/\/sphynxdrinks.com.au\/products\/entertainment-app-free-mixed-pack",
+            "item_custom_class": ""
+          }
+        },
+        "b49adea5-65df-40a0-8377-b5171f15a03c": {
+          "type": "hero-slide-item",
+          "settings": {
+            "content": "<h2>Free wine<\/h2><p>Buy any 750ml bottle of wine and choose your free bottle of Evendale<\/p>",
+            "slide_image": "shopify:\/\/shop_images\/Untitled-1.png",
+            "show_button": true,
+            "button_text": "Shop Now",
+            "button_url": "https:\/\/sphynxdrinks.com.au\/collections\/april-edenvale-offer",
+            "item_custom_class": ""
+          }
+        }
+      },
+      "block_order": [
+        "611dddbb-44b7-404e-ae6b-d02539c55139",
+        "b49adea5-65df-40a0-8377-b5171f15a03c"
+      ],
+      "settings": {
+        "autoplay": false,
+        "speed": 500,
+        "autoplay_speed": 2000,
+        "background_color": "linear-gradient(0deg, rgba(252, 184, 46, 1), rgba(255, 224, 54, 1) 98%)",
+        "background_image": "shopify:\/\/shop_images\/Background-Hero.jpg",
         "custom_class": ""
       }
     },
@@ -647,6 +687,7 @@
   },
   "order": [
     "6f70226f-cf6b-4a39-a3c5-c9982266e148",
+    "9b53a857-4733-43e5-be1a-40a3abf71846",
     "05a3923b-a232-4cf4-9fe4-c1e4714b9a2c",
     "8e7e9f80-9dc1-4376-9347-3d70f1ee5046",
     "bbad4cce-3ec7-4bc6-ac78-ad1507f873de",
