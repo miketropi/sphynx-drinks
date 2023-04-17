@@ -2,7 +2,6 @@
   "sections": {
     "6f70226f-cf6b-4a39-a3c5-c9982266e148": {
       "type": "hero-section",
-      "disabled": true,
       "blocks": {
         "template--16656683270372__6f70226f-cf6b-4a39-a3c5-c9982266e148-16736680464e956660-0": {
           "type": "heading",
@@ -44,6 +43,7 @@
     },
     "9b53a857-4733-43e5-be1a-40a3abf71846": {
       "type": "hero-slider",
+      "disabled": true,
       "blocks": {
         "611dddbb-44b7-404e-ae6b-d02539c55139": {
           "type": "hero-slide-item",
