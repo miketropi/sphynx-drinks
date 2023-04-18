@@ -1,7 +1,7 @@
 import axios from "axios";
 const ENDPOINT = 'https://api.sendinblue.com/v3';
 const API_KEY = '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';
-const CSS_INLINE = `.s-modal { position: fixed; left: 0; top: 0; width: 100%; height: 100%; background: rgba(1, 1, 1, .3); z-index: 999; font-family: Arial, Helvetica, sans-serif; color: black; letter-spacing: 0; font-size: 1em; line-height: 1.5em; } .s-modal__close { position: absolute; right: -18px; top: -18px; width: 36px; height: 36px; display: flex; justify-content: center; align-items: center; background-color: #f05124; color: white; border-radius: 30px; font-weight: bold; font-size: 12px; border: solid 2px white; box-shadow: 0 0 10px 2px rgba(1, 1, 1, .1); cursor: pointer; transition: 0.3s ease; -webkit-transition: 0.3s ease; } .s-modal__close:hover { background-color: black; } .s-modal__inner { position: relative; max-width: calc(100% - 40px); width: 550px; box-sizing: border-box; padding: 2em; background: white; border-radius: 8px; margin: 15vh auto; box-shadow: 0 0 8px 2px rgba(1, 1, 1, .1); } form.thanks-subscribe-form:after { content: ""; clear: both; display: block; } form.thanks-subscribe-form input[type=email], form.thanks-subscribe-form input[type=text] { width: 100%; padding: 12px; border: solid 1px black; border-radius: 3px; margin-bottom: 0.3em; margin-top: 0.3em; font-size: 1em; box-sizing: border-box; } form.thanks-subscribe-form label { display: inline-block; width: 100%; margin-bottom: 0.5em; font-weight: bold; } form.thanks-subscribe-form .__button { float: right; margin-top: 1em; background: #f05124; border: none; color: white; padding: 12px 26px; border-radius: 20px; font-size: 1em; cursor: pointer; transition: 0.3s ease; -webkit-transition: 0.3s ease; } form.thanks-subscribe-form .__button:hover { background: black; }`;
+const CSS_INLINE = `.s-modal { position: fixed; left: 0; top: 0; width: 100%; height: 100%; background: rgba(1, 1, 1, .3); z-index: 999; font-family: Montserrat, Arial, Helvetica, sans-serif; color: black; letter-spacing: 0; font-size: 1em; line-height: 1.5em; overflow: auto; } .s-modal p, .s-modal small { color: #8b8b8b; } .s-modal small { display: inline-block; text-align: center; font-size: 10px; line-height: normal; } .s-modal__close { position: absolute; right: 5px; top: 5px; width: 36px; height: 36px; display: flex; justify-content: center; align-items: center; background-color: white; color: #f05123; border-radius: 30px; font-weight: bold; font-size: 12px; box-shadow: 0 0 10px 2px rgba(1, 1, 1, .1); cursor: pointer; transition: 0.3s ease; -webkit-transition: 0.3s ease; } .s-modal__close:hover { background-color: black; } .s-modal__banner { border-radius: 8px 8px 0 0; width: 100%; } .s-modal__heading { text-align: center; padding: 1em; } .s-modal__heading h4 { font-family: 'Montserrat', Arial, Helvetica, sans-serif; margin: 0; font-weight: 900; font-size: 2em; } .s-modal__inner { position: relative; max-width: calc(100% - 40px); width: 600px; box-sizing: border-box; background: white; border-radius: 8px; margin: 10vh auto; box-shadow: 0 0 8px 2px rgba(1, 1, 1, .1); } .s-modal__message { padding: 1em; text-align: center; } form.thanks-subscribe-form { padding: 0 1em 1em; } form.thanks-subscribe-form:after { content: ""; clear: both; display: block; } form.thanks-subscribe-form input[type=email], form.thanks-subscribe-form input[type=text] { width: 100%; padding: 20px; border: none; border-radius: 3px; margin-bottom: 0.3em; margin-top: 0.3em; font-size: 1em; box-sizing: border-box; text-align: center; background-color: #f0f0f0; } form.thanks-subscribe-form label { display: inline-block; width: 100%; margin-bottom: 0.5em; font-weight: bold; } form.thanks-subscribe-form .__button { margin: 1em auto 0; background: #f05124; border: none; color: white; padding: 14px 26px; border-radius: 8px; font-size: 1em; cursor: pointer; transition: 0.3s ease; -webkit-transition: 0.3s ease; width: 200px; display: inherit; text-transform: uppercase; font-weight: 900; font-family: Montserrat, Arial, Helvetica, sans-serif; } form.thanks-subscribe-form .__button:hover { background: black; }`;
 
 class SibApiV3 {
 
@@ -48,16 +48,19 @@ export default function PopupSubscribed() {
     modal.className = 's-modal';
     modal.innerHTML = `<div class="s-modal__inner">
       <a class="s-modal__close">✕</a>
-      <p>🎉 Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+      <img class="s-modal__banner" src="https://cdn.shopify.com/s/files/1/0651/2004/3236/files/Screenshot_2023-04-18_at_10.56.29_AM.png?v=1681790385" />
+      <div class="s-modal__heading">
+        <h4>GIFT A MATE</h4>
+        <p>Do you know a cool cat who deserves a gift on us? Give us their details and we’ll send them a free 6-pack from you… No catches!</p>
+      </div>
       <form id="THANKS_SUBSCRIBE_FORM" class="thanks-subscribe-form" method="POST">
         <label>
-          Your friend's email* 
-          <input type="email" name="f-email" placeholder="Enter email" required />
+          <input type="text" name="f-name" placeholder="Friend’s Name" required />
         </label>
         <label>
-          Your friend's name* 
-          <input type="text" name="f-name" placeholder="Enter name" required />
+          <input type="email" name="f-email" placeholder="Friend’s Email Address" required />
         </label>
+        <small>*We’ll email your nominated mate with a unique link to redeem their free 6-pack. The name and email captured here will be used for the purposes of this email only.</small>
         <button type="submit" class="__button">Submit</button> 
       </form>
     </div>`;
@@ -113,7 +116,7 @@ export default function PopupSubscribed() {
     }
     
     const thankMessage = document.createElement('p');
-    thankMessage.innerHTML = '<p>Successfully, thank you so much!</p>';
+    thankMessage.innerHTML = '<div class="s-modal__message"><p>Successfully, thank you so much!</p></div>';
     form.after(thankMessage);
     form.remove();
 
