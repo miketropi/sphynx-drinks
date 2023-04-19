@@ -6226,7 +6226,7 @@ function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _ty
 function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
 
 var ENDPOINT = 'https://api.sendinblue.com/v3';
-var API_KEY = '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';
+var API_KEY = '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';
 var CSS_INLINE = ".s-modal { position: fixed; left: 0; top: 0; width: 100%; height: 100%; background: rgba(1, 1, 1, .3); z-index: 999; font-family: Montserrat, Arial, Helvetica, sans-serif; color: black; letter-spacing: 0; font-size: 1em; line-height: 1.5em; overflow: auto; } .s-modal p, .s-modal small { color: #8b8b8b; } .s-modal small { display: inline-block; text-align: center; font-size: 10px; line-height: normal; } .s-modal__close { position: absolute; right: 5px; top: 5px; width: 36px; height: 36px; display: flex; justify-content: center; align-items: center; background-color: white; color: #f05123; border-radius: 30px; font-weight: bold; font-size: 12px; box-shadow: 0 0 10px 2px rgba(1, 1, 1, .1); cursor: pointer; transition: 0.3s ease; -webkit-transition: 0.3s ease; } .s-modal__close:hover { background-color: black; } .s-modal__banner { border-radius: 8px 8px 0 0; width: 100%; } .s-modal__heading { text-align: center; padding: 1em; } .s-modal__heading h4 { font-family: 'Montserrat', Arial, Helvetica, sans-serif; margin: 0; font-weight: 900; font-size: 2em; } .s-modal__inner { position: relative; max-width: calc(100% - 40px); width: 600px; box-sizing: border-box; background: white; border-radius: 8px; margin: 10vh auto; box-shadow: 0 0 8px 2px rgba(1, 1, 1, .1); } .s-modal__message { padding: 1em; text-align: center; } form.thanks-subscribe-form { padding: 0 1em 1em; } form.thanks-subscribe-form:after { content: \"\"; clear: both; display: block; } form.thanks-subscribe-form input[type=email], form.thanks-subscribe-form input[type=text] { width: 100%; padding: 20px; border: none; border-radius: 3px; margin-bottom: 0.3em; margin-top: 0.3em; font-size: 1em; box-sizing: border-box; text-align: center; background-color: #f0f0f0; } form.thanks-subscribe-form label { display: inline-block; width: 100%; margin-bottom: 0.5em; font-weight: bold; } form.thanks-subscribe-form .__button { margin: 1em auto 0; background: #f05124; border: none; color: white; padding: 14px 26px; border-radius: 8px; font-size: 1em; cursor: pointer; transition: 0.3s ease; -webkit-transition: 0.3s ease; width: 200px; display: inherit; text-transform: uppercase; font-weight: 900; font-family: Montserrat, Arial, Helvetica, sans-serif; } form.thanks-subscribe-form .__button:hover { background: black; }";
 var SibApiV3 = /*#__PURE__*/function () {
   function SibApiV3(API_KEY) {
@@ -6245,7 +6245,7 @@ var SibApiV3 = /*#__PURE__*/function () {
   }, {
     key: "addContact",
     value: function () {
-      var _addContact = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(email, fname, listIds) {
+      var _addContact = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(email, fname, listIds, cname) {
         return _regeneratorRuntime().wrap(function _callee$(_context) {
           while (1) switch (_context.prev = _context.next) {
             case 0:
@@ -6257,7 +6257,8 @@ var SibApiV3 = /*#__PURE__*/function () {
                 data: JSON.stringify({
                   email: email,
                   "attributes": {
-                    "FIRSTNAME": fname
+                    "FIRSTNAME": fname,
+                    "CNAME": cname
                   },
                   listIds: listIds
                 })
@@ -6272,7 +6273,7 @@ var SibApiV3 = /*#__PURE__*/function () {
           }
         }, _callee, this);
       }));
-      function addContact(_x, _x2, _x3) {
+      function addContact(_x, _x2, _x3, _x4) {
         return _addContact.apply(this, arguments);
       }
       return addContact;
@@ -6324,7 +6325,7 @@ function PopupSubscribed() {
    */
   Smodal.querySelector('form#THANKS_SUBSCRIBE_FORM').addEventListener('submit', /*#__PURE__*/function () {
     var _ref = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2(e) {
-      var form, email, name, S, result, thankMessage;
+      var form, email, name, cname, S, result, thankMessage;
       return _regeneratorRuntime().wrap(function _callee2$(_context2) {
         while (1) switch (_context2.prev = _context2.next) {
           case 0:
@@ -6332,24 +6333,25 @@ function PopupSubscribed() {
             form = this;
             email = form.querySelector('input[name="f-email"]').value;
             name = form.querySelector('input[name="f-name"]').value;
+            cname = window.__customer_name;
             form.querySelector('button[type="submit"]').innerHTML = 'Submitting...';
             form.style.opacity = '.6';
             form.style.pointerEvents = 'none';
             S = new SibApiV3(API_KEY);
-            _context2.prev = 8;
-            _context2.next = 11;
-            return S.addContact(email, name, [7]);
-          case 11:
+            _context2.prev = 9;
+            _context2.next = 12;
+            return S.addContact(email, name, [7], cname);
+          case 12:
             result = _context2.sent;
             // [7] list ids number of sendinblue
             console.log(result);
-            _context2.next = 18;
+            _context2.next = 19;
             break;
-          case 15:
-            _context2.prev = 15;
-            _context2.t0 = _context2["catch"](8);
+          case 16:
+            _context2.prev = 16;
+            _context2.t0 = _context2["catch"](9);
             console.log(_context2.t0);
-          case 18:
+          case 19:
             thankMessage = document.createElement('p');
             thankMessage.innerHTML = '<div class="s-modal__message"><p>Successfully, thank you so much!</p></div>';
             form.after(thankMessage);
@@ -6357,13 +6359,13 @@ function PopupSubscribed() {
             setTimeout(function () {
               Smodal.remove();
             }, 5000);
-          case 23:
+          case 24:
           case "end":
             return _context2.stop();
         }
-      }, _callee2, this, [[8, 15]]);
+      }, _callee2, this, [[9, 16]]);
     }));
-    return function (_x4) {
+    return function (_x5) {
       return _ref.apply(this, arguments);
     };
   }());
