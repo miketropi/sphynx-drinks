@@ -6286,9 +6286,11 @@ function PopupSubscribed() {
     Style.id = 'SMODAL';
     Style.textContent = CSS_INLINE;
     document.head.appendChild(Style);
+    var smodalHeadingText = window.__smodalHeadingText ? window.__smodalHeadingText : 'GIFT A MATE';
+    var smodalSubText = window.__smodalSubText ? window.__smodalSubText : 'Do you know a cool cat who deserves a gift on us? Give us their details and we’ll send them a free 6-pack from you… No catches!';
     var modal = document.createElement('div');
     modal.className = 's-modal';
-    modal.innerHTML = "<div class=\"s-modal__inner\">\n      <a class=\"s-modal__close\">\u2715</a>\n      <img class=\"s-modal__banner\" src=\"https://cdn.shopify.com/s/files/1/0651/2004/3236/files/Screenshot_2023-04-18_at_10.56.29_AM.png?v=1681790385\" />\n      <div class=\"s-modal__heading\">\n        <h4>GIFT A MATE</h4>\n        <p>Do you know a cool cat who deserves a gift on us? Give us their details and we\u2019ll send them a free 6-pack from you\u2026 No catches!</p>\n      </div>\n      <form id=\"THANKS_SUBSCRIBE_FORM\" class=\"thanks-subscribe-form\" method=\"POST\">\n        <label>\n          <input type=\"text\" name=\"f-name\" placeholder=\"Friend\u2019s Name\" required />\n        </label>\n        <label>\n          <input type=\"email\" name=\"f-email\" placeholder=\"Friend\u2019s Email Address\" required />\n        </label>\n        <small>*We\u2019ll email your nominated mate with a unique link to redeem their free 6-pack. The name and email captured here will be used for the purposes of this email only.</small>\n        <button type=\"submit\" class=\"__button\">Submit</button> \n      </form>\n    </div>";
+    modal.innerHTML = "<div class=\"s-modal__inner\">\n      <a class=\"s-modal__close\">\u2715</a>\n      <img class=\"s-modal__banner\" src=\"https://cdn.shopify.com/s/files/1/0651/2004/3236/files/Screenshot_2023-04-18_at_10.56.29_AM.png?v=1681790385\" />\n      <div class=\"s-modal__heading\">\n        <h4>".concat(smodalHeadingText, "</h4>\n        <p>").concat(smodalSubText, "</p>\n      </div>\n      <form id=\"THANKS_SUBSCRIBE_FORM\" class=\"thanks-subscribe-form\" method=\"POST\">\n        <label>\n          <input type=\"text\" name=\"f-name\" placeholder=\"Friend\u2019s Name\" required />\n        </label>\n        <label>\n          <input type=\"email\" name=\"f-email\" placeholder=\"Friend\u2019s Email Address\" required />\n        </label>\n        <small>*We\u2019ll email your nominated mate with a unique link to redeem their free 6-pack. The name and email captured here will be used for the purposes of this email only.</small>\n        <button type=\"submit\" class=\"__button\">Submit</button> \n      </form>\n    </div>");
     return modal;
   };
   var Smodal = createModal();
@@ -6317,7 +6319,7 @@ function PopupSubscribed() {
     }
   };
 
-  /**
+  /** 
    * Submit form handle
    */
   Smodal.querySelector('form#THANKS_SUBSCRIBE_FORM').addEventListener('submit', /*#__PURE__*/function () {
@@ -6366,7 +6368,9 @@ function PopupSubscribed() {
     };
   }());
 }
-PopupSubscribed();
+window.addEventListener("DOMContentLoaded", function () {
+  PopupSubscribed();
+});
 })();
 
 /******/ })()
