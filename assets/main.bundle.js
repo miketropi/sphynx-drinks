@@ -1073,7 +1073,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-// import './popup-subscribed';
+// import './popup-subscribed'; 
 
 (0,_js_home_slider__WEBPACK_IMPORTED_MODULE_0__.initHomeSlider)();
 (0,_js_panel_carousel__WEBPACK_IMPORTED_MODULE_1__.initPanelCarousel)();

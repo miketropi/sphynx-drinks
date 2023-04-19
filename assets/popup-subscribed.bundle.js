@@ -6227,7 +6227,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 
 var ENDPOINT = 'https://api.sendinblue.com/v3';
 var API_KEY = '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';
-var CSS_INLINE = ".s-modal { position: fixed; left: 0; top: 0; width: 100%; height: 100%; background: rgba(1, 1, 1, .3); z-index: 999; font-family: Arial, Helvetica, sans-serif; color: black; letter-spacing: 0; font-size: 1em; line-height: 1.5em; } .s-modal__close { position: absolute; right: -18px; top: -18px; width: 36px; height: 36px; display: flex; justify-content: center; align-items: center; background-color: #f05124; color: white; border-radius: 30px; font-weight: bold; font-size: 12px; border: solid 2px white; box-shadow: 0 0 10px 2px rgba(1, 1, 1, .1); cursor: pointer; transition: 0.3s ease; -webkit-transition: 0.3s ease; } .s-modal__close:hover { background-color: black; } .s-modal__inner { position: relative; max-width: calc(100% - 40px); width: 550px; box-sizing: border-box; padding: 2em; background: white; border-radius: 8px; margin: 15vh auto; box-shadow: 0 0 8px 2px rgba(1, 1, 1, .1); } form.thanks-subscribe-form:after { content: \"\"; clear: both; display: block; } form.thanks-subscribe-form input[type=email], form.thanks-subscribe-form input[type=text] { width: 100%; padding: 12px; border: solid 1px black; border-radius: 3px; margin-bottom: 0.3em; margin-top: 0.3em; font-size: 1em; box-sizing: border-box; } form.thanks-subscribe-form label { display: inline-block; width: 100%; margin-bottom: 0.5em; font-weight: bold; } form.thanks-subscribe-form .__button { float: right; margin-top: 1em; background: #f05124; border: none; color: white; padding: 12px 26px; border-radius: 20px; font-size: 1em; cursor: pointer; transition: 0.3s ease; -webkit-transition: 0.3s ease; } form.thanks-subscribe-form .__button:hover { background: black; }";
+var CSS_INLINE = ".s-modal { position: fixed; left: 0; top: 0; width: 100%; height: 100%; background: rgba(1, 1, 1, .3); z-index: 999; font-family: Montserrat, Arial, Helvetica, sans-serif; color: black; letter-spacing: 0; font-size: 1em; line-height: 1.5em; overflow: auto; } .s-modal p, .s-modal small { color: #8b8b8b; } .s-modal small { display: inline-block; text-align: center; font-size: 10px; line-height: normal; } .s-modal__close { position: absolute; right: 5px; top: 5px; width: 36px; height: 36px; display: flex; justify-content: center; align-items: center; background-color: white; color: #f05123; border-radius: 30px; font-weight: bold; font-size: 12px; box-shadow: 0 0 10px 2px rgba(1, 1, 1, .1); cursor: pointer; transition: 0.3s ease; -webkit-transition: 0.3s ease; } .s-modal__close:hover { background-color: black; } .s-modal__banner { border-radius: 8px 8px 0 0; width: 100%; } .s-modal__heading { text-align: center; padding: 1em; } .s-modal__heading h4 { font-family: 'Montserrat', Arial, Helvetica, sans-serif; margin: 0; font-weight: 900; font-size: 2em; } .s-modal__inner { position: relative; max-width: calc(100% - 40px); width: 600px; box-sizing: border-box; background: white; border-radius: 8px; margin: 10vh auto; box-shadow: 0 0 8px 2px rgba(1, 1, 1, .1); } .s-modal__message { padding: 1em; text-align: center; } form.thanks-subscribe-form { padding: 0 1em 1em; } form.thanks-subscribe-form:after { content: \"\"; clear: both; display: block; } form.thanks-subscribe-form input[type=email], form.thanks-subscribe-form input[type=text] { width: 100%; padding: 20px; border: none; border-radius: 3px; margin-bottom: 0.3em; margin-top: 0.3em; font-size: 1em; box-sizing: border-box; text-align: center; background-color: #f0f0f0; } form.thanks-subscribe-form label { display: inline-block; width: 100%; margin-bottom: 0.5em; font-weight: bold; } form.thanks-subscribe-form .__button { margin: 1em auto 0; background: #f05124; border: none; color: white; padding: 14px 26px; border-radius: 8px; font-size: 1em; cursor: pointer; transition: 0.3s ease; -webkit-transition: 0.3s ease; width: 200px; display: inherit; text-transform: uppercase; font-weight: 900; font-family: Montserrat, Arial, Helvetica, sans-serif; } form.thanks-subscribe-form .__button:hover { background: black; }";
 var SibApiV3 = /*#__PURE__*/function () {
   function SibApiV3(API_KEY) {
     _classCallCheck(this, SibApiV3);
@@ -6286,9 +6286,11 @@ function PopupSubscribed() {
     Style.id = 'SMODAL';
     Style.textContent = CSS_INLINE;
     document.head.appendChild(Style);
+    var smodalHeadingText = window.__smodalHeadingText ? window.__smodalHeadingText : 'GIFT A MATE';
+    var smodalSubText = window.__smodalSubText ? window.__smodalSubText : 'Do you know a cool cat who deserves a gift on us? Give us their details and we’ll send them a free 6-pack from you… No catches!';
     var modal = document.createElement('div');
     modal.className = 's-modal';
-    modal.innerHTML = "<div class=\"s-modal__inner\">\n      <a class=\"s-modal__close\">\u2715</a>\n      <p>\uD83C\uDF89 Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>\n      <form id=\"THANKS_SUBSCRIBE_FORM\" class=\"thanks-subscribe-form\" method=\"POST\">\n        <label>\n          Your friend's email* \n          <input type=\"email\" name=\"f-email\" placeholder=\"Enter email\" required />\n        </label>\n        <label>\n          Your friend's name* \n          <input type=\"text\" name=\"f-name\" placeholder=\"Enter name\" required />\n        </label>\n        <button type=\"submit\" class=\"__button\">Submit</button> \n      </form>\n    </div>";
+    modal.innerHTML = "<div class=\"s-modal__inner\">\n      <a class=\"s-modal__close\">\u2715</a>\n      <img class=\"s-modal__banner\" src=\"https://cdn.shopify.com/s/files/1/0651/2004/3236/files/Screenshot_2023-04-18_at_10.56.29_AM.png?v=1681790385\" />\n      <div class=\"s-modal__heading\">\n        <h4>".concat(smodalHeadingText, "</h4>\n        <p>").concat(smodalSubText, "</p>\n      </div>\n      <form id=\"THANKS_SUBSCRIBE_FORM\" class=\"thanks-subscribe-form\" method=\"POST\">\n        <label>\n          <input type=\"text\" name=\"f-name\" placeholder=\"Friend\u2019s Name\" required />\n        </label>\n        <label>\n          <input type=\"email\" name=\"f-email\" placeholder=\"Friend\u2019s Email Address\" required />\n        </label>\n        <small>*We\u2019ll email your nominated mate with a unique link to redeem their free 6-pack. The name and email captured here will be used for the purposes of this email only.</small>\n        <button type=\"submit\" class=\"__button\">Submit</button> \n      </form>\n    </div>");
     return modal;
   };
   var Smodal = createModal();
@@ -6317,7 +6319,7 @@ function PopupSubscribed() {
     }
   };
 
-  /**
+  /** 
    * Submit form handle
    */
   Smodal.querySelector('form#THANKS_SUBSCRIBE_FORM').addEventListener('submit', /*#__PURE__*/function () {
@@ -6349,7 +6351,7 @@ function PopupSubscribed() {
             console.log(_context2.t0);
           case 18:
             thankMessage = document.createElement('p');
-            thankMessage.innerHTML = '<p>Successfully, thank you so much!</p>';
+            thankMessage.innerHTML = '<div class="s-modal__message"><p>Successfully, thank you so much!</p></div>';
             form.after(thankMessage);
             form.remove();
             setTimeout(function () {
@@ -6366,7 +6368,9 @@ function PopupSubscribed() {
     };
   }());
 }
-PopupSubscribed();
+window.addEventListener("DOMContentLoaded", function () {
+  PopupSubscribed();
+});
 })();
 
 /******/ })()
