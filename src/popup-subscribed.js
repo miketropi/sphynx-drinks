@@ -44,14 +44,17 @@ export default function PopupSubscribed() {
     Style.textContent = CSS_INLINE;
     document.head.appendChild(Style);
 
+    let smodalHeadingText = (window.__smodalHeadingText) ? window.__smodalHeadingText : 'GIFT A MATE';
+    let smodalSubText = (window.__smodalSubText) ? window.__smodalSubText : 'Do you know a cool cat who deserves a gift on us? Give us their details and we’ll send them a free 6-pack from you… No catches!';
+
     const modal = document.createElement('div');
     modal.className = 's-modal';
     modal.innerHTML = `<div class="s-modal__inner">
       <a class="s-modal__close">✕</a>
       <img class="s-modal__banner" src="https://cdn.shopify.com/s/files/1/0651/2004/3236/files/Screenshot_2023-04-18_at_10.56.29_AM.png?v=1681790385" />
       <div class="s-modal__heading">
-        <h4>GIFT A MATE</h4>
-        <p>Do you know a cool cat who deserves a gift on us? Give us their details and we’ll send them a free 6-pack from you… No catches!</p>
+        <h4>${ smodalHeadingText }</h4>
+        <p>${ smodalSubText }</p>
       </div>
       <form id="THANKS_SUBSCRIBE_FORM" class="thanks-subscribe-form" method="POST">
         <label>
@@ -94,7 +97,7 @@ export default function PopupSubscribed() {
     }
   };
 
-  /**
+  /** 
    * Submit form handle
    */
   Smodal.querySelector('form#THANKS_SUBSCRIBE_FORM').addEventListener('submit', async function(e) {
@@ -126,4 +129,6 @@ export default function PopupSubscribed() {
   })
 }
 
-PopupSubscribed();
+window.addEventListener("DOMContentLoaded", () => {
+  PopupSubscribed();
+});
