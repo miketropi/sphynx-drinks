@@ -51,6 +51,34 @@ var onSubmit_AddToCart = /*#__PURE__*/function () {
 }();
 function ajaxAddToCart() {
   $('body').on('submit', 'form#AddToCartForm.__add-to-cart-ajax', onSubmit_AddToCart);
+  var getLimitNumberStock = function getLimitNumberStock($form, currentNumber) {
+    var variantSelected = $form.find('[data-inventory_quantity]:checked');
+    if (variantSelected.length) {
+      var limitNumber = parseInt(variantSelected.data('inventory_quantity'));
+      if (currentNumber >= limitNumber) {
+        return limitNumber;
+      } else {
+        return currentNumber;
+      }
+    } else {
+      return currentNumber;
+    }
+  };
+  $('body').on('change', 'form#AddToCartForm input[name="quantity"]', function () {
+    var currentValue = parseInt($(this).val());
+    var qty = getLimitNumberStock($('form#AddToCartForm'), currentValue);
+    var price = $('form#AddToCartForm').find('[data-variant_price]:checked').data("variant_price");
+    var initialPrice = price.replace('$', '');
+    var newPrice = initialPrice * qty;
+    var el = $('form#AddToCartForm .current-price');
+    el.html('$' + newPrice.toFixed(2));
+    $(this).val(qty);
+  });
+  $('body').on('change', 'form#AddToCartForm [name="variant_price"]', function () {
+    var qtyField = $('form#AddToCartForm').find('input[name="quantity"]');
+    qtyField.val(1);
+    qtyField.trigger('change');
+  });
 
   /**
    * trigger event add to cart completed
@@ -475,6 +503,8 @@ var QtyUpdateUI = function QtyUpdateUI() {
   $('body').on('click', '.__product-qty .__qty-update', function () {
     var $self = $(this);
     var $qtyInput = $self.parent().find('input[name=quantity]');
+    // const $form = $self.parents('form');
+
     var currentNumber = parseInt($qtyInput.val());
     if ($self.hasClass('__qty-decrease')) {
       currentNumber = currentNumber - 1;
@@ -485,7 +515,7 @@ var QtyUpdateUI = function QtyUpdateUI() {
     if (currentNumber <= 1) {
       currentNumber = 1;
     }
-    $qtyInput.val(currentNumber);
+    $qtyInput.val(currentNumber).trigger('change');
   });
 };
 var updateVariant = function updateVariant() {

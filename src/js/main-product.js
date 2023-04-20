@@ -1,7 +1,10 @@
 const QtyUpdateUI = () => {
+
   $('body').on('click', '.__product-qty .__qty-update', function() {
     const $self = $(this);
     const $qtyInput = $self.parent().find('input[name=quantity]');
+    // const $form = $self.parents('form');
+
     let currentNumber = parseInt($qtyInput.val());
 
     if($self.hasClass('__qty-decrease')) {
@@ -16,7 +19,7 @@ const QtyUpdateUI = () => {
       currentNumber = 1;
     }
 
-    $qtyInput.val(currentNumber);
+    $qtyInput.val(currentNumber).trigger('change');
   })
 }
 
@@ -29,6 +32,8 @@ const updateVariant = () => {
 
     $('body').find('form#AddToCartForm button#AddToCart .current-price').html(price);
   })
+
+ 
 }
 
 const ProductGalleryHandle = () => {
