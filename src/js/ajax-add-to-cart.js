@@ -21,6 +21,40 @@ const onSubmit_AddToCart = async function(ev) {
 
 export default function ajaxAddToCart() {
   $('body').on('submit', 'form#AddToCartForm.__add-to-cart-ajax', onSubmit_AddToCart);
+
+  const getLimitNumberStock = ($form, currentNumber) => {
+    let variantSelected = $form.find('[data-inventory_quantity]:checked');
+
+    if(variantSelected.length) {
+      let limitNumber = parseInt(variantSelected.data('inventory_quantity'));
+      if(currentNumber >= limitNumber) {
+        return limitNumber;
+      } else {
+        return currentNumber;
+      }
+    } else {
+      return currentNumber;
+    } 
+  }
+
+  $('body').on('change', 'form#AddToCartForm input[name="quantity"]', function() {
+    let currentValue = parseInt($(this).val());
+    let qty = getLimitNumberStock($('form#AddToCartForm'), currentValue);
+
+    var price = $('form#AddToCartForm').find('[data-variant_price]:checked').data("variant_price");
+    var initialPrice = price.replace('$', '');
+    let newPrice = initialPrice * qty;
+    var el = $('form#AddToCartForm .current-price');
+    el.html('$' + newPrice.toFixed(2));
+
+    $(this).val(qty);
+  })
+
+  $('body').on('change', 'form#AddToCartForm [name="variant_price"]', function() {
+    let qtyField = $('form#AddToCartForm').find('input[name="quantity"]');
+    qtyField.val(1);
+    qtyField.trigger('change');
+  })
   
   /**
    * trigger event add to cart completed

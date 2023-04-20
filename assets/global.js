@@ -186,18 +186,41 @@ theme.initWhenVisible = function(options) {
   }));
 
   document.querySelectorAll('.quantity__button').forEach(update => update.addEventListener('click', function(){
+    return;
+
     var item = this.closest('.cart-item');
     setTimeout(function () {
-      var qty = item.querySelector('input[type="number"]').value;
-      var price = item.querySelector(".price--end").innerText;
-      var initialPrice = price.replace('$','');
+      var qty = parseInt(item.querySelector('input[type="number"]').value);
+      // var price = item.querySelector(".price--end").innerText;
+      var price = item.querySelector('input[type="number"]').dataset.price;
+      var initialPrice = price.replace('$',''); 
+      // console.log(initialPrice, qty)
       let newPrice = initialPrice * qty;
       var el = item.querySelector(".cart-item__totals .price"); 
       console.log(el);
       el.innerHTML = '$' + newPrice.toFixed(2);
     },200);
   } ));
-  
+
+  [...document.querySelectorAll('table.cart-items input.quantity__input')].forEach(function(el) {
+    return el.addEventListener('change', function() {
+      let number = parseInt(el.value);
+      let max = parseInt(el.max);
+      
+      if(number >= max) {
+        el.value = max;
+      }
+
+      var item = el.closest('.cart-item');
+      var price = item.querySelector('input[type="number"]').dataset.price;
+      var initialPrice = price.replace('$',''); 
+      // console.log(initialPrice, qty)
+      let newPrice = initialPrice * el.value;
+      var __el = item.querySelector(".cart-item__totals .price"); 
+      __el.innerHTML = '$' + newPrice.toFixed(2);
+    })
+    
+  })
   
 })();
 
