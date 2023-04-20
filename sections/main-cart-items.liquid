@@ -35,20 +35,24 @@
 
 
     {% for variant in product.variants %}
-        <label class="variant-item-price">
-          <span class="variant-price--title">{{ variant.title }}</span> 
-          <span class="variant-price--price">
-            {% if variant.compare_at_price %}
-              <price-money><bdi>{{ variant.compare_at_price | money }}</bdi></price-money>
-            {% endif %}
-            {{  variant.price | money}}
-          </span>
-        </label>
+      <label class="variant-item-price">
+        <span class="variant-price--title">{{ variant.title }}</span>
+        <span class="variant-price--price">
+          {% if variant.compare_at_price %}
+            <price-money>
+              <bdi>{{ variant.compare_at_price | money }}</bdi>
+            </price-money>
+          {% endif %}
+          {{ variant.price | money }}
+        </span>
+      </label>
     {% endfor %}
-      
+
 
   {%- else -%}
-    <price-money><bdi>{{ price | money }}</bdi></price-money>
+    <price-money>
+      <bdi>{{ price | money }}</bdi>
+    </price-money>
   {%- endif -%}
 {%- endcapture -%}
 
@@ -226,9 +230,11 @@
                       {%- else -%}
                         <span class="price price--end">
                           {% if item.variant.compare_at_price %}
-                            <price-money class="compare-at-price"><bdi>{{ item.variant.compare_at_price | money }}</bdi></price-money>
+                            <price-money class="compare-at-price">
+                              <bdi>{{ item.variant.compare_at_price | money }}</bdi>
+                            </price-money>
                           {% endif %}
-                          {{  item.variant.price | money}}
+                          {{ item.variant.price | money }}
                         </span>
                       {%- endif -%}
 
@@ -300,10 +306,12 @@
                         </button>
                         <input
                           class="quantity__input"
+                          data-price="{{ item.price | money }}"
                           type="number"
                           name="updates[]"
                           value="{{ item.quantity }}"
                           min="0"
+                          max="{{ item.variant.inventory_quantity }}"
                           aria-label="{{ 'products.product.quantity.input_label' | t: product: item.product.title | escape }}"
                           id="Quantity-{{ item.index | plus: 1 }}"
                           data-index="{{ item.index | plus: 1 }}" />
@@ -331,10 +339,12 @@
                         </button>
                         <input
                           class="quantity__input"
+                          data-price="{{ item.price | money }}"
                           type="number"
                           name="updates[]"
                           value="{{ item.quantity }}"
                           min="0"
+                          max="{{ item.variant.inventory_quantity }}"
                           aria-label="{{ 'products.product.quantity.input_label' | t: product: item.product.title | escape }}"
                           id="Quantity-{{ item.index | plus: 1 }}"
                           data-index="{{ item.index | plus: 1 }}"
