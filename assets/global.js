@@ -211,13 +211,13 @@ theme.initWhenVisible = function(options) {
         el.value = max;
       }
 
-      var item = this.closest('.cart-item');
+      var item = el.closest('.cart-item');
       var price = item.querySelector('input[type="number"]').dataset.price;
       var initialPrice = price.replace('$',''); 
       // console.log(initialPrice, qty)
       let newPrice = initialPrice * el.value;
-      var el = item.querySelector(".cart-item__totals .price"); 
-      el.innerHTML = '$' + newPrice.toFixed(2);
+      var __el = item.querySelector(".cart-item__totals .price"); 
+      __el.innerHTML = '$' + newPrice.toFixed(2);
     })
     
   })
