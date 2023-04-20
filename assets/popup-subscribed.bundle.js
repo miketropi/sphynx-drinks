@@ -6228,6 +6228,7 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 var ENDPOINT = 'https://api.sendinblue.com/v3';
 var API_KEY = window.__sendinblue_api_key;
 var CAT_IDS = window.__cat_ids ? window.__cat_ids : [10];
+var THANKS_MESSAGE = window.__thanks_message ? window.__thanks_message : "Thanks! Your friend's gift is on its way";
 var CSS_INLINE = ".s-modal { position: fixed; left: 0; top: 0; width: 100%; height: 100%; background: rgba(1, 1, 1, .3); z-index: 999; font-family: Montserrat, Arial, Helvetica, sans-serif; color: black; letter-spacing: 0; font-size: 1em; line-height: 1.5em; overflow: auto; } .s-modal p, .s-modal small { color: #8b8b8b; } .s-modal small { display: inline-block; text-align: center; font-size: 10px; line-height: normal; } .s-modal__close { position: absolute; right: 5px; top: 5px; width: 36px; height: 36px; display: flex; justify-content: center; align-items: center; background-color: white; color: #f05123; border-radius: 30px; font-weight: bold; font-size: 12px; box-shadow: 0 0 10px 2px rgba(1, 1, 1, .1); cursor: pointer; transition: 0.3s ease; -webkit-transition: 0.3s ease; } .s-modal__close:hover { background-color: black; } .s-modal__banner { border-radius: 8px 8px 0 0; width: 100%; } .s-modal__heading { text-align: center; padding: 1em; } .s-modal__heading h4 { font-family: 'Montserrat', Arial, Helvetica, sans-serif; margin: 0; font-weight: 900; font-size: 2em; } .s-modal__inner { position: relative; max-width: calc(100% - 40px); width: 600px; box-sizing: border-box; background: white; border-radius: 8px; margin: 10vh auto; box-shadow: 0 0 8px 2px rgba(1, 1, 1, .1); } .s-modal__message { padding: 1em; text-align: center; } form.thanks-subscribe-form { padding: 0 1em 1em; } form.thanks-subscribe-form:after { content: \"\"; clear: both; display: block; } form.thanks-subscribe-form input[type=email], form.thanks-subscribe-form input[type=text] { width: 100%; padding: 20px; border: none; border-radius: 3px; margin-bottom: 0.3em; margin-top: 0.3em; font-size: 1em; box-sizing: border-box; text-align: center; background-color: #f0f0f0; } form.thanks-subscribe-form label { display: inline-block; width: 100%; margin-bottom: 0.5em; font-weight: bold; } form.thanks-subscribe-form .__button { margin: 1em auto 0; background: #f05124; border: none; color: white; padding: 14px 26px; border-radius: 8px; font-size: 1em; cursor: pointer; transition: 0.3s ease; -webkit-transition: 0.3s ease; width: 200px; display: inherit; text-transform: uppercase; font-weight: 900; font-family: Montserrat, Arial, Helvetica, sans-serif; } form.thanks-subscribe-form .__button:hover { background: black; }";
 var SibApiV3 = /*#__PURE__*/function () {
   function SibApiV3(API_KEY) {
@@ -6354,7 +6355,7 @@ function PopupSubscribed() {
             console.log(_context2.t0);
           case 19:
             thankMessage = document.createElement('p');
-            thankMessage.innerHTML = '<div class="s-modal__message"><p>Successfully, thank you so much!</p></div>';
+            thankMessage.innerHTML = "<div class=\"s-modal__message\"><p>".concat(THANKS_MESSAGE, "</p></div>");
             form.after(thankMessage);
             form.remove();
             setTimeout(function () {
