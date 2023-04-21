@@ -6373,7 +6373,10 @@ function PopupSubscribed() {
   }());
 }
 window.addEventListener("DOMContentLoaded", function () {
-  PopupSubscribed();
+  if (localStorage.getItem("PopupSubscribed") != "1") {
+    PopupSubscribed();
+    localStorage.setItem("PopupSubscribed", "1");
+  }
 });
 })();
 
