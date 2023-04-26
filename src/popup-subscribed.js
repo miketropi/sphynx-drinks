@@ -61,7 +61,7 @@ export default function PopupSubscribed() {
       </div>
       <form id="THANKS_SUBSCRIBE_FORM" class="thanks-subscribe-form" method="POST">
         <label>
-          <input type="text" name="f-name" placeholder="Friend’s Name" required />
+          <input type="text" name="f-name" placeholder="Your Friend’s First Name" required />
         </label>
         <label>
           <input type="email" name="f-email" placeholder="Friend’s Email Address" required />
