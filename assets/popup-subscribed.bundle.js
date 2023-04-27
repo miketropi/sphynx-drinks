@@ -6262,7 +6262,8 @@ var SibApiV3 = /*#__PURE__*/function () {
                     "FIRSTNAME": fname,
                     "CNAME": cname
                   },
-                  listIds: listIds
+                  listIds: listIds,
+                  "updateEnabled": true
                 })
               }).then(function (response) {
                 return response.data;

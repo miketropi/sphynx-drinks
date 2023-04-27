@@ -30,7 +30,8 @@ class SibApiV3 {
           "FIRSTNAME": fname,
           "CNAME": cname
         },
-        listIds
+        listIds,
+        "updateEnabled": true
       })
     }).then(response => {
       return response.data;
