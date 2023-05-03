@@ -195,8 +195,8 @@
         "template--16656683270372__bbad4cce-3ec7-4bc6-ac78-ad1507f873de-1677651111ae6ae00d-0": {
           "type": "card_item",
           "settings": {
-            "card_image": "shopify:\/\/shop_images\/Rectangle_242.jpg",
-            "card_heading": "20% off <br> NON-everyday range",
+            "card_image": "shopify:\/\/shop_images\/thumb-1.png",
+            "card_heading": "Free Entertainment <br>Pack with $40 spend",
             "shop_text": "Shop Now",
             "shop_url": "shopify:\/\/products\/20-off-non-everyday-range-non-1-3-7",
             "heading_color": "#ffffff"
@@ -205,8 +205,8 @@
         "template--16656683270372__bbad4cce-3ec7-4bc6-ac78-ad1507f873de-1677651111ae6ae00d-1": {
           "type": "card_item",
           "settings": {
-            "card_image": "shopify:\/\/shop_images\/Rectangle_242_1.jpg",
-            "card_heading": "$10 off <br>ANY Sapiir range",
+            "card_image": "shopify:\/\/shop_images\/thumb-2.png",
+            "card_heading": "Buy 1\/2\/3 bottles of <br>750ml wine, get 1\/2\/3 <br>Edenvale bottles free",
             "shop_text": "Shop Now",
             "shop_url": "shopify:\/\/collections\/10-off-sapiir",
             "heading_color": "#ffffff"
@@ -215,8 +215,8 @@
         "149a7472-7402-4e90-bfd3-1c922ca1945a": {
           "type": "card_item",
           "settings": {
-            "card_image": "shopify:\/\/shop_images\/Rectangle_242_2.jpg",
-            "card_heading": "Vinada gift box $10 off now $30",
+            "card_image": "shopify:\/\/shop_images\/thumb-3.png",
+            "card_heading": "Send a mate a <br>6-pack",
             "shop_text": "Shop Now",
             "shop_url": "shopify:\/\/products\/vinada-gift-box-assortment-200ml",
             "heading_color": "#ffffff"
@@ -225,8 +225,8 @@
         "e1df3893-f3fd-414b-8cc1-2fc078854a19": {
           "type": "card_item",
           "settings": {
-            "card_image": "shopify:\/\/shop_images\/Rectangle_242_3.jpg",
-            "card_heading": "Try the new<br> Still Wine range from Altina",
+            "card_image": "shopify:\/\/shop_images\/thumb-4.png",
+            "card_heading": "Hot specials",
             "shop_text": "Shop Now",
             "shop_url": "shopify:\/\/products\/10-off-altina-the-liberate-collection",
             "heading_color": "#ffffff"
