@@ -74,7 +74,7 @@
   text-align: center;
   height: 100%;
       background-size: cover;
-    background-position: center;
+    /* background-position: center; */
 }
 .section-card-w-list-special .card-with-special-wrapper .section-container .card-with-special__item-content {
   padding: 12px 38px 38px;
@@ -84,13 +84,12 @@
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  font-size: 1.3em;
+  font-size: 1.2em;
   line-height: 95%;
   text-align: center;
   color: #000000;
   margin: 0;
   font-weight: 900;
-    font-size: 26px;
     line-height: 120%;
     text-shadow: 0px 1px 7px rgb(0 0 0 / 74);
 }
