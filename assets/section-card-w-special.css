@@ -49,6 +49,14 @@
     margin-bottom: 30px;
   }
 }
+
+.section-card-w-list-special .card-with-special-wrapper .section-container .card-with-special__item:nth-child(3) .card-with-special__item-inner {
+  background-size: auto 100% !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-color: #fac85f !important;
+}
+
 .section-card-w-list-special .card-with-special-wrapper .section-container .card-with-special__item-special {
   width: 64px;
   height: 64px;
@@ -100,10 +108,10 @@
     font-size: 20px;
     line-height: 95%;
     border-radius: 8px;
-    padding: 18px 10px;
-    width: 200px;
+    padding: 10px;
+    /* width: 200px; */
     position: absolute;
-    bottom: 38px;
+    bottom: 24px;
     left: 50%;
     transform: translate(-50%);
 }
