@@ -127,7 +127,7 @@
         "1940d01e-b567-4c42-97eb-bcd5ec249495": {
           "type": "box_collection_item",
           "settings": {
-            "collection": "non-alcoholic-mixers",
+            "collection": "non-alcoholic-mixers-old",
             "image": "shopify:\/\/shop_images\/wine-bottle.png",
             "image_hover": "shopify:\/\/shop_images\/Rectangle_118.png"
           }
@@ -493,7 +493,7 @@
         "ded55c69-4968-4d80-91ec-f69137209559": {
           "type": "box_collection_item",
           "settings": {
-            "collection": "non-alcoholic-mixers",
+            "collection": "non-alcoholic-mixers-old",
             "image": "shopify:\/\/shop_images\/wine-bottle.png",
             "image_hover": "shopify:\/\/shop_images\/Rectangle_118.png"
           }
