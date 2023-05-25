@@ -313,7 +313,7 @@
         "143984a2-6e1d-4cf7-8ad7-beda59b42918": {
           "type": "collection_gallery_item",
           "settings": {
-            "collection": "pre-mixed",
+            "collection": "pre-mixed-old",
             "image": "shopify:\/\/shop_images\/c7.jpg",
             "name": "premixed",
             "text_color": "#ffffff",

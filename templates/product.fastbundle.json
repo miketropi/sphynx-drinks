@@ -884,7 +884,7 @@
         "d14b991a-96fc-4005-adae-9c53d17a3f29": {
           "type": "collection_gallery_item",
           "settings": {
-            "collection": "pre-mixed",
+            "collection": "pre-mixed-old",
             "image": "shopify:\/\/shop_images\/c7.jpg",
             "name": "PREMIXED",
             "text_color": "#ffffff",
