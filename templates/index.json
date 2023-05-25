@@ -119,7 +119,7 @@
         "db74b5e3-f700-4122-a6c2-25af73e11d6f": {
           "type": "box_collection_item",
           "settings": {
-            "collection": "tonic-and-soda",
+            "collection": "tonic-and-soda-old",
             "image": "shopify:\/\/shop_images\/beer-can.png",
             "image_hover": "shopify:\/\/shop_images\/Rectangle_118.png"
           }
@@ -485,7 +485,7 @@
         "bd4b02f3-7f6f-4b17-b94f-065d19ba2183": {
           "type": "box_collection_item",
           "settings": {
-            "collection": "tonic-and-soda",
+            "collection": "tonic-and-soda-old",
             "image": "shopify:\/\/shop_images\/beer-can.png",
             "image_hover": "shopify:\/\/shop_images\/Rectangle_118.png"
           }
