@@ -221,7 +221,7 @@
         "heading_color": "#000000",
         "redirect_label": "VIEW ALL",
         "redirect_url": "#",
-        "collection": "non-alcoholic-beer-australia-old",
+        "collection": "non-alcoholic-beer-australia",
         "limit_number": 6,
         "background_color": "#ffc85e",
         "spacing_top": "3em",
@@ -235,7 +235,7 @@
         "a6f4f40e-154f-49a2-817a-8ba834be1beb": {
           "type": "collection_gallery_item",
           "settings": {
-            "collection": "non-alcoholic-beer-australia-old",
+            "collection": "non-alcoholic-beer-australia",
             "image": "shopify:\/\/shop_images\/c1.jpg",
             "name": "non-alcoholic BEER",
             "text_color": "#ffffff",
