@@ -87,7 +87,7 @@
         "template--16656683270372__05a3923b-a232-4cf4-9fe4-c1e4714b9a2c-167366809358b917ac-0": {
           "type": "box_collection_item",
           "settings": {
-            "collection": "non-alcoholic-beer-australia-old",
+            "collection": "non-alcoholic-beer-australia",
             "image": "shopify:\/\/shop_images\/beer.png",
             "image_hover": "shopify:\/\/shop_images\/Rectangle_118.png"
           }
@@ -298,10 +298,10 @@
     "1bb65e81-d3ba-45ca-9c38-6518c725ad12": {
       "type": "featured-collection-carousel",
       "settings": {
-        "collection": "non-alcoholic-beer-australia-old",
+        "collection": "non-alcoholic-beer-australia",
         "heading": "Our Top Picks - Non-Alcoholic Beer",
         "label_showall": "Shop Beer",
-        "link_showall": "shopify:\/\/collections\/non-alcoholic-beer-australia-old",
+        "link_showall": "shopify:\/\/collections\/non-alcoholic-beer-australia",
         "products_to_show": 6,
         "autoplay": true,
         "arrows": true,
@@ -453,7 +453,7 @@
         "template--16656683270372__218226e6-a49e-4067-bcbc-48c60058bd52-167366809358b917ac-0": {
           "type": "box_collection_item",
           "settings": {
-            "collection": "non-alcoholic-beer-australia-old",
+            "collection": "non-alcoholic-beer-australia",
             "image": "shopify:\/\/shop_images\/beer.png",
             "image_hover": "shopify:\/\/shop_images\/Rectangle_118.png"
           }
