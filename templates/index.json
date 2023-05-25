@@ -135,7 +135,7 @@
         "6ef274e0-8656-4e77-8d3f-d1aee65da49c": {
           "type": "box_collection_item",
           "settings": {
-            "collection": "pre-mixed",
+            "collection": "pre-mixed-old",
             "image": "shopify:\/\/shop_images\/beer-bottle.png",
             "image_hover": "shopify:\/\/shop_images\/Rectangle_118.png"
           }
@@ -501,7 +501,7 @@
         "7f302998-2ff6-4b58-a7cf-ce5e95b59aa4": {
           "type": "box_collection_item",
           "settings": {
-            "collection": "pre-mixed",
+            "collection": "pre-mixed-old",
             "image": "shopify:\/\/shop_images\/beer-bottle.png",
             "image_hover": "shopify:\/\/shop_images\/Rectangle_118.png"
           }
