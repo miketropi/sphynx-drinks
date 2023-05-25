@@ -353,10 +353,10 @@
     "2d3fbef1-fbe7-43ba-99a1-9f9008bf4d0b": {
       "type": "featured-collection-carousel",
       "settings": {
-        "collection": "non-alcoholic-wine-australia-old",
+        "collection": "non-alcoholic-wine-australia",
         "heading": "Our Top Picks - Non-Alcoholic Wine",
         "label_showall": "Shop Wine",
-        "link_showall": "shopify:\/\/collections\/non-alcoholic-wine-australia-old",
+        "link_showall": "shopify:\/\/collections\/non-alcoholic-wine-australia",
         "products_to_show": 6,
         "autoplay": true,
         "arrows": true,
