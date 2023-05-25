@@ -135,7 +135,7 @@
         "6ef274e0-8656-4e77-8d3f-d1aee65da49c": {
           "type": "box_collection_item",
           "settings": {
-            "collection": "pre-mixed-old",
+            "collection": "pre-mixed",
             "image": "shopify:\/\/shop_images\/beer-bottle.png",
             "image_hover": "shopify:\/\/shop_images\/Rectangle_118.png"
           }
@@ -453,7 +453,7 @@
         "template--16656683270372__218226e6-a49e-4067-bcbc-48c60058bd52-167366809358b917ac-0": {
           "type": "box_collection_item",
           "settings": {
-            "collection": "non-alcoholic-beer-australia-old",
+            "collection": "non-alcoholic-beer-australia",
             "image": "shopify:\/\/shop_images\/beer.png",
             "image_hover": "shopify:\/\/shop_images\/Rectangle_118.png"
           }
@@ -461,7 +461,7 @@
         "4549be45-199f-4799-8305-7bc82c248518": {
           "type": "box_collection_item",
           "settings": {
-            "collection": "cider-old",
+            "collection": "cider",
             "image": "shopify:\/\/shop_images\/champagne-bottle.png",
             "image_hover": "shopify:\/\/shop_images\/Rectangle_118.png"
           }
@@ -469,7 +469,7 @@
         "787beabd-9168-4a0b-97af-8f870b5fcaf4": {
           "type": "box_collection_item",
           "settings": {
-            "collection": "non-alcoholic-wine-australia-old",
+            "collection": "non-alcoholic-wine-australia",
             "image": "shopify:\/\/shop_images\/wine-glass.png",
             "image_hover": "shopify:\/\/shop_images\/Rectangle_118.png"
           }
@@ -477,7 +477,7 @@
         "c4511fab-d01e-4562-98cd-a640921f13bb": {
           "type": "box_collection_item",
           "settings": {
-            "collection": "non-alcoholic-spirits-australia-old",
+            "collection": "non-alcoholic-spirits-australia",
             "image": "shopify:\/\/shop_images\/wine.png",
             "image_hover": "shopify:\/\/shop_images\/Rectangle_118.png"
           }
@@ -485,7 +485,7 @@
         "bd4b02f3-7f6f-4b17-b94f-065d19ba2183": {
           "type": "box_collection_item",
           "settings": {
-            "collection": "tonic-and-soda-old",
+            "collection": "tonic-and-soda",
             "image": "shopify:\/\/shop_images\/beer-can.png",
             "image_hover": "shopify:\/\/shop_images\/Rectangle_118.png"
           }
@@ -493,7 +493,7 @@
         "ded55c69-4968-4d80-91ec-f69137209559": {
           "type": "box_collection_item",
           "settings": {
-            "collection": "non-alcoholic-mixers-old",
+            "collection": "non-alcoholic-mixers",
             "image": "shopify:\/\/shop_images\/wine-bottle.png",
             "image_hover": "shopify:\/\/shop_images\/Rectangle_118.png"
           }
@@ -501,7 +501,7 @@
         "7f302998-2ff6-4b58-a7cf-ce5e95b59aa4": {
           "type": "box_collection_item",
           "settings": {
-            "collection": "pre-mixed-old",
+            "collection": "pre-mixed",
             "image": "shopify:\/\/shop_images\/beer-bottle.png",
             "image_hover": "shopify:\/\/shop_images\/Rectangle_118.png"
           }
