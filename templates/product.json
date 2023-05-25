@@ -819,7 +819,7 @@
         "944cc9a6-c043-4f02-a7fa-73ce3b2ce08a": {
           "type": "collection_gallery_item",
           "settings": {
-            "collection": "cider",
+            "collection": "cider-old",
             "image": "shopify:\/\/shop_images\/c2.jpg",
             "name": "NON-ALCOHOLIC CIDER",
             "text_color": "#ffffff",
