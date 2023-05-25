@@ -119,7 +119,7 @@
         "db74b5e3-f700-4122-a6c2-25af73e11d6f": {
           "type": "box_collection_item",
           "settings": {
-            "collection": "tonic-and-soda-old",
+            "collection": "tonic-and-soda",
             "image": "shopify:\/\/shop_images\/beer-can.png",
             "image_hover": "shopify:\/\/shop_images\/Rectangle_118.png"
           }
@@ -127,7 +127,7 @@
         "1940d01e-b567-4c42-97eb-bcd5ec249495": {
           "type": "box_collection_item",
           "settings": {
-            "collection": "non-alcoholic-mixers-old",
+            "collection": "non-alcoholic-mixers",
             "image": "shopify:\/\/shop_images\/wine-bottle.png",
             "image_hover": "shopify:\/\/shop_images\/Rectangle_118.png"
           }
