@@ -212,7 +212,7 @@
           "only_homepage": false,
           "only_visitor": true,
           "delay": 20,
-          "expiry": 1,
+          "expiry": 5,
           "width": 600,
           "padding": 40,
           "text_alignment": "center",
