@@ -301,13 +301,8 @@
         "collection": "non-alcoholic-beer-australia-old",
         "heading": "Our Top Picks - Non-Alcoholic Beer",
         "label_showall": "Shop Beer",
-<<<<<<< HEAD
-        "link_showall": "shopify:\/\/collections\/non-alcoholic-beer-australia-old",
-        "products_to_show": 6,
-=======
         "link_showall": "shopify:\/\/collections\/non-alcoholic-beer-australia",
         "products_to_show": 7,
->>>>>>> master
         "autoplay": true,
         "arrows": true,
         "dots": true,
