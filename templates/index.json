@@ -59,7 +59,7 @@
         "b49adea5-65df-40a0-8377-b5171f15a03c": {
           "type": "hero-slide-item",
           "settings": {
-            "content": "<h2>Free Wine!<\/h2><p>Buy any 750ml bottle of wine and choose your free bottle of Evendale<\/p>",
+            "content": "<h2>Free Wine!<\/h2><p>Buy any 750ml bottle of wine and choose your free bottle of Edenvale<\/p>",
             "slide_image": "shopify:\/\/shop_images\/Untitled-1.png",
             "show_button": true,
             "button_text": "Shop Now",
@@ -301,8 +301,13 @@
         "collection": "non-alcoholic-beer-australia-old",
         "heading": "Our Top Picks - Non-Alcoholic Beer",
         "label_showall": "Shop Beer",
+<<<<<<< HEAD
         "link_showall": "shopify:\/\/collections\/non-alcoholic-beer-australia-old",
         "products_to_show": 6,
+=======
+        "link_showall": "shopify:\/\/collections\/non-alcoholic-beer-australia",
+        "products_to_show": 7,
+>>>>>>> master
         "autoplay": true,
         "arrows": true,
         "dots": true,
@@ -356,8 +361,8 @@
         "collection": "non-alcoholic-wine-australia-old",
         "heading": "Our Top Picks - Non-Alcoholic Wine",
         "label_showall": "Shop Wine",
-        "link_showall": "shopify:\/\/collections\/non-alcoholic-wine-australia-old",
-        "products_to_show": 6,
+        "link_showall": "shopify:\/\/collections\/non-alcoholic-wine-australia",
+        "products_to_show": 7,
         "autoplay": true,
         "arrows": true,
         "dots": true,
@@ -544,7 +549,7 @@
         "heading": "Shop all Non-Alcoholic Drinks",
         "label_showall": "Shop all Drinks",
         "link_showall": "https:\/\/sphynxdrinks.com.au\/collections\/all",
-        "products_to_show": 6,
+        "products_to_show": 7,
         "autoplay": true,
         "arrows": true,
         "dots": true,
