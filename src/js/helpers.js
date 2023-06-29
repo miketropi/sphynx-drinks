@@ -85,7 +85,7 @@ const customFilterProduct = () => {
 
 }
 
-customFilterProduct();
+// customFilterProduct();
 
 const applySlickSlider = () => {
   let prevIcon = `
