@@ -103,7 +103,7 @@
         "description": "",
         "redirect_label": "Shop Non-Alc Cider",
         "redirect_url": "#",
-        "collection": "cider",
+        "collection": "non-alcoholic-cider",
         "limit_number": 6,
         "background_color": "#ffffff",
         "spacing_top": "3em",
