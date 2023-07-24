@@ -320,6 +320,12 @@
         "disabled": false,
         "settings": {
         }
+      },
+      "7990132695519299173": {
+        "type": "shopify:\/\/apps\/simple-affiliate\/blocks\/sa-tracker\/da6b7ee2-2e27-43e4-9184-0df8dc5be07a",
+        "disabled": false,
+        "settings": {
+        }
       }
     }
   },
