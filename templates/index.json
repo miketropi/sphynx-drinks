@@ -298,7 +298,7 @@
     "1bb65e81-d3ba-45ca-9c38-6518c725ad12": {
       "type": "featured-collection-carousel",
       "settings": {
-        "collection": "non-alcoholic-beer-australia-old",
+        "collection": "non-alcoholic-beer-australia",
         "heading": "Our Top Picks - Non-Alcoholic Beer",
         "label_showall": "Shop Beer",
         "link_showall": "shopify:\/\/collections\/non-alcoholic-beer-australia",
@@ -353,7 +353,7 @@
     "2d3fbef1-fbe7-43ba-99a1-9f9008bf4d0b": {
       "type": "featured-collection-carousel",
       "settings": {
-        "collection": "non-alcoholic-wine-australia-old",
+        "collection": "non-alcoholic-wine-australia",
         "heading": "Our Top Picks - Non-Alcoholic Wine",
         "label_showall": "Shop Wine",
         "link_showall": "shopify:\/\/collections\/non-alcoholic-wine-australia",
@@ -453,7 +453,7 @@
         "template--16656683270372__218226e6-a49e-4067-bcbc-48c60058bd52-167366809358b917ac-0": {
           "type": "box_collection_item",
           "settings": {
-            "collection": "non-alcoholic-beer-australia-old",
+            "collection": "non-alcoholic-beer-australia",
             "image": "shopify:\/\/shop_images\/beer.png",
             "image_hover": "shopify:\/\/shop_images\/Rectangle_118.png"
           }
@@ -461,7 +461,7 @@
         "4549be45-199f-4799-8305-7bc82c248518": {
           "type": "box_collection_item",
           "settings": {
-            "collection": "cider-old",
+            "collection": "cider",
             "image": "shopify:\/\/shop_images\/champagne-bottle.png",
             "image_hover": "shopify:\/\/shop_images\/Rectangle_118.png"
           }
@@ -469,7 +469,7 @@
         "787beabd-9168-4a0b-97af-8f870b5fcaf4": {
           "type": "box_collection_item",
           "settings": {
-            "collection": "non-alcoholic-wine-australia-old",
+            "collection": "non-alcoholic-wine-australia",
             "image": "shopify:\/\/shop_images\/wine-glass.png",
             "image_hover": "shopify:\/\/shop_images\/Rectangle_118.png"
           }
@@ -477,7 +477,7 @@
         "c4511fab-d01e-4562-98cd-a640921f13bb": {
           "type": "box_collection_item",
           "settings": {
-            "collection": "non-alcoholic-spirits-australia-old",
+            "collection": "non-alcoholic-spirits-australia",
             "image": "shopify:\/\/shop_images\/wine.png",
             "image_hover": "shopify:\/\/shop_images\/Rectangle_118.png"
           }
@@ -485,7 +485,7 @@
         "bd4b02f3-7f6f-4b17-b94f-065d19ba2183": {
           "type": "box_collection_item",
           "settings": {
-            "collection": "tonic-and-soda-old",
+            "collection": "tonic-and-soda",
             "image": "shopify:\/\/shop_images\/beer-can.png",
             "image_hover": "shopify:\/\/shop_images\/Rectangle_118.png"
           }
@@ -493,7 +493,7 @@
         "ded55c69-4968-4d80-91ec-f69137209559": {
           "type": "box_collection_item",
           "settings": {
-            "collection": "non-alcoholic-mixers-old",
+            "collection": "non-alcoholic-mixers",
             "image": "shopify:\/\/shop_images\/wine-bottle.png",
             "image_hover": "shopify:\/\/shop_images\/Rectangle_118.png"
           }
@@ -501,7 +501,7 @@
         "7f302998-2ff6-4b58-a7cf-ce5e95b59aa4": {
           "type": "box_collection_item",
           "settings": {
-            "collection": "pre-mixed-old",
+            "collection": "pre-mixed",
             "image": "shopify:\/\/shop_images\/beer-bottle.png",
             "image_hover": "shopify:\/\/shop_images\/Rectangle_118.png"
           }
@@ -540,7 +540,7 @@
     "cd357b2a-fb79-4170-a634-95f0a4a293c5": {
       "type": "featured-collection-carousel",
       "settings": {
-        "collection": "everything-old",
+        "collection": "everything",
         "heading": "Shop all Non-Alcoholic Drinks",
         "label_showall": "Shop all Drinks",
         "link_showall": "https:\/\/sphynxdrinks.com.au\/collections\/all",
